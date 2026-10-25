@@ -1,0 +1,79 @@
+/*===============================================================
+  20. Tabs
+=================================================================*/
+.cs_tab_links.cs_style_1 {
+  display: flex;
+  align-items: center;
+  gap: 15px 60px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  li {
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      transform: scale(0, 1);
+      transform-origin: top right;
+      background-color: currentColor;
+      transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+    }
+  }
+
+  li.active,
+  li:hover {
+    color: var(--accent-color);
+
+    &::before {
+      transform: scale(1, 1);
+      transform-origin: bottom left;
+    }
+  }
+
+  @media (max-width:767px) {
+    gap: 15px;
+
+    li {
+      padding: 6px 15px;
+      border: 1px solid var(--accent-color);
+
+      &::before {
+        display: none;
+      }
+
+      &.active,
+      &:hover {
+        color: var(--white-color);
+        background-color: var(--accent-color);
+      }
+    }
+  }
+}
+
+/*===================================================
+ Tab Content
+=====================================================*/
+.cs_tabs {
+  .cs_tab {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.5s ease;
+
+    &.active {
+      position: initial;
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+  }
+}

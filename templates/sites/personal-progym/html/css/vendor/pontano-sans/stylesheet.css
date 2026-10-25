@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Pontano Sans';
+    src: url('PontanoSans-Bold.woff2') format('woff2'),
+        url('PontanoSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pontano Sans';
+    src: url('PontanoSans-Light.woff2') format('woff2'),
+        url('PontanoSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pontano Sans';
+    src: url('PontanoSans-Medium.woff2') format('woff2'),
+        url('PontanoSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pontano Sans';
+    src: url('PontanoSans-SemiBold.woff2') format('woff2'),
+        url('PontanoSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pontano Sans';
+    src: url('PontanoSans-Regular.woff2') format('woff2'),
+        url('PontanoSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

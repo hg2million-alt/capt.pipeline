@@ -1,0 +1,192 @@
+/*******************************************************/
+/****************** 10. About Section ******************/
+/*******************************************************/
+.about-us-area
+    +res-ab(xxl)
+        padding-left: 70px
+        
+.about-left-image,
+.about-right-image
+    img
+        width: 100%
+        
+.about-content
+    z-index: 1
+    +container(770px)
+    position: relative
+    +res-bl(xl)
+        padding-top: 60px
+    > p
+        font-size: 20px
+        line-height: 1.75
+        +res-bl(sm)
+            font-size: 18px
+        +res-bl(xs)
+            font-size: 16px
+    .about-bg-shape
+        position: absolute
+        left: 50%
+        top: 50%
+        z-index: -1
+        max-width: 95%
+        transform: translate(-50%, -50%)
+        
+.our-author
+    text-align: left
+    align-items: center
+    display: inline-flex
+    > img
+        +size(80px)
+        border-radius: 50%
+        margin-right: 20px
+        +res-bl(xs)
+            +size(60px)
+    h4
+        margin-bottom: 8px
+        +res-bl(xs)
+            font-size: 18px
+            
+/* About Us Two */
+.about-image-two
+    z-index: 1
+    position: relative
+    padding-left: 70px
+    +res-bl(ms)
+        padding-left: 40px
+    .big-letter
+        z-index: -1
+        left: -100px
+        bottom: -80px
+        line-height: 1
+        font-size: 500px
+        font-weight: 700
+        position: absolute
+        color: $primary-color
+        text-transform: uppercase
+        font-family: $heading-font
+        +res-bl(lg)
+            left: -60px
+            bottom: -60px
+            font-size: 350px
+        +res-bl(ms)
+            left: -50px
+            bottom: -40px
+            font-size: 250px
+.about-content-two
+    +res-ab(lg)
+        max-width: 400px
+        margin-left: auto
+        
+/* About Us Three */
+.about-content-three
+    +res-ab(lg)
+        max-width: 410px
+    .special-text
+        +flexcenter(center)
+        flex-direction: column
+        transform: rotate(180deg)
+        -webkit-writing-mode: vertical-rl
+        span
+            line-height: 1
+            font-weight: 700
+            margin-left: 15px
+            font-family: $heading-font
+            &:not(.number)
+                font-size: 35px
+                text-transform: uppercase
+                +res-bl(sm)
+                    font-size: 30px
+                +res-bl(xs)
+                    font-size: 25px
+            &.number
+                font-size: 200px
+                color: transparent
+                margin-bottom: -20px
+                transform: rotate(90deg)
+                background-size: cover
+                -webkit-background-clip: text
+                background-image: url(../images/about/special-bg.jpg)
+                +res-bl(sm)
+                    font-size: 150px
+.about-three-images
+    display: flex
+    align-items: center
+    img
+        &:first-child
+            width: 70%
+        &:last-child
+            width: 30%
+
+/* About Us Four */
+.about-content-four
+    .experience
+        font-size: 30px
+        color: $primary-color
+        text-transform: uppercase
+        +res-bl(ms)
+            font-size: 25px
+        +res-bl(xs)
+            font-size: 20px
+        .number
+            z-index: 1
+            font-size: 100px
+            position: relative
+            margin-left: 30px
+            margin-right: 10px
+            +res-bl(ms)
+                font-size: 75px
+                margin-left: 15px
+                margin-right: 10px
+            +res-bl(xs)
+                font-size: 60px
+            &:before
+                top: 50%
+                content: ''
+                width: 100%
+                left: -30px
+                height: 90%
+                z-index: -1
+                position: absolute
+                transform: translateY(-45%)
+                border: 2px solid rgba(40, 104, 255, 0.07)
+                +res-bl(ms)
+                    left: -15px
+    .about-bg-shape
+        position: absolute
+        left: 50%
+        top: 50%
+        z-index: -1
+        max-width: 95%
+        transform: translate(-50%, -50%)
+        
+/* Modern Tools */
+.morder-tools-content
+    padding-left: 35px
+    +res-ab(lg)
+        max-width: 400px
+    +res-bl(xs)
+        padding-left: 20px
+    h3
+        font-size: 30px
+        line-height: 1.35
+        position: relative
+        margin-bottom: 30px
+        text-transform: uppercase
+        +res-bl(ms)
+            font-size: 25px
+        +res-bl(xs)
+            font-size: 22px
+            
+        &:before
+            position: absolute
+            content: ''
+            top: 5%
+            width: 5px
+            left: -35px
+            height: 90%
+            background: $primary-color
+            +res-bl(xs)
+                width: 3px
+                left: -20px
+    p
+        color: #a5a5a5

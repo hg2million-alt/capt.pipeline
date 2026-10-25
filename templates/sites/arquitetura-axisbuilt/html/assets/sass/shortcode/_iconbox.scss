@@ -1,0 +1,471 @@
+/*===============================================================
+  16. Iconbox
+=================================================================*/
+.cs_iconbox_style_1 {
+  width: 100%;
+  height: 100%;
+  padding: 30px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transition: all 0.4s ease;
+
+  .cs_iconbox_icon {
+    width: 70px;
+    height: 70px;
+
+    img {
+      border-radius: 0;
+      filter: brightness(0) saturate(100%) invert(67%) sepia(70%) saturate(301%) hue-rotate(358deg) brightness(86%) contrast(86%);
+    }
+  }
+
+  .cs_iconbox_title {
+    transition: inherit;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    opacity: 0;
+    position: absolute;
+    background-color: var(--primary-color);
+    transition: all 0.4s ease;
+  }
+
+  &::before {
+    height: 2px;
+    width: calc(100% + 20px);
+    bottom: -10px;
+    left: 0;
+  }
+
+  &::after {
+    width: 2px;
+    height: calc(100% + 20px);
+    top: 0;
+    right: -10px;
+  }
+
+  .cs_text_btn_style_1 {
+    margin-top: auto;
+  }
+
+  &:hover {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+
+    .cs_iconbox_title {
+      color: var(--white-color);
+    }
+
+    .cs_iconbox_icon {
+      img {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(23deg) brightness(118%) contrast(118%);
+      }
+    }
+
+    &::before,
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  @media (max-width:1399px) {
+    &::before {
+      width: calc(100% + 10px);
+      bottom: -6px;
+    }
+
+    &::after {
+      height: calc(100% + 10px);
+      right: -6px;
+    }
+  }
+
+  @media (max-width:767px) {
+    padding: 30px 15px;
+  }
+}
+
+.cs_iconbox_style_2 {
+  width: 424px;
+  padding: 30px;
+  flex: none;
+  display: flex;
+  flex-direction: column;
+
+  .cs_iconbox_overlay {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    z-index: 0;
+    opacity: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%);
+    transition: all 0.4s ease;
+  }
+
+  >.cs_iconbox_title {
+    padding: 0 15px;
+    margin-top: auto;
+    text-wrap: wrap;
+    transition: all 0.5s ease;
+  }
+
+  .cs_iconbox_subtitle {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .cs_iconbox_icon {
+    width: 60px;
+    height: 60px;
+
+    img {
+      border-radius: 0;
+      filter: brightness(0) saturate(100%) invert(100%) sepia(5%) saturate(29%) hue-rotate(259deg) brightness(107%) contrast(100%);
+    }
+  }
+
+  .cs_iconbox_content {
+    width: 100%;
+    padding: 30px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    text-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+    transform: translateY(135px);
+    transition: all 0.6s ease;
+  }
+
+  >* {
+    position: relative;
+    z-index: 0;
+  }
+
+  a:hover {
+    color: var(--accent-color);
+  }
+
+  &:hover {
+    >.cs_iconbox_title {
+      opacity: 0;
+      transform: translateY(-135px);
+    }
+
+    .cs_iconbox_content {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    .cs_iconbox_overlay {
+      opacity: 1;
+    }
+  }
+
+  @media (max-width:991px) {
+    width: min(100%, 320px);
+    padding: 30px 15px;
+  }
+}
+
+.cs_iconbox_style_3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .cs_iconbox_icon {
+    width: 70px;
+    height: 70px;
+
+    img {
+      border-radius: 0;
+      transition: transform 0.3s cubic-bezier(0.55, 0, 0.35, 1);
+    }
+  }
+
+  .cs_iconbox_info {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .cs_iconbox_title {
+    a:hover {
+      color: var(--accent-color);
+    }
+  }
+
+  .cs_iconbox_subtitle {
+    margin-top: auto;
+  }
+
+  .cs_text_btn_style_1 {
+    &:hover {
+      color: var(--accent-color);
+      letter-spacing: 1px;
+    }
+  }
+
+  &:hover {
+    .cs_iconbox_icon {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.cs_iconbox_style_4 {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  transition: all 0.4s ease;
+
+  .cs_iconbox_header {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+  }
+
+  .cs_iconbox_icon {
+    width: 50px;
+    height: 50px;
+
+    img {
+      border-radius: 0;
+      filter: brightness(0) saturate(100%) invert(61%) sepia(5%) saturate(4327%) hue-rotate(358deg) brightness(111%) contrast(77%);
+      transition: all 0.4s ease;
+    }
+  }
+
+  .cs_iconbox_index {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--accent-color);
+    color: transparent;
+    transition: all 0.4s ease;
+  }
+
+  .cs_iconbox_title,
+  .cs_iconbox_subtitle {
+    transition: all 0.4s ease;
+  }
+
+  &:hover {
+    background-color: var(--accent-color);
+
+    .cs_iconbox_icon {
+      img {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(6deg) brightness(107%) contrast(101%);
+      }
+    }
+
+    .cs_iconbox_index {
+      -webkit-text-stroke-color: var(--white-color);
+    }
+
+    .cs_iconbox_title,
+    .cs_iconbox_subtitle {
+      color: var(--white-color);
+    }
+  }
+
+  @media (max-width:1199px) {
+    padding: 30px 20px;
+  }
+}
+
+.cs_iconbox_style_5 {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  gap: 20px;
+  transition: all 0.4s ease;
+
+  .cs_iconbox_header {
+    padding-right: 42px;
+    position: relative;
+  }
+
+  .cs_iconbox_icon {
+    width: 60px;
+    height: 60px;
+    flex: none;
+    padding: 10px;
+    background-color: var(--accent-color);
+    transition: all 0.4s ease;
+
+    img {
+      border-radius: 0;
+      transition: all 0.3s ease;
+    }
+  }
+
+  .cs_iconbox_index {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--accent-color);
+    color: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 0.3s ease;
+  }
+
+  .cs_iconbox_title,
+  .cs_iconbox_subtitle {
+    transition: all 0.4s ease;
+  }
+
+  &:hover {
+    background-color: var(--accent-color);
+
+    .cs_iconbox_icon {
+      background-color: var(--white-color);
+
+      img {
+        filter: brightness(0) saturate(100%) invert(61%) sepia(5%) saturate(4327%) hue-rotate(358deg) brightness(111%) contrast(77%);
+      }
+    }
+
+    .cs_iconbox_index {
+      -webkit-text-stroke-color: var(--white-color);
+    }
+
+    .cs_iconbox_title,
+    .cs_iconbox_subtitle {
+      color: var(--white-color);
+    }
+  }
+
+  @media (max-width:1199px) {
+    padding: 30px 20px;
+  }
+
+  @media (max-width:991px) {
+    padding: 30px 15px;
+
+    .cs_iconbox_icon {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+.cs_iconbox_style_6 {
+  width: 100%;
+  height: 100%;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.4s ease;
+
+  .cs_iconbox_icon {
+    width: 60px;
+    height: 60px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 0;
+      filter: brightness(0) saturate(100%) invert(67%) sepia(70%) saturate(301%) hue-rotate(358deg) brightness(86%) contrast(86%);
+    }
+  }
+
+  .cs_iconbox_title {
+    transition: inherit;
+
+    a:hover {
+      opacity: 0.75;
+    }
+  }
+
+  .cs_text_btn_style_1 {
+    margin-top: auto;
+
+    &:hover {
+      letter-spacing: 1px;
+    }
+  }
+
+  &:hover {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+
+    .cs_iconbox_title,
+    .cs_text_btn_style_1 {
+      color: var(--white-color);
+    }
+
+    .cs_iconbox_icon {
+      img {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(23deg) brightness(118%) contrast(118%);
+      }
+    }
+  }
+}
+
+.cs_iconbox_style_7 {
+  width: 100%;
+  height: 100%;
+  padding: 30px 20px;
+  display: flex;
+  gap: 16px;
+
+  .cs_iconbox_icon {
+    width: 70px;
+    height: 70px;
+    flex: none;
+    padding: 10px;
+
+    img {
+      border-radius: 0;
+    }
+  }
+
+  .cs_iconbox_subtitle {
+    word-break: break-all;
+  }
+
+  a {
+
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
+
+}
+
+.cs_iconbox_wrapper_1 {
+
+  .cs_iconbox_style_2 {
+    &:nth-child(even) {
+      height: 370px;
+    }
+
+    &:nth-child(odd) {
+      height: 520px;
+    }
+  }
+}

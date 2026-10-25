@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="pt-BR" class="no-js">
+<head>
+	<title>[NOME DO CLIENTE]</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<meta name="description" content="[NOME DO CLIENTE] — hospedagem com café da manhã. Reservas direto pelo WhatsApp.">
+
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600%7CEczar:600" rel="stylesheet">
+
+	<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+	<link rel="stylesheet" href="assets/css/bootstrap-reboot.css">
+	<link rel="stylesheet" href="assets/css/materialdesignicons.css">
+	<link rel="stylesheet" href="assets/css/zebra-datepicker.css">
+	<link rel="stylesheet" href="assets/css/fancybox.css">
+
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/style-animations.css">
+	<link rel="stylesheet" href="assets/css/style-custom.css">
+</head>
+<body class="home fullpage has-booking has-additional-menu-content">
+	<header id="identity">
+		<div class="logo">
+			<h1><a href="index.html" class="custom-logo-link text-logo" rel="home">[NOME DO CLIENTE]</a></h1>
+		</div>
+		<div class="languages">
+			<ul>
+				<li class="current-menu-item"><a href="https://wa.me/[WHATSAPP]" target="_blank" rel="noopener">WhatsApp</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<div id="site-menu">
+		<nav class="nav-menu">
+			<ul>
+				<li class="menu-item current-menu-item"><a href="index.html">Início</a></li>
+				<li class="menu-item"><a href="about.html">Sobre</a></li>
+				<li class="menu-item menu-item-has-children">
+					<a href="accomodations.html">Acomodações</a>
+					<a href="#" class="menu-expand mdi"></a>
+					<ul class="sub-menu">
+						<li class="menu-item"><a href="accomodations.html">Todas as acomodações</a></li>
+						<li class="menu-item"><a href="single-accomodation.html">Suíte Casal</a></li>
+						<li class="menu-item"><a href="booking.html">Pedir reserva</a></li>
+					</ul>
+				</li>
+				<li class="menu-item"><a href="dinning.html">Café da manhã</a></li>
+				<li class="menu-item"><a href="gallery.html">Fotos</a></li>
+				<li class="menu-item"><a href="contact.html">Contato</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="menu-overlay"></div>
+	<div class="site-menu-toggle">
+		<a href="#site-menu" class="mdi">
+			<span class="screen-reader-text">Abrir menu</span>
+		</a>
+	</div>
+
+	<div id="social-profiles">
+		<nav class="social-menu">
+			<ul>
+				<li class="menu-item"><a href="https://instagram.com/[INSTAGRAM]" target="_blank" rel="noopener"><span class="mdi"></span><span class="screen-reader-text">Instagram</span></a></li>
+				<li class="menu-item"><a href="https://facebook.com/[FACEBOOK]" target="_blank" rel="noopener"><span class="mdi"></span><span class="screen-reader-text">Facebook</span></a></li>
+				<li class="menu-item"><a href="https://wa.me/[WHATSAPP]" target="_blank" rel="noopener"><span class="mdi"></span><span class="screen-reader-text">WhatsApp</span></a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<!--
+		Topo em carrossel. Para um slide com vídeo do próprio cliente, colocar o arquivo
+		em assets/video/ (nunca linkar vídeo de servidor de terceiro) e usar:
+		<div class="item item-video owl-lazy light-hero-colors" data-src="assets/img/poster.jpg">
+			<video loop muted playsinline preload="none"><source type="video/mp4" src="assets/video/topo.mp4"></video>
+			<div class="text"><h2>Frase</h2></div>
+		</div>
+		"light-hero-colors" = foto escura, texto e logo ficam brancos.
+	-->
+	<section class="hero-media">
+		<div class="owl-carousel" data-expand-duration="800">
+			<div class="item owl-lazy" data-src="assets/img/hero-1.jpg">
+				<div class="text">
+					<h2>Descanso de verdade, no ritmo do interior</h2>
+				</div>
+			</div>
+			<div class="item owl-lazy light-hero-colors" data-src="assets/img/hero-2.jpg">
+				<div class="text">
+					<h2>Café coado, silêncio e uma boa noite de sono</h2>
+				</div>
+			</div>
+		</div>
+		<span class="mdi mdi-spin mdi-loading"></span>
+	</section>
+
+	<div class="additional-menu-content">
+		<h5>Fale com a gente:</h5>
+		<p class="painel-contato">[ENDEREÇO]<br>[TELEFONE]<br><a href="mailto:[EMAIL]">[EMAIL]</a></p>
+		<ul>
+			<li><a href="https://wa.me/[WHATSAPP]" target="_blank" rel="noopener">Reservar pelo WhatsApp</a></li>
+			<li><a href="accomodations.html">Acomodações</a></li>
+			<li><a href="gallery.html">Fotos da casa</a></li>
+			<li><a href="contact.html">Como chegar</a></li>
+		</ul>
+		<p><img src="assets/img/painel.jpg" alt=""></p>
+	</div>
+
+	<!-- Reserva rápida: não vai para booking.html, abre o WhatsApp com as datas (assets/js/wa-forms.js). -->
+	<div class="booking-form">
+		<form id="form-reserva-rapida" action="booking.html">
+			<div class="field field-date field-separator field-checkin">
+				<label>Entrada</label>
+				<input type="hidden" name="checkin" id="checkin" value="">
+				<span class="field-value"><span class="short">&mdash;</span><span class="long">&mdash;</span></span>
+				<a href="#" class="mdi mdi-calendar-today"></a>
+			</div>
+			<div class="field field-date field-separator field-checkout">
+				<label>Saída</label>
+				<input type="hidden" name="checkout" id="checkout" value="">
+				<span class="field-value"><span class="short">&mdash;</span><span class="long">&mdash;</span></span>
+				<a href="#" class="mdi mdi-calendar"></a>
+			</div>
+			<div class="field field-number field-separator field-adults">
+				<label>Adultos</label>
+				<input type="hidden" name="adults" id="adults" value="2">
+				<span class="field-value">2</span>
+				<a href="#" class="mdi"></a>
+				<div class="dropdown">
+					<ul class="values">
+						<li><a href="#" data-value="1">1</a></li>
+						<li class="selected"><a href="#" data-value="2">2</a></li>
+						<li><a href="#" data-value="3">3</a></li>
+						<li><a href="#" data-value="4">4</a></li>
+						<li><a href="#" data-value="5">5</a></li>
+						<li><a href="#" data-value="6">6</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="field field-number field-children">
+				<label>Crianças</label>
+				<input type="hidden" name="children" id="children" value="0">
+				<span class="field-value">0</span>
+				<a href="#" class="mdi"></a>
+				<div class="dropdown">
+					<ul class="values">
+						<li class="selected"><a href="#" data-value="0">0</a></li>
+						<li><a href="#" data-value="1">1</a></li>
+						<li><a href="#" data-value="2">2</a></li>
+						<li><a href="#" data-value="3">3</a></li>
+						<li><a href="#" data-value="4">4</a></li>
+						<li><a href="#" data-value="5">5</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<button type="submit" class="button-color">Reservar</button>
+		</form>
+	</div>
+
+	<script src="assets/js/jquery-3.3.1.min.js"></script>
+	<script src="assets/js/modernizr-custom.js"></script>
+	<script src="assets/js/owl-carousel.min.js"></script>
+	<script src="assets/js/fancybox.min.js"></script>
+	<script src="assets/js/zebra-datepicker.min.js"></script>
+	<script src="assets/js/wa-forms.js"></script>
+	<script src="assets/js/functions.js"></script>
+</body>
+</html>

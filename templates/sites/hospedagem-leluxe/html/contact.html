@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="pt-BR" class="no-js">
+<head>
+	<title>Contato &mdash; [NOME DO CLIENTE]</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<meta name="description" content="[NOME DO CLIENTE] — hospedagem com café da manhã. Reservas direto pelo WhatsApp.">
+
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600%7CEczar:600" rel="stylesheet">
+
+	<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+	<link rel="stylesheet" href="assets/css/bootstrap-reboot.css">
+	<link rel="stylesheet" href="assets/css/materialdesignicons.css">
+	<link rel="stylesheet" href="assets/css/zebra-datepicker.css">
+	<link rel="stylesheet" href="assets/css/fancybox.css">
+
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/style-animations.css">
+	<link rel="stylesheet" href="assets/css/style-custom.css">
+</head>
+<body class="contact has-additional-menu-content">
+	<header id="identity">
+		<div class="logo">
+			<h1><a href="index.html" class="custom-logo-link text-logo" rel="home">[NOME DO CLIENTE]</a></h1>
+		</div>
+		<div class="languages">
+			<ul>
+				<li class="current-menu-item"><a href="https://wa.me/[WHATSAPP]" target="_blank" rel="noopener">WhatsApp</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<div id="site-menu">
+		<nav class="nav-menu">
+			<ul>
+				<li class="menu-item"><a href="index.html">Início</a></li>
+				<li class="menu-item"><a href="about.html">Sobre</a></li>
+				<li class="menu-item menu-item-has-children">
+					<a href="accomodations.html">Acomodações</a>
+					<a href="#" class="menu-expand mdi"></a>
+					<ul class="sub-menu">
+						<li class="menu-item"><a href="accomodations.html">Todas as acomodações</a></li>
+						<li class="menu-item"><a href="single-accomodation.html">Suíte Casal</a></li>
+						<li class="menu-item"><a href="booking.html">Pedir reserva</a></li>
+					</ul>
+				</li>
+				<li class="menu-item"><a href="dinning.html">Café da manhã</a></li>
+				<li class="menu-item"><a href="gallery.html">Fotos</a></li>
+				<li class="menu-item current-menu-item"><a href="contact.html">Contato</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="menu-overlay"></div>
+	<div class="site-menu-toggle">
+		<a href="#site-menu" class="mdi">
+			<span class="screen-reader-text">Abrir menu</span>
+		</a>
+	</div>
+
+	<div id="social-profiles">
+		<nav class="social-menu">
+			<ul>
+				<li class="menu-item"><a href="https://instagram.com/[INSTAGRAM]" target="_blank" rel="noopener"><span class="mdi"></span><span class="screen-reader-text">Instagram</span></a></li>
+				<li class="menu-item"><a href="https://facebook.com/[FACEBOOK]" target="_blank" rel="noopener"><span class="mdi"></span><span class="screen-reader-text">Facebook</span></a></li>
+				<li class="menu-item"><a href="https://wa.me/[WHATSAPP]" target="_blank" rel="noopener"><span class="mdi"></span><span class="screen-reader-text">WhatsApp</span></a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<section class="hero-media">
+		<!-- Mapa sem API key: embed do Google Maps. Trocar [ENDEREÇO] pelo endereço do Maps (ex.: Rua X, 10, Cidade - UF). -->
+		<div id="gmap" class="map"><iframe src="https://maps.google.com/maps?q=[ENDEREÇO]&amp;z=15&amp;output=embed" title="Mapa" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+		<span class="overlay"></span>
+		<span class="mdi mdi-spin mdi-loading finished"></span>
+	</section>
+
+	<div class="content-wrap clearfix">
+		<div class="entry entry-page">
+			<h2 class="entry-title">Fale com a gente</h2>
+			<div class="entry-content">
+				<p>Dúvida sobre datas, valores ou como chegar? O jeito mais rápido é o WhatsApp &mdash; mas pode escrever aqui também, a mensagem já sai pronta no seu celular.</p>
+				<br>
+				<div class="grid-container">
+					<div class="grid-column">
+						<!-- Não envia e-mail: monta a mensagem e abre o WhatsApp (assets/js/wa-forms.js). -->
+						<form id="contact_form" action="contact.html">
+							<label for="name" class="screen-reader-text">Nome</label>
+							<input type="text" name="name" id="name" placeholder="Seu nome&hellip;" required>
+							<label for="phone" class="screen-reader-text">Telefone</label>
+							<input type="tel" name="phone" id="phone" placeholder="Seu telefone (opcional)&hellip;">
+							<label for="message" class="screen-reader-text">Mensagem</label>
+							<textarea name="message" id="message" cols="30" rows="10" placeholder="Sua mensagem&hellip;" required></textarea>
+							<button type="submit" class="button-filled button-color">Enviar pelo WhatsApp</button>
+						</form>
+					</div>
+					<div class="grid-column">
+						<h4 class="no-bottom">Endereço:</h4>
+						<p>[ENDEREÇO]<br><a href="https://www.google.com/maps/search/?api=1&amp;query=[ENDEREÇO]" target="_blank" rel="noopener">Abrir no Google Maps</a></p>
+
+						<h4 class="no-bottom">Telefone:</h4>
+						<p>[TELEFONE]<br><a href="https://wa.me/[WHATSAPP]" target="_blank" rel="noopener">Chamar no WhatsApp</a></p>
+
+						<h4 class="no-bottom">E-mail:</h4>
+						<p><a href="mailto:[EMAIL]">[EMAIL]</a><br><a href="https://[SITE]">[SITE]</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="entry-copyright">
+			<p>&copy; <span class="ano-atual">2026</span> <a href="index.html">[NOME DO CLIENTE]</a>. Todos os direitos reservados.</p>
+		</div>
+	</div>
+
+	<div class="additional-menu-content">
+		<h5>Fale com a gente:</h5>
+		<p class="painel-contato">[ENDEREÇO]<br>[TELEFONE]<br><a href="mailto:[EMAIL]">[EMAIL]</a></p>
+		<ul>
+			<li><a href="https://wa.me/[WHATSAPP]" target="_blank" rel="noopener">Reservar pelo WhatsApp</a></li>
+			<li><a href="accomodations.html">Acomodações</a></li>
+			<li><a href="gallery.html">Fotos da casa</a></li>
+			<li><a href="contact.html">Como chegar</a></li>
+		</ul>
+		<p><img src="assets/img/painel.jpg" alt=""></p>
+	</div>
+
+	<script src="assets/js/jquery-3.3.1.min.js"></script>
+	<script src="assets/js/modernizr-custom.js"></script>
+	<script src="assets/js/owl-carousel.min.js"></script>
+	<script src="assets/js/fancybox.min.js"></script>
+	<script src="assets/js/zebra-datepicker.min.js"></script>
+	<script src="assets/js/wa-forms.js"></script>
+	<script src="assets/js/functions.js"></script>
+</body>
+</html>

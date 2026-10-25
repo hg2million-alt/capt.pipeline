@@ -1,0 +1,989 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    dentisto
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+2. banner section / #banner
+3.  video section / #video
+4. experience section / #experience
+5. schedule section / #schedule
+6. info section/ #info
+7. get intouch section / #get intouch
+8.benefits section / #benefits
+9. book appointment section / #book appointment
+10. meet our team section / #meet our team
+11. customer review section  / #customer review-section
+12. blog section / #blog page
+13.  form section / #form
+14. time table section / #time table
+15. team professional page css / #team professional page
+16. form section / #form
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+# [Color codes]
+
+# --global--color-lightsea: #2d7076;
+# --global--color-orange: #ff6648;
+# --global--color-white: #ffffff;
+# --global--color-seagreen: #1bc9b6;
+# --global--color-blackyellow: #10110e;
+# --global--color-seablue: #0d5c63;
+# --global--color-lightgrey: #777777;
+# --global--color-grey: #545454;
+# --global--color-offwhite: #f3f7f7;
+# --global--color-dullwhite: #fffefe;
+# --global--color-dullgrey: #cbcbcb;
+# --global--color-seagreenish: #1bc8b5;
+# --global--color-darksea: #0e5053;
+# */
+/*------------------------------------------------------------------
+[Typography]
+
+Body copy:     'Jost', sans-serif;
+
+-------------------------------------------------------------------*/
+html{
+	scroll-behavior: smooth;
+}
+/* banner-section */
+.home-banner-section{
+    background-image: url("../images/home-banner-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-color: var(--global--color-offwhite);
+	height: 1030px;
+	overflow: hidden;
+}
+.home-banner-section h1{
+margin: 0 0 30px 0;
+}
+.home-banner-section h6{
+	color: var(--global--color-orange);
+}
+.home-banner-section p{
+	color: var(--global--color-dullwhite);
+	margin: 0 0 30px 0;
+}
+.senior-dentist{
+    background-color: var(--global--color-white);
+    width: 30%;
+    right: 70px;
+    bottom: 45px;
+    border-radius: 8px;
+    padding: 10px;
+}
+.home-banner-inner2 {
+    background: url(../images/banner-right-img.png) no-repeat center;
+}
+.senior-dentist p{
+	color: var(--global--color-blackyellow);
+}
+.banner-content {
+	padding: 152px 0;
+}
+/* experience contact section */
+.exp-contact-section{
+	background-color: var(--global--color-offwhite);
+}
+.helping-con,
+.get-intouch-section,
+.footer-section
+{
+	overflow: hidden;
+}
+.exp-contact-section h6{
+	color: var(--global--color-orange);
+}
+.exp-contact-section h3{
+	color: var(--global--color-blackyellow);
+}
+.exp-contact-section .suffix{
+top: -40px;
+color: var(--global--color-orange);
+font-size: 60px;
+}
+.exp-contact-section .exp-statistics{
+	color: var(--global--color-seablue);
+	font-size: 120px;
+}
+.expo-contact-inner h6{
+color: var(--global--color-blackyellow);
+text-transform: uppercase;
+}
+.expo-contact-inner .exp-outer-sub{
+color: var(--global--color-lightgrey);
+}
+.exp-contact-section p.var-1{
+color: var(--global--color-grey);
+}
+.exp-contact-section p.var-2{
+	color: var(--global--color-lightgrey);
+}
+.contact-banner{
+	background-image: url(../images/contact-banner.png) !important;
+}
+.dentists-banner{
+	background-image: url(../images/dentists-banner.png) !important;
+}
+.home-angle-double-down{
+    background-color: var(--global--color-seagreen);
+    top: -24px;
+    right: 50%;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-angle-double-down i{
+		font-size: 20px;
+		line-height: 20px;
+}
+	/* schedule-section */
+.schedule-inner-sec{
+	overflow: hidden;
+}
+.schedule-section h6{
+color: var(--global--color-orange);
+}
+.schedule-section h3{
+	color: var(--global--color-blackyellow);
+}
+.schedule-inner-sec p{
+	color: var(--global--color-lightgrey);
+}
+.schedule-inner-sec h6{
+color: var(--global--color-blackyellow);
+min-height: 50px;
+}
+.schedule-section img{
+	filter: grayscale(100%);
+	transition-duration: .3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+}
+.schedule-card:hover{
+	box-shadow: 0px 14px 50px 0px rgb(0 0 0 / 10%);
+}
+.schedule-card:hover img{
+	transform: translateY(-8px);
+}
+.schedule-card:hover h6 {
+	color: var(--global--color-orange);
+}
+.schedule-card:hover img {
+	filter: grayscale(0);
+}
+.schedule-card:hover .schedule-no {
+	background-color: var(--global--color-orange);
+}
+.schedule-no {
+    position: absolute;
+    background-color: var(--global--color-dullgrey);
+    left: 10px;
+    top: 8px;
+    padding: 12px;
+    line-height: 16px;
+    border-radius: 50%;
+}
+.schedule-card{
+	position: relative;
+}
+/* info section */
+.home-info-section{
+	background-image: url("../images/home-info-banner.jpg");
+    background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+.home-info-section h6{
+	color: var(--global--color-orange);
+}
+.underline-text{
+	text-decoration: underline 2px;
+}
+.info-boxes li{
+	background-color: var(--global--color-white);
+}
+.info-boxes .suffix {
+    font-size: 26px;
+    top: -27px;
+	color: var(--global--color-seablue);
+}
+.info-boxes .info-inn2 {
+    padding-right: 0;
+	color: var(--global--color-grey);
+}
+.info-boxes .info-count{
+	font-size: 40px;
+	color: var(--global--color-seablue);
+}
+.info-boxes ul li:hover .info-count{
+	color: var(--global--color-orange);
+}
+.info-boxes ul li:hover .suffix{
+	color: var(--global--color-orange);
+}
+.info-boxes ul li {
+    padding: 25px 70px 25px 40px;
+    margin: 0 26px 30px 0;
+}
+.info-boxes ul li.last-li{
+    padding: 25px 78px 25px 40px;
+}
+.home-info-sec1 .underline-text{
+	text-transform: uppercase;
+}
+.info-boxes ul li:after{
+	content: "";
+    width: 70px;
+    height: 4px;
+    background: var(--global--color-seagreen);
+    position: absolute;
+    bottom: 0;
+}
+.main-nav .lab:hover{
+	background:var(--global--color-orange);
+	color: #fff;
+}
+.info-boxes ul li:hover:after{
+	background: var(--global--color-orange);
+}
+/* get intouch section */
+.get-intouch-section{
+	background-color: var(--global--color-offwhite);
+}
+.get-intouch-section p{
+color: var(--global--color-lightgrey);
+}
+.get-intouch-section h6{
+color: var(--global--color-orange);
+}
+.get-intouch-section li{
+font-size: 18px;
+font-weight: 700;
+color: var(--global--color-grey);
+line-height: 30px;
+}
+.get-intouch-section ::marker{
+color: var(--global--color-orange);
+font-size: 27px;
+}
+/* benefits section */
+.benefits-section {
+    background-color:var(--global--color-seagreenish);
+    margin-top: -120px !important;
+    z-index: 1;
+	padding-right: 92px;
+	padding-left: 92px;
+	border-top: 10px solid #0d5d63;
+}
+.benefits-section li{
+    display: inline-block;
+    list-style: none;
+	padding: 0 14px;
+}
+.benefits-section li:first-child{
+    padding-left: 0;
+}
+.benefits-section li:last-child{
+    padding-right: 0;
+}
+.benefit-icons{
+	background-color: var(--global--color-darksea);
+    padding: 50px;
+	border-radius: 50%;
+	border: 5px solid transparent;
+}
+.benefits-section ul li:hover .benefit-icons{
+	background-color: var(--global--color-white);
+    color: var(--global--color-darksea);
+    box-shadow: 0 0 10px 0 #0d5c63;
+    border: 5px solid #31ccbc;
+} 
+.benefit-icons img{
+	transition-duration: .3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+}
+.benefits-text{
+	color: var(--global--color-darksea);
+}
+.benefits-section ul li:hover img{
+	filter: invert(21%) sepia(11%) saturate(5316%) hue-rotate(142deg) brightness(101%) contrast(89%);
+	transform: translateY(-8px);
+}
+.benefits-section ul li:hover .benefits-text {
+	color: #fff !important;
+}
+
+/* book appointment section */
+.book-appointment-section{
+	background-image: url("../images/bookappointment-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+	margin-top: -524px;
+	overflow: hidden;
+}
+.book-appointment-section h6{
+	color: var(--global--color-orange);
+}
+.book-appointment-section .form-inner-wrapper{
+width: 47%;
+margin-bottom: 30px;
+}
+.book-appointment-section .form-inner-wrapper select, .book-appointment-section .form-inner-wrapper input{
+height: 70px;
+padding: 20px;
+color: var(--global--color-grey);
+}
+.book-appointment-section .form-inner-wrapper ::placeholder{
+color: var(--global--color-grey);
+}
+.book-appointment-section .orange-box{
+background-color: var(--global--color-orange);
+top: -39px;
+left: 30px;
+padding: 8px 18px;
+}
+.book-appointment-section .form-inner-wrapper2{
+width: 30.5%;
+}
+.book-appointment-section .form-inner-wrapper2 .form-control{
+border: none;
+border-radius: 0;
+}
+.book-appointment-section .form-inner-wrapper2 input{
+	height: 70px;
+	padding: 20px;
+	color: var(--global--color-grey);
+}
+/* meet our team section */
+.meet-team-section h3{
+	color: var(--global--color-blackyellow);
+}
+.meet-team-section h6{
+	color: var(--global--color-orange);
+}
+.meet-team-section .inner-wrapper1{
+border: 1px solid #eeeeee;
+border-top-left-radius: 25px;
+border-bottom-right-radius: 25px;
+padding: 30px 30px 35px;
+transition-duration: .3s;
+transition-property: transform;
+transition-timing-function: ease-out;
+}
+.meet-team-section .inner-wrapper1:hover{
+	transform: translateY(-20px);
+}
+/* .meet-team-section .inner-wrapper1 img{
+margin: 0 0 34px 0;
+} */
+.meet-team-section .inner-wrapper1 h6 a{
+color: var(--global--color-blackyellow);
+text-decoration: none;
+}
+.inner-wrapper1 span.sub-p{
+color: var(--global--color-lightgrey);
+line-height: 26px;
+}
+.inner-wrapper1 ul li a{
+width: 32px;
+height: 32px;
+border-radius: 50%;
+align-items: center;
+justify-content: center;
+background-color: var(--global--color-dullgrey);
+display: flex;
+text-decoration: none;
+transition-duration: .3s;
+transition-property: transform;
+transition-timing-function: ease-out;
+}
+.inner-wrapper1 ul li a:hover{
+	transform: translateY(-8px);
+}
+
+.inner-wrapper1 ul li i{
+font-size: 16px;
+color: var(--global--color-white);
+}
+.inner-wrapper1:hover{
+	box-shadow: 0px 14px 50px 0px rgb(0 0 0 / 10%);
+}
+.inner-wrapper1:hover h6 a{
+	color: var(--global--color-orange);
+}
+.inner-wrapper1:hover figure{
+	position: relative;
+	display: inline-block;
+}
+.inner-wrapper1:hover figure:after {
+    content: "";
+    width: 100%;
+    height: 270px;
+    bottom: -22px;
+    position: absolute;
+    left: 0;
+	background: url(../images/overlay-img-hover.png) no-repeat center;
+
+}
+.inner-wrapper1 ul li a:hover{
+	background-color: var(--global--color-orange);
+}
+.inner-wrapper1:hover:after,
+.schedule-card:hover:after
+{
+	content: "";
+    width: 70px;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    background: var(--global--color-orange);
+    left: 50%;
+    transform: translateX(-50%);
+}
+.inner-wrapper1 h6{
+	margin-top: 34px;
+}
+/* customer review section */
+.customer-review-section{
+	background-image: url("../images/home-customer-review-bg.jpg");
+    background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+.customer-review-section h6{
+color: var(--global--color-orange);
+margin: 0 0 25px 0;
+}
+.customer-review-section h3{
+margin: 0 0 -60px 0;
+}
+.carousel-item p{
+	font-size: 20px;
+}
+.customer-review-wrap p{
+font-size: 16px;
+}
+.customer-review-wrap span.special{
+font-size: 40px;
+color: var(--global--color-orange);
+}
+.customer-review-section .carousel-indicators{
+	top: 36%;
+	left: 9px;
+	right: inherit;
+}
+.auther-name{
+	margin-top: 12px;
+}
+.auther-name span{	
+	font-size: 16px;
+    color: #fff;
+    text-indent: initial;
+    position: relative;
+    top: 132px;
+    left: -185px;
+}
+.blog-post .row:first-child{
+	margin-bottom: 25px;
+}
+.customer-review-section .carousel-indicators .active .auther-name span:first-child{
+	color: var(--global--color-orange);
+}
+.customer-review-section .carousel-indicators li{
+	padding: 0 6px;
+}
+.customer-review-section .carousel-indicators li figure:after {
+    content: "";
+    background: url(../images/comma-img.png) no-repeat top right;
+    position: absolute;
+    top: -11px;
+    z-index: 99999;
+    right: initial;
+    width: 30px;
+    margin-left: -42px;
+    height: 30px;
+    left: -46px;
+}
+.customer-review-section .carousel-control-next,
+.customer-review-section .carousel-control-prev {
+    position: absolute;
+    top: 268px;
+	bottom: 0;
+	opacity: 1;
+	width: auto;
+	font-size: 14px;
+}
+.customer-review-section .carousel-control-next:hover,
+.customer-review-section .carousel-control-prev:hover{
+	color: var(--global--color-orange);
+}
+.customer-review-section .carousel-control-prev {
+    left: 84%;
+}
+.customer-review-section .carousel-control-prev span{
+	padding-left: 20px;
+}
+.customer-review-section .carousel-control-next span{
+	padding-right: 3px;
+}
+.customer-review-section .carousel-control-next {
+    right: 0;
+}
+.prev-title::after {
+    content: "";
+    width: 22px;
+    height: 3px;
+    position: absolute;
+    top: 10px;
+    left: 117%;
+    background: #3d7d82;
+}
+
+ .customer-review-section .carousel-indicators li figure:after{
+	display: none;
+}
+.customer-review-section .carousel-indicators .active figure:after{
+	display: block;
+}
+.customer-review-section .carousel-control-prev-icon,
+.customer-review-section .carousel-control-next-icon{
+	background: transparent;
+}
+.customer-review-wrap span{
+	position: absolute;
+}
+.customer-review-wrap p{
+	margin-left: 80px;
+	margin-bottom: 0;
+}
+
+/* blog section */
+.blog-section{
+background-color: var(--global--color-offwhite);
+overflow: hidden;
+}
+.blog-section .blog-wrapper1{
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	padding: 30px 30px 35px;
+	background-color: var(--global--color-white);
+	transition-duration: .3s;
+    transition-property: transform;
+	transition-timing-function: ease-out;
+}
+.blog-section .blog-wrapper1:hover{
+	transform: translateY(-20px);
+}
+.blog-section h6{
+color: var(--global--color-orange);
+margin: 0 0 27px 0;
+}
+.blog-wrapper1 span.sub-head{
+color: var(--global--color-lightgrey);
+line-height: 26px;
+}
+.blog-wrapper1 span.sub-p{
+color: var(--global--color-lightgrey);
+}
+.blog-wrapper1 p{
+color: var(--global--color-blackyellow);
+}
+.blog-wrapper1 img{
+margin: 0 0 34px 0;
+}
+.blog-link a{
+color: var(--global--color-grey);
+}
+.blog-link a:hover{
+    color: var(--global--color-orange);
+    text-decoration: none;
+}
+.seablue-box{
+	background-color: var(--global--color-seagreen);
+	bottom: 26px;
+	left: 8px;
+	padding: 6px 14px;
+	border-top-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	}
+.blog-wrapper1:hover{
+	transition: ease-in-out 0.6s;
+	box-shadow: 0px 14px 50px 0px rgb(0 0 0 / 10%);
+}
+.blog-wrapper1:hover .seablue-box{
+	background-color: var(--global--color-orange);
+}
+.blog-wrapper1:hover .blog-link a{
+	color: var(--global--color-orange);
+    text-decoration: none;
+}
+/* time table section */
+.time-table-section{
+	background-image: url("../images/time-table-banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+	height: 486px;
+}
+.calender-img img{
+margin: 0 0 36px 0;
+}
+.time-table-section .orange-head{
+color: var(--global--color-orange);
+text-decoration: underline;
+}
+.cards-section{
+	background-color: var(--global--color-white);
+padding: 65px 0 49px ;
+}
+.cards-section ul li{
+margin: 0 42px 0 42px;
+transition-duration: .3s;
+transition-property: transform;
+transition-timing-function: ease-out;
+}
+.cards-section ul li:hover{
+	transform: translateY(-8px);
+}
+.cards-section ul li:first-child{
+	margin: 0 42px 0 0;
+}
+.cards-section ul li:last-child{
+	margin: 0 0 0 42px;
+}
+.calender-img img{
+	transition-duration: .3s;
+transition-property: transform;
+transition-timing-function: ease-out;
+}
+.calender-img img:hover{
+	transform: translateY(-8px);
+}
+.quote-icon i{
+color: var(--global--color-darksea);
+font-size: 80px;
+}
+.carousel-indicators li{
+	width: 150px;
+	height: 100px;
+	border: none;
+	background-color: transparent;
+	position: relative;
+}
+.carousel-indicators li img{
+    margin-right: 3px;
+    margin-left: 3px;
+	position: absolute;
+    left: -185px;
+}
+.dropdown-menu{
+    padding: 15px;
+	min-width: 12%;
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+	font-size: 16px;
+}
+.hover12 figure img {
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+
+}
+.hover12 figure:hover img {
+	color: var(--global--color-orange);
+}
+/* video section fixes */
+.youtube-icon-img {
+    bottom: 72px;
+	left: 28px;
+}
+
+.videoCoverImage span{
+    position: relative;
+    top: -64px;
+    left: 80px;
+    line-height: 20px;
+}
+
+/* services page */
+/* banner section */
+.generic-banner{
+    background-image: url("../images/services-banner-sec-img.jpg");
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 494px;
+}
+.generic-inner-banner-con{
+	padding: 144px 0;
+}
+.generic-banner h2{
+text-transform: uppercase;
+}
+.sub-sections a i{
+color: var(--global--color-white);
+margin-right: 6px;
+}
+.generic-banner a:hover{
+color: var(--global--color-orange) !important;
+}
+.generic-banner a:hover span,
+.sub-sections a:hover i
+{
+color: var(--global--color-orange) !important;
+}
+a span.sub-links{
+text-transform: uppercase;
+}
+.sub-sections a{
+	text-decoration: none;
+}
+/***********service schedule section *************/
+.service-schedule-con .schedule-card{
+	padding-left: 38px;
+}
+.doctor-information-con{
+	padding-top: 82px;
+	overflow: hidden;
+}
+.doctor-information-lft-con h6 {
+    color: var(--global--color-orange);
+    margin-bottom: 26px;
+}
+.doctor-information-lft-con h3 {
+    color: var(--global--color-blackyellow);
+    margin-bottom: 25px;
+}
+.doctor-information-lft-con p {
+    color: var(--global--color-lightgrey);
+    margin-bottom: 24px;
+}
+.doctor-information-lft-con p:nth-child(4){
+	margin-bottom: 30px;
+}
+.doctor-timing-con{
+	background: #fe6d51;
+	padding: 40px 28px 35px;
+	color: #fff;
+	width: 350px;
+	height: 268px;
+	border-radius: 25px 0 0 0;
+}
+.doctor-timing-con{
+    position: absolute;
+    bottom: 0;
+    left: -80px;
+}
+.doctor-timing-con h6{
+	margin-bottom: 35px;
+}
+.doctor-timing-con table tbody tr td{
+	margin-bottom: 4px;
+	font-size: 16px;
+	position: relative;
+	vertical-align: middle;
+}
+.doctor-timing-con table tbody tr td:first-child:after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 62px;
+    border-bottom: 2px dotted #ffff;
+    width: 100%;
+}
+.doctor-timing-con table tbody tr:nth-child(3) td:first-child:after{
+	width: 85%;
+	left: 81px;
+}
+/*********dental-appliances-banner *********/
+.dental-appliances-banner{
+	background-image: url(../images/dental-appliances-banner.png);
+}
+.doctor-img .row .col-lg-6:nth-child(2) figure img {
+    position: relative;
+    right: -15px;
+}
+.doctor-img .row .col-lg-6:last-child figure img {
+	top: -8px;
+	position: relative;
+}
+.doctor-img figure {
+    margin-bottom: 15px;
+}
+.success-list-item i{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	color: #fff;
+	background: var(--global--color-seagreenish);
+	position: absolute;
+	left: 0;
+}
+.success-list-item-content h6{
+	color: #ffffff;
+	margin-bottom: 16px;
+}
+.success-list-item-content p{
+	color: #ffffff;
+	margin-bottom: 48px;
+}
+.success-list-item-content {
+    margin-left: 80px;
+}
+.invisible-txt{
+	margin-bottom: 24px !important;
+}
+.dental-appliances-static-con h3{
+	margin-bottom: 70px;
+}
+.about-information-con{
+	background-image: url(../images/home-info-banner.jpg);
+}
+.experience-con{
+	margin-top: 95px;
+}
+.experience-con h6{
+	color: var(--global--color-blackyellow);
+}
+.experience-con p{
+	color: var(--global--color-lightgrey);
+}
+.mission-box,
+.prices-box{
+	background: var(--global--color-seagreenish);
+	padding: 39px 30px 43px;
+	border-radius: 30px 0 30px 0;
+	margin-bottom: 28px;
+}
+.mission-box i,
+.prices-box i
+{
+	background: var(--global--color-darksea);
+	left: auto;
+}
+.prices-box{
+	background: var(--global--color-darksea);
+	
+}
+.prices-box i{
+	background: var(--global--color-seagreenish);
+}
+.auther-signature-con h6{
+	color: #fff;
+	margin-bottom: 10px;
+	font-family: Signatie;
+}
+.auther-signature-con{
+	margin-top: 52px;
+}
+.auther-signature-con span{
+	font-size: 16px;
+	color: var(--global--color-seagreenish);
+}
+.auther-signature-con h6:after{
+	content: "";
+	width: 60px;
+	height: 4px;
+	background: #1bc8b5;
+	position: absolute;
+	top: -22px;
+	left: 0;
+}
+.about-banner{
+	background-image: url(../images/about-banner-img.png);
+}
+.dental-appliances-static-con{
+	background-image: url(../images/static-banner.jpg);
+}
+.book-appointment-section textarea{
+	resize: none;
+	height: 150px;
+	padding: 20px;
+}
+.comment-box{
+	width: 96% !important;
+	margin-bottom: 0 !important;
+}
+.map-con{
+	background: #f3f7f7;
+	overflow: hidden;
+}
+.map-con iframe{
+    box-shadow: 1px 1px 4px rgb(0 0 0 / 40%);
+    width: 100%;
+    height: 500px;
+    border: 0;
+}
+.meet-team-inner-wrap .row:first-child{
+	margin-bottom: 30px;
+}
+
+/*******team-professional-con*********/
+.skills{
+    background-color:#ddd;
+    width:100%;
+    height:8px;
+    position:relative;
+    margin:62px 0;
+    border-radius: 8px;
+  }
+  .title-bar{
+    position:absolute;
+    top: 0;
+  }
+  .skills span {
+    float: right;
+    margin-top: -24px;
+    margin-right: 5px;
+    border-radius: 6px;
+  }  
+  .skillbar{
+    background-color:var(--global--color-orange);
+    width:0px;
+    height:8px;
+    border-radius: 8px;
+  }
+  .team-professional-con h2{
+      margin-bottom: 38px;
+  }
+  .title-bar h5 {
+    position: relative;
+    top: -24px;
+    color: var(--primary--color);
+    letter-spacing: normal;
+}
+.team-professional-con ul li{
+    font-size: 18px;
+    line-height: 34px;
+	color: var(--global--color-lightgrey);
+	position: relative;
+	margin-bottom: 10px;
+}
+.team-professional-con ul li i{
+	color: var(--global--color-orange);
+	margin-right: 5px;
+}
+.team-member-detail h5,
+.team-contanct span:first-child,
+.team-contanct span:nth-child(4){
+	color: var(--global--color-orange);
+}
+.team-detail-con img{
+	border-radius: 30px 0;
+}
+.team-detail-con,
+.team-professional-con{
+	overflow: hidden;
+}
+/*******team-professional-con*********/
+.generic-banner h2{
+	text-transform: uppercase;
+}

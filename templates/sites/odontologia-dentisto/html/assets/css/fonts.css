@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.jost-light{
+    font-weight: 300;
+	font-family: 'Jost', sans-serif;
+}
+.jost-regular{
+    font-weight: 400;
+	font-family: 'Jost', sans-serif;
+}
+.jost-medium{
+    font-weight: 500;
+	font-family: 'Jost', sans-serif;
+}
+.jost-semibold{
+	font-weight: 600;
+	font-family: 'Jost', sans-serif;
+}
+.jost-bold{
+    font-weight: 700;
+	font-family: 'Jost', sans-serif;
+}
+@font-face{
+	font-family: Signatie;
+	src: url(../font/Signatie.ttf);
+}
+h1, h2, h3, h4, h5, h6, a, p, body {
+	font-family: 'Jost', sans-serif;
+}
+p{
+    font-size: 18px;
+}
+.sub-p{
+	font-size: 16px;
+}
+.sub-head{
+font-size: 14px;
+}
+h1{
+    font-size: 60px;
+}
+h2{
+    font-size: 50px;
+}
+h3{
+	font-size: 40px;
+	line-height: 50px;
+}
+h4{
+    font-size: px;
+}
+h5{
+    font-size: px;
+}
+h6{
+    font-size: 20px;
+}
+/* Font Size */
+
+.font_size_18 {font-size: 18px}
+.font_size_120 {font-size: 120px}
+
+/*Font weight*/
+.font_weight_300 {font-weight: 300}
+.font_weight_400 {font-weight: 400}
+.font_weight_500 {font-weight: 500}
+.font_weight_600 {font-weight: 600}
+.font_weight_700 {font-weight: 700}
+
+
+@media only screen and (max-width:1440px){
+
+}
+@media only screen and (max-width:1199px){
+	h1{
+		font-size: 55px;
+	}
+	h2 {
+		font-size: 40px;
+	}
+	h3 {
+		font-size: 32px;
+	}
+}
+@media only screen and (max-width: 991px) {
+	h1{
+		font-size: 48px;
+	}
+	h3{
+		font-size: 32px;
+		line-height: 40px;
+	}
+	h2 {
+		font-size: 35px;
+	}
+}
+@media screen and (max-width:767px){
+	h1{
+		font-size: 40px;
+	}
+	h3{
+		font-size: 28px;
+		line-height: 32px;
+
+	}
+	h2 {
+		font-size: 30px;
+	}
+	p {
+		line-height: 20px;
+	}
+}
+@media screen and (max-width: 575px){
+	h1{
+		font-size: 30px;
+	}
+	h3{
+		font-size: 22px;
+		line-height: 28px;
+	}
+	h6 {
+		font-size: 18px;
+		line-height: 18px;
+	}
+	h2 {
+		font-size: 26px;
+		line-height: 30px;
+	}
+}

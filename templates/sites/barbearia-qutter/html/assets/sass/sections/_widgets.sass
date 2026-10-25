@@ -1,0 +1,219 @@
+/*******************************************************/
+/***************** 19. Sidebar Widgets *****************/
+/*******************************************************/
+.widget
+    padding: 50px 40px
+    &:not(:last-child)
+        margin-bottom: 30px
+    
+.widget-search
+    form
+        display: flex
+        overflow: hidden
+        border-radius: 5px
+        background: $lighter-color-two
+        input
+            +gapTB(padding, 12px)
+            background: transparent
+            &::placeholder
+                font-size: 16px
+                font-weight: 400
+                font-family: $base-font
+        button
+            flex: none
+            width: 60px
+            color: white
+            background: $primary-color
+    
+.widget-menu
+    ul
+        li
+            &:not(:last-child)
+                margin-bottom: 10px
+            a
+                width: 100%
+                padding: 8px
+                font-size: 18px
+                @extend %heading
+                border-radius: 5px
+                padding-left: 30px
+                +flexcenter(space-between)
+                background: transparentize($black-color, 0.93)
+                +res-bl(xs)
+                    font-size: 16px
+                    padding-left: 20px
+                i
+                    +size(42px)
+                    transition: 0.5s
+                    background: white
+                    border-radius: 5px
+                    text-align: center
+                    line-height: 42px
+                &:hover,
+                &.active
+                    color: white
+                    background: $primary-color
+                    i
+                        color: $primary-color
+  
+.widget-news
+    ul
+        li
+            display: flex
+            align-items: center
+            &:not(:last-child)
+                margin-bottom: 30px
+                padding-bottom: 30px
+                border-bottom: 1px solid $border-color
+            .image
+                flex: none
+                max-width: 80px
+                margin-right: 25px
+                +res-bt(lg, xl)
+                    max-width: 70px
+                    margin-right: 15px
+                +res-bl(xs)
+                    max-width: 70px
+                    margin-right: 15px
+            .content
+                margin-top: -5px
+                .date
+                    font-size: 15px
+                    text-transform: uppercase
+                    i
+                        margin-right: 5px
+                h6
+                    font-size: 18px
+                    margin-bottom: 0
+                    line-height: 1.5
+                    +res-bt(lg, xl)
+                        font-size: 16px
+                    +res-bl(xs)
+                        font-size: 15px
+            
+.widget-form
+    background: $primary-color
+    .widget-title
+        color: white
+    .form-group
+        margin-bottom: 10px
+        label
+            top: 10px
+            right: 22px
+        .form-control
+            font-size: 16px
+            +gapTB(padding, 13px)
+    .theme-btn
+        padding: 8px 20px
+
+.widget-products
+    ul
+        padding-top: 5px
+        li
+            display: flex
+            align-items: center
+            &:not(:last-child)
+                margin-bottom: 20px
+            .image
+                flex: none
+                width: 68px
+                height: 68px
+                +flexcenter(center)
+                margin-right: 20px
+                background: $lighter-color-two
+            .content
+                h5
+                    font-size: 18px
+                    margin-bottom: 0
+
+.tag-coulds
+    display: flex
+    flex-wrap: wrap
+    margin-right: -10px
+    margin-bottom: -10px
+    a
+        font-size: 14px
+        padding: 0 14px
+        border-radius: 5px
+        margin: 0 10px 10px 0
+        background: $lighter-color-two
+        &:hover
+            color: white
+            background: $primary-color
+
+.widget-btns
+    background: transparentize($black-color, 0.93)
+    .theme-btn
+        width: 100%
+        +gapLR(padding, 20px)
+        i
+            font-size: 16px
+            
+.price-filter-wrap
+    .price
+        display: flex
+        margin-bottom: 10px
+        align-items: center
+        color: $heading-color
+        b
+            font-weight: 500
+            margin-right: 5px
+        input
+            padding: 0
+            font-size: 16px
+            font-weight: 500
+    .theme-btn
+        margin-top: 30px
+        padding: 4px 42px
+        
+.ui-widget.ui-widget-content
+    height: 3px
+    border: none
+    cursor: pointer
+    background: transparentize($primary-color, 0.8)
+.ui-widget-header
+    background: $primary-color
+.ui-slider .ui-slider-handle
+    +size(15px)
+    top: -6px
+    border: none
+    cursor: e-resize
+    border-radius: 50%
+    background: $primary-color
+        
+/* Service Sidebar */
+.service-sidebar
+    +res-ab(xl)
+        margin-left: 30px
+    .widget
+        padding: 40px 30px
+        border-radius: 5px
+        +res-bl(xs)
+            +gapLR(padding, 25px)
+    .widget-title
+        margin: -5px 0 25px
+    .widget-menu
+        padding: 0 
+        
+/* Shop Sidebar */
+.shop-sidebar
+    .widget
+        padding: 40px
+        background: white
+    .widget-title
+        margin-bottom: 20px
+        text-transform: uppercase
+        
+/* Blog Sidebar */
+.blog-sidebar
+    .widget
+        background: white
+        box-shadow: 10px 0 60px rgba(58, 58, 58, 0.1)
+        +res-bt(lg, xl)
+            +gapLR(padding, 25px)
+        +res-bl(xs)
+            +gapLR(padding, 25px)
+    .widget-title
+        margin-top: -5px
+        margin-bottom: 25px
+        text-transform: uppercase

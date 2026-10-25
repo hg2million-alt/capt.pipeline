@@ -1,0 +1,100 @@
+/*******************************************************/
+/****************** 14. Contact Area *******************/
+/*******************************************************/
+.contact-form-wrap
+    display: flex
+    .image
+        width: 20%
+        flex: none
+        background-size: cover
+        background-position: center
+        +res-bl(md)
+            display: none
+    form
+        padding: 70px 50px 80px
+        +res-bl(ms)
+            +gapLR(padding, 25px)
+        +res-bl(xs)
+            +gapLR(padding, 15px)
+            label
+                display: none
+        .theme-btn
+            background: $primary-color
+            
+.contact-shapes
+    img
+        z-index: -1
+        max-width: 20%
+        position: absolute
+    .shape-one
+        left: 5%
+        top: 30%
+        animation: down-up-two 10s infinite
+    .shape-two
+        top: 15%
+        right: 5%
+        animation: down-up-one 10s infinite
+        
+/* Contact Form Two */
+.contact-form-two-wrap
+    margin-bottom: -120px
+    transform: translateY(-120px)
+    .container
+        max-width: 1320px
+        
+.contact-form-two
+    border-radius: 7px
+    padding: 50px 60px 30px
+    +res-bl(ms)
+        +gapLR(padding, 25px)
+    .theme-btn
+        +gapLR(padding, 25px)
+        background: $primary-color
+        
+/* Contact Page */
+.contact-info-part
+    border: 1px solid $border-color
+    +res-bl(xs)
+        +gapLR(padding, 25px)
+.contact-info-item
+    +res-ab(xs)
+        display: flex
+    &:not(:last-child)
+        margin-bottom: 25px
+    .icon
+        flex: none
+        width: 35px
+        font-size: 33px
+        color: $primary-color
+        margin: 5px 15px 15px 0
+        
+.contact-page-form
+    form
+        padding: 60px 50px
+        border: 1px solid $border-color
+        +res-bl(xs)
+            +gapLR(padding, 25px)
+        .form-control
+            border-radius: 0
+            padding: 0 0 10px
+            margin-bottom: 33px
+            border-bottom: 2px solid $border-color
+            &:focus
+                border-color: $heading-color
+            
+.has-error
+    .help-block.with-errors
+        margin-top: -30px
+        color: red
+#msgSubmit
+    font-size: 25px
+    margin-bottom: 0
+    &.text-danger
+        margin-top: 10px
+        
+.contact-page-map
+    margin-bottom: -15px
+    iframe
+        height: 720px
+        +res-bl(lg)
+            height: 500px

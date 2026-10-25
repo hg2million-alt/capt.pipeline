@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <!-- Primary Meta Tags -->
+    <title>[NOME DO CLIENTE] - Architecture & Interior Design HTML Website Template</title>
+    <meta name="description" content="[NOME DO CLIENTE] - Architecture & Interior Design HTML Website Template. Professional and modern design solutions for residential and commercial spaces.">
+    <meta name="keywords" content="architecture, interior design, architectural template, design studio, modern architecture, interior design template, [NOME DO CLIENTE]">
+    <meta name="author" content="[NOME DO CLIENTE]">
+    <!-- Favicon and App Icons -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.webp">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.webp">
+    <!-- Deferred CSS Loading -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/odometer.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <!-- Start Preloader -->
+    <div class="cs_preloader" id="preloader">
+      <div class="cs_preloader_container">
+        <div class="cs_preloader_content">
+          <div class="cs_progressbar_wrapper">
+            <div class="cs_progressbar"></div>
+          </div>
+          <div class="cs_loading_percentage"></div>
+          <div class="cs_loading_text cs_white_color">Loading</div>
+        </div>
+      </div>
+    </div>
+    <!-- End Preloader -->
+    <!-- Start Header Section -->
+    <header class="cs_site_header cs_style_1 cs_sticky_header" aria-label="Main header">
+      <div class="cs_main_header">
+        <div class="container-fluid">
+          <div class="cs_main_header_in">
+            <div class="cs_main_header_left">
+              <a href="index.html" aria-label="Home page" class="cs_site_brand">
+              <img src="assets/img/logo.svg" alt="Brand logo">
+              </a>
+            </div>
+            <div class="cs_main_header_center">
+              <nav class="cs_nav" aria-label="Main navigation">
+                <div class="cs_nav_list_wrapper">
+                  <ul class="cs_nav_list cs_mp_0">
+                    <li class="menu-item-has-children">
+                     <a href="index.html" aria-label="Home">Home</a>
+                      <ul class="cs_dropdown_list cs_mp_0" aria-label="Home demo submenu">
+                        <li><a href="index.html" aria-label="Home V1">Home V1</a></li>
+                        <li><a href="home-v2.html" aria-label="Home V2">Home V2</a></li>
+                        <li><a href="home-v3.html" aria-label="Home V3">Home V3</a></li>
+                        <li><a href="home-v4.html" aria-label="Home V4">Home V4</a></li>
+                        <li><a href="home-v5.html" aria-label="Home V5">Home V5</a></li>
+                        <li><a href="home-v6.html" aria-label="Home V6">Home V6</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="about-us.html" aria-label="About Us">About Us</a></li>
+                    <li class="menu-item-has-children">
+                      <a href="#" aria-label="Pages">Pages</a>
+                      <ul class="cs_dropdown_list cs_mp_0" aria-label="Pages submenu">
+                        <li><a href="team.html" aria-label="Our Teams">Our Teams</a></li>
+                        <li><a href="team-details.html" aria-label="Team Details">Team Details</a></li>
+                        <li><a href="pricing.html" aria-label="Our Pricing">Our Pricing</a></li>
+                        <li><a href="services.html" aria-label="Our Services">Our Services</a></li>
+                        <li><a href="service-details.html" aria-label="Service Details">Service Details</a></li>
+                        <li><a href="portfolio.html" aria-label="Our Portfolio">Our Portfolio</a></li>
+                        <li><a href="portfolio-details.html" aria-label="Portfolio Details">Portfolio Details</a></li>
+                        <li><a href="faq.html" aria-label="FAQ and Answer">FAQ & Answer</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                      <a href="blog.html" aria-label="Blog">Blog</a>
+                      <ul class="cs_dropdown_list cs_mp_0" aria-label="Blog submenu">
+                        <li><a href="blog.html" aria-label="Our Blog">Our Blog</a></li>
+                        <li><a href="blog-details.html" aria-label="Blog Details">Blog Details</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="contact-us.html" aria-label="Contact Us">Contact Us</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="cs_main_header_right">
+              <div class="cs_header_btns_wrapper">
+                <button type="button" aria-label="Search" class="cs_search_btn">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M23.7723 22.6943L17.5759 16.5969C19.1985 14.834 20.1955 12.5024 20.1955 9.93682C20.1947 4.44852 15.6742 0 10.0974 0C4.52055 0 0 4.44852 0 9.93682C0 15.4251 4.52055 19.8736 10.0974 19.8736C12.5069 19.8736 14.7169 19.0402 16.4529 17.6546L22.6733 23.776C22.9764 24.0746 23.4685 24.0746 23.7716 23.776C24.0754 23.4775 24.0754 22.9929 23.7723 22.6943ZM10.0974 18.3448C5.37877 18.3448 1.55362 14.5804 1.55362 9.93682C1.55362 5.29321 5.37877 1.52884 10.0974 1.52884C14.816 1.52884 18.6411 5.29321 18.6411 9.93682C18.6411 14.5804 14.816 18.3448 10.0974 18.3448Z" fill="currentColor"/>
+                  </svg>
+                </button>
+                <a href="contact-us.html" aria-label="Get in touch" class="cs_btn_style_1 cs_fs_14 cs_bold cs_primary_font cs_radius_50">
+                <span>GET IN TOUCH</span>
+                <span class="cs_btn_icon cs_radius_100 cs_center" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header Section -->
+    <!-- Start Header Search -->
+    <div class="cs_header_search">
+      <div class="cs_header_search_in">
+        <div class="container">
+          <div class="cs_header_search_box">
+            <form action="#" class="cs_search_form position-relative">
+              <input type="search" name="search-text" placeholder="Search Service" autocomplete="search-text">
+              <button class="cs_search_btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M23.7723 22.6943L17.5759 16.5969C19.1985 14.834 20.1955 12.5024 20.1955 9.93682C20.1947 4.44852 15.6742 0 10.0974 0C4.52055 0 0 4.44852 0 9.93682C0 15.4251 4.52055 19.8736 10.0974 19.8736C12.5069 19.8736 14.7169 19.0402 16.4529 17.6546L22.6733 23.776C22.9764 24.0746 23.4685 24.0746 23.7716 23.776C24.0754 23.4775 24.0754 22.9929 23.7723 22.6943ZM10.0974 18.3448C5.37877 18.3448 1.55362 14.5804 1.55362 9.93682C1.55362 5.29321 5.37877 1.52884 10.0974 1.52884C14.816 1.52884 18.6411 5.29321 18.6411 9.93682C18.6411 14.5804 14.816 18.3448 10.0974 18.3448Z" fill="currentColor"/>
+                </svg>
+              </button>
+            </form>
+            <button class="cs_close" type="button"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="cs_sidenav_overlay"></div>
+    </div>
+    <!-- End Header Search -->
+    <!-- Start Main Content -->
+    <main>
+    <!-- Start Hero Section -->
+    <section class="cs_hero_style_1 cs_bg_filed cs_gray_bg" data-src="assets/img/hero-bg1.webp">
+      <div class="container">
+        <div class="cs_hero_content_wrapper">
+          <div class="cs_hero_thumbnail cs_radius_10">
+            <img src="assets/img/hero-img-1.webp" alt="Hero image">
+          </div>
+          <div class="cs_hero_content">
+            <div class="cs_section_heading_style_1 cs_mb_40">
+              <p class="cs_section_subtitle cs_accent_color cs_bold cs_mb_20">WHERE INNOVATION MEETS TIMELESS DESIGNE</p>
+              <h1 class="cs_section_title cs_fs_80 cs_bold text-uppercase">Luxury Architectural Building Project.</h1>
+              <p class="cs_section_desc mb-0">Architecture and interior design blend creativity with functionality, shaping spaces that inspire, comfort, and elevate everyday living. Architecture defines the structure, balance, and aesthetic harmony of a building, while interior design breathes life into it with thoughtful layouts, textures, colors, and materials. </p>
+            </div>
+            <div class="cs_hero_bottom">
+              <a href="portfolio.html" class="cs_btn_style_2 cs_center_column cs_white_bg cs_primary_color cs_fs_18 cs_bold cs_radius_100 animationonhover text-center"><span>EXPLORE OUR WORK</span>
+              </a>
+              <div class="cs_hero_logo_img_wrap position-relative">
+                <div class="cs_hero_img2 cs_radius_10">
+                  <img src="assets/img/hero-img-2.webp" alt="Hero image">
+                </div>
+                <div class="cs_logo_text_wrapper cs_center cs_gray_bg cs_radius_100 position-absolute">
+                  <div class="cs_text_logo position-absolute">
+                    <img src="assets/img/logo-text.webp" alt="Text logo">
+                  </div>
+                  <span class="cs_arrow_icon cs_center cs_radius_100 position-absolute">
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero Section -->
+    <!-- Start Sliding Text Section -->
+    <div class="cs_horizontal_slider cs_primary_bg cs_bg_filed cs_primary_font" data-src="assets/img/text-bg1.webp">
+      <div class="cs_slider_inner">
+        <div class="cs_sliding_content cs_fs_64 cs_bold cs_white_color">INTERIOR ARCHITECTURE SPACE . HIGH - END INTERIOR DESIGN. INNOVATE DESIGN IN CANADA</div>
+        <div class="cs_sliding_content cs_fs_64 cs_bold cs_white_color">INTERIOR ARCHITECTURE SPACE . HIGH - END INTERIOR DESIGN. INNOVATE DESIGN IN CANADA</div>
+      </div>
+    </div>
+    <!-- End Sliding Text Section -->
+    <!-- Start About Section -->
+    <section class="cs_about_style_1">
+      <div class="cs_height_120 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_about_content_wrapper">
+          <div class="cs_about_img_wrapper position-relative">
+            <div class="cs_about_img1 cs_radius_10">
+              <img src="assets/img/about-img1.webp" alt="About image">
+            </div>
+            <div class="cs_about_img2">
+              <img src="assets/img/about-img2.webp" alt="About image">
+            </div>
+          </div>
+          <div class="cs_about_text">
+            <div class="cs_section_heading_style_1 cs_mb_30">
+              <p class="cs_section_subtitle cs_bold cs_accent_color cs_mb_10">ABOUT US</p>
+              <h2 class="cs_section_title cs_fs_60 cs_bold mb-0">ARCHITECTURE AND INTERIORS OUR DUAL EXPERTISE.</h2>
+            </div>
+            <ul class="cs_list_style_1 list-unstyled cs_fs_24 cs_semibold cs_primary_color cs_mb_30 cs_mb_lg_24 p-0">
+              <li>
+                <img src="assets/img/icons/check.svg" alt="Check icon">
+                <span class="cs_list_info">LATEST TECHNOLOGIES</span>
+              </li>
+              <li>
+                <img src="assets/img/icons/check.svg" alt="Check icon">
+                <span class="cs_list_info">HIGH-QUALITY DESIGNS</span>
+              </li>
+              <li>
+                <img src="assets/img/icons/check.svg" alt="Check icon">
+                <span class="cs_list_info">5 YEARS WARRANTY</span>
+              </li>
+              <li>
+                <img src="assets/img/icons/check.svg" alt="Check icon">
+                <span class="cs_list_info">RESIDENTIAL DESIGN</span>
+              </li>
+            </ul>
+            <p class="cs_about_desc cs_mb_40 cs_mb_lg_30">Architecture and interior design blend creativity with functionality, shaping spaces that aesthetic harmony of a building, while interior design breathes life into it with thoughtful layouts, textures, colors, and materials. 
+            </p>
+            <a href="about-us.html" aria-label="Nav link" class="cs_btn_style_1 cs_fs_14 cs_bold cs_primary_font cs_radius_50">
+            <span>GET STARTED NOW</span>
+            <span class="cs_btn_icon cs_radius_100 cs_center"><i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Section -->
+    <!-- Start Service Section -->
+    <section class="cs_service_layout_1">
+      <div class="cs_height_120 cs_height_lg_80"></div>
+      <div class="container-fluid">
+        <div class="cs_section_heading_style_1 cs_center_column text-center">
+          <p class="cs_section_subtitle cs_bold cs_accent_color cs_mb_20 text-uppercase">OUR SERVICES</p>
+          <h2 class="cs_section_title cs_fs_60 cs_bold mb-0">BUILDING FOR TOMORROW TRENDS IN <br> CONTEMPORARY ARCHITECTURE</h2>
+        </div>
+        <div class="cs_height_60 cs_height_lg_50"></div>
+        <div class="cs_grid_style_1">
+          <div class="cs_iconbox_style_1 cs_gray_bg cs_radius_10 text-center">
+            <span class="cs_iconbox_icon cs_center cs_accent_color cs_mb_16">
+            <img src="assets/img/icons/pen-icon.svg" alt="Pen icon">
+            </span>
+            <div class="cs_iconbox_info">
+              <h3 class="cs_iconbox_title cs_fs_24 cs_semibold cs_mb_16 text-uppercase"><a href="service-details.html" aria-label="Get started with our services">Design & Planning</a></h3>
+              <p class="cs_iconbox_subtitle cs_bold cs_mb_20">Architecture and interior design blend creativity with functionality, shaping spaces that aesthetic harmony of a building.</p>
+              <a href="service-details.html" aria-label="Get started with our services" class="cs_text_btn_style_1 cs_fs_14 cs_bold cs_accent_color">
+              <span>Get Started Now</span>
+              <span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="cs_iconbox_style_1 cs_gray_bg cs_radius_10 text-center">
+            <span class="cs_iconbox_icon cs_center cs_accent_color cs_mb_16">
+            <img src="assets/img/icons/squarespace-brands.svg" alt="Squares brand icon">
+            </span>
+            <div class="cs_iconbox_info">
+              <h3 class="cs_iconbox_title cs_fs_24 cs_semibold cs_mb_16 text-uppercase"><a href="service-details.html" aria-label="Get started with our services">Custom Solutions</a></h3>
+              <p class="cs_iconbox_subtitle cs_bold cs_mb_20">Architecture and interior design blend creativity with functionality, shaping spaces that aesthetic harmony of a building.</p>
+              <a href="service-details.html" aria-label="Get started with our services" class="cs_text_btn_style_1 cs_fs_14 cs_bold cs_accent_color">
+              <span>Get Started Now</span>
+              <span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="cs_iconbox_style_1 cs_gray_bg cs_radius_10 text-center">
+            <span class="cs_iconbox_icon cs_center cs_accent_color cs_mb_16">
+            <img src="assets/img/icons/interior.svg" alt="Interior icon">
+            </span>
+            <div class="cs_iconbox_info">
+              <h3 class="cs_iconbox_title cs_fs_24 cs_semibold cs_mb_16 text-uppercase"><a href="service-details.html" aria-label="Get started with our services">Furniture & Décor</a></h3>
+              <p class="cs_iconbox_subtitle cs_bold cs_mb_20">Architecture and interior design blend creativity with functionality, shaping spaces that aesthetic harmony of a building.</p>
+              <a href="service-details.html" aria-label="Get started with our services" class="cs_text_btn_style_1 cs_fs_14 cs_bold cs_accent_color">
+              <span>Get Started Now</span>
+              <span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="cs_iconbox_style_1 cs_gray_bg cs_radius_10 text-center">
+            <span class="cs_iconbox_icon cs_center cs_accent_color cs_mb_16">
+            <img src="assets/img/icons/chair.svg" alt="Chair icon">
+            </span>
+            <div class="cs_iconbox_info">
+              <h3 class="cs_iconbox_title cs_fs_24 cs_semibold cs_mb_16 text-uppercase"><a href="service-details.html" aria-label="Get started with our services">Exterior Design</a></h3>
+              <p class="cs_iconbox_subtitle cs_bold cs_mb_20">Architecture and interior design blend creativity with functionality, shaping spaces that aesthetic harmony of a building.</p>
+              <a href="service-details.html" aria-label="Get started with our services" class="cs_text_btn_style_1 cs_fs_14 cs_bold cs_accent_color">
+              <span>Get Started Now</span>
+              <span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Service Section -->
+    <!-- Start Portfolio Section -->
+    <section class="cs_tabs">
+      <div class="cs_height_120 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_section_heading_style_1 cs_center_column text-center">
+          <p class="cs_section_subtitle cs_bold cs_accent_color cs_mb_20 text-uppercase">OUR PORTFOLIO</p>
+          <h2 class="cs_section_title cs_fs_60 cs_bold mb-0">INTRODUCE OUR PROJECT</h2>
+        </div>
+        <div class="cs_height_40 cs_height_lg_40"></div>
+        <ul class="cs_tab_links cs_style_1 cs_fs_18 cs_mp_0">
+          <li class="active"><a href="#all">ALL</a></li>
+          <li><a href="#architechture">ARCHITECTURE</a></li>
+          <li><a href="#decor">DECOR</a></li>
+          <li><a href="#furniture">FURNITURE</a></li>
+          <li><a href="#interior">INTERIOR</a></li>
+        </ul>
+        <div class="cs_height_60 cs_height_lg_50"></div>
+        <div class="cs_tab_body position-relative">
+          <div class="cs_tab active" id="all">
+            <div class="cs_grid_style_2">
+              <div class="cs_card_style_1 cs_radius_10 position-relative">
+                <a href="portfolio-details.html"  class="cs_card_thumbnail cs_custom_pointer_wrap position-relative">
+                <span class="cs_mouse_point cs_center cs_white_bg cs_radius_100 cs_fs_18 cs_bold cs_primary_color cs_primary_font text-center">GET START PROJECT</span>
+                <img src="assets/img/portfolio-img-1.webp" alt="Minimal Guests House interior design project">
+                </a>
+                <div class="cs_card_info cs_gray_bg">
+                  <h3 class="cs_card_title cs_fs_18 cs_bold mb-0">
+                    <a href="portfolio-details.html" aria-label="Minimal Guests House project details">Minimal Guests House</a>
+                  </h3>
+                  <p class="mb-0">Décor Interior</p>
+                  <a href="portfolio-details.html" class="cs_arrow_btn cs_center cs_radius_100 position-absolute" aria-label="View project details"><i class="fa-solid fa-arrow-right-long"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="cs_card_style_1 cs_radius_10 position-relative">
+                <a href="portfolio-details.html"  class="cs_card_thumbnail cs_custom_pointer_wrap position-relative">
+                <span class="cs_mouse_point cs_center cs_white_bg cs_radius_100 cs_fs_18 cs_bold cs_primary_color cs_primary_font text-center">GET START PROJECT</span>
+                <img src="assets/img/portfolio-img-2.webp" alt="Armada center interior design project">
+                </a>
+                <div class="cs_card_info cs_gray_bg">
+                  <h3 class="cs_card_title cs_fs_18 cs_bold mb-0">
+                    <a href="portfolio-details.html" aria-label="Armada center project details">ARMADA CENTER</a>
+                  </h3>
+                  <p class="mb-0">Décor Interior</p>
+                  <a href="portfolio-details.html" class="cs_arrow_btn cs_center cs_radius_100 position-absolute" aria-label="View project details"><i class="fa-solid fa-arrow-right-long"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="cs_card_style_1 cs_radius_10 position-relative">
+                <a href="portfolio-details.html"  class="cs_card_thumbnail cs_custom_pointer_wrap position-relative">
+                <span class="cs_mouse_point cs_center cs_white_bg cs_radius_100 cs_fs_18 cs_bold cs_primary_color cs_primary_font text-center">GET START PROJECT</span>
+                <img src="assets/img/portfolio-img-3.webp" alt="Stonya villa interior design project">
+                </a>
+                <div class="cs_card_info cs_gray_bg">
+                  <h3 class="cs_card_title cs_fs_18 cs_bold mb-0">
+                    <a href="portfolio-details.html" aria-label="Stonya villa project details">STONYA VILLA</a>
+                  </h3>
+                  <p class="mb-0">Décor Interior</p>
+                  <a href="portfolio-details.html" class="cs_arrow_btn cs_center cs_radius_100 position-absolute" aria-label="View project details"><i class="fa-solid fa-arrow-right-long"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="cs_card_style_1 cs_radius_10 position-relative">
+                <a href="portfolio-details.html"  class="cs_card_thumbnail cs_custom_pointer_wrap position-relative">
+                <span class="cs_mouse_point cs_center cs_white_bg cs_radius_100 cs_fs_18 cs_bold cs_primary_color cs_primary_font text-center">GET START PROJECT</span>
+                <img src="assets/img/portfolio-img-4.webp" alt="Minimal Guests House interior design project">
+                </a>
+                <div class="cs_card_info cs_gray_bg">
+                  <h3 class="cs_card_title cs_fs_18 cs_bold mb-0">
+                    <a href="portfolio-details.html" aria-label="Minimal Guests House project details">Minimal Guests House</a>
+                  </h3>
+                  <p class="mb-0">Décor Interior</p>
+                  <a href="portfolio-details.html" class="cs_arrow_btn cs_center cs_radius_100 position-absolute" aria-label="View project details"><i class="fa-solid fa-arrow-right-long"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cs_tab" id="architechture">
+            <div class="cs_grid_style_2">
+              <div class="cs_card_style_1 cs_radius_10 position-relative">
+                <a href="portfolio-details.html"  class="cs_card_thumbnail cs_custom_pointer_wrap position-relative">
+                <span class="cs_mouse_point cs_center cs_white_bg cs_radius_100 cs_fs_18 cs_bold cs_primary_color cs_primary_font text-center">GET START PROJECT</span>
+                <img src="assets/img/portfolio-img-3.webp" alt="Armada center interior design project">
+                </a>
+                <div class="cs_card_info cs_gray_bg">
+                  <h3 class="cs_card_title cs_fs_18 cs_bold mb-0">
+                    <a href="portfolio-details.html" aria-label="Armada center project details">ARMADA CENTER</a>
+                  </h3>
+                  <p class="mb-0">Décor Interior</p>
+                  <a href="portfolio-details.html" class="cs_arrow_btn cs_center cs_radius_100 position-absolute" aria-label="View project details"><i class="fa-solid fa-arrow-right-long"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="cs_card_style_1 cs_radius_10 position-relative">
+                <a href="portfolio-details.html"  class="cs_card_thumbnail cs_custom_pointer_wrap position-relative">
+                <span class="cs_mouse_point cs_center cs_white_bg cs_radius_100 cs_fs_18 cs_bold cs_primary_color cs_primary_font text-center">GET START PROJECT</span>
+                <img src="assets/img/portfolio-img-1.webp" alt="Minimal Guests House interior design project">
+                </a>
+                <div class="cs_card_info cs_gray_bg">
+                  <h3 class="cs_card_title cs_fs_18 cs_bold mb-0">
+                    <a href="portfolio-details.html" aria-label="Minimal Guests House project details">Minimal Guests House</a>
+                  </h3>
+                  <p class="mb-0">Décor Interior</p>
+                  <a href="portfolio-details.html" class="cs_arrow_btn cs_center cs_radius_100 position-absolute" aria-label="View project details"><i class="fa-solid fa-arrow-right-long"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cs_tab" id="decor">
+            <div class="cs_grid_style_2">
+              <div class="cs_card_style_1 cs_radius_10 position-relative">
+                <a href="portfolio-details.html"  class="cs_card_thumbnail cs_custom_pointer_wrap position-relative">
+                <span class="cs_mouse_point cs_center cs_white_bg cs_radius_100 cs_fs_18 cs_bold cs_primary_color cs_primary_font text-center">GET START PROJECT</span>
+                <img src="assets/img/portfolio-img-1.webp" alt="Minimal Guests House interior design project">
+                </a>
+                <div class="cs_card_info cs_gray_bg">
+                  <h3 class="cs_card_title cs_fs_18 cs_bold mb-0">
+                    <a href="portfolio-details.html" aria-label="Minimal Guests House project details">Minimal Guests House</a>
+                  </h3>
+                  <p class="mb-0">Décor Interior</p>
+                  <a href="portfolio-details.html" class="cs_arrow_btn cs_center cs_radius_100 position-absolute" aria-label="View project details"><i class="fa-solid fa-arrow-right-long"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="cs_card_style_1 cs_radius_10 position-relative">
+                <a href="portfolio-details.html"  class="cs_card_thumbnail cs_custom_pointer_wrap position-relative">
+                <span class="cs_mouse_point cs_center cs_white_bg cs_radius_100 cs_fs_18 cs_bold cs_primary_color cs_primary_font text-center">GET START PROJECT</span>
+                <img src="assets/img/portfolio-img-2.webp" alt="Armada center interior design project">
+                </a>
+                <div class="cs_card_info cs_gray_bg">
+                  <h3 class="cs_card_title cs_fs_18 cs_bold mb-0">
+                    <a href="portfolio-details.html" aria-label="Armada center project details">ARMADA CENTER</a>
+                  </h3>
+                  <p class="mb-0">Décor Interior</p>
+                  <a href="portfolio-details.html" class="cs_arrow_btn cs_center cs_radius_100 position-absolute" aria-label="View project details"><i class="fa-solid fa-arrow-right-long"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cs_tab" id="furniture">
+            <div class="cs_grid_style_2">
+              <div class="cs_card_style_1 cs_radius_10 position-relative">
+                <a href="portfolio-details.html"  class="cs_card_thumbnail cs_custom_pointer_wrap position-relative">
+                <span class="cs_mouse_point cs_center cs_white_bg cs_radius_100 cs_fs_18 cs_bold cs_primary_color cs_primary_font text-center">GET START PROJECT</span>
+                <img src="assets/img/portfolio-img-4.webp" alt="Minimal Guests House interior design project">
+                </a>
+                <div class="cs_card_info cs_gray_bg">
+                  <h3 class="cs_card_title cs_fs_18 cs_bold mb-0">
+                    <a href="portfolio-details.html" aria-label="Minimal Guests House project details">Minimal Guests House</a>
+                  </h3>
+                  <p class="mb-0">Décor Interior</p>
+                  <a href="portfolio-details.html" class="cs_arrow_btn cs_center cs_radius_100 position-absolute" aria-label="View project details"><i class="fa-solid fa-arrow-right-long"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="cs_card_style_1 cs_radius_10 position-relative">
+                <a href="portfolio-details.html"  class="cs_card_thumbnail cs_custom_pointer_wrap position-relative">
+                <span class="cs_mouse_point cs_center cs_white_bg cs_radius_100 cs_fs_18 cs_bold cs_primary_color cs_primary_font text-center">GET START PROJECT</span>
+                <img src="assets/img/portfolio-img-1.webp" alt="Minimal Guests House interior design project">
+                </a>
+                <div class="cs_card_info cs_gray_bg">
+                  <h3 class="cs_card_title cs_fs_18 cs_bold mb-0">
+                    <a href="portfolio-details.html" aria-label="Minimal Guests House project details">Minimal Guests House</a>
+                  </h3>
+                  <p class="mb-0">Décor Interior</p>
+                  <a href="portfolio-details.html" class="cs_arrow_btn cs_center cs_radius_100 position-absolute" aria-label="View project details"><i class="fa-solid fa-arrow-right-long"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cs_tab" id="interior">
+            <div class="cs_grid_style_2">
+              <div class="cs_card_style_1 cs_radius_10 position-relative">
+                <a href="portfolio-details.html"  class="cs_card_thumbnail cs_custom_pointer_wrap position-relative">
+                <span class="cs_mouse_point cs_center cs_white_bg cs_radius_100 cs_fs_18 cs_bold cs_primary_color cs_primary_font text-center">GET START PROJECT</span>
+                <img src="assets/img/portfolio-img-1.webp" alt="Minimal Guests House interior design project">
+                </a>
+                <div class="cs_card_info cs_gray_bg">
+                  <h3 class="cs_card_title cs_fs_18 cs_bold mb-0">
+                    <a href="portfolio-details.html" aria-label="Minimal Guests House project details">Minimal Guests House</a>
+                  </h3>
+                  <p class="mb-0">Décor Interior</p>
+                  <a href="portfolio-details.html" class="cs_arrow_btn cs_center cs_radius_100 position-absolute" aria-label="View project details"><i class="fa-solid fa-arrow-right-long"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="cs_card_style_1 cs_radius_10 position-relative">
+                <a href="portfolio-details.html"  class="cs_card_thumbnail cs_custom_pointer_wrap position-relative">
+                <span class="cs_mouse_point cs_center cs_white_bg cs_radius_100 cs_fs_18 cs_bold cs_primary_color cs_primary_font text-center">GET START PROJECT</span>
+                <img src="assets/img/portfolio-img-4.webp" alt="Minimal Guests House interior design project">
+                </a>
+                <div class="cs_card_info cs_gray_bg">
+                  <h3 class="cs_card_title cs_fs_18 cs_bold mb-0">
+                    <a href="portfolio-details.html" aria-label="Minimal Guests House project details">Minimal Guests House</a>
+                  </h3>
+                  <p class="mb-0">Décor Interior</p>
+                  <a href="portfolio-details.html" class="cs_arrow_btn cs_center cs_radius_100 position-absolute" aria-label="View project details"><i class="fa-solid fa-arrow-right-long"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cs_height_120 cs_height_lg_80"></div>
+    </section>
+    <!-- End Portfolio Section -->
+    <!-- Start Skill Section -->
+    <section class="cs_skills_layout_1">
+      <div class="container">
+        <div class="row cs_gap_y_40 align-items-center">
+          <div class="col-lg-6">
+            <div class="cs_skill_thumbnail">
+              <img src="assets/img/skill-img-1.webp" alt="Skill image">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="cs_skill_info">
+              <div class="cs_section_heading_style_1 cs_mb_30">
+                <p class="cs_section_subtitle cs_bold cs_accent_color cs_mb_20 text-uppercase">OUR SKILLS</p>
+                <h2 class="cs_section_title cs_fs_53 cs_bold cs_mb_16">THE CORE COMPANY VALUES</h2>
+                <p class="mb-0">Architecture and interior design blend creativity with functionality, shaping spaces that aesthetic harmony of a building, while interior design breathes life into it with thoughtful layouts, textures, colors, and materials. </p>
+              </div>
+              <div class="cs_skill_progress_wrapper">
+                <div class="cs_skill_progress">
+                  <div class="cs_progress_head cs_fs_24 cs_semibold cs_primary_color cs_primary_font cs_mb_20">Interior Sketch</div>
+                  <div class="cs_progress" data-progress="65">
+                    <div class="cs_progress_in"><span class=" cs_fs_24 cs_semibold cs_primary_color cs_primary_font">65%</span></div>
+                  </div>
+                </div>
+                <div class="cs_skill_progress">
+                  <div class="cs_progress_head cs_fs_24 cs_semibold cs_primary_color cs_primary_font cs_mb_20">3D Modeling</div>
+                  <div class="cs_progress" data-progress="85">
+                    <div class="cs_progress_in"><span class=" cs_fs_24 cs_semibold cs_primary_color cs_primary_font">85%</span></div>
+                  </div>
+                </div>
+                <div class="cs_skill_progress">
+                  <div class="cs_progress_head cs_fs_24 cs_semibold cs_primary_color cs_primary_font cs_mb_20">2D Planning</div>
+                  <div class="cs_progress" data-progress="55">
+                    <div class="cs_progress_in"><span class=" cs_fs_24 cs_semibold cs_primary_color cs_primary_font">55%</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cs_height_50 cs_height_lg_40"></div>
+        <div class="cs_shadow_text cs_fs_200 cs_bold cs_primary_font">ARCHITECTURE</div>
+      </div>
+    </section>
+    <!-- End Skill Section -->
+    <!-- Start Video Section -->
+    <section class="cs_video_block_1 cs_primary_bg cs_bg_fixed" data-src="assets/img/video-bg-1.webp">
+      <div class="container">
+        <div class="cs_video_text cs_center_column text-center">
+          <a href="https://www.youtube.com/embed/zumJJUL_ruM" class="cs_player_btn_style_1 cs_center cs_white_color cs_video_open cs_mb_30" aria-label="Play video">
+          <img src="assets/img/icons/player-icon.svg" alt="Play icon">
+          </a>
+          <h2 class="cs_video_title cs_fs_96 cs_bold cs_white_color mb-0">UNLOCK YOUR DREAM HOME TODAY</h2>
+        </div>
+      </div>
+    </section>
+    <!-- End Video Section -->
+    <!-- Start Testimonial Section -->
+    <section class="cs_testimonial_style_1">
+      <div class="cs_height_120 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="row cs_gap_y_40">
+          <div class="col-lg-7">
+            <div class="cs_testimonial_left">
+              <div class="cs_testimonial_thumbnail cs_radius_10">
+                <img src="assets/img/testimonial-img-1.webp" alt="Testimonial image">
+              </div>
+              <div class="cs_testimonial_avatar">
+                <div class="cs_avatar cs_radius_10 cs_mb_20">
+                  <img src="assets/img/avatar-1.webp" alt="Avatar image">
+                </div>
+                <div class="cs_avatar_info">
+                  <h3 class="cs_avatar_title cs_fs_24 cs_bold cs_mb_10">ESTHER HOWARD</h3>
+                  <p class="cs_avatar_designation cs_primary_color mb-0">FOUNDER & CEO</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="cs_testimonial_right">
+              <div class="cs_testimonial_header cs_mb_30">
+                <div class="cs_section_heading_style_1">
+                  <p class="cs_section_subtitle cs_bold cs_accent_color cs_mb_20 text-uppercase">TESTIMONIALS</p>
+                  <h2 class="cs_section_title cs_fs_53 cs_semibold mb-0">STORIES FROM CLIENTS</h2>
+                </div>
+              </div>
+              <div class="swiper" data-autoplay="0" data-loop="0" data-center="0" data-speed="800" data-variable-width="1" data-slides-per-view="1" data-gap="24" data-effect="slide">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="cs_client_review">
+                      <div class="cs_rating_info cs_mb_20">
+                        <div class="cs_rating_text">
+                          <span class="cs_fs_30 cs_semibold cs_primary_color cs_primary_font">4.8</span><small>/5.0</small>
+                        </div>
+                        <div class="cs_rating" data-rating="5">
+                          <div class="cs_rating_percentage"></div>
+                        </div>
+                      </div>
+                      <h3 class="cs_fs_18 cs_semibold cs_mb_16">Our Professionals Manage Every Phase Of The Project.</h3>
+                      <p class="cs_client_comment mb-0">Architecture is the art and science of designing buildings and spaces that balance beauty, functionality, and sustainability. It shapes how people live, work, and interact with their environment by combining creative vision with technical expertise. From residential homes to commercial complexes and urban landmarks, architecture focuses on structural integrity, efficient use of space, and aesthetic appeal. Modern architecture also emphasizes eco-friendly materials, energy efficiency, and innovative design solutions to create comfortable, durable, and inspiring spaces for future generations.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="cs_client_review">
+                      <div class="cs_rating_info cs_mb_20">
+                        <div class="cs_rating_text">
+                          <span class="cs_fs_30 cs_semibold cs_primary_color cs_primary_font">4.8</span><small>/5.0</small>
+                        </div>
+                        <div class="cs_rating" data-rating="5">
+                          <div class="cs_rating_percentage"></div>
+                        </div>
+                      </div>
+                      <h3 class="cs_fs_18 cs_semibold cs_mb_16">Our Professionals Manage Every Phase Of The Project.</h3>
+                      <p class="cs_client_comment mb-0">Architecture is the art and science of designing buildings and spaces that balance beauty, functionality, and sustainability. It shapes how people live, work, and interact with their environment by combining creative vision with technical expertise. From residential homes to commercial complexes and urban landmarks, architecture focuses on structural integrity, efficient use of space, and aesthetic appeal. Modern architecture also emphasizes eco-friendly materials, energy efficiency, and innovative design solutions to create comfortable, durable, and inspiring spaces for future generations.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="cs_client_review">
+                      <div class="cs_rating_info cs_mb_20">
+                        <div class="cs_rating_text">
+                          <span class="cs_fs_30 cs_semibold cs_primary_color cs_primary_font">4.8</span><small>/5.0</small>
+                        </div>
+                        <div class="cs_rating" data-rating="5">
+                          <div class="cs_rating_percentage"></div>
+                        </div>
+                      </div>
+                      <h3 class="cs_fs_18 cs_semibold cs_mb_16">Our Professionals Manage Every Phase Of The Project.</h3>
+                      <p class="cs_client_comment mb-0">Architecture is the art and science of designing buildings and spaces that balance beauty, functionality, and sustainability. It shapes how people live, work, and interact with their environment by combining creative vision with technical expertise. From residential homes to commercial complexes and urban landmarks, architecture focuses on structural integrity, efficient use of space, and aesthetic appeal. Modern architecture also emphasizes eco-friendly materials, energy efficiency, and innovative design solutions to create comfortable, durable, and inspiring spaces for future generations.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cs_height_50 cs_height_lg_50"></div>
+                <div class="swiper-pagination cs_style_1"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Testimonial Section -->
+    <!-- Start Team Section -->
+    <section class="cs_service_layout_1">
+      <div class="cs_height_120 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_section_heading_style_1">
+          <p class="cs_section_subtitle cs_bold cs_accent_color cs_mb_20 text-uppercase">MEET OUR TEAM</p>
+          <h2 class="cs_section_title cs_fs_53 cs_bold text-uppercase mb-0">Expert Team Members</h2>
+        </div>
+        <div class="cs_height_60 cs_height_lg_50"></div>
+        <div class="row cs_gap_y_24">
+          <div class="col-lg-4">
+            <div class="cs_team_style_1 cs_gray_bg cs_radius_10">
+              <div class="cs_team_thumbnail cs_radius_10 cs_mb_20 position-relative">
+                <img src="assets/img/team-img-1.webp" alt="Team image">
+                <div class="cs_thumboverlay position-absolute"></div>
+                <div class="cs_social_btns_style_1 position-absolute">
+                  <a href="#" target="_blank" aria-label="Visit our LinkedIn page">
+                  <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                  <a href="#" target="_blank" aria-label="Contact us on WhatsApp">
+                  <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                  </a>
+                  <a href="#" target="_blank" aria-label="Follow us on Twitter">
+                  <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                  </a>
+                  <a href="#" target="_blank" aria-label="View our Behance portfolio">
+                  <i class="fa-brands fa-behance" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="cs_team_info text-center">
+                <h3 class="cs_team_title cs_fs_24 cs_bold cs_mb_10 text-uppercase"><a href="blog-details.html" aria-label="Read full article">Savannah Nguyen</a>
+                </h3>
+                <p class="cs_team_designation cs_mb_10">Graphic Designer</p>
+                <p class="cs_team_description cs_mb_20">Architecture and interior design blend creativity with functionality, shaping spaces that inspire, comfort, and elevate everyday living.</p>
+                <div class="cs_team_social_links cs_fs_14 cs_semibold cs_primary_font mt-auto">
+                  <a href="#" target="_blank" aria-label="Follow us on Facebook">FACEBOOK</a>
+                  <a href="mailto:[EMAIL]" target="_blank" aria-label="Connect with us on Gmail">GMAIL</a>
+                  <a href="#" target="_blank" aria-label="Join us on Telegram">TELEGRAM</a>
+                  <a href="tel:001100110011" target="_blank" aria-label="Chat with us on Skype">SKYPE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="cs_team_style_1 cs_gray_bg cs_radius_10">
+              <div class="cs_team_thumbnail cs_radius_10 cs_mb_20 position-relative">
+                <img src="assets/img/team-img-2.webp" alt="Team image">
+                <div class="cs_thumboverlay position-absolute"></div>
+                <div class="cs_social_btns_style_1 position-absolute">
+                  <a href="#" target="_blank" aria-label="Visit our LinkedIn page">
+                  <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                  <a href="#" target="_blank" aria-label="Contact us on WhatsApp">
+                  <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                  </a>
+                  <a href="#" target="_blank" aria-label="Follow us on Twitter">
+                  <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                  </a>
+                  <a href="#" target="_blank" aria-label="View our Behance portfolio">
+                  <i class="fa-brands fa-behance" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="cs_team_info text-center">
+                <h3 class="cs_team_title cs_fs_24 cs_bold cs_mb_10 text-uppercase"><a href="blog-details.html" aria-label="Read full article">Leslie Alexander</a>
+                </h3>
+                <p class="cs_team_designation cs_mb_10">Graphic Designer</p>
+                <p class="cs_team_description cs_mb_20">Architecture and interior design blend creativity with functionality, shaping spaces that inspire, comfort, and elevate everyday living.</p>
+                <div class="cs_team_social_links cs_fs_14 cs_semibold cs_primary_font mt-auto">
+                  <a href="#" target="_blank" aria-label="Follow us on Facebook">FACEBOOK</a>
+                  <a href="mailto:[EMAIL]" target="_blank" aria-label="Connect with us on Gmail">GMAIL</a>
+                  <a href="#" target="_blank" aria-label="Join us on Telegram">TELEGRAM</a>
+                  <a href="tel:001100110011" target="_blank" aria-label="Chat with us on Skype">SKYPE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="cs_team_style_1 cs_gray_bg cs_radius_10">
+              <div class="cs_team_thumbnail cs_radius_10 cs_mb_20 position-relative">
+                <img src="assets/img/team-img-3.webp" alt="Team image">
+                <div class="cs_thumboverlay position-absolute"></div>
+                <div class="cs_social_btns_style_1 position-absolute">
+                  <a href="#" target="_blank" aria-label="Visit our LinkedIn page">
+                  <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                  <a href="#" target="_blank" aria-label="Contact us on WhatsApp">
+                  <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                  </a>
+                  <a href="#" target="_blank" aria-label="Follow us on Twitter">
+                  <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                  </a>
+                  <a href="#" target="_blank" aria-label="View our Behance portfolio">
+                  <i class="fa-brands fa-behance" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="cs_team_info text-center">
+                <h3 class="cs_team_title cs_fs_24 cs_bold cs_mb_10 text-uppercase"><a href="blog-details.html" aria-label="Read full article">Cameron Williamson</a>
+                </h3>
+                <p class="cs_team_designation cs_mb_10">Graphic Designer</p>
+                <p class="cs_team_description cs_mb_20">Architecture and interior design blend creativity with functionality, shaping spaces that inspire, comfort, and elevate everyday living.</p>
+                <div class="cs_team_social_links cs_fs_14 cs_semibold cs_primary_font mt-auto">
+                  <a href="#" target="_blank" aria-label="Follow us on Facebook">FACEBOOK</a>
+                  <a href="mailto:[EMAIL]" target="_blank" aria-label="Connect with us on Gmail">GMAIL</a>
+                  <a href="#" target="_blank" aria-label="Join us on Telegram">TELEGRAM</a>
+                  <a href="tel:001100110011" target="_blank" aria-label="Chat with us on Skype">SKYPE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cs_height_120 cs_height_lg_80"></div>
+    </section>
+    <!-- End Team Section -->
+    <!-- Start Award Section -->
+    <section class="cs_award_section cs_gray_bg cs_bg_filed" data-src="assets/img/award-bg1.webp">
+      <div class="cs_height_120 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_section_heading_style_1 cs_type_1">
+          <div class="cs_section_heading_left cs_mb_lg_20">
+            <p class="cs_section_subtitle cs_bold cs_accent_color cs_mb_20 text-uppercase">AWARDS</p>
+            <h2 class="cs_section_title cs_fs_53 cs_bold text-uppercase mb-0">International Awards</h2>
+          </div>
+          <div class="cs_section_heading_right">
+            <p class="cs_mb_20">Architecture and interior design blend creativity with functionality, shaping spaces that inaesthetic harmony of a building, while interior design.</p>
+            <a href="#" class="cs_text_btn_style_2 cs_fs_14 cs_bold" aria-label="See more content">
+            <span class="cs_btn_text">SEE MORE</span>
+            </a>
+          </div>
+        </div>
+        <div class="cs_height_60 cs_height_lg_50"></div>
+        <div class="cs_awards_table overflow-x-hidden">
+          <ul class="cs_awards_list cs_mp_0 cs_fs_20 cs_bold cs_primary_font">
+            <li>
+              <span class="cs_award_from cs_primary_color">BROOKLY RESIDENCE</span>
+              <span class="cs_award_category">INTERIOR DESIGN</span>
+              <span class="cs_award_name cs_primary_color">PRITZKER ARCHITECTURE</span>
+              <span class="cs_award_year">2022</span>
+            </li>
+            <li>
+              <span class="cs_award_from cs_primary_color">MALDIVES GARDEN</span>
+              <span class="cs_award_category">ARCHITECTURE</span>
+              <span class="cs_award_name cs_primary_color">RED DOT DESIGN AWARD</span>
+              <span class="cs_award_year">2021</span>
+            </li>
+            <li>
+              <span class="cs_award_from cs_primary_color">SOUTH FLORRIDA TOWERS</span>
+              <span class="cs_award_category">INTERIOR DESIGN</span>
+              <span class="cs_award_name cs_primary_color">RIBBA ARCHITECTURE</span>
+              <span class="cs_award_year">2019</span>
+            </li>
+            <li>
+              <span class="cs_award_from cs_primary_color">TOKYO LIBRARY</span>
+              <span class="cs_award_category">CITY MARKS</span>
+              <span class="cs_award_name cs_primary_color">PRITZKER ARCHITECTURE</span>
+              <span class="cs_award_year">2018</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="cs_height_120 cs_height_lg_80"></div>
+    </section>
+    <!-- End Award Section -->
+    <!-- Start Blog Section -->
+    <section class="cs_service_layout_1">
+      <div class="cs_height_120 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_section_heading_style_1 cs_center_column text-center">
+          <p class="cs_section_subtitle cs_bold cs_accent_color cs_mb_20 text-uppercase">WE,RE INVESTING SINCE 1990</p>
+          <h2 class="cs_section_title cs_fs_53 cs_bold mb-0">STAY UPDATED WITH OUR LATEST ARTICLES</h2>
+        </div>
+        <div class="cs_height_60 cs_height_lg_50"></div>
+        <div class="row cs_gap_y_24">
+          <div class="col-lg-3 col-sm-6">
+            <article class="cs_post_style_1">
+              <a href="blog-details.html" class="cs_post_thumbnail cs_radius_10 cs_mb_20" aria-label="Read full article">
+              <img src="assets/img/post-img-1.webp" alt="Post image">
+              </a>
+              <div class="cs_post_info">
+                <div class="cs_post_meta cs_fs_10 cs_mb_10">ARCHITECTURE / INTERVIEWS</div>
+                <h3 class="cs_post_title cs_fs_18 cs_semibold mb-0"><a href="blog-details.html" aria-label="Read full article">The Intersection Of Technology And Creative In Architecture.</a>
+                </h3>
+              </div>
+            </article>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <article class="cs_post_style_1">
+              <a href="blog-details.html" class="cs_post_thumbnail cs_radius_10 cs_mb_20" aria-label="Read full article">
+              <img src="assets/img/post-img-2.webp" alt="Post image">
+              </a>
+              <div class="cs_post_info">
+                <div class="cs_post_meta cs_fs_10 cs_mb_10">ARCHITECTURE / INTERVIEWS</div>
+                <h3 class="cs_post_title cs_fs_18 cs_semibold mb-0"><a href="blog-details.html" aria-label="Read full article">The Secret To Crafting Elegant and Comfortable Living Spaces.</a>
+                </h3>
+              </div>
+            </article>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <article class="cs_post_style_1">
+              <a href="blog-details.html" class="cs_post_thumbnail cs_radius_10 cs_mb_20" aria-label="Read full article">
+              <img src="assets/img/post-img-3.webp" alt="Post image">
+              </a>
+              <div class="cs_post_info">
+                <div class="cs_post_meta cs_fs_10 cs_mb_10">ARCHITECTURE / INTERVIEWS</div>
+                <h3 class="cs_post_title cs_fs_18 cs_semibold mb-0"><a href="blog-details.html" aria-label="Read full article">The  Process Of Sustainable Architectural Design.</a>
+                </h3>
+              </div>
+            </article>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <article class="cs_post_style_1">
+              <a href="blog-details.html" class="cs_post_thumbnail cs_radius_10 cs_mb_20" aria-label="Read full article">
+              <img src="assets/img/post-img-4.webp" alt="Post image">
+              </a>
+              <div class="cs_post_info">
+                <div class="cs_post_meta cs_fs_10 cs_mb_10">ARCHITECTURE / INTERVIEWS</div>
+                <h3 class="cs_post_title cs_fs_18 cs_semibold mb-0"><a href="blog-details.html" aria-label="Read full article">How Technology Is Shaping The Future Of Architecture.</a>
+                </h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="cs_height_120 cs_height_lg_80"></div>
+    </section>
+    <!-- End Blob Section -->
+    </main>
+    <!-- End Main Content -->
+    <!-- Start Footer Section -->
+    <footer class="cs_footer_style_1 cs_gray_bg">
+      <div class="cs_height_120 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_footer_logo cs_center_column text-center position-relative">
+          <img src="assets/img/footer-logo.webp" alt="Footer logo">
+          <div class="cs_logo_text_wrapper cs_center cs_gray_bg cs_radius_100">
+            <div class="cs_text_logo position-absolute">
+              <img src="assets/img/logo-text.webp" alt="Text logo">
+            </div>
+            <span class="cs_arrow_icon cs_center cs_radius_100 position-absolute">
+            <i class="fa-solid fa-arrow-right-long"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="cs_footer_main">
+        <div class="container-fluid">
+          <div class="cs_footer_rows">
+            <div class="cs_footer_col">
+              <div class="cs_footer_widget">
+                <h2 class="cs_footer_widget_title cs_fs_24 cs_bold cs_mb_32 cs_mb_lg_24">ABOUT US</h2>
+                <ul class="cs_footer_menu_list cs_mp_0 text-capitalize" aria-label="Footer navigation menu">
+                  <li><a href="about-us.html" aria-label="About Us">About Us</a></li>
+                  <li><a href="team.html" aria-label="Meet The Team">Meet The Team</a></li>
+                  <li><a href="about-us.html" aria-label="Awards">Awards</a></li>
+                  <li><a href="portfolio.html" aria-label="Projects">Projects</a></li>
+                  <li><a href="about-us.html" aria-label="Testimonials">Testimonials</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="cs_footer_col">
+              <div class="cs_footer_widget">
+                <h2 class="cs_footer_widget_title cs_fs_24 cs_bold cs_mb_32 cs_mb_lg_24">SERVICES</h2>
+               <ul class="cs_footer_menu_list cs_mp_0 text-capitalize" aria-label="Footer services menu">
+                  <li><a href="service-details.html" aria-label="Residential Design">Residential Design</a></li>
+                  <li><a href="service-details.html" aria-label="Commercial Design">Commercial Design</a></li>
+                  <li><a href="service-details.html" aria-label="Interior Design">Interior Design</a></li>
+                  <li><a href="service-details.html" aria-label="Urban Planning">Urban Planning</a></li>
+                  <li><a href="service-details.html" aria-label="Sustainable Design">Sustainable Design</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="cs_footer_col">
+              <div class="cs_footer_widget">
+                <h2 class="cs_footer_widget_title cs_fs_24 cs_bold cs_mb_32 cs_mb_lg_24">RESOURCES</h2>
+                <ul class="cs_footer_menu_list cs_mp_0 text-capitalize" aria-label="Footer navigation menu">
+                  <li><a href="blog.html" aria-label="Blog and Insights">Blog & Insights</a></li>
+                  <li><a href="services.html" aria-label="Services">Services</a></li>
+                  <li><a href="contact-us.html" aria-label="Contact Us">Contact Us</a></li>
+                  <li><a href="faq.html" aria-label="Get a Quote">Get a Quote</a></li>
+                  <li><a href="#" aria-label="License">License</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="cs_footer_col">
+              <div class="cs_footer_widget">
+                <h2 class="cs_footer_widget_title cs_fs_24 cs_bold cs_mb_22">Newsletter</h2>
+                <p class="cs_mb_21">Subscribe Our Newsletter</p>
+                <form action="#" class="cs_newsletter_style_1">
+                  <input type="email" name="email" autocomplete="off" placeholder="Enter Your Email" class="cs_form_field cs_radius_50 cs_fs_14 cs_bold" >
+                  <button type="submit" class="cs_submit_btn cs_radius_50 cs_fs_14 cs_bold">Subscribe Now</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cs_footer_bottom">
+        <div class="container-fluid">
+          <div class="cs_footer_bottom_content">
+            <div class="cs_footer_bottom_content">
+            <div class="cs_copywright_text cs_primary_color">Copyright & Design <span class="cs_accent_color">@[NOME DO CLIENTE] </span> <span class="cs_getting_year"></span></div>
+            <ul class="cs_footer_bottom_menu cs_mp_0 cs_primary_color" aria-label="Footer legal menu">
+              <li><a href="#" aria-label="Style Guide">Style Guide</a></li>
+              <li><a href="#" aria-label="Licenses">Licenses</a></li>
+              <li><a href="#" aria-label="Changelog">Changelog</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+    </footer>
+    <!-- End Footer Section -->
+    <!-- Start Scroll Top Button -->
+     <button type="button" name="ScrollToTopBtn" class="cs_scrollup_btn" id="scrollToTopBtn">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <!-- End Scroll Top Button -->
+    <!-- JavaScript with defer for performance -->
+    <script defer src="assets/js/jquery.min.js"></script>
+    <script defer src="assets/js/gsap.min.js"></script>
+    <script defer src="assets/js/lenis.min.js"></script>
+    <script defer src="assets/js/swiper.min.js"></script>
+    <script defer src="assets/js/odometer.min.js"></script>
+    <script defer src="assets/js/SplitText.min.js"></script>
+    <script defer src="assets/js/ScrollTrigger.min.js"></script>
+    <script defer src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+/* Color */
+
+ul.funfact li h2,
+ul.Menu-br li a:hover,
+input[type=checkbox]:checked + label:before,
+.hambur h6,.crumbs i,.about-card-1 h2,.years span,
+.blog-one .title-blog h3 > a:hover,a.button.back,
+a.button.back i,.pricing-table span,.workout-time h6,
+.subscribe-to h3,.hana-evans ul.social-icons li a:hover,
+.previou a:hover,.mobile-nav > ul li > a:hover
+
+{
+   color: #bde800;
+}
+
+
+
+/* Background Color */
+span.dot,.scroll-top-btn,
+.table-data,.background-object:before,
+.yourself,.blog-detai:before,
+.meeting-data:hover .meeting-tim h3,
+.apointment-one.two .apointment:after,
+.progress-status .tooltip,
+.photos:before,.number span,
+.pricing-table-img:after,
+ul.fast li h6:before,a.button.back:before,
+.photo-section.about a:hover i,
+.young:after,.button:after,
+.photo-section:before,
+.slider-img span,
+.Contacts i,
+.duis a:hover i,
+.nice-select .option:hover,
+.nice-select .option.focus,
+.nice-select .option.selected.focus,
+.about-section-photo:before,
+.duis:before,
+ul.list li h6:before,
+ul.list li h4:before,
+.years h6:after,
+.years h6:before,
+.photo.owl-theme .owl-dots .owl-dot.active span,
+.photo.owl-theme .owl-dots .owl-dot:hover span,
+.progress-status,.other-workouts-Sections:before,.page-loader,.img-girl:before,
+.loop-slider.owl-theme .owl-nav [class*=owl-]:hover{
+    background-color:#bde800 ;
+}

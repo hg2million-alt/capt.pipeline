@@ -1,0 +1,685 @@
+@media only screen and (max-width:1440px){
+.home-banner-section{
+	background-position: center;
+}
+.time-table-section {
+    background-position: center;
+}
+}
+
+@media only screen and (max-width:1199px){
+	.exp-contact-section .exp-statistics {
+			font-size: 80px;
+	}
+	.home-banner-section,
+	.time-table-section,
+	.generic-banner{
+		height: auto;
+	}
+	.exp-contact-section .suffix {
+		font-size: 50px;
+	}
+	.banner-content{
+		padding: 100px 0;
+	}
+	#header {
+		padding-top: 16px;
+	}	
+	.info-boxes ul li {
+		padding: 20px 60px 20px 40px;
+		margin: 0 12px 16px 0;
+	}
+	.info-boxes ul li.last-li {
+		padding: 20px 67px 20px 40px;
+	}
+	.benefits-section{
+		padding-right: 40px;
+		padding-left: 40px;
+		margin-top: -82px !important;
+	}
+	.blog-section .blog-wrapper1 {
+		padding: 30px 25px 35px;
+	}
+	.cards-section ul li {
+		margin: 0 20px 0 20px;
+	}
+	.cards-section ul li:first-child {
+		margin: 0 20px 0 0;
+	}
+	.cards-section ul li:last-child {
+		margin: 0 0 0 20px;
+	}
+	.benefits-section li{
+		padding: 0 7px;
+	}
+	.customer-review-section .carousel-control-prev {
+		left: 78%;
+	}
+	.customer-review-section .carousel-control-next {
+		right: 24px;
+	}
+	.carousel-indicators li{
+		width: 140px;
+	}
+	.customer-review-section h3 {
+		margin: 0 0 24px 0;
+	}
+	.quote-icon i {
+		font-size: 70px;
+	}	
+	.customer-review-section .carousel-indicators {
+		left: 34px;
+	}
+	.customer-review-section .carousel-inner p {
+		font-size: 18px;
+		margin-bottom: 12px;
+	}
+	.customer-review-wrap span.special {
+		font-size: 35px;
+		padding-right: 6px !important;
+	}
+	.blog-section h6 {
+		margin: 0 0 20px 0;
+	}
+	.blog-wrapper1 p,
+	.sub-p{
+		margin-bottom: 10px !important;
+	}
+	.blog-wrapper1 img {
+		margin: 0 0 20px 0;
+	}
+	.footer-content h6 {
+		margin: 10px 0 24px 0;
+		font-size: 16px;
+	}
+	.get-intouch-section img{
+		position: absolute;
+		bottom: -10px;
+	}
+	.generic-inner-banner-con {
+		padding: 100px 0;
+	}
+	.doctor-timing-con {
+		left: -46px;
+	}
+	.doctor-information-con {
+		padding-top: 80px;
+	}
+	.doctor-information-lft-con p,
+	.doctor-information-lft-con p:nth-child(4)
+	{
+		margin-bottom: 18px;
+	}
+	.doctor-information-lft-con h3 {
+		margin-bottom: 20px;
+	}
+	.doctor-information-lft-con h6 {
+		margin-bottom: 10px;
+	}
+	.success-list-item-content p {
+		margin-bottom: 30px;
+	}
+	.success-list-item-content h6 {
+		margin-bottom: 12px;
+	}
+	.doctor-information-lft-con p br{
+		display: none;
+	}
+	.dental-appliances-static-con h3 {
+		margin-bottom: 60px;
+	}
+	.doctor-information-con .doctor-information-lft-con h3 br{
+		display: none;
+	}
+	.experience-con {
+		margin-top: 50px;
+	}
+	.mission-box, .prices-box {
+		padding: 30px 22px;
+		border-radius: 30px 0 30px 0;
+		margin-bottom: 20px;
+	}
+	.success-list-item-content {
+		margin-left: 65px;
+	}
+	.auther-signature-con {
+		margin-top: 40px;
+	}
+	.map-con iframe {
+		height: 400px;
+	}
+	.experiences-con p br{
+		display: none;
+	}
+	.videoCoverImage span{
+		top: -54px;
+	}
+	
+	
+}
+@media only screen and (max-width: 991px) {
+	.exp-contact-section .exp-statistics {
+				font-size: 60px;
+	}
+	.exp-contact-section .suffix {
+			font-size: 34px;
+			top: -32px;
+	}
+	.home-angle-double-down{
+		display: none;
+	}
+	.nav-btn {
+		padding-left: 0 !important;
+	}
+	.navbar-nav .nav-item a:focus::before{
+		display: none;
+	}
+	.appointment-btn {
+			padding: 14px 24px;
+			margin-top: 24px !important;
+	}
+	.contact-us-btn{
+			padding: 12px 24px;
+	}
+	.home-banner-inner2 {
+		padding-top: 0px;
+	}
+	.senior-dentist{
+		right: 91px;
+		bottom: 63px;
+		padding: 14px 10px;
+		width: 28%;
+	}
+	.schedule-no {
+		padding: 10px;
+	}
+	.home-banner-section {
+		text-align: center;
+	}
+	.banner-content {
+		padding: 80px 0;
+	}
+	.home-banner-inner1{
+		margin-bottom: 15px;
+	}
+	.home-banner-section h1 {
+		margin: 0 0 12px 0;
+	}
+	.home-banner-section p{
+		margin-bottom: 16px;
+	}
+	.exp-inner-sec2 {
+		padding-top: 15px;
+	}
+	.schedule-inner-sec h6{
+		min-height: auto !important;
+	}
+	.schedule-card{
+		padding-top: 30px !important;
+		padding-bottom: 20px !important;
+	}
+	.home-info-sec2 img{
+		width: 370px;
+	}
+	.get-intouch-section img{
+		position: relative;
+		width: 450px;
+	}
+	.book-appointment-section .form-inner-wrapper {
+		margin-bottom: 15px;
+		margin-right: 10px;
+	}
+	.book-appointment-section .form-inner-wrapper2 {
+		width: 31.5%;
+		margin-right: 4px;
+	}
+	.customer-review-section .carousel-indicators{
+		top: 0;
+		left: 98px;
+		position: relative;
+	}
+	.carousel-inner{
+		margin-top: 100px;
+		width: 100% !important;
+	}
+	.customer-review-section .carousel-control-prev {
+		left: 70%;
+	}
+	.customer-review-section .carousel-control-next, .customer-review-section .carousel-control-prev {
+		top: 444px;
+	}
+	.customer-review-section h6{
+		margin-bottom: 14px;
+	}
+	.calender-img img {
+		margin: 0;
+	}
+	.cards-section {
+		padding: 50px 0;
+	}
+	.blog-section .blog-wrapper1{
+		margin-bottom: 15px;
+	}
+	.seablue-box {
+		bottom: 9px;
+	}	
+	.generic-inner-banner-con {
+		padding: 80px 0;
+	}
+	.doctor-timing-con table tbody tr td:first-child:after {
+		left: 100px;
+		width: 100%;
+	}
+	.doctor-timing-con {
+		left: 0;
+	}
+	.doctor-timing-con table tbody tr:nth-child(3) td:first-child:after {
+		width: 100%;
+		left: 100px;
+	}
+	.doctor-timing-con{
+		width: 450px;
+	}
+	.doctor-timing-con {
+		left: -260px;
+	}
+	.doctor-information-lft-con h6 {
+		margin-bottom: 12px;
+	}
+	.doctor-information-lft-con h3 {
+		margin-bottom: 14px;
+	}
+	.doctor-information-lft-con p {
+		margin-bottom: 14px;
+	}
+	.doctor-information-lft-con p:nth-child(4) {
+		margin-bottom: 14px;
+	}
+	.doctor-information-right-con img{
+		width: 375px;
+	}
+	.doctor-information-right-con img{
+		margin-right: 50px;
+	}
+	.doctor-img,
+	.dental-doctor-information
+	{
+		margin-top: 15px;
+	}
+	.success-list-item-content p {
+		margin-bottom: 15px;
+	}
+	.invisible-txt {
+		margin-bottom: 15px !important;
+	}
+	.success-list-item-content {
+		margin-left: 58px;
+	}
+	.dental-appliances-static-con .info-boxes ul li{
+			padding: 22px 23px;
+			margin: 0 12px 16px 0;
+			width: 23%;
+			white-space: nowrap;
+	}
+	.dental-appliances-static-con h3 {
+		margin-bottom: 50px;
+	}
+	.experience-con {
+		margin-top: 15PX;
+	}
+	.map-con iframe {
+		height: 300px;
+	}
+	.team-member-detail,
+	.team-professional-lft
+	{
+		margin-bottom: 15px;
+	}
+	.team-detail-con img{
+		width: 280px;
+	}
+	.meet-team-section .inner-wrapper1{
+		margin-bottom: 15px;
+	}
+	.blog-post .row:first-child{
+		margin-bottom: 0;
+	}
+
+}
+@media screen and (max-width:767px){
+	.home-banner-section{
+			text-align: center;
+	}
+	.exp-contact-section{
+			text-align: center;
+	}
+	.banner-content {
+		padding: 70px 0;
+	}
+	.appointment-btn {
+		padding: 10px 20px;
+	}
+	.contact-us-btn{
+			padding: 10px 20px;
+	}
+	.main-nav .lab {
+		margin-right: 4px;
+	}
+	.senior-dentist{
+		right: 78px;
+		bottom: 56px;
+		padding: 10px;
+		width: 30%;
+	}
+	.main-nav{
+		text-align: center;
+	}
+	.schedule-inner-sec h6 {
+		color: var(--global--color-blackyellow);
+		min-height: 20px;
+	}
+	.banner-content {
+		padding: 50px 0;
+	}
+	.home-banner-section p {
+		margin-bottom: 12px;
+	}
+	.home-banner-section h1 {
+		margin: 0 0 8px 0;
+	}
+	.videoCoverImage img.thumb{
+		width: 400px !important;
+	}
+	.youtube-icon-img {
+		bottom: 66px;
+		left: 70px;
+	}
+	.videoCoverImage span {
+		top: -51px;
+		left: -98px;
+		text-align: left;
+	}
+	
+	
+	.schedule-inner-sec h6{
+		margin-bottom: 10px !important;
+	}
+	.get-intouch-section img {
+		width: 350px;
+	}
+	p{
+		font-size: 16px;
+	}
+	.book-appointment-section .form-inner-wrapper2 {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 8px;
+	}
+	.book-appointment-section .form-inner-wrapper {
+		margin-bottom: 8px;
+		margin-right: 0;
+		width: 100%;
+	}
+	.appointment-btn {
+		margin-top: 12px !important;
+	}
+	.book-appointment-section .orange-box {
+		top: -33px;
+		left: 10px;
+		padding: 5px 12px;
+	}
+	.customer-review-section h6{
+		margin-bottom: 8px;
+	}
+	.customer-review-section .carousel-inner p {
+		font-size: 16px;
+		margin-bottom: 6px;
+	}
+	.customer-review-section .carousel-inner p {
+		font-size: 16px;
+		margin-bottom: 6px;
+	}
+	.customer-review-section .carousel-control-next, .customer-review-section .carousel-control-prev {
+		top: 400px;
+	}
+	.customer-review-wrap span.special {
+		font-size: 30px;
+	}
+	.auther-name span{
+		top: 100px;
+	}
+	.carousel-inner {
+		margin-top: 70px;
+	}
+	.customer-review-section .carousel-control-prev {
+		left: 60%;
+	}
+	.customer-review-section .carousel-indicators{
+		left: 100px;
+	}
+	.auther-name span{
+		top:92px;
+	}
+	.quote-icon i {
+		font-size: 50px;
+	}
+	.cards-section {
+		padding: 40px 0;
+	}
+	.generic-inner-banner-con {
+		padding: 60px 0;
+	}
+	.doctor-information-con {
+		padding-top: 60px;
+	}
+	.doctor-timing-con h6 {
+		margin-bottom: 20px;
+	}
+	.doctor-timing-con {
+		width: 350px;
+	}
+	.doctor-timing-con table tbody tr td:first-child:after {
+		left: 68px;
+		width: 94%;
+	}
+	.doctor-timing-con table tbody tr:nth-child(3) td:first-child:after {
+		width: 84%;
+		left: 84px;
+	}
+	.doctor-information-lft-con h6 {
+		margin-bottom: 6px;
+	}
+	.doctor-information-lft-con h3 {
+		margin-bottom: 8px;
+	}
+	.doctor-information-lft-con p {
+		margin-bottom: 12px;
+	}
+	.doctor-timing-con {
+		left: -85px;
+	}
+	.doctor-information-right-con img{
+		margin-right: 0;
+	}
+	.success-list-item i {
+		width: 30px;
+		height: 30px;
+	}
+	.success-list-item-content {
+		margin-left: 40px;
+	}
+	.success-list-item-content p {
+		line-height: 20px;
+	}
+	.dental-appliances-static-con .info-boxes ul li {
+		margin: 0 3px 10px;
+		width: 48%;
+	}
+	.dental-appliances-static-con h3 {
+		margin-bottom: 30px;
+	}
+	.comment-box {
+		width: 100% !important;
+	}
+	.book-appointment-section textarea {
+		height: 120px;
+	}
+	.map-con iframe {
+		height: 250px;
+	}
+	.team-detail-con img{
+		width: 250px;
+	}
+	.team-professional-con ul li{
+		font-size: 16px;
+		margin-bottom: 6px;
+	}
+
+	
+	
+}
+
+@media screen and (max-width: 575px){
+		.senior-dentist{
+			right: 48px;
+			bottom: 37px;
+			padding: 6px;
+			letter-spacing: -0.4px;
+			width: 38%;
+		}
+		.nav-get-social{
+			display: inline-flex;
+		}
+		.banner-content {
+			padding: 40px 0;
+		}
+		#header .navbar-collapse {
+			top: 68px;
+			width: 100%;
+		}
+		.videoCoverImage img.thumb {
+			width: 250px !important;
+		}
+		.youtube-icon-img {
+			bottom: 40px;
+			left: 50px;
+		}
+		.schedule-card {
+			padding: 30px 15px 20px !important;
+		}
+		.info-boxes ul li,
+		.info-boxes ul li.last-li
+		{
+			padding: 20px 14px;
+			width: 48%;
+			float: left;
+		}
+		.info-boxes ul li:after{
+			left: 26%;
+		}
+		.home-info-sec2 img {
+			width: 300px;
+		}
+		.get-intouch-section li{
+			font-size: 14px;
+		}
+		.carousel-indicators li img {
+			left: -13px;
+		}
+		.auther-name span {
+			font-size: 14px;
+			top: 76px;
+			left: -10px;
+			white-space: nowrap;
+		}
+		.quote-icon i {
+			font-size: 40px;
+		}
+		.customer-review-wrap span.special {
+			font-size: 22px;
+		}
+		.customer-review-wrap p {
+			margin-left: 38px;
+			font-size: 14px !important;
+		}
+		.customer-review-section h3 {
+			margin: 0 0 16px 0;
+			font-size: 24px;
+		}
+		#carouselExampleIndicators{
+			position: relative;;
+		}
+		
+		.customer-review-section .carousel-indicators li figure:after{
+			left: 80px;
+		}		
+		.customer-review-section .carousel-control-prev{
+			left: 162px;
+		}
+		.customer-review-section .carousel-indicators{
+			left: -14px;
+		}
+		.carousel-inner {
+			margin-top: 40px;
+		}
+		.cards-section {
+			padding: 30px 0;
+		}
+		.generic-inner-banner-con {
+			padding: 40px 0;
+		}
+		.doctor-information-con {
+			padding-top: 40px;
+		}
+		.doctor-information-lft-con p br{
+			display: none;
+		}
+		.doctor-timing-con {
+			width: 330px;
+			left: 0;
+			height: 235px;
+			padding: 32px 15px;
+		}
+		.doctor-timing-con h6 {
+			margin-bottom: 10px;
+		}
+		.doctor-timing-con table tbody tr td:first-child:after {
+			width: 86%;
+		}
+		.doctor-timing-con table tbody tr:nth-child(3) td:first-child:after {
+			width: 72%;
+		}
+		.dental-appliances-static-con h3 br{
+			display: none;
+		}
+		.dental-appliances-static-con h3 {
+			margin-bottom: 25px;
+		}
+		.mission-box {
+			margin-bottom: 15px;
+		}
+		.book-appointment-section textarea {
+			height: 80px;
+		}
+		.book-appointment-section .form-inner-wrapper select, .book-appointment-section .form-inner-wrapper input,
+		.book-appointment-section .form-inner-wrapper2 input
+		{
+			height: 50px;
+			padding: 10px;
+		}
+		.map-con iframe {
+			height: 200px;
+		}	
+		.team-professional-con ul li{
+			font-size: 14px;
+			margin-bottom: 4px;
+		}
+		.videoCoverImage span {
+			left: -20px;
+		}
+		.youtube-icon-img {
+			bottom: 70px;
+		}
+		
+
+}

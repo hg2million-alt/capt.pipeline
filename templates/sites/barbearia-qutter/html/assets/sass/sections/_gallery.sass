@@ -1,0 +1,219 @@
+/*******************************************************/
+/****************** 13. Gallery Area *******************/
+/*******************************************************/
+.gallery-area
+    +res-ab(xxl)
+        +gapLR(padding, 55px)
+    +overlay($lighter-color, 1)
+    &:before
+        height: 140%
+        +res-bl(sm)
+            height: 110%
+        
+.gallery-item
+    position: relative
+    margin-bottom: 30px
+    img
+        width: 100%
+    .gallery-content
+        top: 50%
+        left: 50%
+        opacity: 0
+        padding: 15px
+        transition: 0.5s
+        position: absolute
+        +flexcenter(center)
+        flex-direction: column
+        +size(calc(100% - 60px))
+        background: transparentize(#1f1f1f, 0.15)
+        transform: scaleY(0.5) translate(-50%, -100%)
+        +res-bl(md)
+            +size(calc(100% - 30px))
+        h3, p
+            color: white
+            margin-bottom: 8px
+    &:hover
+        .gallery-content
+            opacity: 1
+            transform: scaleY(1) translate(-50%, -50%)
+    &.style-two
+        .gallery-content
+            +size(100%)
+            left: 0
+            top: 0
+            transform: scale(0.85, 0.5) translate(0)
+            background: transparentize(black, 0.20)
+            .icon
+                +size(150px)
+                position: relative
+                +res-bl(ms)
+                    +size(80px)
+                &:after,
+                &:before
+                    position: absolute
+                    content: ''
+                    left: 50%
+                    top: 50%
+                    +size(1px, 100%)
+                    background: white
+                    transform: translate(-50%, -50%)
+                &:after
+                    transform: translate(-50%, -50%) rotate(-90deg)
+        &:hover
+            .gallery-content
+                transform: scaleY(1)
+            
+/* Gallery Area Two */
+.gallery-area-two
+    +overlay($lighter-color, 1)
+    &:before
+        top: -40px
+        height: 90%
+    +res-ab(xxl)
+        +gapLR(padding, 55px)
+                  
+/* Gallery Area Three */
+.gallery-area-three
+    +res-ab(xxl)
+        +gapLR(padding, 55px)
+        
+/* Gallery Area Four */
+.gallery-area-four
+    .gallery-item
+        .gallery-content
+            .icon
+                +size(75px)
+                  
+/* Gallery Page */
+.gallery-page-area
+    +res-ab(xxl)
+        +gapLR(padding, 55px)
+        
+.order-mo-2
+    +res-bl(md)
+        order: 2
+        
+/* Gallery Details */
+.gallery-details-area
+    .image
+        img
+            width: 100%
+.protfolio-details-content
+    h2, h3, p
+        margin-bottom: 25px
+    h2
+        text-transform: uppercase
+        +res-bl(sm)
+            font-size: 35px
+    h3
+        text-transform: uppercase
+        +res-bl(sm)
+            line-height: 1.5
+            
+.first-letter
+    display: flex
+    span:first-child
+        font-size: 60px
+        height: 80px
+        width: 80px
+        flex: none
+        color: white
+        margin-top: 8px
+        font-weight: 700
+        line-height: 74px
+        text-align: center
+        margin-right: 25px
+        border-radius: 5px
+        font-family: $heading-font
+        background: $primary-color
+        +res-bl(sm)
+            width: 55px
+            height: 60px
+            font-size: 40px
+            line-height: 54px
+            margin-right: 18px
+        +res-bl(xs)
+            width: 35px
+            height: 40px
+            font-size: 25px
+            line-height: 40px
+            margin-right: 15px
+                
+.gallery-prev-next
+    display: flex
+    justify-content: space-between
+    +gapLR(margin, -5px)
+    .gpn-item
+        margin: 5px
+        overflow: hidden
+        position: relative
+        .overlay-hover
+            position: absolute
+            +size(100%)
+            top: 0
+            opacity: 0
+            color: white
+            font-size: 35px
+            +flexcenter(center)
+            transform: scaleX(0)
+            background: transparentize($black-color, 0.2)
+        &:first-child
+            .overlay-hover
+                left: -100%
+        &:last-child
+            .overlay-hover
+                left: 100%
+        &:hover
+            .overlay-hover
+                left: 0
+                opacity: 1
+                transform: scaleX(1)
+            
+.comment-form
+    padding: 45px 50px 60px
+    background: transparentize($black-color, 0.93)
+    +res-bl(ms)
+        +gapLR(padding, 25px)
+    .title
+        font-weight: 700
+        text-transform: uppercase
+        +res-ab(ms)
+            font-size: 30px
+    .form-group
+        margin-bottom: 30px
+    .form-control
+        &::placeholder
+            text-transform: uppercase
+    .theme-btn
+        background: $primary-color
+    .your-ratting
+        display: flex
+        align-items: center
+        h6
+            margin: 0 15px 0 0
+        
+.portfolio-description
+    background: transparentize($black-color, 0.93)
+    +res-ab(lg)
+        margin-top: -80px
+    .title
+        color: white
+        margin-bottom: 0
+        padding: 26px 45px
+        text-transform: uppercase
+        background: $primary-color
+        +res-bl(xs)
+            +gapLR(padding, 25px)
+    ul
+        padding: 35px 45px
+        +res-bl(xs)
+            +gapLR(padding, 25px)
+        li
+            &:not(:last-child)
+                margin-bottom: 26px
+                padding-bottom: 24px
+                border-bottom: 1px solid #d3d3d3
+            h5
+                font-size: 18px
+                margin-bottom: 0
+                text-transform: uppercase

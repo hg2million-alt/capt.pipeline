@@ -1,0 +1,110 @@
+/**
+ * Accordion
+ */
+
+.tm-accordion {
+
+    .card {
+        border: none;
+        background: #ffffff;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    .card-header {
+        padding: 0;
+        background: transparent;
+        border: 0;
+
+        button {
+            height: auto;
+            display: block;
+            width: 100%;
+            text-align: left;
+            padding: 11px 20px;
+            padding-right: 35px;
+            line-height: 28px;
+            text-decoration: none !important;
+            border: 0;
+            position: relative;
+            white-space: inherit;
+            background: #ffffff;
+            color: $color-heading;
+            font-size: 16px;
+            font-weight: 600;
+            font-family: $ff-body;
+
+            &::after {
+                content: "\f48a";
+                font-family: "Ionicons";
+                position: absolute;
+                left: auto;
+                right: 15px;
+                top: 10px;
+                height: 17px;
+                width: 17px;
+                font-size: 18px;
+            }
+
+            &.collapsed {
+                &::after {
+                    content: "\f48a";
+                }
+            }
+
+            &:not(.collapsed) {
+                background: $color-theme;
+                color: #ffffff;
+
+                &:after {
+                    content: "\f463";
+                }
+            }
+        }
+    }
+
+    .card-body {
+        padding: 27px 20px;
+        border-radius: 3px;
+
+        p:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    @media #{$layout-mobile-sm} {
+        .card-header {
+            button {
+                padding-left: 20px;
+            }
+        }
+
+        .card-body {
+            padding-left: 20px;
+        }
+    }
+}
+
+.bg-white {
+    .tm-accordion {
+        .card {
+            background: $color-grey;
+        }
+
+        .card-header {
+            padding: 0;
+            background: transparent;
+            border: 0;
+
+            button {
+                background: $color-grey;
+
+                &:not(.collapsed) {
+                    background: $color-theme;
+                }
+            }
+        }
+    }
+}

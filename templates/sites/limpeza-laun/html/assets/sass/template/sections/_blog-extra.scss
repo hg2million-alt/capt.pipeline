@@ -1,0 +1,313 @@
+/* Blog Card ---------------------------------- */
+.blog-card {
+    background-color: $white-color;
+    position: relative;
+    z-index: 3;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.06);
+
+    @include md {
+        padding: 20px;
+    }
+
+    .blog-img {
+        position: relative;   
+        border-radius: 10px;
+        overflow: hidden;
+
+        &:before {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            display: block;
+            content: '';
+            width: 50%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            transform: skewX(25deg);
+            z-index: 2;
+        }
+
+        img {
+            width: 100%;
+            transition: all 0.4s ease;
+        }
+    }
+
+    .box-title {
+        margin-bottom: 17px;
+
+        a {
+            background-image: linear-gradient(to left, $theme-color, $theme-color);
+            background-repeat: no-repeat;
+            background-position: bottom left;
+            background-size: 0 2px;
+            transition: 0.5s ease-in-out;
+
+            &:hover {
+                background-size: 100% 2px;
+            }
+        }
+    }
+
+    .blog-meta {
+        position: relative;
+        background-color: $theme-color;
+        border-radius: 30px;
+        padding: 10px 20px;
+        margin: -20px 20px 28px 20px;
+        z-index: 4;
+
+        @include sm {
+            margin: -50px 20px 28px 20px;
+        }
+
+        @include xs {
+            margin: -50px 0px 28px 0px;
+        }
+
+        span,
+        a {
+            color: $white-color;
+
+            >i {
+                color: $white-color;
+            }
+        }
+    }
+
+    &:hover {
+        .blog-img {
+            img {
+                transform: scale(1.08);
+            }
+
+            &:before {
+                animation: shine 1.9s;
+             }
+        }
+    }
+}
+
+
+@include md {
+    .blog-card {
+        .box-title {
+            font-size: 22px;
+        }
+    }
+}
+
+@include sm {
+    .blog-card {
+        .blog-content {
+            padding: 30px;
+        }
+
+        .box-title {
+            font-size: 24px;
+        }
+    }
+}
+
+@media (max-width: 410px) {
+    .blog-card {
+        .box-title {
+            font-size: 22px;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .blog-card {
+        .blog-content {
+            padding: 18px;
+        }
+
+        .box-title {
+            font-size: 20px;
+        }
+    }
+}
+
+/* Blog Box ---------------------------------- */
+.blog-box {
+    position: relative;
+    background-color: $white-color;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.06);
+
+    &_content {
+        padding: 30px;
+    }
+
+    .blog-img {
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s ease;
+        &:before {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            display: block;
+            content: '';
+            width: 50%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            transform: skewX(25deg);
+            z-index: 2;
+        }
+
+        img {
+            width: 100%;
+            transition: all 0.4s ease;
+        }
+    }
+
+    &_wrapper {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &_date {
+        background-color: $theme-color;
+        width: 50px;
+        height: 50px;
+        padding: 8px;
+        display: block;
+        margin: 0 auto;
+        font-family: var(--title-font);
+        color: var(--white-color);
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 0;
+    }
+
+    &_month {
+        font-size: 14px;
+        font-weight: 400;
+        font-family: $body-font;
+        display: block;
+        margin-top: -0.3rem;
+    }
+
+    &_year {
+        position: relative;
+        border: 2px solid $theme-color;
+        font-family: $body-font;
+        color: $white-color;
+        font-weight: 400;
+        font-size: 14px;
+        display: block;
+
+        &:after {
+            content: '\f0d7';
+            font-family: var(--icon-font);
+            font-weight: 600;
+            font-size: 20px;
+            pointer-events: none;
+            position: absolute;
+            left: 15px;
+            color: $theme-color;
+            line-height: calc(var(--input-height) - 2px);
+            top: 3px;
+        }
+    }
+
+    .blog-meta {
+        margin: -0.3rem 0 15px 0;
+    }
+
+    &:hover {
+        .blog-img {
+            img {
+                transform: scale(1.08);
+            }
+            &:before {
+                animation: shine 1.9s; 
+             } 
+        }
+    }
+}
+
+/* Blog Grid ---------------------------------- */
+.blog-grid {
+    .blog-img {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .blog-content {
+        border: 1px solid $border-color;
+        padding: 30px;
+    }
+
+    .blog-tag {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: $theme-color;
+        padding: 9px 20px;
+        color: $white-color;
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 0;
+    }
+
+    .box-title {
+        margin-bottom: 15px;
+
+        a {
+            background-image: linear-gradient(to left, $theme-color, $theme-color);
+            background-repeat: no-repeat;
+            background-position: bottom left;
+            background-size: 0 2px;
+            transition: 0.5s ease-in-out;
+
+            &:hover {
+                background-size: 100% 2px;
+            }
+        }
+    }
+
+    .blog-img {
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            transition: 0.4s ease-in-out;
+        }
+    }
+
+    .blog-meta {
+        margin: -0.4em 0 18px 0;
+
+        span,
+        a {
+            >i {
+                color: $theme-color;
+            }
+        }
+    }
+
+    &:hover {
+        .blog-img {
+            img {
+                transform: scale(1.08);
+            }
+        }
+    }
+}
+
+@include md {
+    .blog-grid {
+        .blog-content {
+            padding: 20px;
+        }
+    }
+}

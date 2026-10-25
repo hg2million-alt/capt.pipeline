@@ -1,0 +1,218 @@
+/*******************************************************/
+/****************** 07. Hero Section ******************/
+/*******************************************************/
+.hero-section
+    z-index: 2
+    overflow: hidden
+    position: relative
+    background-size: cover
+    +res-bl(lg)
+        +gapTB(padding, 200px)
+    &:before
+        +size(18%, 200%)
+        content: ''
+        right: 0
+        top: 50%
+        position: absolute
+        background: rgba(255, 255, 255, 0.05)
+        transform: translate(10%, -50%) rotate(25deg)
+    &:after
+        +size(18%, 100%)
+        content: ''
+        right: 0
+        top: 0
+        position: absolute
+        background: rgba(255, 255, 255, 0.05)
+        transform: translate(50%, -35%) rotate(-30deg)
+    .hero-bg-shapes
+        position: absolute
+        +size(100%)
+        left: 0
+        top: 0
+        z-index: -1
+        background: rgba(13, 13, 13, 0.5)
+        &:before
+            +size(18%, 200%)
+            content: ''
+            left: 0
+            top: 50%
+            position: absolute
+            background: rgba(255, 255, 255, 0.05)
+            transform: translate(-10%, -50%) rotate(-25deg)
+        &:after
+            +size(18%, 100%)
+            content: ''
+            left: 0
+            top: 0
+            position: absolute
+            background: rgba(255, 255, 255, 0.05)
+            transform: translate(-50%, -35%) rotate(30deg)
+        
+.hero-content
+    h1
+        margin-bottom: 15px
+        text-transform: uppercase
+        +res-bl(xl)
+            font-size: 100px
+        +res-bl(lg)
+            font-size: 80px
+        +res-bl(md)
+            font-size: 60px
+        +res-bl(sm)
+            font-size: 50px
+            line-height: 1.3
+        +res-bl(xs)
+            font-size: 40px
+    p
+        margin-bottom: 40px
+        +res-ab(sm)
+            font-size: 18px
+    &.style-two
+        h1
+            color: transparent
+            margin-bottom: 20px
+            -webkit-text-stroke: 1px
+            -webkit-text-stroke-color: white
+
+/* Hero Two */
+.hero-section-two
+    background-repeat: repeat-x
+    background-position: 0 40px
+    +res-bt(lg, xxl)
+        +gapTB(padding, 150px)
+    +res-bl(lg)
+        background-position: 0 27px
+    .hero-social
+        position: absolute
+        height: 100%
+        width: 70px
+        top: 0
+        left: 0
+        display: flex
+        text-align: center
+        background-color: #111
+        justify-content: center
+        transform: rotate(180deg)
+        background-repeat: repeat-y
+        background-position: center
+        +res-bl(lp)
+            display: none
+        .hero-social-inner
+            display: flex
+            justify-content: center
+            -webkit-writing-mode: vertical-rl
+        a
+            margin: 25px 0
+            display: flex
+            align-items: center
+            text-transform: uppercase
+            &:not(:hover)
+                color: #fefefe
+            &:before
+                +size(5px)
+                content: ''
+                transition: 0.5s
+                border-radius: 50%
+                margin-bottom: 12px
+                background: rgba(255, 255, 255, 0.15)
+            &:hover
+                &:before
+                    background: $primary-color
+            i
+                margin-bottom: 8px
+                transform: rotate(90deg)
+            span
+                font-family: $heading-font
+    .hero-left-image
+        width: 12%
+        top: 0
+        left: 70px
+        z-index: -1
+        height: 100%
+        position: absolute
+        background-size: cover
+        background-position: center
+        +res-bl(lg)
+            left: 2%
+            opacity: 0.5
+    .hero-main-image
+        width: 72%
+        bottom: 0
+        right: 0
+        z-index: -1
+        position: absolute
+        background-size: cover
+        height: calc(100% - 110px)
+        background-position: center
+        +res-bl(lg)
+            width: 75%
+            opacity: 0.5
+            height: calc(100% - 85px)
+            
+/* Hero Section Three */
+.hero-content.style-three
+    margin-left: 65px
+    max-width: 555px
+    +res-bt(lg, lp)
+        margin-left: 15px
+        h1
+            font-size: 90px
+    +res-bl(lg)
+        margin-left: 0
+    .logo
+        +res-bl(sm)
+            max-width: 50%
+        +res-bl(xs)
+            max-width: 60%
+    .hero-social
+        display: flex
+        flex-wrap: wrap
+        text-align: center
+        a
+            align-items: center
+            display: inline-flex
+            text-transform: uppercase
+            &:not(:hover)
+                color: #fefefe
+            &:not(:last-child)
+                margin-right: 25px
+                +res-bl(lg)
+                    margin-right: 20px
+            &:before
+                +size(5px)
+                content: ''
+                transition: 0.5s
+                border-radius: 50%
+                margin-right: 12px
+                background: rgba(255, 255, 255, 0.15)
+            &:hover
+                i, span
+                    color: $primary-color
+                &:before
+                    background: $primary-color
+            i
+                transition: 0.5s
+                margin-right: 8px
+            span
+                transition: 0.5s
+                font-family: $heading-font
+                +res-bl(ms)
+                    display: none
+    +res-bt(md, lg)
+        h1
+            font-size: 70px
+    +res-bt(ms, md)
+        h1 br
+            display: none
+                
+.hero-image-three
+    position: absolute
+    height: 100%
+    width: 48%
+    left: 0
+    top: 0
+    background-size: cover
+    background-position: center
+    +res-bl(md)
+        width: 100%
+        opacity: 0.35

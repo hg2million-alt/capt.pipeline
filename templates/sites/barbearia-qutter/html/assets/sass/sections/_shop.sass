@@ -1,0 +1,178 @@
+/*******************************************************/
+/******************** 23. Shop Area ********************/
+/*******************************************************/
+.shop-shorter
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    .sort-text
+        font-size: 18px
+        font-weight: 500
+        margin-right: auto
+        color: $heading-color
+    .products-dropdown
+        margin-right: 25px
+        .nice-select
+            font-size: 14px
+            text-transform: uppercase
+            padding: 13px 75px 13px 25px
+    .grid-list
+        display: flex
+        font-size: 25px
+        align-items: center
+        li
+            &:not(:last-child)
+                margin-right: 20px
+            a:not(:hover)
+                color: $heading-color
+    
+.product-item
+    text-align: center
+    margin-bottom: 25px
+    .image
+        height: 280px
+        padding: 20px
+        position: relative
+        background: white
+        +flexcenter(center)
+        margin-bottom: 20px
+        .product-btns
+            position: absolute
+            bottom: 20px
+            left: 20px
+            display: flex
+            flex-direction: column-reverse
+            a
+                opacity: 0
+                +size(40px)
+                line-height: 40px
+                visibility: hidden
+                border-radius: 5px
+                color: $primary-color
+                background: $lighter-color-two
+                &:not(:last-child)
+                    margin-top: 7px
+                &:hover
+                    color: white
+                    background: $primary-color
+    .ratting
+        i
+            margin: 0 2.5px
+            font-size: 13px
+            color: $primary-color
+    h5
+        font-size: 18px
+        margin-bottom: 0
+    &:hover
+        .product-btns
+            a
+                opacity: 1
+                visibility: visible
+                @for $i from 1 through 5
+                    &:nth-child(#{1 * $i})
+                        transition-delay: #{0 + .1 * $i}s
+        
+/* Product Details */
+.preview-images
+    padding: 15px
+    height: 450px
+    background: white
+    +flexcenter(center)
+    margin-bottom: 30px
+.thumb-images
+    justify-content: space-between
+    .thumb-item
+        padding: 10px
+        height: 120px
+        background: white
+        +flexcenter(center)
+        width: calc(33.333% - 17px)
+        +res-bl(xs)
+            width: calc(33.333% - 10px)
+        
+.product-details-content
+    +res-ab(xl)
+        margin-left: 50px
+    .title
+        margin-bottom: 8px
+        +flexcenter(space-between)
+        +res-ab(sm)
+            font-size: 30px
+        .price
+            font-size: 24px
+            &:before
+                content: '$'
+            +res-bl(sm)
+                font-size: 20px
+    .subtitle-ratting
+        flex-wrap: wrap
+        +flexcenter(space-between)
+        .ratting
+            i
+                color: #ffaa17
+    .colors
+        display: flex
+        align-items: center
+        +gapTB(padding, 10px)
+        border-top: 1px solid rgba(85, 85, 85, 0.2)
+        border-bottom: 1px solid rgba(85, 85, 85, 0.2)
+        h5
+            margin-bottom: 5px
+            margin-right: 20px
+        button
+            +size(17px)
+            margin-left: 10px
+            border-radius: 50%
+    .category-tags
+        display: flex
+        flex-wrap: wrap
+        li
+            font-size: 17px
+            margin-bottom: 5px
+            &:not(:last-child)
+                margin-right: 35px
+            b
+                font-size: 18px
+                @extend %heading
+                margin-right: 5px
+            a
+                &:not(:last-child)
+                    &:after
+                        content: ','
+    .add-to-cart
+        display: flex
+        flex-wrap: wrap
+        input
+            width: auto
+            padding: 0 25px
+            margin-top: 10px
+            margin-right: 10px
+            background: transparent
+            border: 2px solid #e0e0e1
+        .theme-btn
+            margin-top: 10px
+            margin-right: 10px
+            +gapTB(padding, 9px)
+        .love
+            margin-top: 10px
+            padding: 5px 17px
+            border-radius: 5px
+            border: 2px solid #e0e0e1
+            
+.product-information-tab
+    li
+        margin: 0 5px 10px
+        a
+            font-size: 18px
+            @extend %heading
+            background: white
+            border-radius: 5px
+            padding: 11px 65px
+            display: inline-block
+            text-transform: uppercase
+            +res-bl(sm)
+                font-size: 16px
+                padding: 5px 20px
+            &.active
+                color: white
+                background: $primary-color

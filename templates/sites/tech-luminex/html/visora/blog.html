@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="image/favicon.png">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.2/animation_utility.css" />
+    <title>[NOME DO CLIENTE] — Consultoria de TI</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header" class="fixed-top mx-auto">
+        <div class="mx-auto align-items-center" style="max-width: 1770px;">
+            <nav class="navbar navbar-expand-xl">
+                <div class="container-fluid ps-3">
+                    <div class="logo-container">
+                        <a class="navbar-brand" href="#"><img src="image/Logo.png" alt="" class="img-fluid"></a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto mb-2 mb-xl-0 gap-xl-4 gap-1">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" aria-current="page" href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="team.html">Team</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="team_detail.html">Team Detail</a></li>
+                                    <li><a class="dropdown-item" href="services_detail.html">Services Detail</a></li>
+                                    <li><a class="dropdown-item" href="study_case.html">Case Study</a></li>
+                                    <li><a class="dropdown-item" href="case_study_detail.html">Case Study Detail</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="testimonials.html">Testimonial</a></li>
+                                    <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                                    <li><a class="dropdown-item" href="404.html">404</a></li>
+                                    <li><a class="dropdown-item" href="coming_soon.html">Coming Soon</a></li>
+                                    <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                                    <li><a class="dropdown-item" href="pricing.html">Pricing Plan</a></li>
+                                    <li><a class="dropdown-item active" href="blog.html">Blog Grid</a></li>
+                                    <li><a class="dropdown-item" href="single_post_side_bar.html">Single Post With Side
+                                            Bar</a></li>
+                                    <li><a class="dropdown-item" href="single_post_no_side_bar.html">Single Post Without
+                                            Side Bar</a></li>
+                                    <li><a class="dropdown-item" href="contact_us.html">Contact Us</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="w-max-content mx-xl-0 mx-auto">
+                            <a href="contact_us.html" class="btn btn-accent orange">
+                                <span>Contact Us</span>
+                                <span class="gradient-container">
+                                    <span class="gradient"></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Main -->
+    <main>
+        <!-- Section Hero -->
+        <div class="section position-relative">
+            <div class="r-container">
+                <div class="bg-banner second">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb scrollanimation animated fadeInUp adr-5">
+                            <li class="breadcrumb-item">
+                                <a href="index.html">Home</a>
+                                <i class="rtmicon rtmicon-chevron-right"></i>
+
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                <p><span class="text-accent second">Blog</span></p>
+                            </li>
+                        </ol>
+                    </nav>
+                    <h1 class="scrollanimation animated fadeInUp adr-5">
+                        Insights, Updates, <br>
+                        and Industry Innovations
+                    </h1>
+                    <p class="scrollanimation animated fadeInUp adr-5 adl-1">
+                        Explore the latest trends, expert opinions, and technology breakthroughs shaping the future of
+                        IT and business.
+                    </p>
+                </div>
+            </div>
+            <canvas id="wave"></canvas>
+        </div>
+        <div class="section marquee-banner">
+            <div class="marquee-container position-relative custom-contain">
+                <div class="marquee-content">
+                    <div class="marquee-item d-flex align-items-center justify-content-center">
+                        <img src="image/logo-1.png" class="img-fluid" alt="" />
+                    </div>
+                    <div class="marquee-item d-flex align-items-center justify-content-center">
+                        <img src="image/logo-2.png" class="img-fluid" alt="" />
+                    </div>
+                    <div class="marquee-item d-flex align-items-center justify-content-center">
+                        <img src="image/logo-3.png" class="img-fluid" alt="" />
+                    </div>
+                    <div class="marquee-item d-flex align-items-center justify-content-center">
+                        <img src="image/logo-4.png" class="img-fluid" alt="" />
+                    </div>
+                    <div class="marquee-item d-flex align-items-center justify-content-center">
+                        <img src="image/logo-5.png" class="img-fluid" alt="" />
+                    </div>
+                </div>
+                <div class="rectangle-3"></div>
+            </div>
+        </div>
+        <!-- End Hero -->
+
+        <!-- Section News & Blog -->
+        <div class="section">
+            <div class="r-container">
+                <div class="d-flex flex-column align-items-center gap-5">
+                    <div class="card-title">
+                        <div class="bg-title scrollanimation animated fadeInUp adr-5">
+                            <div class="small-text">Blog</div>
+                        </div>
+                        <h3 class="mw-choose-us scrollanimation animated fadeInUp adr-5 adl-1">
+                            Insights & Industry <span class="text-accent">Updates</span>
+                        </h3>
+                    </div>
+                    <div class="d-flex flex-column gap-2">
+                        <div class="row row-cols-lg-2 row-cols-1">
+                            <div class="col mb-3">
+                                <div class="card-blog">
+                                    <div class="img-blog">
+                                        <img src="image/dummy-img-1920x1280.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <a href="blog.html" class="content">
+                                        <div class="d-flex flex-row gap-3">
+                                            <div class="date scrollanimation animated fadeInUp adr-5">
+                                                <i class="rtmicon rtmicon-calendar"></i>
+                                                <p>September 1, 2026</p>
+                                            </div>
+                                            <div class="date scrollanimation animated fadeInUp adr-5">
+                                                <i class="rtmicon rtmicon-users"></i>
+                                                <p>by : RTM</p>
+                                            </div>
+                                        </div>
+                                        <h5 class="text-accent second">
+                                            How Cloud Migration Transforms Efficiency
+                                        </h5>
+                                        <p>
+                                            Discover how strategic cloud adoption can reduce costs, improve scalability,
+                                            and
+                                            future-proof your operations...
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col mb-3">
+                                <div class="card-blog">
+                                    <div class="img-blog">
+                                        <img src="image/dummy-img-1920x1280.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <a href="blog.html" class="content">
+                                        <div class="d-flex flex-row gap-3">
+                                            <div class="date scrollanimation animated fadeInUp adr-5">
+                                                <i class="rtmicon rtmicon-calendar"></i>
+                                                <p>September 3, 2026</p>
+                                            </div>
+                                            <div class="date scrollanimation animated fadeInUp adr-5">
+                                                <i class="rtmicon rtmicon-users"></i>
+                                                <p>by : RTM</p>
+                                            </div>
+                                        </div>
+                                        <h5 class="text-accent second">
+                                            Top Cybersecurity Practices for 2025
+                                        </h5>
+                                        <p>
+                                            Protect your business with proactive threat detection and compliance-based
+                                            strategies...
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-cols-lg-2 row-cols-1">
+                            <div class="col mb-3">
+                                <div class="card-blog">
+                                    <div class="img-blog">
+                                        <img src="image/dummy-img-1920x1280.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <a href="blog.html" class="content">
+                                        <div class="d-flex flex-row gap-3">
+                                            <div class="date scrollanimation animated fadeInUp adr-5">
+                                                <i class="rtmicon rtmicon-calendar"></i>
+                                                <p>September 5, 2026</p>
+                                            </div>
+                                            <div class="date scrollanimation animated fadeInUp adr-5">
+                                                <i class="rtmicon rtmicon-users"></i>
+                                                <p>by : RTM</p>
+                                            </div>
+                                        </div>
+                                        <h5 class="text-accent second">
+                                            Why Cloud Scalability Matters for Modern Businesses
+                                        </h5>
+                                        <p>
+                                            As companies grow, their IT needs evolve rapidly. Discover how scalable
+                                            cloud infrastructure enables flexibility, cost efficiency...
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col mb-3">
+                                <div class="card-blog">
+                                    <div class="img-blog">
+                                        <img src="image/dummy-img-1920x1280.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <a href="blog.html" class="content">
+                                        <div class="d-flex flex-row gap-3">
+                                            <div class="date scrollanimation animated fadeInUp adr-5">
+                                                <i class="rtmicon rtmicon-calendar"></i>
+                                                <p>September 6, 2026</p>
+                                            </div>
+                                            <div class="date scrollanimation animated fadeInUp adr-5">
+                                                <i class="rtmicon rtmicon-users"></i>
+                                                <p>by : RTM</p>
+                                            </div>
+                                        </div>
+                                        <h5 class="text-accent second">
+                                            Building Stronger Cybersecurity for a Connected World
+                                        </h5>
+                                        <p>
+                                            With rising digital threats, securing your systems is no longer optional.
+                                            Learn how proactive monitoring, data encryption...
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End News & Blog -->
+
+        <!-- Section Marquee -->
+        <div class="section marquee">
+            <div class="marquee-container">
+                <div class="marquee-content">
+                    <div class="marquee-item-2">
+                        <h3>Future-Ready IT Starts Here.</h3>
+                    </div>
+                    <div class="marquee-item-2 orange">
+                        <h3>Future-Ready IT Starts Here.</h3>
+                    </div>
+                    <div class="marquee-item-2">
+                        <h3>Future-Ready IT Starts Here.</h3>
+                    </div>
+                    <div class="marquee-item-2 orange">
+                        <h3>Future-Ready IT Starts Here.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Marquee -->
+
+        <!-- Section FAQ -->
+        <div class="section position-relative">
+            <div class="r-container">
+                <div class="d-flex flex-column align-items-center gap-5">
+                    <div class="card-title">
+                        <div class="bg-title scrollanimation animated fadeInUp adr-5">
+                            <div class="small-text">FAQ</div>
+                        </div>
+                        <h3 class="mw-faq scrollanimation animated fadeInUp adr-5 adl-1">
+                            Got Questions?
+                            <span class="text-accent">We’ve Got Answers.</span>
+                        </h3>
+                    </div>
+                    <div class="accordion faq" id="faqAccordion1">
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                                    What services does Visora provide?
+                                </button>
+                            </div>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1">
+                                <div class="accordion-body">
+                                    Our solutions are designed for startups, SMEs, and enterprises across industries
+                                    like finance, healthcare, retail, and education.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                                    Who can benefit from Visora’s services?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion1">
+                                <div class="accordion-body">
+                                    Our solutions are designed for startups, SMEs, and enterprises across industries
+                                    like finance, healthcare, retail, and education.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                    How does Visora ensure data security?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1">
+                                <div class="accordion-body">
+                                    Our solutions are designed for startups, SMEs, and enterprises across industries
+                                    like finance, healthcare, retail, and education.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                                    Can you customize solutions for specific business needs?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1">
+                                <div class="accordion-body">
+                                    Our solutions are designed for startups, SMEs, and enterprises across industries
+                                    like finance, healthcare, retail, and education.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                                    How can I get started with Visora?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1">
+                                <div class="accordion-body">
+                                    Our solutions are designed for startups, SMEs, and enterprises across industries
+                                    like finance, healthcare, retail, and education.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="circle-gradient-stack faq"></div>
+            <div class="circle-gradient-stack faq-2"></div>
+        </div>
+        <!-- End FAQ -->
+
+        <!-- Section CTA -->
+        <div class="section bg-cta pb-0">
+            <div class="mx-auto align-items-center container-cta">
+                <div class="card-cta">
+                    <div class="card-title">
+                        <h2 class="scrollanimation animated fadeInUp adr-5">
+                            Let’s Build <br>
+                            <span class="text-accent">Smarter IT Together</span>
+                        </h2>
+                        <p class="mw-cta scrollanimation animated fadeInUp adr-5 adl-1">
+                            Partner with Visora to transform your technology and accelerate your
+                            business growth.
+                        </p>
+                        <div class="d-flex flex-row align-items-center gap-3">
+                            <div class="w-max-content scrollanimation animated fadeInUp adr-5 adl-2">
+                                <a href="contact_us.html" class="btn btn-accent orange">
+                                    <span>Get Started</span>
+                                    <span class="gradient-container">
+                                        <span class="gradient"></span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="w-max-content scrollanimation animated fadeInUp adr-5 adl-3">
+                                <a href="about.html" class="btn btn-accent primary">
+                                    <span>Discover More</span>
+                                    <span class="gradient-container">
+                                        <span class="gradient"></span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section Footer -->
+                    <footer>
+                        <div class="bg-footer">
+                            <div class="row row-cols-xl-2 row-cols-1 w-100">
+                                <div class="col col-xl-8 mb-3">
+                                    <div class="d-flex flex-column gap-5 scrollanimation animated fadeInUp adr-5">
+                                        <img src="image/logo.png" class="img-fluid logo-container" alt="">
+                                        <p class="mw-cta">
+                                            We help companies bridge strategy and technology through reliable,
+                                            future-ready
+                                            IT solutions.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col col-xl-4 mb-3">
+                                    <div class="row row-cols-lg-3 row-cols-1">
+                                        <div class="col mb-3 scrollanimation animated fadeInUp adr-5 adl-1">
+                                            <div class="d-flex flex-column gap-3">
+                                                <a href="index.html" class="link">Homepage</a>
+                                                <a href="about.html" class="link">About</a>
+                                                <a href="services.html" class="link">Services</a>
+                                            </div>
+                                        </div>
+                                        <div class=" col mb-3 scrollanimation animated fadeInUp adr-5 adl-2">
+                                            <div class="d-flex flex-column gap-3">
+                                                <a href="team.html" class="link">Team</a>
+                                                <a href="faq.html" class="link">FAQ</a>
+                                                <a href="gallery.html" class="link">Gallery</a>
+                                            </div>
+                                        </div>
+                                        <div class="col mb-3 scrollanimation animated fadeInUp adr-5 adl-3">
+                                            <div class="d-flex flex-column gap-3">
+                                                <a href="pricing.html" class="link">Pricing</a>
+                                                <a href="testimonials.html" class="link">Testimonial</a>
+                                                <a href="contact_us.html" class="link">Contact</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row-cols-xl-2 row-cols-1 w-100">
+                                <div class="col col-xl-8 mb-3">
+                                    <div class="card-subscribe scrollanimation animated fadeInUp adr-5 adl-4">
+                                        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                                            <div id="liveToast"
+                                                class="toast success_msg_subscribe bg-dark-transparent text-white"
+                                                role="alert" aria-live="assertive" aria-atomic="true">
+                                                <div class="d-flex">
+                                                    <div class="toast-body">
+                                                        Your Subscribe Send Successfully!.
+                                                    </div>
+                                                    <button type="button" class="btn me-2 m-auto text-white"
+                                                        data-bs-dismiss="toast" aria-label="Close">
+                                                        <i class="fa-solid fa-xmark"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column gap-1">
+                                            <h6>Subscribe Our Newsletter</h6>
+                                            <form class="needs-validation form footer" novalidate>
+                                                <input type="text" name="action" value="subscribe" hidden>
+                                                <div class="input-group position-relative">
+                                                    <input type="email" class="form-control footer  mb-xl-0 mb-3"
+                                                        placeholder="Enter Your Email" name="email" required>
+                                                    <button
+                                                        class="btn btn-accent orange submit_subscribe position-relative px-4 py-3"
+                                                        type="submit">
+                                                        <span>Subscribe</span>
+                                                        <span class="gradient-container">
+                                                            <span class="gradient"></span>
+                                                        </span>
+                                                        <div class="invalid-feedback text-white">
+                                                            Please provide a valid email format (e.g.,
+                                                            user@example.com).
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-xl-4 mb-3">
+                                    <div class="social-container scrollanimation animated fadeInUp adr-5 adl-5">
+                                        <a href="https://www.facebook.com" class="social-item active">
+                                            <i class="fa-brands fa-xs fa-facebook-f"></i>
+                                        </a>
+                                        <a href="https://www.linkedin.com" class="social-item">
+                                            <i class="fa-brands fa-xs fa-linkedin-in"></i>
+                                        </a>
+                                        <a href="https://www.instagram.com" class="social-item">
+                                            <i class="fa-brands fa-xs fa-instagram"></i>
+                                        </a>
+                                        <a href="https://www.twitter.com" class="social-item">
+                                            <i class="fa-brands fa-xs fa-twitter"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-100 d-flex flex-column align-items-center">
+                                <hr>
+                                <p>Copyright © 2025 Rometheme. All Rights Reserved.</p>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- End Footer -->
+                </div>
+            </div>
+        </div>
+        <!-- End CTA -->
+    </main>
+    <!-- End Main -->
+
+    <!-- Scripts -->
+    <script src=" js/vendor/bootstrap.bundle.min.js">
+    </script>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/swiper-script.js"></script>
+    <script src="js/submit-form.js"></script>
+    <script src="js/vendor/isotope.pkgd.min.js"></script>
+    <script src="js/video_embedded.js"></script>
+    <script src="https://kit.fontawesome.com/a6df7668b8.js" crossorigin="anonymous"></script>
+    <script src=" js/vendor/fslightbox.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.0/oyethemes_onscroll_animation.js"></script>
+    <script>animatedWave()</script>
+</body>
+
+</html>

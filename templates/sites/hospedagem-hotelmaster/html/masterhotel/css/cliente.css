@@ -1,0 +1,9 @@
+/* Ajustes da adaptação (logo em texto, mapa sem API key, ícones sociais). */
+.gdlr-logo .hm-logo-texto{display:inline-block;font-family:'Merriweather',Georgia,serif;font-size:24px;
+  font-weight:700;letter-spacing:2px;text-transform:uppercase;line-height:1.2;color:#2b2b2b;text-decoration:none;white-space:nowrap}
+.gdlr-logo .hm-logo-texto:hover{color:#2b2b2b;opacity:.85}
+@media only screen and (max-width:767px){.gdlr-logo .hm-logo-texto{font-size:18px;white-space:normal}}
+.hm-top-social a{display:inline-block;margin-left:14px;color:inherit;font-size:14px}
+.hm-mapa iframe{width:100%}
+.foot-sicons a{margin-right:10px;font-size:22px}
+.form-whatsapp input[type=text],.form-whatsapp input[type=tel],.form-whatsapp textarea{width:100%;box-sizing:border-box}

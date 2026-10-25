@@ -1,0 +1,5 @@
+node_modules/
+__pycache__/
+.vercel/
+.DS_Store
+*-orig.mp4

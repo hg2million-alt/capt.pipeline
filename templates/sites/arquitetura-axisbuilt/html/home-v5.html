@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <!-- Primary Meta Tags -->
+    <title>[NOME DO CLIENTE] - Architecture & Interior Design HTML Website Template</title>
+    <meta name="description" content="[NOME DO CLIENTE] - Architecture & Interior Design HTML Website Template. Professional and modern design solutions for residential and commercial spaces.">
+    <meta name="keywords" content="architecture, interior design, architectural template, design studio, modern architecture, interior design template, [NOME DO CLIENTE]">
+    <meta name="author" content="[NOME DO CLIENTE]">
+    <!-- Favicon and App Icons -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.webp">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.webp">
+    <!-- Deferred CSS Loading -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/odometer.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <!-- Start Preloader -->
+    <div class="cs_preloader" id="preloader">
+      <div class="cs_preloader_container">
+        <div class="cs_preloader_content">
+          <div class="cs_progressbar_wrapper">
+            <div class="cs_progressbar"></div>
+          </div>
+          <div class="cs_loading_percentage"></div>
+          <div class="cs_loading_text cs_white_color">Loading</div>
+        </div>
+      </div>
+    </div>
+    <!-- End Preloader -->
+    <!-- Start Header Section -->
+    <header class="cs_site_header cs_style_2 cs_primary_bg cs_white_color cs_sticky_header" aria-label="Main header">
+      <div class="cs_main_header">
+        <div class="container-fluid">
+          <div class="cs_main_header_in">
+            <div class="cs_main_header_left">
+              <a href="index.html" aria-label="Home page" class="cs_site_brand">
+              <img src="assets/img/logo2.svg" alt="Brand logo">
+              </a>
+            </div>
+            <div class="cs_main_header_center">
+              <nav class="cs_nav" aria-label="Main navigation">
+                <div class="cs_nav_list_wrapper">
+                  <ul class="cs_nav_list cs_mp_0">
+                    <li class="menu-item-has-children">
+                     <a href="index.html" aria-label="Home">Home</a>
+                      <ul class="cs_dropdown_list cs_mp_0" aria-label="Home demo submenu">
+                        <li><a href="index.html" aria-label="Home V1">Home V1</a></li>
+                        <li><a href="home-v2.html" aria-label="Home V2">Home V2</a></li>
+                        <li><a href="home-v3.html" aria-label="Home V3">Home V3</a></li>
+                        <li><a href="home-v4.html" aria-label="Home V4">Home V4</a></li>
+                        <li><a href="home-v5.html" aria-label="Home V5">Home V5</a></li>
+                        <li><a href="home-v6.html" aria-label="Home V6">Home V6</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="about-us.html" aria-label="About Us">About Us</a></li>
+                    <li class="menu-item-has-children">
+                      <a href="#" aria-label="Pages">Pages</a>
+                      <ul class="cs_dropdown_list cs_mp_0" aria-label="Pages submenu">
+                        <li><a href="team.html" aria-label="Our Teams">Our Teams</a></li>
+                        <li><a href="team-details.html" aria-label="Team Details">Team Details</a></li>
+                        <li><a href="pricing.html" aria-label="Our Pricing">Our Pricing</a></li>
+                        <li><a href="services.html" aria-label="Our Services">Our Services</a></li>
+                        <li><a href="service-details.html" aria-label="Service Details">Service Details</a></li>
+                        <li><a href="portfolio.html" aria-label="Our Portfolio">Our Portfolio</a></li>
+                        <li><a href="portfolio-details.html" aria-label="Portfolio Details">Portfolio Details</a></li>
+                        <li><a href="faq.html" aria-label="FAQ and Answer">FAQ & Answer</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                      <a href="blog.html" aria-label="Blog">Blog</a>
+                      <ul class="cs_dropdown_list cs_mp_0" aria-label="Blog submenu">
+                        <li><a href="blog.html" aria-label="Our Blog">Our Blog</a></li>
+                        <li><a href="blog-details.html" aria-label="Blog Details">Blog Details</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="contact-us.html" aria-label="Contact Us">Contact Us</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="cs_main_header_right">
+              <div class="cs_header_btns_wrapper">
+                <button type="button" aria-label="Search" class="cs_search_btn">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M23.7723 22.6943L17.5759 16.5969C19.1985 14.834 20.1955 12.5024 20.1955 9.93682C20.1947 4.44852 15.6742 0 10.0974 0C4.52055 0 0 4.44852 0 9.93682C0 15.4251 4.52055 19.8736 10.0974 19.8736C12.5069 19.8736 14.7169 19.0402 16.4529 17.6546L22.6733 23.776C22.9764 24.0746 23.4685 24.0746 23.7716 23.776C24.0754 23.4775 24.0754 22.9929 23.7723 22.6943ZM10.0974 18.3448C5.37877 18.3448 1.55362 14.5804 1.55362 9.93682C1.55362 5.29321 5.37877 1.52884 10.0974 1.52884C14.816 1.52884 18.6411 5.29321 18.6411 9.93682C18.6411 14.5804 14.816 18.3448 10.0974 18.3448Z" fill="currentColor"/>
+                  </svg>
+                </button>
+                <a href="contact-us.html" aria-label="Get in touch" class="cs_btn_style_1 cs_fs_14 cs_bold cs_primary_font cs_radius_50">
+                <span>GET IN TOUCH</span>
+                <span class="cs_btn_icon cs_radius_100 cs_center" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header Section -->
+    <!-- Start Header Search -->
+    <div class="cs_header_search">
+      <div class="cs_header_search_in">
+        <div class="container">
+          <div class="cs_header_search_box">
+            <form action="#" class="cs_search_form position-relative">
+              <input type="search" name="search-text" placeholder="Search Service" autocomplete="search-text">
+              <button class="cs_search_btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M23.7723 22.6943L17.5759 16.5969C19.1985 14.834 20.1955 12.5024 20.1955 9.93682C20.1947 4.44852 15.6742 0 10.0974 0C4.52055 0 0 4.44852 0 9.93682C0 15.4251 4.52055 19.8736 10.0974 19.8736C12.5069 19.8736 14.7169 19.0402 16.4529 17.6546L22.6733 23.776C22.9764 24.0746 23.4685 24.0746 23.7716 23.776C24.0754 23.4775 24.0754 22.9929 23.7723 22.6943ZM10.0974 18.3448C5.37877 18.3448 1.55362 14.5804 1.55362 9.93682C1.55362 5.29321 5.37877 1.52884 10.0974 1.52884C14.816 1.52884 18.6411 5.29321 18.6411 9.93682C18.6411 14.5804 14.816 18.3448 10.0974 18.3448Z" fill="currentColor"/>
+                </svg>
+              </button>
+            </form>
+            <button class="cs_close" type="button"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="cs_sidenav_overlay"></div>
+    </div>
+    <!-- End Header Search -->
+    <!-- Start Main Content -->
+   <main>
+    <!-- Start Hero Section -->
+    <section class="cs_hero_style_5">
+      <div class="container">
+        <div class="cs_hero_content">
+          <div class="cs_hero_header cs_mb_40">
+            <h1 class="cs_hero_title cs_fs_200 cs_bold mb-0 text-uppercase lh-1">[NOME DO CLIENTE]</h1>
+            <div class="cs_logo_text_wrapper cs_center cs_radius_100 position-relative">
+              <div class="cs_text_logo position-absolute">
+                <img src="assets/img/logo-text2.webp" alt="Text logo">
+              </div>
+              <span class="cs_arrow_icon cs_center cs_radius_100 position-absolute">
+              <i class="fa-solid fa-arrow-right-long"></i>
+              </span>
+            </div>
+          </div>
+          <hr class="cs_mb_40 mt-0">
+          <div class="cs_hero_text_wrapper">
+            <div class="cs_hero_desc">
+              Architecture is the art and science of designing buildings and spaces that balance beauty, functionality, and sustainability. It shapes how people live, work, and interact with their environment by combining creative vision with technical expertise. From residential homes to commercial complexes and urban landmarks, architecture focuses on structural integrity, efficient use of space, and aesthetic appeal.
+            </div>
+            <div class="cs_hero_btns_wrapper">
+              <a href="services.html" class="cs_btn_style_1 cs_fs_14 cs_bold cs_primary_font cs_radius_50" aria-label="View more services">
+              <span>EXPLORE SOLUTIONS</span>
+              <span class="cs_btn_icon cs_radius_100 cs_center" aria-hidden="true">
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </span>
+              </a>
+              <a href="https://www.youtube.com/embed/zumJJUL_ruM" class="cs_btn_style_1 cs_fs_14 cs_bold cs_primary_font cs_radius_50 cs_video_open" aria-label="Watch video">
+              <span>WATCH VIDEO</span>
+              <span class="cs_btn_icon cs_radius_100 cs_center" aria-hidden="true">
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="cs_height_80 cs_height_lg_50"></div>
+        <div class="cs_hero_banner cs_radius_20 position-relative">
+          <div class="cs_banner_overlay position-absolute"></div>
+          <img src="assets/img/banner-img2.webp" alt="Banner image">
+          <div class="cs_horizontal_slider cs_type_1 cs_primary_font">
+            <div class="cs_slider_inner">
+              <div class="cs_sliding_content cs_fs_64 cs_bold cs_white_color">
+                INTERIOR ARCHITECTURE SPACE . HIGH - END INTERIOR DESIGN. INNOVATE DESIGN IN CANADA
+              </div>
+              <div class="cs_sliding_content cs_fs_64 cs_bold cs_white_color">
+                INTERIOR ARCHITECTURE SPACE . HIGH - END INTERIOR DESIGN. INNOVATE DESIGN IN CANADA
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero Section -->
+    <!-- Start About Us Section -->
+    <section class="cs_about_style_5">
+      <div class="cs_height_120 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="row cs_gap_y_40 align-items-center">
+          <div class="col-xl-6">
+            <a href="https://www.youtube.com/embed/zumJJUL_ruM" class="cs_video_block_2 cs_center cs_radius_10 cs_video_open position-relative" aria-label="Watch video">
+            <img src="assets/img/video-bg-2.webp" alt="Video bg image">
+            <span class="cs_player_icon cs_center cs_radius_5 cs_fs_30"><i class="fa-solid fa-play" aria-hidden="true"></i></span>
+            </a>
+          </div>
+          <div class="col-xl-6">
+            <div class="cs_about_content">
+              <div class="cs_section_heading_style_1 cs_mb_16">
+                <p class="cs_section_subtitle cs_bold cs_accent_color cs_mb_20 text-uppercase">ABOUT US</p>
+                <h2 class="cs_section_title cs_fs_53 cs_semibold text-uppercase mb-0">ARCHITECTURAL ICONIC STRUCTURES AROUND THE WORLKD</h2>
+              </div>
+              <p class="cs_about_desc cs_mb_40">It shapes how people live, work, and interact with their environment by combining creative vision with technical expertise. From residential homes to commercial complexes and urban landmarks.</p>
+              <div class="cs_funfact_wrapper_1">
+                <div class="cs_funfact_style_1">
+                  <div class="cs_funfact_number cs_fs_53 cs_semibold cs_accent_color cs_primary_font">
+                    <span class="odometer" data-count-to="15"></span><span aria-hidden="true">K</span>
+                  </div>
+                  <div class="cs_funfact_title cs_fs_14 cs_semibold cs_primary_color cs_primary_font text-uppercase">CLIENT review</div>
+                </div>
+                <div class="cs_funfact_style_1">
+                  <div class="cs_funfact_number cs_fs_53 cs_semibold cs_accent_color cs_primary_font">
+                    <span class="odometer" data-count-to="90"></span><span aria-hidden="true">K</span>
+                  </div>
+                  <div class="cs_funfact_title cs_fs_14 cs_semibold cs_primary_color cs_primary_font text-uppercase">WORK REPORT DONE</div>
+                </div>
+                <div class="cs_funfact_style_1">
+                  <div class="cs_funfact_number cs_fs_53 cs_semibold cs_accent_color cs_primary_font">
+                    <span class="odometer" data-count-to="75"></span><span aria-hidden="true">+</span>
+                  </div>
+                  <div class="cs_funfact_title cs_fs_14 cs_semibold cs_primary_color cs_primary_font text-uppercase">Happy CUSTOMER</div>
+                </div>
+                <div class="cs_funfact_style_1">
+                  <div class="cs_funfact_number cs_fs_53 cs_semibold cs_accent_color cs_primary_font">
+                    <span class="odometer" data-count-to="11"></span>
+                  </div>
+                  <div class="cs_funfact_title cs_fs_14 cs_semibold cs_primary_color cs_primary_font text-uppercase">Bad Reviews</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Us Section -->
+    <!-- Start Service Section -->
+    <section>
+      <div class="cs_height_120 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_section_heading_style_1 cs_type_4">
+          <div class="cs_section_heading_left cs_mb_lg_30">
+            <p class="cs_section_subtitle cs_bold cs_accent_color cs_mb_20 text-uppercase">OUR SERVICES</p>
+            <h2 class="cs_section_title cs_fs_53 cs_semibold text-uppercase mb-0">LUXURY INTERIORS THAT REDEFINE YOUR SPACE.</h2>
+          </div>
+          <div class="cs_section_heading_right">
+            <a href="services.html" class="cs_btn_style_1 cs_fs_14 cs_bold cs_primary_font cs_radius_50" aria-label="View more services">
+            <span>VIEW MORE SERVICES</span>
+            <span class="cs_btn_icon cs_radius_100 cs_center" aria-hidden="true">
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </span>
+            </a>
+          </div>
+        </div>
+        <div class="cs_height_60 cs_height_lg_50"></div>
+        <div class="row cs_gap_y_40">
+          <div class="col-xl-3 col-lg-4">
+            <ul class="cs_service_menu_list cs_mp_0 cs_fs_18 cs_bold cs_primary_color cs_primary_font text-uppercase">
+              <li>ACCOUNTING AND BOOKKEEPING</li>
+              <li>IT SERVICES AND TECH SUPPORT</li>
+              <li>HUMAIN AND COMPLIANCE SERVICES</li>
+              <li>BUSINESS CONSULTING AND STRATAGY</li>
+            </ul>
+          </div>
+          <div class="col-xl-9 col-lg-8">
+            <div class="cs_service_thumbnails_container">
+              <div class="cs_service_thumbnails_wrapper">
+                <div class="cs_service_thumbnail cs_radius_10">
+                  <img src="assets/img/service-img-14.webp" alt="Service image">
+                </div>
+                <div class="cs_service_thumbnail cs_radius_10">
+                  <img src="assets/img/service-img-15.webp" alt="Service image">
+                </div>
+                <div class="cs_service_thumbnail cs_radius_10">
+                  <img src="assets/img/service-img-16.webp" alt="Service image">
+                </div>
+              </div>
+              <div class="cs_service_thumbnails_wrapper">
+                <div class="cs_service_thumbnail cs_radius_10">
+                  <img src="assets/img/service-img-15.webp" alt="Service image">
+                </div>
+                <div class="cs_service_thumbnail cs_radius_10">
+                  <img src="assets/img/service-img-14.webp" alt="Service image">
+                </div>
+                <div class="cs_service_thumbnail cs_radius_10">
+                  <img src="assets/img/service-img-16.webp" alt="Service image">
+                </div>
+              </div>
+              <div class="cs_service_thumbnails_wrapper">
+                <div class="cs_service_thumbnail cs_radius_10">
+                  <img src="assets/img/service-img-16.webp" alt="Service image">
+                </div>
+                <div class="cs_service_thumbnail cs_radius_10">
+                  <img src="assets/img/service-img-15.webp" alt="Service image">
+                </div>
+                <div class="cs_service_thumbnail cs_radius_10">
+                  <img src="assets/img/service-img-14.webp" alt="Service image">
+                </div>
+              </div>
+              <div class="cs_service_thumbnails_wrapper">
+                <div class="cs_service_thumbnail cs_radius_10">
+                  <img src="assets/img/service-img-15.webp" alt="Service image">
+                </div>
+                <div class="cs_service_thumbnail cs_radius_10">
+                  <img src="assets/img/service-img-14.webp" alt="Service image">
+                </div>
+                <div class="cs_service_thumbnail cs_radius_10">
+                  <img src="assets/img/service-img-16.webp" alt="Service image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cs_height_120 cs_height_lg_80"></div>
+    </section>
+    <!-- End Service Section -->
+    <!-- Start Projects Section -->
+    <section class="cs_primary_bg">
+      <div class="cs_height_120 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_section_heading_style_1 cs_center_column text-center">
+          <p class="cs_section_subtitle cs_bold cs_accent_color cs_mb_20 text-uppercase">OUR PROJECT</p>
+          <h2 class="cs_section_title cs_fs_53 cs_semibold cs_white_color text-uppercase mb-0">SOME SPACES SOME ICONIC.</h2>
+        </div>
+        <div class="cs_height_60 cs_height_lg_50"></div>
+        <div class="cs_grid_style_6">
+          <div class="cs_card_style_9">
+            <a href="portfolio-details.html" class="cs_card_thumbnail cs_radius_10 cs_mb_20" aria-label="View RIBA Designing for a Circular Economy project">
+            <img src="assets/img/portfolio-img-15.webp" alt="RIBA Designing for a Circular Economy project thumbnail">
+            </a>
+            <div class="cs_card_info">
+              <h3 class="cs_card_title cs_fs_20 cs_bold cs_white_color cs_mb_16">
+                <a href="portfolio-details.html" aria-label="View RIBA Designing for a Circular Economy project">RIBA DESIGNING FOR A CIRCULAR ECONOMOY</a>
+              </h3>
+              <p class="cs_card_subtitle cs_mb_20">Interact with their environment by Is combining creative vision.</p>
+              <a href="https://www.youtube.com/embed/zumJJUL_ruM" class="cs_fs_14 cs_bold cs_white_color cs_video_open" aria-label="Watch video: RIBA Designing for a Circular Economy (2.60 minutes)">
+              <span class="cs_play_icon cs_center cs_radius_100"><i class="fa-solid fa-play" aria-hidden="true"></i></span>
+              <span>WATCH VIDEO 2.60 MIN</span>
+              </a>
+            </div>
+          </div>
+          <div class="cs_card_style_9">
+            <a href="portfolio-details.html" class="cs_card_thumbnail cs_radius_10 cs_mb_20" aria-label="View RIBA Designing for a Circular Economy project">
+            <img src="assets/img/portfolio-img-16.webp" alt="RIBA Designing for a Circular Economy project thumbnail">
+            </a>
+            <div class="cs_card_info">
+              <h3 class="cs_card_title cs_fs_20 cs_bold cs_white_color cs_mb_16">
+                <a href="portfolio-details.html" aria-label="View RIBA Designing for a Circular Economy project">RIBA DESIGNING FOR A CIRCULAR ECONOMOY</a>
+              </h3>
+              <p class="cs_card_subtitle cs_mb_20">Interact with their environment by Is combining creative vision.</p>
+              <a href="https://www.youtube.com/embed/zumJJUL_ruM" class="cs_fs_14 cs_bold cs_white_color cs_video_open" aria-label="Watch video: RIBA Designing for a Circular Economy (2.60 minutes)">
+              <span class="cs_play_icon cs_center cs_radius_100"><i class="fa-solid fa-play" aria-hidden="true"></i></span>
+              <span>WATCH VIDEO 2.60 MIN</span>
+              </a>
+            </div>
+          </div>
+          <div class="cs_card_style_9">
+            <a href="portfolio-details.html" class="cs_card_thumbnail cs_radius_10 cs_mb_20" aria-label="View Exploring Spaces That Speak for Themselves project">
+            <img src="assets/img/portfolio-img-17.webp" alt="Exploring Spaces That Speak for Themselves project thumbnail">
+            </a>
+            <div class="cs_card_info">
+              <h3 class="cs_card_title cs_fs_20 cs_bold cs_white_color cs_mb_16">
+                <a href="portfolio-details.html" aria-label="View Exploring Spaces That Speak for Themselves project">EXPLORING SPACES THAT SPEAK FOR THEMSELVES</a>
+              </h3>
+              <p class="cs_card_subtitle cs_mb_20">Architecture is the art and science of designing buildings and spaces that balance beauty, environment by combining creative vision with technical expertise. From Is residential homes to commercial complexes and urban landmarks.</p>
+              <a href="https://www.youtube.com/embed/zumJJUL_ruM" class="cs_fs_14 cs_bold cs_white_color cs_video_open" aria-label="Watch video: Exploring Spaces That Speak for Themselves (2.60 minutes)">
+              <span class="cs_play_icon cs_center cs_radius_100"><i class="fa-solid fa-play" aria-hidden="true"></i></span>
+              <span>WATCH VIDEO 2.60 MIN</span>
+              </a>
+            </div>
+          </div>
+          <div class="cs_card_style_9">
+            <a href="portfolio-details.html" class="cs_card_thumbnail cs_radius_10 cs_mb_20" aria-label="View Exploring Spaces That Speak for Themselves project">
+            <img src="assets/img/portfolio-img-18.webp" alt="Exploring Spaces That Speak for Themselves project thumbnail">
+            </a>
+            <div class="cs_card_info">
+              <h3 class="cs_card_title cs_fs_20 cs_bold cs_white_color cs_mb_16">
+                <a href="portfolio-details.html" aria-label="View Exploring Spaces That Speak for Themselves project">EXPLORING SPACES THAT SPEAK FOR THEMSELVES</a>
+              </h3>
+              <p class="cs_card_subtitle cs_mb_20">Architecture is the art and science of designing buildings and spaces that balance beauty, environment by combining creative vision with technical expertise. From Is residential homes to commercial complexes and urban landmarks.</p>
+              <a href="https://www.youtube.com/embed/zumJJUL_ruM" class="cs_fs_14 cs_bold cs_white_color cs_video_open" aria-label="Watch video: Exploring Spaces That Speak for Themselves (2.60 minutes)">
+              <span class="cs_play_icon cs_center cs_radius_100"><i class="fa-solid fa-play" aria-hidden="true"></i></span>
+              <span>WATCH VIDEO 2.60 MIN</span>
+              </a>
+            </div>
+          </div>
+          <div class="cs_card_style_9">
+            <a href="portfolio-details.html" class="cs_card_thumbnail cs_radius_10 cs_mb_20" aria-label="View RIBA Designing for a Circular Economy project">
+            <img src="assets/img/portfolio-img-19.webp" alt="RIBA Designing for a Circular Economy project thumbnail">
+            </a>
+            <div class="cs_card_info">
+              <h3 class="cs_card_title cs_fs_20 cs_bold cs_white_color cs_mb_16">
+                <a href="portfolio-details.html" aria-label="View RIBA Designing for a Circular Economy project">RIBA DESIGNING FOR A CIRCULAR ECONOMOY</a>
+              </h3>
+              <p class="cs_card_subtitle cs_mb_20">Interact with their environment by Is combining creative vision.</p>
+              <a href="https://www.youtube.com/embed/zumJJUL_ruM" class="cs_fs_14 cs_bold cs_white_color cs_video_open" aria-label="Watch video: RIBA Designing for a Circular Economy (2.60 minutes)">
+              <span class="cs_play_icon cs_center cs_radius_100"><i class="fa-solid fa-play" aria-hidden="true"></i></span>
+              <span>WATCH VIDEO 2.60 MIN</span>
+              </a>
+            </div>
+          </div>
+          <div class="cs_card_style_9">
+            <a href="portfolio-details.html" class="cs_card_thumbnail cs_radius_10 cs_mb_20" aria-label="View RIBA Designing for a Circular Economy project">
+            <img src="assets/img/portfolio-img-20.webp" alt="RIBA Designing for a Circular Economy project thumbnail">
+            </a>
+            <div class="cs_card_info">
+              <h3 class="cs_card_title cs_fs_20 cs_bold cs_white_color cs_mb_16">
+                <a href="portfolio-details.html" aria-label="View RIBA Designing for a Circular Economy project">RIBA DESIGNING FOR A CIRCULAR ECONOMOY</a>
+              </h3>
+              <p class="cs_card_subtitle cs_mb_20">Interact with their environment by Is combining creative vision.</p>
+              <a href="https://www.youtube.com/embed/zumJJUL_ruM" class="cs_fs_14 cs_bold cs_white_color cs_video_open" aria-label="Watch video: RIBA Designing for a Circular Economy (2.60 minutes)">
+              <span class="cs_play_icon cs_center cs_radius_100"><i class="fa-solid fa-play" aria-hidden="true"></i></span>
+              <span>WATCH VIDEO 2.60 MIN</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cs_height_120 cs_height_lg_80"></div>
+    </section>
+    <!-- End Projects Section -->
+    <!-- Start Why Choose Us Section -->
+    <section>
+      <div class="cs_height_120 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_section_heading_style_1 cs_center_column text-center">
+          <p class="cs_section_subtitle cs_bold cs_accent_color cs_mb_20 text-uppercase">WHY CHOOSE US</p>
+          <h2 class="cs_section_title cs_fs_60 cs_semibold mb-0">WHY CHOOSE [NOME DO CLIENTE]</h2>
+        </div>
+        <div class="cs_height_60 cs_height_lg_50"></div>
+        <div class="row cs_gap_y_30">
+          <div class="col-md-6">
+            <div class="cs_iconbox_style_5 cs_gray_bg cs_radius_10">
+              <span class="cs_iconbox_icon cs_center cs_radius_10">
+              <img src="assets/img/icons/expertise.svg" alt="Icon">
+              </span>
+              <div class="cs_iconbox_info">
+                <div class="cs_iconbox_header cs_mb_10">
+                  <h3 class="cs_iconbox_title cs_fs_24 cs_bold mb-0 text-uppercase">TRUSTED EXPERTISE</h3>
+                  <span class="cs_iconbox_index cs_fs_24 cs_bold cs_primary_font">01</span>
+                </div>
+                <p class="cs_iconbox_subtitle mb-0">Architecture is the art and science of designing buildings and  vision with technical expertise. From Is residential homes to Is commercial complexes and urban landmarks.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="cs_iconbox_style_5 cs_gray_bg cs_radius_10">
+              <span class="cs_iconbox_icon cs_center cs_radius_10">
+              <img src="assets/img/icons/design.svg" alt="Icon">
+              </span>
+              <div class="cs_iconbox_info">
+                <div class="cs_iconbox_header cs_mb_10">
+                  <h3 class="cs_iconbox_title cs_fs_24 cs_bold mb-0 text-uppercase">TAILORED DESIGNS</h3>
+                  <span class="cs_iconbox_index cs_fs_24 cs_bold cs_primary_font">02</span>
+                </div>
+                <p class="cs_iconbox_subtitle mb-0">Architecture is the art and science of designing buildings and  vision with technical expertise. From Is residential homes to Is commercial complexes and urban landmarks.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="cs_iconbox_style_5 cs_gray_bg cs_radius_10">
+              <span class="cs_iconbox_icon cs_center cs_radius_10">
+              <img src="assets/img/icons/chair3.svg" alt="Icon">
+              </span>
+              <div class="cs_iconbox_info">
+                <div class="cs_iconbox_header cs_mb_10">
+                  <h3 class="cs_iconbox_title cs_fs_24 cs_bold mb-0 text-uppercase">SEMLESS PROCESS</h3>
+                  <span class="cs_iconbox_index cs_fs_24 cs_bold cs_primary_font">03</span>
+                </div>
+                <p class="cs_iconbox_subtitle mb-0">Architecture is the art and science of designing buildings and  vision with technical expertise. From Is residential homes to Is commercial complexes and urban landmarks.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="cs_iconbox_style_5 cs_gray_bg cs_radius_10">
+              <span class="cs_iconbox_icon cs_center cs_radius_10">
+              <img src="assets/img/icons/quality.svg" alt="Icon">
+              </span>
+              <div class="cs_iconbox_info">
+                <div class="cs_iconbox_header cs_mb_10">
+                  <h3 class="cs_iconbox_title cs_fs_24 cs_bold mb-0 text-uppercase">LASTING QUALITY</h3>
+                  <span class="cs_iconbox_index cs_fs_24 cs_bold cs_primary_font">04</span>
+                </div>
+                <p class="cs_iconbox_subtitle mb-0">Architecture is the art and science of designing buildings and  vision with technical expertise. From Is residential homes to Is commercial complexes and urban landmarks.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="cs_iconbox_style_5 cs_gray_bg cs_radius_10">
+              <span class="cs_iconbox_icon cs_center cs_radius_10">
+              <img src="assets/img/icons/design.svg" alt="Icon">
+              </span>
+              <div class="cs_iconbox_info">
+                <div class="cs_iconbox_header cs_mb_10">
+                  <h3 class="cs_iconbox_title cs_fs_24 cs_bold mb-0 text-uppercase">CLEAR COMMUNICATION</h3>
+                  <span class="cs_iconbox_index cs_fs_24 cs_bold cs_primary_font">05</span>
+                </div>
+                <p class="cs_iconbox_subtitle mb-0">Architecture is the art and science of designing buildings and  vision with technical expertise. From Is residential homes to Is commercial complexes and urban landmarks.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="cs_iconbox_style_5 cs_gray_bg cs_radius_10">
+              <span class="cs_iconbox_icon cs_center cs_radius_10">
+              <img src="assets/img/icons/expertise.svg" alt="Icon">
+              </span>
+              <div class="cs_iconbox_info">
+                <div class="cs_iconbox_header cs_mb_10">
+                  <h3 class="cs_iconbox_title cs_fs_24 cs_bold mb-0 text-uppercase">SKILD TEAM</h3>
+                  <span class="cs_iconbox_index cs_fs_24 cs_bold cs_primary_font">06</span>
+                </div>
+                <p class="cs_iconbox_subtitle mb-0">Architecture is the art and science of designing buildings and  vision with technical expertise. From Is residential homes to Is commercial complexes and urban landmarks.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cs_height_40 cs_height_lg_40"></div>
+        <div class="cs_why_choose_summery cs_center_column text-center">
+          <p class="cs_summery cs_mb_30">Architecture is the art and science of designing buildings and spaces that balance beauty,<br> environment by combining creative vision with technical expertise. From Is residential homes to <br> commercial complexes and urban landmarks.</p>
+          <a href="about-us.html" class="cs_text_btn_style_1 cs_fs_14 cs_bold cs_accent_color" aria-label="Learn more about us">
+          <span>READ MORE</span>
+          <span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- End Why Choose Us Section -->
+    <!-- Start Testimonial Section -->
+    <section class="swiper-container cs_align_center">
+      <div class="cs_height_120 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_section_heading_style_1 cs_type_4">
+          <div class="cs_section_heading_left cs_mb_lg_30">
+            <p class="cs_section_subtitle cs_bold cs_accent_color cs_mb_20 text-uppercase">AVAILABLE HOME</p>
+            <h2 class="cs_section_title cs_fs_53 cs_semibold mb-0">LEAVE THE NOISE COME HOME TO THE [NOME DO CLIENTE].</h2>
+          </div>
+          <div class="cs_section_heading_right">
+            <div class="cs_swiper_arrow_style_1">
+              <div class="slider-prev cs_center cs_radius_100"><i class="fa-solid fa-arrow-left"></i></div>
+              <div class="slider-next cs_center cs_radius_100"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="cs_height_60 cs_height_lg_50"></div>
+        <div class="swiper" data-autoplay="0" data-loop="1" data-center="0" data-speed="800" data-variable-width="0" data-slides-per-view="responsive" data-gap-desktop="50" data-effect="slide" data-mobile-sm="1" data-mobile="1" data-tablet-sm="1" data-tablet="2" data-laptop="3" data-desktop="3" data-desktop-lg="3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="cs_testimonial_style_5 position-relative">
+                <div class="cs_testimonial_content cs_gray_bg cs_center_column cs_radius_10 text-center">
+                  <h3 class="cs_testimonial_title cs_fs_13 cs_semibold cs_mb_16 text-uppercase">Quality Was Very Good</h3>
+                  <p class="cs_testimonial_subtitle cs_mb_20">Architecture is the art and science of designing buildings and spaces that sustainability.</p>
+                  <div class="cs_rating cs_mb_20" data-rating="5">
+                    <div class="cs_rating_percentage"></div>
+                  </div>
+                  <div class="cs_avatar_style_1">
+                    <span class="cs_avatar cs_center cs_radius_100 position-absolute">
+                    <img src="assets/img/avatar-5.webp" alt="Avatar">
+                    </span>
+                    <div class="cs_avatar_info">
+                      <h3 class="cs_avatar_title cs_fs_18 cs_bold cs_mb_7 text-uppercase">ESTHER HOWARD</h3>
+                      <p class="mb-0">FOUNDER & CEO</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cs_testimonial_style_5 position-relative">
+                <div class="cs_testimonial_content cs_gray_bg cs_center_column cs_radius_10 text-center">
+                  <h3 class="cs_testimonial_title cs_fs_13 cs_semibold cs_mb_16 text-uppercase">Quality Was Very Good</h3>
+                  <p class="cs_testimonial_subtitle cs_mb_20">Architecture is the art and science of designing buildings and spaces that balance beauty, functionality, and sustainability. It vision with technical expertise.</p>
+                  <div class="cs_rating cs_mb_20" data-rating="5">
+                    <div class="cs_rating_percentage"></div>
+                  </div>
+                  <div class="cs_avatar_style_1">
+                    <span class="cs_avatar cs_center cs_radius_100 position-absolute">
+                    <img src="assets/img/avatar-6.webp" alt="Avatar">
+                    </span>
+                    <div class="cs_avatar_info">
+                      <h3 class="cs_avatar_title cs_fs_18 cs_bold cs_mb_7 text-uppercase">Nathan Brooks</h3>
+                      <p class="mb-0">FOUNDER & CEO</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cs_testimonial_style_5 position-relative">
+                <div class="cs_testimonial_content cs_gray_bg cs_center_column cs_radius_10 text-center">
+                  <h3 class="cs_testimonial_title cs_fs_13 cs_semibold cs_mb_16 text-uppercase">Quality Was Very Good</h3>
+                  <p class="cs_testimonial_subtitle cs_mb_20">Architecture is the art and science of designing buildings and spaces that sustainability.</p>
+                  <div class="cs_rating cs_mb_20" data-rating="5">
+                    <div class="cs_rating_percentage"></div>
+                  </div>
+                  <div class="cs_avatar_style_1">
+                    <span class="cs_avatar cs_center cs_radius_100 position-absolute">
+                    <img src="assets/img/avatar-7.webp" alt="Avatar">
+                    </span>
+                    <div class="cs_avatar_info">
+                      <h3 class="cs_avatar_title cs_fs_18 cs_bold cs_mb_7 text-uppercase">Daniel Carter</h3>
+                      <p class="mb-0">FOUNDER & CEO</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cs_testimonial_style_5 position-relative">
+                <div class="cs_testimonial_content cs_gray_bg cs_center_column cs_radius_10 text-center">
+                  <h3 class="cs_testimonial_title cs_fs_13 cs_semibold cs_mb_16 text-uppercase">Quality Was Very Good</h3>
+                  <p class="cs_testimonial_subtitle cs_mb_20">Architecture is the art and science of designing buildings and spaces that balance beauty, functionality, and sustainability. It vision with technical expertise.</p>
+                  <div class="cs_rating cs_mb_20" data-rating="5">
+                    <div class="cs_rating_percentage"></div>
+                  </div>
+                  <div class="cs_avatar_style_1">
+                    <span class="cs_avatar cs_center cs_radius_100 position-absolute">
+                    <img src="assets/img/avatar-2.webp" alt="Avatar">
+                    </span>
+                    <div class="cs_avatar_info">
+                      <h3 class="cs_avatar_title cs_fs_18 cs_bold cs_mb_7 text-uppercase">Ethan Parker</h3>
+                      <p class="mb-0">FOUNDER & CEO</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cs_height_120 cs_height_lg_80"></div>
+    </section>
+    <!-- End Testimonial Section -->
+    <!-- Start Award Section -->
+    <section class="cs_award_section cs_gray_bg cs_bg_filed" data-src="assets/img/award-bg1.webp">
+      <div class="cs_height_120 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_section_heading_style_1 cs_type_1">
+          <div class="cs_section_heading_left cs_mb_lg_20">
+            <p class="cs_section_subtitle cs_bold cs_accent_color cs_mb_20 text-uppercase">AWARDS</p>
+            <h2 class="cs_section_title cs_fs_53 cs_bold text-uppercase mb-0">International Awards</h2>
+          </div>
+          <div class="cs_section_heading_right">
+            <p class="cs_mb_20">Architecture and interior design blend creativity with functionality, shaping spaces that inaesthetic harmony of a building, while interior design.</p>
+            <a href="#" class="cs_text_btn_style_2 cs_fs_14 cs_bold" aria-label="See more content">
+            <span class="cs_btn_text">SEE MORE</span>
+            </a>
+          </div>
+        </div>
+        <div class="cs_height_60 cs_height_lg_50"></div>
+        <div class="cs_awards_table overflow-x-hidden">
+          <ul class="cs_awards_list cs_mp_0 cs_fs_20 cs_bold cs_primary_font">
+            <li>
+              <span class="cs_award_from cs_primary_color">BROOKLY RESIDENCE</span>
+              <span class="cs_award_category">INTERIOR DESIGN</span>
+              <span class="cs_award_name cs_primary_color">PRITZKER ARCHITECTURE</span>
+              <span class="cs_award_year">2022</span>
+            </li>
+            <li>
+              <span class="cs_award_from cs_primary_color">MALDIVES GARDEN</span>
+              <span class="cs_award_category">ARCHITECTURE</span>
+              <span class="cs_award_name cs_primary_color">RED DOT DESIGN AWARD</span>
+              <span class="cs_award_year">2021</span>
+            </li>
+            <li>
+              <span class="cs_award_from cs_primary_color">SOUTH FLORRIDA TOWERS</span>
+              <span class="cs_award_category">INTERIOR DESIGN</span>
+              <span class="cs_award_name cs_primary_color">RIBBA ARCHITECTURE</span>
+              <span class="cs_award_year">2019</span>
+            </li>
+            <li>
+              <span class="cs_award_from cs_primary_color">TOKYO LIBRARY</span>
+              <span class="cs_award_category">CITY MARKS</span>
+              <span class="cs_award_name cs_primary_color">PRITZKER ARCHITECTURE</span>
+              <span class="cs_award_year">2018</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="cs_height_120 cs_height_lg_80"></div>
+    </section>
+    <!-- End Award Section -->
+    <!-- Start FAQ Section -->
+    <section>
+      <div class="cs_height_120 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_section_heading_style_1 cs_center_column text-center">
+          <p class="cs_section_subtitle cs_bold cs_accent_color text-uppercase cs_mb_20">OUR FAQ</p>
+          <h2 class="cs_section_title cs_fs_53 cs_bold text-uppercase mb-0">STRAIGHTFORWARD ANSWERS <br> YOU CAN RELY ON</h2>
+        </div>
+        <div class="cs_height_30 cs_height_lg_30"></div>
+        <div class="row cs_gap_y_40 align-items-end">
+          <div class="col-lg-4 order-lg-2">
+            <div class="cs_card_style_8 position-relative">
+              <div class="cs_card_thumbnail cs_radius_10">
+                <img src="assets/img/faq-img-2.webp" alt="FAQ image">
+              </div>
+              <div class="cs_logo_text_wrapper cs_center cs_white_bg cs_radius_100 position-absolute">
+                <div class="cs_text_logo position-absolute">
+                  <img src="assets/img/logo-text2.webp" alt="Text logo">
+                </div>
+                <span class="cs_arrow_icon cs_center cs_radius_100 position-absolute">
+                <i class="fa-solid fa-arrow-right-long"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="cs_accordians_wrapper_2">
+              <div class="cs_accordian cs_style_5">
+                <div class="cs_accordian_head position-relative">
+                  <h3 class="cs_accordian_title cs_fs_18 cs_bold text-uppercase mb-0">WHAT KIND OF ARCHITECTURAL PROJECTS DO YOU SPECIALIZE IN ?</h3>
+                  <span class="cs_accordian_toggler cs_center"><i class="fa-solid fa-arrow-right-long"></i></span>
+                </div>
+                <div class="cs_accordian_body">Architecture is the art and science of designing buildings and spaces that balance beauty, functionality, and sustainability. It shapes how people live, work, and interact with their environment by combining creative vision with technical expertise.</div>
+              </div>
+              <div class="cs_accordian cs_style_5">
+                <div class="cs_accordian_head position-relative">
+                  <h3 class="cs_accordian_title cs_fs_18 cs_bold text-uppercase mb-0">HOW DOES THE DESIGN PROCESS BEGIN ?</h3>
+                  <span class="cs_accordian_toggler cs_center"><i class="fa-solid fa-arrow-right-long"></i></span>
+                </div>
+                <div class="cs_accordian_body">Architecture is the art and science of designing buildings and spaces that balance beauty, functionality, and sustainability. It shapes how people live, work, and interact with their environment by combining creative vision with technical expertise.</div>
+              </div>
+              <div class="cs_accordian cs_style_5">
+                <div class="cs_accordian_head position-relative">
+                  <h3 class="cs_accordian_title cs_fs_18 cs_bold text-uppercase mb-0">CANT I REQUEST A CUSTOMER DESIGN PROPOSAL ?</h3>
+                  <span class="cs_accordian_toggler cs_center"><i class="fa-solid fa-arrow-right-long"></i></span>
+                </div>
+                <div class="cs_accordian_body">Architecture is the art and science of designing buildings and spaces that balance beauty, functionality, and sustainability. It shapes how people live, work, and interact with their environment by combining creative vision with technical expertise.</div>
+              </div>
+              <div class="cs_accordian cs_style_5">
+                <div class="cs_accordian_head position-relative">
+                  <h3 class="cs_accordian_title cs_fs_18 cs_bold text-uppercase mb-0">WHAT MATERIALS DO YOU RECOMMEND FOR SUSTAINABLE BUILDING ?</h3>
+                  <span class="cs_accordian_toggler cs_center"><i class="fa-solid fa-arrow-right-long"></i></span>
+                </div>
+                <div class="cs_accordian_body">Architecture is the art and science of designing buildings and spaces that balance beauty, functionality, and sustainability. It shapes how people live, work, and interact with their environment by combining creative vision with technical expertise.</div>
+              </div>
+              <div class="cs_accordian cs_style_5">
+                <div class="cs_accordian_head position-relative">
+                  <h3 class="cs_accordian_title cs_fs_18 cs_bold text-uppercase mb-0">HOW LOMG DOES A TYPICAL PROJECT TAKE ?</h3>
+                  <span class="cs_accordian_toggler cs_center"><i class="fa-solid fa-arrow-right-long"></i></span>
+                </div>
+                <div class="cs_accordian_body">Architecture is the art and science of designing buildings and spaces that balance beauty, functionality, and sustainability. It shapes how people live, work, and interact with their environment by combining creative vision with technical expertise.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End FAQ Section -->
+    <!-- Start Blog Section -->
+    <section>
+      <div class="cs_height_120 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_section_heading_style_1">
+          <p class="cs_section_subtitle cs_bold cs_accent_color cs_mb_20 text-uppercase">NEWS & BLOG</p>
+          <h2 class="cs_section_title cs_fs_53 cs_bold mb-0">STAY UPDATED WITH OUR <br> LATEST ARTICLES</h2>
+        </div>
+        <div class="cs_height_60 cs_height_lg_50"></div>
+        <div class="row cs_gap_y_24">
+          <div class="col-lg-4">
+            <article class="cs_post_style_3 cs_gray_bg cs_radius_10">
+              <a href="blog-details.html" class="cs_post_thumbnail cs_radius_10 cs_mb_30" aria-label="Read full article: The Intersection of Art and Function Exploring Modern Architecture">
+              <img src="assets/img/post-img-13.webp" alt="Modern architectural design featuring technology integration">
+              </a>
+              <div class="cs_post_info">
+                <div class="cs_post_meta_wrapper cs_fs_14 cs_semibold cs_primary_font cs_mb_30">
+                  <a href="#" class="cs_post_meta cs_category text-uppercase" aria-label="View all posts by WPUSER">BY WPUSER</a>
+                  <a href="#" class="cs_post_meta cs_date" aria-label="View posts from January 19, 2025">JAN 19 2025</a>
+                </div>
+                <h3 class="cs_post_title cs_fs_18 cs_bold cs_mb_16 text-uppercase">
+                  <a href="blog-details.html" aria-label="Read full article: The Intersection of Art and Function Exploring Modern Architecture">THE INTERSECTION OF ART AND FUNCTION EXPLORING MODERN ARCHITECTURE.</a>
+                </h3>
+                <p class="cs_post_summery cs_mb_30">Designing buildings and spaces that balance vision with technical expertise.</p>
+                <a href="blog-details.html" class="cs_text_btn_style_1 cs_fs_14 cs_bold cs_accent_color" aria-label="Read more about The Intersection of Art and Function Exploring Modern Architecture">
+                <span>READ MORE</span>
+                <span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                </a>
+              </div>
+            </article>
+          </div>
+          <div class="col-lg-4">
+            <article class="cs_post_style_3 cs_gray_bg cs_radius_10">
+              <a href="blog-details.html" class="cs_post_thumbnail cs_radius_10 cs_mb_30" aria-label="Read full article: How Sustainable Design Is Shaping the Future of Architecture">
+              <img src="assets/img/post-img-14.webp" alt="Modern architectural design featuring technology integration">
+              </a>
+              <div class="cs_post_info">
+                <div class="cs_post_meta_wrapper cs_fs_14 cs_semibold cs_primary_font cs_mb_30">
+                  <a href="#" class="cs_post_meta cs_category text-uppercase" aria-label="View all posts by WPUSER">BY WPUSER</a>
+                  <a href="#" class="cs_post_meta cs_date" aria-label="View posts from January 19, 2025">JAN 19 2025</a>
+                </div>
+                <h3 class="cs_post_title cs_fs_18 cs_bold cs_mb_16 text-uppercase">
+                  <a href="blog-details.html" aria-label="Read full article: How Sustainable Design Is Shaping the Future of Architecture">HOW SUSTAINABLE DESIGN IS SHAPING THE FUTURE OF ARCHITECTURE.</a>
+                </h3>
+                <p class="cs_post_summery cs_mb_30">Designing buildings and spaces that balance vision with technical expertise.</p>
+                <a href="blog-details.html" class="cs_text_btn_style_1 cs_fs_14 cs_bold cs_accent_color" aria-label="Read more about How Sustainable Design Is Shaping the Future of Architecture">
+                <span>READ MORE</span>
+                <span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                </a>
+              </div>
+            </article>
+          </div>
+          <div class="col-lg-4">
+            <article class="cs_post_style_3 cs_gray_bg cs_radius_10">
+              <a href="blog-details.html" class="cs_post_thumbnail cs_radius_10 cs_mb_30" aria-label="Read full article: The Evolution of Urban Spaces in Contemporary Architecture">
+              <img src="assets/img/post-img-15.webp" alt="Modern architectural design featuring technology integration">
+              </a>
+              <div class="cs_post_info">
+                <div class="cs_post_meta_wrapper cs_fs_14 cs_semibold cs_primary_font cs_mb_30">
+                  <a href="#" class="cs_post_meta cs_category text-uppercase" aria-label="View all posts by WPUSER">BY WPUSER</a>
+                  <a href="#" class="cs_post_meta cs_date" aria-label="View posts from January 19, 2025">JAN 19 2025</a>
+                </div>
+                <h3 class="cs_post_title cs_fs_18 cs_bold cs_mb_16 text-uppercase">
+                  <a href="blog-details.html" aria-label="Read full article: The Evolution of Urban Spaces in Contemporary Architecture">THE EVOLUTION OF URBAN SPACES IN CONTEMPORARY ARCHITECTURE.</a>
+                </h3>
+                <p class="cs_post_summery cs_mb_30">Designing buildings and spaces that balance vision with technical expertise.</p>
+                <a href="blog-details.html" class="cs_text_btn_style_1 cs_fs_14 cs_bold cs_accent_color" aria-label="Read more about The Evolution of Urban Spaces in Contemporary Architecture">
+                <span>READ MORE</span>
+                <span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="cs_height_120 cs_height_lg_80"></div>
+    </section>
+    <!-- End Blog Section -->
+    <!-- Start CTA Section -->
+    <section class="cs_cta_style_2 cs_primary_bg cs_bg_fixed position-relative" data-src="assets/img/cta-bg2.webp">
+      <div class="cs_cta_overlay position-absolute"></div>
+      <div class="container">
+        <div class="cs_cta_content cs_center_column text-center">
+          <div class="cs_logo_text_wrapper cs_center cs_radius_100 cs_mb_40 position-relative">
+            <div class="cs_text_logo position-absolute">
+              <img src="assets/img/logo-text.webp" alt="Text logo">
+            </div>
+            <span class="cs_arrow_icon cs_center cs_radius_100 position-absolute">
+            <i class="fa-solid fa-arrow-right-long"></i>
+            </span>
+          </div>
+          <h2 class="cs_cta_title cs_fs_96 cs_bold cs_white_color cs_mb_6- cs_mb_lg_40">UNLOCK YOUR DREAM HOME TODAY</h2>
+          <a href="contact-us.html" aria-label="Book an appointment through our contact page" class="cs_btn_style_1 cs_fs_14 cs_bold cs_primary_font cs_radius_50">
+          <span>BOOK APPOINTMENT</span>
+          <span class="cs_btn_icon cs_radius_100 cs_center" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- End CTA Section -->
+    </main>
+    <!-- End Main Content -->
+    <!-- Start Footer Section -->
+    <footer class="cs_footer_style_1 cs_primary_bg">
+      <div class="cs_height_120 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_footer_logo cs_center_column text-center position-relative">
+          <img src="assets/img/footer-logo2.webp" alt="Footer logo">
+          <div class="cs_logo_text_wrapper cs_center cs_gray_bg cs_radius_100">
+            <div class="cs_text_logo position-absolute">
+              <img src="assets/img/logo-text.webp" alt="Text logo">
+            </div>
+            <span class="cs_arrow_icon cs_center cs_radius_100 position-absolute">
+            <i class="fa-solid fa-arrow-right-long"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="cs_footer_main">
+        <div class="container-fluid">
+          <div class="cs_footer_rows">
+            <div class="cs_footer_col">
+              <div class="cs_footer_widget">
+                <h2 class="cs_footer_widget_title cs_fs_24 cs_bold cs_white_color cs_mb_32 cs_mb_lg_24">ABOUT US</h2>
+                <ul class="cs_footer_menu_list cs_mp_0 text-capitalize" aria-label="Footer navigation menu">
+                  <li><a href="about-us.html" aria-label="About Us">About Us</a></li>
+                  <li><a href="team.html" aria-label="Meet The Team">Meet The Team</a></li>
+                  <li><a href="about-us.html" aria-label="Awards">Awards</a></li>
+                  <li><a href="portfolio.html" aria-label="Projects">Projects</a></li>
+                  <li><a href="about-us.html" aria-label="Testimonials">Testimonials</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="cs_footer_col">
+              <div class="cs_footer_widget">
+                <h2 class="cs_footer_widget_title cs_fs_24 cs_bold cs_white_color cs_mb_32 cs_mb_lg_24">SERVICES</h2>
+               <ul class="cs_footer_menu_list cs_mp_0 text-capitalize" aria-label="Footer services menu">
+                  <li><a href="service-details.html" aria-label="Residential Design">Residential Design</a></li>
+                  <li><a href="service-details.html" aria-label="Commercial Design">Commercial Design</a></li>
+                  <li><a href="service-details.html" aria-label="Interior Design">Interior Design</a></li>
+                  <li><a href="service-details.html" aria-label="Urban Planning">Urban Planning</a></li>
+                  <li><a href="service-details.html" aria-label="Sustainable Design">Sustainable Design</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="cs_footer_col">
+              <div class="cs_footer_widget">
+                <h2 class="cs_footer_widget_title cs_fs_24 cs_bold cs_white_color cs_mb_32 cs_mb_lg_24">RESOURCES</h2>
+                <ul class="cs_footer_menu_list cs_mp_0 text-capitalize" aria-label="Footer navigation menu">
+                  <li><a href="blog.html" aria-label="Blog and Insights">Blog & Insights</a></li>
+                  <li><a href="services.html" aria-label="Services">Services</a></li>
+                  <li><a href="contact-us.html" aria-label="Contact Us">Contact Us</a></li>
+                  <li><a href="faq.html" aria-label="Get a Quote">Get a Quote</a></li>
+                  <li><a href="#" aria-label="License">License</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="cs_footer_col">
+              <div class="cs_footer_widget">
+                <h2 class="cs_footer_widget_title cs_fs_24 cs_bold cs_white_color cs_mb_22 text-uppercase">Newsletter</h2>
+                <p class="cs_mb_21">Subscribe Our Newsletter</p>
+                <form action="#" class="cs_newsletter_style_1">
+                  <input type="email" name="email" autocomplete="off" placeholder="Enter Your Email" class="cs_form_field cs_radius_50 cs_fs_14 cs_bold bg-transparent" >
+                  <button type="submit" class="cs_submit_btn cs_radius_50 cs_fs_14 cs_bold">Subscribe Now</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cs_footer_bottom">
+        <div class="container-fluid">
+          <div class="cs_footer_bottom_content">
+            <div class="cs_copywright_text cs_white_color">Copyright & Design <span class="cs_accent_color">@[NOME DO CLIENTE]</span><span class="cs_getting_year"></span></div>
+            <ul class="cs_footer_bottom_menu cs_mp_0 cs_white_color" aria-label="Footer legal menu">
+              <li><a href="#" aria-label="Style Guide">Style Guide</a></li>
+              <li><a href="#" aria-label="Licenses">Licenses</a></li>
+              <li><a href="#" aria-label="Changelog">Changelog</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer Section -->
+    <!-- Start Scroll Top Button -->
+    <button type="button" name="ScrollToTopBtn" class="cs_scrollup_btn" id="scrollToTopBtn">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <!-- End Scroll Top Button -->
+    <!-- JavaScript with defer for performance -->
+    <script defer src="assets/js/jquery.min.js"></script>
+    <script defer src="assets/js/gsap.min.js"></script>
+    <script defer src="assets/js/lenis.min.js"></script>
+    <script defer src="assets/js/swiper.min.js"></script>
+    <script defer src="assets/js/odometer.min.js"></script>
+    <script defer src="assets/js/SplitText.min.js"></script>
+    <script defer src="assets/js/ScrollTrigger.min.js"></script>
+    <script defer src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+/* Brand 1 ---------------------------------- */
+.brand-area {
+    position: relative; 
+    clip-path: path("M0 0H1551.46C1562.82 0 1573.21 6.42007 1578.29 16.5836L1648.29 156.584C1658.27 176.531 1643.76 200 1621.46 200H0V0Z" ); 
+}
+.brand-box {
+    display: grid;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    min-height: 104px; 
+    filter: grayscale(1) invert(0.3) brightness(1.4); 
+    transition: 0.4s ease-in-out;
+    &:hover {
+        filter: none;
+    }
+}
+/* Brand 2 ---------------------------------- */
+.brand-card {
+    display: grid;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    min-height: 132px;
+}
+.brand-sec2 {
+    padding-top: 65px;
+    padding-bottom: 200px;
+    @include xl {
+        padding-bottom: 150px;
+    }
+    @include sm {
+        padding-bottom: 110px;
+    }
+}

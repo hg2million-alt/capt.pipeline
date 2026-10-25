@@ -1,0 +1,58 @@
+/*******************************************************/
+/******************* 08. Page Banner *******************/
+/*******************************************************/
+.page-banner
+    background-size: cover
+    +overlay($black-color, 0.85)
+    background-position: center
+    &:before
+        mix-blend-mode: multiply
+    +res-bl(md)
+        +gapTB(padding, 100px)
+.banner-inner
+    flex-wrap: wrap
+    position: relative
+    +flexcenter(space-between)
+    h1
+        color: transparent
+        margin-right: 25px
+        -webkit-text-stroke: 1px
+        text-transform: uppercase
+        -webkit-text-stroke-color: white
+        +res-bl(xl)
+            font-size: 85px
+        +res-bl(lg)
+            font-size: 65px
+        +res-bl(md)
+            font-size: 55px
+        +res-bl(sm)
+            font-size: 45px
+        +res-bl(ms)
+            margin-right: 0
+    &.text-center
+        .bg-text
+            transform: translate(-50%, -50%)
+        .breadcrumb
+            justify-content: center
+.breadcrumb
+    padding: 0
+    font-size: 30px
+    margin-bottom: 8px
+    background: transparent
+    text-transform: capitalize
+    +res-bl(md)
+        font-size: 25px
+    +res-bl(sm)
+        font-size: 20px
+    +res-bl(xs)
+        font-size: 18px
+    .breadcrumb-item
+        padding: 0
+        +flexcenter(center)
+        &.active
+            color: $primary-color
+        &+.breadcrumb-item::before
+            +gapLR(margin, 15px)
+            +circle(white, 5px)
+            flex: none
+            content: ''

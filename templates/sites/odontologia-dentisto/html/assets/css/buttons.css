@@ -1,0 +1,28 @@
+
+.appointment-btn{
+	background-color: var(--global--color-seagreen);
+	border-radius: 0;
+	padding: 16px 40px;
+	letter-spacing: 0.6px;
+	transition-duration: .3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+}
+.contact-us-btn{
+	border-radius: 0;
+	padding: 14px 34px;
+	border: 2px solid var(--global--color-seablue);
+	color: var(--global--color-seablue);
+	transition-duration: .3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+}
+.contact-us-btn:hover{
+    background-color: var(--global--color-seablue);
+	color: #fff;
+	transform: translateY(-8px);
+}
+.appointment-btn:hover{
+background-color: var(--global--color-orange);
+transform: translateY(-8px);
+}

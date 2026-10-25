@@ -1,0 +1,315 @@
+<?php 
+$header_class = 'transparent header-light'; 
+include 'includes/header.php'; 
+?>
+<!-- Main Content Begin -->
+
+            <section id="subheader" class="bg-color-op-1 text-center">
+                <div class="container relative z-2">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <h1 class="wow fadeInUp">Preventive Dentistry</h1>
+                            <div class="border-bottom my-3"></div>
+                            <ul class="crumb wow fadeInDown">
+                                <li><a href="index.php">Home</a></li>
+                                <li class="active">Preventive Dentistry</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="row g-4 gx-5 align-items-center">
+                        <div class="col-lg-6">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="relative rounded-1 overflow-hidden wow zoomIn">
+                                        <img src="images/misc/p1.webp" class="w-100 wow scaleIn" alt="">
+                                        <div class="de-overlay-gradient-color h-50 top-50"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6" data-wow-delay=".3s">
+                                    <div class="relative rounded-1 overflow-hidden wow zoomIn">
+                                        <img src="images/misc/p2.webp" class="w-100 wow scaleIn" alt="">
+                                        <div class="de-overlay-gradient-color h-50 top-50"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="ps-lg-3">
+                                <div class="subtitle id-color wow fadeInUp" data-wow-delay=".2s">Preventive Dentistry</div>
+                                <h2 class="wow fadeInUp" data-wow-delay=".4s">Building Healthy Smiles That Last a Lifetime</h2>
+                                <p class="mb-0 wow fadeInUp" data-wow-delay=".6s">We believe the best dental care begins with prevention. Preventive dentistry helps children avoid dental problems before they start, ensuring strong, healthy teeth and good habits that last into adulthood. Our goal is to make every visit positive, educational, and supportive for both kids and parents.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+            </section>
+
+            <section class="bg-color-op-1">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-lg-5">
+                            <div class="subtitle id-color wow fadeInUp" data-wow-delay=".0s">Why Choose Us</div>
+                            <h2 class="wow fadeInUp" data-wow-delay=".2s">Why Choose Our Preventive Dental Services?</h2>
+                        </div>
+
+                        <div class="col-lg-7">
+                             <div class="row g-4">
+                                 <div class="col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                                     <div class="relative">
+                                         <span class="abs w-70px p-3 circle bg-color d-block">
+                                             <img src="images/ui/check-white.png" class="w-100" alt="">
+                                         </span>
+                                         <div class="ps-90">
+                                             <h5>Kid-Friendly Environment</h5>
+                                             <p class="mb-0">Our space is fun, welcoming, and designed to keep children relaxed and happy during every visit.</p>
+                                         </div>
+                                     </div>
+                                 </div>
+
+                                 <div class="col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                                     <div class="relative">
+                                         <span class="abs w-70px p-3 circle bg-color d-block">
+                                             <img src="images/ui/check-white.png" class="w-100" alt="">
+                                         </span>
+                                         <div class="ps-90">
+                                             <h5>Experienced Pediatric Dentists</h5>
+                                             <p class="mb-0">Our team has advanced training in caring for children, using gentle techniques.</p>
+                                         </div>
+                                     </div>
+                                 </div>
+
+                                 <div class="col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                                     <div class="relative">
+                                         <span class="abs w-70px p-3 circle bg-color d-block">
+                                             <img src="images/ui/check-white.png" class="w-100" alt="">
+                                         </span>
+                                         <div class="ps-90">
+                                             <h5>Preventive Focus</h5>
+                                             <p class="mb-0">We emphasize early detection and education to help kids avoid problems before they start.</p>
+                                         </div>
+                                     </div>
+                                 </div>
+
+                                 <div class="col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                                     <div class="relative">
+                                         <span class="abs w-70px p-3 circle bg-color d-block">
+                                             <img src="images/ui/check-white.png" class="w-100" alt="">
+                                         </span>
+                                         <div class="ps-90">
+                                             <h5>Modern Technology</h5>
+                                             <p class="mb-0">We use child-safe digital X-rays and advanced tools to ensure accuracy, safety, and comfort.</p>
+                                         </div>
+                                     </div>
+                                 </div>
+
+                                 <div class="col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                                     <div class="relative">
+                                         <span class="abs w-70px p-3 circle bg-color d-block">
+                                             <img src="images/ui/check-white.png" class="w-100" alt="">
+                                         </span>
+                                         <div class="ps-90">
+                                             <h5>Parent & Patient Education</h5>
+                                             <p class="mb-0">We take time to teach proper brushing, flossing, and nutrition to build long-term dental health.</p>
+                                         </div>
+                                     </div>
+                                 </div>
+
+                                 <div class="col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                                     <div class="relative">
+                                         <span class="abs w-70px p-3 circle bg-color d-block">
+                                             <img src="images/ui/check-white.png" class="w-100" alt="">
+                                         </span>
+                                         <div class="ps-90">
+                                             <h5>Flexible Scheduling</h5>
+                                             <p class="mb-0">We offer after-school and weekend appointments to fit your family’s busy schedule.</p>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                       
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-lg-8 text-center">
+                            <div class="subtitle wow fadeInUp mb-3">Preventive Dentistry</div>
+                            <h2 class="wow fadeInUp" data-wow-delay=".2s">Preventive Treatments We Offer</h2>
+                        </div>
+                    </div>
+
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="border-gray p-40 h-100 rounded-1">
+                                <div class="relative wow fadeInUp">
+                                    <h4>Routine Exams & Cleanings</h4>
+                                    <p class="mb-0">Maintain a healthy smile with regular checkups and cleanings that remove plaque and detect early issues.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="border-gray p-40 h-100 rounded-1">
+                                <div class="relative wow fadeInUp">
+                                    <h4>Fluoride Treatments</h4>
+                                    <p class="mb-0">Strengthen enamel and help prevent cavities with safe, quick fluoride applications tailored for kids.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="border-gray p-40 h-100 rounded-1">
+                                <div class="relative wow fadeInUp">
+                                    <h4>Dental Sealants</h4>
+                                    <p class="mb-0">Protect your child’s molars from decay with a thin, invisible coating that lasts for years.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="border-gray p-40 h-100 rounded-1">
+                                <div class="relative wow fadeInUp">
+                                    <h4>Digital X-Rays</h4>
+                                    <p class="mb-0">Safe, low-radiation imaging to catch cavities, monitor growth, and ensure accurate diagnosis.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="border-gray p-40 h-100 rounded-1">
+                                <div class="relative wow fadeInUp">
+                                    <h4>Oral Health Education</h4>
+                                    <p class="mb-0">We teach kids and parents how to care for teeth at home—setting the foundation for lifelong habits.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="border-gray p-40 h-100 rounded-1">
+                                <div class="relative wow fadeInUp">
+                                    <h4>Habit Counseling</h4>
+                                    <p class="mb-0">Gentle support to help children break habits like thumb sucking or pacifier use that affect oral health.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="bg-color-op-2 no-top no-bottom overflow-hidden">
+                <div class="container-fluid position-relative half-fluid">
+                  <div class="container">
+                    <div class="row">
+                      <!-- Image -->
+                      <div class="col-lg-6 position-lg-absolute left-half h-100">
+                        <div class="image" data-bgimage="url(images/misc/s2.webp) center"></div>
+                      </div>
+                      <!-- Text -->
+                      <div class="col-lg-5 offset-lg-7">
+                            <div class="py-5 my-5">
+                                <div class="owl-single-dots owl-carousel owl-theme">
+                                    <div class="item">
+                                        <i class="icofont-quote-left id-color fs-40 mb-4 wow fadeInUp"></i>
+                                        <h3 class="mb-4 wow fadeInUp fs-32">The staff is so patient and gentle with my daughter. She actually looks forward to going to the dentist now!</h3>
+                                        <span class="wow fadeInUp">Rachel T.</span>
+                                    </div>
+
+                                    <div class="item">
+                                        <i class="icofont-quote-left id-color fs-40 mb-4 wow fadeInUp"></i>
+                                        <h3 class="mb-4 wow fadeInUp fs-32">We had an emergency and they saw us the same day. I’m so grateful for their quick response and kindness!</h3>
+                                        <span class="wow fadeInUp">Michael L.</span>
+                                    </div>
+
+                                    <div class="item">
+                                        <i class="icofont-quote-left id-color fs-40 mb-4 wow fadeInUp"></i>
+                                        <h3 class="mb-4 wow fadeInUp fs-32">Clean, cheerful, and professional. The entire team makes dental visits a positive experience for my kids.</h3>
+                                        <span class="wow fadeInUp">Emily S.</span>
+                                    </div>
+
+                                    <div class="item">
+                                        <i class="icofont-quote-left id-color fs-40 mb-4 wow fadeInUp"></i>
+                                        <h3 class="mb-4 wow fadeInUp fs-32">My son used to be terrified of dentists. Now he walks in with a smile. I can’t thank this team enough!</h3>
+                                        <span class="wow fadeInUp">Daniel K.</span>
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </section>
+
+            <section class="bg-light">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-lg-5">
+                            <div class="subtitle id-color wow fadeInUp" data-wow-delay=".0s">Everything You Need to Know</div>
+                            <h2 class="wow fadeInUp" data-wow-delay=".2s">Frequently Asked Questions</h2>
+                        </div>
+
+                        <div class="col-lg-7">
+                            <div class="accordion s2 wow fadeInUp">
+                                <div class="accordion-section">
+                                    <div class="accordion-section-title" data-tab="#accordion-a1">
+                                        How often should I visit the dentist?
+                                    </div>
+                                    <div class="accordion-section-content" id="accordion-a1">It’s recommended to see your dentist every 6 months for a routine check-up and cleaning, unless advised otherwise.
+                                    </div>
+                                    <div class="accordion-section-title" data-tab="#accordion-a2">
+                                        What should I do in a dental emergency?
+                                    </div>
+                                    <div class="accordion-section-content" id="accordion-a2">
+                                        Call our office immediately. We offer same-day emergency care for issues like severe pain, broken teeth, or swelling.
+                                    </div>                                        
+                                    <div class="accordion-section-title" data-tab="#accordion-a3">
+                                        Do you offer services for kids?
+                                    </div>
+                                    <div class="accordion-section-content" id="accordion-a3">
+                                        Absolutely! We provide gentle, friendly pediatric dental care for children of all ages.
+                                    </div>
+                                    <div class="accordion-section-title" data-tab="#accordion-a4">
+                                        What are my options for replacing missing teeth?
+                                    </div>
+                                    <div class="accordion-section-content" id="accordion-a4">
+                                        We offer dental implants, bridges, and dentures depending on your needs and preferences.
+                                    </div>
+                                    <div class="accordion-section-title" data-tab="#accordion-a5">
+                                         Is teeth whitening safe?
+                                    </div>
+                                    <div class="accordion-section-content" id="accordion-a5">
+                                        Yes, when performed by a dental professional, teeth whitening is safe and effective with long-lasting results.
+                                    </div>
+                                </div>
+                            </div>                        
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-color text-light pt-50 pb-50">
+                <div class="container">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md-9">
+                            <h3 class="mb-0 fs-32">Ready to Book Your Appointment?</h3>
+                            <p class="mb-0">Contact us today to schedule your visit and take the first step toward a healthier smile.</p>
+                        </div>
+                        <div class="col-lg-3 text-lg-end">
+                            <a class="btn-main fx-slide btn-line" href="booking.php"><span>Book Appointment</span></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- Main Content End -->
+
+<?php include 'includes/footer.php'; ?>

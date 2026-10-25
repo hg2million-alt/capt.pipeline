@@ -1,0 +1,40 @@
+/**
+ * Videobox
+ */
+
+.tm-videobox {
+    position: relative;
+
+    a {
+        position: absolute;
+        display: inline-block;
+        vertical-align: middle;
+        left: 50%;
+        top: 50%;
+        height: 100px;
+        width: 100px;
+        margin-left: -50px;
+        margin-top: -50px;
+        border-radius: 1000px;
+        transition: $transition;
+
+        &:hover {
+            transform: scale(0.9);
+        }
+    }
+
+    @media #{$layout-mobile-lg} {
+        a {
+            height: 80px;
+            width: 80px;
+            margin-left: -40px;
+            margin-top: -40px;
+        }
+    }
+}
+
+.bg-white{
+    .tm-videobox{
+        border-color: $color-grey;
+    }
+}

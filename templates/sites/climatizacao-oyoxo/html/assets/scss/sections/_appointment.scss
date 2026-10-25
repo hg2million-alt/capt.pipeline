@@ -1,0 +1,77 @@
+/**
+ * Appointment
+ */
+
+.tm-appointment {
+    &-bgimage {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 50%;
+        z-index: -1;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-image: linear-gradient(90deg, transparent 0%, $color-grey 100%);
+            z-index: -1;
+        }
+    }
+
+    &-box {
+        &>h2 {
+            margin-top: -5px;
+        }
+    }
+
+    &-form {
+        margin-top: 30px;
+    }
+
+    &-image {
+        margin-bottom: -100px;
+    }
+
+    @media #{$layout-tablet}{
+        &-bgimage{
+            height: 50%;
+            width: 100%;
+
+            &::before {
+                background-image: linear-gradient(180deg, transparent 0%, $color-grey 100%);
+            }
+        }
+
+        &-image{
+            margin-bottom: 50px;
+        }
+    }
+
+    @media #{$layout-mobile-lg}{
+        &-bgimage{
+            height: 50%;
+            width: 100%;
+
+            &::before {
+                background-image: linear-gradient(180deg, transparent 0%, $color-grey 100%);
+            }
+        }
+
+        &-image{
+            margin-bottom: 40px;
+        }
+    }
+
+    @media #{$layout-mobile-sm}{
+        &-box {
+            &>h2 {
+                font-size: 28px;
+            }
+        }
+    }
+}

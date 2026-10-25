@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.2/animation_utility.css">
+    <link rel="icon" type="image/x-icon" href="image/logo.png">
+    <title>[NOME DO CLIENTE] - Single Post</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="sticky-top bg-accent-primary">
+        <div class="r-container">
+            <nav class="navbar d-xl-flex flex-xl-nowrap">
+                <div class="container-fluid navbar-expand-xl">
+                    <div class="logo-container">
+                        <a class="navbar-brand" href="#"><img src="image/logo.png" alt="" class="img-fluid"></a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars-staggered accent-color"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-xl-auto ms-auto mb-2 mb-xl-0 gap-xl-3 gap-1">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Homepage <i
+                                        class="rtmicon rtmicon-arrow-up-right"></i></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Pages <i class="rtmicon rtmicon-arrow-up-right"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="team.html">Team</a></li>
+                                    <li><a class="dropdown-item" href="team_detail.html">Team Detail</a></li>
+                                    <li><a class="dropdown-item" href="faq.html">FAQs</a></li>
+                                    <li><a class="dropdown-item" href="service.html">Services</a></li>
+                                    <li><a class="dropdown-item" href="service_detail.html">Service Detail</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="pricing_plan.html">Pricing Plan</a></li>
+                                    <li><a class="dropdown-item" href="testimonial.html">Testimonials</a></li>
+                                    <li><a class="dropdown-item" href="404.html">404 Error</a></li>
+                                    <li><a class="dropdown-item" href="work_detail.html">Work Detail</a>
+                                    </li>
+                                    <li><a class="dropdown-item active" href="single_blog.html">Single Post</a></li>
+                                    <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">
+                                    About Us <i class="rtmicon rtmicon-arrow-up-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="work.html">
+                                    Works <i class="rtmicon rtmicon-arrow-up-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">Blog <i
+                                        class="rtmicon rtmicon-arrow-up-right"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-none d-xl-flex flex-row gap-3 align-items-center">
+                    <div class="d-flex flex-row gap-3 align-items-center" style="width: max-content;">
+                        <a href="" class="social-item">
+                            <i class="rtmicon rtmicon-classic-phone"></i>
+                        </a>
+                        <span>+1 (212) 555-1212</span>
+                    </div>
+                    <button class="btn btn-toggler-accent" style="width: max-content;" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas"><i
+                            class="rtmicon rtmicon-bars"></i></button>
+                    <div class="offcanvas offcanvas-end offcanvas-fullwidth" tabindex="-1" id="offcanvas">
+                        <div class="offcanvas-header bg-transparent">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="r-container d-flex flex-column gap-3">
+                                <img src="image/dummy-img-1920x1280.jpg" class="img-fluid" alt="">
+                                <h4>Precision Repairs. <br><span class="fw-bold fst-italic">Lasting Results.</span>
+                                </h4>
+                                <div class="d-flex flex-column">
+                                    <div class="d-flex flex-column gap-2">
+                                        <i class="rtmicon rtmicon-envelope fs-1 accent-color"></i>
+                                        <span class="text-color-2">E-Mail</span>
+                                        <h6>hello@domainsite.com</h6>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex flex-column gap-2">
+                                        <i class="rtmicon rtmicon-classic-phone fs-1 accent-color"></i>
+                                        <span class="text-color-2">Phone</span>
+                                        <h6>+1 (212) 555-1212</h6>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex flex-column gap-2">
+                                        <i class="rtmicon rtmicon-location fs-1 accent-color"></i>
+                                        <span class="text-color-2">Address</span>
+                                        <h6>KLLG St, No.99, Pku City, ID </h6>
+                                    </div>
+                                </div>
+                                <p class="mt-5">Subscribe to receive seasonal maintenance tips and special
+                                    promotions.
+                                </p>
+                                <div class="d-flex flex-column gap-3">
+                                    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                                        <div 
+                                            class="toast success_msg_subscribe bg-dark-transparent text-white"
+                                            role="alert" aria-live="assertive" aria-atomic="true">
+                                            <div class="d-flex">
+                                                <div class="toast-body">
+                                                    Your Subscribe Send Successfully!.
+                                                </div>
+                                                <button type="button" class="btn me-2 m-auto text-white"
+                                                    data-bs-dismiss="toast" aria-label="Close">
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <form
+                                            class="d-flex flex-column h-100 justify-content-center w-100 needs-validation form"
+                                            novalidate>
+                                            <input type="text" name="action" value="subscribe" hidden>
+                                            <div
+                                                class="input-group gap-3 mb-xl-2 mb-0 position-relative custom-input-group">
+                                                <input type="email"
+                                                    class="form-control mb-xl-0 mb-3 subscribe custom-email-input"
+                                                    placeholder="Enter your email" name="email" required>
+                                                <button
+                                                    class="btn btn-accent custom-submit-button submit_subscribe rounded-pill"
+                                                    type="submit">
+                                                    <i class="rtmicon rtmicon-arrow-up-right"></i>
+                                                </button>
+                                                <div class="invalid-feedback position-absolute bottom-0"
+                                                    style="margin-bottom: -2rem; margin-left: 1rem;">
+                                                    Please provide a valid email format (e.g., user@example.com).
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- End Header -->
+
+
+    <!-- Main -->
+    <main>
+        <!-- Banner -->
+        <div class="section pb-0">
+            <div class="r-container d-flex flex-column gap-3">
+                <div class="row row-cols-xl-2 row-cols-1 align-items-center">
+                    <div class="col mb-5">
+                        <div class="d-flex flex-column gap-3 h-100">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb scrollanimation animated fadeInUp adr-5">
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                    <li class="breadcrumb-item" aria-current="page">Our Blog</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Single Post</li>
+                                </ol>
+                            </nav>
+                            <h2 class="scrollanimation animated fadeInUp adr-5 adl-2"><span
+                                    class="fw-bold fst-italic">Top 7 Must-Do Maintenance Tasks for Every Season</span>
+                            </h2>
+                            <p class="scrollanimation animated fadeInUp adr-5 adl-4" style="max-width: 550px;">
+                                Stay on top of home care all year with our top seasonal tasks—simple, smart, and
+                                essential.</p>
+                            <div class="w-max-content scrollanimation animated fadeInUp adr-5 adl-5">
+                                <a href="contact.html" class="btn btn-accent black d-flex flex-row gap-2">
+                                    <span>Learn More</span>
+                                    <i class="rtmicon rtmicon-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex flex-xl-row flex-column align-items-end justify-content-center h-100"
+                            style="background: url(image/hero-component.png) no-repeat 50% 50%; background-size: contain; min-height: 400px;">
+                            <figure class="m-0" style="height: 500px;">
+                                <img src="image/dummy-img-600x600.jpg" class="img-fluid h-100" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Marquee -->
+        <div class="section p-0">
+            <div
+                class="d-flex flex-column gap-3 text-center align-items-center justify-content-center mx-auto position-relative accent-primary">
+                <div class="marquee-container bg-accent-color">
+                    <div class="marquee-content accent-color-primary">
+                        <div class="marquee-item py-2 d-flex align-items-center justify-content-center">
+                            <h3 class="m-0 fw-semibold">Fast Fixes</h3>
+                        </div>
+                        <div class="marquee-item py-2 d-flex align-items-center">
+                            <img src="image/icon-2.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="marquee-item py-2 d-flex align-items-center justify-content-center">
+                            <h3 class="m-0 fw-semibold">Reliable Technicians</h3>
+                        </div>
+                        <div class="marquee-item py-2 d-flex align-items-center">
+                            <img src="image/icon-2.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="marquee-item py-2 d-flex align-items-center justify-content-center">
+                            <h3 class="m-0 fw-semibold">24/7 Service</h3>
+                        </div>
+                        <div class="marquee-item py-2 d-flex align-items-center">
+                            <img src="image/icon-2.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="marquee-item py-2 d-flex align-items-center justify-content-center">
+                            <h3 class="m-0 fw-semibold">Home Repairs Made Easy</h3>
+                        </div>
+                        <div class="marquee-item py-2 d-flex align-items-center">
+                            <img src="image/icon-2.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="marquee-item py-2 d-flex align-items-center justify-content-center">
+                            <h3 class="m-0 fw-semibold">Transparent Pricing</h3>
+                        </div>
+                        <div class="marquee-item py-2 align-items-center">
+                            <img src="image/icon-2.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="marquee-item py-2 d-flex align-items-center justify-content-center">
+                            <h3 class="m-0 fw-semibold">Safety-First Work</h3>
+                        </div>
+                        <div class="marquee-item py-2 align-items-center">
+                            <img src="image/icon-2.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Service Detail -->
+        <div class="section">
+            <div class="r-container d-flex flex-column gap-3 align-items-start">
+                <span class="accent-color-primary bg-accent-color" style="padding: 8px 16px;">Interior
+                    Improvement</span>
+                <h2 class="scrollanimation animated fadeInDown adr-5"><span class="fw-bold fst-italic">Top 7
+                        Must-Do</span> Maintenance Tasks <br>for Every Season</h2>
+                <div class="d-flex flex-row gap-5 text-color-2">
+                    <div class="d-flex flex-row align-items-center font-2 gap-2">
+                        <i class="rtmicon rtmicon-calendar fw-semibold"></i>
+                        <span class="small-text fw-semibold">July 23, 2025</span>
+                    </div>
+                    <div class="d-flex flex-row align-items-center font-2 gap-2">
+                        <i class="bi bi-chat-right-text fw-semibold"></i>
+                        <span class="small-text fw-semibold">12 Comments</span>
+                    </div>
+                    <div class="d-flex flex-row align-items-center font-2 gap-2">
+                        <i class="rtmicon rtmicon-users fw-semibold"></i>
+                        <span class="small-text fw-semibold">Make Anderson</span>
+                    </div>
+                </div>
+                <img src="image/dummy-img-1920x1280.jpg" class="img-fluid h-100 scrollanimation animated fadeIn adr-5 adl-4 mb-4"
+                    style="aspect-ratio: 2/1;" alt="">
+                <p class="scrollanimation animated fadeIn adr-5 adl-1">
+                    Keeping your home in top shape isn’t just about fixing things when they break—it's about staying
+                    ahead with regular, seasonal maintenance. Every season brings its own challenges, from summer heat
+                    to winter chills, and each one demands a specific set of upkeep tasks to ensure your home remains
+                    safe, efficient, and comfortable.
+                    <br>
+                    <br>
+                    By following a year-round maintenance routine, you can prevent costly repairs, improve your home’s
+                    energy efficiency, and increase its lifespan. Whether you're a new homeowner or a seasoned DIYer,
+                    having a seasonal checklist not only keeps your property in good condition but also brings peace of
+                    mind. Plus, a well-maintained home just feels better to live in.
+                    <br>
+                    <br>
+                    In this post, we’ve rounded up the top 7 maintenance tasks every homeowner should tackle throughout
+                    the year. These tasks are simple, effective, and essential—perfect for anyone looking to stay
+                    proactive about home care. Let’s dive into the must-dos for each season and help you keep your home
+                    running like a well-oiled machine.
+                </p>
+                <div
+                    class="d-flex flex-column gap-2 accent-color p-3 border-2 border-start border-accent scrollanimation animated fadeIn adr-5 adl-4">
+                    <i class="rtmicon rtmicon-blockquote fs-3 fw-bold "></i>
+                    <span class="text-color-2">“A well-maintained home reflects the care and discipline of its owner. It
+                        creates a safe, comfortable environment for loved ones. Instead of waiting for issues, take
+                        proactive steps to prevent them. Regular maintenance saves costly replacements and keeps your
+                        home a sanctuary. Prioritize upkeep to reflect your values.”</span>
+                    <span class="accent-color">- Michael R.</span>
+                </div>
+                <div class="row row-cols-xl-2 row-cols-1">
+                    <div class="col mb-3">
+                        <img src="image/dummy-img-1920x1280.jpg" class="img-fluid scrollanimation animated fadeIn adr-5 adl-4" alt="">
+                    </div>
+                    <div class="col mb-3">
+                        <img src="image/dummy-img-1920x1280.jpg" class="img-fluid scrollanimation animated fadeIn adr-5 adl-4" alt="">
+                    </div>
+                </div>
+                <p class="scrollanimation animated fadeIn adr-5">Before we dive into the seasonal checklist, it's
+                    important to remember that maintenance isn't just about aesthetics—it's about protecting your
+                    investment. Regular upkeep can prevent small issues from becoming major problems, reduce energy
+                    bills, and even boost the overall value of your home. With a little planning and consistency, these
+                    routine tasks can save you time, money, and stress in the long run.</p>
+                <ol class="text-color-2 font-2 scrollanimation animated fadeIn adr-5">
+                    <li>Check and Replace HVAC Filters
+                        <br>
+                        Regularly replacing your HVAC filters (at least every 1–3 months) improves airflow,
+                        ensures energy efficiency, and keeps your indoor air clean. Neglecting this can lead to clogged
+                        systems, higher bills, and dust buildup.
+                    </li>
+                    <li>Inspect Roof and Gutters
+                        <br>
+                        With each season, especially after heavy rain or snow, inspect your roof for broken
+                        shingles, moss, or leaks. Clean out the gutters to ensure water drains properly away from your
+                        foundation.
+                    </li>
+                    <li>Test Smoke and Carbon Monoxide Detectors
+                        <br>
+                        Check all your detectors once per season by pressing the test button. Replace
+                        batteries at least twice a year or immediately if the low-battery beep starts. These small
+                        devices are your home’s first defense against emergencies.
+                    </li>
+                    <li>Seal Windows and Doors
+                        <br>
+                        Inspect window and door frames for drafts or gaps. Reseal them with caulk or
+                        weatherstripping to prevent heat loss in winter and cool air from escaping during summer.
+                    </li>
+                    <li>Clean and Inspect Outdoor Spaces
+                        <br>
+                        Patios, decks, and fences face constant exposure to weather. Clean them regularly to
+                        prevent mold, mildew, and rot. Re-seal or repaint wood surfaces as needed to prolong their
+                        lifespan.
+                    </li>
+                    <li>Flush the Water Heater
+                        <br>
+                        Over time, sediment builds up in your water heater, reducing efficiency and
+                        increasing energy use. Flushing it out annually (or bi-annually if you have hard water) helps
+                        extend its life and ensures consistent hot water.
+                    </li>
+                    <li>Clean Dryer Vents and Exhaust Ducts
+                        <br>
+                        Lint buildup is one of the leading causes of house fires. Clean your dryer’s lint
+                        trap after every use and deep-clean the vent duct at least once a year. This boosts drying
+                        efficiency and keeps your home safe.
+                    </li>
+                </ol>
+                <p class="scrollanimation animated fadeIn adr-5">
+                    The result is a visually clean and organized entertainment space. By hiding the cables and elevating
+                    the TV, the room now feels more spacious, modern, and inviting. The client was thrilled with how the
+                    sleek setup elevated the look of their home and simplified their everyday media experience.
+                </p>
+                <hr>
+                <div class="d-flex flex-row flex-wrap gap-2">
+                    <span class="tags scrollanimation animated fadeIn adr-5 adl-2">#handymananywhere</span>
+                    <span class="tags active scrollanimation animated fadeIn adr-5 adl-3">#trustedglobalservice</span>
+                    <span class="tags scrollanimation animated fadeInadr-5 adl-4">#fixItfast</span>
+                    <span class="tags scrollanimation animated fadeIn adr-5 adl-4">#homerepairexperts</span>
+                    <span class="tags scrollanimation animated fadeIn adr-5 adl-3">#repairsmadeeasy</span>
+                    <span class="tags scrollanimation animated fadeIn adr-5 adl-2">#handymanondemand</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Latest Article -->
+        <div class="section">
+            <div class="r-container d-flex flex-column align-items-center gap-4">
+                <div class="d-flex flex-column gap-3 text-center align-items-center">
+                    <div
+                        class="d-flex flex-row gap-2 align-items-center scrollanimation animated fadeInDown adr-5 adl-2">
+                        <img src="image/icon-1.png" class="img-fluid" alt="">
+                        <h6 class="m-0">Latest News</h6>
+                    </div>
+                    <h2 class="scrollanimation animated fadeInDown adr-5">Reliable Guidance to Make <br><span
+                            class="fw-bold fst-italic">Homes Last Longer</span></h2>
+                </div>
+                <div class="row row-cols-xl-3 row-cols-1">
+                    <div class="col mb-3">
+                        <div class="card d-flex flex-column gap-3 position-relative">
+                            <span class="accent-color-primary bg-accent-color position-absolute left-0"
+                                style="padding: 8px 16px; top: 2rem; left: -1rem; z-index: 3;">Maintenence</span>
+                            <img src="image/dummy-img-1920x1280.jpg" alt="" class="img-fluid" style="aspect-ratio: 3/2;">
+                            <div class="d-flex flex-row gap-5 align-items-center accent-color">
+                                <div class="d-flex flex-row align-items-center font-2 gap-2">
+                                    <i class="rtmicon rtmicon-calendar fw-semibold"></i>
+                                    <span class="small-text fw-semibold">July 23, 2025</span>
+                                </div>
+                                <div class="d-flex flex-row align-items-center font-2 gap-2">
+                                    <i class="bi bi-chat-right-text fw-semibold"></i>
+                                    <span class="small-text fw-semibold">12 Comments</span>
+                                </div>
+                            </div>
+                            <a href="" class="read-more">
+                                <div class="d-flex flex-column">
+                                    <h5>Top 7 Must-Do Maintenance Tasks for Every Season</h5>
+                                    <p>
+                                        Easy upkeep tips to prevent costly repairs later.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="card d-flex flex-column gap-3">
+                            <span class="accent-color-primary bg-accent-color position-absolute left-0"
+                                style="padding: 8px 16px; top: 2rem; left: -1rem; z-index: 3;">Service</span>
+                            <img src="image/dummy-img-1920x1280.jpg" alt="" class="img-fluid" style="aspect-ratio: 1/1;">
+                            <div class="d-flex flex-row gap-5 align-items-center accent-color">
+                                <div class="d-flex flex-row align-items-center font-2 gap-2">
+                                    <i class="rtmicon rtmicon-calendar fw-semibold"></i>
+                                    <span class="small-text fw-semibold">July 23, 2025</span>
+                                </div>
+                                <div class="d-flex flex-row align-items-center font-2 gap-2">
+                                    <i class="bi bi-chat-right-text fw-semibold"></i>
+                                    <span class="small-text fw-semibold">12 Comments</span>
+                                </div>
+                            </div>
+                            <a href="" class="read-more">
+                                <div class="d-flex flex-column">
+                                    <h5>5 Signs Your Door Lock Needs a Pro Fix</h5>
+                                    <p>
+                                        Keep your home secure by spotting the signs before it's too late.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="card d-flex flex-column gap-3">
+                            <span class="accent-color-primary bg-accent-color position-absolute left-0"
+                                style="padding: 8px 16px; top: 2rem; left: -1rem; z-index: 3;">Service</span>
+                            <img src="image/dummy-img-1920x1280.jpg" alt="" class="img-fluid" style="aspect-ratio: 3/2;">
+                            <div class="d-flex flex-row gap-5 align-items-center accent-color">
+                                <div class="d-flex flex-row align-items-center font-2 gap-2">
+                                    <i class="rtmicon rtmicon-calendar fw-semibold"></i>
+                                    <span class="small-text fw-semibold">July 23, 2025</span>
+                                </div>
+                                <div class="d-flex flex-row align-items-center font-2 gap-2">
+                                    <i class="bi bi-chat-right-text fw-semibold"></i>
+                                    <span class="small-text fw-semibold">12 Comments</span>
+                                </div>
+                            </div>
+                            <a href="" class="read-more">
+                                <div class="d-flex flex-column">
+                                    <h5>DIY or Call [NOME DO CLIENTE]? When to Bring in the Pros</h5>
+                                    <p>
+                                        Know when you can handle it, and when to leave it to the experts.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-feature w-100"></div>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="section pb-0 px-0">
+            <div class="d-flex flex-xl-row flex-column-reverse align-items-xl-center align-item-start">
+                <div class="col">
+                    <img src="image/dummy-img-600x600.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col mb-3">
+                    <div class="d-flex flex-column gap-3 px-4" style="max-width: 610px;">
+                        <div class="d-flex flex-row gap-2 align-items-center scrollanimation animated fadeInUp adr-5">
+                            <img src="image/icon-1.png" class="img-fluid" alt="">
+                            <h6 class="m-0">Free Consultation</h6>
+                        </div>
+                        <h2 class="scrollanimation animated fadeInUp adr-5 adl-2">Ready to Make Home <span
+                                class="fw-bold fst-italic">Feel Right Again?</span></h2>
+                        <p class="scrollanimation animated fadeInUp adr-5 adl-4">Our handymen restore ease and safety to
+                            your space—quickly and professionally. Let’s get
+                            things working.</p>
+                        <div class="d-flex flex-xl-row flex-column gap-4">
+                            <div class="w-max-content scrollanimation animated fadeInUp adr-5 adl-5">
+                                <a href="faq.html" class="btn btn-accent d-flex flex-row gap-2">
+                                    <span>Get a Quote</span>
+                                    <i class="rtmicon rtmicon-arrow-up-right"></i>
+                                </a>
+                            </div>
+                            <div class="w-max-content scrollanimation animated fadeInUp adr-5 adl-6">
+                                <a href="faq.html" class="btn btn-accent line d-flex flex-row gap-2">
+                                    <span>Our Service</span>
+                                    <i class="rtmicon rtmicon-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="section pb-4 bg-accent-color-2">
+            <div class="r-container d-flex flex-column gap-5">
+                <div class="row row-cols-xl-2 row-cols-1 justify-content-between">
+                    <div class="col col-xl-7 mb-3">
+                        <div class="d-flex flex-xl-row flex-column gap-3 justify-content-between">
+                            <div class="d-flex flex-column gap-3">
+                                <h6 class="text-color-2" style="text-transform: uppercase;">What We Do</h6>
+                                <div class="d-flex flex-column gap-3">
+                                    <a href="" class="link menu">
+                                        Our Projects
+                                    </a>
+                                    <a href="" class="link menu">
+                                        Service Packages
+                                    </a>
+                                    <a href="" class="link menu">
+                                        Handyman Services
+                                    </a>
+                                    <a href="" class="link menu">
+                                        Tools & Equipment
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column gap-3">
+                                <h6 class="text-color-2" style="text-transform: uppercase;">About Us</h6>
+                                <div class="d-flex flex-column gap-3">
+                                    <a href="" class="link menu">
+                                        About [NOME DO CLIENTE]
+                                    </a>
+                                    <a href="" class="link menu">
+                                        Our Blog
+                                    </a>
+                                    <a href="" class="link menu">
+                                        Instagram
+                                    </a>
+                                    <a href="" class="link menu">
+                                        TikTok
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column gap-3">
+                                <h6 class="text-color-2" style="text-transform: uppercase;">Service</h6>
+                                <div class="d-flex flex-column gap-3">
+                                    <a href="" class="link menu">
+                                        Door & Lock Repair
+                                    </a>
+                                    <a href="" class="link menu">
+                                        Wall Installations
+                                    </a>
+                                    <a href="" class="link menu">
+                                        Home Repairs
+                                    </a>
+                                    <a href="" class="link menu">
+                                        Furniture Assembly
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column gap-3">
+                                <h6 class="text-color-2" style="text-transform: uppercase;">Legals</h6>
+                                <div class="d-flex flex-column gap-3">
+                                    <a href="" class="link menu">
+                                        Privacy Policy
+                                    </a>
+                                    <a href="" class="link menu">
+                                        Terms of Use
+                                    </a>
+                                    <a href="" class="link menu">
+                                        Cookies Policy
+                                    </a>
+                                    <a href="" class="link menu">
+                                        Disclaimer
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-xl-4 mb-3">
+                        <div class="d-flex flex-column gap-3">
+                            <h5>Subscribe to Our Newsletter</h5>
+                            <p>Stay updated with home maintenance tips, DIY tricks, exclusive offers, and more!</p>
+                            <div class="d-flex flex-column gap-3">
+                                <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                                    <div 
+                                        class="toast success_msg_subscribe bg-dark-transparent text-white" role="alert"
+                                        aria-live="assertive" aria-atomic="true">
+                                        <div class="d-flex">
+                                            <div class="toast-body">
+                                                Your Subscribe Send Successfully!.
+                                            </div>
+                                            <button type="button" class="btn me-2 m-auto text-white"
+                                                data-bs-dismiss="toast" aria-label="Close">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <form
+                                        class="d-flex flex-column h-100 justify-content-center w-100 needs-validation form"
+                                        novalidate>
+                                        <input type="text" name="action" value="subscribe" hidden>
+                                        <div
+                                            class="input-group gap-3 mb-xl-2 mb-0 position-relative custom-input-group">
+                                            <input type="email" class="form-control subscribe custom-email-input"
+                                                placeholder="Enter your email" name="email" required>
+                                            <button
+                                                class="btn btn-accent custom-submit-button submit_subscribe rounded-pill"
+                                                style="width: max-content;" type="submit">
+                                                <i class="rtmicon rtmicon-arrow-up-right"></i>
+                                            </button>
+                                            <div class="invalid-feedback position-absolute bottom-0"
+                                                style="margin-bottom: -2rem; margin-left: 1rem;">
+                                                Please provide a valid email format (e.g., user@example.com).
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-xl-row flex-column align-self-xl-end gap-5">
+                    <a href="" class="link menu">
+                        Facebook
+                    </a>
+                    <a href="" class="link menu">
+                        Instagram
+                    </a>
+                    <a href="" class="link menu">
+                        Tiktok
+                    </a>
+                    <a href="" class="link menu">
+                        Youtube
+                    </a>
+                </div>
+                <div class="d-flex flex-xl-row flex-column align-items-xl-end justify-content-between"
+                    style="gap: 4rem;">
+                    <a class="me-xl-auto" href="#"><img src="image/logo.png" alt="" width="250" class="img-fluid"></a>
+                    <span class="text-color-2 font-2">
+                        Copyright © 2025 [NOME DO CLIENTE]. All Rights Reserved.
+                    </span>
+                    <span class="text-color-2 fs-6 font-2">
+                        Terms of Service
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="js/vendor/swiper-bundle.min.js"></script>
+    <script src="js/vendor/fontawesome/all.js"></script>
+    <script src="js/vendor/fontawesome/all.min.js"></script>
+    <script src="js/vendor/fontawesome/brands.js"></script>
+    <script src="js/vendor/fontawesome/brands.min.js"></script>
+    <script src="js/vendor/fontawesome/fontawesome.js"></script>
+    <script src="js/vendor/fontawesome/fontawesome.min.js"></script>
+    <script src="js/vendor/fontawesome/regular.js"></script>
+    <script src="js/vendor/fontawesome/regular.min.js"></script>
+    <script src="js/vendor/fontawesome/solid.js"></script>
+    <script src="js/vendor/fontawesome/solid.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/swiper-script.js"></script>
+    <script src="js/submit-form.js"></script>
+    <script src="js/vendor/isotope.pkgd.min.js"></script>
+    <script src="js/video_embedded.js"></script>
+    <script src="js/vendor/fslightbox.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.0/oyethemes_onscroll_animation.js"></script>
+</body>
+
+</html>

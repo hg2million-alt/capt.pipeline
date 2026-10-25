@@ -1,0 +1,104 @@
+/**
+ * Call To Action
+ */
+
+.tm-cta {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        color: #ffffff;
+    }
+
+    h2 {
+        margin-top: -5px;
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    a {
+        color: #ffffff;
+
+        &:hover {
+            text-shadow: $shadow;
+        }
+    }
+
+    .tm-button {
+        margin-top: 10px;
+    }
+
+    @media #{$layout-tablet} {
+        h2 {
+            font-size: 28px;
+            line-height: 36px;
+        }
+
+        h4 {
+            font-size: 22px;
+            line-height: 30px;
+        }
+    }
+
+    @media #{$layout-mobile-lg} {
+        h2 {
+            font-size: 26px;
+            line-height: 34px;
+        }
+
+        h4 {
+            font-size: 20px;
+            line-height: 28px;
+        }
+    }
+}
+
+
+.tm-cta-2 {
+    padding: 0 30px;
+
+    &-area {
+        position: relative;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-repeat: repeat;
+        }
+        
+        &::before{
+            background-image: url(../images/others/cta-bg-shape.png);
+            animation: shapeRunning 60s linear 0s infinite both;
+        }
+        
+        &:after{
+            background-image: url(../images/others/cta-bg-shape-2.png);
+            animation: shapeRunning2 60s linear 0s infinite both;
+        }
+        
+    }
+
+    h5 {
+        font-family: $ff-body;
+        font-weight: 400;
+    }
+
+    .mail-btn {
+        margin-top: 15px;
+        font-style: italic;
+        display: inline-block;
+    }
+
+    @media #{$layout-mobile-sm} {
+        padding: 0;
+    }
+}

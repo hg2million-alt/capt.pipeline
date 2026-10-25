@@ -1,0 +1,72 @@
+/*===========================================================
+ 11. Preloader
+=============================================================*/
+.cs_preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0a0a0a;
+  z-index: 9999;
+  overflow: hidden;
+
+  .cs_preloader_container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+  }
+
+  .cs_progressbar_wrapper {
+    width: 100%;
+    height: 2px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .cs_progressbar {
+    width: 0%;
+    height: 100%;
+    background: var(--accent-color);
+    position: relative;
+    transition: width 0.1s linear;
+  }
+
+  .cs_loading_text {
+    width: 100%;
+    height: fit-content;
+    font-size: 20vw;
+    line-height: 0.8em;
+    font-weight: 500;
+    letter-spacing: 4px;
+    opacity: 0.1;
+    text-align: center;
+    text-transform: uppercase;
+    position: fixed;
+    left: 50%;
+    bottom: 2%;
+    transform: translateX(-50%);
+    overflow: hidden;
+
+    .char {
+      display: inline-block;
+    }
+  }
+
+  .cs_loading_percentage {
+    font-size: 80px;
+    font-weight: 600;
+    color: var(--accent-color);
+    margin: 20px 0;
+    font-family: var(--primary-font);
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
+  }
+}

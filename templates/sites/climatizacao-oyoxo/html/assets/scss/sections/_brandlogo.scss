@@ -1,0 +1,31 @@
+/**
+ * Brand Logo
+ */
+
+.tm-brandlogo {
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100px;
+        background: #ffffff;
+        filter: grayscale(1);
+        transition: $transition;
+
+        &:hover {
+            filter: grayscale(0);
+            box-shadow: $shadow;
+        }
+    }
+}
+
+.tm-brandlogo-slider {
+    .slick-list {
+        margin: -15px;
+
+        .tm-brandlogo {
+            margin: 15px;
+        }
+    }
+}

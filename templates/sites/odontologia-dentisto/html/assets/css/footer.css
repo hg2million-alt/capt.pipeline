@@ -1,0 +1,114 @@
+
+
+.footer-section{
+background-color: var(--global--color-offwhite);
+padding: 87px 0 77px;
+}
+.footer-logo-wrap img{
+margin: 0 0 25px 0;
+}
+.footer-inner-wrapper p{
+color: var(--global--color-lightgrey);
+}
+.footer-content .fa-caret-right{
+color: var(--global--color-orange);
+padding-right: 10px;
+}
+.footer-content h6{
+	color: var(--global--color-orange);
+	margin: 10px 0 50px 0;
+	position: relative;
+}
+.footer-content ul li{
+line-height: 30px;
+}
+.footer-content ul li{
+	color: var(--global--color-lightgrey);
+}
+.footer-content ul li:hover{
+	color: var(--global--color-orange);
+}
+.footer-content p span.special{
+color: var(--global--color-orange);
+}
+.footer-content p{
+margin: 0 0 6px 0;
+}
+.footer-content h6:after{
+	content: "";
+	width: 30px;
+	height: 2px;
+	background-color:var(--global--color-orange);
+	position: absolute;
+	bottom: -18px;
+	left: 0;
+
+}
+.footer-social-icons ul li a{
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--global--color-dullgrey);
+	display: flex;
+	text-decoration: none;
+	transition-duration: .3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+}
+.footer-social-icons ul li a:hover{
+	transform: translateY(-8px);
+}
+.footer-social-icons ul li i{
+	font-size: 16px;
+	color: var(--global--color-white);
+}
+.footer-social-icons ul li a:hover{
+background-color: var(--global--color-orange);
+}
+.footer-social-icons{
+margin: 24px 0 0;
+}
+.footer-copyright{
+background-color: var(--global--color-seablue);
+padding: 21px 0;
+}
+
+.footer-copyright p{
+	margin-bottom:0 !important;
+}
+
+@media only screen and (max-width:1199px){
+	.footer-section {
+		padding: 60px 0;
+	}
+	.footer-copyright {
+		padding: 16px 0;
+	}
+
+}
+@media only screen and (max-width: 991px) {
+	.footer-section {
+		padding: 50px 0;
+	}
+	.footer-copyright {
+		padding: 12px 0;
+	}
+	.footer-logo-wrap img {
+		margin: 0 0 14px 0;
+	}
+
+}
+@media screen and (max-width:767px){
+	.footer-section {
+		padding: 40px 0;
+	}
+
+}
+@media screen and (max-width: 575px){
+	.footer-section {
+		padding: 30px 0;
+	}
+
+}

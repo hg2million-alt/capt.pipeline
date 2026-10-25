@@ -1,0 +1,79 @@
+/**
+ * Title
+ */
+
+.tm-sectiontitle {
+    margin-bottom: 50px;
+
+    h2 {
+        font-size: 40px;
+        margin-top: -7px;
+    }
+
+    &-divider {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        vertical-align: middle;
+        margin-top: 5px;
+        position: relative;
+
+        img {
+            animation: tmSpin 1s linear 0s infinite both;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            height: 2px;
+            width: 70px;
+            margin-top: -1px;
+            background: $color-body;
+        }
+
+        &::before {
+            left: auto;
+            right: 100%;
+        }
+
+        &::after {
+            left: 100%;
+            right: auto;
+        }
+    }
+
+    p {
+        margin-top: 15px;
+    }
+
+    @media #{$layout-notebook} {
+        h2 {
+            font-size: 36px;
+        }
+    }
+
+    @media #{$layout-tablet} {
+        h2 {
+            font-size: 32px;
+        }
+    }
+
+    @media #{$layout-mobile-lg} {
+        h2 {
+            font-size: 30px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            margin-top: 8px;
+        }
+    }
+}
+
+
+.small-title {
+    margin-bottom: 25px;
+}

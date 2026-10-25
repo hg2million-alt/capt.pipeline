@@ -1,0 +1,127 @@
+/**
+ * Funfact
+ */
+
+.tm-funfact {
+    &-heading {
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 0;
+
+        small {
+            font-size: 24px;
+            display: block;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        span {
+            color: $color-theme;
+        }
+    }
+
+    &-icon {
+        margin-bottom: 20px;
+
+        img {
+            max-height: 100%;
+        }
+    }
+
+    &-number {
+        font-size: 36px;
+        font-weight: 700;
+        color: $color-heading;
+        font-family: $ff-heading;
+    }
+
+    &-content {
+        .odometer {
+            font-size: 36px;
+            font-weight: 700;
+            color: $color-heading;
+            font-family: $ff-heading;
+
+            .odometer-formatting-mark {
+                display: none;
+            }
+        }
+
+        h6 {
+            font-family: $ff-body;
+            color: $color-body;
+            font-weight: 600;
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+    }
+
+    @media #{$layout-notebook} {
+        &-heading {
+            font-size: 34px;
+        }
+
+        &-icon {
+            height: 60px;
+        }
+
+        &-content {
+            h6 {
+                font-size: 16px;
+            }
+        }
+    }
+
+    @media #{$layout-tablet} {
+        text-align: center;
+
+        &-heading {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        &-icon {
+            height: 60px;
+        }
+    }
+
+    @media #{$layout-mobile-lg} {
+        text-align: center;
+
+        &-heading {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 40px;
+        }
+
+        &-icon {
+            height: 50px;
+        }
+    }
+
+    @media #{$layout-mobile-sm} {
+        text-align: center;
+
+        &-heading {
+            text-align: center;
+            font-size: 26px;
+            margin-bottom: 40px;
+
+            small {
+                font-size: 20px;
+            }
+        }
+
+        &-content {
+            .odometer {
+                font-size: 30px;
+                line-height: 34px;
+            }
+        }
+
+        &-icon {
+            height: 50px;
+        }
+    }
+}

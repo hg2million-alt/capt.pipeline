@@ -1,0 +1,199 @@
+/**
+ * Heroslider
+ */
+
+.tm-heroslider {
+    position: relative;
+
+    &-images {
+        position: relative;
+
+        &::before {
+            content: "";
+            background: rgba(#000000, 0.3);
+            background-size: cover;
+            background-position: center center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        &.slick-dotted {
+            padding-bottom: 0;
+
+            .slick-dots {
+                max-width: 1170px;
+                left: 50%;
+                transform: translateX(-50%);
+                text-align: left;
+                z-index: 1;
+                bottom: 60px;
+            }
+        }
+    }
+
+    &-image {
+        height: 100%;
+        width: 100%;
+    }
+
+    &-content {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        &::before {
+            content: "";
+            background: url(../images/heroslider/heroslider-shape.png);
+            background-size: cover;
+            background-position: center center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0.8;
+        }
+
+        h1 {
+            font-size: 48px;
+            line-height: 60px;
+        }
+
+        p {
+            margin-top: 25px;
+            font-size: 20px;
+            line-height: 30px;
+            padding-right: 150px;
+        }
+
+        .tm-button {
+            margin-top: 25px;
+        }
+    }
+
+    &-content-2 {
+        &::before {
+            background: rgba(255, 255, 255, 0.8);
+        }
+    }
+
+    @media #{$layout-notebook} {
+        &-content {
+            h1 {
+                font-size: 36px;
+                line-height: 50px;
+            }
+
+            p {
+                margin-top: 15px;
+                font-size: 18px;
+                padding-right: 100px;
+            }
+
+            .tm-button {
+                margin-top: 15px;
+            }
+        }
+
+        &-images {
+            &.slick-dotted {
+
+                .slick-dots {
+                    max-width: 930px;
+                    bottom: 30px;
+                }
+            }
+        }
+    }
+
+    @media #{$layout-tablet} {
+        &-images {
+            &.slick-dotted {
+
+                .slick-dots {
+                    max-width: 690px;
+                    bottom: 30px;
+                }
+            }
+        }
+
+        &-content {
+            &::before {
+                background: rgba(255, 255, 255, 0.8);
+            }
+
+            h1 {
+                font-size: 36px;
+                line-height: 50px;
+            }
+
+            p {
+                margin-top: 15px;
+                font-size: 18px;
+                padding-right: 100px;
+            }
+
+            .tm-button {
+                margin-top: 15px;
+            }
+        }
+    }
+
+    @media #{$layout-mobile-lg} {
+        &-images {
+            &.slick-dotted {
+
+                .slick-dots {
+                    width: calc(100% - 30px);
+                    max-width: 510px;
+                    bottom: 20px;
+                }
+            }
+        }
+
+        &-image {
+            min-height: 450px !important;
+        }
+
+        &-content {
+            &::before {
+                background: rgba(255, 255, 255, 0.8);
+            }
+
+            h1 {
+                font-size: 30px;
+                line-height: 38px;
+            }
+
+            p {
+                padding-right: 0;
+                font-size: 16px;
+                margin-top: 10px;
+            }
+
+            .tm-button {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    @media #{$layout-mobile-sm} {
+        &-images {
+            &.slick-dotted {
+
+                .slick-dots {
+                    width: calc(100% - 30px);
+                    max-width: 410px;
+                    bottom: 10px;
+                }
+            }
+        }
+    }
+}

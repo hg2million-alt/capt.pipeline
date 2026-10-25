@@ -1,0 +1,24 @@
+/*******************************************************/
+/****************** 22. Counter Area *******************/
+/*******************************************************/
+.counter-item
+    display: flex
+    align-items: center
+    margin-bottom: 30px
+    i
+        font-size: 70px
+        margin-right: 15px
+        color: $primary-color
+        +res-bl(xs)
+            font-size: 55px
+    .count-text
+        display: block
+        line-height: 1
+        font-size: 55px
+        @extend %heading
+        margin-bottom: 5px
+        +res-bl(xs)
+            font-size: 40px
+        &.plus
+            &:after
+                content: '+'

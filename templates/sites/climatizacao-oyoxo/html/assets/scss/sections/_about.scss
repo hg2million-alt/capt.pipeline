@@ -1,0 +1,120 @@
+/**
+ * About
+ */
+
+.tm-about {
+    &-content {
+        h2 {
+            font-size: 32px;
+            margin-top: -10px;
+        }
+
+        h6 {
+            font-family: $ff-body;
+            color: $color-body;
+            font-weight: 600;
+        }
+    }
+
+    &-buttons {
+        margin-top: 30px;
+    }
+
+    @media #{$layout-notebook} {
+        &-content {
+            h2 {
+                font-size: 28px;
+                line-height: 36px;
+            }
+        }
+
+        &-buttons {
+            margin-top: 20px;
+        }
+    }
+
+    @media #{$layout-tablet} {
+        &-content {
+            padding-top: 40px;
+
+            h2 {
+                font-size: 28px;
+                line-height: 36px;
+            }
+        }
+
+        &-buttons {
+            margin-top: 20px;
+        }
+    }
+
+    @media #{$layout-mobile-lg} {
+        &-content {
+            padding-top: 40px;
+
+            h2 {
+                font-size: 28px;
+                line-height: 36px;
+            }
+        }
+
+        &-buttons {
+            margin-top: 20px;
+        }
+    }
+}
+
+
+.tm-whyus {
+    &-content {
+        h2 {
+            font-size: 32px;
+            margin-top: -10px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &-blocks{
+        margin-bottom: -15px;
+    }
+
+    &-block {
+        &:not(:last-of-type) {
+            margin-bottom: 30px;
+        }
+
+        h5 {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 70px;
+            margin-bottom: 25px;
+
+            span {
+                display: inline-block;
+                height: 50px;
+                width: 50px;
+                background: $color-theme;
+                color: #ffffff;
+                border-radius: 100px;
+                text-align: center;
+                line-height: 50px;
+                margin-right: 10px;
+                position: absolute;
+                left: 0;
+                top: -10px;
+            }
+        }
+    }
+
+    @media #{$layout-tablet}{
+        &-image{
+            margin-top: 40px;
+        }
+    }
+
+    @media #{$layout-mobile-lg}{
+        &-image{
+            margin-top: 40px;
+        }
+    }
+}

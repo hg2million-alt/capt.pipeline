@@ -1,0 +1,148 @@
+/**
+ * Footer
+ */
+
+.tm-footer {
+    color: #d2d9fc;
+
+    &-topside {
+        background-color: #222942;
+        background-size: inherit;
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+
+    &-bottomside {
+        background: $color-dark;
+        padding-bottom: 30px;
+        padding-top: 10px;
+
+        img {
+            margin-top: 15px;
+        }
+    }
+
+    &-copyright {
+        margin-top: 15px;
+        margin-bottom: 0;
+        color: #ffffff;
+        font-size: 14px;
+
+        a {
+            color: #ffffff;
+            font-weight: 600;
+
+            &:hover {
+                color: #d2d9fc;
+            }
+        }
+    }
+
+    &-paymentmethod {
+        text-align: right;
+    }
+
+    @media #{$layout-mobile-lg}{
+        &-copyright{
+            text-align: center;
+        }
+        &-paymentmethod{
+            text-align: center;
+        }
+    }
+}
+
+.widgets-footer {
+
+    .single-widget {
+        .widget-title {
+            font-weight: 700;
+            position: relative;
+            padding-bottom: 13px;
+            margin-top: -5px;
+            margin-bottom: 30px;
+            color: #ffffff;
+
+            &::after {
+                width: 100%;
+                background: #686b77;
+            }
+        }
+    }
+
+    .widget-info {
+        ul {
+            li {
+                a {
+                    border-color: #d2d9fc;
+                    color: #d2d9fc;
+
+                    &:hover {
+                        border-color: $color-theme;
+                    }
+                }
+            }
+        }
+    }
+
+    .widget-quicklinks {
+        ul {
+            li {
+                a {
+                    font-size: 14px;
+                    color: #d2d9fc;
+
+                    &:hover {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+
+    .widget-recentpost-2 {
+        ul {
+            li {
+                h6 {
+                    a {
+                        color: #d2d9fc;
+
+                        &:hover {
+                            color: #ffffff;
+                        }
+                    }
+                }
+
+                span {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+    .widget-hours {
+        color: #d2d9fc;
+    }
+
+    @media #{$layout-notebook} {
+        .widget-recentpost-2 {
+            ul {
+                li {
+                    h6 {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .widget-hours {
+            ul {
+                li {
+                    span {
+                        min-width: 70px;
+                    }
+                }
+            }
+        }
+    }
+}

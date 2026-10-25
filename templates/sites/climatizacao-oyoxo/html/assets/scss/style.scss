@@ -1,0 +1,113 @@
+/*
+ * %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ *
+ * Description: Oyoxo is a professional heating air conditioning services HTML template which comes with the unique and clean design. It helps you to create a beautiful heating air conditioning services HTML website. It's a fully responsive website template. It has also e-commerce support. E-commerce pages are included on this template.
+ * Version: 1.2
+ *
+ * %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ */
+
+
+/*
+===========================================================
+    INDEX
+===========================================================
+
+    01) Reset
+    02) Animations
+    03) Typography
+    04) Utilities
+
+    05) Button
+    06) Title
+    07) Slider Elements
+    08) Form
+    09) Accordion
+    10) Videobox
+    11) Selectbox
+    12) Pagination
+    13) Tab
+
+    14) Header
+    15) Heroslider
+    16) Features & Services
+    17) Funfact
+    18) About
+    19) Appointment
+    20) Product
+    21) Promotion
+    22) Testimonial
+    23) Newsletter
+    24) Financing
+    25) Pricebox
+    26) Tiny Sections
+    27) Team Member
+    28) Call To Action
+    29) Blog
+    30) Brand Logo
+    31) Contact
+    32) Breadcrumb
+    33) Widgets
+    34) Comment
+    35) Shop
+    36) Footer
+
+    37) Product Details
+    38) Shopping Cart
+    39) My Account
+    40) Checkout
+
+===========================================================
+    END INDEX
+===========================================================
+*/
+
+
+@import 'variables';
+@import 'mixins';
+
+@import 'basic/reset';
+@import 'basic/animations';
+@import 'basic/typography';
+@import 'basic/utilities';
+
+@import 'elements/button';
+@import 'elements/titles';
+@import 'elements/slider-elements';
+@import 'elements/form';
+@import 'elements/accordion';
+@import 'elements/videobox';
+@import 'elements/selectbox';
+@import 'elements/pagination';
+@import 'elements/tab';
+
+
+@import 'sections/header';
+@import 'sections/heroslider';
+@import 'sections/features-services';
+@import 'sections/funfact';
+@import 'sections/about';
+@import 'sections/appointment';
+@import 'sections/product';
+@import 'sections/promotion';
+@import 'sections/testimonial';
+@import 'sections/newsletter';
+@import 'sections/financing';
+@import 'sections/pricebox';
+@import 'sections/tinysections';
+@import 'sections/team';
+@import 'sections/cta';
+@import 'sections/blog';
+@import 'sections/brandlogo';
+@import 'sections/contact';
+@import 'sections/breadcrumb';
+@import 'sections/widgets';
+@import 'sections/comment';
+@import 'sections/shop';
+@import 'sections/footer';
+
+
+@import 'pages/product-details';
+@import 'pages/cart';
+@import 'pages/account';
+@import 'pages/checkout';

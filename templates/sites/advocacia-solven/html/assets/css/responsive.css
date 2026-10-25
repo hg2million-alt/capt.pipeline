@@ -1,0 +1,793 @@
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .arkit-service-info-single {
+        padding: 60px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .arkit-service-info-single h2 {
+        padding-right: 120px;
+    }
+}
+
+@media screen and (min-width: 1199px) {
+
+}
+
+@media screen and (max-width: 1199px) {
+
+    .arkit-service-info-single {
+        margin-bottom: 30px;
+    }
+
+    .arkit-service-info .col-lg-4.col-md-6.col-xl-12:last-child .arkit-service-info-single {
+        margin-bottom: 0;
+    }
+
+    .arkit-member {
+        margin-bottom: 30px;
+    }
+
+    .contact-widget .submit-btn {
+        display: block !important;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .site-footer .display-flex {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .site-footer {
+        margin-top: 0;
+        padding-top: 100px;
+    }
+
+    .upper-footer {
+        padding-bottom: 100px;
+    }
+
+    .contact-widget {
+        background: #232222;
+        padding: 30px;
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+
+    .order-1 {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+    }
+
+    .order-2 {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+    }
+
+    .order-3 {
+        -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+        order: 3;
+    }
+
+    .contact-widget .submit-btn {
+        min-width: 300px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .topbar-contact-info .content p {
+        font-size: 13px;
+    }
+
+    .status-note {
+        right: 8%;
+    }
+
+    .site-footer .about-widget .logo {
+        min-height: 70px;
+    }
+
+    .site-footer .about-widget .logo img {
+        width: 120px;
+    }
+
+    .contact-widget .section-title h2 {
+        font-size: 38px;
+    }
+
+    .consultation-btn .theme-btn-black {
+        width: 200px;
+        font-size: 14px;
+    }
+
+    .about-right-content h2 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .schedule-btn {
+        font-size: 14px;
+    }
+
+    .about-right-content .btns .theme-btn-black {
+        font-size: 14px;
+        margin-right: 15px;
+    }
+
+    .single-member {
+        padding: 15px;
+    }
+
+    .experience {
+        width: 385px;
+        padding: 30px;
+    }
+
+    .single-blog .flex-va-center {
+        display: block;
+    }
+
+    .single-blog img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .single-blog .blog-content {
+        margin-top: 30px;
+    }
+
+    .single-blog .tag {
+        margin-bottom: 0;
+    }
+
+    .single-blog .blog-content .date {
+        margin-bottom: 40px;
+        display: block;
+    }
+
+    .single-blog .blog-content h3 a {
+        margin-bottom: 10px;
+    }
+
+    .single-blog .blog-content .btn {
+        margin-bottom: 30px;
+    }
+
+    .section-header h2 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .quote .section-header .header-left {
+        top: 65px;
+        left: 180px;
+    }
+
+    .status-list {
+        margin-right: 30px;
+    }
+
+    .quote-form {
+        padding-left: 25px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .arkit-member {
+        max-width: 500px;
+        margin: 0 auto 30px;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+    .container {
+        width: 991px;
+    }
+
+
+    .consultation-btn .theme-btn-black {
+        display: none;
+    }
+
+    .single-feature {
+        padding: 15px;
+    }
+
+    .lawyer-features {
+        padding: 90px 0px;
+    }
+
+    .lawyer-about {
+        padding: 90px 0px;
+    }
+
+    .single-feature h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .single-feature .icon {
+        height: 75px;
+        width: 75px;
+    }
+
+    .single-feature p {
+        font-size: 14px;
+    }
+
+    .feature-layer {
+        padding: 15px;
+    }
+
+    .feature-layer .btn {
+        width: 180px;
+        height: 55px;
+        line-height: 55px;
+        font-size: 14px;
+    }
+
+    .about-img {
+        display: none;
+    }
+
+    .arkit-service .section-title {
+        margin-bottom: 50px;
+    }
+
+    .arkit-status:before {
+        top: auto;
+        right: 0;
+        height: 30%;
+        width: 100%;
+        bottom: 0;
+    }
+
+    .status-right {
+        display: block;
+    }
+
+    .single-testimonial {
+        display: block;
+    }
+
+    .single-testimonial .feedback {
+        padding: 0;
+        text-align: center;
+    }
+
+    .single-testimonial .feedback .quote {
+        margin: auto;
+        display: table;
+    }
+
+    .single-testimonial .info {
+        width: unset;
+    }
+
+    .testimonial-slider.owl-theme .owl-dots {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+
+    .testimonial-slider {
+        padding: 50px 50px 90px 50px;
+    }
+
+    .d-flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contact-widget {
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+
+    .site-footer {
+        padding-top: 0;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: initial;
+    }
+
+    .arkit-team .col-lg-3.col-sm-6.col-xl-12:last-child .arkit-member {
+        margin-bottom: 0;
+    }
+
+    .status-note {
+        right: 3%;
+    }
+
+    .status-right {
+        padding-left: 50px;
+    }
+
+    .about-widget {
+        margin-bottom: 50px;
+    }
+
+    .widget-title {
+        margin-bottom: 35px;
+    }
+
+    .site-footer .logo {
+        margin-left: 0;
+    }
+
+    .lower-footer {
+        text-align: center;
+    }
+
+    .social-icons ul {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .status-list ul li {
+        font-size: 26px;
+    }
+
+    .status-list ul li:last-child {
+        font-size: 16px;
+    }
+
+    .status-list ul li:first-child::before {
+        height: 100%;
+    }
+
+    .quote::before {
+        display: none;
+    }
+
+    .section-header h2 {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 15px;
+    }
+
+    .section-header p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .section-header {
+        padding: 15px 0;
+    }
+
+    .single-blog .blog-content h3 a {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .testimonial-area .testimonial-content-active h3 {
+        font-size: 18px;
+    }
+
+    .testimonial-area .testimonial-content-active .slick-arrow {
+        top: 330px;
+    }
+
+    .case-header h2 {
+        font-size: 28px;
+    }
+
+    .complete-case::before {
+        right: -27px;
+    }
+
+    .experience h2 {
+        font-size: 28px;
+    }
+
+    .experience .tag {
+        left: 70%;
+    }
+
+    .single-member .card .member-social-links ul li a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+    }
+
+    .single-member h3 {
+        font-size: 18px;
+    }
+
+    .single-member p {
+        font-size: 14px;
+    }
+
+    .about-right-content {
+        padding-left: 0;
+        margin-top: 100px;
+    }
+}
+
+.lawyer-about .label .content h2 {
+    font-size: 35px;
+    line-height: 45px;
+    margin: 0;
+}
+
+.lawyer-about .label .tag {
+    left: 70%;
+}
+
+.banner-content-inner h1 {
+    font-size: 60px;
+}
+
+.topbar-contact-info .content h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.topbar-contact-info {
+    padding: 15px;
+}
+
+.topbar-contact-info .content p {
+    line-height: 18px;
+}
+
+.btns {
+    justify-content: flex-start;
+}
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+
+    .work-portfolio-slider .owl-nav .owl-prev {
+        margin-right: 50px;
+    }
+
+    .work-portfolio-slider .owl-nav .owl-next {
+        margin-left: 50px;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    .arkit-service-info-single:before {
+        font-size: 98px;
+    }
+
+    .arkit-about-inner h2 {
+        font-size: 32px;
+    }
+
+    .testimonial-inner {
+        padding-left: 30px;
+    }
+
+    .single-feature {
+        margin-bottom: 30px;
+    }
+
+    .about-left::after {
+        display: none;
+    }
+
+    .single-member {
+        margin-bottom: 30px;
+    }
+
+    .experience {
+        margin-top: 50px;
+    }
+
+    .owl-theme.complete-case-slider .owl-dots .owl-dot span {
+        width: 8px;
+        height: 8px;
+    }
+
+    .testimonial-area .testimonial2-thumb-active {
+        width: 320px !important;
+    }
+
+    .testimonial-area .testimonial-content-active .slick-arrow {
+        top: 225px;
+    }
+
+    .testimonial-area .testimonial-content-active .slick-arrow.slick-prev {
+        left: 10px !important;
+    }
+
+    .testimonial-area .testimonial-content-active .slick-arrow.slick-next {
+        right: 80px !important;
+    }
+
+    .single-blog {
+        margin-bottom: 30px;
+    }
+
+    .quote .section-header .header-left {
+        display: none;
+    }
+
+    .quote .section-header::before {
+        display: none;
+    }
+
+    .status-list {
+        margin-right: 0;
+    }
+
+    .quote-form {
+        margin-top: 30px;
+    }
+
+    .lower-footer p.trams-and-conditions {
+        text-align: center;
+    }
+
+
+
+    .testimonial {
+        display: none;
+    }
+
+    .blog {
+        margin-top: 50px;
+    }
+
+    .hero-banner-btns .btn {
+        margin: 10px;
+    }
+
+    .banner-content-inner h1 {
+        font-size: 40px;
+    }
+
+    .lawyer-hero-banner {
+        height: 700px;
+    }
+
+    .topbar-contact-info {
+        text-align: left;
+    }
+
+    .topbar-contact-info.bg-color-1::before {
+        right: 0;
+        left: -1px;
+    }
+
+    .topbar-contact-info .content h3 {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .status-right {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .status-note {
+        max-width: 100%;
+        width: 100%;
+        position: relative;
+        right: 0 !important;
+        bottom: -80px;
+    }
+
+    .status-note h3 {
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .single-blog .display-flex {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .single-blog {
+        text-align: center;
+        padding: 0 30px;
+    }
+
+    .single-blog img {
+        margin-bottom: 30px;
+        width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+
+    .single-blog .read-more-btn {
+        margin: auto;
+    }
+
+    .quote-form {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .work-portfolio-slider .owl-nav .owl-prev {
+        margin-right: 10px;
+    }
+
+    .work-portfolio-slider .owl-nav .owl-next {
+        margin-left: 10px;
+    }
+
+    .work-portfolio-slider .owl-nav .owl-prev span,
+    .work-portfolio-slider .owl-nav .owl-next span {
+        display: none;
+    }
+
+    .work-portfolio-slider .owl-nav .owl-prev,
+    .work-portfolio-slider .owl-nav .owl-next {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .work-portfolio-slider .owl-nav .owl-prev i,
+    .work-portfolio-slider .owl-nav .owl-next i {
+        margin: 0;
+    }
+
+    .testimonial-inner {
+        padding-left: 0;
+    }
+
+    .testimonial-inner:before {
+        display: none;
+    }
+
+    .testimonial-inner .section-title {
+        text-align: center;
+    }
+
+    .testimonial-slider {
+        padding: 30px 30px 60px 30px;
+    }
+
+    .testimonial-slider.owl-theme .owl-dots {
+        bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .arkit-service-info-single:before {
+        display: none;
+    }
+
+    .arkit-service-info-single {
+        padding: 30px 15px;
+    }
+
+    .arkit-service-info-single h2 {
+        font-size: 28px;
+    }
+
+    .arkit-service-info-single p {
+        font-size: 14px;
+    }
+
+    .status-note {
+        padding: 30px 20px;
+    }
+
+    .testimonial-slider {
+        padding: 15px 15px 40px 15px;
+    }
+
+    .testimonial-slider.owl-theme .owl-dots {
+        bottom: 20px;
+    }
+
+    .single-blog {
+        padding: 0 15px;
+    }
+
+    .contact-widget {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+
+
+    .lawyer-about .label {
+        height: 167px;
+        right: 15px;
+        bottom: 30px;
+    }
+
+    .lawyer-about .label .content h2 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .btns {
+        display: block;
+    }
+
+    .btns a {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .schedule-btn span {
+        margin-left: auto;
+    }
+
+    .law-single-service .content h4 {
+        font-size: 20px;
+    }
+
+    .case-slider {
+        padding: 0;
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .contact-widget .submit-btn {
+        min-width: 230px;
+    }
+
+    .contact-widget .single-contact {
+        padding: 15px;
+    }
+
+    .widget-title h3 {
+        font-size: 26px;
+        padding: 15px 0 15px 30px;
+    }
+
+    .footer-line::after {
+        display: none;
+    }
+
+    .single-blog {
+        padding: 0;
+    }
+
+    .lawyer-about .label {
+        width: 310px;
+        right: 0;
+    }
+
+    .lawyer-about .label .icon {
+        height: 86px;
+        width: 86px;
+        line-height: 86px;
+    }
+
+    .lawyer-about .label .icon img {
+        width: 38px;
+    }
+
+    .lawyer-about .label .content h2 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}

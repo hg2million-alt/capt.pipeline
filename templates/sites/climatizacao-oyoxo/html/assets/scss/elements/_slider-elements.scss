@@ -1,0 +1,233 @@
+/**
+ * Slider Elements
+ */
+
+.tm-slider-dots {
+    &.slick-dotted {
+        position: relative;
+        padding-bottom: 0;
+    }
+
+    .slick-dots {
+        position: absolute;
+        left: 0;
+        top: auto;
+        bottom: 0;
+        width: 100%;
+        background: rgba(#ffffff, 0.9);
+        padding: 15px 0;
+
+        li {
+            display: inline-block;
+            height: 8px;
+            width: 8px;
+            border-radius: 100px;
+            background: #686b77;
+            transition: $transition;
+
+            &:hover {
+                background: $color-theme;
+            }
+
+            &.slick-active {
+                background: $color-theme;
+                transform: scale(1.5);
+            }
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            button {
+                display: none;
+            }
+        }
+    }
+
+    @media #{$layout-notebook} {
+        .slick-dots {
+            padding: 7px 0;
+        }
+    }
+
+    @media #{$layout-tablet} {
+        .slick-dots {
+            padding: 7px 0;
+        }
+    }
+
+    @media #{$layout-mobile-lg} {
+        .slick-dots {
+            padding: 7px 0;
+        }
+    }
+}
+
+.tm-slider-dots-2 {
+    @extend .tm-slider-dots;
+
+    &.slick-dotted {
+        padding-bottom: 77px;
+    }
+
+    .slick-dots {
+        padding: 0;
+        background: transparent;
+
+        li {
+            background: transparent;
+            position: relative;
+            height: 16px;
+            width: 16px;
+            border: 2px solid #686b77;
+            vertical-align: middle;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                height: 8px;
+                width: 8px;
+                margin-left: -4px;
+                margin-top: -4px;
+                background: #686b77;
+                border-radius: 100px;
+                transform: scale(0.5);
+                transition: $transition;
+            }
+
+            &:hover {
+                background: transparent;
+                border-color: $color-theme;
+
+                &::before {
+                    background: $color-theme;
+                }
+            }
+
+            &.slick-active {
+                background: transparent;
+                transform: scale(1);
+                border-color: $color-theme;
+
+                &::before {
+                    transform: scale(1);
+                    background: $color-theme;
+                }
+            }
+        }
+    }
+}
+
+.tm-slider-arrows {
+    position: relative;
+
+    &-prev,
+    &-next {
+        position: absolute;
+        top: 50%;
+        display: inline-block;
+        padding: 0;
+        height: 40px;
+        width: 40px;
+        margin-top: -20px;
+        text-align: center;
+        line-height: 1;
+        border: 1px solid $color-body;
+        color: $color-body;
+        font-size: 22px;
+        border-radius: 100px;
+        z-index: 2;
+        transition: $transition;
+
+        i {
+            line-height: 38px;
+        }
+
+        &:hover {
+            color: $color-theme;
+            border-color: $color-theme;
+        }
+    }
+
+    &-prev {
+        left: -40px;
+        right: auto;
+    }
+
+    &-next {
+        left: auto;
+        right: -40px;
+    }
+
+    @media #{$layout-notebook} {
+        margin-bottom: 70px;
+
+        &-prev,
+        &-next {
+            margin-top: 0;
+            top: calc(100% + 30px);
+        }
+
+        &-prev {
+            left: auto;
+            right: calc(50% + 10px);
+        }
+
+        &-next {
+            right: auto;
+            left: calc(50% + 10px);
+        }
+    }
+
+    @media #{$layout-tablet} {
+        margin-bottom: 70px;
+
+        &-prev,
+        &-next {
+            margin-top: 0;
+            top: calc(100% + 30px);
+        }
+
+        &-prev {
+            left: auto;
+            right: calc(50% + 10px);
+        }
+
+        &-next {
+            right: auto;
+            left: calc(50% + 10px);
+        }
+    }
+
+    @media #{$layout-mobile-lg} {
+        margin-bottom: 65px;
+
+        &-prev,
+        &-next {
+            margin-top: 0;
+            top: calc(100% + 30px);
+            height: 35px;
+            width: 35px;
+
+            i {
+                line-height: 33px;
+            }
+        }
+
+        &-prev {
+            left: auto;
+            right: calc(50% + 10px);
+        }
+
+        &-next {
+            right: auto;
+            left: calc(50% + 10px);
+        }
+    }
+}

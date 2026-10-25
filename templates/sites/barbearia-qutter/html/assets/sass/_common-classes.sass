@@ -1,0 +1,422 @@
+/*******************************************************/
+/*****************  02. Common Classes *****************/
+/*******************************************************/
+.page-wrapper
+    position: relative
+    z-index: 9
+    width: 100%
+    margin: 0 auto
+    overflow: hidden
+    min-width: 300px
+    background: #FFFFFF
+    
+.container
+    +res-ab(xl)
+        max-width: $container
+        padding-left: $gutter/2
+        padding-right: $gutter/2
+   
+.small-gap
+    +colgap(20px)
+    
+.large-gap
+    +res-ab(xxl)
+        +colgap(50px)
+    
+.col-small
+    +res-bl(xs)
+        flex: 0 0 100%
+        max-width: 100%
+    
+/** Section Title style **/
+.section-title
+    z-index: 1
+    position: relative
+    h2
+        font-weight: 700
+        text-transform: uppercase
+        +res-bl(md)
+            font-size: 35px
+            line-height: 1.35
+        +res-bl(sm)
+            font-size: 30px
+    .sub-title
+        position: absolute
+        font-size: 250px
+        left: 50%
+        top: 50%
+        z-index: -1
+        opacity: 0.05
+        line-height: 1
+        @extend %heading
+        text-transform: uppercase
+        transform: translate(-50%, -55%)
+        +res-bl(xxl)
+            font-size: 200px
+        +res-bl(xl)
+            font-size: 170px
+        +res-bl(lg)
+            font-size: 130px
+        +res-bl(md)
+            font-size: 100px
+        +res-bl(ms)
+            font-size: 80px
+        +res-bl(xs)
+            font-size: 60px
+    &.text-white
+        p
+            opacity: 0.5
+        .sub-title
+            color: white
+            opacity: 0.02
+   
+/** Button style **/
+.theme-btn,
+a.theme-btn
+    z-index: 1
+    color: white
+    font-size: 14px
+    overflow: hidden
+    cursor: pointer
+    transition: 0.5s
+    font-weight: 600
+    position: relative
+    border-radius: 5px
+    text-align: center
+    padding: 11px 40px
+    align-items: center
+    display: inline-flex
+    justify-content: center
+    text-transform: uppercase
+    font-family: $heading-font
+    background: $heading-color
+    i
+        transition: 0.5s
+        margin-left: 10px
+    &:after,
+    &:before
+        z-index: -1
+        content: ''
+        transition: 0.75s
+        position: absolute
+        +box(transparent, 0)
+    &:before
+        left: 0
+        top: 0
+        border-bottom: 55px solid transparent
+        border-left: 350px solid $primary-color
+    &:after
+        right: 0
+        bottom: 0
+        border-top: 55px solid transparent
+        border-right: 350px solid $primary-color
+    &:hover
+        &:before
+            border-bottom: 0px solid transparent
+            border-left: 0px solid $primary-color
+        &:after
+            border-top: 0px solid transparent
+            border-right: 0px solid $primary-color
+    &.btn-border
+        border: 1px solid
+    &.style-two
+        color: $heading-color
+        background: $primary-color
+        border: 1px solid $border-color
+        &:after
+            border-right-color: white
+        &:before
+            border-left-color: white
+        &:hover
+            color: white
+    &.style-three
+        color: $heading-color
+        background: $primary-color
+        &:after
+            border-right-color: $lighter-color-two
+        &:before
+            border-left-color: $lighter-color-two
+        &:hover
+            color: white
+    &.style-four
+        color: white
+        opacity: 0.5
+        border: 1px solid #7c7c7c
+        background: $primary-color
+        &:after
+            border-right-color: $black-color
+        &:before
+            border-left-color: $black-color
+        &:hover
+            opacity: 1
+            border-color: $primary-color
+    +res-bl(sm)
+        padding: 8px 25px
+
+/* Details Btn */
+.details-btn
+    +size(50px)
+    margin-top: 15px
+    background: white
+    line-height: 50px
+    text-align: center
+    border-radius: 5px
+    display: inline-block
+    color: $primary-color
+    box-shadow: 10px 0 60px rgba(37, 37, 37, 0.1)
+    &:hover
+        color: white
+        background: $primary-color
+    
+/* Read More Btn */
+.read-more
+    font-size: 14px
+    padding-bottom: 2px
+    color: $heading-color
+    text-transform: uppercase
+    font-family: $heading-font
+    border-bottom: 2px solid $heading-color
+    i
+        font-size: 16px
+        margin-left: 5px
+        transition: 0.5s
+    &:hover
+        border-color: $primary-color
+        i
+            margin-left: 8px
+
+/** List Style One **/
+.list-style-one
+    li
+        &:not(:last-child)
+            margin-bottom: 8px
+        &:before
+            content: '+'
+            margin-right: 5px
+
+/** Social Link One **/
+.social-style-one
+    font-size: 14px
+    flex-wrap: wrap
+    display: inline-flex
+    a
+        &:not(:last-child)
+            margin-right: 20px
+        
+/** Social Link Two **/
+.social-style-two
+    font-size: 14px
+    flex-wrap: wrap
+    display: inline-flex
+    a
+        +circle(white, 40px)
+        &:not(:first-child)
+            margin-left: 5px
+        &:not(:last-child)
+            margin-right: 5px
+        &:hover
+            color: white
+            background: $primary-color
+        
+/*** Preloader style ** */
+.preloader
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    z-index: 9999999
+    background-color: #FFFFFF
+    background-repeat: no-repeat
+    background-position: center center
+    background-image: url(../images/preloader.gif)
+
+/* Pagination */    
+.pagination
+    +gapLR(margin, -4px)
+    align-items: center
+    li
+        margin: 8px 4px 0
+        a,
+        .page-link
+            padding: 0
+            +size(45px)
+            font-size: 15px
+            box-shadow: none
+            font-weight: 700
+            line-height: 40px
+            text-align: center
+            border-radius: 50%
+            color: $heading-color
+            background: transparent
+            border: 2px solid #e0e0e1
+            font-family: $heading-font
+        &.disabled,
+        &:last-child
+            .page-link
+                border-radius: 50%
+                background: transparent
+        &:first-child
+            margin-left: 0
+        &:last-child
+            margin-right: 0
+        &.active,
+        &:hover:not(.disabled)
+            .page-link
+                color: white
+                background: $primary-color
+                border-color: $primary-color
+        &.dot
+            +size(10px)
+            border-radius: 50%
+            border: 2px solid #c5c6c6
+    &.style-two
+        li
+            a,
+            .page-link
+                border: none
+                border-radius: 5px
+                background: $lighter-color-two
+                +res-ab(xs)
+                    +size(55px)
+                    font-size: 20px
+                    line-height: 55px
+                    
+            &.active,
+            &:hover:not(.disabled)
+                .page-link
+                    background: $heading-color
+/* Rating */
+.ratting
+    align-items: center
+    display: inline-flex
+    i
+        margin: 3px
+        color: #ff7800
+        font-size: 14px
+                
+/*** Slick Dots ***/
+.slick-arrow
+    +size(60px)
+    font-size: 22px
+    transition: 0.5s
+    background: white
+    border-radius: 5px
+    border: 3px solid $border-color
+    &:focus,
+    &:hover
+        color: white
+        background: $primary-color
+        border-color: $primary-color
+                
+/*** Slick Dots ***/
+.slick-dots
+    margin-top: 20px
+    +flexcenter(center)
+    li
+        position: relative
+        cursor: pointer
+        margin: 6px
+        +size(15px)
+        transition: 0.5s
+        border-radius: 50%
+        background: $primary-color
+        button
+            opacity: 0
+        &:before
+            content: ''
+            +size(0)
+            left: 50%
+            top: 50%
+            transition: 0.5s
+            border-radius: 50%
+            position: absolute
+            transform: translate(-50%, -50%)
+            border: 4px solid $primary-color
+        &.slick-active
+            background: white
+            &:before
+                +size(20px)
+
+/*** Scroll Top style ***/
+.scroll-top
+    position: fixed
+    bottom: 25px
+    right: 25px
+    +size(50px)
+    z-index: 99
+    color: white
+    display: none
+    cursor: pointer
+    line-height: 50px
+    border-radius: 5px
+    background: #d69838
+    animation: pulse 2s infinite
+    +res-bl(lg)
+        +size(40px)
+        right: 15px
+        bottom: 15px
+        line-height: 40px
+  
+/* Text White */
+.text-white *,
+.text-white a
+    color: white
+    li li
+        .dropdown-btn
+            span
+                color: $heading-color
+        
+/* Video Play Btn */
+.video-play
+    font-size: 22px
+    +circle(white, 120px)
+    color: $primary-color
+    display: inline-block
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7)
+    animation: pulse 1.5s infinite cubic-bezier(0.66, 0, 0, 1)
+    +res-bl(md)
+        +size(85px)
+        font-size: 18px
+        line-height: 85px
+    +res-bl(ms)
+        +size(65px)
+        font-size: 16px
+        line-height: 65px
+        
+/* Position */
+.rel
+    position: relative
+    
+@for $i from 0 through 5
+    .z-#{0 + $i}
+        z-index: 0 + $i
+     
+/* Backgruond Size */
+.bgs-cover
+    background-size: cover
+    background-position: center
+
+/* Color + Background */
+.color-yellow
+    color: $primary-color
+.bg-lighter
+    background-color: $lighter-color
+.bg-lighter-two
+    background-color: $lighter-color-two
+.bg-yellow
+    background-color: $primary-color
+.bg-black
+    background-color: $black-color
+.bg-black-two
+    background-color: $black-color-two
+.bg-blue
+    background-color: #1e73be
+.bg-gray
+    background-color: #5b5b5b
+    
+/* Border Radius */
+@for $i from 1 through 6
+    .br-#{5 * $i}
+        border-radius: 5px * $i
+    

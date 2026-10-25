@@ -1,0 +1,109 @@
+/**
+ * Pricebox
+ */
+
+.tm-pricebox {
+    background: $color-grey;
+    padding: 50px 30px;
+    transition: $transition;
+
+    &-title {
+        margin-top: -5px;
+        margin-bottom: 25px;
+    }
+
+    &-price {
+        display: inline-flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 140px;
+        width: 140px;
+        border-radius: 1000px;
+        background: #ffffff;
+        text-align: center;
+        transition: $transition;
+
+        h2 {
+            margin-top: 5px;
+            margin-bottom: 0;
+            line-height: 1;
+            font-size: 42px;
+            transition: $transition;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    ul {
+        padding-left: 0;
+        margin-top: 25px;
+        margin-bottom: 0;
+        list-style: none;
+
+        li {
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .tm-button {
+        margin-top: 25px;
+        transition: $transition;
+    }
+
+    &.is-active,
+    &:hover {
+        background: #ffffff;
+        box-shadow: $shadow;
+
+        .tm-button {
+            background: $color-theme;
+            color: #ffffff;
+        }
+    }
+
+    &.is-active &-price,
+    &:hover &-price {
+        background: $color-grey;
+
+        h2 {
+            color: $color-theme;
+        }
+    }
+
+    @media #{$layout-notebook} {
+        &-price {
+            height: 125px;
+            width: 125px;
+
+            h2 {
+                font-size: 36px;
+            }
+        }
+    }
+
+    @media #{$layout-tablet} {
+        &-price {
+            height: 125px;
+            width: 125px;
+
+            h2 {
+                font-size: 36px;
+            }
+        }
+    }
+
+    @media #{$layout-mobile-lg} {
+        &-price {
+            height: 125px;
+            width: 125px;
+
+            h2 {
+                font-size: 32px;
+            }
+        }
+    }
+}

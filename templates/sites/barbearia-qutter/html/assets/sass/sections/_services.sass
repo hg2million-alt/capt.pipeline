@@ -1,0 +1,268 @@
+/*******************************************************/
+/****************** 11. Services Area ******************/
+/*******************************************************/
+.service-item
+    z-index: 1
+    overflow: hidden
+    background: white
+    text-align: center
+    padding: 60px 38px
+    position: relative
+    border-radius: 7px
+    margin-bottom: 30px
+    box-shadow: 10px 0 60px rgba(37, 37, 37, 0.07)
+    +res-bl(xs)
+        +gapLR(padding, 25px)
+    .icon
+        line-height: 1
+        font-size: 70px
+        margin-bottom: 20px
+        color: $primary-color
+    &:after,
+    &:before
+        +size(60%, 150%)
+        content: ''
+        left: 0
+        z-index: -1
+        transition: 0.5s
+        position: absolute
+        background: rgba(214, 163, 84, 0.05)
+    &:before
+        top: 50%
+        transform: translate(-10%, -50%) rotate(-25deg)
+    &:after
+        top: 0
+        transform: translate(-50%, -35%) rotate(30deg)
+    &:hover
+        .details-btn
+            color: white
+            background: $primary-color
+        &:before
+            transform: translate(0, -50%) rotate(-25deg)
+        &:after
+            transform: translate(-30%, -35%) rotate(30deg)
+.services-shapes
+    img
+        z-index: -1
+        max-width: 20%
+        position: absolute
+    .shape-one
+        left: 0
+        top: 20%
+        animation: down-up-one 10s infinite
+    .shape-two
+        right: 0
+        bottom: 28%
+        animation: down-up-one 10s infinite
+        
+/* Service Style Two */
+.service-two-item
+    overflow: hidden
+    position: relative
+    margin-bottom: 30px
+    .image
+        img
+            width: 100%
+    .heading
+        position: absolute
+        height: 100%
+        width: 65px
+        left: 0
+        top: 0
+        transition: 0.5s
+        +flexcenter(center)
+        transition-delay: 0.25s
+        background: $primary-color
+        -webkit-writing-mode: vertical-rl
+        transform: rotate3d(0, 0, 1, 180deg)
+        +res-bl(xs)
+            width: 50px
+        &:before
+            position: absolute
+            content: ''
+            right: 100%
+            top: 50%
+            transform: translateY(-50%)
+            border-top: 15px solid transparent
+            border-bottom: 15px solid transparent
+            border-right: 15px solid $primary-color
+        i
+            color: white
+            font-size: 33px
+            margin-bottom: 20px
+            transform: rotate(180deg)
+            +res-bl(xs)
+                font-size: 25px
+        h3
+            color: white
+            margin-bottom: 0
+            +res-bl(xs)
+                font-size: 20px
+    .hover-content
+        +size(100%)
+        left: 0
+        top: 0
+        opacity: 0
+        color: white
+        padding: 50px
+        transition: 0.5s
+        text-align: center
+        position: absolute
+        +flexcenter(center)
+        flex-direction: column
+        background: rgba(31, 31, 31, 0.9)
+        transform: rotate3d(0.5, -0.5, 0.5, -125deg)
+        +res-bl(xs)
+            padding: 20px
+        i
+            font-size: 75px
+            margin-bottom: 22px
+            color: $primary-color
+            +res-bl(xs)
+                font-size: 45px
+        h3
+            +res-bl(xs)
+                font-size: 20px
+            a:not(:hover)
+                color: white
+    &:hover
+        .heading
+            left: 50%
+            opacity: 0
+            transition-delay: 0s
+            transform: rotate3d(1, 0, 1, -100deg)
+        .hover-content
+            opacity: 1
+            transition-delay: 0.25s
+            transform: rotate3d(0, 0, 0, 0deg)
+            
+/* Service Style Three */
+.service-three-item
+    background: white
+    text-align: center
+    margin-bottom: 30px
+    padding: 50px 30px 30px
+    box-shadow: 10px 0 60px rgba(31, 31, 31, 0.1)
+    +res-bl(xs)
+        +gapLR(padding, 15px)
+    > i
+        z-index: 1
+        color: white
+        font-size: 50px
+        padding-top: 8px
+        position: relative
+        margin-bottom: 25px
+        display: inline-block
+        +circle(transparentize($primary-color, 0.9), 110px)
+        &:after
+            content: ''
+            left: 12%
+            top: 12%
+            z-index: -1
+            position: absolute
+            +circle($primary-color, 76%)
+    h3
+        margin-bottom: 15px
+            
+.why-choose-area
+    +overlay($lighter-color-two, 1)
+    &:before
+        height: 60%
+    
+.why-choose-two
+    .container
+        &:after
+            position: absolute
+            content: ''
+            left: -90px
+            bottom: 0
+            z-index: -1
+            +size(100vw, 45%)
+            background: #EDEDED
+        
+/* Service Details */
+.service-details-content
+    .image
+        img
+            width: 100%
+    .content
+        padding-left: 40px
+        padding-right: 30px
+        +res-bl(sm)
+            padding-right: 0
+            padding-left: 25px
+        +res-bl(xs)
+            padding-left: 0
+        &:not(:last-child)
+            margin-bottom: 40px
+        h2
+            position: relative
+            margin-bottom: 25px
+            text-transform: uppercase
+            +res-ab(md)
+                font-size: 45px
+            +res-bl(sm)
+                font-size: 35px
+            +res-bl(ms)
+                font-size: 30px
+                line-height: 1.35
+            &:before
+                position: absolute
+                content: ''
+                top: 10%
+                width: 5px
+                left: -40px
+                height: 85%
+                background: $primary-color
+                +res-bl(sm)
+                    width: 3px
+                    left: -25px
+                +res-bl(xs)
+                    display: none
+            
+.service-middle
+    +res-ab(md)
+        display: flex
+        justify-content: space-between
+        .image-part
+            width: calc(39% - 30px)
+        .video-part
+            width: 61%
+            .video-play
+                +size(85px)
+                font-size: 18px
+                line-height: 85px
+    img
+        width: 100%
+    .video-part
+        &:before
+            opacity: 0.3
+        
+.faqs
+    .card
+        border: none
+        background: transparentize(#0f1f1f, 0.9)
+        &:not(:last-child)
+            margin-bottom: 15px
+        .card-header
+            border: none
+            display: flex
+            cursor: pointer
+            font-size: 18px
+            transition: 0.5s
+            padding: 15px 30px
+            text-transform: uppercase
+            background: transparentize(#0f1f1f, 0.9)
+            justify-content: space-between
+            +res-bl(ms)
+                font-size: 16px
+                +gapLR(padding, 20px)
+            i
+                margin-top: 5px
+                padding-left: 5px
+            &.collapsed
+                background: transparent
+        .card-body
+            padding: 20px 30px 5px
+            +res-bl(ms)
+                +gapLR(padding, 20px)

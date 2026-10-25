@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="pt-BR" class="no-js">
+<head>
+	<title>Reservas &mdash; [NOME DO CLIENTE]</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<meta name="description" content="[NOME DO CLIENTE] — hospedagem com café da manhã. Reservas direto pelo WhatsApp.">
+
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600%7CEczar:600" rel="stylesheet">
+
+	<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+	<link rel="stylesheet" href="assets/css/bootstrap-reboot.css">
+	<link rel="stylesheet" href="assets/css/materialdesignicons.css">
+	<link rel="stylesheet" href="assets/css/zebra-datepicker.css">
+	<link rel="stylesheet" href="assets/css/fancybox.css">
+
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/style-animations.css">
+	<link rel="stylesheet" href="assets/css/style-custom.css">
+</head>
+<body class="single has-additional-menu-content">
+	<header id="identity">
+		<div class="logo">
+			<h1><a href="index.html" class="custom-logo-link text-logo" rel="home">[NOME DO CLIENTE]</a></h1>
+		</div>
+		<div class="languages">
+			<ul>
+				<li class="current-menu-item"><a href="https://wa.me/[WHATSAPP]" target="_blank" rel="noopener">WhatsApp</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<div id="site-menu">
+		<nav class="nav-menu">
+			<ul>
+				<li class="menu-item"><a href="index.html">Início</a></li>
+				<li class="menu-item"><a href="about.html">Sobre</a></li>
+				<li class="menu-item menu-item-has-children current-menu-parent">
+					<a href="accomodations.html">Acomodações</a>
+					<a href="#" class="menu-expand mdi"></a>
+					<ul class="sub-menu">
+						<li class="menu-item"><a href="accomodations.html">Todas as acomodações</a></li>
+						<li class="menu-item"><a href="single-accomodation.html">Suíte Casal</a></li>
+						<li class="menu-item current-menu-item"><a href="booking.html">Pedir reserva</a></li>
+					</ul>
+				</li>
+				<li class="menu-item"><a href="dinning.html">Café da manhã</a></li>
+				<li class="menu-item"><a href="gallery.html">Fotos</a></li>
+				<li class="menu-item"><a href="contact.html">Contato</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="menu-overlay"></div>
+	<div class="site-menu-toggle">
+		<a href="#site-menu" class="mdi">
+			<span class="screen-reader-text">Abrir menu</span>
+		</a>
+	</div>
+
+	<div id="social-profiles">
+		<nav class="social-menu">
+			<ul>
+				<li class="menu-item"><a href="https://instagram.com/[INSTAGRAM]" target="_blank" rel="noopener"><span class="mdi"></span><span class="screen-reader-text">Instagram</span></a></li>
+				<li class="menu-item"><a href="https://facebook.com/[FACEBOOK]" target="_blank" rel="noopener"><span class="mdi"></span><span class="screen-reader-text">Facebook</span></a></li>
+				<li class="menu-item"><a href="https://wa.me/[WHATSAPP]" target="_blank" rel="noopener"><span class="mdi"></span><span class="screen-reader-text">WhatsApp</span></a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<section class="hero-media">
+		<div class="owl-carousel" data-expand-duration="800">
+			<div class="item owl-lazy" data-src="assets/img/topo-interno.jpg"></div>
+		</div>
+		<span class="overlay"></span>
+		<span class="mdi mdi-spin mdi-loading"></span>
+	</section>
+
+	<div class="content-wrap clearfix">
+		<div class="entry entry-page">
+			<h2 class="entry-title">Pedir reserva</h2>
+			<div class="entry-content">
+				<!-- Não envia e-mail: monta a mensagem e abre o WhatsApp (assets/js/wa-forms.js). -->
+				<form id="form-reserva" class="booking-form-full" action="booking.html">
+					<div class="message"><div class="alert">Preencha os campos e toque em enviar: o pedido abre no WhatsApp já escrito, é só mandar. A confirmação vem direto da gente.</div></div>
+					<p class="field-name">
+						<label for="name">Nome</label>
+						<input type="text" name="name" id="name" placeholder="Seu nome e sobrenome&hellip;" required>
+					</p>
+					<p class="field-email">
+						<label for="phone">Telefone / WhatsApp</label>
+						<input type="tel" name="phone" id="phone" placeholder="(00) 00000-0000">
+					</p>
+					<p class="field-checkin">
+						<label for="checkin">Entrada</label>
+						<input type="text" name="checkin" id="checkin" class="custom-date-field" value="" required>
+					</p>
+					<p class="field-checkout">
+						<label for="checkout">Saída</label>
+						<input type="text" name="checkout" id="checkout" class="custom-date-field" value="" required>
+					</p>
+					<p class="field-adults">
+						<label for="adults">Adultos</label>
+						<select name="adults" id="adults">
+							<option value="1">1</option>
+							<option value="2" selected>2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+						</select>
+					</p>
+					<p class="field-children">
+						<label for="children">Crianças</label>
+						<select name="children" id="children">
+							<option value="0" selected>0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</p>
+					<p class="field-room-type">
+						<label for="room">Acomodação</label>
+						<select name="room" id="room">
+							<option value="">Tanto faz</option>
+							<option value="Quarto Standard">Quarto Standard</option>
+							<option value="Suíte Casal">Suíte Casal</option>
+							<option value="Suíte Família">Suíte Família</option>
+							<option value="Chalé">Chalé</option>
+						</select>
+					</p>
+					<p class="field-room-no">
+						<label for="room-no">Quantos quartos</label>
+						<select name="room-no" id="room-no">
+							<option value="1" selected>1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+						</select>
+					</p>
+					<div class="clear"></div>
+					<label for="notes">Observações</label>
+					<textarea name="notes" id="notes" cols="30" rows="4" placeholder="Horário de chegada, pet, aniversário, alguma necessidade especial&hellip;"></textarea>
+					<button type="submit" class="button-filled button-color">Enviar pedido pelo WhatsApp</button>
+				</form>
+			</div>
+		</div>
+		<div class="entry-copyright">
+			<p>&copy; <span class="ano-atual">2026</span> <a href="index.html">[NOME DO CLIENTE]</a>. Todos os direitos reservados.</p>
+		</div>
+	</div>
+
+	<div class="additional-menu-content">
+		<h5>Fale com a gente:</h5>
+		<p class="painel-contato">[ENDEREÇO]<br>[TELEFONE]<br><a href="mailto:[EMAIL]">[EMAIL]</a></p>
+		<ul>
+			<li><a href="https://wa.me/[WHATSAPP]" target="_blank" rel="noopener">Reservar pelo WhatsApp</a></li>
+			<li><a href="accomodations.html">Acomodações</a></li>
+			<li><a href="gallery.html">Fotos da casa</a></li>
+			<li><a href="contact.html">Como chegar</a></li>
+		</ul>
+		<p><img src="assets/img/painel.jpg" alt=""></p>
+	</div>
+
+	<script src="assets/js/jquery-3.3.1.min.js"></script>
+	<script src="assets/js/modernizr-custom.js"></script>
+	<script src="assets/js/owl-carousel.min.js"></script>
+	<script src="assets/js/fancybox.min.js"></script>
+	<script src="assets/js/zebra-datepicker.min.js"></script>
+	<script src="assets/js/wa-forms.js"></script>
+	<script src="assets/js/functions.js"></script>
+</body>
+</html>

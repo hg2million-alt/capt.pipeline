@@ -1,0 +1,41 @@
+/**
+ * Tiny Sections
+ */
+
+.tm-question {
+    &-right {
+        h2 {
+            margin-top: -8px;
+            margin-bottom: 30px;
+        }
+    }
+
+    @media #{$layout-notebook} {
+        &-right {
+            h2 {
+                font-size: 32px;
+            }
+        }
+    }
+
+    @media #{$layout-tablet} {
+        &-right {
+            margin-top: 40px;
+
+            h2 {
+                font-size: 32px;
+            }
+        }
+    }
+
+    @media #{$layout-mobile-lg} {
+        &-right {
+            margin-top: 40px;
+
+            h2 {
+                font-size: 28px;
+                line-height: 36px;
+            }
+        }
+    }
+}

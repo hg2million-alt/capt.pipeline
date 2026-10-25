@@ -1,0 +1,105 @@
+/**
+ * Team Member
+ */
+
+.tm-member {
+    position: relative;
+    transition: $transition;
+
+    img {
+        width: 100%;
+    }
+
+    &-content {
+        position: absolute;
+        left: 0;
+        top: auto;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        background: rgba(#f3f5ff, 0.9);
+        padding: 27px 20px;
+        overflow: hidden;
+        transition: $transition;
+
+        h5 {
+            font-weight: 600;
+            margin-bottom: 5px;
+            transition: $transition;
+        }
+
+        p {
+            margin-bottom: 0;
+            transition: $transition;
+        }
+    }
+
+    &-social {
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        position: absolute;
+        left: 0;
+        top: auto;
+        bottom: 25px;
+        width: 100%;
+        font-size: 0;
+        padding: 5px 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: $transition;
+
+        li {
+            display: inline-block;
+            font-size: 18px;
+            transition: $transition;
+            overflow: hidden;
+            vertical-align: middle;
+
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+
+            a {
+                display: inline-block;
+                height: 30px;
+                width: 30px;
+                line-height: 28px;
+                text-align: center;
+                border-radius: 1000px;
+                font-size: 16px;
+                transform: translateX(-100%);
+                color: $color-theme;
+                background: #ffffff;
+                border: 1px solid #ffffff;
+                transition: $transition;
+
+                &:hover{
+                    background: transparent;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+    &:hover &-content {
+        padding-bottom: 27px + 50px;
+        background: rgba($color-theme, 0.9);
+
+        h5,
+        p {
+            color: #ffffff;
+        }
+    }
+
+    &:hover &-social {
+        visibility: visible;
+        opacity: 1;
+
+        li {
+            a {
+                transform: translateX(0);
+            }
+        }
+    }
+}

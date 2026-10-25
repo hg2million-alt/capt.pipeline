@@ -1,0 +1,29 @@
+/*******************************************************/
+/******************* 16. Video Area ********************/
+/*******************************************************/
+.cta-part
+    height: 100%
+    min-height: 400px
+    +flexcenter(center)
+    flex-direction: column
+    background-repeat: no-repeat
+.video-part
+    overflow: hidden
+    +overlay(#1f1f1f, 0.75)
+    &:before
+        z-index: 1
+        mix-blend-mode: multiply
+    .video-play
+        z-index: 3
+        left: 50%
+        top: 50%
+        position: absolute
+        transform: translate(-50%, -50%)
+    &.offer-video
+        height: 100%
+        min-height: 500px
+        +res-ab(lb)
+            margin-right: -250px
+        +res-bl(xl)
+            height: auto
+            margin-top: 60px

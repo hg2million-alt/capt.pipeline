@@ -1,0 +1,235 @@
+/*******************************************************/
+/******************* 06. Header style ******************/
+/*******************************************************/
+.main-header
+    position: relative
+    left: 0px
+    top: 0px
+    z-index: 999
+    width: 100%
+    transition: all 500ms ease
+    .header-upper
+        z-index: 5
+        width: 100%
+        position: relative
+        transition: all 500ms ease
+    .logo-outer
+        flex: none
+        +res-bl(lg)
+            display: none
+    .logo
+        z-index: 9
+        padding: 2px 0
+        position: relative
+    &.menu-absolute
+        position: absolute
+    &.fixed-header
+        .header-upper
+            top: 0
+            left: 0
+            position: fixed
+            background: #0d0d0d
+            animation: sticky  1s
+            box-shadow: 0px 0px 30px 0px rgba(87, 95, 245, .10)
+
+.header-top
+    ul
+        display: inline-flex
+        li
+            display: flex
+            align-items: center
+            position: relative
+            > i
+                margin-right: 13px
+                color: $primary-color
+            b
+                font-weight: 500
+                margin-right: 8px
+                color: $heading-color
+            &:not(:last-child)
+                margin-right: 35px
+    .top-left
+        +res-bl(sm)
+            display: none
+        ul li
+            &:not(:first-child)
+                +res-bl(lp)
+                    display: none
+                
+.text-white
+    .header-top
+        ul
+            li
+                b,
+                > i
+                    color: white
+ 
+/** Header Main Menu **/
+.main-menu
+    +res-bl(lg)
+        width: 100%
+        position: relative
+    .mobile-logo
+        margin-right: auto
+        +res-bl(sm)
+            max-width: 150px
+    .collapse
+        +res-bl(lg)
+            overflow: auto
+    .navbar-collapse
+        padding: 0px
+        > ul
+            display: flex
+            +res-bl(lg)
+                display: block
+                padding: 25px 0
+                background: #0d0d0d
+                > li:last-child
+                    border-bottom: 1px solid #353535
+        +res-bl(lg)
+            left: 0
+            width: 100%
+            position: absolute
+        li
+            position: relative
+            padding: 28px 22px
+            +flexcenter(space-between)
+            +res-bl(xxl)
+                +gapLR(padding, 10px)
+            +res-bl(lg)
+                display: block
+                padding: 0 20px
+                border-top: 1px solid #353535
+            &.dropdown .dropdown-btn
+                cursor: pointer
+                font-size: 12px
+                margin-left: 5px
+                color: $heading-color
+                display: none
+                +res-bl(lg)
+                    position: absolute
+                    right: 10px
+                    top: 0
+                    width: 50px
+                    height: 43px
+                    color: white
+                    display: block
+                    line-height: 43px
+                    text-align: center
+                    border-left: 1px solid #353535
+            a
+                display: block
+                opacity: 1
+                color: white
+                font-weight: 600
+                text-transform: uppercase
+                font-family: $heading-font
+                transition: all 500ms ease
+                +res-bl(lg)
+                    padding: 10px 10px
+                    line-height: 22px
+            &.current > a, &.current-menu-item > a
+                font-weight: 500
+            li
+                border-top: 1px solid #f3f3f3
+                &.dropdown .dropdown-btn
+                    display: block
+                    +res-bl(lg)
+                        color: $heading-color
+                        border-color: #f3f3f3
+                a
+                    color: $heading-color
+                    &:before
+                        display: none
+            .megamenu
+                position: absolute
+                left: 0px
+                top: 100%
+                width: 100%
+                z-index: 100
+                display: none
+                padding: 20px 0
+                background: #ffffff
+                box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05), -2px 0px 5px 1px rgba(0, 0, 0, 0.05)
+                +clearfix
+                +res-bl(lg)
+                    position: relative
+                    box-shadow: none
+                    width: 100%
+                    .container
+                        max-width: 100%
+                    .row
+                        margin: 0px
+                ul
+                    display: block
+                    position: relative
+                    top: 0
+                    width: 100%
+                    box-shadow: none
+            ul
+                position: absolute
+                left: inherit
+                top: 100%
+                min-width: 250px
+                z-index: 100
+                display: none
+                background: #ffffff
+                box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05), -2px 0px 5px 1px rgba(0, 0, 0, 0.05)
+                +res-bl(lg)
+                    position: relative
+                    display: none
+                    width: 100%
+                    box-shadow: none
+                    +clearfix
+                    +res-bl(xs)
+                        min-width: auto
+                li
+                    width: 100%
+                    padding: 7px 20px
+                    +res-bl(lg)
+                        padding: 0 15px
+                    ul
+                        left: 100%
+                        top: 0%
+                        +res-bl(lg)
+                            left: auto
+
+    .navbar-header
+        display: none
+        +res-bl(lg)
+            +flexcenter(space-between)
+        .navbar-toggle
+            float: right
+            padding: 4px 0
+            cursor: pointer
+            background: transparent
+            .icon-bar
+                height: 2px
+                width: 30px
+                display: block
+                margin: 7px 0
+                background: white
+.header-one
+    .header-top
+        background: white
+        border-radius: 0 0 22.5px 22.5px
+        +gapLR(padding, 40px)
+        +gapLR(margin, -40px)
+        
+.header-two
+    .header-upper
+        +res-ab(xxl)
+            +gapLR(padding, 55px)
+    .nav-outer
+        margin-left: auto
+        +res-ab(lg)
+            margin-right: 20px
+    &.fixed-header
+        .header-inner
+            +gapTB(padding, 0)
+            
+.header-three
+    .menu-button
+        .theme-btn
+            +gapTB(padding, 8px)
+        

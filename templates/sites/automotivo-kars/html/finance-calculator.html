@@ -1,0 +1,686 @@
+<!doctype html>
+<html class="no-js " lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>[NOME DO CLIENTE] — Finance Calculator</title>
+    <meta name="author" content="Kars">
+    <meta name="description" content="[NOME DO CLIENTE] — [DESCRIÇÃO CURTA]">
+    <meta name="keywords" content="[NOME DO CLIENTE] — [DESCRIÇÃO CURTA]">
+    <meta name="robots" content="INDEX,FOLLOW">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicons - Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--==============================
+	  Google Fonts
+	============================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Play:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--==============================
+	    All CSS File
+	============================== -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Fontawesome Icon -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <!-- Swiper Js -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body class="">
+
+    <!--[if lte IE 9]>
+    	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  	<![endif]-->
+
+
+    <!--********************************
+   		Code Start From Here 
+	******************************** -->
+    <!-- slider drag cursor -->
+    <div class="slider-drag-cursor"> &lt;DRAG&gt; </div>
+
+    <!--==============================
+     Preloader
+  ==============================-->
+    <div class="preloader ">
+        <button class="th-btn preloaderCls">Cancel Preloader </button>
+        <div class="preloader-inner">
+            <div class="loader"></div>
+        </div>
+    </div>
+    <div class="color-scheme">
+        <button class="switchIcon"><i class="fa-solid fa-palette"></i></button>
+        <h4 class="color-scheme-title"><i class="far fa-palette"></i> Color Switcher</h4>
+        <p class="color-scheme-text">Check template with your color</p>
+        <div class="color-switch-btns">
+            <button data-color="#6240CF"><i class="fa-solid fa-droplet"></i></button>
+            <button data-color="#068FFF"><i class="fa-solid fa-droplet"></i></button>
+            <button data-color="#044DBC"><i class="fa-solid fa-droplet"></i></button>
+            <button data-color="#FFAF00"><i class="fa-solid fa-droplet"></i></button>
+            <button data-color="#F80000"><i class="fa-solid fa-droplet"></i></button>
+            <button data-color="#231E7A"><i class="fa-solid fa-droplet"></i></button>
+        </div>
+        <p class="color-scheme-text">Or custom color..</p>
+        <input type="color" id="thcolorpicker" value="#068FFF">
+    </div><!--==============================
+    Sidemenu
+============================== -->
+    <div class="sidemenu-wrapper sidemenu-cart d-none d-lg-block ">
+        <div class="sidemenu-content">
+            <button class="closeButton sideMenuCls"><i class="far fa-times"></i></button>
+            <div class="widget woocommerce widget_shopping_cart">
+                <h3 class="widget_title">Shopping cart</h3>
+                <div class="widget_shopping_cart_content">
+                    <ul class="woocommerce-mini-cart cart_list product_list_widget ">
+                        <li class="woocommerce-mini-cart-item mini_cart_item">
+                            <a href="#" class="remove remove_from_cart_button"><i class="far fa-times"></i></a>
+                            <a href="#"><img src="assets/img/product/product_1_1.png" alt="Cart Image">Bosco Apple Fruit</a>
+                            <span class="quantity">1 ×
+                                <span class="woocommerce-Price-amount amount">
+                                    <span class="woocommerce-Price-currencySymbol">$</span>940.00</span>
+                            </span>
+                        </li>
+                        <li class="woocommerce-mini-cart-item mini_cart_item">
+                            <a href="#" class="remove remove_from_cart_button"><i class="far fa-times"></i></a>
+                            <a href="#"><img src="assets/img/product/product_1_2.png" alt="Cart Image">Green Cauliflower</a>
+                            <span class="quantity">1 ×
+                                <span class="woocommerce-Price-amount amount">
+                                    <span class="woocommerce-Price-currencySymbol">$</span>899.00</span>
+                            </span>
+                        </li>
+                        <li class="woocommerce-mini-cart-item mini_cart_item">
+                            <a href="#" class="remove remove_from_cart_button"><i class="far fa-times"></i></a>
+                            <a href="#"><img src="assets/img/product/product_1_3.png" alt="Cart Image">Mandarin orange</a>
+                            <span class="quantity">1 ×
+                                <span class="woocommerce-Price-amount amount">
+                                    <span class="woocommerce-Price-currencySymbol">$</span>756.00</span>
+                            </span>
+                        </li>
+                        <li class="woocommerce-mini-cart-item mini_cart_item">
+                            <a href="#" class="remove remove_from_cart_button"><i class="far fa-times"></i></a>
+                            <a href="#"><img src="assets/img/product/product_1_4.png" alt="Cart Image">Shallot Red onion</a>
+                            <span class="quantity">1 ×
+                                <span class="woocommerce-Price-amount amount">
+                                    <span class="woocommerce-Price-currencySymbol">$</span>723.00</span>
+                            </span>
+                        </li>
+                        <li class="woocommerce-mini-cart-item mini_cart_item">
+                            <a href="#" class="remove remove_from_cart_button"><i class="far fa-times"></i></a>
+                            <a href="#"><img src="assets/img/product/product_1_5.png" alt="Cart Image">Sour Red Cherry</a>
+                            <span class="quantity">1 ×
+                                <span class="woocommerce-Price-amount amount">
+                                    <span class="woocommerce-Price-currencySymbol">$</span>1080.00</span>
+                            </span>
+                        </li>
+                    </ul>
+                    <p class="woocommerce-mini-cart__total total">
+                        <strong>Subtotal:</strong>
+                        <span class="woocommerce-Price-amount amount">
+                            <span class="woocommerce-Price-currencySymbol">$</span>4398.00</span>
+                    </p>
+                    <p class="woocommerce-mini-cart__buttons buttons">
+                        <a href="cart.html" class="th-btn wc-forward">View cart</a>
+                        <a href="checkout.html" class="th-btn checkout wc-forward">Checkout</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-search-box d-none d-lg-block">
+        <button class="searchClose"><i class="fal fa-times"></i></button>
+        <form action="#">
+            <input type="text" placeholder="What are you looking for?">
+            <button type="submit"><i class="fal fa-search"></i></button>
+        </form>
+    </div><!--==============================
+    Mobile Menu
+  ============================== -->
+    <div class="th-menu-wrapper">
+        <div class="th-menu-area text-center">
+            <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
+            <div class="mobile-logo">
+                <a href="index.html"><img src="assets/img/logo.svg" alt="[NOME DO CLIENTE]"></a>
+            </div>
+            <div class="th-mobile-menu">
+                <ul>
+                    <li class="menu-item-has-children active">
+                        <a href="index.html">Home</a>
+                        <ul class="sub-menu">
+                            <li><a href="index.html">Home Car Dealership</a></li>
+                            <li><a href="home-2.html">Home Bike Dealership</a></li>
+                            <li><a href="home-3.html">Home Auto Repair</a></li>
+                            <li><a href="home-4.html">Home Classified Listing</a></li>
+                            <li><a href="home-5.html">Home Multi Listing</a></li>
+                            <li><a href="home-6.html">Home Boat Dealership</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Services</a>
+                        <ul class="sub-menu">
+                            <li><a href="service.html">Service</a></li>
+                            <li><a href="service-details.html">Service Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Dealership</a>
+                        <ul class="sub-menu">
+                            <li><a href="dealership-grid.html">Dealership Grid</a></li>
+                            <li><a href="dealership-list.html">Dealership List</a></li>
+                            <li><a href="dealership-details.html">Dealership Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Inventory</a>
+                        <ul class="sub-menu">
+                            <li><a href="inventory-grid.html">Inventory Grid</a></li>
+                            <li><a href="inventory-listing.html">Inventory Listing</a></li>
+                            <li><a href="inventory-left-sidebar.html">Inventory Left Sidebar</a></li>
+                            <li><a href="inventory-right-sidebar.html">Inventory Right Sidebar</a></li>
+                            <li><a href="inventory-sold.html">Sold Inventory</a></li>
+                            <li><a href="single-inventory.html">Single Inventory</a></li>
+                            <li><a href="finance-calculator.html">Finance Calculator</a></li>
+                            <li><a href="sell-a-car.html">Sell a Car</a></li>
+                            <li><a href="inventory-comparison.html">Inventory Comparison</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Pages</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item-has-children">
+                                <a href="#">Shop</a>
+                                <ul class="sub-menu">
+                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="shop-details.html">Shop Details</a></li>
+                                    <li><a href="cart.html">Cart Page</a></li>
+                                    <li><a href="checkout.html">Checkout</a></li>
+                                    <li><a href="wishlist.html">Wishlist</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="team.html">Our Team</a></li>
+                            <li><a href="team-details.html">Team Details</a></li>
+                            <li><a href="pricing.html">Pricing Plan</a></li>
+                            <li><a href="testimonials.html">Testimonials</a></li>
+                            <li><a href="faq.html">Faq Page</a></li>
+                            <li><a href="error.html">Error Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Blog</a>
+                        <ul class="sub-menu">
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="blog-details.html">Blog Details</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div><!--==============================
+	Header Area
+==============================-->
+    <header class="th-header header-default">
+        <div class="header-top">
+            <div class="th-container">
+                <div class="row justify-content-center justify-content-lg-between align-items-center gy-2">
+                    <div class="col-auto d-none d-lg-block">
+                        <div class="header-links">
+                            <ul>
+                                <li><i class="fal fa-location-dot"></i> <a href="https://www.google.com/maps">835 Middle Country Rd, NY 11784, USA</a></li>
+                                <li><i class="fa-regular fa-phone"></i> <a href="tel:+225-65893-9874">+225-65893-9874</a></li>
+                                <li><i class="fa-sharp fa-regular fa-envelope"></i> <a href="mailto:info@kars.com">info@kars.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-auto">
+                        <div class="header-links">
+                            <ul>
+                                <li class="d-none d-md-inline-block lang-wrapper">
+                                    <div class="dropdown-link">
+                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="fa-regular fa-globe"></i>
+                                            English
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink1" style="margin: 0px;">
+                                            <li>
+                                                <a href="#">English</a>
+                                                <a href="#">German</a>
+                                                <a href="#">French</a>
+                                                <a href="#">Italian</a>
+                                                <a href="#">Latvian</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="social-links">
+                                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                                        <a href="https://www.behance.com/"><i class="fa-brands fa-behance"></i></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sticky-wrapper">
+            <!-- Main Menu Area -->
+            <div class="menu-area">
+                <div class="th-container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-auto">
+                            <div class="header-logo">
+                                <a href="index.html"><img src="assets/img/logo.svg" alt="[NOME DO CLIENTE]"></a>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <nav class="main-menu sapace-left d-none d-lg-inline-block">
+                                <ul>
+                                    <li class="menu-item-has-children active">
+                                        <a href="index.html">Home</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="index.html">Home Car Dealership</a></li>
+                                            <li><a href="home-2.html">Home Bike Dealership</a></li>
+                                            <li><a href="home-3.html">Home Auto Repair</a></li>
+                                            <li><a href="home-4.html">Home Classified Listing</a></li>
+                                            <li><a href="home-5.html">Home Multi Listing</a></li>
+                                            <li><a href="home-6.html">Home Boat Dealership</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="about.html">About Us</a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="#">Services</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="service.html">Service</a></li>
+                                            <li><a href="service-details.html">Service Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="#">Dealership</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="dealership-grid.html">Dealership Grid</a></li>
+                                            <li><a href="dealership-list.html">Dealership List</a></li>
+                                            <li><a href="dealership-details.html">Dealership Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="#">Inventory</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="inventory-grid.html">Inventory Grid</a></li>
+                                            <li><a href="inventory-listing.html">Inventory Listing</a></li>
+                                            <li><a href="inventory-left-sidebar.html">Inventory Left Sidebar</a></li>
+                                            <li><a href="inventory-right-sidebar.html">Inventory Right Sidebar</a></li>
+                                            <li><a href="inventory-sold.html">Sold Inventory</a></li>
+                                            <li><a href="single-inventory.html">Single Inventory</a></li>
+                                            <li><a href="finance-calculator.html">Finance Calculator</a></li>
+                                            <li><a href="sell-a-car.html">Sell a Car</a></li>
+                                            <li><a href="inventory-comparison.html">Inventory Comparison</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="#">Pages</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item-has-children">
+                                                <a href="#">Shop</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="shop.html">Shop</a></li>
+                                                    <li><a href="shop-details.html">Shop Details</a></li>
+                                                    <li><a href="cart.html">Cart Page</a></li>
+                                                    <li><a href="checkout.html">Checkout</a></li>
+                                                    <li><a href="wishlist.html">Wishlist</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="team.html">Our Team</a></li>
+                                            <li><a href="team-details.html">Team Details</a></li>
+                                            <li><a href="pricing.html">Pricing Plan</a></li>
+                                            <li><a href="testimonials.html">Testimonials</a></li>
+                                            <li><a href="faq.html">Faq Page</a></li>
+                                            <li><a href="error.html">Error Page</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="#">Blog</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="blog.html">Blog</a></li>
+                                            <li><a href="blog-details.html">Blog Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <button type="button" class="th-menu-toggle d-block d-lg-none"><i class="far fa-bars"></i></button>
+                        </div>
+                        <div class="col-auto d-none d-xl-block">
+                            <div class="header-button">
+                                <button type="button" class="simple-icon searchBoxToggler"><i class="far fa-search"></i></button>
+                                <button type="button" class="simple-icon sideMenuToggler"><i class="fa-sharp fa-regular fa-bag-shopping"></i> <span class="badge">5</span></button>
+                                <a href="sell-a-car.html" class="th-btn">Adding List <i class="fa-solid fa-circle-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header><!--==============================
+    Breadcumb
+============================== -->
+
+    <div class="breadcumb-wrapper " data-bg-src="assets/img/bg/breadcrumb-bg.jpg" data-overlay="black" data-opacity="3">
+        <div class="container">
+            <div class="breadcumb-content">
+                <h1 class="breadcumb-title">Finance Calculator</h1>
+                <ul class="breadcumb-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li>Finance Calculator</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--==============================
+Contact Area  
+==============================-->
+    <section class="overflow-hidden space">
+        <div class="container">
+            <div class="row gx-60 gy-40 align-items-center">
+                <div class="col-xl-7">
+                    <div class="contact-form-v1-wrap style-3 me-xl-4">
+                        <div class="title-area mb-35">
+                            <h4 class="sec-title mb-0">Car Loan Calculator</h4>
+                            <p class="box-text">Estimate your monthly auto loan payments with this calculator.</p>
+                        </div>
+                        <form action="mail.php" method="POST" class="quote-form ajax-contact">
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="Priceofvehicles">Price of vehicles</label>
+                                    <input type="text" class="form-control pill" name="name" id="Priceofvehicles" placeholder="$20000">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="Interest_Rate">Interest Rate</label>
+                                    <input type="email" class="form-control pill" name="rate" id="Interest_Rate" placeholder="10%">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="Terms">Terms</label>
+                                    <input type="email" class="form-control pill" name="rate" id="Terms" placeholder="10%">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="Down_payment">Down payment</label>
+                                    <input type="email" class="form-control pill" name="rate" id="Down_payment" placeholder="Down payment">
+                                </div>
+
+                                <div class="col-12">
+                                    <ul class="contact-form__bottom">
+                                        <li>
+                                            <p>Down payment amount</p>
+                                            <p>$12,000</p>
+                                        </li>
+                                        <li>
+                                            <p>Amount financed</p>
+                                            <p>$8,000</p>
+                                        </li>
+                                        <li>
+                                            <p>Down payment amount</p>
+                                            <p>$480,00</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="form-btn col-12">
+                                    <button class="th-btn bg-black w-100 pill">Apply for loan <i class="fas fa-arrow-up-right"></i></button>
+                                </div>
+                            </div>
+                            <p class="form-messages mb-0 mt-3"></p>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-xl-5">
+                    <div class="contact-box-3-right">
+                        <div class="shape-mockup moving d-none d-xl-block" data-top="-10%" data-left="-9%">
+                            <img src="assets/img/shape/contact-box-3-top.png" alt="shape-img">
+                        </div>
+                        <div class="title-area">
+                            <h2 class="sec-title">We provide loan facility to you for taking vehicle</h2>
+                            <p class="pe-xl-5">Most dealerships offer trade-in programs where customers can bring their old vehicle, which is appraised, and the value is credited owards the purchase of new or used car.</p>
+                        </div>
+                        <div class="contact-box-3-thumb">
+                            <img src="assets/img/contact/contact-3-1.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--==============================
+	Footer Area
+==============================-->
+    <footer class="footer-wrapper footer-default bg-footer-color">
+        <div class="shape-mockup d-none d-xxl-block" data-top="0" data-left="0">
+            <img src="assets/img/shape/footer-1-top-shape.png" alt="shape">
+        </div>
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-top-border">
+                    <div class="row gy-4 justify-content-between">
+                        <div class="col-lg-3">
+                            <div class="logo-top">
+                                <a href="index.html"><img src="assets/img/logo-white.svg" alt="[NOME DO CLIENTE]"></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="payment-wrap">
+                                <div class="info">
+                                    <h4 class="text-white">Our Payment Methods</h4>
+                                    <h6>Our Easy And simple payment methods with cards</h6>
+                                </div>
+                                <div class="card-thumb-card">
+                                    <img src="assets/img/shape/cards.png" alt="card-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="widget-area">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-md-6 col-xl-3">
+                        <div class="widget footer-widget">
+                            <h3 class="widget_title">About Company</h3>
+                            <div class="th-widget-about">
+                                <p class="about-text">Dealerships allow customers to take vehicles for test drives to experience how the car feels before making a purchase.</p>
+                                <div class="footer-call-wrap">
+                                    <div class="info-box">
+                                        <div class="info-contnt">
+                                            <h4 class="footer-info-title">Call Us:</h4>
+                                            <p class="info-box_text">
+                                                <a href="tel:+15264855467" class="info-box_link">+ 152-6485-5467</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="info-box">
+                                        <div class="info-contnt">
+                                            <h4 class="footer-info-title">Email Us:</h4>
+                                            <p class="info-box_text">
+                                                <a href="mailto:info@kars.com" class="info-box_link">info@kars.com</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="th-social">
+                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-auto">
+                        <div class="widget widget_nav_menu footer-widget">
+                            <h3 class="widget_title">Pages</h3>
+                            <div class="menu-all-pages-container">
+                                <ul class="menu">
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="blog.html">Our Blog</a></li>
+                                    <li><a href="team.html">Our Services</a></li>
+                                    <li><a href="service.html">Our Services</a></li>
+                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-auto">
+                        <div class="widget widget_nav_menu footer-widget">
+                            <h3 class="widget_title">Vehicles List</h3>
+                            <div class="menu-all-pages-container">
+                                <ul class="menu">
+                                    <li><a href="inventory-listing.html">Sedan</a></li>
+                                    <li><a href="inventory-listing.html">Hatchback</a></li>
+                                    <li><a href="inventory-listing.html">SUV</a></li>
+                                    <li><a href="inventory-listing.html">Hybrid</a></li>
+                                    <li><a href="inventory-listing.html">Convertible</a></li>
+                                    <li><a href="inventory-listing.html">Coupe</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-auto">
+                        <div class="widget widget_nav_menu footer-widget">
+                            <h3 class="widget_title">Our Brand</h3>
+                            <div class="menu-all-pages-container">
+                                <ul class="menu">
+                                    <li><a href="inventory-listing.html">Toyota</a></li>
+                                    <li><a href="inventory-listing.html">Audi</a></li>
+                                    <li><a href="inventory-listing.html">BMW</a></li>
+                                    <li><a href="inventory-listing.html">Ferrari</a></li>
+                                    <li><a href="inventory-listing.html">Nissan</a></li>
+                                    <li><a href="inventory-listing.html">Ford</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-auto">
+                        <div class="widget footer-widget">
+                            <h3 class="widget_title">Recent Posts</h3>
+                            <div class="recent-post-wrap">
+                                <div class="recent-post">
+                                    <div class="media-img">
+                                        <a href="blog-details.html"><img src="assets/img/blog/recent-post-1-1.jpg" alt="Blog Image"></a>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="recent-post-meta">
+                                            <a href="blog.html"><i class="fa-solid fa-calendar-days"></i> 10 Dec, 2025</a>
+                                        </div>
+                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">The Ever-Evolving Land cape of</a></h4>
+                                    </div>
+                                </div>
+                                <div class="recent-post">
+                                    <div class="media-img">
+                                        <a href="blog-details.html"><img src="assets/img/blog/recent-post-1-2.jpg" alt="Blog Image"></a>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="recent-post-meta">
+                                            <a href="blog.html"><i class="fa-solid fa-calendar-days"></i> 10 Dec, 2025</a>
+                                        </div>
+                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">The Ever-Evolving Land cape of</a></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-wrap">
+            <div class="container">
+                <div class="row gy-2 align-items-center">
+                    <div class="col-md-12">
+                        <p class="copyright-text text-center">Copyright <i class="fal fa-copyright"></i> 2025 <a href="index.html">[NOME DO CLIENTE]</a>. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--********************************
+			Code End  Here 
+	******************************** -->
+
+    <!-- Scroll To Top -->
+    <div class="scroll-top">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
+        </svg>
+    </div>
+
+    <!--==============================
+    All Js File
+============================== -->
+    <!-- Jquery -->
+    <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+    <!-- Swiper Js -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Counter Up -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- Tilt JS -->
+    <script src="assets/js/tilt.jquery.min.js"></script>
+    <!-- Gsap Animation -->
+    <script src="assets/js/gsap.min.js"></script>
+    <!-- Isotope Filter -->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <!-- nice select -->
+    <script src="assets/js/nice-select.min.js"></script>
+
+    <!-- Main Js File -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

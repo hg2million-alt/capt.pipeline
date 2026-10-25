@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.2/animation_utility.css">
+    <link rel="icon" type="image/x-icon" href="image/logo.png">
+    <title>[NOME DO CLIENTE] - Our Work</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="sticky-top bg-accent-primary">
+        <div class="r-container">
+            <nav class="navbar d-xl-flex flex-xl-nowrap">
+                <div class="container-fluid navbar-expand-xl">
+                    <div class="logo-container">
+                        <a class="navbar-brand" href="#"><img src="image/logo.png" alt="" class="img-fluid"></a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars-staggered accent-color"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-xl-auto ms-auto mb-2 mb-xl-0 gap-xl-3 gap-1">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Homepage <i
+                                        class="rtmicon rtmicon-arrow-up-right"></i></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Pages <i class="rtmicon rtmicon-arrow-up-right"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="team.html">Team</a></li>
+                                    <li><a class="dropdown-item" href="team_detail.html">Team Detail</a></li>
+                                    <li><a class="dropdown-item" href="faq.html">FAQs</a></li>
+                                    <li><a class="dropdown-item" href="service.html">Services</a></li>
+                                    <li><a class="dropdown-item" href="service_detail.html">Service Detail</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="pricing_plan.html">Pricing Plan</a></li>
+                                    <li><a class="dropdown-item" href="testimonial.html">Testimonials</a></li>
+                                    <li><a class="dropdown-item" href="404.html">404 Error</a></li>
+                                    <li><a class="dropdown-item" href="work_detail.html">Work Detail</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="single_blog.html">Single Post</a></li>
+                                    <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">
+                                    About Us <i class="rtmicon rtmicon-arrow-up-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="work.html">
+                                    Works <i class="rtmicon rtmicon-arrow-up-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">Blog <i
+                                        class="rtmicon rtmicon-arrow-up-right"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-none d-xl-flex flex-row gap-3 align-items-center">
+                    <div class="d-flex flex-row gap-3 align-items-center" style="width: max-content;">
+                        <a href="" class="social-item">
+                            <i class="rtmicon rtmicon-classic-phone"></i>
+                        </a>
+                        <span>+1 (212) 555-1212</span>
+                    </div>
+                    <button class="btn btn-toggler-accent" style="width: max-content;" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas"><i
+                            class="rtmicon rtmicon-bars"></i></button>
+                    <div class="offcanvas offcanvas-end offcanvas-fullwidth" tabindex="-1" id="offcanvas">
+                        <div class="offcanvas-header bg-transparent">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="r-container d-flex flex-column gap-3">
+                                <img src="image/dummy-img-1920x1280.jpg" class="img-fluid" alt="">
+                                <h4>Precision Repairs. <br><span class="fw-bold fst-italic">Lasting Results.</span>
+                                </h4>
+                                <div class="d-flex flex-column">
+                                    <div class="d-flex flex-column gap-2">
+                                        <i class="rtmicon rtmicon-envelope fs-1 accent-color"></i>
+                                        <span class="text-color-2">E-Mail</span>
+                                        <h6>hello@domainsite.com</h6>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex flex-column gap-2">
+                                        <i class="rtmicon rtmicon-classic-phone fs-1 accent-color"></i>
+                                        <span class="text-color-2">Phone</span>
+                                        <h6>+1 (212) 555-1212</h6>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex flex-column gap-2">
+                                        <i class="rtmicon rtmicon-location fs-1 accent-color"></i>
+                                        <span class="text-color-2">Address</span>
+                                        <h6>KLLG St, No.99, Pku City, ID </h6>
+                                    </div>
+                                </div>
+                                <p class="mt-5">Subscribe to receive seasonal maintenance tips and special
+                                    promotions.
+                                </p>
+                                <div class="d-flex flex-column gap-3">
+                                    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                                        <div 
+                                            class="toast success_msg_subscribe bg-dark-transparent text-white"
+                                            role="alert" aria-live="assertive" aria-atomic="true">
+                                            <div class="d-flex">
+                                                <div class="toast-body">
+                                                    Your Subscribe Send Successfully!.
+                                                </div>
+                                                <button type="button" class="btn me-2 m-auto text-white"
+                                                    data-bs-dismiss="toast" aria-label="Close">
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <form
+                                            class="d-flex flex-column h-100 justify-content-center w-100 needs-validation form"
+                                            novalidate>
+                                            <input type="text" name="action" value="subscribe" hidden>
+                                            <div
+                                                class="input-group gap-3 mb-xl-2 mb-0 position-relative custom-input-group">
+                                                <input type="email"
+                                                    class="form-control mb-xl-0 mb-3 subscribe custom-email-input"
+                                                    placeholder="Enter your email" name="email" required>
+                                                <button
+                                                    class="btn btn-accent custom-submit-button submit_subscribe rounded-pill"
+                                                    type="submit">
+                                                    <i class="rtmicon rtmicon-arrow-up-right"></i>
+                                                </button>
+                                                <div class="invalid-feedback position-absolute bottom-0"
+                                                    style="margin-bottom: -2rem; margin-left: 1rem;">
+                                                    Please provide a valid email format (e.g., user@example.com).
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- End Header -->
+
+
+    <!-- Main -->
+    <main>
+        <!-- Banner -->
+        <div class="section pb-0">
+            <div class="r-container d-flex flex-column gap-3">
+                <div class="row row-cols-xl-2 row-cols-1 align-items-center">
+                    <div class="col mb-5">
+                        <div class="d-flex flex-column gap-3 h-100">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb scrollanimation animated fadeInUp adr-5">
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Our Work</li>
+                                </ol>
+                            </nav>
+                            <h2 class="scrollanimation animated fadeInUp adr-5 adl-2"><span
+                                    class="fw-bold fst-italic">Our Portfolio</span></h2>
+                            <p class="scrollanimation animated fadeInUp adr-5 adl-4" style="max-width: 550px;">
+                                Take a look at our proudest projects—expertly executed to enhance comfort, style, and
+                                function.
+                            </p>
+                            <div class="w-max-content scrollanimation animated fadeInUp adr-5 adl-5">
+                                <a href="contact.html" class="btn btn-accent black d-flex flex-row gap-2">
+                                    <span>Learn More</span>
+                                    <i class="rtmicon rtmicon-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex flex-xl-row flex-column align-items-end justify-content-center h-100"
+                            style="background: url(image/hero-component.png) no-repeat 50% 50%; background-size: contain; min-height: 400px;">
+                            <figure class="m-0" style="height: 500px;">
+                                <img src="image/dummy-img-600x600.jpg" class="img-fluid h-100" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Marquee -->
+        <div class="section p-0">
+            <div
+                class="d-flex flex-column gap-3 text-center align-items-center justify-content-center mx-auto position-relative accent-primary">
+                <div class="marquee-container bg-accent-color">
+                    <div class="marquee-content accent-color-primary">
+                        <div class="marquee-item py-2 d-flex align-items-center justify-content-center">
+                            <h3 class="m-0 fw-semibold">Fast Fixes</h3>
+                        </div>
+                        <div class="marquee-item py-2 d-flex align-items-center">
+                            <img src="image/icon-2.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="marquee-item py-2 d-flex align-items-center justify-content-center">
+                            <h3 class="m-0 fw-semibold">Reliable Technicians</h3>
+                        </div>
+                        <div class="marquee-item py-2 d-flex align-items-center">
+                            <img src="image/icon-2.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="marquee-item py-2 d-flex align-items-center justify-content-center">
+                            <h3 class="m-0 fw-semibold">24/7 Service</h3>
+                        </div>
+                        <div class="marquee-item py-2 d-flex align-items-center">
+                            <img src="image/icon-2.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="marquee-item py-2 d-flex align-items-center justify-content-center">
+                            <h3 class="m-0 fw-semibold">Home Repairs Made Easy</h3>
+                        </div>
+                        <div class="marquee-item py-2 d-flex align-items-center">
+                            <img src="image/icon-2.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="marquee-item py-2 d-flex align-items-center justify-content-center">
+                            <h3 class="m-0 fw-semibold">Transparent Pricing</h3>
+                        </div>
+                        <div class="marquee-item py-2 align-items-center">
+                            <img src="image/icon-2.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="marquee-item py-2 d-flex align-items-center justify-content-center">
+                            <h3 class="m-0 fw-semibold">Safety-First Work</h3>
+                        </div>
+                        <div class="marquee-item py-2 align-items-center">
+                            <img src="image/icon-2.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Our Works -->
+        <div class="section">
+            <div class="r-container d-flex flex-column gap-4">
+                <div class="d-flex flex-column gap-3 align-items-center text-center mx-auto" style="max-width: 700px;">
+                    <div
+                        class="d-flex flex-row gap-2 align-items-center scrollanimation animated fadeInDown adr-5 adl-2">
+                        <img src="image/icon-1.png" class="img-fluid" alt="">
+                        <h6 class="m-0">Our Works</h6>
+                    </div>
+                    <h2 class="scrollanimation animated fadeInDown adr-5">Explore Our Completed <span
+                            class="fw-bold fst-italic">Handyman Projects</span></h2>
+                </div>
+                <div class="row row-cols-xl-2 row-cols-1">
+                    <div class="col mb-5">
+                        <div class="d-flex flex-column gap-3 position-relative">
+                            <figure class="position-absolute top-0 start-0"
+                                style="margin-top: 15rem; margin-left: -4rem; z-index: 0;">
+                                <img src="image/hero-component2.png" class="img-fluid" alt="">
+                            </figure>
+                            <div class="card-overlay" style=" aspect-ratio: 4/3;">
+                                <span class="accent-color-primary bg-accent-color position-absolute left-0"
+                                    style="padding: 8px 16px; top: 2rem; left: -2rem; z-index: 3;">Interior
+                                    Improvement</span>
+                                <img src="image/dummy-img-1920x1280.jpg" class="img-fluid h-100" alt="">
+                                <div class="card-body">
+                                    <p class="accent-color-primary" style="max-width: 400px;">Installed a 55" flat
+                                        screen TV
+                                        with concealed wiring
+                                        and secure wall brackets for
+                                        a sleek, hazard-free setup.</p>
+                                    <a href="work_detail.html">
+                                        <i class="rtmicon rtmicon-arrow-up-right fw-bold"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <h4>TV Wall Mount & Cable Management for Modern Living Room</h4>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="d-flex flex-column gap-3 ps-xl-5">
+                            <div class="card-overlay" style=" aspect-ratio: 1/1;">
+                                <span class="accent-color-primary bg-accent-color position-absolute left-0"
+                                    style="padding: 8px 16px; top: 2rem; left: -2rem; z-index: 3;">Kitchen
+                                    Improvement</span>
+                                <img src="image/dummy-img-1920x1280.jpg" class="img-fluid h-100" alt="">
+                                <div class="card-body">
+                                    <p class="accent-color-primary" style="max-width: 400px;">Installed a 55" flat
+                                        screen TV with concealed wiring
+                                        and secure wall brackets for
+                                        a sleek, hazard-free setup.</p>
+                                    <a href="work_detail.html">
+                                        <i class="rtmicon rtmicon-arrow-up-right fw-bold"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <h4>Kitchen Faucet Replacement and Leak Fixing for a Better Home Experience</h4>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="d-flex flex-column gap-3">
+                            <div class="card-overlay" style=" aspect-ratio: 1/1;">
+                                <span class="accent-color-primary bg-accent-color position-absolute start-0"
+                                    style="padding: 8px 16px; top: 2rem; left: -2rem; z-index: 3;">Exterior
+                                    Repair</span>
+                                <img src="image/dummy-img-1920x1280.jpg" class="img-fluid h-100" alt="">
+                                <div class="card-body">
+                                    <p class="accent-color-primary" style="max-width: 400px;">Installed a 55" flat
+                                        screen TV with concealed wiring
+                                        and secure wall brackets for
+                                        a sleek, hazard-free setup.</p>
+                                    <a href="work_detail.html">
+                                        <i class="rtmicon rtmicon-arrow-up-right fw-bold"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <h4>Repair and repaint your wooden fence for enhanced backyard privacy.</h4>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="d-flex flex-column gap-3 ps-xl-5 h-100 justify-content-end position-relative">
+                            <figure class="position-absolute end-0 bottom-0"
+                                style="margin-bottom: 15rem; margin-right: -4rem; z-index: 0;">
+                                <img src="image/hero-component2.png" class="img-fluid" alt="">
+                            </figure>
+                            <div class="card-overlay" style=" aspect-ratio: 4/3;">
+                                <span class="accent-color-primary bg-accent-color position-absolute left-0"
+                                    style="padding: 8px 16px; top: 2rem; left: -2rem; z-index: 3;">Interior
+                                    Improvement</span>
+                                <img src="image/dummy-img-1920x1280.jpg" class="img-fluid h-100" alt="">
+                                <div class="card-body">
+                                    <p class="accent-color-primary" style="max-width: 400px;">Installed a 55" flat
+                                        screen TV with concealed wiring and secure wall brackets for a sleek,
+                                        hazard-free setup.</p>
+                                    <a href="work_detail.html">
+                                        <i class="rtmicon rtmicon-arrow-up-right fw-bold"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <h4>Living Room Accent Wall Makeover with Floating Shelves</h4>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="d-flex flex-column gap-3 h-100 justify-content-end position-relative">
+                            <figure class="position-absolute bottom-0 start-0"
+                                style="margin-bottom: 15rem; margin-left: -4rem; z-index: 0;">
+                                <img src="image/hero-component2.png" class="img-fluid" alt="">
+                            </figure>
+                            <div class="card-overlay" style=" aspect-ratio: 4/3;">
+                                <span class="accent-color-primary bg-accent-color position-absolute start-0"
+                                    style="padding: 8px 16px; top: 2rem; left: -2rem; z-index: 3;">Interior
+                                    Improvement</span>
+                                <img src="image/dummy-img-1920x1280.jpg" class="img-fluid h-100" alt="">
+                                <div class="card-body">
+                                    <p class="accent-color-primary" style="max-width: 400px;">Installed a 55" flat
+                                        screen TV with concealed wiring and secure wall brackets for a sleek,
+                                        hazard-free setup.</p>
+                                    <a href="work_detail.html">
+                                        <i class="rtmicon rtmicon-arrow-up-right fw-bold"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <h4>Under-Sink Cabinet Revamp for Improved Better Storage Solutions</h4>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="d-flex flex-column gap-3 ps-xl-5">
+                            <div class="card-overlay" style=" aspect-ratio: 1/1;">
+                                <span class="accent-color-primary bg-accent-color position-absolute left-0"
+                                    style="padding: 8px 16px; top: 2rem; left: -2rem; z-index: 3;">Kitchen
+                                    Improvement</span>
+                                <img src="image/dummy-img-1920x1280.jpg" class="img-fluid h-100" alt="">
+                                <div class="card-body">
+                                    <p class="accent-color-primary" style="max-width: 400px;">Installed a 55" flat
+                                        screen TV with concealed wiring and secure wall brackets for a sleek,
+                                        hazard-free setup.</p>
+                                    <a href="work_detail.html">
+                                        <i class="rtmicon rtmicon-arrow-up-right fw-bold"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <h4>Repairing and repainting the front porch railing for a fresh look.</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="section pb-0 px-0">
+            <div class="d-flex flex-xl-row flex-column-reverse align-items-xl-center align-item-start">
+                <div class="col">
+                    <img src="image/dummy-img-600x600.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col mb-3">
+                    <div class="d-flex flex-column gap-3 px-4" style="max-width: 610px;">
+                        <div class="d-flex flex-row gap-2 align-items-center scrollanimation animated fadeInUp adr-5">
+                            <img src="image/icon-1.png" class="img-fluid" alt="">
+                            <h6 class="m-0">Free Consultation</h6>
+                        </div>
+                        <h2 class="scrollanimation animated fadeInUp adr-5 adl-2">Ready to Make Home <span
+                                class="fw-bold fst-italic">Feel Right Again?</span></h2>
+                        <p class="scrollanimation animated fadeInUp adr-5 adl-4">Our handymen restore ease and safety to
+                            your space—quickly and professionally. Let’s get
+                            things working.</p>
+                        <div class="d-flex flex-xl-row flex-column gap-4">
+                            <div class="w-max-content scrollanimation animated fadeInUp adr-5 adl-5">
+                                <a href="faq.html" class="btn btn-accent d-flex flex-row gap-2">
+                                    <span>Get a Quote</span>
+                                    <i class="rtmicon rtmicon-arrow-up-right"></i>
+                                </a>
+                            </div>
+                            <div class="w-max-content scrollanimation animated fadeInUp adr-5 adl-6">
+                                <a href="faq.html" class="btn btn-accent line d-flex flex-row gap-2">
+                                    <span>Our Service</span>
+                                    <i class="rtmicon rtmicon-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="section pb-4 bg-accent-color-2">
+            <div class="r-container d-flex flex-column gap-5">
+                <div class="row row-cols-xl-2 row-cols-1 justify-content-between">
+                    <div class="col col-xl-7 mb-3">
+                        <div class="d-flex flex-xl-row flex-column gap-3 justify-content-between">
+                            <div class="d-flex flex-column gap-3">
+                                <h6 class="text-color-2" style="text-transform: uppercase;">What We Do</h6>
+                                <div class="d-flex flex-column gap-3">
+                                    <a href="" class="link menu">
+                                        Our Projects
+                                    </a>
+                                    <a href="" class="link menu">
+                                        Service Packages
+                                    </a>
+                                    <a href="" class="link menu">
+                                        Handyman Services
+                                    </a>
+                                    <a href="" class="link menu">
+                                        Tools & Equipment
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column gap-3">
+                                <h6 class="text-color-2" style="text-transform: uppercase;">About Us</h6>
+                                <div class="d-flex flex-column gap-3">
+                                    <a href="" class="link menu">
+                                        About [NOME DO CLIENTE]
+                                    </a>
+                                    <a href="" class="link menu">
+                                        Our Blog
+                                    </a>
+                                    <a href="" class="link menu">
+                                        Instagram
+                                    </a>
+                                    <a href="" class="link menu">
+                                        TikTok
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column gap-3">
+                                <h6 class="text-color-2" style="text-transform: uppercase;">Service</h6>
+                                <div class="d-flex flex-column gap-3">
+                                    <a href="" class="link menu">
+                                        Door & Lock Repair
+                                    </a>
+                                    <a href="" class="link menu">
+                                        Wall Installations
+                                    </a>
+                                    <a href="" class="link menu">
+                                        Home Repairs
+                                    </a>
+                                    <a href="" class="link menu">
+                                        Furniture Assembly
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column gap-3">
+                                <h6 class="text-color-2" style="text-transform: uppercase;">Legals</h6>
+                                <div class="d-flex flex-column gap-3">
+                                    <a href="" class="link menu">
+                                        Privacy Policy
+                                    </a>
+                                    <a href="" class="link menu">
+                                        Terms of Use
+                                    </a>
+                                    <a href="" class="link menu">
+                                        Cookies Policy
+                                    </a>
+                                    <a href="" class="link menu">
+                                        Disclaimer
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-xl-4 mb-3">
+                        <div class="d-flex flex-column gap-3">
+                            <h5>Subscribe to Our Newsletter</h5>
+                            <p>Stay updated with home maintenance tips, DIY tricks, exclusive offers, and more!</p>
+                            <div class="d-flex flex-column gap-3">
+                                <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                                    <div 
+                                        class="toast success_msg_subscribe bg-dark-transparent text-white" role="alert"
+                                        aria-live="assertive" aria-atomic="true">
+                                        <div class="d-flex">
+                                            <div class="toast-body">
+                                                Your Subscribe Send Successfully!.
+                                            </div>
+                                            <button type="button" class="btn me-2 m-auto text-white"
+                                                data-bs-dismiss="toast" aria-label="Close">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <form
+                                        class="d-flex flex-column h-100 justify-content-center w-100 needs-validation form"
+                                        novalidate>
+                                        <input type="text" name="action" value="subscribe" hidden>
+                                        <div
+                                            class="input-group gap-3 mb-xl-2 mb-0 position-relative custom-input-group">
+                                            <input type="email" class="form-control subscribe custom-email-input"
+                                                placeholder="Enter your email" name="email" required>
+                                            <button
+                                                class="btn btn-accent custom-submit-button submit_subscribe rounded-pill"
+                                                style="width: max-content;" type="submit">
+                                                <i class="rtmicon rtmicon-arrow-up-right"></i>
+                                            </button>
+                                            <div class="invalid-feedback position-absolute bottom-0"
+                                                style="margin-bottom: -2rem; margin-left: 1rem;">
+                                                Please provide a valid email format (e.g., user@example.com).
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-xl-row flex-column align-self-xl-end gap-5">
+                    <a href="" class="link menu">
+                        Facebook
+                    </a>
+                    <a href="" class="link menu">
+                        Instagram
+                    </a>
+                    <a href="" class="link menu">
+                        Tiktok
+                    </a>
+                    <a href="" class="link menu">
+                        Youtube
+                    </a>
+                </div>
+                <div class="d-flex flex-xl-row flex-column align-items-xl-end justify-content-between"
+                    style="gap: 4rem;">
+                    <a class="me-xl-auto" href="#"><img src="image/logo.png" alt="" width="250" class="img-fluid"></a>
+                    <span class="text-color-2 font-2">
+                        Copyright © 2025 [NOME DO CLIENTE]. All Rights Reserved.
+                    </span>
+                    <span class="text-color-2 fs-6 font-2">
+                        Terms of Service
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="js/vendor/swiper-bundle.min.js"></script>
+    <script src="js/vendor/fontawesome/all.js"></script>
+    <script src="js/vendor/fontawesome/all.min.js"></script>
+    <script src="js/vendor/fontawesome/brands.js"></script>
+    <script src="js/vendor/fontawesome/brands.min.js"></script>
+    <script src="js/vendor/fontawesome/fontawesome.js"></script>
+    <script src="js/vendor/fontawesome/fontawesome.min.js"></script>
+    <script src="js/vendor/fontawesome/regular.js"></script>
+    <script src="js/vendor/fontawesome/regular.min.js"></script>
+    <script src="js/vendor/fontawesome/solid.js"></script>
+    <script src="js/vendor/fontawesome/solid.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/swiper-script.js"></script>
+    <script src="js/submit-form.js"></script>
+    <script src="js/vendor/isotope.pkgd.min.js"></script>
+    <script src="js/video_embedded.js"></script>
+    <script src="js/vendor/fslightbox.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.0/oyethemes_onscroll_animation.js"></script>
+</body>
+
+</html>

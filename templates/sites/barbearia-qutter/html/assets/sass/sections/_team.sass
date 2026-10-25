@@ -1,0 +1,71 @@
+/*******************************************************/
+/******************* 15. Team Area *********************/
+/*******************************************************/
+.team-area
+    +res-ab(xxl)
+        +gapLR(padding, 55px)
+
+.team-member-wrap
+    +colgap(50px)
+    +flexcenter(space-between)
+    +res-bl(lb)
+        +colgap(30px)
+    +res-bl(lp)
+        flex-wrap: wrap
+        justify-content: center
+    .team-member
+        +res-ab(sm)
+            max-width: 50%
+        
+.team-member
+    text-align: center
+    margin-bottom: 25px
+    .image
+        position: relative
+        margin-bottom: 30px
+        .social-style-two
+            +size(100%)
+            left: 50%
+            top: 50%
+            opacity: 0
+            padding: 25px 0
+            transition: 0.5s
+            align-items: end
+            position: absolute
+            justify-content: center
+            transform: scaleY(0.5) translate(-50%, -100%)
+            background-image: linear-gradient( 45deg, rgba(31,31,31,0.85098) 0%, rgba(31,31,31,0.43) 60%, rgba(31,31,31,0) 100%)
+    h3
+        margin-bottom: 5px
+    .designation
+        font-weight: 500
+        color: $primary-color
+    &:hover
+        .social-style-two
+            opacity: 1
+            transform: scaleY(1) translate(-50%, -50%)
+    &.style-two
+        padding: 20px
+        transition: 0.5s
+        border-radius: 7px
+        background: $black-color
+        .social-style-two
+            background: transparentize($black-color-two, 0.25)
+        h3
+            font-size: 20px
+        .designation
+            transition: 0.5s
+        &:hover
+            background: $primary-color
+            .designation
+                color: white
+            
+.text-white
+    .team-member
+        .social-style-two
+            a
+                i
+                    transition: 0.5s
+                &:not(:hover)
+                    i
+                        color: $base-color

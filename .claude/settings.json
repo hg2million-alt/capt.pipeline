@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/setup-nuvem.sh\"",
+            "timeout": 300
+          }
+        ]
+      }
+    ]
+  },
+  "enableAllProjectMcpServers": true
+}

@@ -1,0 +1,152 @@
+/**
+ * Contact
+ */
+
+.google-map {
+    height: 500px;
+
+    &-bubble {
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        border-radius: 100px;
+        background: $color-theme;
+    }
+}
+
+.tm-contact {
+    &-top {
+        margin-top: -180px;
+    }
+
+    &-block {
+        padding: 50px 30px;
+        transition: $transition;
+        background: $color-grey;
+
+        &-icon {
+            display: inline-block;
+            height: 170px;
+            width: 170px;
+            line-height: 150px;
+            text-align: center;
+            background: #ffffff;
+            border-radius: 1000px;
+            padding: 10px;
+            margin-bottom: 25px;
+            transition: $transition;
+        }
+
+        &-content {
+            a {
+                color: $color-body;
+
+                &:hover {
+                    color: $color-theme;
+                }
+            }
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+
+        &:hover {
+            box-shadow: $shadow;
+            background: #ffffff;
+        }
+
+        &:hover &-icon {
+            background: $color-grey;
+        }
+
+        &:hover &-content {
+            .tm-button {
+                background: $color-theme;
+                border-color: $color-theme;
+                color: #ffffff;
+            }
+        }
+    }
+
+    &-form {
+        h2 {
+            margin-bottom: 20px;
+            margin-top: -7px;
+        }
+    }
+
+    &-forminner {
+        .tm-form-inner {
+            margin-top: 0;
+        }
+
+        .tm-form-field {
+            textarea {
+                min-height: 210px;
+            }
+        }
+    }
+
+    @media #{$layout-notebook} {
+        &-block {
+            &-icon {
+                height: 125px;
+                width: 125px;
+                line-height: 105px;
+            }
+        }
+    }
+
+    @media #{$layout-tablet} {
+        &-top {
+            margin-top: -120px;
+        }
+
+        &-block {
+            &-icon {
+                height: 125px;
+                width: 125px;
+                line-height: 105px;
+            }
+        }
+    }
+
+    @media #{$layout-mobile-lg} {
+        &-top {
+            margin-top: -120px;
+        }
+
+        &-block {
+            padding: 30px 20px;
+
+            &-icon {
+                height: 125px;
+                width: 125px;
+                line-height: 105px;
+            }
+        }
+    }
+
+    @media #{$layout-mobile-sm} {
+        &-form {
+            h2 {
+                font-size: 26px;
+                line-height: 36px;
+            }
+        }
+    }
+}
+
+
+.bg-grey {
+    .tm-contact {
+        &-block {
+            background: #ffffff;
+
+            &-icon {
+                background: $color-grey;
+            }
+        }
+    }
+}

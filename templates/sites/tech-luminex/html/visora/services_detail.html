@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="image/favicon.png">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.2/animation_utility.css" />
+    <title>[NOME DO CLIENTE] — Consultoria de TI</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header" class="fixed-top mx-auto">
+        <div class="mx-auto align-items-center" style="max-width: 1770px;">
+            <nav class="navbar navbar-expand-xl">
+                <div class="container-fluid ps-3">
+                    <div class="logo-container">
+                        <a class="navbar-brand" href="#"><img src="image/Logo.png" alt="" class="img-fluid"></a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto mb-2 mb-xl-0 gap-xl-4 gap-1">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" aria-current="page" href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="team.html">Team</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="team_detail.html">Team Detail</a></li>
+                                    <li><a class="dropdown-item active" href="services_detail.html">Services Detail</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="study_case.html">Case Study</a></li>
+                                    <li><a class="dropdown-item" href="case_study_detail.html">Case Study Detail</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="testimonials.html">Testimonial</a></li>
+                                    <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                                    <li><a class="dropdown-item" href="404.html">404</a></li>
+                                    <li><a class="dropdown-item" href="coming_soon.html">Coming Soon</a></li>
+                                    <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                                    <li><a class="dropdown-item" href="pricing.html">Pricing Plan</a></li>
+                                    <li><a class="dropdown-item" href="blog.html">Blog Grid</a></li>
+                                    <li><a class="dropdown-item" href="single_post_side_bar.html">Single Post With Side
+                                            Bar</a></li>
+                                    <li><a class="dropdown-item" href="single_post_no_side_bar.html">Single Post Without
+                                            Side Bar</a></li>
+                                    <li><a class="dropdown-item" href="contact_us.html">Contact Us</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="w-max-content mx-xl-0 mx-auto">
+                            <a href="contact_us.html" class="btn btn-accent orange">
+                                <span>Contact Us</span>
+                                <span class="gradient-container">
+                                    <span class="gradient"></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Main -->
+    <main>
+        <!-- Section Hero -->
+        <div class="section position-relative">
+            <div class="r-container">
+                <div class="bg-banner second">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb scrollanimation animated fadeInUp adr-5">
+                            <li class="breadcrumb-item">
+                                <a href="index.html">Home</a>
+                                <i class="rtmicon rtmicon-chevron-right fw-bold"></i>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="services.html">Services</a>
+                                <i class="rtmicon rtmicon-chevron-right fw-bold"></i>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                <p><span class="text-accent second">Services Detail</span></p>
+                            </li>
+                        </ol>
+                    </nav>
+                    <h1 class="scrollanimation animated fadeInUp adr-5">
+                        Secure. Reliable. <br>
+                        Always Accessible.
+                    </h1>
+                    <p class="scrollanimation animated fadeInUp adr-5 adl-1">
+                        Protect your business data with Visora’s enterprise-grade backup and storage solutions —
+                        designed for scalability, speed, and complete peace of mind.
+                    </p>
+                </div>
+            </div>
+            <canvas id="wave"></canvas>
+        </div>
+        <div class="section marquee-banner">
+            <div class="marquee-container position-relative custom-contain">
+                <div class="marquee-content">
+                    <div class="marquee-item d-flex align-items-center justify-content-center">
+                        <img src="image/logo-1.png" class="img-fluid" alt="" />
+                    </div>
+                    <div class="marquee-item d-flex align-items-center justify-content-center">
+                        <img src="image/logo-2.png" class="img-fluid" alt="" />
+                    </div>
+                    <div class="marquee-item d-flex align-items-center justify-content-center">
+                        <img src="image/logo-3.png" class="img-fluid" alt="" />
+                    </div>
+                    <div class="marquee-item d-flex align-items-center justify-content-center">
+                        <img src="image/logo-4.png" class="img-fluid" alt="" />
+                    </div>
+                    <div class="marquee-item d-flex align-items-center justify-content-center">
+                        <img src="image/logo-5.png" class="img-fluid" alt="" />
+                    </div>
+                </div>
+                <div class="rectangle-3"></div>
+            </div>
+        </div>
+        <!-- End Hero -->
+
+        <!-- Section Services Detail -->
+        <div class="section">
+            <div class="r-container">
+                <div class="d-flex flex-column gap-5">
+                    <div class="card-img-service-detail">
+                        <img src="image/dummy-img-1920x1280.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="row row-cols-lg-2 row-cols-1">
+                        <div class="col col-xl-8 mb-3">
+                            <div class="d-flex flex-column gap-4">
+                                <div class="d-flex flex-column gap-2">
+                                    <h3 class="scrollanimation animated fadeIn adr-5">Data Backup & Storage</h3>
+                                    <p class="scrollanimation animated fadeInUp adr-5 adl-1">
+                                        Your data is your most valuable asset. At Visora, we deliver comprehensive data
+                                        backup and storage solutions that safeguard critical information from loss,
+                                        downtime, and cyber threats.
+                                    </p>
+                                    <p class="scrollanimation animated fadeInUp adr-5 adl-1">
+                                        Our team ensures secure, automated backups, quick recovery times, and
+                                        cloud-based scalability — so your business stays operational no matter what
+                                        happens.
+                                    </p>
+                                    <p class="scrollanimation animated fadeInUp adr-5 adl-1">
+
+                                        Whether you’re running on-premises, in the cloud, or hybrid environments, Visora
+                                        builds storage infrastructures that are resilient, compliant, and
+                                        cost-efficient.
+                                    </p>
+                                </div>
+                                <div class="wrapper-services-detail d-flex flex-column gap-2">
+                                    <div class=" row row-cols-xl-2 row-cols-1">
+                                        <div class="col mb-3">
+                                            <div class="card-services-detail">
+                                                <div class="card-services-detail-item">
+                                                    <div class="icon-box">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            viewBox="0 0 16 16" fill="none">
+                                                            <path
+                                                                d="M5.46667 7.46667H14.2667C15.2213 7.46667 16 6.63467 16 5.61067C16 4.58667 15.2213 3.75467 14.2667 3.75467H14.2293C14.0907 2.38933 13.0133 1.32267 11.712 1.32267C11.216 1.32267 10.7413 1.48267 10.336 1.76533C9.85067 0.714667 8.84267 0 7.712 0C6.096 0 4.77867 1.424 4.77867 3.17867C4.77867 3.41333 4.80533 3.648 4.85333 3.87733C4.19733 4.144 3.73333 4.82133 3.73333 5.61067C3.73333 6.63467 4.512 7.46667 5.46667 7.46667ZM5.46667 4.82133H5.54133C5.72267 4.82133 5.888 4.73067 5.984 4.58133C6.08533 4.432 6.10133 4.24533 6.032 4.08C5.90933 3.792 5.85067 3.488 5.85067 3.17333C5.85067 2.01067 6.688 1.06133 7.71733 1.06133C8.62933 1.06133 9.424 1.82933 9.55733 2.85333C9.58933 3.07733 9.74933 3.25333 9.968 3.30133C10.1867 3.34933 10.4107 3.25867 10.5333 3.072C10.816 2.63467 11.2427 2.384 11.712 2.384C12.5227 2.384 13.1787 3.13067 13.1787 4.05333C13.1787 4.08533 13.1787 4.11733 13.168 4.144L13.1573 4.23467C13.1413 4.384 13.1947 4.53333 13.296 4.64533C13.3973 4.75733 13.5413 4.82133 13.6907 4.82133H14.2667C14.6347 4.82133 14.9333 5.17333 14.9333 5.61067C14.9333 6.048 14.6347 6.4 14.2667 6.4H5.46667C5.09867 6.4 4.8 6.048 4.8 5.61067C4.8 5.17333 5.09867 4.82133 5.46667 4.82133Z"
+                                                                fill="#FBFAF9" />
+                                                            <path
+                                                                d="M7.296 4.91733H7.56267C7.856 4.91733 8.096 4.67733 8.096 4.384C8.096 4.09067 7.856 3.85067 7.56267 3.85067H7.296C7.00267 3.85067 6.76267 4.09067 6.76267 4.384C6.76267 4.67733 7.00267 4.91733 7.296 4.91733Z"
+                                                                fill="#FBFAF9" />
+                                                            <path
+                                                                d="M9.42933 4.91733H9.696C9.98933 4.91733 10.2293 4.67733 10.2293 4.384C10.2293 4.09067 9.98933 3.85067 9.696 3.85067H9.42933C9.136 3.85067 8.896 4.09067 8.896 4.384C8.896 4.67733 9.136 4.91733 9.42933 4.91733Z"
+                                                                fill="#FBFAF9" />
+                                                            <path
+                                                                d="M14.4907 9.67467C14.288 9.42933 13.872 9.42933 13.6693 9.67467L12.336 11.2747C12.1493 11.4987 12.176 11.8347 12.4053 12.0267C12.6293 12.2133 12.9653 12.1867 13.1573 11.9573L13.5467 11.488V12.592C13.5467 12.8853 13.3067 13.1253 13.0133 13.1253H10.1333V11.536C10.1333 10.7413 9.488 10.096 8.69333 10.096H7.16267L6.31467 8.93867C6.05867 8.49067 5.584 8.21333 5.06133 8.21333H1.44C0.645333 8.21333 0 8.85867 0 9.65333V14.56C0 15.3547 0.645333 16 1.44 16H8.69333C9.488 16 10.1333 15.3547 10.1333 14.56V14.1973H13.0133C13.8933 14.1973 14.6133 13.4773 14.6133 12.5973V11.4933L15.0027 11.9627C15.1093 12.0907 15.2587 12.1547 15.4133 12.1547C15.536 12.1547 15.6533 12.112 15.7547 12.032C15.9787 11.8453 16.0107 11.5093 15.824 11.28L14.4907 9.68V9.67467ZM8.69333 14.9333H1.44C1.232 14.9333 1.06667 14.768 1.06667 14.56V9.65333C1.06667 9.44533 1.232 9.28 1.44 9.28H5.06133C5.2 9.28 5.328 9.35467 5.392 9.47733C5.40267 9.49867 5.41867 9.52 5.43467 9.54133L5.84 10.096H4.74133C4.448 10.096 4.208 10.336 4.208 10.6293C4.208 10.9227 4.448 11.1627 4.74133 11.1627H8.69333C8.90133 11.1627 9.06667 11.328 9.06667 11.536V13.536C9.056 13.5787 9.04 13.616 9.04 13.664C9.04 13.712 9.056 13.7493 9.06667 13.792V14.5653C9.06667 14.7733 8.90133 14.9387 8.69333 14.9387V14.9333Z"
+                                                                fill="#FBFAF9" />
+                                                            <path
+                                                                d="M2.704 13.0667H2.4C2.10667 13.0667 1.86667 13.3067 1.86667 13.6C1.86667 13.8933 2.10667 14.1333 2.4 14.1333H2.704C2.99733 14.1333 3.23733 13.8933 3.23733 13.6C3.23733 13.3067 2.99733 13.0667 2.704 13.0667Z"
+                                                                fill="#FBFAF9" />
+                                                            <path
+                                                                d="M5.12 13.0667H4.816C4.52267 13.0667 4.28267 13.3067 4.28267 13.6C4.28267 13.8933 4.52267 14.1333 4.816 14.1333H5.12C5.41333 14.1333 5.65333 13.8933 5.65333 13.6C5.65333 13.3067 5.41333 13.0667 5.12 13.0667Z"
+                                                                fill="#FBFAF9" />
+                                                        </svg>
+                                                    </div>
+                                                    <h5>
+                                                        <span class="text-accent second">Cloud Backup</span>
+                                                    </h5>
+                                                </div>
+                                                <p>
+                                                    Store and protect business data in secure, redundant cloud
+                                                    environments.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col mb-3">
+                                            <div class="card-services-detail active">
+                                                <div class="card-services-detail-item">
+                                                    <div class="icon-box">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            viewBox="0 0 20 20" fill="none">
+                                                            <path
+                                                                d="M9.51301 7.06471L7.69179 8.88592L7.11808 8.31221C6.85791 8.05204 6.43762 8.05204 6.17745 8.31221C5.91728 8.57238 5.91728 8.99266 6.17745 9.25284L7.21815 10.2935C7.35157 10.427 7.51835 10.487 7.69179 10.487C7.86524 10.487 8.03202 10.4203 8.16544 10.2935L10.4603 8.00534C10.7205 7.74516 10.7205 7.32488 10.4603 7.06471C10.2001 6.80454 9.77985 6.80454 9.51968 7.06471H9.51301Z"
+                                                                fill="#FBFAF9" />
+                                                            <path
+                                                                d="M18.6591 9.72648V7.16478C18.6591 6.79786 18.3589 6.49766 17.992 6.49766H16.9113C16.8446 6.31754 16.7712 6.1441 16.6911 5.97065L17.4583 5.21014C17.5851 5.08339 17.6518 4.91661 17.6518 4.73649C17.6518 4.55637 17.5851 4.38959 17.4583 4.26284L15.9306 2.73516V2.72849H15.9239L14.3963 1.2008C14.2695 1.07405 14.1027 1.00734 13.9226 1.00734C13.7425 1.00734 13.5757 1.08072 13.449 1.2008L12.6885 1.96798C12.515 1.88793 12.3416 1.81454 12.1614 1.74783V0.667111C12.1614 0.3002 11.8612 0 11.4943 0H7.15811C6.79119 0 6.49099 0.3002 6.49099 0.667111V1.74783C6.31087 1.81454 6.13743 1.88793 5.96398 1.96798L5.20347 1.2008C5.07672 1.07405 4.90994 1.00734 4.72982 1.00734C4.5497 1.00734 4.38292 1.08072 4.25617 1.2008L2.72849 2.72849C2.72849 2.72849 2.72849 2.72849 2.72181 2.72849C2.71514 2.72849 2.72181 2.72849 2.72181 2.73516L1.19413 4.26284C1.06738 4.38959 1.00067 4.55637 1.00067 4.73649C1.00067 4.91661 1.07405 5.08339 1.2008 5.21014L1.96798 5.97065C1.88793 6.1441 1.81454 6.31754 1.74783 6.49766H0.667111C0.3002 6.49766 0 6.79786 0 7.16478V11.501C0 11.8679 0.3002 12.1681 0.667111 12.1681H1.74783C1.81454 12.3482 1.88793 12.5217 1.96798 12.6951L1.2008 13.4556C1.07405 13.5824 1.00734 13.7492 1.00067 13.9293C0.993996 14.1094 1.06738 14.2762 1.19413 14.4029L2.72181 15.9306C2.72181 15.9306 2.72181 15.9306 2.72181 15.9373C2.72181 15.944 2.72181 15.9373 2.72849 15.9373L4.25617 17.465C4.38292 17.5917 4.5497 17.6584 4.72982 17.6584C4.90994 17.6584 5.07672 17.5851 5.20347 17.465L5.96398 16.6978C6.13743 16.7779 6.31087 16.8512 6.49099 16.9179V17.9987C6.49099 18.3656 6.79119 18.6658 7.15811 18.6658H9.41294C10.3002 19.573 12.455 20 14.4963 20C17.1448 20 20 19.2862 20 17.7185V11.2675C20 10.5937 19.473 10.0801 18.6658 9.71314L18.6591 9.72648ZM18.6658 14.4696C18.5457 14.7498 17.1314 15.4503 14.4897 15.4503C11.8479 15.4503 10.4336 14.7498 10.3202 14.503V12.8352C11.3943 13.3289 12.9753 13.5624 14.4897 13.5624C16.004 13.5624 17.5851 13.3289 18.6591 12.8352V14.4763L18.6658 14.4696ZM18.6458 11.2809C18.439 11.5744 17.0314 12.2282 14.4897 12.2282C11.948 12.2282 10.4536 11.541 10.3202 11.3209V11.3075C10.4536 11.0274 11.8612 10.3336 14.4897 10.3336C17.1181 10.3336 18.439 10.9807 18.6458 11.2809ZM8.98599 11.2809V13.7825C6.6978 13.6091 4.8499 11.6878 4.8499 9.33289C4.8499 6.97798 6.85791 4.86324 9.31955 4.86324C11.7812 4.86324 13.6091 6.6978 13.7759 9.01935C11.3542 9.13943 8.98599 9.85324 8.98599 11.2809ZM7.3449 15.8039C6.93129 15.6771 6.52435 15.5103 6.13742 15.3035C5.87725 15.1634 5.55704 15.2101 5.35023 15.4169L4.72315 16.0507L4.13609 15.4636L4.65644 14.9433C4.91661 14.6831 4.91661 14.2628 4.65644 14.0027C4.39626 13.7425 3.97598 13.7425 3.71581 14.0027L3.19546 14.523L2.60841 13.936L3.24216 13.3089C3.44897 13.1021 3.50233 12.7819 3.36224 12.5217C3.15544 12.1348 2.98866 11.7345 2.86191 11.3142C2.77518 11.034 2.51501 10.8406 2.22148 10.8406H1.32755V10.0067H2.06137C2.42829 10.0067 2.72849 9.70647 2.72849 9.33956C2.72849 8.97265 2.42829 8.67245 2.06137 8.67245H1.32755V7.83856H2.22148C2.51501 7.83856 2.77518 7.6451 2.86191 7.36491C2.98866 6.9513 3.15544 6.54436 3.36224 6.15744C3.50233 5.89726 3.45564 5.57705 3.24216 5.37025L2.60841 4.74316L3.19546 4.1561L3.71581 4.67645C3.84923 4.80987 4.01601 4.86991 4.18946 4.86991C4.36291 4.86991 4.52969 4.8032 4.66311 4.67645C4.92328 4.41628 4.92328 3.996 4.66311 3.73582L4.14276 3.21548L4.72982 2.62842L5.3569 3.26217C5.56371 3.46898 5.88392 3.52235 6.1441 3.37558C6.53102 3.16878 6.93129 3.002 7.35157 2.87525C7.63175 2.78853 7.82522 2.52835 7.82522 2.23482V1.34089H8.65911V2.07472C8.65911 2.44163 8.95931 2.74183 9.32622 2.74183C9.69313 2.74183 9.99333 2.44163 9.99333 2.07472V1.34089H10.8272V2.23482C10.8272 2.52835 11.0207 2.78853 11.3009 2.87525C11.7145 3.002 12.1214 3.16878 12.5083 3.37558C12.7685 3.51568 13.0887 3.46898 13.2955 3.26217L13.9226 2.62842L14.5097 3.21548L13.9893 3.73582C13.7292 3.996 13.7292 4.41628 13.9893 4.67645C14.1227 4.80987 14.2895 4.86991 14.463 4.86991C14.6364 4.86991 14.8032 4.8032 14.9366 4.67645L15.457 4.1561L16.044 4.74316L15.4103 5.37025C15.2035 5.57705 15.1501 5.89726 15.2969 6.15744C15.5037 6.54436 15.6704 6.94463 15.7972 7.36491C15.8839 7.6451 16.1441 7.83856 16.4376 7.83856H17.3316V9.29953C16.6444 9.1461 15.8839 9.0527 15.1167 9.01935C14.95 5.97065 12.4216 3.53569 9.32622 3.53569C6.23082 3.53569 3.52235 6.13742 3.52235 9.33956C3.52235 12.5417 5.95063 14.95 8.99266 15.1234V17.3449H7.82522V16.451C7.82522 16.1574 7.63175 15.8973 7.35157 15.8105L7.3449 15.8039ZM14.4897 18.6724C11.8479 18.6724 10.4336 17.972 10.3202 17.7251V16.0574C11.3943 16.551 12.9753 16.7845 14.4897 16.7845C16.004 16.7845 17.5851 16.551 18.6591 16.0574V17.6985C18.5457 17.9787 17.1314 18.6791 14.4897 18.6791V18.6724Z"
+                                                                fill="#FBFAF9" />
+                                                        </svg>
+                                                    </div>
+                                                    <h5>
+                                                        <span class="text-accent second">Disaster Recovery</span>
+                                                    </h5>
+                                                </div>
+                                                <p>
+                                                    Minimize downtime and data loss with automated recovery systems
+                                                    designed
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row row-cols-xl-2 row-cols-1">
+                                        <div class="col mb-3">
+                                            <div class="card-services-detail">
+                                                <div class="card-services-detail-item">
+                                                    <div class="icon-box">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            viewBox="0 0 20 20" fill="none">
+                                                            <path
+                                                                d="M3 3.66H3.33333C3.7 3.66 4 3.36 4 2.99333C4 2.62667 3.7 2.32667 3.33333 2.32667H3C2.63333 2.32667 2.33333 2.62667 2.33333 2.99333C2.33333 3.36 2.63333 3.66 3 3.66Z"
+                                                                fill="#FBFAF9" />
+                                                            <path
+                                                                d="M6.33333 7.74667H3C2.63333 7.74667 2.33333 8.04667 2.33333 8.41333C2.33333 8.78 2.63333 9.08 3 9.08H6.33333C6.7 9.08 7 8.78 7 8.41333C7 8.04667 6.7 7.74667 6.33333 7.74667Z"
+                                                                fill="#FBFAF9" />
+                                                            <path
+                                                                d="M6.33333 5.23333H3C2.63333 5.23333 2.33333 5.53333 2.33333 5.9C2.33333 6.26667 2.63333 6.56667 3 6.56667H6.33333C6.7 6.56667 7 6.26667 7 5.9C7 5.53333 6.7 5.23333 6.33333 5.23333Z"
+                                                                fill="#FBFAF9" />
+                                                            <path
+                                                                d="M15.44 12.66C15.7267 13.62 16.6133 14.3267 17.6667 14.3267C18.9533 14.3267 20 13.28 20 11.9933C20 10.7067 18.9533 9.66 17.6667 9.66C16.6133 9.66 15.7333 10.3667 15.44 11.3267H12.7V6.99333H15.44C15.7267 7.95333 16.6133 8.66 17.6667 8.66C18.9533 8.66 20 7.61333 20 6.32667C20 5.04 18.9533 3.99333 17.6667 3.99333C16.6133 3.99333 15.7333 4.7 15.44 5.66H9.33333V3.99333C9.33333 3.82 9.27333 3.64667 9.14667 3.52L5.80667 0.186667C5.68 0.06 5.50667 0 5.33333 0H0.666667C0.3 0 0 0.3 0 0.666667V10.7533C0 11.12 0.3 11.42 0.666667 11.42H8.66667C9.03333 11.42 9.33333 11.12 9.33333 10.7533V7H11.3733V16.3333C11.3733 17.4333 12.2733 18.3333 13.3733 18.3333H15.4467C15.7333 19.2933 16.62 20 17.6733 20C18.96 20 20.0067 18.9533 20.0067 17.6667C20.0067 16.38 18.96 15.3333 17.6733 15.3333C16.62 15.3333 15.74 16.04 15.4467 17H13.3733C13.0067 17 12.7067 16.7 12.7067 16.3333V12.6667H15.4467L15.44 12.66ZM17.6667 10.9933C18.22 10.9933 18.6667 11.44 18.6667 11.9933C18.6667 12.5467 18.22 12.9933 17.6667 12.9933C17.1133 12.9933 16.6667 12.5467 16.6667 11.9933C16.6667 11.44 17.1133 10.9933 17.6667 10.9933ZM6 2.26667L7.06 3.32667H6.33333C6.14667 3.32667 6 3.18 6 2.99333V2.26667ZM8 10.0733H1.33333V1.32667H4.66667V2.99333C4.66667 3.91333 5.41333 4.66 6.33333 4.66H8V10.08V10.0733ZM17.6667 5.32C18.22 5.32 18.6667 5.76667 18.6667 6.32C18.6667 6.87333 18.22 7.32 17.6667 7.32C17.1133 7.32 16.6667 6.87333 16.6667 6.32C16.6667 5.76667 17.1133 5.32 17.6667 5.32ZM17.6667 16.6533C18.22 16.6533 18.6667 17.1 18.6667 17.6533C18.6667 18.2067 18.22 18.6533 17.6667 18.6533C17.1133 18.6533 16.6933 18.2267 16.6733 17.6867C16.6733 17.6733 16.68 17.66 16.68 17.6533C16.68 17.6467 16.68 17.6267 16.6733 17.62C16.6933 17.0867 17.1333 16.6533 17.6667 16.6533Z"
+                                                                fill="#FBFAF9" />
+                                                            <path
+                                                                d="M8.66667 12.7267H0.666667C0.3 12.7267 0 13.0267 0 13.3933V16.7467C0 17.1133 0.3 17.4133 0.666667 17.4133H8.66667C9.03333 17.4133 9.33333 17.1133 9.33333 16.7467V13.3933C9.33333 13.0267 9.03333 12.7267 8.66667 12.7267ZM8 16.08H1.33333V14.06H8V16.08Z"
+                                                                fill="#FBFAF9" />
+                                                        </svg>
+                                                    </div>
+                                                    <h5>
+                                                        <span class="text-accent second"> Scalable Storage</span>
+                                                    </h5>
+                                                </div>
+                                                <p>
+                                                    Flexible storage capacity that grows with your business
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col mb-3">
+                                            <div class="card-services-detail">
+                                                <div class="card-services-detail-item">
+                                                    <div class="icon-box">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            viewBox="0 0 20 20" fill="none">
+                                                            <path
+                                                                d="M7.60667 3.66667H9.38667C9.75333 3.66667 10.0533 3.36667 10.0533 3C10.0533 2.63333 9.75333 2.33333 9.38667 2.33333H7.60667C7.24 2.33333 6.94 2.63333 6.94 3C6.94 3.36667 7.24 3.66667 7.60667 3.66667Z"
+                                                                fill="#FBFAF9" />
+                                                            <path
+                                                                d="M6.27333 3C6.27333 2.63333 5.97333 2.33333 5.60667 2.33333H5.27333C4.90667 2.33333 4.60667 2.63333 4.60667 3C4.60667 3.36667 4.90667 3.66667 5.27333 3.66667H5.60667C5.97333 3.66667 6.27333 3.36667 6.27333 3Z"
+                                                                fill="#FBFAF9" />
+                                                            <path
+                                                                d="M7.28667 6.19333C7.28667 6.56 7.58667 6.86 7.95333 6.86H12.68C13.0467 6.86 13.3467 6.56 13.3467 6.19333C13.3467 5.82667 13.0467 5.52667 12.68 5.52667H7.95333C7.58667 5.52667 7.28667 5.82667 7.28667 6.19333Z"
+                                                                fill="#FBFAF9" />
+                                                            <path
+                                                                d="M5.66667 12.6267C5.3 12.6267 5 12.9267 5 13.2933V13.7067C5 14.0733 5.3 14.3733 5.66667 14.3733C6.03333 14.3733 6.33333 14.0733 6.33333 13.7067V13.2933C6.33333 12.9267 6.03333 12.6267 5.66667 12.6267Z"
+                                                                fill="#FBFAF9" />
+                                                            <path
+                                                                d="M8.58 12.6267C8.21333 12.6267 7.91333 12.9267 7.91333 13.2933V13.7067C7.91333 14.0733 8.21333 14.3733 8.58 14.3733C8.94667 14.3733 9.24667 14.0733 9.24667 13.7067V13.2933C9.24667 12.9267 8.94667 12.6267 8.58 12.6267Z"
+                                                                fill="#FBFAF9" />
+                                                            <path
+                                                                d="M19.3867 11.0867C18.9733 11.0533 18.5133 10.5467 18.38 10.3733C18.2867 10.2467 18.1533 10.1533 18 10.1133V8.38C18 8.01333 17.7 7.71333 17.3333 7.71333H15.6667V4C15.6667 3.82 15.5933 3.65333 15.4733 3.52667L12.14 0.193333C12.0133 0.0666666 11.8467 0 11.6667 0H3C2.63333 0 2.33333 0.3 2.33333 0.666667V5.12667H0.666667C0.3 5.12667 0 5.42667 0 5.79333V17.3333C0 18.4333 0.873333 19.3333 1.94667 19.3333H14.0867L15.1267 19.9133C15.2267 19.9733 15.34 20 15.4533 20C15.58 20 15.7067 19.96 15.82 19.8933L17.1533 19.0133C18.94 17.84 20.0067 15.92 20.0067 13.8733V11.7533C20.0067 11.4067 19.74 11.1133 19.3933 11.0867H19.3867ZM12.3333 2.27333L13.3933 3.33333H12.3333V2.27333ZM3.66667 1.33333H11V4C11 4.36667 11.3 4.66667 11.6667 4.66667H14.3333V7.71333H7.66L5.86 5.38667C5.73333 5.22667 5.54 5.12667 5.33333 5.12667H3.66667V1.33333ZM1.33333 17.3333V6.46H5.00667L6.80667 8.78667C6.93333 8.94667 7.12667 9.04667 7.33333 9.04667H16.6667V10.0933H12.8267C12.6133 10.0933 12.4133 10.2 12.2867 10.3667C12.2133 10.4667 12.02 10.6867 11.7933 10.8533H2.91333C2.54667 10.8533 2.24667 11.1533 2.24667 11.52V15.52C2.24667 15.8867 2.54667 16.1867 2.91333 16.1867H11.1467C11.4267 16.84 11.82 17.4533 12.32 17.9933H1.94667C1.60667 17.9933 1.33333 17.6933 1.33333 17.3267V17.3333ZM10.76 14.86H3.58V12.1933H10.6667V13.8733C10.6667 14.2067 10.7067 14.5333 10.76 14.86ZM18.6667 13.8733C18.6667 15.4733 17.8267 16.9733 16.42 17.9L15.42 18.5533L14.2467 17.9C12.84 16.9733 12 15.4733 12 13.8733V12.2667C12.5067 12.06 12.9067 11.6867 13.14 11.4267H17.5267C17.76 11.6867 18.16 12.0533 18.6667 12.2667V13.8733Z"
+                                                                fill="#FBFAF9" />
+                                                            <path
+                                                                d="M16.6133 12.94L14.82 14.7L14.0533 13.9333C13.7933 13.6733 13.3733 13.6733 13.1133 13.9333C12.8533 14.1933 12.8533 14.6133 13.1133 14.8733L14.3467 16.1067C14.48 16.2333 14.6467 16.3 14.82 16.3C14.9933 16.3 15.16 16.2333 15.2867 16.1067L17.5533 13.8867C17.8133 13.6267 17.82 13.2067 17.56 12.9467C17.3 12.68 16.88 12.68 16.62 12.94H16.6133Z"
+                                                                fill="#FBFAF9" />
+                                                        </svg>
+                                                    </div>
+                                                    <h5>
+                                                        <span class="text-accent second">Data Encryption</span>
+                                                    </h5>
+                                                </div>
+                                                <p>
+                                                    Protect sensitive information with advanced encryption protocols
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-xl-4 mb-3">
+                            <div class="d-flex flex-column gap-5">
+                                <div class="d-flex flex-column gap-3">
+                                    <h5 class="scrollanimation animated fadeInUp adr-5 adl-1">Other Services</h5>
+                                    <a href="services_detail.html" class="card-other-service">
+                                        <p><span class="text-accent second">Cloud Migration & Deployment</span>
+                                        </p>
+                                    </a>
+                                    <a href="services_detail.html" class=" card-other-service">
+                                        <p><span class="text-accent second">Multi-Cloud Integration</span>
+                                        </p>
+                                    </a>
+                                    <a href="services_detail.html" class=" card-other-service active">
+                                        <p><span class="text-accent second">Data Backup & Storage</span>
+                                        </p>
+                                    </a>
+                                    <a href="services_detail.html" class=" card-other-service">
+                                        <p><span class="text-accent second">Risk Assessment & Threat Management</span>
+                                        </p>
+                                    </a>
+                                    <a href="services_detail.html" class=" card-other-service">
+                                        <p><span class="text-accent second">Data Protection & Recovery</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="card-schedule">
+                                    <h4 class="scrollanimation animated fadeInUp adr-5">
+                                        Facing IT Challenges? <br>
+                                        <span class="text-accent">
+                                            We’re Here to Help!
+                                        </span>
+                                    </h4>
+                                    <p class="scrollanimation animated fadeInUp adr-5 adl-1">
+                                        Let’s identify opportunities, eliminate risks, and optimize your technology for
+                                        growth.
+                                    </p>
+
+                                    <div class="w-max-content scrollanimation animated fadeInUp adr-5 adl-2">
+                                        <a href="contact_us.html" class="btn btn-accent orange schedule">
+                                            <i class="rtmicon rtmicon-classic-phone"></i>
+                                            <span>Schedule a Call</span>
+                                            <span class="gradient-container">
+                                                <span class="gradient"></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="circle-gradient-stack schedule"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Services Detail -->
+
+        <!-- Section FAQ -->
+        <div class="section position-relative">
+            <div class="r-container">
+                <div class="d-flex flex-column align-items-center gap-5">
+                    <div class="card-title">
+                        <div class="bg-title scrollanimation animated fadeInUp adr-5">
+                            <div class="small-text">FAQ</div>
+                        </div>
+                        <h3 class="mw-faq scrollanimation animated fadeInUp adr-5 adl-1">
+                            Got Questions?
+                            <span class="text-accent">We’ve Got Answers.</span>
+                        </h3>
+                    </div>
+                    <div class="accordion faq" id="faqAccordion1">
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                                    What services does Visora provide?
+                                </button>
+                            </div>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1">
+                                <div class="accordion-body">
+                                    Our solutions are designed for startups, SMEs, and enterprises across industries
+                                    like finance, healthcare, retail, and education.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                                    Who can benefit from Visora’s services?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion1">
+                                <div class="accordion-body">
+                                    Our solutions are designed for startups, SMEs, and enterprises across industries
+                                    like finance, healthcare, retail, and education.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                    How does Visora ensure data security?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1">
+                                <div class="accordion-body">
+                                    Our solutions are designed for startups, SMEs, and enterprises across industries
+                                    like finance, healthcare, retail, and education.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                                    Can you customize solutions for specific business needs?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1">
+                                <div class="accordion-body">
+                                    Our solutions are designed for startups, SMEs, and enterprises across industries
+                                    like finance, healthcare, retail, and education.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                                    How can I get started with Visora?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1">
+                                <div class="accordion-body">
+                                    Our solutions are designed for startups, SMEs, and enterprises across industries
+                                    like finance, healthcare, retail, and education.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="circle-gradient-stack faq"></div>
+            <div class="circle-gradient-stack faq-2"></div>
+        </div>
+        <!-- End FAQ -->
+
+        <!-- Section Marquee -->
+        <div class="section marquee">
+            <div class="marquee-container">
+                <div class="marquee-content">
+                    <div class="marquee-item-2">
+                        <h3>Future-Ready IT Starts Here.</h3>
+                    </div>
+                    <div class="marquee-item-2 orange">
+                        <h3>Future-Ready IT Starts Here.</h3>
+                    </div>
+                    <div class="marquee-item-2">
+                        <h3>Future-Ready IT Starts Here.</h3>
+                    </div>
+                    <div class="marquee-item-2 orange">
+                        <h3>Future-Ready IT Starts Here.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Marquee -->
+
+        <!-- Section News & Blog -->
+        <div class="section">
+            <div class="r-container">
+                <div class="d-flex flex-column align-items-center gap-5">
+                    <div class="card-title">
+                        <div class="bg-title scrollanimation animated fadeInUp adr-5">
+                            <div class="small-text">Articles</div>
+                        </div>
+                        <h3 class="mw-choose-us scrollanimation animated fadeInUp adr-5 adl-1">
+                            Insights & Industry <span class="text-accent">Updates</span>
+                        </h3>
+                    </div>
+                    <div class="row row-cols-lg-2 row-cols-1">
+                        <div class="col mb-3">
+                            <div class="card-blog">
+                                <div class="img-blog">
+                                    <img src="image/dummy-img-1920x1280.jpg" class="img-fluid" alt="">
+                                </div>
+                                <a href="blog.html" class="content">
+                                    <div class="d-flex flex-row gap-3">
+                                        <div class="date scrollanimation animated fadeInUp adr-5">
+                                            <i class="rtmicon rtmicon-calendar"></i>
+                                            <p>September 1, 2026</p>
+                                        </div>
+                                        <div class="date scrollanimation animated fadeInUp adr-5">
+                                            <i class="rtmicon rtmicon-users"></i>
+                                            <p>by : RTM</p>
+                                        </div>
+                                    </div>
+                                    <h5 class="text-accent second">
+                                        How Cloud Migration Transforms Efficiency
+                                    </h5>
+                                    <p>
+                                        Discover how strategic cloud adoption can reduce costs, improve scalability, and
+                                        future-proof your operations...
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="card-blog">
+                                <div class="img-blog">
+                                    <img src="image/dummy-img-1920x1280.jpg" class="img-fluid" alt="">
+                                </div>
+                                <a href="blog.html" class="content">
+                                    <div class="d-flex flex-row gap-3">
+                                        <div class="date scrollanimation animated fadeInUp adr-5">
+                                            <i class="rtmicon rtmicon-calendar"></i>
+                                            <p>September 3, 2026</p>
+                                        </div>
+                                        <div class="date scrollanimation animated fadeInUp adr-5">
+                                            <i class="rtmicon rtmicon-users"></i>
+                                            <p>by : RTM</p>
+                                        </div>
+                                    </div>
+                                    <h5 class="text-accent second">
+                                        Top Cybersecurity Practices for 2025
+                                    </h5>
+                                    <p>
+                                        Protect your business with proactive threat detection and compliance-based
+                                        strategies...
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End News & Blog -->
+
+        <!-- Section CTA -->
+        <div class="section bg-cta pb-0">
+            <div class="mx-auto align-items-center container-cta">
+                <div class="card-cta">
+                    <div class="card-title">
+                        <h2 class="scrollanimation animated fadeInUp adr-5">
+                            Let’s Build <br>
+                            <span class="text-accent">Smarter IT Together</span>
+                        </h2>
+                        <p class="mw-cta scrollanimation animated fadeInUp adr-5 adl-1">
+                            Partner with Visora to transform your technology and accelerate your
+                            business growth.
+                        </p>
+                        <div class="d-flex flex-row align-items-center gap-3">
+                            <div class="w-max-content scrollanimation animated fadeInUp adr-5 adl-2">
+                                <a href="contact_us.html" class="btn btn-accent orange">
+                                    <span>Get Started</span>
+                                    <span class="gradient-container">
+                                        <span class="gradient"></span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="w-max-content scrollanimation animated fadeInUp adr-5 adl-3">
+                                <a href="about.html" class="btn btn-accent primary">
+                                    <span>Discover More</span>
+                                    <span class="gradient-container">
+                                        <span class="gradient"></span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section Footer -->
+                    <footer>
+                        <div class="bg-footer">
+                            <div class="row row-cols-xl-2 row-cols-1 w-100">
+                                <div class="col col-xl-8 mb-3">
+                                    <div class="d-flex flex-column gap-5 scrollanimation animated fadeInUp adr-5">
+                                        <img src="image/logo.png" class="img-fluid logo-container" alt="">
+                                        <p class="mw-cta">
+                                            We help companies bridge strategy and technology through reliable,
+                                            future-ready
+                                            IT solutions.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col col-xl-4 mb-3">
+                                    <div class="row row-cols-lg-3 row-cols-1">
+                                        <div class="col mb-3 scrollanimation animated fadeInUp adr-5 adl-1">
+                                            <div class="d-flex flex-column gap-3">
+                                                <a href="index.html" class="link">Homepage</a>
+                                                <a href="about.html" class="link">About</a>
+                                                <a href="services.html" class="link active">Services</a>
+                                            </div>
+                                        </div>
+                                        <div class=" col mb-3 scrollanimation animated fadeInUp adr-5 adl-2">
+                                            <div class="d-flex flex-column gap-3">
+                                                <a href="team.html" class="link">Team</a>
+                                                <a href="faq.html" class="link">FAQ</a>
+                                                <a href="gallery.html" class="link">Gallery</a>
+                                            </div>
+                                        </div>
+                                        <div class="col mb-3 scrollanimation animated fadeInUp adr-5 adl-3">
+                                            <div class="d-flex flex-column gap-3">
+                                                <a href="pricing.html" class="link">Pricing</a>
+                                                <a href="testimonials.html" class="link">Testimonial</a>
+                                                <a href="contact_us.html" class="link">Contact</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row-cols-xl-2 row-cols-1 w-100">
+                                <div class="col col-xl-8 mb-3">
+                                    <div class="card-subscribe scrollanimation animated fadeInUp adr-5 adl-4">
+                                        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                                            <div id="liveToast"
+                                                class="toast success_msg_subscribe bg-dark-transparent text-white"
+                                                role="alert" aria-live="assertive" aria-atomic="true">
+                                                <div class="d-flex">
+                                                    <div class="toast-body">
+                                                        Your Subscribe Send Successfully!.
+                                                    </div>
+                                                    <button type="button" class="btn me-2 m-auto text-white"
+                                                        data-bs-dismiss="toast" aria-label="Close">
+                                                        <i class="fa-solid fa-xmark"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column gap-1">
+                                            <h6>Subscribe Our Newsletter</h6>
+                                            <form class="needs-validation form footer" novalidate>
+                                                <input type="text" name="action" value="subscribe" hidden>
+                                                <div class="input-group position-relative">
+                                                    <input type="email" class="form-control footer  mb-xl-0 mb-3"
+                                                        placeholder="Enter Your Email" name="email" required>
+                                                    <button
+                                                        class="btn btn-accent orange submit_subscribe position-relative px-4 py-3"
+                                                        type="submit">
+                                                        <span>Subscribe</span>
+                                                        <span class="gradient-container">
+                                                            <span class="gradient"></span>
+                                                        </span>
+                                                        <div class="invalid-feedback text-white">
+                                                            Please provide a valid email format (e.g.,
+                                                            user@example.com).
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-xl-4 mb-3">
+                                    <div class="social-container scrollanimation animated fadeInUp adr-5 adl-5">
+                                        <a href="https://www.facebook.com" class="social-item active">
+                                            <i class="fa-brands fa-xs fa-facebook-f"></i>
+                                        </a>
+                                        <a href="https://www.linkedin.com" class="social-item">
+                                            <i class="fa-brands fa-xs fa-linkedin-in"></i>
+                                        </a>
+                                        <a href="https://www.instagram.com" class="social-item">
+                                            <i class="fa-brands fa-xs fa-instagram"></i>
+                                        </a>
+                                        <a href="https://www.twitter.com" class="social-item">
+                                            <i class="fa-brands fa-xs fa-twitter"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-100 d-flex flex-column align-items-center">
+                                <hr>
+                                <p>Copyright © 2025 Rometheme. All Rights Reserved.</p>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- End Footer -->
+                </div>
+            </div>
+        </div>
+        <!-- End CTA -->
+    </main>
+    <!-- End Main -->
+
+    <!-- Scripts -->
+    <script src=" js/vendor/bootstrap.bundle.min.js">
+    </script>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/swiper-script.js"></script>
+    <script src="js/submit-form.js"></script>
+    <script src="js/vendor/isotope.pkgd.min.js"></script>
+    <script src="js/video_embedded.js"></script>
+    <script src="https://kit.fontawesome.com/a6df7668b8.js" crossorigin="anonymous"></script>
+    <script src=" js/vendor/fslightbox.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.0/oyethemes_onscroll_animation.js"></script>
+    <script>animatedWave()</script>
+</body>
+
+</html>

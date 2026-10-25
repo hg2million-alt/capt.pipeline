@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="image/favicon.png">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.2/animation_utility.css" />
+    <title>[NOME DO CLIENTE] — Consultoria de TI</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header" class="fixed-top mx-auto">
+        <div class="mx-auto align-items-center" style="max-width: 1770px;">
+            <nav class="navbar navbar-expand-xl">
+                <div class="container-fluid ps-3">
+                    <div class="logo-container">
+                        <a class="navbar-brand" href="#"><img src="image/Logo.png" alt="" class="img-fluid"></a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto mb-2 mb-xl-0 gap-xl-4 gap-1">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" aria-current="page" href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="team.html">Team</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="team_detail.html">Team Detail</a></li>
+                                    <li><a class="dropdown-item" href="services_detail.html">Services Detail</a></li>
+                                    <li><a class="dropdown-item" href="study_case.html">Case Study</a></li>
+                                    <li><a class="dropdown-item" href="case_study_detail.html">Case Study Detail</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="testimonials.html">Testimonial</a></li>
+                                    <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                                    <li><a class="dropdown-item" href="404.html">404</a></li>
+                                    <li><a class="dropdown-item" href="coming_soon.html">Coming Soon</a></li>
+                                    <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                                    <li><a class="dropdown-item" href="pricing.html">Pricing Plan</a></li>
+                                    <li><a class="dropdown-item" href="blog.html">Blog Grid</a></li>
+                                    <li><a class="dropdown-item" href="single_post_side_bar.html">Single Post
+                                            With Side
+                                            Bar</a></li>
+                                    <li><a class="dropdown-item active" href="single_post_no_side_bar.html">Single Post
+                                            Without
+                                            Side Bar</a></li>
+                                    <li><a class="dropdown-item" href="contact_us.html">Contact Us</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="w-max-content mx-xl-0 mx-auto">
+                            <a href="contact_us.html" class="btn btn-accent orange">
+                                <span>Contact Us</span>
+                                <span class="gradient-container">
+                                    <span class="gradient"></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Main -->
+    <main>
+        <!-- Section Hero -->
+        <div class="section position-relative">
+            <div class="r-container">
+                <div class="bg-banner second">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb scrollanimation animated fadeInUp adr-5">
+                            <li class="breadcrumb-item">
+                                <a href="index.html">Home</a>
+                                <i class="rtmicon rtmicon-chevron-right fw-bold"></i>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="blog.html">Blog</a>
+                                <i class="rtmicon rtmicon-chevron-right fw-bold"></i>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                <p><span class="text-accent second">Single Post</span></p>
+                            </li>
+                        </ol>
+                    </nav>
+                    <h1 class="scrollanimation animated fadeInUp adr-5">
+                        How Cloud Migration <br>
+                        Transforms Efficiency
+                    </h1>
+                    <p class="scrollanimation animated fadeInUp adr-5 adl-1">
+                        Discover how moving to the cloud enables scalability, reduces costs, and improves operational
+                        performance across every level of your business.
+                    </p>
+                </div>
+            </div>
+            <canvas id="wave"></canvas>
+        </div>
+        <div class="section marquee-banner">
+            <div class="marquee-container position-relative custom-contain">
+                <div class="marquee-content">
+                    <div class="marquee-item d-flex align-items-center justify-content-center">
+                        <img src="image/logo-1.png" class="img-fluid" alt="" />
+                    </div>
+                    <div class="marquee-item d-flex align-items-center justify-content-center">
+                        <img src="image/logo-2.png" class="img-fluid" alt="" />
+                    </div>
+                    <div class="marquee-item d-flex align-items-center justify-content-center">
+                        <img src="image/logo-3.png" class="img-fluid" alt="" />
+                    </div>
+                    <div class="marquee-item d-flex align-items-center justify-content-center">
+                        <img src="image/logo-4.png" class="img-fluid" alt="" />
+                    </div>
+                    <div class="marquee-item d-flex align-items-center justify-content-center">
+                        <img src="image/logo-5.png" class="img-fluid" alt="" />
+                    </div>
+                </div>
+                <div class="rectangle-3"></div>
+            </div>
+        </div>
+        <!-- End Hero -->
+
+        <!-- Section Single Post -->
+        <div class="section">
+            <div class="r-container">
+                <div class="d-flex flex-column gap-4">
+                    <img src="image/dummy-img-1920x1280.jpg" class="img-fluid img-single-post" alt="">
+                    <div class="d-flex flex-row align-items-center gap-3 scrollanimation animated fadeInUp adr-5">
+                        <div class="date">
+                            <i class="rtmicon rtmicon-calendar"></i>
+                            <p>September 3, 2026</p>
+                        </div>
+                        <div class="date">
+                            <i class="rtmicon rtmicon-users"></i>
+                            <p>by : RTM</p>
+                        </div>
+                    </div>
+                    <div class="content-single-post">
+                        <p>
+                            In today’s fast-paced digital landscape, efficiency isn’t optional — it’s essential.
+                            Businesses across industries are rethinking their IT infrastructure to stay
+                            competitive, and cloud migration has become a strategic move toward agility and
+                            growth.
+                        </p>
+                        <p>
+                            Migrating to the cloud isn’t just about data transfer — it’s about unlocking
+                            flexibility, scalability, and smarter ways to work.
+                        </p>
+                        <hr>
+                        <h5 class="scrollanimation animated fadeInUp adr-5">1: Understanding Cloud Migration
+                        </h5>
+                        <p>
+                            Cloud migration involves transferring applications, data, and workloads from
+                            on-premises systems to cloud-based environments.
+                        </p>
+                        <p>
+                            This transformation allows organizations to access resources on demand, reduce
+                            hardware dependency, and optimize operational costs.
+                        </p>
+                        <p>
+                            At Visora, our cloud experts design migration strategies that ensure zero data loss,
+                            minimal downtime, and maximum business continuity.
+                        </p>
+                        <hr>
+                        <h5 class="scrollanimation animated fadeInUp adr-5">2: Key Benefits of Cloud Migration
+                        </h5>
+                        <ol>
+                            <li class="title">
+                                <h6>Key Benefits of Cloud Migration</h6>
+                                <p>With centralized systems and real-time access, teams collaborate seamlessly
+                                    from anywhere, reducing delays and manual errors.</p>
+                            </li>
+                            <li class="title">
+                                <h6>Cost Optimization</h6>
+                                <p>
+                                    The cloud eliminates expensive hardware investments and maintenance costs,
+                                    offering pay-as-you-go flexibility that fits your business size and needs.
+                                </p>
+                            </li>
+                            <li class="title">
+                                <h6>Enhanced Scalability</h6>
+                                <p>
+                                    Whether your company grows regionally or globally, the cloud scales
+                                    effortlessly — supporting more users, data, and workloads without
+                                    performance drops.
+                                </p>
+                            </li>
+                            <li class="title">
+                                <h6>Stronger Security & Compliance</h6>
+                                <p>
+                                    Modern cloud platforms come with built-in security layers, encryption, and
+                                    compliance frameworks that safeguard sensitive business information.
+                                </p>
+                            </li>
+                            <li class="title">
+                                <h6>Faster Innovation</h6>
+                                <p>
+                                    Deploy new applications, test features, and roll out updates instantly —
+                                    helping your team respond quickly to market changes.
+                                </p>
+                            </li>
+                        </ol>
+                        <hr>
+                        <h5 class="scrollanimation animated fadeInUp adr-5">3: Key Benefits of Cloud Migration
+                        </h5>
+                        <p>
+                            Cloud migration can be complex — but with the right strategy, it becomes a clear
+                            path to growth. Visora provides end-to-end migration services, including:
+                        </p>
+                        <ul>
+                            <li>
+                                <p>Cloud readiness assessments</p>
+                            </li>
+                            <li>
+                                <p>Infrastructure planning and setup</p>
+                            </li>
+                            <li>
+                                <p>Data transfer and testing</p>
+                            </li>
+                            <li>
+                                <p>System integration and optimization</p>
+                            </li>
+                            <li>
+                                <p>Ongoing monitoring and support</p>
+                            </li>
+                        </ul>
+                        <p>
+                            Our approach ensures that your business not only moves to the cloud but thrives in
+                            it
+                            — with enhanced performance, uptime, and reliability.
+                        </p>
+                        <hr>
+                        <h5 class="scrollanimation animated fadeInUp adr-5">Conclusion</h5>
+                        <p>
+                            Cloud migration isn’t just an IT upgrade — it’s a business evolution. It empowers
+                            organizations to become more flexible, responsive, and data-driven.
+                        </p>
+                        <p>
+                            With Visora’s cloud migration services, you gain not just technology, but a strategy
+                            built for efficiency and long-term success.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Single Post -->
+
+        <!-- Section Marquee -->
+        <div class="section marquee">
+            <div class="marquee-container">
+                <div class="marquee-content">
+                    <div class="marquee-item-2">
+                        <h3>Future-Ready IT Starts Here.</h3>
+                    </div>
+                    <div class="marquee-item-2 orange">
+                        <h3>Future-Ready IT Starts Here.</h3>
+                    </div>
+                    <div class="marquee-item-2">
+                        <h3>Future-Ready IT Starts Here.</h3>
+                    </div>
+                    <div class="marquee-item-2 orange">
+                        <h3>Future-Ready IT Starts Here.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Marquee -->
+
+        <!-- Section CTA -->
+        <div class="section bg-cta pb-0">
+            <div class="mx-auto align-items-center container-cta">
+                <div class="card-cta">
+                    <div class="card-title">
+                        <h2 class="scrollanimation animated fadeInUp adr-5">
+                            Let’s Build <br>
+                            <span class="text-accent">Smarter IT Together</span>
+                        </h2>
+                        <p class="mw-cta scrollanimation animated fadeInUp adr-5 adl-1">
+                            Partner with Visora to transform your technology and accelerate your
+                            business growth.
+                        </p>
+                        <div class="d-flex flex-row align-items-center gap-3">
+                            <div class="w-max-content scrollanimation animated fadeInUp adr-5 adl-2">
+                                <a href="contact_us.html" class="btn btn-accent orange">
+                                    <span>Get Started</span>
+                                    <span class="gradient-container">
+                                        <span class="gradient"></span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="w-max-content scrollanimation animated fadeInUp adr-5 adl-3">
+                                <a href="about.html" class="btn btn-accent primary">
+                                    <span>Discover More</span>
+                                    <span class="gradient-container">
+                                        <span class="gradient"></span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section Footer -->
+                    <footer>
+                        <div class="bg-footer">
+                            <div class="row row-cols-xl-2 row-cols-1 w-100">
+                                <div class="col col-xl-8 mb-3">
+                                    <div class="d-flex flex-column gap-5 scrollanimation animated fadeInUp adr-5">
+                                        <img src="image/logo.png" class="img-fluid logo-container" alt="">
+                                        <p class="mw-cta">
+                                            We help companies bridge strategy and technology through reliable,
+                                            future-ready
+                                            IT solutions.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col col-xl-4 mb-3">
+                                    <div class="row row-cols-lg-3 row-cols-1">
+                                        <div class="col mb-3 scrollanimation animated fadeInUp adr-5 adl-1">
+                                            <div class="d-flex flex-column gap-3">
+                                                <a href="index.html" class="link">Homepage</a>
+                                                <a href="about.html" class="link">About</a>
+                                                <a href="services.html" class="link">Services</a>
+                                            </div>
+                                        </div>
+                                        <div class=" col mb-3 scrollanimation animated fadeInUp adr-5 adl-2">
+                                            <div class="d-flex flex-column gap-3">
+                                                <a href="team.html" class="link">Team</a>
+                                                <a href="faq.html" class="link">FAQ</a>
+                                                <a href="gallery.html" class="link">Gallery</a>
+                                            </div>
+                                        </div>
+                                        <div class="col mb-3 scrollanimation animated fadeInUp adr-5 adl-3">
+                                            <div class="d-flex flex-column gap-3">
+                                                <a href="pricing.html" class="link">Pricing</a>
+                                                <a href="testimonials.html" class="link">Testimonial</a>
+                                                <a href="contact_us.html" class="link">Contact</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row-cols-xl-2 row-cols-1 w-100">
+                                <div class="col col-xl-8 mb-3">
+                                    <div class="card-subscribe scrollanimation animated fadeInUp adr-5 adl-4">
+                                        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                                            <div id="liveToast"
+                                                class="toast success_msg_subscribe bg-dark-transparent text-white"
+                                                role="alert" aria-live="assertive" aria-atomic="true">
+                                                <div class="d-flex">
+                                                    <div class="toast-body">
+                                                        Your Subscribe Send Successfully!.
+                                                    </div>
+                                                    <button type="button" class="btn me-2 m-auto text-white"
+                                                        data-bs-dismiss="toast" aria-label="Close">
+                                                        <i class="fa-solid fa-xmark"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column gap-1">
+                                            <h6>Subscribe Our Newsletter</h6>
+                                            <form class="needs-validation form footer" novalidate>
+                                                <input type="text" name="action" value="subscribe" hidden>
+                                                <div class="input-group position-relative">
+                                                    <input type="email" class="form-control footer  mb-xl-0 mb-3"
+                                                        placeholder="Enter Your Email" name="email" required>
+                                                    <button
+                                                        class="btn btn-accent orange submit_subscribe position-relative px-4 py-3"
+                                                        type="submit">
+                                                        <span>Subscribe</span>
+                                                        <span class="gradient-container">
+                                                            <span class="gradient"></span>
+                                                        </span>
+                                                        <div class="invalid-feedback text-white">
+                                                            Please provide a valid email format (e.g.,
+                                                            user@example.com).
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-xl-4 mb-3">
+                                    <div class="social-container scrollanimation animated fadeInUp adr-5 adl-5">
+                                        <a href="https://www.facebook.com" class="social-item active">
+                                            <i class="fa-brands fa-xs fa-facebook-f"></i>
+                                        </a>
+                                        <a href="https://www.linkedin.com" class="social-item">
+                                            <i class="fa-brands fa-xs fa-linkedin-in"></i>
+                                        </a>
+                                        <a href="https://www.instagram.com" class="social-item">
+                                            <i class="fa-brands fa-xs fa-instagram"></i>
+                                        </a>
+                                        <a href="https://www.twitter.com" class="social-item">
+                                            <i class="fa-brands fa-xs fa-twitter"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-100 d-flex flex-column align-items-center">
+                                <hr>
+                                <p>Copyright © 2025 Rometheme. All Rights Reserved.</p>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- End Footer -->
+                </div>
+            </div>
+        </div>
+        <!-- End CTA -->
+    </main>
+    <!-- End Main -->
+
+    <!-- Scripts -->
+    <script src=" js/vendor/bootstrap.bundle.min.js">
+    </script>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/swiper-script.js"></script>
+    <script src="js/submit-form.js"></script>
+    <script src="js/vendor/isotope.pkgd.min.js"></script>
+    <script src="js/video_embedded.js"></script>
+    <script src="https://kit.fontawesome.com/a6df7668b8.js" crossorigin="anonymous"></script>
+    <script src=" js/vendor/fslightbox.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.0/oyethemes_onscroll_animation.js"></script>
+    <script>animatedWave()</script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+/*--------------------------------------------------------------
+>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+01. Google Fonts
+02. Color Variable
+03. Typography
+04. Spacing
+05. General
+06. Header Sections
+07. Footer Section
+08. Slider
+09. Sidebar
+10. Modal Video
+11. Preloader
+12. Hero
+13. About Us Section and Page
+14. Accordian
+15. Cards
+16. Iconbox
+17. Layouts
+18. Posts and Post Details
+19. Pricing
+20. Tabs
+21. Testimonials
+--------------------------------------------------------------*/
+
+@import "default/fonts";
+@import "default/variable";
+@import "default/typhography";
+@import "common/spacing";
+@import "common/general";
+@import "common/header";
+@import "common/footer";
+@import "common/slider";
+@import "common/sidebar";
+@import "common/video-modal";
+@import "common/preloader";
+@import "shortcode/hero";
+@import "shortcode/about";
+@import "shortcode/accordian";
+@import "shortcode/cards";
+@import "shortcode/iconbox";
+@import "shortcode/layouts";
+@import "shortcode/post";
+@import "shortcode/pricing";
+@import "shortcode/team";
+@import "shortcode/tabs";
+@import "shortcode/testimonial";

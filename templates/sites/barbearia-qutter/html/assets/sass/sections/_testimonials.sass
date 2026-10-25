@@ -1,0 +1,142 @@
+/*******************************************************/
+/**************** 17. Testimonials Area ****************/
+/*******************************************************/
+.testimonial-wrap
+    .testimonial-item
+        +res-ab(md)
+            display: flex
+.testimonial-item
+    display: flex
+    margin-bottom: 30px
+    align-items: center
+    +res-bl(md)
+        display: block
+    .image
+        flex: none
+        width: 42%
+        max-width: 270px
+        border: 3px solid $heading-color
+        +res-bl(md)
+            width: 100%
+            margin-bottom: 25px
+        img
+            width: 100%
+    .description
+        +res-ab(md)
+            +gapLR(padding, 30px)
+        p
+            font-size: 18px
+            line-height: 1.95
+            color: $heading-color
+        h4
+            margin-bottom: 2px
+        .designation
+            display: block
+            
+.testimonial-bg
+    position: absolute
+    left: 0
+    bottom: 0
+    z-index: -1
+    +size(100%, 130%)
+    img
+        z-index: -1
+        position: absolute
+    .bg
+        top: 0
+        left: 0
+        height: 100%
+        max-width: 50%
+    .shape
+        right: 0
+        bottom: 11%
+        max-width: 30%
+        animation: down-up-one 10s infinite
+        
+/* Testimonials Two */
+.testimonial-two-active
+    +gapLR(margin, -15px)
+    .testimonial-two-item
+        margin-top: 15px
+        +gapLR(margin, 15px)
+        box-shadow: 10px 0 30px rgba(31, 31, 31, 0.05)
+        
+.testimonial-two-item
+    padding: 40px
+    position: relative
+    border-radius: 7px
+    margin-bottom: 30px
+    border: 1px solid transparentize($primary-color, 0.9)
+    +res-bl(ms)
+        +gapLR(padding, 25px)
+    +res-bl(xs)
+        +gapLR(padding, 15px)
+    .logo
+        height: 48px
+        margin-bottom: 20px
+    .author
+        display: flex
+        margin-top: 25px
+        align-items: center
+        img
+            flex: none
+            +size(55px)
+            border-radius: 50%
+            margin-right: 20px
+        h4
+            margin-bottom: 2px
+            +res-bl(xs)
+                font-size: 20px
+        span
+            opacity: 0.6
+    &:after
+        position: absolute
+        content: ""
+        top: 16%
+        right: 15%
+        opacity: 0.07
+        line-height: 1
+        font-size: 90px
+        font-family: 'Flaticon'
+    
+/* Testimonial Three */
+.testimonial-three-active
+    .testimonial-two-item
+        border: none
+        margin-bottom: 0
+        padding: 0 0 0 485px
+        .logo
+            margin-bottom: 25px
+        p
+            font-size: 30px
+            line-height: 1.5
+            font-style: italic
+            +res-bl(md)
+                font-size: 20px
+            +res-bl(xs)
+                font-size: 18px
+        .author
+            margin-top: 35px
+        &:after
+            +res-ab(sm)
+                left: 0
+                top: -15px
+                opacity: 1
+                font-size: 150px
+                color: $primary-color
+        +res-bl(xl)
+            padding-left: 200px
+        +res-bl(lg)
+            padding-left: 150px
+            &:after
+                top: -10px
+                font-size: 100px
+        +res-bl(sm)
+            padding-left: 0
+    .slick-dots
+        +res-ab(sm)
+            position: absolute
+            left: 0
+            bottom: 0
+        +res-bl(sm)
+            margin-top: 40px

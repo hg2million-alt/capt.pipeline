@@ -1,0 +1,125 @@
+/**
+ * Features & Services
+ */
+
+.tm-feature {
+    display: flex;
+
+    &-area {
+        padding: 50px 0;
+    }
+
+    &-icon {
+        flex: 0 0 60px;
+        margin-right: 20px;
+    }
+
+    &-content {
+        h5 {
+            margin-top: -5px;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+
+
+
+
+.tm-service {
+    padding: 50px 30px;
+    transition: $transition;
+    background: $color-grey;
+
+    &-icon {
+        display: inline-block;
+        height: 170px;
+        width: 170px;
+        line-height: 150px;
+        text-align: center;
+        background: #ffffff;
+        border-radius: 1000px;
+        padding: 10px;
+        margin-bottom: 25px;
+        transition: $transition;
+    }
+
+    &-content {
+        p {
+            margin-bottom: 0;
+        }
+
+        .tm-button {
+            margin-top: 25px;
+        }
+    }
+
+    &:hover {
+        box-shadow: $shadow;
+        background: #ffffff;
+    }
+
+    &:hover &-icon {
+        background: $color-grey;
+    }
+
+    &:hover &-content {
+        .tm-button {
+            background: $color-theme;
+            border-color: $color-theme;
+            color: #ffffff;
+        }
+    }
+
+    @media #{$layout-notebook} {
+        padding: 30px 15px;
+
+        &-icon {
+            height: 120px;
+            width: 120px;
+            line-height: 80px;
+            padding: 20px;
+        }
+    }
+
+    @media #{$layout-tablet} {
+        padding: 30px 15px;
+
+        &-icon {
+            height: 120px;
+            width: 120px;
+            line-height: 80px;
+            padding: 20px;
+        }
+    }
+
+    @media #{$layout-mobile-lg} {
+        padding: 30px 30px;
+
+        &-icon {
+            height: 120px;
+            width: 120px;
+            line-height: 80px;
+            padding: 20px;
+        }
+    }
+
+    @media #{$layout-mobile-sm} {
+        padding: 30px 15px;
+    }
+}
+
+.bg-grey {
+
+    .tm-service {
+        background: #ffffff;
+
+        &-icon {
+            background: $color-grey;
+        }
+    }
+}

@@ -1,0 +1,90 @@
+/*===============================================================
+ 19. Pricing
+=================================================================*/
+.cs_pricing_table_style_1 {
+  perspective: 1000px;
+
+  .cs_pricing_table_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s cubic-bezier(0.65, 0, 0.35, 1);
+    transform-style: preserve-3d;
+  }
+
+  .cs_pricing_table_font {
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cs_pricing_features_list {
+    li {
+      padding-left: 40px;
+      position: relative;
+      margin-bottom: 30px;
+
+      img {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .cs_pricing_btn {
+    padding: 13px 20px 14px;
+    margin-top: 30px;
+    border: 1px solid var(--accent-color);
+
+    &:hover {
+      color: var(--accent-color);
+      background-color: transparent;
+    }
+  }
+
+  .cs_pricing_table_back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 40px 32px 50px;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+  }
+
+
+  &:hover {
+    .cs_pricing_table_inner {
+      transform: rotateY(180deg);
+    }
+  }
+
+  @media (max-width:1399px) {
+    .cs_pricing_table_font {
+      padding: 40px 30px;
+    }
+  }
+
+  @media (max-width:575px) {
+    .cs_pricing_table_font {
+      padding: 40px 15px;
+    }
+
+    .cs_pricing_table_back {
+      padding: 40px 15px 50px;
+    }
+  }
+}

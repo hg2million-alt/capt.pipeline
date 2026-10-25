@@ -1,0 +1,958 @@
+/*=================================================================
+  05. General
+===================================================================*/
+
+/*=====================================  
+  Classess for Fonts Size  
+ =======================================*/
+.cs_fs_10 {
+  font-size: 10px;
+  line-height: 1em;
+}
+
+.cs_fs_13 {
+  font-size: 13px;
+  line-height: 1em;
+}
+
+.cs_fs_14 {
+  font-size: 14px;
+  line-height: 1.786em;
+}
+
+.cs_fs_16 {
+  font-size: 16px;
+  line-height: 1.563em;
+}
+
+.cs_fs_18 {
+  font-size: 18px;
+  line-height: 1.56em;
+}
+
+.cs_fs_20 {
+  font-size: 20px;
+  line-height: 1.25em;
+}
+
+.cs_fs_24 {
+  font-size: 24px;
+  line-height: 1.333em;
+
+  @media (max-width: 767px) {
+    font-size: 22px;
+  }
+}
+
+.cs_fs_30 {
+  font-size: 30px;
+  line-height: 1.17em;
+
+  @media (max-width: 767px) {
+    font-size: 24px;
+  }
+}
+
+.cs_fs_53 {
+  font-size: 53px;
+  line-height: 1.226em;
+
+  @media (max-width: 1399px) {
+    font-size: 50px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 42px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 40px;
+  }
+
+  @media (max-width: 420px) {
+    font-size: 32px;
+  }
+}
+
+.cs_fs_60 {
+  font-size: 60px;
+  line-height: 1.167em;
+
+  @media (max-width: 1399px) {
+    font-size: 56px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 46px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 42px;
+  }
+
+  @media (max-width: 420px) {
+    font-size: 36px;
+  }
+}
+
+.cs_fs_64 {
+  font-size: 64px;
+  line-height: 1.23em;
+
+  @media (max-width: 1399px) {
+    font-size: 56px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 46px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 42px;
+  }
+
+  @media (max-width: 420px) {
+    font-size: 36px;
+  }
+}
+
+.cs_fs_70 {
+  font-size: 70px;
+  line-height: 1.123em;
+
+  @media (max-width: 1399px) {
+    font-size: 62px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 52px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 42px;
+  }
+
+  @media (max-width: 420px) {
+    font-size: 36px;
+  }
+}
+
+.cs_fs_80 {
+  font-size: 80px;
+  line-height: 1.123em;
+
+  @media (max-width: 1439px) {
+    font-size: 75px;
+  }
+
+  @media (max-width: 1399px) {
+    font-size: 66px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 56px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 46px;
+  }
+
+  @media (max-width: 420px) {
+    font-size: 40px;
+  }
+}
+
+.cs_fs_96 {
+  font-size: 96px;
+  line-height: 1.2em;
+
+  @media (max-width: 1439px) {
+    font-size: 85px;
+  }
+
+  @media (max-width: 1399px) {
+    font-size: 72px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 66px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 52px;
+  }
+
+  @media (max-width: 420px) {
+    font-size: 46px;
+  }
+}
+
+.cs_fs_200 {
+  font-size: 200px;
+  line-height: 1em;
+
+  @media (max-width: 1599px) {
+    font-size: 190px;
+  }
+
+  @media (max-width: 1399px) {
+    font-size: 166px;
+  }
+
+  @media (max-width: 1199px) {
+    font-size: 140px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 104px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 76px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 68px;
+  }
+}
+
+/*=====================================  
+  Classess for Fonts Weight
+=======================================*/
+.cs_light {
+  font-weight: 300;
+}
+
+.cs_normal {
+  font-weight: 400;
+}
+
+.cs_medium {
+  font-weight: 500;
+}
+
+.cs_semibold {
+  font-weight: 600;
+}
+
+.cs_bold {
+  font-weight: 700;
+}
+
+.cs_extrabold {
+  font-weight: 800;
+}
+
+.cs_black {
+  font-weight: 900;
+}
+
+/*=====================================  
+  Classess for Fonts Color
+=======================================*/
+.cs_accent_color {
+  color: var(--accent-color);
+}
+
+.cs_primary_color {
+  color: var(--primary-color);
+}
+
+.cs_body_color {
+  color: var(--secondary-color);
+}
+
+.cs_white_color {
+  color: var(--white-color);
+}
+
+.cs_gray_color {
+  color: var(--gray-color);
+}
+
+.cs_black_color {
+  color: var(--black-color);
+}
+
+.cs_danger_color {
+  color: var(--danger-color);
+}
+
+/*=====================================  
+  Classess for Fonts Family 
+=======================================*/
+.cs_primary_font {
+  font-family: var(--primary-font);
+}
+
+.cs_secondary_font {
+  font-family: var(--secondary-font);
+}
+
+/*=============================================  
+  Classess for Background Size & Colors
+===============================================*/
+.cs_accent_bg {
+  background-color: var(--accent-color);
+}
+
+.cs_primary_bg {
+  background-color: var(--primary-color);
+}
+
+.cs_body_bg {
+  background-color: var(--secondary-color);
+}
+
+.cs_white_bg {
+  background-color: var(--white-color);
+}
+
+.cs_gray_bg {
+  background-color: var(--gray-color);
+}
+
+.cs_gray2_bg {
+  background-color: var(--gray2-color);
+}
+
+.cs_gray3_bg {
+  background-color: var(--gray3-color);
+}
+
+.cs_gray4_bg {
+  background-color: var(--gray4-color);
+}
+
+.cs_black_bg {
+  background-color: var(--black-color);
+}
+
+.cs_bg_filed {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.cs_bg_fixed {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/*=============================================  
+  Classess for Border Radius
+===============================================*/
+.cs_radius_5 {
+  border-radius: 5px;
+}
+
+.cs_radius_10 {
+  border-radius: 10px;
+}
+
+.cs_radius_20 {
+  border-radius: 20px;
+}
+
+.cs_radius_30 {
+  border-radius: 30px;
+}
+
+.cs_radius_50 {
+  border-radius: 50px;
+}
+
+.cs_radius_100 {
+  border-radius: 50%;
+}
+
+/*=============================================  
+  Classes for Utility Components
+===============================================*/
+.cs_mp_0 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cs_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cs_center_column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*=============================================  
+  Bootstrap Classess 
+===============================================*/
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1344px;
+  }
+}
+
+.cs_gap_y_40 {
+  gap: 40px 0;
+
+  @media (max-width: 991px) {
+    gap: 30px 0;
+  }
+}
+
+.cs_gap_y_30 {
+  gap: 30px 0;
+}
+
+.cs_gap_y_24 {
+  gap: 24px 0;
+}
+
+/*====================================================  
+ Button Components
+======================================================*/
+.cs_btn_style_1 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 11px 20px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: transparent;
+  color: var(--white-color);
+  transition: all 0.4s ease;
+
+  .cs_btn_icon {
+    width: 30px;
+    height: 30px;
+    color: var(--accent-color);
+    transform: rotate(-30deg);
+    background-color: var(--white-color);
+    transition: all 0.5s ease;
+  }
+
+  >* {
+    position: relative;
+    z-index: 1;
+  }
+
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 11px;
+    border-radius: 50%;
+    transform: scale(50);
+    background-color: var(--accent-color);
+    transition: all 0.3s ease;
+  }
+
+  &.cs_type_1 {
+    color: var(--accent-color);
+    border-color: var(--white-color);
+
+    &::before {
+      background-color: var(--white-color);
+    }
+
+    .cs_btn_icon {
+      color: var(--white-color);
+      background-color: var(--accent-color);
+    }
+  }
+
+  &:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+
+    &::before {
+      transform: scale(1);
+      transition: all 0.3s ease;
+    }
+
+    .cs_btn_icon {
+      color: var(--white-color);
+      background-color: transparent;
+    }
+
+    &.cs_type_1 {
+
+      .cs_btn_icon {
+        color: var(--accent-color);
+      }
+    }
+  }
+}
+
+.cs_btn_style_2 {
+  width: 180px;
+  height: 180px;
+  padding: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+
+  >* {
+    position: relative;
+    z-index: 1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background: var(--gray-color);
+    border-radius: inherit;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%, -50%);
+    background: radial-gradient(var(--accent-color), transparent, transparent);
+    width: 200%;
+    height: 200%;
+    opacity: 1;
+    transition: 0.5s, top 0s, left 0s;
+    border-radius: inherit;
+  }
+
+  &:hover {
+    color: var(--accent-color);
+    transform: scale(1.02);
+  }
+
+  &.cs_type_1 {
+    border: 1px solid var(--gray-color2);
+    right: 40px;
+    top: calc(100% - 30px);
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.cs_text_btn_style_1 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid currentColor;
+}
+
+.cs_text_btn_style_2 {
+  display: inline-block;
+  perspective: 500px;
+  color: var(--accent-color);
+
+  .cs_btn_text {
+    display: inline-block;
+  }
+
+  .cs_letter {
+    display: inline-block;
+    transform-origin: 50% 50%;
+    backface-visibility: hidden;
+  }
+
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+.cs_player_btn_style_1 {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.3s ease;
+
+  >* {
+    position: relative;
+    z-index: 1;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 0;
+    transform: translate(-50%, -50%) scale(1);
+    border-radius: inherit;
+    border: 6px solid currentColor;
+    animation: pulseBorder 3s linear infinite;
+  }
+
+  &::after {
+    animation-delay: 1.5s;
+  }
+
+  &:hover {
+    transform: scale(0.75);
+
+    &::before,
+    &::after {
+      animation-play-state: paused;
+    }
+
+  }
+}
+
+/*=============================================
+ Social Buttons Component
+===============================================*/
+.cs_social_btns_style_1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+
+  a {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+
+    &:hover {
+      color: var(--white-color);
+      background-color: var(--accent-color);
+    }
+  }
+}
+
+/*=============================================
+ Scroll Top Button
+===============================================*/
+.cs_scrollup_btn {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  border-radius: 50%;
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+  z-index: 9999;
+  opacity: 0;
+  transform: translateY(120px) scale(0);
+  transition: all 0.4s cubic-bezier(0.68, 0.55, 0.27, 1);
+
+  &.show {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  &:hover {
+    color: var(--accent-color);
+    background-color: var(--white-color);
+  }
+}
+
+/*=============================================
+ Section Heading Component
+===============================================*/
+.cs_section_heading_style_1 {
+  .cs_section_title {
+    .word {
+      display: inline-block;
+      overflow: hidden;
+    }
+
+    .word_inner {
+      display: inline-block;
+      will-change: transform, opacity, filter;
+    }
+  }
+
+  .cs_section_subtitle {
+    line-height: 1em;
+    letter-spacing: 4.8px;
+    padding-left: 20px;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      position: absolute;
+      left: 0;
+      top: 4px;
+      border-radius: 50%;
+      background-color: var(--accent-color);
+    }
+  }
+
+  .cs_stroke_text {
+    background: linear-gradient(180deg, rgba(202, 160, 92, 1), rgba(255, 255, 255, 1));
+    background-clip: text;
+    text-stroke: 1px transparent;
+    -webkit-text-stroke: 1px transparent;
+    color: var(--white-color);
+  }
+
+  @media (min-width:992px) {
+
+    &.cs_type_1,
+    &.cs_type_2 {
+      display: flex;
+      align-items: end;
+      gap: 30px;
+      justify-content: space-between;
+
+      .cs_section_heading_left {
+        flex: 1;
+      }
+
+      .cs_section_heading_right {
+        width: min(50%, 445px);
+      }
+    }
+
+    &.cs_type_2 {
+
+      .cs_section_heading_left {
+        flex: 1;
+      }
+
+      .cs_section_heading_right {
+        width: min(50%, 590px);
+      }
+    }
+
+    &.cs_type_3,
+    &.cs_type_4,
+    &.cs_type_5 {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      justify-content: space-between;
+
+      .cs_section_heading_left {
+        width: min(50%, 620px);
+      }
+
+      .cs_section_heading_right {
+        width: min(50%, 383px);
+      }
+    }
+
+    &.cs_type_4 {
+      align-items: center;
+
+      .cs_section_heading_left {
+        width: min(55%, 720px);
+      }
+
+      .cs_section_heading_right {
+        width: auto;
+      }
+    }
+
+    &.cs_type_5 {
+      align-items: flex-end;
+
+      .cs_section_heading_left {
+        width: min(55%, 670px);
+      }
+
+      .cs_section_heading_right {
+        width: auto;
+        padding-bottom: 20px;
+      }
+    }
+
+    .cs_btn_style_2.cs_type_1 {
+      position: absolute;
+    }
+  }
+}
+
+/*=============================================
+ Progressbar Component
+===============================================*/
+.cs_progress {
+  .cs_progress_in {
+    height: 1px;
+    position: relative;
+    background-color: var(--primary-color);
+
+    span {
+      position: absolute;
+      right: 0;
+      bottom: calc(100% + 20px);
+    }
+
+    &::after {
+      content: "";
+      width: 1px;
+      height: 4px;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%) rotate(-45deg);
+      background-color: var(--primary-color);
+    }
+  }
+
+  &.cs_type_1,
+  &.cs_type_2 {
+    height: 5px;
+    position: relative;
+    border-radius: 5px;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.2;
+      border-radius: inherit;
+      background-color: var(--accent-color);
+    }
+
+    .cs_progress_in {
+      height: 100%;
+      position: relative;
+      border-radius: inherit;
+      background-color: var(--accent-color);
+
+      span {
+        position: absolute;
+        right: 0;
+        bottom: calc(100% + 20px);
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &.cs_type_2 {
+    height: 10px;
+  }
+}
+
+/*=============================================
+ Rating Component
+===============================================*/
+.cs_rating_percentage,
+.cs_rating {
+  overflow: hidden;
+
+  &::before {
+    content: "\f005\f005\f005\f005\f005";
+    font-family: "Font Awesome 7 Free";
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.cs_rating {
+  max-width: 144px;
+  flex: none;
+  height: 24px;
+  position: relative;
+  color: var(--accent-color);
+  font-size: 20px;
+  letter-spacing: 8px;
+
+  &::before {
+    font-weight: 400;
+  }
+}
+
+.cs_rating_percentage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+
+  &::before {
+    font-weight: 900;
+  }
+}
+
+/*===========================================================  
+  Funfact Odometer
+=============================================================*/
+.cs_funfact_style_1 {
+  .cs_funfact_number {
+    display: flex;
+    align-items: center;
+    line-height: 1em;
+
+    >* {
+      line-height: 1em !important;
+    }
+  }
+
+  .odometer-inside,
+  .odometer-digit,
+  .odometer-digit-inner,
+  .odometer-auto-theme,
+  .odometer {
+    line-height: 1em !important;
+  }
+
+  .odometer.odometer-auto-theme,
+  .odometer.odometer-theme-default {
+    font-family: var(--primary-font);
+    line-height: inherit;
+  }
+}
+
+/*===========================================================  
+  Responsive For Common Component & Hide Elements
+=============================================================*/
+
+@media (max-width: 991px) {
+
+  br {
+    display: none;
+  }
+}
+
+/*===========================================================  
+  Animations
+=============================================================*/
+
+@keyframes pulseBorder {
+  100% {
+    opacity: 0;
+    border-width: 30px;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+}
