@@ -29,6 +29,9 @@ Guia passo a passo pelo celular: **`COMO-USAR.md`**.
   WhatsApp (`INDEX.md` é o índice).
 - **`captacoes/aprendizados.md`** — o "cérebro" do loop; só a skill
   `resultado` escreve aqui.
+- **`animacoes-3d/`** — biblioteca de animações e efeitos 3D (do
+  `FRONT-END_CREATOR.md`), base do estilo **Luxury** (`luxury.css`) e uma
+  página-modelo com hero de imagem de fundo. Guia no `README.md` da pasta.
 - **`_modelo/identidade.md`** — modelo em branco pra cada cliente novo.
 - **`entregas/`** — os `.html` entregues, por rodada (criada na 1ª produção).
 

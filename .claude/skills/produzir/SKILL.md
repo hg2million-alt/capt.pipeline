@@ -84,6 +84,15 @@ que saem cor, tipografia e tom).
   só onde não houver material — e aí continua rotulado. Nunca ampliar a logo
   de 150 px até ela borrar: usar pequena (avatar redondo, rodapé) ou recriar o
   nome em tipografia com as cores dela.
+- **Estilo Luxury + hero com imagem de fundo + animações** (regras no
+  `AGENTS.md`, guia em `animacoes-3d/README.md`): copiar `luxury.css`,
+  `animacoes.css` e `animacoes.js` de `animacoes-3d/` pra
+  `clientes/<slug>/site/assets/`, pôr o script de `<head>` do
+  `animacoes-3d/modelo/index.html` e marcar os elementos (entrada do hero,
+  rise 3D nos títulos, stagger 3D nos cards, hover elevado, WhatsApp
+  flutuante). Hero: a melhor foto real em tela cheia com véu escuro; reel
+  bom vira vídeo de fundo (item 23). Sem template que chegue no Luxury, partir
+  do `animacoes-3d/modelo/index.html`.
 - **One-page:** o demo é uma página só (`clientes/<slug>/site/index.html`),
   com menu por âncoras — o arquivo final é único e não navega entre páginas
   (detalhes na skill `entregar-html`).
@@ -93,7 +102,9 @@ que saem cor, tipografia e tom).
 - **Mobile em primeiro lugar sempre:** testar redimensionando pra ~390px
   (Playwright resize + screenshot) antes de dar por pronto — badge/flex
   quebrando frase, hero sem overlay sólido em foto real, altura sobrando no
-  mobile são os defeitos que não aparecem em desktop.
+  mobile são os defeitos que não aparecem em desktop. Conferir também o hero
+  (foto aparecendo atrás, texto legível) e rolar a página inteira pra ver
+  as animações terminarem com tudo visível.
 - Dado que falta e não tem como confirmar entra **visivelmente marcado como
   ilustrativo** (chip "a confirmar" ou equivalente) — nunca sem aviso.
 

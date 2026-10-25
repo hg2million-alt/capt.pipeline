@@ -24,6 +24,10 @@ Templates que precisam de build (`automotivo-automec/` React/Vite): rodar
 `odontologia-dentia-next/` e `odontologia-dentia-php/` **não servem** nesse
 modo — usar `odontologia-decare/` ou `odontologia-dentisto/`.
 
+Os arquivos de `animacoes-3d/` copiados pra `site/assets/` (luxury.css,
+animacoes.css, animacoes.js) são embutidos junto — nada extra a fazer. A foto
+do hero também (reduzida pra 1600 px).
+
 ## Passo 2 — Empacotar
 
 ```bash

@@ -16,6 +16,9 @@ monta os sites e te manda os arquivos.
   Macio, Lagoa Nova, Candelária, Neópolis, Tirol, Petrópolis, Areia Preta,
   Barro Vermelho, Nova Parnamirim, Cotovelo e Pirangi do Norte.
 
+- **Visual:** todo site sai no estilo **Luxury**, com foto do negócio de
+  fundo no topo (hero) e animações 3D discretas (pasta `animacoes-3d/`).
+
 ## Configuração (uma vez só)
 
 1. **Conectar o GitHub ao Claude:** https://claude.ai/connect-github (crie

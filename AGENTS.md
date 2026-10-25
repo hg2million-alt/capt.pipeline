@@ -91,6 +91,25 @@ não substitui o texto.
   ilustrativo — telefone falso sem aviso queima a primeira impressão.
 - Antes de começar site do zero, conferir a biblioteca de templates por nicho
   (skill `templates-de-site`).
+- **Estilo principal: Luxury.** Todo demo sai com cara de marca premium —
+  serifada elegante nos títulos, muito respiro, linhas finas, poucas cores, a
+  cor de destaque da marca usada com sobriedade. Template que não chega lá
+  é ajustado (fonte, espaçamento, cores) até chegar. Guia e base pronta:
+  `animacoes-3d/README.md` e `animacoes-3d/luxury.css`.
+- **Hero sempre com imagem de fundo**, tela cheia, com véu escuro pro texto
+  ler bem no celular. A imagem é a melhor foto real do negócio (ou o reel
+  como vídeo de fundo, com a foto de pôster). Sem foto real utilizável:
+  imagem neutra de ambiente/textura com o chip "imagem ilustrativa" — nunca
+  foto de banco fingindo ser o local.
+- **Animações e efeitos 3D:** usar a biblioteca de `animacoes-3d/`
+  (`animacoes.css` + `animacoes.js`, sem dependências), com discrição — 2 a 3
+  tipos de efeito por página, sempre com fallback (sem JS ou com movimento
+  reduzido, tudo aparece). Especificação completa no
+  `animacoes-3d/FRONT-END_CREATOR.md`, que também vale como checklist de
+  qualidade (hierarquia, responsividade real, acessibilidade, SEO básico). O
+  briefing que esse prompt pede é feito pelo dossiê da `captar` — não
+  perguntar de novo ao usuário a cada demo; e a stack é HTML/CSS/JS puro
+  (não React), porque a entrega é um `.html` único.
 - Entrega: **um `.html` por cliente, com o nome do comércio** (skill
   `entregar-html`) — nunca deploy na Vercel ou em outro host. Demo one-page,
   porque o arquivo único não navega entre páginas.

@@ -73,6 +73,17 @@ publicar sem as fotos do cliente. Para chácara/casa de temporada as bases são
 `hotelmaster` demo `apartment`, `qomfort` `index3` e `boostay` `index-3`; para
 chácara de evento, `boostay` `index-2`. O Leluxe é o que já vem traduzido.
 
+## Estilo Luxury e animações valem pra qualquer template
+
+O estilo principal dos demos é **Luxury**, com **hero sempre com imagem de
+fundo** (foto real do negócio). Ao escolher entre templates da categoria,
+preferir o que já tem hero de foto em tela cheia e visual mais sóbrio; depois
+de personalizar, trazer o resto pro Luxury (fonte serifada nos títulos,
+respiro, linhas finas) e aplicar as animações de `animacoes-3d/`. Se nenhum
+template da categoria chega lá sem virar outro site, partir do
+`animacoes-3d/modelo/index.html` usando o template só como referência de
+seções. Guia: `animacoes-3d/README.md`.
+
 ## Como usar um template
 
 1. Identificar a **categoria** do cliente (não só o nicho exato) no README.md
