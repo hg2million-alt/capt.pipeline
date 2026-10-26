@@ -689,6 +689,10 @@ section[id], [id="topo"] { scroll-margin-top: 72px; }
 @media (min-width: 900px) { .cl-sobre { grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr); } }
 @media (min-width: 1000px) { .cl-aval { grid-template-columns: 300px minmax(0, 1fr); } }
 
+/* animação 3D do formulário não pode gerar rolagem lateral no celular */
+.cl-agendar, .lx-secao { overflow-x: clip; }
+html, body { overflow-x: clip; }
+
 </style>
 </head>
 <body>
