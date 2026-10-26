@@ -32,7 +32,7 @@ Aqui está. Os horários do salão e a reserva de mesa estão marcados como "a c
 
 ## Follow-ups
 
-- Sem resposta ao balão 1-3 (1 dia depois): `Maria?` (só o primeiro nome da pessoa com "?"; se não souber o nome, "Olá, tudo certo por aqui?" não serve: esperar e usar a variante abaixo)
+- Sem resposta (1 dia depois): só o primeiro nome de quem atendeu + "?", se a pessoa tiver dito o nome. Se o nome não apareceu, usar a variante abaixo.
 - Variante sem nome (2 a 3 dias depois): `Fiz um modelo de site do Tutti pra você ver. Posso mandar?`
 - Sem resposta ao arquivo: `Conseguiu abrir? Se preferir, explico por áudio em um minuto.`
 
