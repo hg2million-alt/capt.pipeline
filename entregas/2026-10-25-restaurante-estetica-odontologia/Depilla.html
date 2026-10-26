@@ -398,7 +398,7 @@ details.faq[open]::details-content { height: auto; }
 details.faq summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; gap: 16px; }
 details.faq summary::-webkit-details-marker { display: none; }
 details.faq summary::after { content: "+"; transition: transform var(--anim-resposta); }
-details.faq[open] summary::after { content: "−"; }
+details.faq[open] summary::after { content: "×"; }
 .btn-luxo:active, button:active { transform: scale(0.97); }
 .digitando span { display: inline-block; width: 6px; height: 6px; margin: 0 2px; border-radius: 50%; background: currentColor; animation: ponto 1.2s infinite ease-in-out; }
 .digitando span:nth-child(2) { animation-delay: 0.15s; }
@@ -666,6 +666,7 @@ fieldset.dp-campo legend { margin-bottom: 9px; }
     ]
   }
   </script>
+<style>/* sem travessões decorativos: nenhuma linha curta antes de rótulos ou itens */.lx-rotulo::before,.lx-rotulo::after{content:none!important;display:none!important}.tratamento li::before{content:none!important}</style>
 </head>
 <body>
   <a class="pular" href="#conteudo">Pular para o conteúdo</a>

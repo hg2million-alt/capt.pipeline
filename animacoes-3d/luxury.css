@@ -51,7 +51,7 @@ h1 em, h2 em { font-style: italic; color: var(--lx-acento); }
   font: 500 11px/1 var(--lx-sans); letter-spacing: 0.32em; text-transform: uppercase;
   color: var(--lx-acento);
 }
-.lx-rotulo::before { content: ""; width: 36px; height: 1px; background: currentColor; }
+/* sem linha antes do rótulo: parece travessão */
 .lx-texto-suave { color: var(--lx-texto-suave); max-width: 56ch; }
 
 /* botões: retângulo fino, sem sombra, sem cantos muito redondos */

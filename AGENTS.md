@@ -113,6 +113,12 @@ não substitui o texto.
 - Entrega: **um `.html` por cliente, com o nome do comércio** (skill
   `entregar-html`) — nunca deploy na Vercel ou em outro host. Demo one-page,
   porque o arquivo único não navega entre páginas.
+- **Sem travessões, em nenhum lugar.** Nada de "—", "–" ou " - " como
+  separador em texto, título, meta, alt, balão de abordagem; nada de linha
+  curta decorativa antes de rótulo/lista (parece travessão) nem sinal de
+  menos no FAQ. Use vírgula, ponto, dois-pontos ou "·"; horário em "11h às 15h".
+  Hífen só dentro de palavra e em telefone (+55 84 99999-9999). Depois de
+  empacotar, conferir: nenhum caractere U+2010 a U+2015 / U+2212 no `.html`.
 - Telefones no formato `+55 84 9XXXX-XXXX`; botão de WhatsApp com
   `https://wa.me/5584...`.
 

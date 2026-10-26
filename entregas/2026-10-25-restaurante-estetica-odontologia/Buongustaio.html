@@ -393,7 +393,7 @@ details.faq[open]::details-content { height: auto; }
 details.faq summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; gap: 16px; }
 details.faq summary::-webkit-details-marker { display: none; }
 details.faq summary::after { content: "+"; transition: transform var(--anim-resposta); }
-details.faq[open] summary::after { content: "−"; }
+details.faq[open] summary::after { content: "×"; }
 .btn-luxo:active, button:active { transform: scale(0.97); }
 .digitando span { display: inline-block; width: 6px; height: 6px; margin: 0 2px; border-radius: 50%; background: currentColor; animation: ponto 1.2s infinite ease-in-out; }
 .digitando span:nth-child(2) { animation-delay: 0.15s; }
@@ -717,6 +717,7 @@ h1, h2, h3 { letter-spacing: 0; line-height: 1.12; }
 .telefone-grande, .telefone-medio, .horas dd, .selo-nota strong, .placar strong, .hero-nota b { font-variant-numeric: lining-nums; }
 
 </style>
+<style>/* sem travessões decorativos: nenhuma linha curta antes de rótulos ou itens */.lx-rotulo::before,.lx-rotulo::after{content:none!important;display:none!important}.tratamento li::before{content:none!important}</style>
 </head>
 <body>
   <a class="pular" href="#casa">Pular para o conteúdo</a>
@@ -804,7 +805,7 @@ h1, h2, h3 { letter-spacing: 0; line-height: 1.12; }
           <article class="lx-card hover-elevado" tabindex="0">
             <span class="lx-num">03</span>
             <h3>Almoço e jantar</h3>
-            <p class="lx-texto-suave">Aberto todos os dias no almoço. À noite, de segunda a sábado, e na sexta até a meia&#8209;noite.</p>
+            <p class="lx-texto-suave">Aberto todos os dias no almoço. À noite, de segunda a sábado, e na sexta até as 24h.</p>
           </article>
         </div>
       </div>
@@ -928,7 +929,7 @@ h1, h2, h3 { letter-spacing: 0; line-height: 1.12; }
   <footer class="lx-rodape rodape-buon">
     <div class="lx-container">
       <span class="rodape-marca">Buongustaio</span>
-      <p>Av. Afonso Pena, 444 · Petrópolis · Natal/RN · <a class="sem-quebra" href="tel:+558432021143">+55&nbsp;84&nbsp;3202&#8209;1143</a></p>
+      <p>Av. Afonso Pena, 444 · Petrópolis · Natal/RN · <a class="sem-quebra" href="tel:+558432021143">+55&nbsp;84&nbsp;3202-1143</a></p>
       <p class="rodape-nota">Prévia de site para apresentação. Fotos publicadas por clientes no Google Maps; textos e dados marcados como “a confirmar” dependem da casa.</p>
     </div>
   </footer>
