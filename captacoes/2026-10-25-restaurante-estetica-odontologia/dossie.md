@@ -8,12 +8,25 @@ Petrópolis, Lagoa Nova).
 (nota ≥ 4,3, 15+ avaliações, bairro nobre, sem site próprio) → cerca de 100
 passaram → shortlist de 13 → **10 candidatos + 2 reservas**.
 
+## Atualização 2026-10-26: Instagram conferido (com login)
+
+Com acesso logado, os perfis abriram. Isto **substitui** o que as seções
+abaixo dizem sobre Instagram quando houver conflito.
+
+| # | Negócio | @ | Status | O que muda |
+|---|---|---|---|---|
+| 1 | Ô Bar Ponta Negra | **@obarpontanegra** | ✅ confirmado (bio diz "unidade Ponta Negra", endereço do Linktree igual ao Maps) | **134 mil seguidores**, rede com 5+ unidades (@obarpraia, @obarpetropolis, @obarmidway, @obarpartagenatal). Presença digital forte, então o gap **enfraquece**. O que sobra: cardápio, carta de drinks e carta de vinhos são **PDFs no Google Drive**, e o Linktree ainda anuncia "Mesas Quinta da Resenha **20/08**" (promoção vencida). **Logo:** "Ô BAR / restaurante" em letra terracota sobre madeira, `#682507` / `#A66635` / creme `#FBE2BC` → `assets/o-bar-ponta-negra/logo.jpg`. Recomendo **trocar por reserva**: rede desse porte costuma ter agência. |
+| 5 | Clínica Luanna Souza | @luannasouzaenfesteta | ❌ **"Esta página não está disponível"** | **Segundo gap verificável:** o botão "Instagram" do próprio site dela leva a um perfil que não existe mais. Os dois links (site do Maps e Instagram do site) estão quebrados. @ atual não encontrado. |
+| 7 | Juliane Alves Clinic | **@julianealves.clinic** | ✅ confirmado (ficha do Maps) | 28,8 mil seguidores, 2.582 posts. Bio: "Estética Avançada · Estética minimalista e humanizada · Nanopigmentação, Harmonização Facial, Sobrancelhas, Cílios, Exossomos". **Gap melhor que "só Instagram":** a bio.site (`bio.site/julianealvesclinic`) tem um bloco que mostra **"Invalid Link — Please contact the Bio Site owner"**. Foto de perfil é retrato dela, então a logo continua a do Maps. 12 posts em `assets/juliane-alves-clinic/instagram/`. |
+| 9 | Clinique Odontologia | **@cliniquenatal** | ✅ confirmado (ficha do Maps + endereço R. Seridó, 722 na bio) | 15,7 mil seguidores. Bio: "Líder em Implantes · Facetas · Lentes de Contato · Prótese". Link da bio: instabio genérico com o Responsável Técnico **Bruno Souza, CRO/PE 10944**. WhatsApp da bio (84 99403-9623) é diferente do fixo do Maps. **Logo:** dente azul + "CLINIQUE", com laço rosa de Outubro Rosa por cima (temporário, não usar) → `assets/clinique-odontologia/logo.jpg`. |
+| 2, 3, 4, 6, 8 | Sale e Pepe, Tutti Cucina, Buongustaio, Depilla, Alian | — | não encontrado | Testados os @ prováveis: não existem, ou existem com 0 posts e sem relação (@tutticucina, @depilla = "De Pilla Angela"). Ficam "não encontrado"; o demo não cita @. |
+| 10 | Clínica Cortez | — | ⚠️ homônimo | @cortezodontologia é de **São Paulo** (RT "Dra. Juliana Cortez", o mesmo nome das reviews de Natal, mas endereço e WhatsApp de SP). Não confirmado e **não usar**. Pode ser a mesma dentista atendendo nas duas cidades; perguntar na abordagem, não afirmar. @clinicacortez tem 1 post e não foi confirmado. |
+| reserva | Simetria Face e Corpo | **@simetriafaceecorpo** | ✅ | 5.571 seguidores, "+3.000 pacientes atendidos". Link da bio = só wa.me. Logo: monograma "S" geométrico em roxo/lilás (`#CFBECD` aprox.) → `assets/simetria-face-e-corpo/logo.jpg`. |
+| reserva | Oral Esthetics | **@clinicaoralesthetics** | ✅ (endereço Av. Abel Cabral, 1865 na bio) | 4.199 seguidores. Logo: dente dourado `#BAA773` + "ORAL ESTHETICS" preto → `assets/oral-esthetics/logo.jpg`. |
+
 ## Limitações desta rodada (valem pra todos)
 
-- **Instagram não abriu.** Neste ambiente o Instagram manda tudo pra tela de
-  login, até perfil público. O @ citado abaixo vem **da própria ficha do Maps**
-  (fonte 1 na ordem da skill), mas bio, logo de perfil e posts **não foram
-  conferidos**. O `produzir` precisa tentar de novo, ou o usuário confere.
+- ~~Instagram não abriu~~: resolvido em 26/10 (tabela acima).
 - **Galeria do Maps parcial.** A galeria completa não abre neste ambiente; só
   vieram as fotos da ficha (de 2 a 15 por negócio). Estão em
   `assets/<slug>/maps/`.
