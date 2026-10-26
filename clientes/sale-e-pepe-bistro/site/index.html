@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Sale e Pepe Bistrô · Cucina Mediterranea em Capim Macio, Natal</title>
+  <meta name="description" content="Bistrô de cozinha italiana e mediterrânea no Valencia Hotel, em Capim Macio, Natal/RN. Massas, risoto, menus para dividir e carta de vinhos, de terça a domingo à noite.">
+  <meta name="theme-color" content="#121a2a">
+  <!-- 1º script da página: liga as animações só se puderem rodar (item 7) -->
+  <script>
+    (function (h) {
+      if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        h.classList.add("motion");
+        setTimeout(function () { if (!window.__animOK) h.classList.remove("motion"); }, 3000);
+      }
+    })(document.documentElement);
+  </script>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231f3f7a'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-style='italic' font-size='38' fill='%23f4eee3' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Manrope:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="assets/luxury.css">
+  <link rel="stylesheet" href="assets/animacoes.css">
+  <link rel="stylesheet" href="assets/sale-e-pepe.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Sale e Pepe Bistrô",
+    "servesCuisine": ["Italiana", "Mediterrânea"],
+    "telephone": "+55 84 99853-4456",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "R. Renato Guilherme Kaiser, 70 (Valencia Hotel Natal)",
+      "addressLocality": "Natal",
+      "addressRegion": "RN",
+      "postalCode": "59082-352",
+      "addressCountry": "BR"
+    },
+    "openingHours": "Tu-Su 18:00-22:30"
+  }
+  </script>
+</head>
+<body>
+
+  <header class="header-luxo">
+    <div class="lx-container">
+      <a class="lx-marca" href="#topo" aria-label="Sale e Pepe Bistrô, início">
+        <span class="sp-nome">Sale e Pepe</span><span class="sp-sub">Bistrô</span>
+      </a>
+      <nav class="lx-nav" aria-label="Seções">
+        <a href="#bistro">O bistrô</a>
+        <a href="#cozinha">Cozinha</a>
+        <a href="#reservas">Reservas</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <details class="sp-menu-mobile">
+        <summary aria-label="Abrir menu"><span></span></summary>
+        <nav aria-label="Seções">
+          <a href="#bistro">O bistrô</a>
+          <a href="#cozinha">Cozinha</a>
+          <a href="#galeria">O salão</a>
+          <a href="#reservas">Reservas</a>
+          <a href="#avaliacoes">Avaliações</a>
+          <a href="#contato">Contato</a>
+          <a class="sp-menu-wa" href="https://wa.me/5584998534456?text=Ol%C3%A1%21%20Gostaria%20de%20falar%20com%20o%20Sale%20e%20Pepe." target="_blank" rel="noopener">WhatsApp · +55 84 99853-4456</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <main id="topo">
+
+    <!-- HERO: foto real do salão (Maps) em tela cheia + véu escuro -->
+    <section class="hero" aria-label="Sale e Pepe Bistrô">
+      <div class="hero-fundo">
+        <picture>
+          <source media="(max-width: 700px)" srcset="assets/img/hero-pergolado.jpg">
+          <img src="assets/img/hero-salao.jpg" alt="Salão do Sale e Pepe à noite: mesas de madeira, telha aparente e luzes quentes" fetchpriority="high">
+        </picture>
+      </div>
+      <div class="lx-container hero-entrada">
+        <span class="lx-rotulo" style="--i:0">Capim Macio · Natal</span>
+        <h1 style="--i:1">Sale e Pepe</h1>
+        <span class="sp-hero-sub" style="--i:2">Bistrô · Cucina Mediterranea</span>
+        <p style="--i:3">Massas, risoto, entradas pra dividir e carta de vinhos, num salão de madeira e luz baixa dentro do Valencia Hotel.</p>
+        <div class="hero-acoes" style="--i:4">
+          <a class="btn-luxo" href="#reservas">Reservar mesa</a>
+          <a class="btn-luxo btn-luxo--linha" href="#cozinha">Ver a cozinha</a>
+        </div>
+        <div class="sp-hero-nota" style="--i:5">
+          <span><strong>4,7</strong> no Google · 452 avaliações</span>
+          <span>Terça a domingo · <strong>18h às 22h30</strong></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- O BISTRÔ (trio de boas-vindas do Royate) -->
+    <section id="bistro" class="lx-secao">
+      <div class="lx-container">
+        <div class="sp-cabeca">
+          <span class="lx-rotulo">O bistrô</span>
+          <h2 data-anim="rise3d">Um jantar <em>sem pressa</em>, à italiana</h2>
+          <p class="lx-texto-suave">No Valencia Hotel, em Capim Macio, o Sale e Pepe serve cozinha italiana e mediterrânea de terça a domingo, só à noite.</p>
+        </div>
+        <div class="sp-trio" data-stagger="3d">
+          <article class="lx-card hover-elevado" tabindex="0">
+            <span class="lx-num">01</span>
+            <h3>O salão</h3>
+            <p class="lx-texto-suave">Madeira, telha aparente e luz quente. Quem já foi descreve o ambiente como aconchegante e tranquilo.</p>
+          </article>
+          <article class="lx-card hover-elevado" tabindex="0">
+            <span class="lx-num">02</span>
+            <h3>Menus pra provar mais</h3>
+            <p class="lx-texto-suave">Menu executivo e menu compartilhado para dois, que um cliente descreve com duas entradas, uma massa, um prato de carne e uma sobremesa.</p>
+            <span class="a-confirmar">composição e valores a confirmar</span>
+          </article>
+          <article class="lx-card hover-elevado" tabindex="0">
+            <span class="lx-num">03</span>
+            <h3>Carta de vinhos</h3>
+            <p class="lx-texto-suave">Vinho pra acompanhar a massa, com “variedade e preços bons”, nas palavras de quem jantou lá.</p>
+            <span class="a-confirmar">rótulos a confirmar</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRATO EM DESTAQUE (feature do Royate) -->
+    <section id="cozinha" class="lx-secao lx-secao--alt">
+      <div class="lx-container sp-destaque">
+        <figure data-anim="rise3d">
+          <img src="assets/img/vongole.jpg" alt="Spaghetti alle vongole na louça azul e branca da casa" loading="lazy">
+        </figure>
+        <div>
+          <span class="lx-rotulo">Da cozinha</span>
+          <h3 data-anim="rise3d">Spaghetti alle vongole</h3>
+          <p class="lx-texto-suave">Vôngoles e salsinha, na louça azul e branca que aparece em quase toda foto de quem janta no Sale e Pepe.</p>
+          <div class="sp-miniaturas" data-stagger="3d">
+            <figure>
+              <img src="assets/img/rigatoni-ragu.jpg" alt="Rigatoni com molho de carne e queijo ralado" loading="lazy">
+              <figcaption>Rigatoni</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/img/risoto.jpg" alt="Risoto com salsinha na louça azul" loading="lazy">
+              <figcaption>Risoto</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/img/tiramisu.jpg" alt="Tiramisù com cacau polvilhado" loading="lazy">
+              <figcaption>Tiramisù</figcaption>
+            </figure>
+          </div>
+          <p class="sp-legenda">Fotos de clientes no Google Maps.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARDÁPIO em duas colunas, com pontilhado (Royate) -->
+    <section class="lx-secao sp-escuro" aria-labelledby="titulo-cardapio">
+      <div class="lx-container">
+        <div class="sp-cabeca sp-cabeca--centro">
+          <span class="lx-rotulo">Cardápio</span>
+          <h2 id="titulo-cardapio" data-anim="rise3d">O que sai da cozinha</h2>
+        </div>
+        <div class="sp-cardapio">
+          <div>
+            <h3>Entradas &amp; massas</h3>
+            <div data-stagger>
+              <div class="sp-item">
+                <div class="sp-item-linha"><span class="sp-item-nome"><em>Burrata</em> ao pesto</span><span class="sp-pontos"></span><span class="sp-item-preco a-confirmar">a confirmar</span></div>
+                <p>Com tomate e folhas verdes.</p>
+              </div>
+              <div class="sp-item">
+                <div class="sp-item-linha"><span class="sp-item-nome"><em>Carpaccio</em></span><span class="sp-pontos"></span><span class="sp-item-preco a-confirmar">a confirmar</span></div>
+                <p>Com rúcula e lascas de queijo.</p>
+              </div>
+              <div class="sp-item">
+                <div class="sp-item-linha"><span class="sp-item-nome"><em>Spaghetti</em> alle vongole</span><span class="sp-pontos"></span><span class="sp-item-preco a-confirmar">a confirmar</span></div>
+                <p>Vôngoles e salsinha.</p>
+              </div>
+              <div class="sp-item">
+                <div class="sp-item-linha"><span class="sp-item-nome"><em>Rigatoni</em></span><span class="sp-pontos"></span><span class="sp-item-preco a-confirmar">a confirmar</span></div>
+                <p>Com molho de carne e queijo ralado.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3>Risoto, menus &amp; doce</h3>
+            <div data-stagger>
+              <div class="sp-item">
+                <div class="sp-item-linha"><span class="sp-item-nome"><em>Risoto</em></span><span class="sp-pontos"></span><span class="sp-item-preco a-confirmar">a confirmar</span></div>
+                <p>Ingredientes a confirmar com a cozinha.</p>
+              </div>
+              <div class="sp-item">
+                <div class="sp-item-linha"><span class="sp-item-nome">Menu executivo</span><span class="sp-pontos"></span><span class="sp-item-preco a-confirmar">a confirmar</span></div>
+                <p>Citado nas avaliações do Google; composição a confirmar.</p>
+              </div>
+              <div class="sp-item">
+                <div class="sp-item-linha"><span class="sp-item-nome">Menu compartilhado <em>para 2</em></span><span class="sp-pontos"></span><span class="sp-item-preco a-confirmar">a confirmar</span></div>
+                <p>Duas entradas, uma massa, um prato de carne e uma sobremesa.</p>
+              </div>
+              <div class="sp-item">
+                <div class="sp-item-linha"><span class="sp-item-nome"><em>Tiramisù</em></span><span class="sp-pontos"></span><span class="sp-item-preco a-confirmar">a confirmar</span></div>
+                <p>Com cacau por cima.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="sp-nota-cardapio"><span class="a-confirmar">ilustrativo</span> <span>Pratos identificados nas fotos e avaliações de clientes no Google. Nomes, receitas e preços entram aqui a partir do cardápio da casa.</span></p>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section id="galeria" class="lx-secao">
+      <div class="lx-container">
+        <div class="sp-cabeca">
+          <span class="lx-rotulo">O salão e a mesa</span>
+          <h2 data-anim="rise3d">Luz baixa, <em>louça azul</em></h2>
+        </div>
+        <div class="lx-galeria sp-galeria" data-stagger>
+          <figure>
+            <picture>
+              <source media="(max-width: 700px)" srcset="assets/img/hero-salao.jpg">
+              <img src="assets/img/hero-pergolado.jpg" alt="Salão com telhas aparentes e cordões de luz" loading="lazy">
+            </picture>
+            <figcaption>O salão</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/entrada.jpg" alt="Entrada com burrata ao pesto, carpaccio e pães tostados" loading="lazy">
+            <figcaption>Entrada pra dividir</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/vinho.jpg" alt="Taça de vinho tinto ao lado do spaghetti alle vongole" loading="lazy">
+            <figcaption>Vinho e vongole</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESERVA (booking do Royate): o formulário monta a mensagem de WhatsApp -->
+    <section id="reservas" class="sp-escuro" aria-labelledby="titulo-reserva">
+      <div class="sp-reserva">
+        <div class="sp-reserva-foto">
+          <img src="assets/img/rigatoni-louca.jpg" alt="Rigatoni na louça azul, sobre o jogo americano de couro com o nome da casa" loading="lazy">
+        </div>
+        <div class="sp-reserva-corpo">
+          <span class="lx-rotulo">Reservas</span>
+          <h2 id="titulo-reserva" data-anim="rise3d" style="margin-top:22px">Reserve sua mesa</h2>
+          <p class="lx-texto-suave" style="margin:20px 0 0">Escolha o dia e o horário: a mensagem já sai pronta no WhatsApp do bistrô. <span class="a-confirmar">reserva a confirmar</span></p>
+          <form class="sp-form" id="form-reserva" action="https://wa.me/5584998534456" method="get" target="_blank">
+            <input type="hidden" name="text" value="Olá! Gostaria de reservar uma mesa no Sale e Pepe.">
+            <div class="sp-campo">
+              <label for="r-pessoas">Pessoas</label>
+              <select id="r-pessoas">
+                <option>1 pessoa</option>
+                <option selected>2 pessoas</option>
+                <option>3 pessoas</option>
+                <option>4 pessoas</option>
+                <option>5 pessoas</option>
+                <option>6 pessoas</option>
+                <option>7 pessoas</option>
+                <option>8 pessoas</option>
+                <option>mais de 8 pessoas</option>
+              </select>
+            </div>
+            <div class="sp-campo">
+              <label for="r-data">Dia</label>
+              <input id="r-data" type="date">
+            </div>
+            <div class="sp-campo">
+              <label for="r-hora">Horário</label>
+              <select id="r-hora">
+                <option>18:00</option><option>18:30</option><option>19:00</option><option selected>19:30</option>
+                <option>20:00</option><option>20:30</option><option>21:00</option><option>21:30</option><option>22:00</option>
+              </select>
+            </div>
+            <div class="sp-campo">
+              <label for="r-nome">Seu nome</label>
+              <input id="r-nome" type="text" autocomplete="name" placeholder="Como te chamamos">
+            </div>
+            <p class="sp-form-nota" id="r-aviso" aria-live="polite">Terça a domingo, das 18h às 22h30. Segunda o bistrô fecha.</p>
+            <button class="btn-luxo" type="submit">Enviar pelo WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- AVALIAÇÕES: só citação real do Google -->
+    <section id="avaliacoes" class="lx-secao lx-secao--alt">
+      <div class="lx-container">
+        <div class="sp-cabeca sp-cabeca--centro">
+          <span class="lx-rotulo">Avaliações no Google</span>
+          <p class="sp-nota-google" data-anim="rise3d"><strong>4,7</strong><span>452 avaliações</span></p>
+        </div>
+        <div class="sp-avaliacoes" data-stagger="3d">
+          <figure class="sp-avaliacao">
+            <span class="sp-estrelas" aria-label="5 de 5 estrelas">★★★★★</span>
+            <blockquote>“A Josi que nos atendeu explicou claramente sobre os pratos e nos deu a sugestão de pedir o Menu compartilhado que servia muito bem 2 pessoas.”</blockquote>
+            <figcaption>Grazi · avaliação no Google</figcaption>
+          </figure>
+          <figure class="sp-avaliacao">
+            <span class="sp-estrelas" aria-label="4 de 5 estrelas">★★★★<span style="opacity:.3">★</span></span>
+            <blockquote>“Achei bem aconchegante o ambiente, atendimento rápido […] As entradas estavam ótimas, bem saborosas.”</blockquote>
+            <figcaption>Bruna · avaliação no Google</figcaption>
+          </figure>
+          <figure class="sp-avaliacao">
+            <span class="sp-estrelas" aria-label="5 de 5 estrelas">★★★★★</span>
+            <blockquote>“Primeira vez no local e primeira impressão, adorei […] Recomendo principalmente pela comida e atendimento.”</blockquote>
+            <figcaption>Paulo · avaliação no Google</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="lx-secao">
+      <div class="lx-container sp-contato">
+        <div>
+          <span class="lx-rotulo">Contato</span>
+          <h2 data-anim="rise3d" style="margin-top:22px;max-width:14ch">De terça a domingo, <em>à noite</em></h2>
+          <dl class="sp-dados">
+            <div><dt>Endereço</dt><dd>R. Renato Guilherme Kaiser, 70<br>Valencia Hotel Natal · Capim Macio<br>Natal/RN · 59082-352</dd></div>
+            <div><dt>Horário</dt><dd>Terça a domingo, 18h às 22h30<br>Segunda: fechado</dd></div>
+            <div><dt>Telefone</dt><dd><a href="tel:+5584998534456">+55 84 99853-4456</a></dd></div>
+            <div><dt>Instagram</dt><dd><span class="a-confirmar">a confirmar</span></dd></div>
+          </dl>
+          <div class="sp-acoes">
+            <a class="btn-luxo" href="https://wa.me/5584998534456?text=Ol%C3%A1%21%20Gostaria%20de%20falar%20com%20o%20Sale%20e%20Pepe." target="_blank" rel="noopener">Falar no WhatsApp</a>
+            <a class="btn-luxo btn-luxo--linha" href="https://www.google.com/maps/search/?api=1&amp;query=Sale%20e%20Pepe%20Bistro%20Natal&amp;query_place_id=ChIJG6ujyNz_sgcRwbnW8RbRAL8" target="_blank" rel="noopener">Como chegar</a>
+          </div>
+        </div>
+        <div class="sp-mapa">
+          <iframe title="Mapa: Sale e Pepe Bistrô, Valencia Hotel Natal" src="https://maps.google.com/maps?q=R.%20Renato%20Guilherme%20Kaiser%2C%2070%20-%20Capim%20Macio%2C%20Natal%20-%20RN&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="lx-rodape sp-escuro">
+    <div class="lx-container">
+      <div class="sp-rodape">
+        <div>
+          <span class="sp-nome">Sale e Pepe</span>
+          Bistrô · Cucina Mediterranea · Valencia Hotel Natal, Capim Macio
+        </div>
+        <a href="#topo" style="font-size:12px;letter-spacing:.2em;text-transform:uppercase;text-decoration:none">Voltar ao topo ↑</a>
+      </div>
+      <small>Página de demonstração montada a partir da ficha pública do Google Maps. Fotos: clientes no Google. Cores provisórias. Itens marcados “a confirmar” dependem da casa.</small>
+    </div>
+  </footer>
+
+  <div class="wa-flutuante" data-depois=".hero" data-some-em="#contato">
+    <a href="https://wa.me/5584998534456?text=Ol%C3%A1%21%20Gostaria%20de%20falar%20com%20o%20Sale%20e%20Pepe." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.1-4.7-4-4.8-4.2-.1-.2-1.2-1.5-1.2-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.4Z"/></svg>
+    </a>
+  </div>
+
+  <script>
+    // Reserva: monta a mensagem e abre o WhatsApp. Sem JS, o formulário manda uma mensagem genérica.
+    (function () {
+      var f = document.getElementById("form-reserva");
+      if (!f) return;
+      var data = document.getElementById("r-data");
+      var aviso = document.getElementById("r-aviso");
+      var hoje = new Date(); hoje.setMinutes(hoje.getMinutes() - hoje.getTimezoneOffset());
+      data.min = hoje.toISOString().slice(0, 10);
+      f.addEventListener("submit", function (ev) {
+        ev.preventDefault();
+        var pessoas = document.getElementById("r-pessoas").value;
+        var hora = document.getElementById("r-hora").value;
+        var nome = document.getElementById("r-nome").value.trim();
+        var dia = "";
+        if (data.value) {
+          var p = data.value.split("-");
+          var d = new Date(+p[0], +p[1] - 1, +p[2]);
+          if (d.getDay() === 1) {
+            aviso.textContent = "Segunda-feira o bistrô fecha. Escolha outro dia, de terça a domingo.";
+            data.focus();
+            return;
+          }
+          dia = " no dia " + p[2] + "/" + p[1];
+        }
+        var msg = "Olá! Gostaria de reservar uma mesa no Sale e Pepe para " + pessoas + dia + ", às " + hora + "." + (nome ? " Meu nome é " + nome + "." : "");
+        window.open("https://wa.me/5584998534456?text=" + encodeURIComponent(msg), "_blank", "noopener");
+      });
+      // menu mobile: fecha ao escolher uma seção
+      var menu = document.querySelector(".sp-menu-mobile");
+      if (menu) menu.addEventListener("click", function (ev) { if (ev.target.closest("nav a")) menu.removeAttribute("open"); });
+    })();
+  </script>
+  <script src="assets/animacoes.js"></script>
+</body>
+</html>

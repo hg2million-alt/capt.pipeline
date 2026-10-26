@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Buongustaio — Restaurante em Petrópolis, Natal</title>
+  <meta name="description" content="Buongustaio: massas, risotos e vinho na Av. Afonso Pena, 444, Petrópolis, Natal/RN. Almoço todos os dias e jantar de segunda a sábado. Reservas pelo +55 84 3202-1143.">
+  <meta name="theme-color" content="#0F0E0B">
+  <!-- 1º script da página: liga as animações só se puderem rodar (item 7) -->
+  <script>
+    (function (h) {
+      if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        h.classList.add("motion");
+        setTimeout(function () { if (!window.__animOK) h.classList.remove("motion"); }, 3000);
+      }
+    })(document.documentElement);
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Manrope:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="assets/luxury.css">
+  <link rel="stylesheet" href="assets/animacoes.css">
+  <link rel="stylesheet" href="assets/buongustaio.css">
+</head>
+<body>
+  <a class="pular" href="#casa">Pular para o conteúdo</a>
+
+  <header class="header-luxo">
+    <div class="lx-container">
+      <a class="lx-marca" href="#topo" aria-label="Buongustaio, voltar ao topo">Buongustaio</a>
+      <nav class="lx-nav" aria-label="Seções">
+        <a href="#casa">A casa</a>
+        <a href="#cozinha">Cozinha</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#horarios">Horários</a>
+      </nav>
+      <div class="topo-acoes">
+        <a class="btn-topo" href="tel:+558432021143">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></svg>
+          Reservar
+        </a>
+        <details class="menu-movel">
+          <summary aria-label="Abrir menu"><span></span><span></span></summary>
+          <nav aria-label="Seções">
+            <a href="#casa">A casa</a>
+            <a href="#cozinha">Cozinha</a>
+            <a href="#reserva">Reservas</a>
+            <a href="#avaliacoes">Avaliações</a>
+            <a href="#horarios">Horários e endereço</a>
+          </nav>
+        </details>
+      </div>
+    </div>
+  </header>
+
+  <main id="topo">
+    <!-- HERO: fachada real (foto do Google Maps) com o letreiro iluminado -->
+    <section class="hero hero-buon" aria-label="Apresentação">
+      <div class="hero-fundo">
+        <img src="assets/img/fachada.jpg" alt="Fachada do Buongustaio ao anoitecer: salão envidraçado, palmeiras e o letreiro dourado iluminado no jardim" fetchpriority="high">
+      </div>
+      <div class="lx-container hero-entrada hero-topo">
+        <span class="lx-rotulo" style="--i:0">Petrópolis · Natal/RN</span>
+        <h1 style="--i:1">Massas, risotos e <em>vinho</em> na Afonso&nbsp;Pena</h1>
+        <p style="--i:2">Cozinha italiana com almoço todos os dias e jantar de segunda a sábado, num salão de vidro entre palmeiras.</p>
+      </div>
+      <div class="lx-container hero-entrada hero-base">
+        <div class="hero-acoes" style="--i:3">
+          <a class="btn-luxo" href="tel:+558432021143">Reservar mesa</a>
+          <a class="btn-luxo btn-luxo--linha" href="#casa">Conhecer</a>
+        </div>
+        <span class="hero-nota" style="--i:4"><b>4,6</b> <span class="estrelas" aria-hidden="true">★★★★★</span> 639 avaliações no Google</span>
+      </div>
+    </section>
+
+    <!-- A CASA (about-area do template) -->
+    <section id="casa" class="lx-secao">
+      <div class="lx-container casa">
+        <figure class="casa-foto">
+          <img src="assets/img/mesa-vinho.jpg" alt="Mesa posta com taça de vinho tinto, garrafas e azeite" loading="lazy">
+          <div class="selo-nota">
+            <strong>4,6</strong>
+            <span>no Google<br>639 avaliações</span>
+          </div>
+        </figure>
+        <div class="casa-texto">
+          <div data-anim="rise3d">
+            <span class="lx-rotulo">A casa</span>
+            <h2>Ambiente requintado, atendimento <em>de perto</em></h2>
+          </div>
+          <p class="lx-texto-suave">Na Av. Afonso Pena, em Petrópolis, o Buongustaio recebe para o almoço e o jantar num salão de vidro aberto para o jardim. Massas com frutos do mar, risotos e vinho para acompanhar, com a ajuda de quem serve na hora de escolher.</p>
+          <p class="nota-demo"><span class="a-confirmar">texto de apresentação: sugestão, a confirmar com a casa</span></p>
+        </div>
+      </div>
+
+      <div class="lx-container">
+        <div class="lx-grid diferenciais" data-stagger="3d">
+          <article class="lx-card hover-elevado" tabindex="0">
+            <span class="lx-num">01</span>
+            <h3>Massas e frutos do mar</h3>
+            <p class="lx-texto-suave">Camarão, lula e mariscos com massa: são os pratos que os clientes fotografam e publicam no Google.</p>
+          </article>
+          <article class="lx-card hover-elevado" tabindex="0">
+            <span class="lx-num">02</span>
+            <h3>Vinho à mesa</h3>
+            <p class="lx-texto-suave">Garçons que ajudam a escolher o prato e o vinho, como conta quem já avaliou a casa.</p>
+          </article>
+          <article class="lx-card hover-elevado" tabindex="0">
+            <span class="lx-num">03</span>
+            <h3>Almoço e jantar</h3>
+            <p class="lx-texto-suave">Aberto todos os dias no almoço. À noite, de segunda a sábado, e na sexta até a meia&#8209;noite.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DA COZINHA (popular meal / food menus do template, sobre a textura de pedra) -->
+    <section id="cozinha" class="lx-secao secao-pedra">
+      <div class="lx-container">
+        <div class="cabeca-secao">
+          <div data-anim="rise3d">
+            <span class="lx-rotulo">Da cozinha</span>
+            <h2>O que chega <em>à mesa</em></h2>
+          </div>
+          <p class="lx-texto-suave">Fotos publicadas por clientes no Google Maps.</p>
+        </div>
+
+        <div class="pratos" data-stagger="3d">
+          <figure class="prato hover-elevado">
+            <img src="assets/img/prato-frutos-do-mar.jpg" alt="Massa fina com camarão, lula e mariscos ao molho de tomate, com manjericão" loading="lazy">
+            <figcaption>Massa com frutos do mar</figcaption>
+          </figure>
+          <figure class="prato hover-elevado">
+            <img src="assets/img/prato-camarao.jpg" alt="Massa com camarões grelhados e molho escuro, finalizada com salsinha" loading="lazy">
+            <figcaption>Massa com camarões</figcaption>
+          </figure>
+          <figure class="prato hover-elevado">
+            <img src="assets/img/jogo-americano.jpg" alt="Camarões ao molho cremoso sobre massa, no jogo americano de couro com a marca Buongustaio gravada" loading="lazy">
+            <figcaption>Camarões ao molho cremoso</figcaption>
+          </figure>
+          <figure class="prato hover-elevado">
+            <img src="assets/img/prato-risoto.jpg" alt="Risoto escuro servido em prato de cerâmica, com salsinha" loading="lazy">
+            <figcaption>Risoto</figcaption>
+          </figure>
+        </div>
+
+        <div class="cardapio-vaga">
+          <div>
+            <span class="cardapio-titulo">Cardápio completo, carta de vinhos e preços</span>
+            <span class="lx-texto-suave">Os nomes dos pratos acima são descrição das fotos.</span>
+          </div>
+          <span class="a-confirmar">cardápio a confirmar com a casa</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESERVA (call to action do template) -->
+    <section id="reserva" class="reserva">
+      <div class="reserva-fundo" aria-hidden="true"></div>
+      <div class="lx-container reserva-conteudo">
+        <div data-anim="rise3d">
+          <span class="lx-rotulo">Reservas</span>
+          <h2>Reserve sua mesa</h2>
+        </div>
+        <p class="lx-texto-suave">Para reservar uma mesa no almoço ou no jantar, ou tirar uma dúvida, ligue para a casa.</p>
+        <a class="telefone-grande" href="tel:+558432021143">+55 84 3202-1143</a>
+        <div class="reserva-acoes">
+          <a class="btn-luxo" href="tel:+558432021143">Ligar para reservar</a>
+          <span class="a-confirmar">reserva pelo WhatsApp: a confirmar</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- AVALIAÇÃO real do Google (citação, nunca depoimento inventado) -->
+    <section id="avaliacoes" class="lx-secao">
+      <div class="lx-container avaliacao">
+        <span class="lx-rotulo">Avaliações no Google</span>
+        <div data-anim="rise3d" class="avaliacao-corpo">
+          <span class="aspas" aria-hidden="true">“</span>
+          <blockquote class="lx-citacao">Ambiente requintado e agradável com atendimento de alto nível. O garçom Elenilson nos atendeu maravilhosamente e ajudou bastante na escolha dos pratos e do vinho.</blockquote>
+          <cite>Avaliação no Google Maps</cite>
+        </div>
+        <div class="placar">
+          <strong>4,6</strong>
+          <span><span class="estrelas" aria-hidden="true">★★★★★</span><br>639 avaliações no Google Maps</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- HORÁRIOS E ENDEREÇO (o hexágono "opening hours" do rodapé do template, refeito em CSS) -->
+    <section id="horarios" class="lx-secao lx-secao--alt">
+      <div class="lx-container horarios">
+        <div class="horarios-texto">
+          <div data-anim="rise3d">
+            <span class="lx-rotulo">Horários e endereço</span>
+            <h2>Petrópolis, <em>Natal</em></h2>
+          </div>
+          <address>
+            Av. Afonso Pena, 444<br>
+            Petrópolis · Natal/RN
+          </address>
+          <a class="telefone-medio" href="tel:+558432021143">+55 84 3202-1143</a>
+          <div class="horarios-acoes">
+            <a class="btn-luxo" href="tel:+558432021143">Ligar</a>
+            <a class="btn-luxo btn-luxo--linha" href="https://www.google.com/maps/search/?api=1&amp;query=Restaurante%20Buongustaio%2C%20Av.%20Afonso%20Pena%2C%20444%2C%20Petr%C3%B3polis%2C%20Natal" target="_blank" rel="noopener">Como chegar</a>
+          </div>
+        </div>
+
+        <div class="quadro-horas">
+          <span class="quadro-titulo">Horário de funcionamento</span>
+          <dl class="horas" id="horas">
+            <div data-dias="1,2,3,4"><dt>Segunda a quinta</dt><dd>11h30 – 15h<br>18h – 23h</dd></div>
+            <div data-dias="5"><dt>Sexta</dt><dd>11h30 – 15h<br>18h – 0h</dd></div>
+            <div data-dias="6"><dt>Sábado</dt><dd>12h – 16h<br>18h – 23h</dd></div>
+            <div data-dias="0"><dt>Domingo</dt><dd>12h – 16h<br><span class="fechado">jantar fechado</span></dd></div>
+          </dl>
+          <span class="quadro-fonte">Horários da ficha do Google Maps</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="lx-rodape rodape-buon">
+    <div class="lx-container">
+      <span class="rodape-marca">Buongustaio</span>
+      <p>Av. Afonso Pena, 444 · Petrópolis · Natal/RN · <a class="sem-quebra" href="tel:+558432021143">+55&nbsp;84&nbsp;3202&#8209;1143</a></p>
+      <p class="rodape-nota">Prévia de site para apresentação. Fotos publicadas por clientes no Google Maps; textos e dados marcados como “a confirmar” dependem da casa.</p>
+    </div>
+  </footer>
+
+  <!-- botão flutuante de ligar (não há WhatsApp confirmado) -->
+  <div class="wa-flutuante flutuante-ligar" data-depois=".hero" data-some-em="#horarios">
+    <a href="tel:+558432021143" aria-label="Ligar para o Buongustaio e reservar">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></svg>
+    </a>
+  </div>
+
+  <script src="assets/animacoes.js"></script>
+  <script>
+    // destaca o dia de hoje no quadro de horários e fecha o menu do celular ao escolher uma seção
+    (function () {
+      var hoje = String(new Date().getDay());
+      Array.prototype.forEach.call(document.querySelectorAll("#horas [data-dias]"), function (l) {
+        if (l.getAttribute("data-dias").split(",").indexOf(hoje) > -1) {
+          l.classList.add("hoje");
+          l.querySelector("dt").insertAdjacentHTML("beforeend", ' <span class="tag-hoje">hoje</span>');
+        }
+      });
+      var menu = document.querySelector(".menu-movel");
+      if (menu) Array.prototype.forEach.call(menu.querySelectorAll("a"), function (a) {
+        a.addEventListener("click", function () { menu.removeAttribute("open"); });
+      });
+    })();
+  </script>
+</body>
+</html>

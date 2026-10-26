@@ -1,0 +1,261 @@
+/* =====================================================================
+   Buongustaio — camada da marca sobre luxury.css + animacoes.css
+   Base de seções: template restaurante-thesignature (escuro, acento único,
+   textura de pedra), levado ao estilo Luxury.
+   Cores (identidade.md): dourado #B7962F e #705C1D + creme #FDF5DB,
+   tiradas do letreiro da fachada (foto do Google Maps).
+   Fontes (aproximação do letreiro): Alex Brush (nome), Cormorant Garamond
+   (títulos), Manrope 300 (texto).
+   ===================================================================== */
+
+:root {
+  --lx-fundo: #0F0E0B;
+  --lx-fundo-2: #16140F;
+  --lx-texto: #FDF5DB;
+  --lx-texto-suave: #C6BD9F;
+  --lx-acento: #B7962F;
+  --buon-ouro-escuro: #705C1D;
+  --lx-linha: rgb(253 245 219 / 0.13);
+  --lx-script: "Alex Brush", "Great Vibes", cursive;
+  --lx-secao: clamp(80px, 11vw, 150px);
+  --marquee-fundo: var(--lx-fundo);
+}
+
+::selection { background: var(--lx-acento); color: var(--lx-fundo); }
+
+/* pular para o conteúdo (teclado) */
+.pular {
+  position: absolute; left: 12px; top: -60px; z-index: 100;
+  padding: 10px 16px; background: var(--lx-acento); color: var(--lx-fundo);
+  font: 500 12px/1 var(--lx-sans); letter-spacing: .14em; text-transform: uppercase; text-decoration: none;
+}
+.pular:focus { top: 12px; }
+
+/* ---------- header ---------- */
+.header-luxo.rolou { background-color: rgb(15 14 11 / 0.86); border-bottom-color: var(--lx-linha); }
+.header-luxo .lx-container { height: 76px; gap: 20px; }
+.lx-marca {
+  font: 400 clamp(30px, 3vw, 38px)/1 var(--lx-script);
+  letter-spacing: 0; color: var(--lx-texto);
+  padding-top: 6px; /* a cursiva tem descendente longo */
+}
+.lx-nav a { color: rgb(253 245 219 / 0.78); }
+.lx-nav a:hover, .lx-nav a:focus-visible { color: var(--lx-acento); }
+.topo-acoes { display: flex; align-items: center; gap: 10px; }
+.btn-topo {
+  display: inline-flex; align-items: center; gap: 9px;
+  padding: 11px 16px; border: 1px solid rgb(183 150 47 / 0.7);
+  color: var(--lx-acento); text-decoration: none;
+  font: 500 11px/1 var(--lx-sans); letter-spacing: .2em; text-transform: uppercase;
+  transition: background-color .45s var(--anim-ease), color .45s var(--anim-ease);
+}
+.btn-topo:hover, .btn-topo:focus-visible { background: var(--lx-acento); color: var(--lx-fundo); }
+.btn-topo:focus-visible, .menu-movel summary:focus-visible { outline: 2px solid var(--lx-acento); outline-offset: 3px; }
+
+/* menu do celular: <details>, funciona sem JS */
+.menu-movel { position: relative; display: none; }
+.menu-movel summary {
+  list-style: none; cursor: pointer; width: 44px; height: 40px;
+  display: grid; place-content: center; gap: 7px; border: 1px solid var(--lx-linha);
+}
+.menu-movel summary::-webkit-details-marker { display: none; }
+.menu-movel summary span { display: block; width: 18px; height: 1px; background: var(--lx-texto); transition: transform .45s var(--anim-ease); }
+.menu-movel[open] summary span:first-child { transform: translateY(4px) rotate(45deg); }
+.menu-movel[open] summary span:last-child { transform: translateY(-4px) rotate(-45deg); }
+.menu-movel nav {
+  position: absolute; right: 0; top: calc(100% + 12px); min-width: 230px;
+  display: grid; padding: 10px 0; background: rgb(15 14 11 / 0.97);
+  border: 1px solid var(--lx-linha);
+}
+.menu-movel nav a {
+  padding: 14px 22px; text-decoration: none; color: var(--lx-texto);
+  font: 400 12px/1.2 var(--lx-sans); letter-spacing: .2em; text-transform: uppercase;
+}
+.menu-movel nav a:hover, .menu-movel nav a:focus-visible { color: var(--lx-acento); }
+@media (max-width: 820px) { .menu-movel { display: block; } }
+
+/* ---------- hero: fachada real com o letreiro ---------- */
+.hero-buon {
+  --hero-foco: 43% 50%;
+  grid-template-rows: 1fr auto; align-items: stretch; row-gap: 32px;
+  padding: clamp(108px, 15vh, 170px) 0 clamp(40px, 7vh, 84px);
+}
+.hero-buon::before {
+  background:
+    linear-gradient(180deg, rgb(12 11 8 / 0.86) 0%, rgb(12 11 8 / 0.55) 34%, rgb(12 11 8 / 0.12) 56%, rgb(12 11 8 / 0.25) 72%, rgb(12 11 8 / 0.9) 100%),
+    linear-gradient(90deg, rgb(12 11 8 / 0.55), transparent 65%);
+}
+.hero-topo { align-self: start; }
+.hero-base { align-self: end; }
+.hero-buon h1 {
+  font-size: clamp(40px, 5.6vw, 80px); line-height: 1.04;
+  max-width: 15ch; margin-block: 20px 20px;
+}
+.hero-buon p { max-width: 40ch; margin: 0; font-size: clamp(15px, 1.1vw, 18px); }
+.hero-buon .hero-acoes { gap: 12px; }
+.hero-nota {
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  margin-top: 22px; font: 400 12px/1.3 var(--lx-sans); letter-spacing: .14em; text-transform: uppercase;
+  color: rgb(253 245 219 / 0.78);
+}
+.hero-nota b { font: 500 20px/1 var(--lx-serif); color: var(--lx-texto); letter-spacing: 0; }
+.estrelas { color: var(--lx-acento); letter-spacing: .12em; }
+
+/* botão principal: hover no ouro escuro da marca */
+.btn-luxo:hover { background: var(--buon-ouro-escuro); border-color: var(--buon-ouro-escuro); color: var(--lx-texto); }
+.btn-luxo--linha { border-color: rgb(253 245 219 / 0.35); }
+.btn-luxo--linha:hover { background: transparent; border-color: var(--lx-acento); color: var(--lx-acento); }
+
+/* ---------- a casa (about-area) ---------- */
+.casa { display: grid; gap: clamp(40px, 6vw, 96px); align-items: center; grid-template-columns: 1fr; }
+@media (min-width: 900px) { .casa { grid-template-columns: 1.05fr 1fr; } }
+.casa-foto { position: relative; margin: 0 0 28px; }
+.casa-foto img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: 40% 50%; }
+.casa-foto::after { content: ""; position: absolute; inset: 14px; border: 1px solid rgb(253 245 219 / 0.22); pointer-events: none; }
+.selo-nota {
+  position: absolute; right: clamp(-6px, -1vw, -20px); bottom: -28px;
+  display: flex; align-items: center; gap: 14px;
+  padding: 18px 22px; background: var(--lx-fundo); border: 1px solid var(--lx-acento);
+}
+.selo-nota strong { font: 400 46px/1 var(--lx-serif); color: var(--lx-acento); }
+.selo-nota span { font: 500 10px/1.5 var(--lx-sans); letter-spacing: .2em; text-transform: uppercase; color: var(--lx-texto-suave); }
+.casa-texto h2 { margin: 22px 0 26px; max-width: 18ch; }
+.casa-texto p { margin: 0 0 18px; }
+.nota-demo { margin-top: 26px !important; }
+.diferenciais { margin-top: clamp(64px, 9vw, 120px); }
+.lx-card { background: rgb(253 245 219 / 0.018); }
+.lx-card p { margin: 0; }
+@media (hover: hover) and (pointer: fine) { .lx-card.hover-elevado:hover { border-color: rgb(183 150 47 / 0.55); } }
+
+/* ---------- da cozinha (sobre a pedra do template) ---------- */
+.secao-pedra {
+  position: relative; isolation: isolate;
+  background: #0b0a08 url("img/textura-pedra.jpg") center / cover no-repeat;
+}
+.secao-pedra::before { content: ""; position: absolute; inset: 0; z-index: -1; background: rgb(11 10 8 / 0.55); }
+.cabeca-secao { display: grid; gap: 18px; margin-bottom: clamp(40px, 6vw, 72px); }
+.cabeca-secao h2 { margin-top: 22px; }
+.cabeca-secao p { margin: 0; }
+@media (min-width: 900px) { .cabeca-secao { grid-template-columns: 1fr auto; align-items: end; } }
+
+.pratos { display: grid; gap: 12px; grid-template-columns: repeat(2, 1fr); }
+@media (min-width: 900px) { .pratos { grid-template-columns: repeat(4, 1fr); gap: 18px; } }
+.prato { margin: 0; position: relative; overflow: hidden; background: #000; }
+.prato img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; transition: transform 1.5s var(--anim-ease); }
+.prato:nth-child(3) img { object-position: 30% 50%; }
+@media (hover: hover) and (pointer: fine) { .prato:hover img { transform: scale(1.04); } }
+.prato figcaption {
+  position: absolute; inset: auto 0 0 0; padding: 40px 14px 14px;
+  background: linear-gradient(180deg, transparent, rgb(8 7 5 / 0.88));
+  font: 500 10.5px/1.4 var(--lx-sans); letter-spacing: .18em; text-transform: uppercase; color: var(--lx-texto);
+}
+@media (min-width: 900px) { .prato figcaption { padding: 56px 20px 20px; font-size: 11px; } }
+
+.cardapio-vaga {
+  margin-top: clamp(28px, 4vw, 44px); padding: 24px clamp(20px, 3vw, 36px);
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 28px;
+  border: 1px dashed rgb(183 150 47 / 0.5); background: rgb(11 10 8 / 0.5);
+}
+.cardapio-vaga > div { display: grid; gap: 6px; }
+.cardapio-titulo { font: 400 clamp(21px, 2vw, 26px)/1.2 var(--lx-serif); }
+.cardapio-vaga .lx-texto-suave { font-size: 14px; }
+
+/* ---------- reserva (call to action do template) ---------- */
+.reserva { position: relative; isolation: isolate; overflow: hidden; padding-block: clamp(96px, 13vw, 170px); text-align: center; }
+.reserva-fundo { position: absolute; inset: 0; z-index: -2; background: url("img/jogo-americano.jpg") 70% 50% / cover no-repeat; }
+.reserva::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: radial-gradient(ellipse at center, rgb(12 11 8 / 0.78), rgb(12 11 8 / 0.9) 70%);
+}
+.reserva-conteudo { display: grid; justify-items: center; }
+.reserva h2 { margin: 22px 0 18px; }
+.reserva p { margin: 0 auto 14px; }
+.telefone-grande {
+  display: inline-block; margin: 6px 0 34px; text-decoration: none; color: var(--lx-texto);
+  font: 400 clamp(36px, 6vw, 68px)/1.1 var(--lx-serif); letter-spacing: .01em;
+  border-bottom: 1px solid rgb(183 150 47 / 0.6); padding-bottom: 6px;
+  white-space: nowrap;
+}
+.telefone-grande:hover { color: var(--lx-acento); }
+.reserva-acoes { display: flex; flex-direction: column; align-items: center; gap: 22px; }
+.reserva .a-confirmar { background: rgb(12 11 8 / 0.7); }
+
+/* ---------- avaliação ---------- */
+.avaliacao { max-width: 880px; text-align: center; display: grid; justify-items: center; }
+.avaliacao-corpo { margin-top: 30px; position: relative; }
+.aspas { display: block; font: 400 110px/0.6 var(--lx-serif); color: var(--lx-acento); height: 46px; }
+.avaliacao .lx-citacao { font-size: clamp(23px, 3vw, 36px); }
+.placar {
+  margin-top: 56px; padding-top: 34px; border-top: 1px solid var(--lx-linha);
+  display: flex; align-items: center; gap: 16px; text-align: left;
+}
+.placar strong { font: 400 54px/1 var(--lx-serif); color: var(--lx-texto); }
+.placar > span { font: 500 11px/1.8 var(--lx-sans); letter-spacing: .2em; text-transform: uppercase; color: var(--lx-texto-suave); }
+
+/* ---------- horários e endereço (hexágono do rodapé do template, em CSS) ---------- */
+.horarios { display: grid; gap: clamp(48px, 7vw, 110px); align-items: center; }
+@media (min-width: 900px) { .horarios { grid-template-columns: 1fr 1fr; } }
+.horarios-texto h2 { margin: 22px 0 28px; }
+.horarios address { font: 300 clamp(17px, 1.4vw, 20px)/1.7 var(--lx-sans); font-style: normal; color: var(--lx-texto); }
+.telefone-medio { display: inline-block; margin: 18px 0 32px; font: 400 clamp(28px, 3vw, 38px)/1.1 var(--lx-serif); text-decoration: none; }
+.telefone-medio:hover { color: var(--lx-acento); }
+.horarios-acoes { display: flex; flex-wrap: wrap; gap: 12px; }
+
+.quadro-horas {
+  position: relative; padding: clamp(30px, 4vw, 52px) clamp(24px, 3.4vw, 48px);
+  border: 1px solid rgb(183 150 47 / 0.55); background: var(--lx-fundo);
+}
+/* cantos em ouro, discretos */
+.quadro-horas::before, .quadro-horas::after {
+  content: ""; position: absolute; width: 22px; height: 22px; border: 1px solid var(--lx-acento);
+}
+.quadro-horas::before { top: 8px; left: 8px; border-right: 0; border-bottom: 0; }
+.quadro-horas::after { bottom: 8px; right: 8px; border-left: 0; border-top: 0; }
+.quadro-titulo { display: block; text-align: center; font: 400 clamp(26px, 2.6vw, 32px)/1.2 var(--lx-serif); margin-bottom: 22px; }
+.horas { margin: 0; }
+.horas > div {
+  display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: baseline;
+  padding: 16px 0; border-top: 1px solid var(--lx-linha);
+}
+.horas dt { font: 500 11.5px/1.5 var(--lx-sans); letter-spacing: .18em; text-transform: uppercase; color: var(--lx-texto-suave); }
+.horas dd { margin: 0; text-align: right; font: 400 19px/1.45 var(--lx-serif); color: var(--lx-texto); }
+.horas .fechado { font-style: italic; color: var(--lx-texto-suave); font-size: 16px; }
+.horas .hoje dt { color: var(--lx-acento); }
+.tag-hoje {
+  display: inline-block; margin-left: 6px; padding: 2px 7px; vertical-align: 1px;
+  background: var(--lx-acento); color: var(--lx-fundo); font-size: 9.5px; letter-spacing: .16em;
+}
+.quadro-fonte { display: block; margin-top: 18px; text-align: center; font: 400 11px/1.4 var(--lx-sans); letter-spacing: .14em; text-transform: uppercase; color: rgb(198 189 159 / 0.75); }
+
+/* ---------- rodapé ---------- */
+.rodape-buon { text-align: center; padding-block: 64px 96px; }
+.rodape-marca { display: block; font: 400 clamp(46px, 6vw, 64px)/1.2 var(--lx-script); color: var(--lx-acento); margin-bottom: 14px; }
+.rodape-buon p { margin: 0 auto 10px; max-width: 64ch; }
+.rodape-buon a { text-decoration: none; color: var(--lx-texto); }
+.rodape-nota { font-size: 12px; color: rgb(198 189 159 / 0.7); margin-top: 22px !important; }
+
+/* ---------- botão flutuante de ligar ---------- */
+.flutuante-ligar a { background: var(--lx-acento); color: var(--lx-fundo); box-shadow: 0 10px 30px -10px rgb(0 0 0 / 0.6); }
+.flutuante-ligar a:hover { background: var(--buon-ouro-escuro); color: var(--lx-texto); }
+.flutuante-ligar a:focus-visible { outline: 2px solid var(--lx-texto); outline-offset: 3px; }
+
+/* chip "a confirmar" um pouco mais legível sobre foto e pedra */
+.a-confirmar { line-height: 1.5; text-align: center; }
+
+/* ---------- celular ---------- */
+@media (max-width: 600px) {
+  .header-luxo .lx-container { height: 68px; }
+  .btn-topo { padding: 10px 12px; }
+  .hero-buon .btn-luxo { padding: 16px 22px; }
+  .selo-nota { padding: 14px 16px; gap: 10px; }
+  .selo-nota strong { font-size: 38px; }
+  .horas dd { font-size: 17px; }
+}
+@media (max-width: 380px) {
+  .btn-topo { letter-spacing: .12em; }
+  .hero-buon .btn-luxo { padding: 15px 18px; letter-spacing: .16em; }
+}
+.sem-quebra { white-space: nowrap; }
+
+/* números de telefone, horário e nota em algarismos alinhados (a Cormorant usa os de estilo antigo) */
+.telefone-grande, .telefone-medio, .horas dd, .selo-nota strong, .placar strong, .hero-nota b { font-variant-numeric: lining-nums; }

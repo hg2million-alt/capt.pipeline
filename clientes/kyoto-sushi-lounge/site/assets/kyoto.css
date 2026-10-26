@@ -1,0 +1,232 @@
+/* =====================================================================
+   Kyoto Sushi Lounge — camada da marca sobre luxury.css
+   Estrutura de seções herdada do template restaurante-grillino
+   (hero → sobre com 2 fotos + contadores → cardápio com miniatura e
+   etiqueta de preço → galeria → faixa de reserva sobre foto).
+   Cores: ver clientes/kyoto-sushi-lounge/identidade.md
+   ===================================================================== */
+
+:root {
+  --lx-fundo: #14100F;          /* salão escuro (dossiê) */
+  --lx-fundo-2: #1C1715;        /* derivado, seções alternadas */
+  --lx-texto: #F3ECE4;
+  --lx-texto-suave: #B8ADA2;
+  --lx-acento: #EC8B66;         /* coral da logo — aproximado, a confirmar */
+  --lx-linha: rgb(243 236 228 / 0.12);
+  --petroleo: #367890;          /* capa do cardápio */
+  --petroleo-fundo: #1A4351;    /* petróleo escurecido p/ contraste com creme */
+  --madeira: #775844;           /* madeira do salão */
+
+  --lx-serif: "Shippori Mincho", "Cormorant Garamond", Georgia, serif;
+  --lx-sans: "Manrope", "Inter", system-ui, sans-serif;
+  --marca: "Quicksand", "Manrope", system-ui, sans-serif;
+}
+
+h1 { font-size: clamp(40px, 6.2vw, 92px); letter-spacing: -0.02em; line-height: 1.08; }
+h2 { font-size: clamp(32px, 4.2vw, 58px); letter-spacing: -0.015em; line-height: 1.12; }
+h3 { font-size: clamp(21px, 1.9vw, 26px); line-height: 1.2; }
+h1 em, h2 em { font-weight: 400; }
+p { margin: 0 0 1.1em; }
+::selection { background: var(--lx-acento); color: var(--lx-fundo); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--lx-acento); outline-offset: 4px; }
+
+/* pular para o conteúdo (teclado) */
+.pular {
+  position: absolute; left: 16px; top: -60px; z-index: 100;
+  background: var(--lx-acento); color: var(--lx-fundo); padding: 10px 16px;
+  font: 500 12px/1 var(--lx-sans); letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none;
+}
+.pular:focus { top: 12px; }
+
+/* ---------- cabeçalho: nome recriado em tipografia (não é a logo ampliada) ---------- */
+.header-luxo .lx-container { height: 76px; gap: 20px; }
+.marca { display: inline-flex; align-items: center; gap: 9px; text-decoration: none; color: var(--lx-texto); }
+.marca-nome { font: 700 27px/1 var(--marca); letter-spacing: -0.01em; }
+.marca-sub {
+  font: 500 8px/1.35 var(--lx-sans); letter-spacing: 0.46em; text-transform: uppercase;
+  color: var(--lx-acento); padding-top: 2px;
+}
+.lx-nav { gap: 30px; }
+.lx-nav a { font-size: 11px; }
+@media (max-width: 980px) { .lx-nav { display: none; } }
+.header-ligar {
+  display: inline-flex; align-items: center; gap: 9px; flex-shrink: 0;
+  padding: 11px 16px; border: 1px solid rgb(236 139 102 / 0.7); color: var(--lx-acento);
+  font: 500 11px/1 var(--lx-sans); letter-spacing: 0.2em; text-transform: uppercase; text-decoration: none;
+  transition: background-color var(--anim-resposta), color var(--anim-resposta);
+}
+.header-ligar:hover { background: var(--lx-acento); color: var(--lx-fundo); }
+.header-ligar svg { width: 14px; height: 14px; }
+
+/* ---------- hero: fachada real à noite ---------- */
+.hero { --hero-foco: 50% 30%; padding-top: 120px; }
+.hero::before {
+  background:
+    linear-gradient(180deg, rgb(12 9 8 / 0.5) 0%, rgb(12 9 8 / 0.05) 26%, rgb(12 9 8 / 0.55) 52%, rgb(12 9 8 / 0.94) 100%),
+    linear-gradient(90deg, rgb(12 9 8 / 0.6), transparent 65%);
+}
+.hero h1 { max-width: 13ch; margin-block: 20px 22px; }
+.hero p { max-width: 42ch; font-size: clamp(15px, 1.15vw, 18px); margin-bottom: 32px; }
+.hero-fatos {
+  list-style: none; margin: 34px 0 0; padding: 22px 0 0; border-top: 1px solid rgb(255 255 255 / 0.16);
+  display: flex; flex-wrap: wrap; gap: 10px 34px;
+  font: 400 12px/1.5 var(--lx-sans); letter-spacing: 0.14em; text-transform: uppercase; color: rgb(255 255 255 / 0.78);
+}
+.hero-fatos strong { font: 500 15px/1 var(--lx-sans); color: var(--lx-texto); letter-spacing: 0.04em; }
+.hero-fatos .estrela { color: var(--lx-acento); }
+
+/* ---------- A casa (about-layout3 + counter-layout1 do Grillino) ---------- */
+.casa-grid { display: grid; gap: clamp(56px, 7vw, 110px); grid-template-columns: 1.05fr 1fr; align-items: center; }
+.duo { position: relative; margin: 0; padding: 0 14% 20% 0; isolation: isolate; }
+.duo::before {
+  content: ""; position: absolute; z-index: -1; top: -14px; left: -14px; width: 58%; height: 62%;
+  border: 1px solid rgb(236 139 102 / 0.55);
+}
+.duo img { width: 100%; object-fit: cover; }
+.duo .f1 { aspect-ratio: 4 / 3; }
+.duo .f2 {
+  position: absolute; right: 0; bottom: 0; width: 44%; aspect-ratio: 3 / 4;
+  border: 8px solid var(--lx-fundo);
+}
+.casa-texto h2 { margin: 22px 0 28px; max-width: 15ch; }
+.contadores {
+  display: grid; grid-template-columns: repeat(3, 1fr); margin: 44px 0 0; padding: 0;
+  border-top: 1px solid var(--lx-linha);
+}
+.contadores div { padding: 26px 12px 0 0; }
+.contadores dt { order: 2; font: 400 11px/1.5 var(--lx-sans); letter-spacing: 0.18em; text-transform: uppercase; color: var(--lx-texto-suave); margin-top: 10px; }
+.contadores dd { margin: 0; font: 400 clamp(34px, 3.4vw, 46px)/1 var(--lx-serif); color: var(--lx-texto); }
+.contadores div { display: flex; flex-direction: column; }
+.contadores dd span { color: var(--lx-acento); font-size: 0.6em; vertical-align: 0.35em; margin-left: 4px; }
+
+/* ---------- Cardápio: faixa petróleo, como a capa do cardápio impresso ---------- */
+.secao-cardapio {
+  background:
+    radial-gradient(ellipse at 90% 0%, rgb(54 120 144 / 0.55), transparent 58%),
+    radial-gradient(ellipse at 0% 100%, rgb(54 120 144 / 0.25), transparent 50%),
+    var(--petroleo-fundo);
+  border-block: 1px solid rgb(54 120 144 / 0.6);
+}
+.secao-cardapio .lx-texto-suave { color: #C9D6D9; }
+.cardapio-topo { max-width: 720px; margin-bottom: clamp(44px, 6vw, 72px); }
+.cardapio-topo h2 { margin: 22px 0 22px; }
+.cardapio-grid { display: grid; grid-template-columns: 1.3fr 0.7fr; gap: clamp(48px, 6vw, 100px); align-items: start; }
+.pratos { list-style: none; margin: 0; padding: 0; border-top: 1px solid rgb(243 236 228 / 0.16); }
+.prato {
+  display: grid; grid-template-columns: 84px 1fr auto; gap: 6px 24px; align-items: center;
+  padding: 24px 0; border-bottom: 1px solid rgb(243 236 228 / 0.16);
+}
+.prato-foto {
+  grid-row: span 1; width: 84px; height: 84px; border-radius: 50%; object-fit: cover;
+  outline: 1px solid rgb(236 139 102 / 0.6); outline-offset: 4px;
+}
+.prato h3 { margin: 0 0 6px; }
+.prato p { margin: 0; font-size: 14.5px; line-height: 1.6; color: #C9D6D9; max-width: 46ch; }
+.prato-preco { justify-self: end; }
+.secao-cardapio .a-confirmar { color: #F6B79B; border-color: rgb(246 183 155 / 0.8); }
+.menu-capa { position: relative; isolation: isolate; margin: 0; }
+.menu-capa::before {
+  /* o "sol" da ilustração da capa do cardápio */
+  content: ""; position: absolute; z-index: -1; width: 58%; aspect-ratio: 1; border-radius: 50%;
+  top: -9%; right: -12%; background: var(--lx-acento); opacity: 0.92;
+}
+.menu-capa img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border: 1px solid rgb(243 236 228 / 0.2); }
+.menu-capa figcaption { margin-top: 18px; font: 400 13px/1.6 var(--lx-sans); color: #C9D6D9; }
+.menu-capa figcaption strong { display: block; font: 400 22px/1.3 var(--lx-serif); color: var(--lx-texto); margin-bottom: 4px; }
+.nota-demo {
+  margin: 40px 0 0; padding-left: 16px; border-left: 1px solid var(--lx-acento);
+  font-size: 13px; line-height: 1.65; color: #C9D6D9; max-width: 60ch;
+}
+
+/* ---------- Galeria (gallery-box do Grillino em recorte editorial) ---------- */
+.galeria { display: grid; gap: 12px; grid-template-columns: repeat(12, 1fr); margin-top: clamp(44px, 6vw, 64px); }
+.galeria figure { position: relative; margin: 0; overflow: hidden; grid-column: span 4; aspect-ratio: 4 / 5; }
+.galeria figure.larga { grid-column: span 8; aspect-ratio: auto; }
+.galeria figure.meia { grid-column: span 6; aspect-ratio: 4 / 3; }
+.galeria img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.5s var(--anim-ease); }
+.galeria figure:hover img { transform: scale(1.04); }
+.galeria figcaption {
+  position: absolute; inset: auto 0 0 0; padding: 40px 18px 16px;
+  background: linear-gradient(0deg, rgb(12 9 8 / 0.75), transparent);
+  font: 500 10.5px/1 var(--lx-sans); letter-spacing: 0.26em; text-transform: uppercase; color: rgb(255 255 255 / 0.88);
+}
+.credito { margin-top: 22px; font-size: 12.5px; color: var(--lx-texto-suave); }
+
+/* ---------- Avaliações ---------- */
+.aval-grid { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: clamp(48px, 7vw, 110px); align-items: start; }
+.nota-grande { font: 400 clamp(96px, 12vw, 160px)/0.9 var(--lx-serif); letter-spacing: -0.03em; margin: 28px 0 14px; }
+.estrelas { color: var(--lx-acento); letter-spacing: 0.3em; font-size: 15px; }
+.nota-legenda { margin-top: 14px; font: 400 12px/1.6 var(--lx-sans); letter-spacing: 0.16em; text-transform: uppercase; color: var(--lx-texto-suave); }
+.link-fino {
+  display: inline-block; margin-top: 30px; padding-bottom: 6px; border-bottom: 1px solid rgb(236 139 102 / 0.6);
+  font: 500 11px/1 var(--lx-sans); letter-spacing: 0.22em; text-transform: uppercase; color: var(--lx-acento); text-decoration: none;
+}
+.link-fino:hover { border-color: var(--lx-acento); }
+.citacoes { display: grid; gap: 0; }
+.citacoes figure { margin: 0; padding: 40px 0; border-bottom: 1px solid var(--lx-linha); }
+.citacoes figure:first-child { padding-top: 0; }
+.lx-citacao { font-size: clamp(22px, 2.5vw, 32px); line-height: 1.45; }
+.citacoes figcaption { margin-top: 18px; font: 500 11px/1.5 var(--lx-sans); letter-spacing: 0.22em; text-transform: uppercase; color: var(--lx-texto-suave); }
+
+/* ---------- Visite (appointment-form-layout2 do Grillino: faixa sobre foto) ---------- */
+.visite { position: relative; isolation: isolate; }
+.visite-fundo { position: absolute; inset: 0; z-index: -2; }
+.visite-fundo img { width: 100%; height: 100%; object-fit: cover; }
+.visite::before { content: ""; position: absolute; inset: 0; z-index: -1; background: rgb(14 11 10 / 0.88); }
+.visite-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(48px, 6vw, 96px); align-items: start; }
+.visite h2 { margin: 22px 0 26px; max-width: 14ch; }
+.endereco { font: 400 clamp(19px, 1.6vw, 22px)/1.5 var(--lx-serif); margin: 0 0 30px; font-style: normal; }
+.horarios { display: grid; grid-template-columns: auto 1fr; gap: 10px 28px; margin: 0 0 32px; padding: 24px 0; border-block: 1px solid var(--lx-linha); font-size: 14.5px; }
+.horarios dt { color: var(--lx-texto-suave); letter-spacing: 0.04em; }
+.horarios dd { margin: 0; }
+.telefone { display: inline-block; font: 400 clamp(26px, 2.6vw, 34px)/1.2 var(--lx-serif); text-decoration: none; margin-bottom: 8px; }
+.telefone:hover { color: var(--lx-acento); }
+.obs { font-size: 13px; color: var(--lx-texto-suave); margin: 6px 0 30px; }
+.obs .a-confirmar { margin-right: 6px; }
+.visite-acoes { display: flex; flex-wrap: wrap; gap: 14px; }
+.mapa { margin: 0; border: 1px solid var(--lx-linha); background: var(--lx-fundo-2); }
+.mapa iframe { display: block; width: 100%; aspect-ratio: 4 / 4.2; border: 0; filter: grayscale(0.85) contrast(1.05) brightness(0.92); }
+.mapa figcaption { padding: 14px 16px; font-size: 12.5px; color: var(--lx-texto-suave); }
+
+/* ---------- rodapé ---------- */
+.rodape-grid { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px 48px; align-items: flex-start; }
+.rodape-grid p { margin: 0; line-height: 1.7; }
+.rodape-grid a { text-decoration: none; }
+.rodape-grid a:hover { color: var(--lx-acento); }
+.rodape-demo { margin-top: 36px; padding-top: 22px; border-top: 1px solid var(--lx-linha); font-size: 12px; line-height: 1.7; }
+
+/* ---------- botão flutuante: ligar (não há WhatsApp confirmado) ---------- */
+.wa-flutuante a.ligar-flutuante { background: var(--lx-acento); color: var(--lx-fundo); box-shadow: 0 10px 30px -10px rgb(0 0 0 / 0.6); }
+
+/* ---------- responsivo ---------- */
+@media (max-width: 900px) {
+  .casa-grid, .cardapio-grid, .aval-grid, .visite-grid { grid-template-columns: 1fr; }
+  .menu-capa { max-width: 340px; margin-top: 8px; }
+}
+@media (max-width: 700px) {
+  :root { --lx-secao: 88px; }
+  .header-luxo .lx-container { height: 68px; }
+  .marca-nome { font-size: 25px; }
+  .header-ligar { padding: 10px 13px; letter-spacing: 0.16em; }
+  .hero { padding-bottom: 44px; }
+  .hero-acoes .btn-luxo { padding: 16px 22px; }
+  .hero-fatos { gap: 8px 22px; letter-spacing: 0.1em; font-size: 11px; }
+  .duo { padding: 0 12% 22% 0; }
+  .contadores dd { font-size: 32px; }
+  .contadores dt { font-size: 10px; letter-spacing: 0.12em; }
+  .prato { grid-template-columns: 68px 1fr; gap: 4px 18px; padding: 22px 0; align-items: start; }
+  .prato-foto { width: 68px; height: 68px; grid-row: span 2; }
+  .prato-preco { grid-column: 2; justify-self: start; margin-top: 10px; }
+  .menu-capa { max-width: 78%; }
+  .galeria { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .galeria figure, .galeria figure.meia { grid-column: span 1; aspect-ratio: 4 / 5; }
+  .galeria figure.larga { grid-column: span 2; aspect-ratio: 4 / 3; }
+  .galeria figcaption { padding: 30px 12px 12px; font-size: 9.5px; letter-spacing: 0.2em; }
+  .nota-grande { font-size: 104px; }
+  .horarios { grid-template-columns: 1fr; gap: 2px; }
+  .horarios dd { margin-bottom: 10px; }
+  .mapa iframe { aspect-ratio: 1; }
+}
+@media (max-width: 380px) {
+  .marca-sub { display: none; }
+}

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="luz" cx="50%" cy="100%" r="80%">
+      <stop offset="0" stop-color="#e9d6b6" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#f4f1eb" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#luz)"/>
+  <g fill="none" stroke="#6f6a62" stroke-linecap="round">
+    <path d="M-20 180 C 180 150 260 260 420 230 S 700 120 860 200 S 1100 320 1240 270" stroke-width="1.1" stroke-opacity=".16"/>
+    <path d="M420 230 C 470 300 450 380 520 430 S 640 520 610 640" stroke-width=".8" stroke-opacity=".12"/>
+    <path d="M-40 560 C 120 520 220 600 380 580 S 640 470 780 540 S 1020 700 1240 640" stroke-width="1.3" stroke-opacity=".14"/>
+    <path d="M780 540 C 820 600 900 610 940 690 S 1000 820 1060 920" stroke-width=".7" stroke-opacity=".11"/>
+    <path d="M200 -20 C 230 80 180 140 240 220 S 300 360 260 440" stroke-width=".6" stroke-opacity=".10"/>
+    <path d="M960 -20 C 930 60 1000 120 980 200" stroke-width=".6" stroke-opacity=".10"/>
+    <path d="M60 820 C 200 780 300 840 460 800 S 700 760 820 820" stroke-width=".8" stroke-opacity=".10"/>
+  </g>
+</svg>

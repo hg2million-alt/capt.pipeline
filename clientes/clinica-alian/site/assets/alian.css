@@ -1,0 +1,160 @@
+/* =====================================================================
+   Clínica Alian — ajustes sobre luxury.css (versão clara)
+   PALETA PROVISÓRIA: a clínica não tem logo publicada (ver identidade.md).
+   Off-white quente + tinta azul-ardósia + acento azul-acinzentado, com
+   sálvia só em detalhe sobre fundo escuro.
+   ===================================================================== */
+:root {
+  --lx-fundo: #F4F2ED;
+  --lx-fundo-2: #EAE8E1;
+  --lx-texto: #1D2A30;
+  --lx-texto-suave: #55636A;
+  --lx-acento: #4D6878;
+  --lx-linha: rgb(29 42 48 / 0.14);
+
+  --al-escuro: #1D2A30;
+  --al-escuro-2: #24343B;
+  --al-claro-acento: #C9D5DC; /* acento clareado, pra texto sobre foto/escuro */
+  --al-salvia: #A9B8AD;
+  --al-suave-escuro: #B8C2C6;
+
+  /* Bootstrap: usar a fonte e a cor da casa, não as do framework */
+  --bs-body-font-family: var(--lx-sans);
+  --bs-body-color: var(--lx-texto);
+  --bs-body-bg: var(--lx-fundo);
+}
+
+body { font-weight: 300; }
+p { margin: 0 0 1rem; }
+a { text-decoration: none; }
+
+/* pular para o conteúdo (acessibilidade) */
+.al-pular {
+  position: absolute; left: 16px; top: -60px; z-index: 100;
+  background: var(--lx-texto); color: var(--lx-fundo); padding: 10px 16px; font-size: 13px;
+}
+.al-pular:focus { top: 12px; }
+
+/* ---------- header: transparente sobre o hero, off-white depois de rolar ---------- */
+.header-luxo { color: #F4F2ED; }
+.header-luxo .lx-container { gap: 24px; }
+.lx-marca { color: inherit; font-size: 26px; letter-spacing: 0.02em; white-space: nowrap; }
+.lx-marca em { font-style: italic; }
+.lx-nav { margin-left: auto; }
+.header-luxo.rolou {
+  background-color: rgb(244 242 237 / 0.92);
+  border-bottom-color: var(--lx-linha);
+  color: var(--lx-texto);
+}
+.header-luxo.rolou .lx-nav a { color: var(--lx-texto-suave); }
+.header-luxo.rolou .lx-nav a:hover { color: var(--lx-acento); }
+.al-header-cta {
+  font: 500 11px/1 var(--lx-sans); letter-spacing: 0.22em; text-transform: uppercase;
+  padding: 12px 16px; border: 1px solid rgb(255 255 255 / 0.45); color: inherit; white-space: nowrap;
+  transition: border-color var(--anim-resposta), background-color var(--anim-resposta), color var(--anim-resposta);
+}
+.al-header-cta:hover { border-color: currentColor; }
+.header-luxo.rolou .al-header-cta { background: var(--lx-acento); border-color: var(--lx-acento); color: var(--lx-fundo); }
+@media (max-width: 820px) { .header-luxo .lx-container { height: 68px; } .lx-marca { font-size: 23px; } }
+
+/* ---------- hero: texto claro sobre a foto ---------- */
+.hero { color: #F4F2ED; padding-top: 120px; }
+.hero-fundo img { --hero-foco: 64% 75%; }
+.hero::before {
+  background:
+    linear-gradient(180deg, rgb(13 20 24 / 0.62) 0%, rgb(13 20 24 / 0.30) 32%, rgb(13 20 24 / 0.86) 100%),
+    linear-gradient(90deg, rgb(13 20 24 / 0.55), transparent 75%);
+}
+.hero h1 { max-width: 13ch; }
+.hero h1 em { color: var(--al-claro-acento); }
+.hero .lx-rotulo { color: var(--al-claro-acento); }
+.hero p { color: rgb(244 242 237 / 0.88); }
+.hero .btn-luxo:hover { background: transparent; color: #fff; border-color: #fff; }
+.hero .btn-luxo--linha { color: #F4F2ED; border-color: rgb(255 255 255 / 0.4); }
+.hero .btn-luxo--linha:hover { color: #fff; border-color: #fff; }
+.hero-chip { color: rgb(244 242 237 / 0.78); }
+@media (max-width: 575px) {
+  .hero h1 { font-size: clamp(40px, 11vw, 52px); }
+  .hero-acoes .btn-luxo { flex: 1 1 100%; justify-content: center; }
+}
+
+/* ---------- títulos e cabeçalhos de seção ---------- */
+.al-h2 { margin: 22px 0 28px; max-width: 18ch; }
+.al-cabeca { margin-bottom: clamp(40px, 6vw, 64px); }
+.al-aviso { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; color: var(--lx-texto-suave); max-width: 62ch; font-size: 14px; margin: 0; }
+
+/* ---------- o cuidado: foto + fatos ---------- */
+.al-foto { margin: 0; max-width: 470px; }
+.al-foto img { width: 100%; height: auto; aspect-ratio: 470 / 550; object-fit: cover; }
+.al-foto figcaption { margin-top: 12px; font-size: 12px; letter-spacing: 0.08em; color: var(--lx-texto-suave); }
+.al-fatos { margin: 36px 0 0; border-top: 1px solid var(--lx-linha); }
+.al-fatos > div { display: grid; grid-template-columns: 120px 1fr; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--lx-linha); }
+.al-fatos dt { font: 500 11px/1.9 var(--lx-sans); letter-spacing: 0.24em; text-transform: uppercase; color: var(--lx-acento); }
+.al-fatos dd { margin: 0; font: 400 20px/1.35 var(--lx-serif); color: var(--lx-texto); }
+.al-fatos dd a { border-bottom: 1px solid var(--lx-linha); }
+.al-fatos dd span { color: var(--lx-acento); }
+@media (max-width: 420px) { .al-fatos > div { grid-template-columns: 1fr; gap: 6px; } }
+
+/* ---------- tratamentos: grade de 6 (Decare) em cartões de linha fina ---------- */
+.lx-card { background: rgb(255 255 255 / 0.42); display: flex; flex-direction: column; align-items: flex-start; }
+.lx-card p { margin-bottom: 18px; }
+.lx-card .a-confirmar { margin-top: auto; }
+@media (hover: hover) and (pointer: fine) {
+  .hover-elevado:hover { box-shadow: 0 18px 40px -22px rgb(29 42 48 / 0.28); border-color: rgb(77 104 120 / 0.45); }
+}
+.hover-elevado:focus-visible { outline-color: var(--lx-acento); }
+.a-confirmar { line-height: 1.4; }
+
+/* ---------- avaliações ---------- */
+.al-nota { text-align: center; margin-bottom: clamp(48px, 7vw, 80px); }
+.al-nota .lx-rotulo::after { content: ""; width: 36px; height: 1px; background: currentColor; }
+.al-nota-num { margin: 18px 0 8px; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.al-nota-num > span:first-child { font: 400 clamp(84px, 14vw, 150px)/0.9 var(--lx-serif); color: var(--lx-texto); }
+.al-estrelas { font-size: 15px; letter-spacing: 0.4em; color: var(--lx-acento); margin-right: -0.4em; }
+.al-nota-sub { margin: 0 auto; font-size: 14px; }
+.al-review { margin: 0; padding: clamp(28px, 3vw, 40px); border-top: 1px solid var(--lx-acento); background: rgb(255 255 255 / 0.42); display: flex; flex-direction: column; }
+.al-review blockquote { margin: 0 0 22px; font: italic 400 clamp(21px, 1.9vw, 25px)/1.4 var(--lx-serif); color: var(--lx-texto); }
+.al-review figcaption { margin-top: auto; font: 500 10.5px/1.5 var(--lx-sans); letter-spacing: 0.2em; text-transform: uppercase; color: var(--lx-texto-suave); }
+.al-review figcaption strong { display: block; margin-bottom: 4px; font: 400 19px/1.2 var(--lx-serif); letter-spacing: 0.02em; text-transform: none; color: var(--lx-texto); }
+
+/* ---------- seção escura (perguntas, rodapé) ---------- */
+.al-escuro { background: var(--al-escuro); color: #F4F2ED; --lx-linha: rgb(255 255 255 / 0.14); }
+.al-escuro .lx-rotulo { color: var(--al-salvia); }
+.al-escuro .a-confirmar { color: var(--al-salvia); border-color: var(--al-salvia); }
+details.faq { border-bottom: 1px solid var(--lx-linha); }
+details.faq:first-of-type { border-top: 1px solid var(--lx-linha); }
+details.faq summary { padding: 24px 0; font: 400 clamp(21px, 2vw, 26px)/1.3 var(--lx-serif); align-items: baseline; }
+details.faq summary::after { color: var(--al-salvia); font-family: var(--lx-sans); font-weight: 300; }
+details.faq summary:focus-visible { outline: 2px solid var(--al-salvia); outline-offset: 4px; }
+details.faq p { color: var(--al-suave-escuro); padding: 0 0 24px; margin: 0; max-width: 56ch; }
+details.faq a { color: #F4F2ED; border-bottom: 1px solid var(--al-salvia); }
+
+/* ---------- visite ---------- */
+.al-fatos--contato { margin-bottom: 36px; }
+.al-acoes .btn-luxo--linha { color: var(--lx-texto); border-color: rgb(29 42 48 / 0.3); }
+.al-mapa { border: 1px solid var(--lx-linha); background: var(--lx-fundo); aspect-ratio: 4 / 3; }
+.al-mapa iframe { width: 100%; height: 100%; border: 0; display: block; filter: grayscale(1) contrast(0.95) opacity(0.92); }
+@media (max-width: 575px) { .al-acoes .btn-luxo { flex: 1 1 100%; justify-content: center; } .al-mapa { aspect-ratio: 1 / 1; } }
+
+/* ---------- rodapé (Decare: 4 colunas) ---------- */
+.al-rodape { padding: clamp(64px, 8vw, 96px) 0 32px; font-size: 14px; }
+.al-rodape ul { list-style: none; padding: 0; margin: 0; }
+.al-rodape li { margin-bottom: 10px; color: var(--al-suave-escuro); }
+.al-rodape a { color: var(--al-suave-escuro); }
+.al-rodape a:hover { color: #F4F2ED; }
+.al-rodape-marca { font: 400 30px/1 var(--lx-serif); margin: 0 0 14px; }
+.al-rodape-marca em { font-style: italic; }
+.al-rodape-txt { color: var(--al-suave-escuro); }
+.al-rodape-tit { font: 500 11px/1 var(--lx-sans); letter-spacing: 0.24em; text-transform: uppercase; color: var(--al-salvia); margin: 6px 0 18px; }
+.al-rodape-base { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--lx-linha); font-size: 12px; color: var(--al-suave-escuro); }
+.al-rodape-base p { margin: 0 0 8px; max-width: 80ch; }
+
+@media (max-width: 575px) {
+  .lx-card { padding: 26px 24px; }
+  .lx-card .lx-num { margin-bottom: 14px; }
+  .lx-card h3 { margin-bottom: 8px; }
+  .al-rodape { padding-bottom: 96px; }
+}
+
+/* WhatsApp flutuante acima do rodapé/gesto do iPhone */
+.wa-flutuante { bottom: max(18px, env(safe-area-inset-bottom)); }
