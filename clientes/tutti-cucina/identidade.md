@@ -147,11 +147,14 @@ noite, confirmação de horário do salão e de como funciona a reserva.
 
 ## Demo
 
-- Template: `templates/sites/restaurante-elegencia/` no modo **claro**
-  (`personalizar.sh ... '#9B5034' 'Tutti Cucina' claro '#4A3A31'`), levado ao
-  Luxury com `animacoes-3d/`. Do template ficaram o `style.css` invertido e as
-  seções de cardápio em lista, bloco foto + texto ("A casa"), citação com aspas
-  e rodapé; hero, header, galeria e reserva são próprios.
+- Template: `templates/sites/restaurante-elegencia/` na versão **clara**
+  (`personalizar.sh ... '#9B5034' 'Tutti Cucina' claro '#4A3A31'`) foi rodado como
+  ponto de partida (estrutura: hero, cardápio em lista, citação, horário, rodapé),
+  mas o CSS e o JS do template (GSAP, ScrollSmoother, Swiper, jQuery) foram
+  descartados para o arquivo único. A página final é própria, sobre
+  `animacoes-3d/` (luxury.css, animacoes.css, animacoes.js), com paleta e fontes da marca.
+- Animações: entrada do hero, rise 3D nos títulos, stagger no cardápio/galeria,
+  swing na foto da casa, arco sob a palavra; com fallback sem JS/movimento reduzido.
 - Arquivo: `entregas/2026-10-25-restaurante-estetica-odontologia/Tutti Cucina.html`
 
 ## Fase

@@ -683,6 +683,11 @@ section[id], [id="topo"] { scroll-margin-top: 72px; }
 
 .cl-agendar > *, .cl-contato > *, .cl-sobre > *, .cl-aval > * { min-width: 0; }
 .cl-form { min-width: 0; }
+.cl-form fieldset { min-width: 0; }
+.cl-agendar, .cl-contato, .cl-sobre, .cl-aval { grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 940px) { .cl-agendar, .cl-contato { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+@media (min-width: 900px) { .cl-sobre { grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr); } }
+@media (min-width: 1000px) { .cl-aval { grid-template-columns: 300px minmax(0, 1fr); } }
 
 </style>
 </head>
