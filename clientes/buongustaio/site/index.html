@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
-  <title>Buongustaio — Restaurante em Petrópolis, Natal</title>
+  <title>Buongustaio, restaurante em Petrópolis, Natal</title>
   <meta name="description" content="Buongustaio: massas, risotos e vinho na Av. Afonso Pena, 444, Petrópolis, Natal/RN. Almoço todos os dias e jantar de segunda a sábado. Reservas pelo +55 84 3202-1143.">
   <meta name="theme-color" content="#0F0E0B">
   <!-- 1º script da página: liga as animações só se puderem rodar (item 7) -->
@@ -18,7 +18,7 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Manrope:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Lato:wght@300;400;700&family=Marcellus&display=swap">
   <link rel="stylesheet" href="assets/luxury.css">
   <link rel="stylesheet" href="assets/animacoes.css">
   <link rel="stylesheet" href="assets/buongustaio.css">
@@ -172,18 +172,27 @@
       </div>
     </section>
 
-    <!-- AVALIAÇÃO real do Google (citação, nunca depoimento inventado) -->
-    <section id="avaliacoes" class="lx-secao">
-      <div class="lx-container avaliacao">
-        <span class="lx-rotulo">Avaliações no Google</span>
-        <div data-anim="rise3d" class="avaliacao-corpo">
-          <span class="aspas" aria-hidden="true">“</span>
-          <blockquote class="lx-citacao">Ambiente requintado e agradável com atendimento de alto nível. O garçom Elenilson nos atendeu maravilhosamente e ajudou bastante na escolha dos pratos e do vinho.</blockquote>
-          <cite>Avaliação no Google Maps</cite>
+    <!-- AVALIAÇÕES do Google: faixa que passa sozinha (marquee). Trechos fiéis de uma avaliação real de 5 estrelas + a nota do Maps -->
+    <section id="avaliacoes" class="lx-secao avaliacoes">
+      <div class="lx-container cabeca-aval">
+        <div data-anim="rise3d">
+          <span class="lx-rotulo">Avaliações no Google</span>
+          <h2>O que dizem <em>à mesa</em></h2>
         </div>
-        <div class="placar">
-          <strong>4,6</strong>
-          <span><span class="estrelas" aria-hidden="true">★★★★★</span><br>639 avaliações no Google Maps</span>
+        <div class="aval-ctrl">
+          <p class="lx-texto-suave">Trechos de uma avaliação de 5 estrelas publicada no Google Maps.</p>
+          <button type="button" class="marquee-pausa" aria-pressed="false" aria-label="Pausar animação">
+            <span class="ic-pausa" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+      <div class="marquee" role="region" aria-label="Avaliações no Google" tabindex="0">
+        <div class="marquee-trilha">
+          <article class="rev-card"><span class="estrelas" aria-label="5 estrelas">★★★★★</span><p>“Entradas deliciosas, pratos principais igualmente deliciosos.”</p><footer><b>João</b> · avaliação no Google</footer></article>
+          <article class="rev-card"><span class="estrelas" aria-label="5 estrelas">★★★★★</span><p>“Ambiente requintado e agradável com atendimento de alto nível.”</p><footer><b>João</b> · avaliação no Google</footer></article>
+          <article class="rev-card"><span class="estrelas" aria-label="5 estrelas">★★★★★</span><p>“O garçom Elenilson nos atendeu maravilhosamente e ajudou bastante na escolha dos pratos e do vinho.”</p><footer><b>João</b> · avaliação no Google</footer></article>
+          <article class="rev-card"><span class="estrelas" aria-label="5 estrelas">★★★★★</span><p>“Excelente ambiente para um bom papo em família ou entre amigos.”</p><footer><b>João</b> · avaliação no Google</footer></article>
+          <article class="rev-card rev-nota"><strong>4,6</strong><span class="estrelas" aria-label="nota 4,6 de 5">★★★★★</span><p>639 avaliações no Google Maps</p></article>
         </div>
       </div>
     </section>
@@ -210,10 +219,10 @@
         <div class="quadro-horas">
           <span class="quadro-titulo">Horário de funcionamento</span>
           <dl class="horas" id="horas">
-            <div data-dias="1,2,3,4"><dt>Segunda a quinta</dt><dd>11h30 – 15h<br>18h – 23h</dd></div>
-            <div data-dias="5"><dt>Sexta</dt><dd>11h30 – 15h<br>18h – 0h</dd></div>
-            <div data-dias="6"><dt>Sábado</dt><dd>12h – 16h<br>18h – 23h</dd></div>
-            <div data-dias="0"><dt>Domingo</dt><dd>12h – 16h<br><span class="fechado">jantar fechado</span></dd></div>
+            <div data-dias="1,2,3,4"><dt>Segunda a quinta</dt><dd>11h30 às 15h<br>18h às 23h</dd></div>
+            <div data-dias="5"><dt>Sexta</dt><dd>11h30 às 15h30<br>18h às 0h</dd></div>
+            <div data-dias="6"><dt>Sábado</dt><dd>12h às 16h<br>18h às 23h</dd></div>
+            <div data-dias="0"><dt>Domingo</dt><dd>12h às 16h<br><span class="fechado">jantar fechado</span></dd></div>
           </dl>
           <span class="quadro-fonte">Horários da ficha do Google Maps</span>
         </div>

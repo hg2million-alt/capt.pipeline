@@ -29,12 +29,9 @@
 - `#1C1915` quase-preto quente: header/hero/faixa escura. Vem da **estrutura do template** (spamagic = escuro no topo + creme no corpo), não da marca. Texto `#2A241D` no creme
 - **Fora do demo:** o Google Sites usa lilás `#B7A7B0` + rosé `#E7B2A4` (amostrado da página). Parece tema padrão do Google Sites, e o espaço físico é todo dourado/madeira/off-white. *A confirmar com ela* se o lilás/rosé faz parte da marca
 
-**Tipografia:** a logo do site (banner da home) é o monograma "LS" + "Luanna Souza" em **script caligráfica com borboleta**, e embaixo "ENFERMEIRA ESTETA" em **caixa alta espaçada**. O letreiro dourado da recepção repete o mesmo desenho (site do cliente + foto do Maps 02). No demo:
-- nome da marca: **Alex Brush** (Google Fonts), uma aproximação da script da logo. É também a script do template spamagic
-- "ENFERMEIRA ESTETA" e rótulos: **Manrope** 500, caixa alta espaçada
-- títulos: **Cormorant Garamond** (estilo Luxury), corpo em Manrope 300
+**Tipografia:** a logo é o monograma "LS" + "Luanna Souza" em script caligráfica com borboleta, e "ENFERMEIRA ESTETA" em caixa alta espaçada. No demo a logo real é usada como imagem (ver abaixo); o resto do texto usa o par definido na revisão de 26/10: script **Pinyon Script** (palavras decorativas translúcidas, aproximação da script da logo), títulos **Italiana**, corpo **Figtree** (Google Fonts, com fallback).
 
-**Logo:** não há arquivo da logo. No site ela aparece em branco, embutida na foto do banner (não dá pra recortar limpo), e o letreiro da foto 02 é pequeno demais. No demo o nome foi **recriado em tipografia** (Alex Brush + caixa alta), sem ampliar imagem nenhuma. Arquivo vetorial *a definir*
+**Logo:** **achada.** O ícone (favicon) do Google Sites dela, `sites.google.com/view/clinicaluannasouza`, é a logo completa em branco com fundo transparente, 1080 x 1080 (conferida: mesmo desenho do banner da home e do letreiro da recepção). Guardada em `assets/logo-site.png`; recortada em `site/assets/logo-luanna.png` (637 x 296, usada pequena no cabeçalho e rodapé, sobre fundo escuro) e favicon `site/assets/favicon.png` (logo em dourado claro sobre `#1C1915`). Só existe a versão branca, por isso o cabeçalho e o rodapé são escuros. A logo não muda a paleta.
 **Cor proibida / o que nunca fazer:** sem foto de antes/depois, sem promessa de resultado, sem % de sucesso (regra de conselho de classe para procedimento estético). Não repetir "referência em harmonização na capital potiguar" (autoafirmação do site dela, não dá pra verificar). Não usar o rosa/lilás do Google Sites como cor principal antes de ela confirmar. Não citar outras profissionais do espaço
 
 ## Tom de voz
@@ -45,7 +42,7 @@ Acolhedor e próximo, fala com "você", foco em cuidado e naturalidade. Frases r
 - "Cuide da sua Saúde & Beleza"
 - "realçar sua beleza natural e autoconfiança"
 
-Review do Google (dossiê): "O espaço é lindo e aconchegante, o atendimento super acolhedor, começando pelo agendamento".
+Review do Google (Maps): "O espaço é lindo e aconchegante, o atendimento super acolhedor, começando pelo agendamento".
 
 **Evitar:** promessa ("resultado garantido", "rejuvenesça X anos"), antes/depois, superlativo sem prova ("a melhor", "referência"), linguagem de promoção agressiva, termo técnico solto sem contexto.
 
@@ -63,7 +60,7 @@ No demo entrou só uma **seleção com nome neutro** de cada grupo. Ficaram de f
 
 **Formação** (página Sobre do site do cliente): enfermeira esteta, pós-graduada em Enfermagem Estética e Dermatológica · título de residência em Harmonização Facial · cursos livres em Estética Facial e Corporal Avançada.
 
-**Prova social:** nota **5,0 com 415 avaliações** no Google (Maps, conferido em 25/10/2026). No dossiê só uma review vem transcrita (sem nome do autor nem data), e é ela que entra no demo como "avaliação no Google".
+**Prova social:** nota **5,0 com 415 avaliações** no Google (Maps, conferido em 25/10/2026). A ficha mostra só 3 avaliações, todas de 5 estrelas (Maria L., Janaina A., Josylene J., coletadas em `maps/det1.json`). As 3 entram no demo, num carrossel contínuo (repetidas para preencher a largura), com primeiro nome e "Avaliação no Google". Um trecho de promessa ("saímos renovadas") foi cortado.
 
 ## Material recebido
 
@@ -74,7 +71,7 @@ No demo entrou só uma **seleção com nome neutro** de cada grupo. Ficaram de f
 
 ## Demo
 
-- Template: `estetica-spamagic` (personalizado com `#816B46`) usado como **referência de seções**: topo escuro + corpo creme, título com palavra script translúcida atrás (o `tra-header` do spamagic, em Alex Brush), bloco de boas-vindas com horário, grade de tratamentos, faixa escura de chamada, avaliações. O CSS é o `luxury.css` da oficina, porque o Bootstrap 4 + jQuery + 6 plugins do spamagic não chega no Luxury e pesaria no `.html` único
+- Template: `estetica-spamagic` (personalizado com `#816B46`) usado como **referência de seções**: topo escuro + corpo creme, título com palavra script translúcida atrás (o `tra-header` do spamagic, em Pinyon Script), bloco de boas-vindas com horário, grade de tratamentos, faixa escura de chamada, avaliações. O CSS é o `luxury.css` da oficina, porque o Bootstrap 4 + jQuery + 6 plugins do spamagic não chega no Luxury e pesaria no `.html` único
 - Arquivo: `entregas/2026-10-25-restaurante-estetica-odontologia/Clínica Luanna Souza.html`
 - Marcado como "a confirmar" no demo: Coren, Instagram atual, tratamento capilar. Rodapé avisa que é uma prévia, não o site oficial
 

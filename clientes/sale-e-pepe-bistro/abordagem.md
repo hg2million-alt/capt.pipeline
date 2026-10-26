@@ -1,4 +1,4 @@
-# Abordagem — Sale e Pepe Bistrô
+# Abordagem: Sale e Pepe Bistrô
 
 Destino: +55 84 99853-4456 (telefone da ficha do Maps; celular, então WhatsApp provável, a confirmar).
 Quem envia: o usuário, em primeira pessoa, morador de Natal que faz sites. `[seu nome]` no lugar do nome.

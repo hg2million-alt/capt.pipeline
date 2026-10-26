@@ -1,6 +1,6 @@
 /* =====================================================================
-   Animações e efeitos 3D — parte em JavaScript (sem dependências)
-   Par do animacoes.css. Especificação: FRONT-END_CREATOR.md (itens 1–24).
+   Animações e efeitos 3D : parte em JavaScript (sem dependências)
+   Par do animacoes.css. Especificação: FRONT-END_CREATOR.md (itens 1-24).
    Exige no <head>, ANTES de tudo, o script inline do README (liga html.motion).
    ===================================================================== */
 (function () {
@@ -52,7 +52,7 @@
     todos(alvosEntrada).forEach(function (el) { el.classList.add("is-in"); });
   }
 
-  /* ---------- 14 — replay da entrada do hero ao voltar ao topo ---------- */
+  /* ---------- 14 : replay da entrada do hero ao voltar ao topo ---------- */
   if (temIO && !reduzido) {
     todos(".hero-entrada").forEach(function (hero) {
       Array.prototype.forEach.call(hero.children, function (f, i) {
@@ -70,7 +70,7 @@
     });
   }
 
-  /* ---------- 12 — tilt 3D seguindo o mouse ---------- */
+  /* ---------- 12 : tilt 3D seguindo o mouse ---------- */
   if (!reduzido && matchMedia("(hover: hover) and (pointer: fine)").matches) {
     todos("[data-tilt]").forEach(function (el) {
       var max = parseFloat(el.getAttribute("data-tilt")) || 7;
@@ -102,7 +102,7 @@
     });
   }
 
-  /* ---------- 5 — flip de card (botão, Enter e Espaço) ---------- */
+  /* ---------- 5 : flip de card (botão, Enter e Espaço) ---------- */
   todos(".flip-card").forEach(function (card) {
     var frente = card.querySelector(".flip-frente"), verso = card.querySelector(".flip-verso");
     var botoes = todos(".flip-botao", card);
@@ -119,7 +119,7 @@
     definir(false);
   });
 
-  /* ---------- 20 — carrossel infinito (marquee) ---------- */
+  /* ---------- 20 : carrossel infinito (marquee) ---------- */
   todos(".marquee").forEach(function (m) {
     var trilha = m.querySelector(".marquee-trilha");
     if (!trilha || reduzido) return;
@@ -141,7 +141,7 @@
     }).observe(m);
   });
 
-  /* ---------- 15 — vitrine com troca automática ---------- */
+  /* ---------- 15 : vitrine com troca automática ---------- */
   todos(".vitrine-auto").forEach(function (v) {
     var itens = todos(".vitrine-item", v);
     if (!itens.length) return;
@@ -181,7 +181,7 @@
     }, { threshold: [0, 0.08] }).observe(v);
   });
 
-  /* ---------- 24 — header que ganha fundo ao rolar (sentinela) ---------- */
+  /* ---------- 24 : header que ganha fundo ao rolar (sentinela) ---------- */
   var header = document.querySelector(".header-luxo");
   if (header && temIO) {
     var sentinela = document.createElement("div");
@@ -191,7 +191,7 @@
     new IntersectionObserver(function (es) { header.classList.toggle("rolou", !es[0].isIntersecting); }).observe(sentinela);
   }
 
-  /* ---------- 24 — WhatsApp flutuante: aparece depois do hero, some no contato ---------- */
+  /* ---------- 24 : WhatsApp flutuante: aparece depois do hero, some no contato ---------- */
   todos(".wa-flutuante").forEach(function (wa) {
     var depois = document.querySelector(wa.getAttribute("data-depois") || ".hero");
     var some = document.querySelector(wa.getAttribute("data-some-em") || "#contato");
@@ -202,7 +202,7 @@
     if (some) new IntersectionObserver(function (es) { contatoVisivel = es[0].isIntersecting; atualizar(); }).observe(some);
   });
 
-  /* ---------- 23 — vídeo de fundo do hero: toca uma vez, recomeça ao voltar ---------- */
+  /* ---------- 23 : vídeo de fundo do hero: toca uma vez, recomeça ao voltar ---------- */
   todos("video[data-hero-video]").forEach(function (v) {
     var economia = navigator.connection && navigator.connection.saveData;
     if (reduzido || economia) return; // fica só o pôster (último quadro), sem baixar o vídeo
@@ -216,7 +216,7 @@
     }, { threshold: 0.25 }).observe(v);
   });
 
-  /* ---------- 24 — bolha "digitando" seguida da mensagem ---------- */
+  /* ---------- 24 : bolha "digitando" seguida da mensagem ---------- */
   todos("[data-digitando]").forEach(function (b) {
     var msg = b.nextElementSibling;
     if (!msg || reduzido) return;

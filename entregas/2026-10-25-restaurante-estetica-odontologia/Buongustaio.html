@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
-  <title>Buongustaio — Restaurante em Petrópolis, Natal</title>
+  <title>Buongustaio, restaurante em Petrópolis, Natal</title>
   <meta name="description" content="Buongustaio: massas, risotos e vinho na Av. Afonso Pena, 444, Petrópolis, Natal/RN. Almoço todos os dias e jantar de segunda a sábado. Reservas pelo +55 84 3202-1143.">
   <meta name="theme-color" content="#0F0E0B">
   <!-- 1º script da página: liga as animações só se puderem rodar (item 7) -->
@@ -18,22 +18,22 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Manrope:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Lato:wght@300;400;700&family=Marcellus&display=swap">
   <style>
 /* =====================================================================
-   Base do estilo LUXURY — o estilo principal dos demos da oficina.
+   Base do estilo LUXURY : o estilo principal dos demos da oficina.
    As CORES vêm da marca do cliente (identidade.md): trocar só as variáveis
    do :root. O resto (tipografia, respiro, linhas finas, hero com foto)
    é o que faz o site parecer de luxo, independente da cor.
    ===================================================================== */
 
 :root {
-  /* marca do cliente — substituir pelos hex da logo */
+  /* marca do cliente : substituir pelos hex da logo */
   --lx-fundo: #0e0d0c;        /* fundo principal: escuro profundo (ou creme #f6f1ea na versão clara) */
   --lx-fundo-2: #161412;      /* fundo alternado das seções */
   --lx-texto: #f3eee6;        /* texto principal */
   --lx-texto-suave: #b9b1a5;  /* texto secundário */
-  --lx-acento: #c8a96a;       /* cor de destaque da marca — usar pouco: linhas, rótulos, 1 botão */
+  --lx-acento: #c8a96a;       /* cor de destaque da marca : usar pouco: linhas, rótulos, 1 botão */
   --lx-linha: rgb(255 255 255 / 0.12);
 
   --lx-serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
@@ -90,7 +90,7 @@ h1 em, h2 em { font-style: italic; color: var(--lx-acento); }
 .btn-luxo--linha:hover { border-color: var(--lx-acento); color: var(--lx-acento); }
 .btn-luxo:focus-visible { outline: 2px solid var(--lx-acento); outline-offset: 4px; }
 
-/* HERO — sempre com IMAGEM DE FUNDO (foto real do negócio) */
+/* HERO : sempre com IMAGEM DE FUNDO (foto real do negócio) */
 .hero {
   position: relative; isolation: isolate;
   min-height: 100svh; display: grid; align-items: end;
@@ -140,7 +140,7 @@ h1 em, h2 em { font-style: italic; color: var(--lx-acento); }
 .lx-citacao { font: italic 400 clamp(24px, 3vw, 38px)/1.3 var(--lx-serif); margin: 0; }
 .lx-citacao + cite { display: block; margin-top: 18px; font: 500 11px/1 var(--lx-sans); letter-spacing: 0.24em; text-transform: uppercase; color: var(--lx-texto-suave); font-style: normal; }
 
-/* chip "a confirmar" (dado não confirmado — regra da oficina) */
+/* chip "a confirmar" (dado não confirmado : regra da oficina) */
 .a-confirmar { display: inline-block; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; padding: 3px 8px; border: 1px dashed var(--lx-acento); color: var(--lx-acento); vertical-align: middle; }
 
 .lx-rodape { padding-block: 56px; border-top: 1px solid var(--lx-linha); color: var(--lx-texto-suave); font-size: 13px; }
@@ -150,8 +150,8 @@ h1 em, h2 em { font-style: italic; color: var(--lx-acento); }
 </style>
   <style>
 /* =====================================================================
-   Animações e efeitos 3D — biblioteca da oficina (sem dependências)
-   Especificação completa: animacoes-3d/FRONT-END_CREATOR.md (itens 1–24)
+   Animações e efeitos 3D : biblioteca da oficina (sem dependências)
+   Especificação completa: animacoes-3d/FRONT-END_CREATOR.md (itens 1-24)
    Uso: animacoes-3d/README.md
 
    Regra geral (item 7): entradas em 1,5 s com cubic-bezier(.22,1,.36,1);
@@ -166,7 +166,7 @@ h1 em, h2 em { font-style: italic; color: var(--lx-acento); }
   --anim-resposta: 0.45s;
 }
 
-/* ---------- Entradas por scroll (itens 1–4, 8–11) ---------- */
+/* ---------- Entradas por scroll (itens 1-4, 8-11) ---------- */
 html.motion [data-anim] {
   transition:
     opacity var(--anim-entrada) var(--anim-ease),
@@ -175,20 +175,20 @@ html.motion [data-anim] {
 }
 html.motion [data-anim]:not(.is-in) { opacity: 0; }
 
-/* 3 — fade suave */
+/* 3 : fade suave */
 html.motion [data-anim="fade"]:not(.is-in) { transform: none; }
-/* 2 — slide lateral (esquerda padrão, direita por configuração) */
+/* 2 : slide lateral (esquerda padrão, direita por configuração) */
 html.motion [data-anim="slide"]:not(.is-in) { transform: translateX(-28px); }
 html.motion [data-anim="slide-direita"]:not(.is-in) { transform: translateX(28px); }
-/* 4 — rotation entry refinada */
+/* 4 : rotation entry refinada */
 html.motion [data-anim="rotacao"] { transform-origin: center; }
 html.motion [data-anim="rotacao"]:not(.is-in) { transform: rotate(-8deg) scale(0.96); }
-/* 8 — rise 3D */
+/* 8 : rise 3D */
 html.motion [data-anim="rise3d"] { transform-origin: 50% 100%; }
 html.motion [data-anim="rise3d"]:not(.is-in) {
   transform: perspective(1100px) rotateX(-28deg) translateY(48px) scale(0.96);
 }
-/* 9 — swing 3D (porta abrindo) */
+/* 9 : swing 3D (porta abrindo) */
 html.motion [data-anim="swing"] { transform-origin: 0% 50%; }
 html.motion [data-anim="swing"]:not(.is-in) {
   transform: perspective(1100px) rotateY(32deg) translateX(-40px);
@@ -197,11 +197,11 @@ html.motion [data-anim="swing-direita"] { transform-origin: 100% 50%; }
 html.motion [data-anim="swing-direita"]:not(.is-in) {
   transform: perspective(1100px) rotateY(-32deg) translateX(40px);
 }
-/* 10 — spin 3D (moeda) — só em elemento pequeno e decorativo */
+/* 10 : spin 3D (moeda) : só em elemento pequeno e decorativo */
 html.motion [data-anim="moeda"]:not(.is-in) {
   transform: perspective(700px) rotateY(-220deg) scale(0.7);
 }
-/* 1 e 11 — stagger (o contêiner recebe data-stagger; os itens, o atraso) */
+/* 1 e 11 : stagger (o contêiner recebe data-stagger; os itens, o atraso) */
 html.motion [data-stagger] > * {
   transition:
     opacity var(--anim-entrada) var(--anim-ease),
@@ -216,7 +216,7 @@ html.motion [data-stagger="3d"]:not(.is-in) > * {
 /* pai de swing/slide: sem barra horizontal */
 .anim-clip { overflow-x: clip; }
 
-/* ---------- 14 — entrada do hero só com CSS (não espera o JS) ---------- */
+/* ---------- 14 : entrada do hero só com CSS (não espera o JS) ---------- */
 .hero-entrada > * {
   animation: heroEntra var(--anim-entrada) var(--anim-ease) both;
   animation-delay: calc(var(--i, 0) * 80ms);
@@ -227,7 +227,7 @@ html.motion [data-stagger="3d"]:not(.is-in) > * {
   to { opacity: 1; transform: none; }
 }
 
-/* ---------- 6 — hover elevado (só mouse) ---------- */
+/* ---------- 6 : hover elevado (só mouse) ---------- */
 .hover-elevado {
   transition:
     transform 260ms var(--anim-ease),
@@ -247,7 +247,7 @@ html.motion [data-stagger="3d"]:not(.is-in) > * {
 }
 .hover-elevado:active { transform: scale(0.99); }
 
-/* ---------- 12 — tilt 3D seguindo o mouse, com reflexo ---------- */
+/* ---------- 12 : tilt 3D seguindo o mouse, com reflexo ---------- */
 [data-tilt] { position: relative; }
 [data-tilt] > .tilt-interno {
   transform: perspective(1200px) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg));
@@ -268,7 +268,7 @@ html.motion [data-stagger="3d"]:not(.is-in) > * {
 }
 [data-tilt].tilt-ativo > .tilt-interno::after { opacity: 1; }
 
-/* ---------- 5 — flip de card de duas faces (botão controla) ---------- */
+/* ---------- 5 : flip de card de duas faces (botão controla) ---------- */
 .flip-card { perspective: 1200px; }
 .flip-card .flip-faces {
   display: grid;
@@ -284,7 +284,7 @@ html.motion [data-stagger="3d"]:not(.is-in) > * {
 .flip-card .flip-verso { transform: rotateY(180deg); }
 .flip-card.virado .flip-faces { transform: rotateY(180deg); }
 
-/* ---------- 13 — palco 3D na rolagem (sem JS) ---------- */
+/* ---------- 13 : palco 3D na rolagem (sem JS) ---------- */
 @supports (animation-timeline: view()) {
   .palco-3d {
     transform-origin: 50% 100%;
@@ -298,7 +298,7 @@ html.motion [data-stagger="3d"]:not(.is-in) > * {
   }
 }
 
-/* ---------- 19 — leque 3D de cards flutuando ---------- */
+/* ---------- 19 : leque 3D de cards flutuando ---------- */
 .leque-3d { position: relative; perspective: 1200px; display: grid; place-items: center; }
 .leque-3d > * {
   grid-area: 1 / 1;
@@ -320,7 +320,7 @@ html.motion [data-stagger="3d"]:not(.is-in) > * {
 }
 @keyframes flutua { 50% { translate: 0 -8px; } }
 
-/* ---------- 20 — carrossel infinito (marquee) ---------- */
+/* ---------- 20 : carrossel infinito (marquee) ---------- */
 .marquee { position: relative; overflow: hidden; }
 .marquee::before,
 .marquee::after {
@@ -347,13 +347,13 @@ html.motion [data-stagger="3d"]:not(.is-in) > * {
 .marquee:focus-within .marquee-trilha { animation-play-state: paused; }
 @keyframes marquee { to { transform: translate3d(-50%, 0, 0); } }
 
-/* ---------- 21 — preenchimento sequencial com check ---------- */
+/* ---------- 21 : preenchimento sequencial com check ---------- */
 .grade-check > * { transition: background-color var(--anim-resposta), border-color var(--anim-resposta); transition-delay: calc(var(--d, 0) * 45ms); }
 .grade-check svg { opacity: 0; transform: scale(0.4) rotate(-20deg); transition: opacity var(--anim-resposta) var(--anim-ease), transform var(--anim-resposta) var(--anim-ease); transition-delay: calc(var(--d, 0) * 45ms); }
 .grade-check.is-in > * { background-color: rgb(34 160 90 / 0.14); border-color: #22a05a; }
 .grade-check.is-in svg { opacity: 1; transform: none; }
 
-/* ---------- 22 — arco que se desenha sob a palavra em destaque ---------- */
+/* ---------- 22 : arco que se desenha sob a palavra em destaque ---------- */
 .arco-destaque { position: relative; display: inline-block; font-weight: 800; white-space: nowrap; }
 .arco-destaque svg {
   position: absolute;
@@ -367,7 +367,7 @@ html.motion [data-stagger="3d"]:not(.is-in) > * {
 html.motion .arco-destaque svg { clip-path: inset(-50% 100% -50% 0); transition: clip-path var(--anim-entrada) var(--anim-ease) 0.5s; }
 html.motion .arco-destaque.is-in svg { clip-path: inset(-50% 0 -50% 0); }
 
-/* ---------- 15 — vitrine com troca automática ---------- */
+/* ---------- 15 : vitrine com troca automática ---------- */
 .vitrine-auto .vitrine-item { display: none; }
 .vitrine-auto .vitrine-item.ativo { display: block; animation: vitrineEntra 0.9s var(--anim-ease) both; }
 @keyframes vitrineEntra {
@@ -382,7 +382,7 @@ html.motion .arco-destaque.is-in svg { clip-path: inset(-50% 0 -50% 0); }
 .vitrine-auto.pausado .vitrine-barras span.atual i { animation-play-state: paused; }
 @keyframes barra { to { transform: scaleX(1); } }
 
-/* ---------- 24 — microinterações ---------- */
+/* ---------- 24 : microinterações ---------- */
 .header-luxo { position: fixed; inset: 0 0 auto 0; z-index: 50; transition: background-color var(--anim-resposta), border-color var(--anim-resposta), backdrop-filter var(--anim-resposta); border-bottom: 1px solid transparent; }
 .header-luxo.rolou { background-color: rgb(10 10 10 / 0.72); backdrop-filter: blur(10px); border-bottom-color: rgb(255 255 255 / 0.08); }
 .wa-flutuante { position: fixed; right: 18px; bottom: 18px; z-index: 60; opacity: 0; transform: translateY(16px); pointer-events: none; transition: opacity var(--anim-resposta) var(--anim-ease), transform var(--anim-resposta) var(--anim-ease); }
@@ -402,7 +402,7 @@ details.faq[open] summary::after { content: "−"; }
 .troca-conteudo { animation: troca var(--anim-resposta) var(--anim-ease) both; }
 @keyframes troca { from { opacity: 0; transform: translateY(8px); } }
 
-/* ---------- 23 — vídeo de fundo do hero ---------- */
+/* ---------- 23 : vídeo de fundo do hero ---------- */
 .hero-video-wrap { position: absolute; inset: 0; overflow: hidden; }
 .hero-video-wrap video, .hero-video-wrap img { width: 100%; height: 100%; object-fit: cover; }
 
@@ -424,13 +424,13 @@ details.faq[open] summary::after { content: "−"; }
 </style>
   <style>
 /* =====================================================================
-   Buongustaio — camada da marca sobre luxury.css + animacoes.css
+   Buongustaio : camada da marca sobre luxury.css + animacoes.css
    Base de seções: template restaurante-thesignature (escuro, acento único,
    textura de pedra), levado ao estilo Luxury.
    Cores (identidade.md): dourado #B7962F e #705C1D + creme #FDF5DB,
    tiradas do letreiro da fachada (foto do Google Maps).
-   Fontes (aproximação do letreiro): Alex Brush (nome), Cormorant Garamond
-   (títulos), Manrope 300 (texto).
+   Fontes (aproximação do letreiro): Alex Brush (nome), Marcellus
+   (títulos), Lato 300 (texto).
    ===================================================================== */
 
 :root {
@@ -442,6 +442,8 @@ details.faq[open] summary::after { content: "−"; }
   --buon-ouro-escuro: #705C1D;
   --lx-linha: rgb(253 245 219 / 0.13);
   --lx-script: "Alex Brush", "Great Vibes", cursive;
+  --lx-serif: "Marcellus", "Cormorant Garamond", Georgia, serif;
+  --lx-sans: "Lato", system-ui, -apple-system, "Segoe UI", sans-serif;
   --lx-secao: clamp(80px, 11vw, 150px);
   --marquee-fundo: var(--lx-fundo);
 }
@@ -605,17 +607,46 @@ details.faq[open] summary::after { content: "−"; }
 .reserva-acoes { display: flex; flex-direction: column; align-items: center; gap: 22px; }
 .reserva .a-confirmar { background: rgb(12 11 8 / 0.7); }
 
-/* ---------- avaliação ---------- */
-.avaliacao { max-width: 880px; text-align: center; display: grid; justify-items: center; }
-.avaliacao-corpo { margin-top: 30px; position: relative; }
-.aspas { display: block; font: 400 110px/0.6 var(--lx-serif); color: var(--lx-acento); height: 46px; }
-.avaliacao .lx-citacao { font-size: clamp(23px, 3vw, 36px); }
-.placar {
-  margin-top: 56px; padding-top: 34px; border-top: 1px solid var(--lx-linha);
-  display: flex; align-items: center; gap: 16px; text-align: left;
+/* ---------- avaliações: faixa que passa (marquee, CSS puro) ---------- */
+h1 em, h2 em { font-style: normal; } /* Marcellus não tem itálico: destaque só pela cor */
+h1, h2, h3 { letter-spacing: 0; line-height: 1.12; }
+.avaliacoes { overflow: hidden; --marquee-fundo: var(--lx-fundo); }
+.cabeca-aval { display: grid; gap: 22px; margin-bottom: clamp(36px, 5vw, 60px); }
+.cabeca-aval h2 { margin-top: 22px; }
+.aval-ctrl { display: flex; align-items: center; gap: 18px; }
+.aval-ctrl p { margin: 0; }
+@media (min-width: 900px) { .cabeca-aval { grid-template-columns: 1fr auto; align-items: end; } }
+.marquee { --marquee-gap: 20px; --marquee-volta: 55s; padding: 14px 0 26px; }
+.marquee:active .marquee-trilha { animation-play-state: paused; }
+.marquee::before, .marquee::after { width: clamp(24px, 8vw, 120px); }
+.rev-card {
+  flex: 0 0 auto; width: clamp(250px, 78vw, 340px); min-height: 220px;
+  display: flex; flex-direction: column; justify-content: space-between; gap: 18px;
+  padding: 28px 26px 24px; border: 1px solid var(--lx-linha); border-radius: 6px;
+  background: linear-gradient(160deg, #1d1a13, #14120d);
+  box-shadow: 0 18px 38px -22px rgb(0 0 0 / .75);
 }
-.placar strong { font: 400 54px/1 var(--lx-serif); color: var(--lx-texto); }
-.placar > span { font: 500 11px/1.8 var(--lx-sans); letter-spacing: .2em; text-transform: uppercase; color: var(--lx-texto-suave); }
+.rev-card p { margin: 0; font: 400 clamp(17px, 1.5vw, 19px)/1.5 var(--lx-serif); color: var(--lx-texto); }
+.rev-card footer { font: 400 11px/1.5 var(--lx-sans); letter-spacing: .14em; text-transform: uppercase; color: var(--lx-texto-suave); }
+.rev-card footer b { color: var(--lx-texto); font-weight: 700; }
+.rev-nota { align-items: flex-start; justify-content: center; border-color: rgb(183 150 47 / .6); }
+.rev-nota strong { font: 400 64px/1 var(--lx-serif); color: var(--lx-acento); }
+.rev-nota p { font: 400 11px/1.6 var(--lx-sans); letter-spacing: .18em; text-transform: uppercase; color: var(--lx-texto-suave); }
+.marquee-pausa {
+  flex: 0 0 auto; width: 40px; height: 40px; border: 1px solid var(--lx-linha); border-radius: 50%;
+  background: transparent; color: var(--lx-texto); cursor: pointer; display: grid; place-items: center;
+}
+.marquee-pausa:focus-visible, .marquee:focus-visible { outline: 2px solid var(--lx-acento); outline-offset: 3px; }
+.ic-pausa { width: 10px; height: 12px; border-left: 3px solid currentColor; border-right: 3px solid currentColor; }
+.marquee-pausa[aria-pressed="true"] .ic-pausa { width: 0; height: 0; border: 0; border-left: 10px solid currentColor; border-top: 6px solid transparent; border-bottom: 6px solid transparent; }
+/* movimento reduzido: sem animação, carrossel de rolagem horizontal com snap */
+@media (prefers-reduced-motion: reduce) {
+  .marquee { overflow-x: auto; scroll-snap-type: x mandatory; }
+  .marquee::before, .marquee::after { display: none; }
+  .marquee-trilha { animation: none; padding-inline: var(--lx-gutter); }
+  .rev-card { scroll-snap-align: center; }
+  .marquee-pausa { display: none; }
+}
 
 /* ---------- horários e endereço (hexágono do rodapé do template, em CSS) ---------- */
 .horarios { display: grid; gap: clamp(48px, 7vw, 110px); align-items: center; }
@@ -682,7 +713,7 @@ details.faq[open] summary::after { content: "−"; }
 }
 .sem-quebra { white-space: nowrap; }
 
-/* números de telefone, horário e nota em algarismos alinhados (a Cormorant usa os de estilo antigo) */
+/* números de telefone, horário e nota em algarismos alinhados (garante algarismos alinhados) */
 .telefone-grande, .telefone-medio, .horas dd, .selo-nota strong, .placar strong, .hero-nota b { font-variant-numeric: lining-nums; }
 
 </style>
@@ -836,18 +867,27 @@ details.faq[open] summary::after { content: "−"; }
       </div>
     </section>
 
-    <!-- AVALIAÇÃO real do Google (citação, nunca depoimento inventado) -->
-    <section id="avaliacoes" class="lx-secao">
-      <div class="lx-container avaliacao">
-        <span class="lx-rotulo">Avaliações no Google</span>
-        <div data-anim="rise3d" class="avaliacao-corpo">
-          <span class="aspas" aria-hidden="true">“</span>
-          <blockquote class="lx-citacao">Ambiente requintado e agradável com atendimento de alto nível. O garçom Elenilson nos atendeu maravilhosamente e ajudou bastante na escolha dos pratos e do vinho.</blockquote>
-          <cite>Avaliação no Google Maps</cite>
+    <!-- AVALIAÇÕES do Google: faixa que passa sozinha (marquee). Trechos fiéis de uma avaliação real de 5 estrelas + a nota do Maps -->
+    <section id="avaliacoes" class="lx-secao avaliacoes">
+      <div class="lx-container cabeca-aval">
+        <div data-anim="rise3d">
+          <span class="lx-rotulo">Avaliações no Google</span>
+          <h2>O que dizem <em>à mesa</em></h2>
         </div>
-        <div class="placar">
-          <strong>4,6</strong>
-          <span><span class="estrelas" aria-hidden="true">★★★★★</span><br>639 avaliações no Google Maps</span>
+        <div class="aval-ctrl">
+          <p class="lx-texto-suave">Trechos de uma avaliação de 5 estrelas publicada no Google Maps.</p>
+          <button type="button" class="marquee-pausa" aria-pressed="false" aria-label="Pausar animação">
+            <span class="ic-pausa" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+      <div class="marquee" role="region" aria-label="Avaliações no Google" tabindex="0">
+        <div class="marquee-trilha">
+          <article class="rev-card"><span class="estrelas" aria-label="5 estrelas">★★★★★</span><p>“Entradas deliciosas, pratos principais igualmente deliciosos.”</p><footer><b>João</b> · avaliação no Google</footer></article>
+          <article class="rev-card"><span class="estrelas" aria-label="5 estrelas">★★★★★</span><p>“Ambiente requintado e agradável com atendimento de alto nível.”</p><footer><b>João</b> · avaliação no Google</footer></article>
+          <article class="rev-card"><span class="estrelas" aria-label="5 estrelas">★★★★★</span><p>“O garçom Elenilson nos atendeu maravilhosamente e ajudou bastante na escolha dos pratos e do vinho.”</p><footer><b>João</b> · avaliação no Google</footer></article>
+          <article class="rev-card"><span class="estrelas" aria-label="5 estrelas">★★★★★</span><p>“Excelente ambiente para um bom papo em família ou entre amigos.”</p><footer><b>João</b> · avaliação no Google</footer></article>
+          <article class="rev-card rev-nota"><strong>4,6</strong><span class="estrelas" aria-label="nota 4,6 de 5">★★★★★</span><p>639 avaliações no Google Maps</p></article>
         </div>
       </div>
     </section>
@@ -874,10 +914,10 @@ details.faq[open] summary::after { content: "−"; }
         <div class="quadro-horas">
           <span class="quadro-titulo">Horário de funcionamento</span>
           <dl class="horas" id="horas">
-            <div data-dias="1,2,3,4"><dt>Segunda a quinta</dt><dd>11h30 – 15h<br>18h – 23h</dd></div>
-            <div data-dias="5"><dt>Sexta</dt><dd>11h30 – 15h<br>18h – 0h</dd></div>
-            <div data-dias="6"><dt>Sábado</dt><dd>12h – 16h<br>18h – 23h</dd></div>
-            <div data-dias="0"><dt>Domingo</dt><dd>12h – 16h<br><span class="fechado">jantar fechado</span></dd></div>
+            <div data-dias="1,2,3,4"><dt>Segunda a quinta</dt><dd>11h30 às 15h<br>18h às 23h</dd></div>
+            <div data-dias="5"><dt>Sexta</dt><dd>11h30 às 15h30<br>18h às 0h</dd></div>
+            <div data-dias="6"><dt>Sábado</dt><dd>12h às 16h<br>18h às 23h</dd></div>
+            <div data-dias="0"><dt>Domingo</dt><dd>12h às 16h<br><span class="fechado">jantar fechado</span></dd></div>
           </dl>
           <span class="quadro-fonte">Horários da ficha do Google Maps</span>
         </div>
@@ -902,8 +942,8 @@ details.faq[open] summary::after { content: "−"; }
 
   <script>
 /* =====================================================================
-   Animações e efeitos 3D — parte em JavaScript (sem dependências)
-   Par do animacoes.css. Especificação: FRONT-END_CREATOR.md (itens 1–24).
+   Animações e efeitos 3D : parte em JavaScript (sem dependências)
+   Par do animacoes.css. Especificação: FRONT-END_CREATOR.md (itens 1-24).
    Exige no <head>, ANTES de tudo, o script inline do README (liga html.motion).
    ===================================================================== */
 (function () {
@@ -955,7 +995,7 @@ details.faq[open] summary::after { content: "−"; }
     todos(alvosEntrada).forEach(function (el) { el.classList.add("is-in"); });
   }
 
-  /* ---------- 14 — replay da entrada do hero ao voltar ao topo ---------- */
+  /* ---------- 14 : replay da entrada do hero ao voltar ao topo ---------- */
   if (temIO && !reduzido) {
     todos(".hero-entrada").forEach(function (hero) {
       Array.prototype.forEach.call(hero.children, function (f, i) {
@@ -973,7 +1013,7 @@ details.faq[open] summary::after { content: "−"; }
     });
   }
 
-  /* ---------- 12 — tilt 3D seguindo o mouse ---------- */
+  /* ---------- 12 : tilt 3D seguindo o mouse ---------- */
   if (!reduzido && matchMedia("(hover: hover) and (pointer: fine)").matches) {
     todos("[data-tilt]").forEach(function (el) {
       var max = parseFloat(el.getAttribute("data-tilt")) || 7;
@@ -1005,7 +1045,7 @@ details.faq[open] summary::after { content: "−"; }
     });
   }
 
-  /* ---------- 5 — flip de card (botão, Enter e Espaço) ---------- */
+  /* ---------- 5 : flip de card (botão, Enter e Espaço) ---------- */
   todos(".flip-card").forEach(function (card) {
     var frente = card.querySelector(".flip-frente"), verso = card.querySelector(".flip-verso");
     var botoes = todos(".flip-botao", card);
@@ -1022,7 +1062,7 @@ details.faq[open] summary::after { content: "−"; }
     definir(false);
   });
 
-  /* ---------- 20 — carrossel infinito (marquee) ---------- */
+  /* ---------- 20 : carrossel infinito (marquee) ---------- */
   todos(".marquee").forEach(function (m) {
     var trilha = m.querySelector(".marquee-trilha");
     if (!trilha || reduzido) return;
@@ -1044,7 +1084,7 @@ details.faq[open] summary::after { content: "−"; }
     }).observe(m);
   });
 
-  /* ---------- 15 — vitrine com troca automática ---------- */
+  /* ---------- 15 : vitrine com troca automática ---------- */
   todos(".vitrine-auto").forEach(function (v) {
     var itens = todos(".vitrine-item", v);
     if (!itens.length) return;
@@ -1084,7 +1124,7 @@ details.faq[open] summary::after { content: "−"; }
     }, { threshold: [0, 0.08] }).observe(v);
   });
 
-  /* ---------- 24 — header que ganha fundo ao rolar (sentinela) ---------- */
+  /* ---------- 24 : header que ganha fundo ao rolar (sentinela) ---------- */
   var header = document.querySelector(".header-luxo");
   if (header && temIO) {
     var sentinela = document.createElement("div");
@@ -1094,7 +1134,7 @@ details.faq[open] summary::after { content: "−"; }
     new IntersectionObserver(function (es) { header.classList.toggle("rolou", !es[0].isIntersecting); }).observe(sentinela);
   }
 
-  /* ---------- 24 — WhatsApp flutuante: aparece depois do hero, some no contato ---------- */
+  /* ---------- 24 : WhatsApp flutuante: aparece depois do hero, some no contato ---------- */
   todos(".wa-flutuante").forEach(function (wa) {
     var depois = document.querySelector(wa.getAttribute("data-depois") || ".hero");
     var some = document.querySelector(wa.getAttribute("data-some-em") || "#contato");
@@ -1105,7 +1145,7 @@ details.faq[open] summary::after { content: "−"; }
     if (some) new IntersectionObserver(function (es) { contatoVisivel = es[0].isIntersecting; atualizar(); }).observe(some);
   });
 
-  /* ---------- 23 — vídeo de fundo do hero: toca uma vez, recomeça ao voltar ---------- */
+  /* ---------- 23 : vídeo de fundo do hero: toca uma vez, recomeça ao voltar ---------- */
   todos("video[data-hero-video]").forEach(function (v) {
     var economia = navigator.connection && navigator.connection.saveData;
     if (reduzido || economia) return; // fica só o pôster (último quadro), sem baixar o vídeo
@@ -1119,7 +1159,7 @@ details.faq[open] summary::after { content: "−"; }
     }, { threshold: 0.25 }).observe(v);
   });
 
-  /* ---------- 24 — bolha "digitando" seguida da mensagem ---------- */
+  /* ---------- 24 : bolha "digitando" seguida da mensagem ---------- */
   todos("[data-digitando]").forEach(function (b) {
     var msg = b.nextElementSibling;
     if (!msg || reduzido) return;

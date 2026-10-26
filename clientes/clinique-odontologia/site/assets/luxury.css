@@ -1,21 +1,21 @@
 /* =====================================================================
-   Base do estilo LUXURY — o estilo principal dos demos da oficina.
+   Base do estilo LUXURY - o estilo principal dos demos da oficina.
    As CORES vêm da marca do cliente (identidade.md): trocar só as variáveis
    do :root. O resto (tipografia, respiro, linhas finas, hero com foto)
    é o que faz o site parecer de luxo, independente da cor.
    ===================================================================== */
 
 :root {
-  /* marca do cliente — substituir pelos hex da logo */
+  /* marca do cliente - substituir pelos hex da logo */
   --lx-fundo: #0e0d0c;        /* fundo principal: escuro profundo (ou creme #f6f1ea na versão clara) */
   --lx-fundo-2: #161412;      /* fundo alternado das seções */
   --lx-texto: #f3eee6;        /* texto principal */
   --lx-texto-suave: #b9b1a5;  /* texto secundário */
-  --lx-acento: #c8a96a;       /* cor de destaque da marca — usar pouco: linhas, rótulos, 1 botão */
+  --lx-acento: #c8a96a;       /* cor de destaque da marca - usar pouco: linhas, rótulos, 1 botão */
   --lx-linha: rgb(255 255 255 / 0.12);
 
-  --lx-serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
-  --lx-sans: "Manrope", "Inter", system-ui, sans-serif;
+  --lx-serif: "DM Serif Display", "Playfair Display", Georgia, serif;
+  --lx-sans: "DM Sans", "Inter", system-ui, sans-serif;
 
   --lx-max: 1180px;
   --lx-gutter: clamp(20px, 5vw, 56px);
@@ -68,7 +68,7 @@ h1 em, h2 em { font-style: italic; color: var(--lx-acento); }
 .btn-luxo--linha:hover { border-color: var(--lx-acento); color: var(--lx-acento); }
 .btn-luxo:focus-visible { outline: 2px solid var(--lx-acento); outline-offset: 4px; }
 
-/* HERO — sempre com IMAGEM DE FUNDO (foto real do negócio) */
+/* HERO - sempre com IMAGEM DE FUNDO (foto real do negócio) */
 .hero {
   position: relative; isolation: isolate;
   min-height: 100svh; display: grid; align-items: end;
@@ -118,7 +118,7 @@ h1 em, h2 em { font-style: italic; color: var(--lx-acento); }
 .lx-citacao { font: italic 400 clamp(24px, 3vw, 38px)/1.3 var(--lx-serif); margin: 0; }
 .lx-citacao + cite { display: block; margin-top: 18px; font: 500 11px/1 var(--lx-sans); letter-spacing: 0.24em; text-transform: uppercase; color: var(--lx-texto-suave); font-style: normal; }
 
-/* chip "a confirmar" (dado não confirmado — regra da oficina) */
+/* chip "a confirmar" (dado não confirmado - regra da oficina) */
 .a-confirmar { display: inline-block; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; padding: 3px 8px; border: 1px dashed var(--lx-acento); color: var(--lx-acento); vertical-align: middle; }
 
 .lx-rodape { padding-block: 56px; border-top: 1px solid var(--lx-linha); color: var(--lx-texto-suave); font-size: 13px; }

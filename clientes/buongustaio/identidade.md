@@ -18,16 +18,16 @@
 **Site:** não tem. A ficha do Maps não tem site, Instagram nem link nenhum (Maps, gap verificável)
 **Endereço:** Av. Afonso Pena, 444, Petrópolis, Natal/RN (Maps)
 **Horário:** (Maps)
-- segunda a quinta: 11h30–15h e 18h–23h
-- sexta: 11h30–15h e 18h–0h
-- sábado: 12h–16h e 18h–23h
-- domingo: 12h–16h (sem jantar)
+- segunda a quinta: 11h30 às 15h e 18h às 23h
+- sexta: 11h30 às 15h30 e 18h às 0h (detalhe da ficha do Maps)
+- sábado: 12h às 16h e 18h às 23h
+- domingo: 12h às 16h (sem jantar)
 
 **Reputação:** nota 4,6 com 639 avaliações no Google (Maps)
 
 ## Marca
 
-**Logo:** não existe arquivo de logo. A referência é o letreiro da fachada: "Buongustaio" em **cursiva** em creme iluminado sobre painel dourado, no jardim (foto do Maps `assets/maps/01.jpg`, recorte em `assets/logo-foto-maps.jpg`). O nome também aparece gravado no jogo americano de couro (`assets/maps/02.jpg`). No demo, o nome é recriado em tipografia (não ampliar o recorte de 250 px).
+**Logo:** procurada de novo na revisão (WebSearch: Apontador, Foursquare, Guia da Semana, Tribuna do Norte; sem arquivo de logo). Não achada, então o nome segue em tipografia. Não existe arquivo de logo. A referência é o letreiro da fachada: "Buongustaio" em **cursiva** em creme iluminado sobre painel dourado, no jardim (foto do Maps `assets/maps/01.jpg`, recorte em `assets/logo-foto-maps.jpg`). O nome também aparece gravado no jogo americano de couro (`assets/maps/02.jpg`). No demo, o nome é recriado em tipografia (não ampliar o recorte de 250 px).
 **Cores:** (extraídas do recorte do letreiro, foto do Maps, cor aproximada pela luz)
 - `#B7962F` dourado: **acento** (botão principal, rótulos, linhas, chips, nome no rodapé)
 - `#705C1D` dourado escuro: **hover** do botão e apoio
@@ -35,8 +35,8 @@
 - `#0F0E0B` quase preto quente: **fundo** (base escura do template thesignature, combinando com a fachada à noite). `#16140F` no fundo alternado. Não é cor da marca, é o fundo do estilo.
 **Tipografia:** (aproximação no Google Fonts, referência: cursiva do letreiro)
 - Nome "Buongustaio": **Alex Brush**, a mais próxima do traço grosso e da inclinação do letreiro (comparada com Great Vibes, Pinyon Script, Parisienne, Allura, Italianno, Rouge Script)
-- Títulos: **Cormorant Garamond** 400 (serifada elegante do estilo Luxury)
-- Texto: **Manrope** 300
+- Títulos: **Marcellus** 400 (serifada clássica, sem itálico: destaque só pela cor; definido na revisão do usuário)
+- Texto: **Lato** 300/400 (definido na revisão do usuário)
 **Cor proibida / o que nunca fazer:** *a definir* pela casa. Por conta própria: não usar o laranja/amarelo original do template, não esticar o recorte do letreiro.
 
 ## Tom de voz
@@ -58,6 +58,8 @@ Só o que aparece em fonte pública:
 
 ## Avaliações citáveis
 
+Revisão: a faixa de avaliações do demo passa continuamente (marquee, pausa ao tocar/passar o mouse, com botão de pausa; movimento reduzido vira rolagem com snap). Só existe **1** avaliação positiva real coletada (de João, 5 estrelas, "um ano atrás", detalhe do Maps); entram 4 trechos fiéis dela + 1 cartão com a nota 4,6 e as 639 avaliações. A de 3 estrelas (Gabriel) é morna e a de 1 estrela não entram.
+
 - "Ambiente requintado e agradável com atendimento de alto nível. O garçom Elenilson nos atendeu maravilhosamente e ajudou bastante na escolha dos pratos e do vinho." (review do Google, autor não anotado no dossiê). Entra só como "Avaliação no Google Maps".
 - As outras duas da ficha são 3★ e 1★ (reclamação de 07/07/26): **não citar**.
 
@@ -78,6 +80,7 @@ Nada enviado pela casa. Material público (dossiê, Maps), em `assets/`:
 
 - Base: `templates/sites/restaurante-thesignature/` (copiado com `personalizar.sh`, acento `#B7962F`, hover `#705C1D`), levado ao estilo Luxury. Do template ficaram a estrutura de seções (sobre com selo, 3 diferenciais, cardápio sobre textura de pedra, faixa de reserva, avaliação, horário do rodapé refeito em CSS) e a textura de pedra (`img/bg/meal-bg.png`, fundo neutro). Saíram slider, "50% OFF", chefs, blog, loja, newsletter, formulário `mail.php`.
 - One-page em `site/index.html`, `noindex`. Animações: entrada do hero (CSS), rise 3D nos títulos, stagger 3D nos cards e fotos; hover elevado e header que escurece ao rolar.
+- Faixa de avaliações com 1 única avaliação real em trechos (ver acima). Sem travessões em nenhum texto (grep = 0).
 - Marcado como "a confirmar" no demo: texto de apresentação da casa, cardápio completo/carta de vinhos/preços (nomes dos pratos são descrição das fotos), reserva pelo WhatsApp.
 - Arquivo entregue: `entregas/2026-10-25-restaurante-estetica-odontologia/Buongustaio.html`
 

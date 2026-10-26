@@ -1,8 +1,7 @@
 /* =====================================================================
-   Juliane Alves Clinic — camada da marca sobre o luxury.css
+   Juliane Alves Clinic - camada da marca sobre o luxury.css
    Cores: identidade.md (preto da logo, off-white do espaço, ferrugem das
-   folhas do salão). Tipografia: Julius Sans One (aprox. da logo),
-   Cormorant Garamond (títulos), Jost (texto).
+   folhas do salão). Tipografia: Tenor Sans (títulos e rótulos), Hanken Grotesk (texto), locais em fonts/.
    ===================================================================== */
 
 :root {
@@ -14,19 +13,22 @@
   --lx-linha: rgb(21 19 18 / 0.14);
 
   --jac-preto: #0f0e0d;
-  --jac-folha: #d9895a;         /* folha laranja — acento sobre fundo escuro */
+  --jac-folha: #d9895a;         /* folha laranja - acento sobre fundo escuro */
   --jac-folha-clara: #e9a97c;
 
-  --lx-serif: "Cormorant Garamond", "Cormorant", Georgia, serif;
-  --lx-sans: "Jost", "Manrope", system-ui, sans-serif;
-  --jac-marca: "Julius Sans One", "Jost", system-ui, sans-serif;
+  --lx-serif: "Tenor Sans", "Gill Sans", "Trebuchet MS", sans-serif;
+  --lx-sans: "Hanken Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --jac-marca: "Tenor Sans", "Gill Sans", "Trebuchet MS", sans-serif;
 
   --lx-secao: clamp(80px, 11vw, 150px);
 }
 
 body { font-weight: 300; }
-h1, h2 { font-weight: 300; }
-h3 { font-weight: 400; }
+h1, h2, h3 { font-weight: 400; line-height: 1.14; letter-spacing: 0; }
+h1 { font-size: clamp(38px, 6vw, 84px); }
+h2 { font-size: clamp(29px, 3.6vw, 50px); }
+h3 { font-size: clamp(22px, 2vw, 27px); }
+h1 em, h2 em, .lx-citacao, .juliane blockquote { font-style: normal; }
 ::selection { background: var(--jac-folha); color: var(--jac-preto); }
 
 .lx-rotulo { font: 400 11.5px/1.5 var(--jac-marca); letter-spacing: 0.3em; }
@@ -196,3 +198,40 @@ h3 { font-weight: 400; }
 
 /* WhatsApp flutuante acima da barra de gestos do celular */
 .wa-flutuante { bottom: max(18px, env(safe-area-inset-bottom)); }
+
+/* Tenor Sans não tem itálico nem peso leve: ajustes de tamanho */
+.fato strong, .nota-google strong, .assin h3, .proc-nome, .contato-lista .grande, .proc-num, .lx-num { font-weight: 400; }
+.fato strong { font-size: clamp(26px, 2.8vw, 36px); }
+.nota-google strong { font-size: clamp(64px, 9vw, 104px); }
+.assin h3 { font-size: clamp(30px, 3.4vw, 42px); }
+.proc-nome { font-size: clamp(22px, 2.1vw, 28px); }
+.juliane blockquote { font-size: clamp(20px, 2vw, 26px); line-height: 1.4; }
+.lx-citacao { font-size: clamp(20px, 2.4vw, 30px); }
+.lx-rotulo { letter-spacing: 0.26em; }
+
+/* ---------- avaliações: faixa de cartões que passa da direita para a esquerda ---------- */
+.rev-faixa { position: relative; overflow: hidden; padding: 14px 0 22px; margin-top: 8px; }
+.rev-faixa::before, .rev-faixa::after { content: ""; position: absolute; top: 0; bottom: 0; width: clamp(24px, 8vw, 110px); z-index: 2; pointer-events: none; }
+.rev-faixa::before { left: 0; background: linear-gradient(90deg, var(--lx-fundo), transparent); }
+.rev-faixa::after { right: 0; background: linear-gradient(-90deg, var(--lx-fundo), transparent); }
+.rev-trilha { display: flex; gap: 22px; width: max-content; padding-right: 22px; animation: revPassa 70s linear infinite; will-change: transform; }
+.rev-faixa:hover .rev-trilha, .rev-faixa:active .rev-trilha, .rev-faixa:focus-within .rev-trilha { animation-play-state: paused; }
+@keyframes revPassa { to { transform: translate3d(-50%, 0, 0); } }
+.rev-card {
+  margin: 0; flex: 0 0 auto; width: clamp(272px, 78vw, 360px); min-height: 280px;
+  display: flex; flex-direction: column; justify-content: space-between; gap: 22px; text-align: left;
+  padding: 30px 28px 26px; background: #fbf9f5; border: 1px solid var(--lx-linha); border-radius: 6px;
+  box-shadow: 0 10px 30px -18px rgb(21 19 18 / 0.28);
+}
+.rev-estrelas { color: var(--lx-acento); letter-spacing: 0.28em; font-size: 13px; }
+.rev-card blockquote { margin: 0; font: 300 15.5px/1.7 var(--lx-sans); color: var(--lx-texto); }
+.rev-card figcaption { display: grid; gap: 4px; font-size: 12px; color: var(--lx-texto-suave); }
+.rev-card figcaption strong { font: 400 15px/1.3 var(--jac-marca); color: var(--lx-texto); letter-spacing: 0.04em; }
+.rev-link { text-align: center; margin: 22px 0 0; padding-inline: var(--lx-gutter); }
+@media (prefers-reduced-motion: reduce) {
+  .rev-faixa { overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; }
+  .rev-faixa::before, .rev-faixa::after { display: none; }
+  .rev-trilha { animation: none; padding-inline: var(--lx-gutter); }
+  .rev-card { scroll-snap-align: center; }
+  .rev-card[aria-hidden="true"] { display: none; }
+}

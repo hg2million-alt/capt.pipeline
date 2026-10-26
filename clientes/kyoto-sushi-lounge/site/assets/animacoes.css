@@ -1,6 +1,6 @@
 /* =====================================================================
-   Animações e efeitos 3D — biblioteca da oficina (sem dependências)
-   Especificação completa: animacoes-3d/FRONT-END_CREATOR.md (itens 1–24)
+   Animações e efeitos 3D: biblioteca da oficina (sem dependências)
+   Especificação completa: animacoes-3d/FRONT-END_CREATOR.md (itens 1-24)
    Uso: animacoes-3d/README.md
 
    Regra geral (item 7): entradas em 1,5 s com cubic-bezier(.22,1,.36,1);
@@ -15,7 +15,7 @@
   --anim-resposta: 0.45s;
 }
 
-/* ---------- Entradas por scroll (itens 1–4, 8–11) ---------- */
+/* ---------- Entradas por scroll (itens 1-4, 8-11) ---------- */
 html.motion [data-anim] {
   transition:
     opacity var(--anim-entrada) var(--anim-ease),
@@ -24,20 +24,20 @@ html.motion [data-anim] {
 }
 html.motion [data-anim]:not(.is-in) { opacity: 0; }
 
-/* 3 — fade suave */
+/* 3: fade suave */
 html.motion [data-anim="fade"]:not(.is-in) { transform: none; }
-/* 2 — slide lateral (esquerda padrão, direita por configuração) */
+/* 2: slide lateral (esquerda padrão, direita por configuração) */
 html.motion [data-anim="slide"]:not(.is-in) { transform: translateX(-28px); }
 html.motion [data-anim="slide-direita"]:not(.is-in) { transform: translateX(28px); }
-/* 4 — rotation entry refinada */
+/* 4: rotation entry refinada */
 html.motion [data-anim="rotacao"] { transform-origin: center; }
 html.motion [data-anim="rotacao"]:not(.is-in) { transform: rotate(-8deg) scale(0.96); }
-/* 8 — rise 3D */
+/* 8: rise 3D */
 html.motion [data-anim="rise3d"] { transform-origin: 50% 100%; }
 html.motion [data-anim="rise3d"]:not(.is-in) {
   transform: perspective(1100px) rotateX(-28deg) translateY(48px) scale(0.96);
 }
-/* 9 — swing 3D (porta abrindo) */
+/* 9: swing 3D (porta abrindo) */
 html.motion [data-anim="swing"] { transform-origin: 0% 50%; }
 html.motion [data-anim="swing"]:not(.is-in) {
   transform: perspective(1100px) rotateY(32deg) translateX(-40px);
@@ -46,11 +46,11 @@ html.motion [data-anim="swing-direita"] { transform-origin: 100% 50%; }
 html.motion [data-anim="swing-direita"]:not(.is-in) {
   transform: perspective(1100px) rotateY(-32deg) translateX(40px);
 }
-/* 10 — spin 3D (moeda) — só em elemento pequeno e decorativo */
+/* 10: spin 3D (moeda): só em elemento pequeno e decorativo */
 html.motion [data-anim="moeda"]:not(.is-in) {
   transform: perspective(700px) rotateY(-220deg) scale(0.7);
 }
-/* 1 e 11 — stagger (o contêiner recebe data-stagger; os itens, o atraso) */
+/* 1 e 11: stagger (o contêiner recebe data-stagger; os itens, o atraso) */
 html.motion [data-stagger] > * {
   transition:
     opacity var(--anim-entrada) var(--anim-ease),
@@ -65,7 +65,7 @@ html.motion [data-stagger="3d"]:not(.is-in) > * {
 /* pai de swing/slide: sem barra horizontal */
 .anim-clip { overflow-x: clip; }
 
-/* ---------- 14 — entrada do hero só com CSS (não espera o JS) ---------- */
+/* ---------- 14: entrada do hero só com CSS (não espera o JS) ---------- */
 .hero-entrada > * {
   animation: heroEntra var(--anim-entrada) var(--anim-ease) both;
   animation-delay: calc(var(--i, 0) * 80ms);
@@ -76,7 +76,7 @@ html.motion [data-stagger="3d"]:not(.is-in) > * {
   to { opacity: 1; transform: none; }
 }
 
-/* ---------- 6 — hover elevado (só mouse) ---------- */
+/* ---------- 6: hover elevado (só mouse) ---------- */
 .hover-elevado {
   transition:
     transform 260ms var(--anim-ease),
@@ -96,7 +96,7 @@ html.motion [data-stagger="3d"]:not(.is-in) > * {
 }
 .hover-elevado:active { transform: scale(0.99); }
 
-/* ---------- 12 — tilt 3D seguindo o mouse, com reflexo ---------- */
+/* ---------- 12: tilt 3D seguindo o mouse, com reflexo ---------- */
 [data-tilt] { position: relative; }
 [data-tilt] > .tilt-interno {
   transform: perspective(1200px) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg));
@@ -117,7 +117,7 @@ html.motion [data-stagger="3d"]:not(.is-in) > * {
 }
 [data-tilt].tilt-ativo > .tilt-interno::after { opacity: 1; }
 
-/* ---------- 5 — flip de card de duas faces (botão controla) ---------- */
+/* ---------- 5: flip de card de duas faces (botão controla) ---------- */
 .flip-card { perspective: 1200px; }
 .flip-card .flip-faces {
   display: grid;
@@ -133,7 +133,7 @@ html.motion [data-stagger="3d"]:not(.is-in) > * {
 .flip-card .flip-verso { transform: rotateY(180deg); }
 .flip-card.virado .flip-faces { transform: rotateY(180deg); }
 
-/* ---------- 13 — palco 3D na rolagem (sem JS) ---------- */
+/* ---------- 13: palco 3D na rolagem (sem JS) ---------- */
 @supports (animation-timeline: view()) {
   .palco-3d {
     transform-origin: 50% 100%;
@@ -147,7 +147,7 @@ html.motion [data-stagger="3d"]:not(.is-in) > * {
   }
 }
 
-/* ---------- 19 — leque 3D de cards flutuando ---------- */
+/* ---------- 19: leque 3D de cards flutuando ---------- */
 .leque-3d { position: relative; perspective: 1200px; display: grid; place-items: center; }
 .leque-3d > * {
   grid-area: 1 / 1;
@@ -169,7 +169,7 @@ html.motion [data-stagger="3d"]:not(.is-in) > * {
 }
 @keyframes flutua { 50% { translate: 0 -8px; } }
 
-/* ---------- 20 — carrossel infinito (marquee) ---------- */
+/* ---------- 20: carrossel infinito (marquee) ---------- */
 .marquee { position: relative; overflow: hidden; }
 .marquee::before,
 .marquee::after {
@@ -196,13 +196,13 @@ html.motion [data-stagger="3d"]:not(.is-in) > * {
 .marquee:focus-within .marquee-trilha { animation-play-state: paused; }
 @keyframes marquee { to { transform: translate3d(-50%, 0, 0); } }
 
-/* ---------- 21 — preenchimento sequencial com check ---------- */
+/* ---------- 21: preenchimento sequencial com check ---------- */
 .grade-check > * { transition: background-color var(--anim-resposta), border-color var(--anim-resposta); transition-delay: calc(var(--d, 0) * 45ms); }
 .grade-check svg { opacity: 0; transform: scale(0.4) rotate(-20deg); transition: opacity var(--anim-resposta) var(--anim-ease), transform var(--anim-resposta) var(--anim-ease); transition-delay: calc(var(--d, 0) * 45ms); }
 .grade-check.is-in > * { background-color: rgb(34 160 90 / 0.14); border-color: #22a05a; }
 .grade-check.is-in svg { opacity: 1; transform: none; }
 
-/* ---------- 22 — arco que se desenha sob a palavra em destaque ---------- */
+/* ---------- 22: arco que se desenha sob a palavra em destaque ---------- */
 .arco-destaque { position: relative; display: inline-block; font-weight: 800; white-space: nowrap; }
 .arco-destaque svg {
   position: absolute;
@@ -216,7 +216,7 @@ html.motion [data-stagger="3d"]:not(.is-in) > * {
 html.motion .arco-destaque svg { clip-path: inset(-50% 100% -50% 0); transition: clip-path var(--anim-entrada) var(--anim-ease) 0.5s; }
 html.motion .arco-destaque.is-in svg { clip-path: inset(-50% 0 -50% 0); }
 
-/* ---------- 15 — vitrine com troca automática ---------- */
+/* ---------- 15: vitrine com troca automática ---------- */
 .vitrine-auto .vitrine-item { display: none; }
 .vitrine-auto .vitrine-item.ativo { display: block; animation: vitrineEntra 0.9s var(--anim-ease) both; }
 @keyframes vitrineEntra {
@@ -231,7 +231,7 @@ html.motion .arco-destaque.is-in svg { clip-path: inset(-50% 0 -50% 0); }
 .vitrine-auto.pausado .vitrine-barras span.atual i { animation-play-state: paused; }
 @keyframes barra { to { transform: scaleX(1); } }
 
-/* ---------- 24 — microinterações ---------- */
+/* ---------- 24: microinterações ---------- */
 .header-luxo { position: fixed; inset: 0 0 auto 0; z-index: 50; transition: background-color var(--anim-resposta), border-color var(--anim-resposta), backdrop-filter var(--anim-resposta); border-bottom: 1px solid transparent; }
 .header-luxo.rolou { background-color: rgb(10 10 10 / 0.72); backdrop-filter: blur(10px); border-bottom-color: rgb(255 255 255 / 0.08); }
 .wa-flutuante { position: fixed; right: 18px; bottom: 18px; z-index: 60; opacity: 0; transform: translateY(16px); pointer-events: none; transition: opacity var(--anim-resposta) var(--anim-ease), transform var(--anim-resposta) var(--anim-ease); }
@@ -251,7 +251,7 @@ details.faq[open] summary::after { content: "−"; }
 .troca-conteudo { animation: troca var(--anim-resposta) var(--anim-ease) both; }
 @keyframes troca { from { opacity: 0; transform: translateY(8px); } }
 
-/* ---------- 23 — vídeo de fundo do hero ---------- */
+/* ---------- 23: vídeo de fundo do hero ---------- */
 .hero-video-wrap { position: absolute; inset: 0; overflow: hidden; }
 .hero-video-wrap video, .hero-video-wrap img { width: 100%; height: 100%; object-fit: cover; }
 

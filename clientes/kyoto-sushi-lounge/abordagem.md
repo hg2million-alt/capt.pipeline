@@ -1,4 +1,4 @@
-# Abordagem — Kyoto Sushi Lounge
+# Abordagem: Kyoto Sushi Lounge
 
 **Status:** pronta, não enviada. Demo: `entregas/2026-10-25-restaurante-estetica-odontologia/Kyoto Sushi Lounge.html`.
 **Destino:** +55 84 2136-9521, telefone **fixo**. WhatsApp **não confirmado**. Antes de mandar, ver se o número tem WhatsApp (foto de perfil / "iniciar conversa"). Se não tiver, a abordagem vira ligação ou visita ao salão (roteiro no fim). Quem envia: eu, [seu nome], morador de Natal que faz sites.

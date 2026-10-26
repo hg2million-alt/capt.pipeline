@@ -1,4 +1,4 @@
-# Abordagem — Clínica Luanna Souza
+# Abordagem: Clínica Luanna Souza
 
 **Destino:** +55 84 98708-0960 (WhatsApp da clínica, Maps + site dela)
 **Remetente:** [seu nome], morador de Natal que faz sites. Primeira pessoa.
@@ -15,7 +15,7 @@ Bom dia, Luanna, posso falar rapidinho sobre a página da clínica no Google? Po
 
 Balão 2 (só depois que ela responder)
 ```
-Sou de Natal e faço sites. Achei sua clínica procurando estética em Neópolis: 5,0 com 415 avaliações é raro de ver.
+Sou de Natal e faço sites. Achei sua clínica procurando estética em Neópolis: 5,0 com 415 avaliações é difícil de ver.
 ```
 
 Balão 3

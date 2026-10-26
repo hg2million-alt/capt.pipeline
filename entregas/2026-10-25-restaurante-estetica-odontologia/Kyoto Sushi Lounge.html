@@ -7,6 +7,7 @@
   <title>Kyoto Sushi Lounge · Cozinha japonesa no Tirol, Natal</title>
   <meta name="description" content="Kyoto Sushi Lounge: sashimi, niguiri com caviar, tataki, ramen e gyoza na Av. Alm. Alexandrino de Alencar, 1624, Tirol, Natal/RN. Nota 4,7 no Google.">
   <meta name="theme-color" content="#14100F">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Ccircle cx=%2732%27 cy=%2732%27 r=%2730%27 fill=%27%23EC8B66%27/%3E%3Ctext x=%2732%27 y=%2744%27 font-family=%27Arial,sans-serif%27 font-weight=%27700%27 font-size=%2736%27 text-anchor=%27middle%27 fill=%27%2314100F%27%3EK%3C/text%3E%3C/svg%3E">
   <!-- 1º script da página: liga as animações só se puderem rodar (item 7) -->
   <script>
     (function (h) {
@@ -18,22 +19,22 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500&family=Quicksand:wght@700&family=Shippori+Mincho:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500&family=Quicksand:wght@700&family=Shippori+Mincho:wght@400;500&display=swap">
   <style>
 /* =====================================================================
-   Base do estilo LUXURY — o estilo principal dos demos da oficina.
+   Base do estilo LUXURY: o estilo principal dos demos da oficina.
    As CORES vêm da marca do cliente (identidade.md): trocar só as variáveis
    do :root. O resto (tipografia, respiro, linhas finas, hero com foto)
    é o que faz o site parecer de luxo, independente da cor.
    ===================================================================== */
 
 :root {
-  /* marca do cliente — substituir pelos hex da logo */
+  /* marca do cliente: substituir pelos hex da logo */
   --lx-fundo: #0e0d0c;        /* fundo principal: escuro profundo (ou creme #f6f1ea na versão clara) */
   --lx-fundo-2: #161412;      /* fundo alternado das seções */
   --lx-texto: #f3eee6;        /* texto principal */
   --lx-texto-suave: #b9b1a5;  /* texto secundário */
-  --lx-acento: #c8a96a;       /* cor de destaque da marca — usar pouco: linhas, rótulos, 1 botão */
+  --lx-acento: #c8a96a;       /* cor de destaque da marca: usar pouco: linhas, rótulos, 1 botão */
   --lx-linha: rgb(255 255 255 / 0.12);
 
   --lx-serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
@@ -90,7 +91,7 @@ h1 em, h2 em { font-style: italic; color: var(--lx-acento); }
 .btn-luxo--linha:hover { border-color: var(--lx-acento); color: var(--lx-acento); }
 .btn-luxo:focus-visible { outline: 2px solid var(--lx-acento); outline-offset: 4px; }
 
-/* HERO — sempre com IMAGEM DE FUNDO (foto real do negócio) */
+/* HERO: sempre com IMAGEM DE FUNDO (foto real do negócio) */
 .hero {
   position: relative; isolation: isolate;
   min-height: 100svh; display: grid; align-items: end;
@@ -140,7 +141,7 @@ h1 em, h2 em { font-style: italic; color: var(--lx-acento); }
 .lx-citacao { font: italic 400 clamp(24px, 3vw, 38px)/1.3 var(--lx-serif); margin: 0; }
 .lx-citacao + cite { display: block; margin-top: 18px; font: 500 11px/1 var(--lx-sans); letter-spacing: 0.24em; text-transform: uppercase; color: var(--lx-texto-suave); font-style: normal; }
 
-/* chip "a confirmar" (dado não confirmado — regra da oficina) */
+/* chip "a confirmar" (dado não confirmado: regra da oficina) */
 .a-confirmar { display: inline-block; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; padding: 3px 8px; border: 1px dashed var(--lx-acento); color: var(--lx-acento); vertical-align: middle; }
 
 .lx-rodape { padding-block: 56px; border-top: 1px solid var(--lx-linha); color: var(--lx-texto-suave); font-size: 13px; }
@@ -150,8 +151,8 @@ h1 em, h2 em { font-style: italic; color: var(--lx-acento); }
 </style>
   <style>
 /* =====================================================================
-   Animações e efeitos 3D — biblioteca da oficina (sem dependências)
-   Especificação completa: animacoes-3d/FRONT-END_CREATOR.md (itens 1–24)
+   Animações e efeitos 3D: biblioteca da oficina (sem dependências)
+   Especificação completa: animacoes-3d/FRONT-END_CREATOR.md (itens 1-24)
    Uso: animacoes-3d/README.md
 
    Regra geral (item 7): entradas em 1,5 s com cubic-bezier(.22,1,.36,1);
@@ -166,7 +167,7 @@ h1 em, h2 em { font-style: italic; color: var(--lx-acento); }
   --anim-resposta: 0.45s;
 }
 
-/* ---------- Entradas por scroll (itens 1–4, 8–11) ---------- */
+/* ---------- Entradas por scroll (itens 1-4, 8-11) ---------- */
 html.motion [data-anim] {
   transition:
     opacity var(--anim-entrada) var(--anim-ease),
@@ -175,20 +176,20 @@ html.motion [data-anim] {
 }
 html.motion [data-anim]:not(.is-in) { opacity: 0; }
 
-/* 3 — fade suave */
+/* 3: fade suave */
 html.motion [data-anim="fade"]:not(.is-in) { transform: none; }
-/* 2 — slide lateral (esquerda padrão, direita por configuração) */
+/* 2: slide lateral (esquerda padrão, direita por configuração) */
 html.motion [data-anim="slide"]:not(.is-in) { transform: translateX(-28px); }
 html.motion [data-anim="slide-direita"]:not(.is-in) { transform: translateX(28px); }
-/* 4 — rotation entry refinada */
+/* 4: rotation entry refinada */
 html.motion [data-anim="rotacao"] { transform-origin: center; }
 html.motion [data-anim="rotacao"]:not(.is-in) { transform: rotate(-8deg) scale(0.96); }
-/* 8 — rise 3D */
+/* 8: rise 3D */
 html.motion [data-anim="rise3d"] { transform-origin: 50% 100%; }
 html.motion [data-anim="rise3d"]:not(.is-in) {
   transform: perspective(1100px) rotateX(-28deg) translateY(48px) scale(0.96);
 }
-/* 9 — swing 3D (porta abrindo) */
+/* 9: swing 3D (porta abrindo) */
 html.motion [data-anim="swing"] { transform-origin: 0% 50%; }
 html.motion [data-anim="swing"]:not(.is-in) {
   transform: perspective(1100px) rotateY(32deg) translateX(-40px);
@@ -197,11 +198,11 @@ html.motion [data-anim="swing-direita"] { transform-origin: 100% 50%; }
 html.motion [data-anim="swing-direita"]:not(.is-in) {
   transform: perspective(1100px) rotateY(-32deg) translateX(40px);
 }
-/* 10 — spin 3D (moeda) — só em elemento pequeno e decorativo */
+/* 10: spin 3D (moeda): só em elemento pequeno e decorativo */
 html.motion [data-anim="moeda"]:not(.is-in) {
   transform: perspective(700px) rotateY(-220deg) scale(0.7);
 }
-/* 1 e 11 — stagger (o contêiner recebe data-stagger; os itens, o atraso) */
+/* 1 e 11: stagger (o contêiner recebe data-stagger; os itens, o atraso) */
 html.motion [data-stagger] > * {
   transition:
     opacity var(--anim-entrada) var(--anim-ease),
@@ -216,7 +217,7 @@ html.motion [data-stagger="3d"]:not(.is-in) > * {
 /* pai de swing/slide: sem barra horizontal */
 .anim-clip { overflow-x: clip; }
 
-/* ---------- 14 — entrada do hero só com CSS (não espera o JS) ---------- */
+/* ---------- 14: entrada do hero só com CSS (não espera o JS) ---------- */
 .hero-entrada > * {
   animation: heroEntra var(--anim-entrada) var(--anim-ease) both;
   animation-delay: calc(var(--i, 0) * 80ms);
@@ -227,7 +228,7 @@ html.motion [data-stagger="3d"]:not(.is-in) > * {
   to { opacity: 1; transform: none; }
 }
 
-/* ---------- 6 — hover elevado (só mouse) ---------- */
+/* ---------- 6: hover elevado (só mouse) ---------- */
 .hover-elevado {
   transition:
     transform 260ms var(--anim-ease),
@@ -247,7 +248,7 @@ html.motion [data-stagger="3d"]:not(.is-in) > * {
 }
 .hover-elevado:active { transform: scale(0.99); }
 
-/* ---------- 12 — tilt 3D seguindo o mouse, com reflexo ---------- */
+/* ---------- 12: tilt 3D seguindo o mouse, com reflexo ---------- */
 [data-tilt] { position: relative; }
 [data-tilt] > .tilt-interno {
   transform: perspective(1200px) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg));
@@ -268,7 +269,7 @@ html.motion [data-stagger="3d"]:not(.is-in) > * {
 }
 [data-tilt].tilt-ativo > .tilt-interno::after { opacity: 1; }
 
-/* ---------- 5 — flip de card de duas faces (botão controla) ---------- */
+/* ---------- 5: flip de card de duas faces (botão controla) ---------- */
 .flip-card { perspective: 1200px; }
 .flip-card .flip-faces {
   display: grid;
@@ -284,7 +285,7 @@ html.motion [data-stagger="3d"]:not(.is-in) > * {
 .flip-card .flip-verso { transform: rotateY(180deg); }
 .flip-card.virado .flip-faces { transform: rotateY(180deg); }
 
-/* ---------- 13 — palco 3D na rolagem (sem JS) ---------- */
+/* ---------- 13: palco 3D na rolagem (sem JS) ---------- */
 @supports (animation-timeline: view()) {
   .palco-3d {
     transform-origin: 50% 100%;
@@ -298,7 +299,7 @@ html.motion [data-stagger="3d"]:not(.is-in) > * {
   }
 }
 
-/* ---------- 19 — leque 3D de cards flutuando ---------- */
+/* ---------- 19: leque 3D de cards flutuando ---------- */
 .leque-3d { position: relative; perspective: 1200px; display: grid; place-items: center; }
 .leque-3d > * {
   grid-area: 1 / 1;
@@ -320,7 +321,7 @@ html.motion [data-stagger="3d"]:not(.is-in) > * {
 }
 @keyframes flutua { 50% { translate: 0 -8px; } }
 
-/* ---------- 20 — carrossel infinito (marquee) ---------- */
+/* ---------- 20: carrossel infinito (marquee) ---------- */
 .marquee { position: relative; overflow: hidden; }
 .marquee::before,
 .marquee::after {
@@ -347,13 +348,13 @@ html.motion [data-stagger="3d"]:not(.is-in) > * {
 .marquee:focus-within .marquee-trilha { animation-play-state: paused; }
 @keyframes marquee { to { transform: translate3d(-50%, 0, 0); } }
 
-/* ---------- 21 — preenchimento sequencial com check ---------- */
+/* ---------- 21: preenchimento sequencial com check ---------- */
 .grade-check > * { transition: background-color var(--anim-resposta), border-color var(--anim-resposta); transition-delay: calc(var(--d, 0) * 45ms); }
 .grade-check svg { opacity: 0; transform: scale(0.4) rotate(-20deg); transition: opacity var(--anim-resposta) var(--anim-ease), transform var(--anim-resposta) var(--anim-ease); transition-delay: calc(var(--d, 0) * 45ms); }
 .grade-check.is-in > * { background-color: rgb(34 160 90 / 0.14); border-color: #22a05a; }
 .grade-check.is-in svg { opacity: 1; transform: none; }
 
-/* ---------- 22 — arco que se desenha sob a palavra em destaque ---------- */
+/* ---------- 22: arco que se desenha sob a palavra em destaque ---------- */
 .arco-destaque { position: relative; display: inline-block; font-weight: 800; white-space: nowrap; }
 .arco-destaque svg {
   position: absolute;
@@ -367,7 +368,7 @@ html.motion [data-stagger="3d"]:not(.is-in) > * {
 html.motion .arco-destaque svg { clip-path: inset(-50% 100% -50% 0); transition: clip-path var(--anim-entrada) var(--anim-ease) 0.5s; }
 html.motion .arco-destaque.is-in svg { clip-path: inset(-50% 0 -50% 0); }
 
-/* ---------- 15 — vitrine com troca automática ---------- */
+/* ---------- 15: vitrine com troca automática ---------- */
 .vitrine-auto .vitrine-item { display: none; }
 .vitrine-auto .vitrine-item.ativo { display: block; animation: vitrineEntra 0.9s var(--anim-ease) both; }
 @keyframes vitrineEntra {
@@ -382,7 +383,7 @@ html.motion .arco-destaque.is-in svg { clip-path: inset(-50% 0 -50% 0); }
 .vitrine-auto.pausado .vitrine-barras span.atual i { animation-play-state: paused; }
 @keyframes barra { to { transform: scaleX(1); } }
 
-/* ---------- 24 — microinterações ---------- */
+/* ---------- 24: microinterações ---------- */
 .header-luxo { position: fixed; inset: 0 0 auto 0; z-index: 50; transition: background-color var(--anim-resposta), border-color var(--anim-resposta), backdrop-filter var(--anim-resposta); border-bottom: 1px solid transparent; }
 .header-luxo.rolou { background-color: rgb(10 10 10 / 0.72); backdrop-filter: blur(10px); border-bottom-color: rgb(255 255 255 / 0.08); }
 .wa-flutuante { position: fixed; right: 18px; bottom: 18px; z-index: 60; opacity: 0; transform: translateY(16px); pointer-events: none; transition: opacity var(--anim-resposta) var(--anim-ease), transform var(--anim-resposta) var(--anim-ease); }
@@ -402,7 +403,7 @@ details.faq[open] summary::after { content: "−"; }
 .troca-conteudo { animation: troca var(--anim-resposta) var(--anim-ease) both; }
 @keyframes troca { from { opacity: 0; transform: translateY(8px); } }
 
-/* ---------- 23 — vídeo de fundo do hero ---------- */
+/* ---------- 23: vídeo de fundo do hero ---------- */
 .hero-video-wrap { position: absolute; inset: 0; overflow: hidden; }
 .hero-video-wrap video, .hero-video-wrap img { width: 100%; height: 100%; object-fit: cover; }
 
@@ -424,7 +425,7 @@ details.faq[open] summary::after { content: "−"; }
 </style>
   <style>
 /* =====================================================================
-   Kyoto Sushi Lounge — camada da marca sobre luxury.css
+   Kyoto Sushi Lounge: camada da marca sobre luxury.css
    Estrutura de seções herdada do template restaurante-grillino
    (hero → sobre com 2 fotos + contadores → cardápio com miniatura e
    etiqueta de preço → galeria → faixa de reserva sobre foto).
@@ -436,15 +437,15 @@ details.faq[open] summary::after { content: "−"; }
   --lx-fundo-2: #1C1715;        /* derivado, seções alternadas */
   --lx-texto: #F3ECE4;
   --lx-texto-suave: #B8ADA2;
-  --lx-acento: #EC8B66;         /* coral da logo — aproximado, a confirmar */
+  --lx-acento: #EC8B66;         /* coral da logo: aproximado, a confirmar */
   --lx-linha: rgb(243 236 228 / 0.12);
   --petroleo: #367890;          /* capa do cardápio */
   --petroleo-fundo: #1A4351;    /* petróleo escurecido p/ contraste com creme */
   --madeira: #775844;           /* madeira do salão */
 
   --lx-serif: "Shippori Mincho", "Cormorant Garamond", Georgia, serif;
-  --lx-sans: "Manrope", "Inter", system-ui, sans-serif;
-  --marca: "Quicksand", "Manrope", system-ui, sans-serif;
+  --lx-sans: "Zen Kaku Gothic New", "Manrope", system-ui, sans-serif;
+  --marca: "Quicksand", "Zen Kaku Gothic New", system-ui, sans-serif;
 }
 
 h1 { font-size: clamp(40px, 6.2vw, 92px); letter-spacing: -0.02em; line-height: 1.08; }
@@ -577,21 +578,42 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--lx-acento); out
 }
 .credito { margin-top: 22px; font-size: 12.5px; color: var(--lx-texto-suave); }
 
-/* ---------- Avaliações ---------- */
-.aval-grid { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: clamp(48px, 7vw, 110px); align-items: start; }
-.nota-grande { font: 400 clamp(96px, 12vw, 160px)/0.9 var(--lx-serif); letter-spacing: -0.03em; margin: 28px 0 14px; }
+/* ---------- Avaliações: faixa de cartões que passa sozinha ---------- */
+.aval-topo { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 28px 56px; margin-bottom: clamp(40px, 5vw, 64px); }
+.aval-nota { display: flex; align-items: center; gap: 22px; }
+.nota-grande { font: 400 clamp(72px, 9vw, 112px)/0.9 var(--lx-serif); letter-spacing: -0.03em; margin: 0; }
 .estrelas { color: var(--lx-acento); letter-spacing: 0.3em; font-size: 15px; }
-.nota-legenda { margin-top: 14px; font: 400 12px/1.6 var(--lx-sans); letter-spacing: 0.16em; text-transform: uppercase; color: var(--lx-texto-suave); }
+.nota-legenda { margin: 10px 0 0; font: 400 12px/1.6 var(--lx-sans); letter-spacing: 0.16em; text-transform: uppercase; color: var(--lx-texto-suave); }
 .link-fino {
-  display: inline-block; margin-top: 30px; padding-bottom: 6px; border-bottom: 1px solid rgb(236 139 102 / 0.6);
+  display: inline-block; padding-bottom: 6px; border-bottom: 1px solid rgb(236 139 102 / 0.6);
   font: 500 11px/1 var(--lx-sans); letter-spacing: 0.22em; text-transform: uppercase; color: var(--lx-acento); text-decoration: none;
 }
 .link-fino:hover { border-color: var(--lx-acento); }
-.citacoes { display: grid; gap: 0; }
-.citacoes figure { margin: 0; padding: 40px 0; border-bottom: 1px solid var(--lx-linha); }
-.citacoes figure:first-child { padding-top: 0; }
-.lx-citacao { font-size: clamp(22px, 2.5vw, 32px); line-height: 1.45; }
-.citacoes figcaption { margin-top: 18px; font: 500 11px/1.5 var(--lx-sans); letter-spacing: 0.22em; text-transform: uppercase; color: var(--lx-texto-suave); }
+.aval-faixa { --marquee-fundo: var(--lx-fundo-2); --marquee-gap: 20px; --marquee-volta: 70s; padding-block: 14px; }
+.aval-faixa .marquee-trilha { align-items: stretch; }
+.aval-faixa .marquee::before, .aval-faixa .marquee::after { width: clamp(24px, 6vw, 90px); }
+.cartao-aval {
+  flex: 0 0 auto; width: clamp(270px, 28vw, 340px); margin: 0; padding: 28px 26px 24px;
+  background: #211B18; border: 1px solid var(--lx-linha); border-radius: 6px;
+  box-shadow: 0 14px 34px -18px rgb(0 0 0 / 0.7);
+  display: flex; flex-direction: column; justify-content: space-between; gap: 22px;
+}
+.cartao-aval .estrelas { font-size: 12px; letter-spacing: 0.22em; }
+.cartao-aval blockquote { margin: 14px 0 0; font: 400 17px/1.6 var(--lx-serif); color: var(--lx-texto); }
+.cartao-aval figcaption { font: 500 10.5px/1.6 var(--lx-sans); letter-spacing: 0.18em; text-transform: uppercase; color: var(--lx-texto-suave); }
+.cartao-aval figcaption b { display: block; font-weight: 500; color: var(--lx-texto); letter-spacing: 0.12em; }
+.aval-pausa {
+  margin-top: 18px; background: none; border: 1px solid var(--lx-linha); color: var(--lx-texto-suave);
+  font: 500 10.5px/1 var(--lx-sans); letter-spacing: 0.2em; text-transform: uppercase; padding: 10px 14px; cursor: pointer;
+}
+.aval-pausa:hover { color: var(--lx-acento); border-color: var(--lx-acento); }
+@media (prefers-reduced-motion: reduce) {
+  .aval-faixa .marquee { overflow-x: auto; scroll-snap-type: x mandatory; }
+  .aval-faixa .marquee::before, .aval-faixa .marquee::after { display: none; }
+  .aval-faixa .marquee-trilha { animation: none; }
+  .cartao-aval { scroll-snap-align: start; }
+  .aval-pausa { display: none; }
+}
 
 /* ---------- Visite (appointment-form-layout2 do Grillino: faixa sobre foto) ---------- */
 .visite { position: relative; isolation: isolate; }
@@ -625,7 +647,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--lx-acento); out
 
 /* ---------- responsivo ---------- */
 @media (max-width: 900px) {
-  .casa-grid, .cardapio-grid, .aval-grid, .visite-grid { grid-template-columns: 1fr; }
+  .casa-grid, .cardapio-grid, .visite-grid { grid-template-columns: 1fr; }
   .menu-capa { max-width: 340px; margin-top: 8px; }
 }
 @media (max-width: 700px) {
@@ -647,7 +669,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--lx-acento); out
   .galeria figure, .galeria figure.meia { grid-column: span 1; aspect-ratio: 4 / 5; }
   .galeria figure.larga { grid-column: span 2; aspect-ratio: 4 / 3; }
   .galeria figcaption { padding: 30px 12px 12px; font-size: 9.5px; letter-spacing: 0.2em; }
-  .nota-grande { font-size: 104px; }
+  .aval-nota { gap: 16px; }
   .horarios { grid-template-columns: 1fr; gap: 2px; }
   .horarios dd { margin-bottom: 10px; }
   .mapa iframe { aspect-ratio: 1; }
@@ -655,6 +677,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--lx-acento); out
 @media (max-width: 380px) {
   .marca-sub { display: none; }
 }
+
+.aval-faixa .marquee:active .marquee-trilha { animation-play-state: paused; }
 
 </style>
   <script type="application/ld+json">
@@ -812,24 +836,31 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--lx-acento); out
 
     <!-- AVALIAÇÕES: citações reais do Google, sem nome inventado -->
     <section id="avaliacoes" class="lx-secao lx-secao--alt">
-      <div class="lx-container aval-grid">
+      <div class="lx-container aval-topo">
         <div>
           <span class="lx-rotulo">Avaliações no Google</span>
-          <p class="nota-grande" data-anim="rise3d">4,7</p>
-          <div class="estrelas" aria-label="Nota 4,7 de 5">★★★★★</div>
-          <p class="nota-legenda">114 avaliações no Google Maps</p>
-          <a class="link-fino" href="https://www.google.com/maps/search/?api=1&amp;query=Kyoto%20Sushi%20Lounge%20Natal" target="_blank" rel="noopener">Ler no Google Maps</a>
+          <div class="aval-nota" style="margin-top:26px">
+            <p class="nota-grande" data-anim="rise3d">4,7</p>
+            <div>
+              <div class="estrelas" aria-label="Nota 4,7 de 5">★★★★★</div>
+              <p class="nota-legenda">114 avaliações no Google Maps</p>
+            </div>
+          </div>
         </div>
-        <div class="citacoes" data-stagger>
-          <figure>
-            <blockquote class="lx-citacao">“Se você procura um lugar onde pra comer o verdadeiro ramen japonês em Natal, esse restaurante é pra vc!”</blockquote>
-            <figcaption>Avaliação no Google · há cerca de 4 meses</figcaption>
-          </figure>
-          <figure>
-            <blockquote class="lx-citacao">“Dos melhores de Natal… ingredientes de qualidade e atenção a cada detalhe.”</blockquote>
-            <figcaption>Avaliação no Google</figcaption>
-          </figure>
+        <a class="link-fino" href="https://www.google.com/maps/search/?api=1&amp;query=Kyoto%20Sushi%20Lounge%20Natal" target="_blank" rel="noopener">Ler todas no Google Maps</a>
+      </div>
+      <div class="aval-faixa" role="region" aria-label="Avaliações de clientes no Google">
+        <div class="marquee">
+          <div class="marquee-trilha">
+            <figure class="cartao-aval"><div><div class="estrelas" aria-label="5 estrelas">★★★★★</div><blockquote>“Se você procura um lugar onde pra comer o verdadeiro ramen japonês em Natal, esse restaurante é pra vc!”</blockquote></div><figcaption><b>Iwawa</b>Avaliação no Google · há 5 meses</figcaption></figure>
+            <figure class="cartao-aval"><div><div class="estrelas" aria-label="5 estrelas">★★★★★</div><blockquote>“Com certeza dos melhores de Natal, ótima localização, ótimas opções no menu executadas por profissionais que entendem do assunto.”</blockquote></div><figcaption><b>Reuel</b>Avaliação no Google · há 4 meses</figcaption></figure>
+            <figure class="cartao-aval"><div><div class="estrelas" aria-label="5 estrelas">★★★★★</div><blockquote>“Minha experiência no Kyoto foi tão especial que voltei duas vezes na mesma semana.”</blockquote></div><figcaption><b>Dan</b>Avaliação no Google · há 4 meses</figcaption></figure>
+            <figure class="cartao-aval"><div><div class="estrelas" aria-label="5 estrelas">★★★★★</div><blockquote>“Equipe educada e atenciosa […] ingredientes de qualidade e atenção a cada detalhe.”</blockquote></div><figcaption><b>Reuel</b>Avaliação no Google · há 4 meses</figcaption></figure>
+            <figure class="cartao-aval"><div><div class="estrelas" aria-label="5 estrelas">★★★★★</div><blockquote>“O prato chegou quentinho e delicioso, fora q o macarrão é de fabricação própria deles.”</blockquote></div><figcaption><b>Iwawa</b>Avaliação no Google · há 5 meses</figcaption></figure>
+            <figure class="cartao-aval"><div><div class="estrelas" aria-label="5 estrelas">★★★★★</div><blockquote>“Destaque para o Ramen feito artesanalmente.”</blockquote></div><figcaption><b>Reuel</b>Avaliação no Google · há 4 meses</figcaption></figure>
+          </div>
         </div>
+        <div class="lx-container"><button type="button" class="aval-pausa marquee-pausa" aria-pressed="false" aria-label="Pausar animação">Pausar</button></div>
       </div>
     </section>
 
@@ -871,7 +902,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--lx-acento); out
         </a>
         <p>Av. Alm. Alexandrino de Alencar, 1624 · Tirol, Natal/RN<br><a href="tel:+558421369521">+55 84 2136-9521</a> · terça a domingo</p>
       </div>
-      <p class="rodape-demo">Demonstração de site feita para o Kyoto Sushi Lounge, ainda não publicada. Fotos da galeria pública do Google Maps; textos e cardápio a confirmar com a casa.</p>
+      <p class="rodape-demo">Demonstração de site feita para o Kyoto Sushi Lounge, ainda não publicada. Fotos da galeria pública do Google Maps. Textos e cardápio a confirmar com a casa.</p>
     </div>
   </footer>
 
@@ -884,8 +915,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--lx-acento); out
 
   <script>
 /* =====================================================================
-   Animações e efeitos 3D — parte em JavaScript (sem dependências)
-   Par do animacoes.css. Especificação: FRONT-END_CREATOR.md (itens 1–24).
+   Animações e efeitos 3D: parte em JavaScript (sem dependências)
+   Par do animacoes.css. Especificação: FRONT-END_CREATOR.md (itens 1-24).
    Exige no <head>, ANTES de tudo, o script inline do README (liga html.motion).
    ===================================================================== */
 (function () {
@@ -937,7 +968,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--lx-acento); out
     todos(alvosEntrada).forEach(function (el) { el.classList.add("is-in"); });
   }
 
-  /* ---------- 14 — replay da entrada do hero ao voltar ao topo ---------- */
+  /* ---------- 14: replay da entrada do hero ao voltar ao topo ---------- */
   if (temIO && !reduzido) {
     todos(".hero-entrada").forEach(function (hero) {
       Array.prototype.forEach.call(hero.children, function (f, i) {
@@ -955,7 +986,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--lx-acento); out
     });
   }
 
-  /* ---------- 12 — tilt 3D seguindo o mouse ---------- */
+  /* ---------- 12: tilt 3D seguindo o mouse ---------- */
   if (!reduzido && matchMedia("(hover: hover) and (pointer: fine)").matches) {
     todos("[data-tilt]").forEach(function (el) {
       var max = parseFloat(el.getAttribute("data-tilt")) || 7;
@@ -987,7 +1018,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--lx-acento); out
     });
   }
 
-  /* ---------- 5 — flip de card (botão, Enter e Espaço) ---------- */
+  /* ---------- 5: flip de card (botão, Enter e Espaço) ---------- */
   todos(".flip-card").forEach(function (card) {
     var frente = card.querySelector(".flip-frente"), verso = card.querySelector(".flip-verso");
     var botoes = todos(".flip-botao", card);
@@ -1004,7 +1035,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--lx-acento); out
     definir(false);
   });
 
-  /* ---------- 20 — carrossel infinito (marquee) ---------- */
+  /* ---------- 20: carrossel infinito (marquee) ---------- */
   todos(".marquee").forEach(function (m) {
     var trilha = m.querySelector(".marquee-trilha");
     if (!trilha || reduzido) return;
@@ -1026,7 +1057,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--lx-acento); out
     }).observe(m);
   });
 
-  /* ---------- 15 — vitrine com troca automática ---------- */
+  /* ---------- 15: vitrine com troca automática ---------- */
   todos(".vitrine-auto").forEach(function (v) {
     var itens = todos(".vitrine-item", v);
     if (!itens.length) return;
@@ -1066,7 +1097,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--lx-acento); out
     }, { threshold: [0, 0.08] }).observe(v);
   });
 
-  /* ---------- 24 — header que ganha fundo ao rolar (sentinela) ---------- */
+  /* ---------- 24: header que ganha fundo ao rolar (sentinela) ---------- */
   var header = document.querySelector(".header-luxo");
   if (header && temIO) {
     var sentinela = document.createElement("div");
@@ -1076,7 +1107,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--lx-acento); out
     new IntersectionObserver(function (es) { header.classList.toggle("rolou", !es[0].isIntersecting); }).observe(sentinela);
   }
 
-  /* ---------- 24 — WhatsApp flutuante: aparece depois do hero, some no contato ---------- */
+  /* ---------- 24: WhatsApp flutuante: aparece depois do hero, some no contato ---------- */
   todos(".wa-flutuante").forEach(function (wa) {
     var depois = document.querySelector(wa.getAttribute("data-depois") || ".hero");
     var some = document.querySelector(wa.getAttribute("data-some-em") || "#contato");
@@ -1087,7 +1118,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--lx-acento); out
     if (some) new IntersectionObserver(function (es) { contatoVisivel = es[0].isIntersecting; atualizar(); }).observe(some);
   });
 
-  /* ---------- 23 — vídeo de fundo do hero: toca uma vez, recomeça ao voltar ---------- */
+  /* ---------- 23: vídeo de fundo do hero: toca uma vez, recomeça ao voltar ---------- */
   todos("video[data-hero-video]").forEach(function (v) {
     var economia = navigator.connection && navigator.connection.saveData;
     if (reduzido || economia) return; // fica só o pôster (último quadro), sem baixar o vídeo
@@ -1101,7 +1132,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--lx-acento); out
     }, { threshold: 0.25 }).observe(v);
   });
 
-  /* ---------- 24 — bolha "digitando" seguida da mensagem ---------- */
+  /* ---------- 24: bolha "digitando" seguida da mensagem ---------- */
   todos("[data-digitando]").forEach(function (b) {
     var msg = b.nextElementSibling;
     if (!msg || reduzido) return;

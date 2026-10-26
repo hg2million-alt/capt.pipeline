@@ -1,4 +1,4 @@
-# Abordagem — Depilla
+# Abordagem, Depilla
 
 **Destino:** +55 84 98786-5505 (WhatsApp da ficha do Maps)
 **Arquivo a enviar:** `entregas/2026-10-25-restaurante-estetica-odontologia/Depilla.html`

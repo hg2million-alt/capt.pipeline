@@ -1,7 +1,7 @@
-# Abordagem — Restaurante Buongustaio
+# Abordagem: Restaurante Buongustaio
 
 **Status:** pronta, não enviada. Quem envia: o usuário, em primeira pessoa (morador de Natal que faz sites). Nome dele: "[seu nome]".
-**Destino:** +55 84 3202-1143 (fixo, único número público). Fixo pode não ter WhatsApp: se a mensagem não entregar (um tique só, sem foto de perfil), ligar no horário entre almoço e jantar (15h–18h, seg a qui) e pedir o número do responsável.
+**Destino:** +55 84 3202-1143 (fixo, único número público). Fixo pode não ter WhatsApp: se a mensagem não entregar (um tique só, sem foto de perfil), ligar no horário entre almoço e jantar (15h às 18h, seg a qui) e pedir o número do responsável.
 **Gancho (dossiê, seção 4):** a ficha do Maps tem 4,6 com 639 avaliações e não tem site, Instagram nem link nenhum, só o telefone fixo.
 **Arquivo a enviar:** `entregas/2026-10-25-restaurante-estetica-odontologia/Buongustaio.html`
 **Não dizer:** nada sobre reviews negativas, "reputação impecável", preço, valor do site.

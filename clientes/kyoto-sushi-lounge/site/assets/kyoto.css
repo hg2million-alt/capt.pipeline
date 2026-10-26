@@ -1,5 +1,5 @@
 /* =====================================================================
-   Kyoto Sushi Lounge — camada da marca sobre luxury.css
+   Kyoto Sushi Lounge: camada da marca sobre luxury.css
    Estrutura de seções herdada do template restaurante-grillino
    (hero → sobre com 2 fotos + contadores → cardápio com miniatura e
    etiqueta de preço → galeria → faixa de reserva sobre foto).
@@ -11,15 +11,15 @@
   --lx-fundo-2: #1C1715;        /* derivado, seções alternadas */
   --lx-texto: #F3ECE4;
   --lx-texto-suave: #B8ADA2;
-  --lx-acento: #EC8B66;         /* coral da logo — aproximado, a confirmar */
+  --lx-acento: #EC8B66;         /* coral da logo: aproximado, a confirmar */
   --lx-linha: rgb(243 236 228 / 0.12);
   --petroleo: #367890;          /* capa do cardápio */
   --petroleo-fundo: #1A4351;    /* petróleo escurecido p/ contraste com creme */
   --madeira: #775844;           /* madeira do salão */
 
   --lx-serif: "Shippori Mincho", "Cormorant Garamond", Georgia, serif;
-  --lx-sans: "Manrope", "Inter", system-ui, sans-serif;
-  --marca: "Quicksand", "Manrope", system-ui, sans-serif;
+  --lx-sans: "Zen Kaku Gothic New", "Manrope", system-ui, sans-serif;
+  --marca: "Quicksand", "Zen Kaku Gothic New", system-ui, sans-serif;
 }
 
 h1 { font-size: clamp(40px, 6.2vw, 92px); letter-spacing: -0.02em; line-height: 1.08; }
@@ -152,21 +152,42 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--lx-acento); out
 }
 .credito { margin-top: 22px; font-size: 12.5px; color: var(--lx-texto-suave); }
 
-/* ---------- Avaliações ---------- */
-.aval-grid { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: clamp(48px, 7vw, 110px); align-items: start; }
-.nota-grande { font: 400 clamp(96px, 12vw, 160px)/0.9 var(--lx-serif); letter-spacing: -0.03em; margin: 28px 0 14px; }
+/* ---------- Avaliações: faixa de cartões que passa sozinha ---------- */
+.aval-topo { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 28px 56px; margin-bottom: clamp(40px, 5vw, 64px); }
+.aval-nota { display: flex; align-items: center; gap: 22px; }
+.nota-grande { font: 400 clamp(72px, 9vw, 112px)/0.9 var(--lx-serif); letter-spacing: -0.03em; margin: 0; }
 .estrelas { color: var(--lx-acento); letter-spacing: 0.3em; font-size: 15px; }
-.nota-legenda { margin-top: 14px; font: 400 12px/1.6 var(--lx-sans); letter-spacing: 0.16em; text-transform: uppercase; color: var(--lx-texto-suave); }
+.nota-legenda { margin: 10px 0 0; font: 400 12px/1.6 var(--lx-sans); letter-spacing: 0.16em; text-transform: uppercase; color: var(--lx-texto-suave); }
 .link-fino {
-  display: inline-block; margin-top: 30px; padding-bottom: 6px; border-bottom: 1px solid rgb(236 139 102 / 0.6);
+  display: inline-block; padding-bottom: 6px; border-bottom: 1px solid rgb(236 139 102 / 0.6);
   font: 500 11px/1 var(--lx-sans); letter-spacing: 0.22em; text-transform: uppercase; color: var(--lx-acento); text-decoration: none;
 }
 .link-fino:hover { border-color: var(--lx-acento); }
-.citacoes { display: grid; gap: 0; }
-.citacoes figure { margin: 0; padding: 40px 0; border-bottom: 1px solid var(--lx-linha); }
-.citacoes figure:first-child { padding-top: 0; }
-.lx-citacao { font-size: clamp(22px, 2.5vw, 32px); line-height: 1.45; }
-.citacoes figcaption { margin-top: 18px; font: 500 11px/1.5 var(--lx-sans); letter-spacing: 0.22em; text-transform: uppercase; color: var(--lx-texto-suave); }
+.aval-faixa { --marquee-fundo: var(--lx-fundo-2); --marquee-gap: 20px; --marquee-volta: 70s; padding-block: 14px; }
+.aval-faixa .marquee-trilha { align-items: stretch; }
+.aval-faixa .marquee::before, .aval-faixa .marquee::after { width: clamp(24px, 6vw, 90px); }
+.cartao-aval {
+  flex: 0 0 auto; width: clamp(270px, 28vw, 340px); margin: 0; padding: 28px 26px 24px;
+  background: #211B18; border: 1px solid var(--lx-linha); border-radius: 6px;
+  box-shadow: 0 14px 34px -18px rgb(0 0 0 / 0.7);
+  display: flex; flex-direction: column; justify-content: space-between; gap: 22px;
+}
+.cartao-aval .estrelas { font-size: 12px; letter-spacing: 0.22em; }
+.cartao-aval blockquote { margin: 14px 0 0; font: 400 17px/1.6 var(--lx-serif); color: var(--lx-texto); }
+.cartao-aval figcaption { font: 500 10.5px/1.6 var(--lx-sans); letter-spacing: 0.18em; text-transform: uppercase; color: var(--lx-texto-suave); }
+.cartao-aval figcaption b { display: block; font-weight: 500; color: var(--lx-texto); letter-spacing: 0.12em; }
+.aval-pausa {
+  margin-top: 18px; background: none; border: 1px solid var(--lx-linha); color: var(--lx-texto-suave);
+  font: 500 10.5px/1 var(--lx-sans); letter-spacing: 0.2em; text-transform: uppercase; padding: 10px 14px; cursor: pointer;
+}
+.aval-pausa:hover { color: var(--lx-acento); border-color: var(--lx-acento); }
+@media (prefers-reduced-motion: reduce) {
+  .aval-faixa .marquee { overflow-x: auto; scroll-snap-type: x mandatory; }
+  .aval-faixa .marquee::before, .aval-faixa .marquee::after { display: none; }
+  .aval-faixa .marquee-trilha { animation: none; }
+  .cartao-aval { scroll-snap-align: start; }
+  .aval-pausa { display: none; }
+}
 
 /* ---------- Visite (appointment-form-layout2 do Grillino: faixa sobre foto) ---------- */
 .visite { position: relative; isolation: isolate; }
@@ -200,7 +221,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--lx-acento); out
 
 /* ---------- responsivo ---------- */
 @media (max-width: 900px) {
-  .casa-grid, .cardapio-grid, .aval-grid, .visite-grid { grid-template-columns: 1fr; }
+  .casa-grid, .cardapio-grid, .visite-grid { grid-template-columns: 1fr; }
   .menu-capa { max-width: 340px; margin-top: 8px; }
 }
 @media (max-width: 700px) {
@@ -222,7 +243,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--lx-acento); out
   .galeria figure, .galeria figure.meia { grid-column: span 1; aspect-ratio: 4 / 5; }
   .galeria figure.larga { grid-column: span 2; aspect-ratio: 4 / 3; }
   .galeria figcaption { padding: 30px 12px 12px; font-size: 9.5px; letter-spacing: 0.2em; }
-  .nota-grande { font-size: 104px; }
+  .aval-nota { gap: 16px; }
   .horarios { grid-template-columns: 1fr; gap: 2px; }
   .horarios dd { margin-bottom: 10px; }
   .mapa iframe { aspect-ratio: 1; }
@@ -230,3 +251,5 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--lx-acento); out
 @media (max-width: 380px) {
   .marca-sub { display: none; }
 }
+
+.aval-faixa .marquee:active .marquee-trilha { animation-play-state: paused; }

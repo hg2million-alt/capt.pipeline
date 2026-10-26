@@ -40,8 +40,8 @@
 
 **Tipografia:** logo em sem serifa fina e arredondada (letreiro). No demo:
 - Nome "Depilla" no cabeçalho: **Quicksand 300** (aproximação do letreiro).
-- Títulos: **Cormorant Garamond** 400/500 (padrão Luxury, não é da marca).
-- Texto: **Manrope** 300/400/500.
+- Títulos: **Josefin Sans** 300 (escolha da revisão de 26/10, não é da marca).
+- Texto: **Mulish** 300 a 600.
 
 **Logo:** `assets/logo-foto-maps.jpg` (recorte pequeno, mostra mais a calçada que a logo, não serve). A logo aparece legível em `assets/maps/02.jpg` (letreiro e porta). No demo, o símbolo (quatro laços em volta de um centro) foi **redesenhado em SVG** como aproximação, usado pequeno no cabeçalho e no rodapé. Pedir o arquivo original.
 **Cor proibida / o que nunca fazer:** não usar o verde-lima saturado em área grande (fica com cara de placa); não ampliar o recorte da logo; não inventar procedimento médico, preço, número de sessões, resultado, antes/depois ou nome de médico.
@@ -71,3 +71,10 @@ Sem fonte direta (sem site, sem Instagram confirmado). Única frase de cliente: 
 ## Fase
 
 demo entregue (.html) / abordagem pronta, não enviada
+
+## Revisão 26/10 (pedido do usuário)
+
+- Avaliações: faixa de cartões que passa sozinha (CSS puro, pausa no hover/toque, sem animação com movimento reduzido). Só existem **2 avaliações positivas** reais nos dados (`scratchpad/maps/det1.json`): Rosinete (5 estrelas, "um ano atrás") e Leila (5 estrelas, "8 anos atrás", cortada para tirar a comparação de preço). A de 1 estrela (3 anos atrás) é sobre o manobrista do cartório vizinho e não entra. Mais um cartão com a nota 4,7 e 253 avaliações. Sem 2ª fileira (poucas avaliações).
+- Logo: não achei versão melhor. Procurado: fachada e porta no Maps (única fonte legível), busca web (nada), site antigo depilla.com.br (fora do ar, Wayback bloqueado por limite). Mantido o símbolo recriado em SVG + "Depilla" em Quicksand 300.
+- Instagram candidato: **@depillarn** (anunciado na fachada, foto do Maps). Não aberto. Verificar.
+- Sem travessões em nenhum texto (grep zerado no site e no .html).

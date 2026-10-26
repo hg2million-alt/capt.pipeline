@@ -1,5 +1,5 @@
 /* =====================================================================
-   Depilla — camada da marca sobre o luxury.css (versão clara)
+   Depilla, camada da marca sobre o luxury.css (versão clara)
    Cores medidas nas fotos do Maps (ver identidade.md):
    parede #5B7454 · flor da logo #8EA97A · "Depilla" cinza #8D9C9C
    Estrutura de seções vinda do template estetica-haircare
@@ -7,6 +7,8 @@
    ===================================================================== */
 
 :root {
+  --lx-serif: "Josefin Sans", "Century Gothic", system-ui, sans-serif;
+  --lx-sans: "Mulish", system-ui, sans-serif;
   --lx-fundo: #f5f6f1;
   --lx-fundo-2: #e9ece3;
   --lx-texto: #212820;
@@ -20,7 +22,7 @@
   --dp-folha: #a9c293;
   --dp-cartao: #fbfbf8;
 
-  --dp-marca: "Quicksand", "Manrope", system-ui, sans-serif;
+  --dp-marca: "Quicksand", "Mulish", system-ui, sans-serif;
 }
 
 body { font-weight: 300; }
@@ -83,7 +85,7 @@ h2 em, h3 em { font-style: italic; color: var(--lx-acento); }
 .dp-fatos ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); }
 .dp-fatos li { padding: clamp(28px, 4vw, 48px) clamp(14px, 2vw, 28px); border-left: 1px solid var(--lx-linha); }
 .dp-fatos li:first-child { border-left: 0; padding-left: 0; }
-.dp-fatos strong { display: block; font: 400 clamp(34px, 3.6vw, 52px)/1 var(--lx-serif); color: var(--lx-acento); margin-bottom: 12px; }
+.dp-fatos strong { display: block; font: 300 clamp(30px, 3.2vw, 46px)/1 var(--lx-serif); color: var(--lx-acento); margin-bottom: 12px; }
 .dp-fatos span { display: block; font-size: 13px; line-height: 1.5; color: var(--lx-texto-suave); }
 @media (max-width: 820px) {
   .dp-fatos ul { grid-template-columns: 1fr 1fr; }
@@ -118,13 +120,36 @@ h2 em, h3 em { font-style: italic; color: var(--lx-acento); }
 @media (hover: hover) and (pointer: fine) { .hover-elevado:hover { box-shadow: var(--sombra); border-color: rgb(91 116 84 / 0.45); } }
 .dp-nota { margin-top: 36px; font-size: 13px; color: var(--lx-texto-suave); }
 
-/* ---------- avaliação ---------- */
-.dp-avaliacao { text-align: center; max-width: 900px; }
-.dp-avaliacao .lx-citacao { margin-top: 36px; }
-.dp-estrelas { display: inline-flex; gap: 6px; margin-top: 44px; color: var(--lx-acento); }
-.dp-nota-google { margin: 14px 0 34px; font-size: 14px; color: var(--lx-texto-suave); }
+/* ---------- avaliações: faixa contínua ---------- */
+h1, h2, h3 { font-weight: 300; letter-spacing: -0.005em; line-height: 1.12; }
+.hero h1 { font-size: clamp(38px, 6vw, 84px); }
+h2 { font-size: clamp(30px, 3.8vw, 52px); }
+.lx-citacao, .av-card blockquote { font-style: normal; }
+.av-secao { overflow: hidden; }
+.av-cab { text-align: center; margin-bottom: clamp(40px, 5vw, 64px); }
+.av-cab h2 { margin: 22px auto 20px; max-width: 18ch; }
+.av-cab p { margin: 0 auto; }
+.av-faixa { overflow: hidden; padding: 10px 0 30px; }
+.av-trilha { list-style: none; margin: 0; padding: 0; display: flex; gap: 20px; width: max-content; animation: avPassa 60s linear infinite; }
+.av-faixa:hover .av-trilha, .av-faixa:focus-within .av-trilha, .av-faixa:active .av-trilha { animation-play-state: paused; }
+@keyframes avPassa { to { transform: translateX(-25%); } }
+.av-card { flex: none; width: min(78vw, 340px); min-height: 230px; display: flex; flex-direction: column; gap: 16px; padding: 28px; background: var(--dp-cartao); border: 1px solid var(--lx-linha); border-radius: 6px; box-shadow: 0 18px 36px -26px rgb(31 42 31 / 0.35); }
+.av-card blockquote { margin: 0; font: 300 16px/1.65 var(--lx-sans); color: var(--lx-texto); }
+.av-card cite { margin-top: auto; font: 500 10px/1.4 var(--lx-sans); letter-spacing: 0.2em; text-transform: uppercase; font-style: normal; color: var(--lx-texto-suave); }
+.av-estrelas { color: var(--lx-acento); letter-spacing: 3px; font-size: 14px; }
+.av-resumo { justify-content: center; align-items: flex-start; background: var(--dp-escuro); border-color: var(--dp-escuro); color: var(--dp-escuro-texto); }
+.av-nota { font: 300 64px/1 var(--lx-serif); }
+.av-resumo .av-estrelas { color: var(--dp-folha); }
+.av-fonte { font-size: 14px; line-height: 1.5; color: var(--dp-escuro-suave); }
+.av-rodape { text-align: center; }
 .btn-luxo--escuro { background: transparent; color: var(--lx-texto); border-color: var(--lx-linha); }
 .btn-luxo--escuro:hover { border-color: var(--lx-acento); color: var(--lx-acento); background: transparent; }
+@media (prefers-reduced-motion: reduce) {
+  .av-faixa { overflow-x: auto; scroll-snap-type: x mandatory; }
+  .av-trilha { animation: none; padding: 0 var(--lx-gutter); }
+  .av-card { scroll-snap-align: center; }
+  .av-card[aria-hidden="true"] { display: none; }
+}
 
 /* ---------- agendar (seção escura) ---------- */
 .dp-escuro { background: var(--dp-escuro); color: var(--dp-escuro-texto); --lx-linha: rgb(255 255 255 / 0.14); }
@@ -144,7 +169,7 @@ h2 em, h3 em { font-style: italic; color: var(--lx-acento); }
   width: 100%; min-height: 50px; padding: 13px 14px; border: 1px solid rgb(255 255 255 / 0.22); border-radius: 0;
   background: rgb(255 255 255 / 0.04); color: var(--dp-escuro-texto); font: 300 16px/1.4 var(--lx-sans);
 }
-.dp-campo select { appearance: none; background-image: linear-gradient(45deg, transparent 50%, var(--dp-folha) 50%), linear-gradient(135deg, var(--dp-folha) 50%, transparent 50%); background-position: calc(100% - 20px) 22px, calc(100% - 15px) 22px; background-size: 5px 5px; background-repeat: no-repeat; padding-right: 40px; }
+.dp-campo select { appearance: none; background-image: linear-gradient(45deg, transparent 50%, var(--dp-folha) 50%), linear-gradient(135deg, var(--dp-folha) 50%, transparent 50%); background-position: right 20px top 22px, right 15px top 22px; background-size: 5px 5px; background-repeat: no-repeat; padding-right: 40px; }
 .dp-campo select option { color: #212820; }
 .dp-campo textarea { min-height: 92px; resize: vertical; }
 .dp-campo input:focus, .dp-campo select:focus, .dp-campo textarea:focus { outline: 1px solid var(--dp-folha); border-color: var(--dp-folha); }

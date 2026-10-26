@@ -21,7 +21,7 @@
 
 ## Marca
 
-**Logo:** **não existe em fonte nenhuma.** Sem Instagram, sem site, sem foto de placa
+**Logo:** **não encontrada em fonte nenhuma** (revisão de 26/10: buscas web por "Clínica Alian" + Natal/Lagoa Nova, nome da Dra. Gabriela Gondim + Doctoralia/Facebook/Instagram, e variações de grafia; nada). Pista não confirmada: uma busca listou "Clínica Smile Way Odontologia" no mesmo endereço (Av. Sen. Salgado Filho, 1718), possível outro nome/rebranding da mesma clínica; **não usado**, a verificar. Sem Instagram, sem site, sem foto de placa
 ou recepção com o nome "Alian" na ficha do Maps (dossiê + conferência das 6 fotos).
 
 **Cores — PROVISÓRIAS (declarado):** como não há logo, a paleta foi escolhida pra
@@ -38,8 +38,8 @@ clínica mandar a marca.
 | Acento | `#4D6878` | azul-acinzentado: rótulos, linhas, botão principal (contraste 5,3:1 no fundo) |
 | Apoio | `#A9B8AD` | sálvia, só em detalhe sobre fundo escuro |
 
-**Tipografia — provisória:** Cormorant Garamond (títulos e o nome "Clínica Alian"
-como wordmark, já que não há logo) + Manrope (texto). Padrão Luxury da oficina, sem
+**Tipografia — provisória:** Newsreader (títulos e o nome "Clínica Alian" como wordmark,
+já que não há logo) + Public Sans (texto), definidas pelo usuário na revisão. Sem
 referência da marca.
 
 **Cor proibida / o que nunca fazer:**
@@ -113,3 +113,8 @@ Nada enviado pela clínica — tudo é da ficha pública do Maps (`assets/maps/`
 ## Fase
 
 demo entregue (.html) / abordagem pronta, não enviada
+
+## Revisão 26/10
+
+- Avaliações viraram faixa em movimento (2 fileiras, direções opostas). Só 3 avaliações positivas existem na coleta (det1.json), então elas se repetem no loop.
+- Sem travessões em nenhum texto; fontes Newsreader + Public Sans.

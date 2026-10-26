@@ -1,4 +1,4 @@
-# Abordagem — Clínica Cortez
+# Abordagem : Clínica Cortez
 
 **Destino:** +55 84 99856-5210 (WhatsApp da ficha do Maps)
 **Quem envia:** [seu nome], morador de Natal que faz sites. Primeira pessoa.

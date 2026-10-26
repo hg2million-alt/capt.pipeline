@@ -1,4 +1,4 @@
-# Abordagem — Clínica Alian
+# Abordagem: Clínica Alian
 
 **Destino:** +55 84 98814-1411 (Maps; celular, mas não confirmado como WhatsApp)
 **Remetente:** o usuário, em primeira pessoa, morador de Natal que faz sites. Nome: [seu nome].

@@ -1,10 +1,12 @@
 /* =====================================================================
-   Clínica Alian — ajustes sobre luxury.css (versão clara)
+   Clínica Alian : ajustes sobre luxury.css (versão clara)
    PALETA PROVISÓRIA: a clínica não tem logo publicada (ver identidade.md).
    Off-white quente + tinta azul-ardósia + acento azul-acinzentado, com
    sálvia só em detalhe sobre fundo escuro.
    ===================================================================== */
 :root {
+  --lx-serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --lx-sans: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
   --lx-fundo: #F4F2ED;
   --lx-fundo-2: #EAE8E1;
   --lx-texto: #1D2A30;
@@ -109,13 +111,30 @@ a { text-decoration: none; }
 .al-nota { text-align: center; margin-bottom: clamp(48px, 7vw, 80px); }
 .al-nota .lx-rotulo::after { content: ""; width: 36px; height: 1px; background: currentColor; }
 .al-nota-num { margin: 18px 0 8px; display: flex; flex-direction: column; align-items: center; gap: 6px; }
-.al-nota-num > span:first-child { font: 400 clamp(84px, 14vw, 150px)/0.9 var(--lx-serif); color: var(--lx-texto); }
+.al-nota-num > span:first-child { font: 300 clamp(84px, 14vw, 150px)/0.9 var(--lx-serif); color: var(--lx-texto); }
 .al-estrelas { font-size: 15px; letter-spacing: 0.4em; color: var(--lx-acento); margin-right: -0.4em; }
 .al-nota-sub { margin: 0 auto; font-size: 14px; }
-.al-review { margin: 0; padding: clamp(28px, 3vw, 40px); border-top: 1px solid var(--lx-acento); background: rgb(255 255 255 / 0.42); display: flex; flex-direction: column; }
-.al-review blockquote { margin: 0 0 22px; font: italic 400 clamp(21px, 1.9vw, 25px)/1.4 var(--lx-serif); color: var(--lx-texto); }
-.al-review figcaption { margin-top: auto; font: 500 10.5px/1.5 var(--lx-sans); letter-spacing: 0.2em; text-transform: uppercase; color: var(--lx-texto-suave); }
-.al-review figcaption strong { display: block; margin-bottom: 4px; font: 400 19px/1.2 var(--lx-serif); letter-spacing: 0.02em; text-transform: none; color: var(--lx-texto); }
+/* faixa de avaliações: marquee em CSS puro, da direita para a esquerda */
+.al-faixa { display: grid; gap: 20px; overflow: hidden; margin-top: 8px; }
+.al-marquee { overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); }
+.al-trilha { display: flex; width: max-content; animation: alPassa 70s linear infinite; }
+.al-marquee--rev .al-trilha { animation-direction: reverse; animation-duration: 80s; }
+.al-set { display: flex; gap: 20px; padding-right: 20px; flex: none; }
+.al-marquee:hover .al-trilha, .al-marquee:active .al-trilha, .al-marquee:focus-within .al-trilha { animation-play-state: paused; }
+@keyframes alPassa { to { transform: translateX(-50%); } }
+.al-review { flex: none; width: clamp(280px, 78vw, 360px); margin: 0; padding: 26px 26px 24px; border: 1px solid var(--lx-linha); border-radius: 6px; background: #FBFAF7; box-shadow: 0 14px 30px -22px rgb(29 42 48 / 0.35); display: flex; flex-direction: column; }
+.al-stars { font-size: 13px; letter-spacing: 0.3em; color: var(--lx-acento); margin-bottom: 14px; }
+.al-review blockquote { margin: 0 0 20px; font: italic 300 19px/1.45 var(--lx-serif); color: var(--lx-texto); }
+.al-review figcaption { margin-top: auto; font: 500 10.5px/1.5 var(--lx-sans); letter-spacing: 0.18em; text-transform: uppercase; color: var(--lx-texto-suave); }
+.al-review figcaption strong { display: block; margin-bottom: 4px; font: 400 18px/1.2 var(--lx-serif); letter-spacing: 0.01em; text-transform: none; color: var(--lx-texto); }
+@media (prefers-reduced-motion: reduce) {
+  .al-faixa { gap: 16px; }
+  .al-marquee { overflow-x: auto; scroll-snap-type: x mandatory; -webkit-mask-image: none; mask-image: none; padding: 0 var(--lx-gutter) 8px; }
+  .al-trilha { animation: none; width: auto; }
+  .al-set[aria-hidden="true"], .al-review[aria-hidden="true"] { display: none; }
+  .al-set { padding-right: 16px; }
+  .al-review { scroll-snap-align: start; }
+}
 
 /* ---------- seção escura (perguntas, rodapé) ---------- */
 .al-escuro { background: var(--al-escuro); color: #F4F2ED; --lx-linha: rgb(255 255 255 / 0.14); }

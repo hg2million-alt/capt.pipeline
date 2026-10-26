@@ -1,11 +1,11 @@
 /* =====================================================================
-   Buongustaio — camada da marca sobre luxury.css + animacoes.css
+   Buongustaio : camada da marca sobre luxury.css + animacoes.css
    Base de seções: template restaurante-thesignature (escuro, acento único,
    textura de pedra), levado ao estilo Luxury.
    Cores (identidade.md): dourado #B7962F e #705C1D + creme #FDF5DB,
    tiradas do letreiro da fachada (foto do Google Maps).
-   Fontes (aproximação do letreiro): Alex Brush (nome), Cormorant Garamond
-   (títulos), Manrope 300 (texto).
+   Fontes (aproximação do letreiro): Alex Brush (nome), Marcellus
+   (títulos), Lato 300 (texto).
    ===================================================================== */
 
 :root {
@@ -17,6 +17,8 @@
   --buon-ouro-escuro: #705C1D;
   --lx-linha: rgb(253 245 219 / 0.13);
   --lx-script: "Alex Brush", "Great Vibes", cursive;
+  --lx-serif: "Marcellus", "Cormorant Garamond", Georgia, serif;
+  --lx-sans: "Lato", system-ui, -apple-system, "Segoe UI", sans-serif;
   --lx-secao: clamp(80px, 11vw, 150px);
   --marquee-fundo: var(--lx-fundo);
 }
@@ -180,17 +182,46 @@
 .reserva-acoes { display: flex; flex-direction: column; align-items: center; gap: 22px; }
 .reserva .a-confirmar { background: rgb(12 11 8 / 0.7); }
 
-/* ---------- avaliação ---------- */
-.avaliacao { max-width: 880px; text-align: center; display: grid; justify-items: center; }
-.avaliacao-corpo { margin-top: 30px; position: relative; }
-.aspas { display: block; font: 400 110px/0.6 var(--lx-serif); color: var(--lx-acento); height: 46px; }
-.avaliacao .lx-citacao { font-size: clamp(23px, 3vw, 36px); }
-.placar {
-  margin-top: 56px; padding-top: 34px; border-top: 1px solid var(--lx-linha);
-  display: flex; align-items: center; gap: 16px; text-align: left;
+/* ---------- avaliações: faixa que passa (marquee, CSS puro) ---------- */
+h1 em, h2 em { font-style: normal; } /* Marcellus não tem itálico: destaque só pela cor */
+h1, h2, h3 { letter-spacing: 0; line-height: 1.12; }
+.avaliacoes { overflow: hidden; --marquee-fundo: var(--lx-fundo); }
+.cabeca-aval { display: grid; gap: 22px; margin-bottom: clamp(36px, 5vw, 60px); }
+.cabeca-aval h2 { margin-top: 22px; }
+.aval-ctrl { display: flex; align-items: center; gap: 18px; }
+.aval-ctrl p { margin: 0; }
+@media (min-width: 900px) { .cabeca-aval { grid-template-columns: 1fr auto; align-items: end; } }
+.marquee { --marquee-gap: 20px; --marquee-volta: 55s; padding: 14px 0 26px; }
+.marquee:active .marquee-trilha { animation-play-state: paused; }
+.marquee::before, .marquee::after { width: clamp(24px, 8vw, 120px); }
+.rev-card {
+  flex: 0 0 auto; width: clamp(250px, 78vw, 340px); min-height: 220px;
+  display: flex; flex-direction: column; justify-content: space-between; gap: 18px;
+  padding: 28px 26px 24px; border: 1px solid var(--lx-linha); border-radius: 6px;
+  background: linear-gradient(160deg, #1d1a13, #14120d);
+  box-shadow: 0 18px 38px -22px rgb(0 0 0 / .75);
 }
-.placar strong { font: 400 54px/1 var(--lx-serif); color: var(--lx-texto); }
-.placar > span { font: 500 11px/1.8 var(--lx-sans); letter-spacing: .2em; text-transform: uppercase; color: var(--lx-texto-suave); }
+.rev-card p { margin: 0; font: 400 clamp(17px, 1.5vw, 19px)/1.5 var(--lx-serif); color: var(--lx-texto); }
+.rev-card footer { font: 400 11px/1.5 var(--lx-sans); letter-spacing: .14em; text-transform: uppercase; color: var(--lx-texto-suave); }
+.rev-card footer b { color: var(--lx-texto); font-weight: 700; }
+.rev-nota { align-items: flex-start; justify-content: center; border-color: rgb(183 150 47 / .6); }
+.rev-nota strong { font: 400 64px/1 var(--lx-serif); color: var(--lx-acento); }
+.rev-nota p { font: 400 11px/1.6 var(--lx-sans); letter-spacing: .18em; text-transform: uppercase; color: var(--lx-texto-suave); }
+.marquee-pausa {
+  flex: 0 0 auto; width: 40px; height: 40px; border: 1px solid var(--lx-linha); border-radius: 50%;
+  background: transparent; color: var(--lx-texto); cursor: pointer; display: grid; place-items: center;
+}
+.marquee-pausa:focus-visible, .marquee:focus-visible { outline: 2px solid var(--lx-acento); outline-offset: 3px; }
+.ic-pausa { width: 10px; height: 12px; border-left: 3px solid currentColor; border-right: 3px solid currentColor; }
+.marquee-pausa[aria-pressed="true"] .ic-pausa { width: 0; height: 0; border: 0; border-left: 10px solid currentColor; border-top: 6px solid transparent; border-bottom: 6px solid transparent; }
+/* movimento reduzido: sem animação, carrossel de rolagem horizontal com snap */
+@media (prefers-reduced-motion: reduce) {
+  .marquee { overflow-x: auto; scroll-snap-type: x mandatory; }
+  .marquee::before, .marquee::after { display: none; }
+  .marquee-trilha { animation: none; padding-inline: var(--lx-gutter); }
+  .rev-card { scroll-snap-align: center; }
+  .marquee-pausa { display: none; }
+}
 
 /* ---------- horários e endereço (hexágono do rodapé do template, em CSS) ---------- */
 .horarios { display: grid; gap: clamp(48px, 7vw, 110px); align-items: center; }
@@ -257,5 +288,5 @@
 }
 .sem-quebra { white-space: nowrap; }
 
-/* números de telefone, horário e nota em algarismos alinhados (a Cormorant usa os de estilo antigo) */
+/* números de telefone, horário e nota em algarismos alinhados (garante algarismos alinhados) */
 .telefone-grande, .telefone-medio, .horas dd, .selo-nota strong, .placar strong, .hero-nota b { font-variant-numeric: lining-nums; }

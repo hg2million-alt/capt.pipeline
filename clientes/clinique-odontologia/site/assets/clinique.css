@@ -1,5 +1,5 @@
 /* =====================================================================
-   Clinique Odontologia Avançada — camada da marca sobre luxury.css
+   Clinique Odontologia Avançada: camada da marca sobre luxury.css
    Cores (identidade.md): azul royal da placa da fachada (aprox.), navy
    derivado, branco/concreto da fachada, verde do jardim vertical (mínimo).
    Estrutura de seções inspirada no template odontologia-dentisto.
@@ -12,8 +12,9 @@
   --lx-texto-suave: #4a5568;
   --lx-acento: #1f5bc8;
   --lx-linha: rgb(14 26 48 / 0.12);
-  --lx-serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
-  --lx-sans: "Montserrat", "Inter", system-ui, sans-serif;
+  --lx-serif: "DM Serif Display", "Playfair Display", Georgia, serif;
+  --lx-sans: "DM Sans", "Inter", system-ui, sans-serif;
+  --lx-logo: "Montserrat", "DM Sans", system-ui, sans-serif;
 
   --cl-noite: #0b1730;
   --cl-noite-2: #12213f;
@@ -23,7 +24,7 @@
 }
 
 body { font-weight: 400; font-size: clamp(15px, 1.02vw, 16.5px); }
-h1, h2, h3 { font-weight: 500; }
+h1, h2, h3 { font-weight: 400; letter-spacing: -0.005em; line-height: 1.1; }
 h2 em, h3 em { font-style: italic; color: var(--lx-acento); }
 p { margin: 0 0 1.1em; }
 section[id], [id="topo"] { scroll-margin-top: 72px; }
@@ -38,10 +39,10 @@ section[id], [id="topo"] { scroll-margin-top: 72px; }
 .header-luxo .lx-container { height: var(--cl-header); gap: 20px; }
 .header-luxo.rolou, .header-luxo.menu-aberto { background-color: rgb(11 23 48 / 0.9); backdrop-filter: blur(10px); border-bottom-color: rgb(255 255 255 / 0.08); }
 .cl-marca { display: inline-flex; align-items: center; gap: 11px; text-decoration: none; color: #fff; flex-shrink: 0; }
-.cl-dente { width: 27px; height: 32px; flex-shrink: 0; }
+.cl-dente { width: 26px; height: 33px; flex-shrink: 0; }
 .cl-marca-txt { display: grid; gap: 5px; }
-.cl-marca-txt strong { font: 600 19px/1 var(--lx-sans); letter-spacing: 0.07em; }
-.cl-marca-txt small { font: 500 7.5px/1 var(--lx-sans); letter-spacing: 0.3em; text-transform: uppercase; opacity: 0.82; }
+.cl-marca-txt strong { font: 600 19px/1 var(--lx-logo); letter-spacing: 0.07em; }
+.cl-marca-txt small { font: 500 7.5px/1 var(--lx-logo); letter-spacing: 0.3em; text-transform: uppercase; opacity: 0.82; }
 .lx-nav { gap: 28px; margin-left: auto; }
 .lx-nav a { font: 500 11px/1 var(--lx-sans); letter-spacing: 0.2em; color: rgb(255 255 255 / 0.84); }
 .lx-nav a:hover { color: var(--cl-azul-claro); }
@@ -107,7 +108,7 @@ section[id], [id="topo"] { scroll-margin-top: 72px; }
   padding: 16px 22px; border: 1px solid rgb(255 255 255 / 0.28);
   background: rgb(11 23 48 / 0.42); backdrop-filter: blur(8px);
 }
-.cl-nota strong { font: 500 46px/1 var(--lx-serif); }
+.cl-nota strong { font: 400 46px/1 var(--lx-serif); }
 .cl-nota span { display: block; font: 500 10.5px/1.5 var(--lx-sans); letter-spacing: 0.16em; text-transform: uppercase; color: rgb(255 255 255 / 0.85); }
 .cl-nota .cl-estrelas { font-size: 13px; letter-spacing: 0.22em; color: #fff; }
 @media (min-width: 900px) {
@@ -268,3 +269,36 @@ section[id], [id="topo"] { scroll-margin-top: 72px; }
 /* animação 3D do formulário não pode gerar rolagem lateral no celular */
 .cl-agendar, .lx-secao { overflow-x: clip; }
 html, body { overflow-x: clip; }
+
+/* ---------- avaliações em faixa que passa ---------- */
+.cl-aval-cab { display: grid; gap: 28px; align-items: end; margin-bottom: clamp(36px, 5vw, 56px); }
+.cl-aval-cab h2 { margin-top: 22px; max-width: 14ch; }
+.cl-aval-nota { margin: 0; display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px 16px; }
+.cl-aval-nota strong { font: 400 clamp(56px, 7vw, 84px)/0.9 var(--lx-serif); color: #fff; }
+.cl-aval-nota span { font-size: 14px; letter-spacing: 0.28em; color: #fff; }
+.cl-aval-nota small { flex-basis: 100%; font: 500 11px/1.5 var(--lx-sans); letter-spacing: 0.18em; text-transform: uppercase; color: rgb(255 255 255 / 0.72); }
+@media (min-width: 800px) { .cl-aval-cab { grid-template-columns: 1fr auto; } .cl-aval-nota { justify-content: flex-end; } .cl-aval-nota small { text-align: right; } }
+.cl-marquee-area { position: relative; }
+.cl-noite .marquee { padding-block: 8px 14px; }
+.cl-noite .marquee-trilha { align-items: stretch; animation-duration: var(--marquee-volta, 60s); }
+.cl-card-aval {
+  flex: 0 0 auto; width: clamp(260px, 78vw, 340px); margin: 0; padding: 26px 26px 22px;
+  display: flex; flex-direction: column; gap: 16px; justify-content: space-between;
+  background: rgb(255 255 255 / 0.06); border: 1px solid rgb(255 255 255 / 0.14); border-radius: 6px;
+  box-shadow: 0 14px 34px -18px rgb(0 0 0 / 0.6);
+}
+.cl-card-est { font-size: 12px; letter-spacing: 0.24em; color: var(--cl-azul-claro); }
+.cl-card-aval blockquote { margin: 0; font: italic 400 20px/1.4 var(--lx-serif); color: rgb(255 255 255 / 0.95); }
+.cl-card-aval figcaption { font: 500 10.5px/1.5 var(--lx-sans); letter-spacing: 0.18em; text-transform: uppercase; color: rgb(255 255 255 / 0.62); }
+.cl-pausa { display: block; margin: 18px auto 0; min-height: 44px; padding: 0 20px; background: transparent; border: 1px solid rgb(255 255 255 / 0.3); color: #fff; font: 500 10.5px/1 var(--lx-sans); letter-spacing: 0.2em; text-transform: uppercase; cursor: pointer; }
+.cl-pausa[aria-pressed="true"]::before { content: "Retomar"; }
+.cl-pausa[aria-pressed="true"] { font-size: 0; }
+.cl-pausa[aria-pressed="true"]::before { font-size: 10.5px; }
+.cl-pausa:focus-visible { outline: 2px solid var(--cl-azul-claro); outline-offset: 3px; }
+.cl-aval-obs { margin: 22px 0 0; font-size: 12.5px; color: rgb(255 255 255 / 0.55); text-align: center; }
+@media (prefers-reduced-motion: reduce) {
+  .cl-noite .marquee { overflow-x: auto; scroll-snap-type: x mandatory; padding-inline: var(--lx-gutter); }
+  .cl-noite .marquee::before, .cl-noite .marquee::after { display: none; }
+  .cl-card-aval { scroll-snap-align: start; }
+  .cl-pausa { display: none; }
+}

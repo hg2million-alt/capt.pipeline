@@ -35,7 +35,7 @@
 
 Quando chegar a logo real, as cores saem dela e esta tabela é refeita.
 
-**Tipografia (aproximação, sem logo):** títulos e nome do bistrô em **Cormorant Garamond** (serifada elegante; o nome vai em itálico, que conversa com a cursiva do jogo americano); texto em **Manrope** leve. Fonte real da marca: *a definir*.
+**Tipografia (aproximação, sem logo):** títulos e nome do bistrô em **Fraunces** leve (serifada elegante; o nome vai em itálico, que conversa com a cursiva do jogo americano); texto em **Nunito Sans**. Trocadas na revisão do usuário (antes Cormorant + Manrope). Fonte real da marca: *a definir*.
 **Cor proibida / o que nunca fazer:** não usar o dourado `#CDAA7C` do template Royate; não ampliar logo de baixa resolução (não há logo); não usar foto com cliente identificável (a `maps/03.jpg`, de aniversário com pessoas posando, fica de fora); não citar Instagram.
 
 ## Tom de voz
@@ -61,6 +61,12 @@ Só o que as fontes mostram:
 - Recortes usados no site: `site/assets/img/` (cortados pra tirar braço/rosto de cliente e marca de garrafa).
 - Reviews citáveis (Google, 3): Grazi Selvati (5★, há 1 ano), Bruna Dandara (4★, há 1 ano), Paulo Mendonça (5★, há 7 meses). No demo só com primeiro nome + "avaliação no Google".
 - Falta: logo, cardápio com preços, foto de fachada/entrada, foto da carta de vinhos, Instagram.
+
+## Revisão do usuário (26/10)
+
+- Avaliações viraram faixa de cartões que passa da direita para a esquerda (pausa no mouse e no toque; com movimento reduzido vira rolagem horizontal). Entram as 3 avaliações positivas coletadas (Grazi 5★, Bruna 4★, Paulo 5★); só existem essas 3 no material (det1.json). Sem negativas.
+- Logo: procurada e **não achada**. Buscas na web (nome + Natal/Valencia Hotel/cardápio/Facebook) só devolveram homônimos de outras cidades (Curitiba, São Paulo, Turim, Alemanha), nenhum confirmado como o bistrô de Natal. Sem Instagram (não aberto). Nome segue em tipografia.
+- Sem travessões nos textos; frases reescritas.
 
 ## Demo
 

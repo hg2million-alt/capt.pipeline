@@ -7,6 +7,7 @@
   <title>Clínica Luanna Souza · Harmonização Facial e Corporal em Neópolis, Natal</title>
   <meta name="description" content="Harmonização facial e corporal, cuidado de pele e depilação a laser com a enfermeira esteta Luanna Souza, na Galeria Jequitinhonha, Neópolis, Natal/RN. Agende uma avaliação gratuita pelo WhatsApp.">
   <meta name="theme-color" content="#1C1915">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:title" content="Clínica Luanna Souza · Neópolis, Natal">
@@ -23,7 +24,7 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Manrope:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Italiana&family=Figtree:wght@300;400;500;600&display=swap">
   <link rel="stylesheet" href="assets/luxury.css">
   <link rel="stylesheet" href="assets/animacoes.css">
   <script type="application/ld+json">
@@ -60,9 +61,9 @@
       --lx-linha: #DDDBD4;          /* dossiê */
       --escuro: #1C1915;
       --dourado-claro: #C4AA7C;     /* bronze clareado pra fundo escuro */
-      --script: "Alex Brush", "Great Vibes", cursive;
-      --lx-serif: "Cormorant Garamond", Georgia, serif;
-      --lx-sans: "Manrope", system-ui, sans-serif;
+      --script: "Pinyon Script", "Great Vibes", cursive;
+      --lx-serif: "Italiana", Georgia, serif;
+      --lx-sans: "Figtree", system-ui, sans-serif;
       --lx-secao: clamp(84px, 11vw, 150px);
       --anim-ease: cubic-bezier(0.22, 1, 0.36, 1);
     }
@@ -79,6 +80,9 @@
     }
     [hidden] { display: none !important; }
     ::selection { background: #816B46; color: #fff; }
+    h1, h2, h3 { letter-spacing: 0; line-height: 1.12; }
+    h1 em, h2 em, .categorias li, .nota-tratamentos em, .lx-citacao { font-style: normal; }
+    h1 em, h2 em { color: var(--lx-acento); }
     .lx-rotulo { color: var(--acento-texto); }
     .lx-secao--alt { background: var(--lx-fundo-2); }
     :focus-visible { outline: 2px solid var(--lx-acento); outline-offset: 3px; }
@@ -92,9 +96,9 @@
     /* ===== Header (topo escuro, como no spamagic) ===== */
     .header-luxo .lx-container { height: 80px; }
     .header-luxo.rolou { background-color: rgb(28 25 21 / 0.86); }
-    .marca { display: inline-flex; flex-direction: column; align-items: flex-start; text-decoration: none; color: #F4EFE7; line-height: 1; }
-    .marca-nome { font: 400 clamp(28px, 3vw, 34px)/0.9 var(--script); letter-spacing: 0.01em; }
-    .marca-sub { font: 500 8.5px/1 var(--lx-sans); letter-spacing: 0.38em; text-transform: uppercase; color: var(--dourado-claro); margin: 6px 0 0 3px; }
+    .marca { display: inline-flex; text-decoration: none; }
+    .marca img { width: clamp(118px, 12vw, 150px); height: auto; }
+    .lx-rodape .marca img { width: 170px; }
     .lx-nav a { color: rgb(255 255 255 / 0.82); }
     .lx-nav a:hover { color: var(--dourado-claro); }
     .menu-botao {
@@ -138,13 +142,13 @@
     .estrelas { color: var(--dourado-claro); letter-spacing: 0.18em; font-size: 12px; }
     @media (max-width: 520px) {
       .hero { padding-top: 120px; }
-      .hero h1 { font-size: clamp(40px, 11.4vw, 52px); }
+      .hero h1 { font-size: clamp(38px, 10.2vw, 48px); }
       .hero-acoes .btn-luxo { flex: 1 1 100%; justify-content: center; }
     }
 
     /* ===== Palavra script translúcida atrás do título (tra-header do spamagic) ===== */
     .palavra-script {
-      display: block; font: 400 clamp(64px, 12vw, 150px)/1 var(--script);
+      display: block; font: 400 clamp(60px, 12vw, 140px)/1.1 var(--script);
       color: var(--lx-acento); opacity: 0.16; white-space: nowrap;
       margin: 0 0 -0.42em -0.04em; pointer-events: none; user-select: none;
     }
@@ -187,7 +191,7 @@
     .faixa { position: relative; overflow: hidden; text-align: center; padding-block: clamp(80px, 10vw, 130px); }
     .faixa .palavra-fundo {
       position: absolute; left: 50%; top: 50%; transform: translate(-50%, -54%);
-      font: 400 clamp(110px, 22vw, 300px)/1 var(--script); color: var(--dourado-claro);
+      font: 400 clamp(100px, 22vw, 280px)/1.1 var(--script); color: var(--dourado-claro);
       opacity: 0.07; white-space: nowrap; pointer-events: none; user-select: none;
     }
     .faixa h2 { max-width: 15ch; margin: 22px auto 22px; position: relative; }
@@ -211,18 +215,30 @@
     .sobre .lx-texto-suave { margin: 28px 0 0; }
     .sobre .linha-coren { margin-top: 18px; font-size: 13px; color: var(--lx-texto-suave); }
 
-    /* ===== Avaliações ===== */
-    .avaliacoes { display: grid; gap: clamp(40px, 6vw, 90px); grid-template-columns: 1fr; align-items: center; }
-    @media (min-width: 900px) { .avaliacoes { grid-template-columns: 0.7fr 1.3fr; } }
-    .placar { border-right: 0; }
-    @media (min-width: 900px) { .placar { border-right: 1px solid var(--lx-linha); padding-right: 40px; } }
-    .placar .numero { font: 400 clamp(88px, 11vw, 140px)/0.9 var(--lx-serif); color: var(--lx-texto); display: block; }
-    .placar .estrelas { color: var(--lx-acento); font-size: 15px; display: block; margin: 16px 0 12px; }
-    .placar p { margin: 0; color: var(--lx-texto-suave); font-size: 14px; }
-    .placar a { display: inline-block; margin-top: 22px; font: 500 11px/1 var(--lx-sans); letter-spacing: 0.22em; text-transform: uppercase; color: var(--acento-texto); text-underline-offset: 6px; }
-    .avaliacoes blockquote { margin: 0; }
-    .avaliacoes .lx-citacao { position: relative; }
-    .avaliacoes .lx-citacao::before { content: "“"; position: absolute; left: -0.05em; top: -0.62em; font: 400 2.6em/1 var(--lx-serif); color: var(--lx-acento); opacity: 0.35; }
+
+    /* ===== Avaliações: faixa que passa da direita para a esquerda ===== */
+    .placar-topo { display: flex; flex-wrap: wrap; gap: 32px 60px; justify-content: space-between; align-items: flex-end; margin-bottom: clamp(40px, 5vw, 64px); }
+    .placar { text-align: left; }
+    .placar .numero { font: 400 clamp(64px, 8vw, 96px)/0.9 var(--lx-serif); color: var(--lx-texto); display: inline-block; vertical-align: middle; }
+    .placar .estrelas { color: var(--lx-acento); font-size: 14px; display: inline-block; margin: 0 0 0 14px; vertical-align: middle; }
+    .placar p { margin: 10px 0 0; color: var(--lx-texto-suave); font-size: 14px; }
+    .placar a { display: inline-block; margin-top: 14px; font: 500 11px/1 var(--lx-sans); letter-spacing: 0.22em; text-transform: uppercase; color: var(--acento-texto); text-underline-offset: 6px; }
+    .rev-faixa { overflow: hidden; padding: 14px 0 26px; }
+    .rev-trilha { display: flex; width: max-content; animation: rev-passa 56s linear infinite; will-change: transform; }
+    .rev-serie { display: flex; gap: 20px; padding-right: 20px; }
+    .rev-faixa:hover .rev-trilha, .rev-faixa:active .rev-trilha, .rev-faixa:focus-within .rev-trilha { animation-play-state: paused; }
+    @keyframes rev-passa { to { transform: translateX(-50%); } }
+    .rev { margin: 0; flex: 0 0 auto; width: min(78vw, 340px); min-height: 250px; display: flex; flex-direction: column; background: #fff; border: 1px solid var(--lx-linha); border-radius: 6px; padding: 28px 28px 24px; box-shadow: 0 14px 34px -22px rgb(60 45 20 / 0.35); }
+    .rev .estrelas { color: var(--lx-acento); font-size: 13px; letter-spacing: 0.2em; }
+    .rev blockquote { margin: 18px 0 22px; font: 300 15.5px/1.65 var(--lx-sans); color: var(--lx-texto); flex: 1; }
+    .rev figcaption { font: 500 14px/1.3 var(--lx-sans); color: var(--lx-texto); }
+    .rev figcaption small { display: block; margin-top: 5px; font: 500 10px/1 var(--lx-sans); letter-spacing: 0.2em; text-transform: uppercase; color: var(--lx-texto-suave); }
+    @media (prefers-reduced-motion: reduce) {
+      .rev-faixa { overflow-x: auto; scroll-snap-type: x mandatory; padding-inline: var(--lx-gutter); }
+      .rev-trilha { animation: none; width: max-content; }
+      .rev-serie[aria-hidden="true"] { display: none; }
+      .rev { scroll-snap-align: start; }
+    }
 
     /* ===== Contato ===== */
     .contato { display: grid; gap: clamp(40px, 6vw, 80px); grid-template-columns: 1fr; }
@@ -257,8 +273,7 @@
   <header class="header-luxo">
     <div class="lx-container">
       <a class="marca" href="#topo" aria-label="Clínica Luanna Souza, início">
-        <span class="marca-nome">Luanna Souza</span>
-        <span class="marca-sub">Enfermeira Esteta</span>
+        <img src="assets/logo-luanna.png" alt="Luanna Souza, Enfermeira Esteta" width="637" height="296">
       </a>
       <button class="menu-botao" type="button" aria-expanded="false" aria-controls="menu" hidden><span aria-hidden="true"></span><b>Menu</b></button>
       <nav class="lx-nav" id="menu" aria-label="Seções">
@@ -415,19 +430,24 @@
       </div>
     </section>
 
-    <!-- AVALIAÇÕES (citação real do Google) -->
+    <!-- AVALIAÇÕES (todas as reais coletadas do Maps; só 3 positivas existem) -->
     <section id="avaliacoes" class="lx-secao lx-secao--alt">
-      <div class="lx-container avaliacoes">
-        <div class="placar">
+      <div class="lx-container placar-topo">
+        <div>
           <span class="lx-rotulo">Avaliações no Google</span>
-          <span class="numero" style="margin-top:26px">5,0</span>
+          <h2 data-anim="rise3d" style="margin-top:18px">O que dizem as pacientes</h2>
+        </div>
+        <div class="placar">
+          <span class="numero">5,0</span>
           <span class="estrelas" aria-label="Nota 5 de 5">★★★★★</span>
           <p>415 avaliações no Google Maps</p>
           <a href="https://www.google.com/maps/search/?api=1&amp;query=Cl%C3%ADnica%20Luanna%20Souza%20R.%20Jequitinhonha%202929%20Natal" target="_blank" rel="noopener">Ver no Google</a>
         </div>
-        <div data-anim="rise3d">
-          <blockquote class="lx-citacao">O espaço é lindo e aconchegante, o atendimento super acolhedor, começando pelo agendamento.</blockquote>
-          <cite>Avaliação no Google Maps</cite>
+      </div>
+      <div class="rev-faixa" role="region" aria-label="Avaliações de pacientes no Google">
+        <div class="rev-trilha">
+          <div class="rev-serie"><figure class="rev"><span class="estrelas" aria-label="5 estrelas">★★★★★</span><blockquote>Atendimento ímpar! Sempre sou recebida com muito carinho e atenção por todas! Sem contar que aguardamos o atendimento com um delicioso capuccino […]</blockquote><figcaption>Maria<small>Avaliação no Google</small></figcaption></figure><figure class="rev"><span class="estrelas" aria-label="5 estrelas">★★★★★</span><blockquote>Cheguei com receio, afinal quem gosta de agulha? […] fui bem recebida, a maravilhosa Luanna tirou todas minhas dúvidas […] e foi bem tranquilo mesmo.</blockquote><figcaption>Janaina<small>Avaliação no Google</small></figcaption></figure><figure class="rev"><span class="estrelas" aria-label="5 estrelas">★★★★★</span><blockquote>O espaço é lindo e aconchegante, o atendimento super acolhedor, começando pelo agendamento.</blockquote><figcaption>Josylene<small>Avaliação no Google</small></figcaption></figure><figure class="rev" aria-hidden="true"><span class="estrelas" aria-label="5 estrelas">★★★★★</span><blockquote>Atendimento ímpar! Sempre sou recebida com muito carinho e atenção por todas! Sem contar que aguardamos o atendimento com um delicioso capuccino […]</blockquote><figcaption>Maria<small>Avaliação no Google</small></figcaption></figure><figure class="rev" aria-hidden="true"><span class="estrelas" aria-label="5 estrelas">★★★★★</span><blockquote>Cheguei com receio, afinal quem gosta de agulha? […] fui bem recebida, a maravilhosa Luanna tirou todas minhas dúvidas […] e foi bem tranquilo mesmo.</blockquote><figcaption>Janaina<small>Avaliação no Google</small></figcaption></figure><figure class="rev" aria-hidden="true"><span class="estrelas" aria-label="5 estrelas">★★★★★</span><blockquote>O espaço é lindo e aconchegante, o atendimento super acolhedor, começando pelo agendamento.</blockquote><figcaption>Josylene<small>Avaliação no Google</small></figcaption></figure></div>
+          <div class="rev-serie" aria-hidden="true"><figure class="rev" aria-hidden="true"><span class="estrelas" aria-label="5 estrelas">★★★★★</span><blockquote>Atendimento ímpar! Sempre sou recebida com muito carinho e atenção por todas! Sem contar que aguardamos o atendimento com um delicioso capuccino […]</blockquote><figcaption>Maria<small>Avaliação no Google</small></figcaption></figure><figure class="rev" aria-hidden="true"><span class="estrelas" aria-label="5 estrelas">★★★★★</span><blockquote>Cheguei com receio, afinal quem gosta de agulha? […] fui bem recebida, a maravilhosa Luanna tirou todas minhas dúvidas […] e foi bem tranquilo mesmo.</blockquote><figcaption>Janaina<small>Avaliação no Google</small></figcaption></figure><figure class="rev" aria-hidden="true"><span class="estrelas" aria-label="5 estrelas">★★★★★</span><blockquote>O espaço é lindo e aconchegante, o atendimento super acolhedor, começando pelo agendamento.</blockquote><figcaption>Josylene<small>Avaliação no Google</small></figcaption></figure><figure class="rev" aria-hidden="true"><span class="estrelas" aria-label="5 estrelas">★★★★★</span><blockquote>Atendimento ímpar! Sempre sou recebida com muito carinho e atenção por todas! Sem contar que aguardamos o atendimento com um delicioso capuccino […]</blockquote><figcaption>Maria<small>Avaliação no Google</small></figcaption></figure><figure class="rev" aria-hidden="true"><span class="estrelas" aria-label="5 estrelas">★★★★★</span><blockquote>Cheguei com receio, afinal quem gosta de agulha? […] fui bem recebida, a maravilhosa Luanna tirou todas minhas dúvidas […] e foi bem tranquilo mesmo.</blockquote><figcaption>Janaina<small>Avaliação no Google</small></figcaption></figure><figure class="rev" aria-hidden="true"><span class="estrelas" aria-label="5 estrelas">★★★★★</span><blockquote>O espaço é lindo e aconchegante, o atendimento super acolhedor, começando pelo agendamento.</blockquote><figcaption>Josylene<small>Avaliação no Google</small></figcaption></figure></div>
         </div>
       </div>
     </section>
@@ -462,8 +482,7 @@
     <div class="lx-container">
       <div class="rodape-grade">
         <a class="marca" href="#topo" aria-label="Voltar ao início">
-          <span class="marca-nome">Luanna Souza</span>
-          <span class="marca-sub">Enfermeira Esteta</span>
+          <img src="assets/logo-luanna.png" alt="Luanna Souza, Enfermeira Esteta" width="637" height="296">
         </a>
         <p>Clínica Luanna Souza · Harmonização Facial e Corporal<br>Neópolis · Natal/RN</p>
       </div>

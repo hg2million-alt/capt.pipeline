@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
-  <title>Tutti Cucina — Cozinha italiana em Petrópolis, Natal</title>
+  <title>Tutti Cucina · Cozinha italiana em Petrópolis, Natal</title>
   <meta name="description" content="Demo de site para o Tutti Cucina, restaurante italiano em Petrópolis, Natal/RN.">
   <script>
     (function (h) {
@@ -14,68 +14,91 @@
       }
     })(document.documentElement);
   </script>
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Karla:wght@300;400;500&display=swap">
   <link rel="stylesheet" href="assets/luxury.css">
   <link rel="stylesheet" href="assets/animacoes.css">
   <style>
     :root {
-      --lx-fundo: #F6F1E7; --lx-fundo-2: #EDE4D3; --lx-texto: #2B221D; --lx-texto-suave: #6A584C;
-      --lx-acento: #9B5034; --lx-linha: rgb(74 58 49 / 0.2);
-      --lx-serif: "Cormorant Garamond", Georgia, serif; --lx-sans: "Jost", system-ui, sans-serif;
+      --verde: #082722; --ouro: #BD8B4B; --ouro-escuro: #8A5F25;
+      --lx-fundo: #F6F1E7; --lx-fundo-2: #EDE4D3; --lx-texto: #23302C; --lx-texto-suave: #5A625E;
+      --lx-acento: #8A5F25; --lx-linha: rgb(8 39 34 / 0.2);
+      --lx-serif: "Bodoni Moda", "Didot", Georgia, serif; --lx-sans: "Karla", system-ui, sans-serif;
     }
-    h1, h2, h3 { color: #4A3A31; font-weight: 500; }
+    body { font-weight: 400; }
+    h1, h2, h3 { color: var(--verde); font-weight: 400; line-height: 1.12; letter-spacing: 0; }
+    h1 { font-size: clamp(40px, 7vw, 92px); }
+    h2 { font-size: clamp(30px, 4.2vw, 56px); }
+    .lx-rotulo { font-weight: 500; letter-spacing: .3em; }
     .hero h1, .hero h1 em { color: #fff; }
-    .hero h1 em { color: #E6CFAE; }
-    .hero p { color: rgb(255 255 255 / .88); }
-    .hero .lx-rotulo { color: #E6CFAE; }
-    .hero .btn-luxo { background: #F6F1E7; border-color: #F6F1E7; color: #4A3A31; }
+    .hero h1 em { color: #E3BF86; }
+    .hero p { color: rgb(255 255 255 / .9); }
+    .hero .lx-rotulo { color: #E3BF86; }
+    .hero .btn-luxo { background: #F6F1E7; border-color: #F6F1E7; color: var(--verde); }
     .hero .btn-luxo:hover { background: transparent; color: #F6F1E7; }
     .hero .btn-luxo--linha { background: transparent; color: #fff; border-color: rgb(255 255 255 / .5); }
-    .hero .btn-luxo--linha:hover { color: #E6CFAE; border-color: #E6CFAE; }
+    .hero .btn-luxo--linha:hover { color: #E3BF86; border-color: #E3BF86; }
     .hero { --hero-foco: 50% 62%; }
-    .hero-chip { border-color: rgb(255 255 255 / .45); }
-    .btn-luxo { background: #4A3A31; border-color: #4A3A31; color: #F6F1E7; }
-    .btn-luxo:hover { background: transparent; color: #4A3A31; }
-    .btn-luxo--linha { background: transparent; color: #4A3A31; border-color: var(--lx-linha); }
+    .btn-luxo { background: var(--verde); border-color: var(--verde); color: #F6F1E7; font-weight: 500; }
+    .btn-luxo:hover { background: transparent; color: var(--verde); }
+    .btn-luxo--linha { background: transparent; color: var(--verde); border-color: var(--lx-linha); }
     .btn-luxo--linha:hover { border-color: var(--lx-acento); color: var(--lx-acento); }
-    .header-luxo .lx-marca { color: #fff; display: flex; flex-direction: column; gap: 5px; align-items: flex-start; }
-    .lx-marca b { font: 500 26px/1 var(--lx-serif); letter-spacing: .22em; padding-left: .22em; }
-    .lx-marca small { font: 400 8px/1 var(--lx-sans); letter-spacing: .5em; }
-    .header-luxo.rolou { background-color: rgb(35 26 21 / .9); }
-    .lx-card { background: rgb(255 255 255 / .45); }
+    .header-luxo .lx-marca { display: block; line-height: 0; }
+    .lx-marca img { height: 46px; width: auto; }
+    .header-luxo.rolou { background-color: rgb(8 39 34 / .93); }
+    .lx-nav a { font-weight: 500; }
     .a-confirmar { color: var(--lx-acento); }
-    .hero .a-confirmar { color: #E6CFAE; border-color: #E6CFAE; }
     .sobre { display: grid; gap: clamp(32px, 6vw, 80px); grid-template-columns: 1fr 1fr; align-items: center; }
     .sobre figure { margin: 0; overflow: hidden; aspect-ratio: 4/3.4; }
     .sobre img { width: 100%; height: 100%; object-fit: cover; }
     .sobre h2 { margin: 22px 0 26px; }
     @media (max-width: 760px) { .sobre { grid-template-columns: 1fr; } }
     .prato { padding: 26px 0; border-top: 1px solid var(--lx-linha); }
-    .prato h3 { font-size: 24px; text-transform: none; }
-    .prato p { margin: 8px 0 0; color: var(--lx-texto-suave); font-size: 15px; line-height: 1.6; }
+    .prato h3 { font-size: 23px; }
+    .prato p { margin: 8px 0 0; color: var(--lx-texto-suave); font-size: 15.5px; line-height: 1.6; }
     .cardapio { display: grid; column-gap: clamp(32px, 6vw, 80px); grid-template-columns: 1fr 1fr; }
     @media (max-width: 760px) { .cardapio { grid-template-columns: 1fr; } }
-    .cat { font: 500 11px/1 var(--lx-sans); letter-spacing: .28em; text-transform: uppercase; color: var(--lx-acento); display: block; margin-bottom: 10px; }
+    .cat { font: 500 11px/1 var(--lx-sans); letter-spacing: .26em; text-transform: uppercase; color: var(--lx-acento); display: block; margin-bottom: 10px; }
     .lx-galeria figure, .lx-galeria figure:nth-child(3n + 1) { grid-column: span 4; aspect-ratio: 3/4; }
-    .lx-galeria figure:first-child { grid-column: span 4; }
     @media (max-width: 700px) { .lx-galeria figure, .lx-galeria figure:nth-child(3n + 1) { grid-column: span 12; aspect-ratio: 4/4.6; } }
     .info { display: grid; gap: 28px 60px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); text-align: left; margin: 48px 0; }
-    .info h3 { font: 500 11px/1 var(--lx-sans); letter-spacing: .28em; text-transform: uppercase; color: var(--lx-acento); margin-bottom: 12px; }
+    .info h3 { font: 500 11px/1 var(--lx-sans); letter-spacing: .26em; text-transform: uppercase; color: var(--lx-acento); margin-bottom: 12px; }
     .info p { margin: 0; line-height: 1.7; }
-    .lx-rodape { background: #231A15; color: #CBBBAA; border: 0; }
-    .lx-rodape a { color: #E6CFAE; }
-    .wa-flutuante a { background: #4A3A31; }
-    .lx-citacao { color: #4A3A31; }
+    .lx-rodape { background: var(--verde); color: #BFCBC7; border: 0; }
+    .lx-rodape .lx-container { display: grid; gap: 18px; justify-items: start; }
+    .lx-rodape img { height: 56px; width: auto; }
+    .wa-flutuante a { background: var(--verde); }
     .nota { font-size: 12px; color: var(--lx-texto-suave); margin-top: 40px; }
+
+    /* avaliações: faixa de cartões que passa da direita para a esquerda */
+    .rev-wrap { margin-top: 48px; overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
+    .rev-trilha { display: flex; width: max-content; animation: revPassa 70s linear infinite; }
+    .rev-wrap:hover .rev-trilha, .rev-wrap:active .rev-trilha, .rev-wrap:focus-within .rev-trilha { animation-play-state: paused; }
+    @keyframes revPassa { to { transform: translate3d(-50%, 0, 0); } }
+    .rev-set { display: flex; gap: 20px; padding: 14px 20px 22px 0; margin: 0; list-style: none; }
+    .rev { flex: none; width: 300px; display: flex; flex-direction: column; gap: 14px; padding: 26px 26px 22px; background: #FBF8F1; border: 1px solid rgb(8 39 34 / .1); border-radius: 6px; box-shadow: 0 10px 28px -16px rgb(8 39 34 / .35); text-align: left; white-space: normal; }
+    .rev p { margin: 0; font: italic 400 17px/1.5 var(--lx-serif); color: var(--verde); }
+    .rev .est { display: inline-flex; gap: 2px; color: var(--ouro); }
+    .rev-fonte { font: 400 11.5px/1.4 var(--lx-sans); letter-spacing: .08em; text-transform: uppercase; color: var(--lx-texto-suave); margin-top: auto; }
+    .rev-fonte b { font-weight: 500; color: var(--verde); }
+    .rev--nota { background: var(--verde); border-color: var(--verde); justify-content: center; align-items: flex-start; }
+    .rev--nota strong { font: 400 64px/1 var(--lx-serif); color: #E3BF86; }
+    .rev--nota .rev-fonte { color: #BFCBC7; margin-top: 0; }
+    @media (prefers-reduced-motion: reduce) {
+      .rev-wrap { overflow-x: auto; scroll-snap-type: x mandatory; -webkit-mask-image: none; mask-image: none; }
+      .rev-trilha { animation: none; }
+      .rev-set[aria-hidden="true"] { display: none; }
+      .rev { scroll-snap-align: start; }
+    }
   </style>
 </head>
 <body>
 
   <header class="header-luxo">
     <div class="lx-container">
-      <a class="lx-marca" href="#topo" aria-label="Tutti Cucina"><b>TUTTI</b><small>CUCINA</small></a>
+      <a class="lx-marca" href="#topo" aria-label="Tutti Cucina, início"><img src="assets/img/logo-tutti.png" alt="Tutti Cucina" width="82" height="46"></a>
       <nav class="lx-nav" aria-label="Seções">
         <a href="#casa">A casa</a>
         <a href="#cardapio">Cardápio</a>
@@ -105,7 +128,7 @@
         <div>
           <span class="lx-rotulo" data-anim="slide">A casa</span>
           <h2 data-anim="rise3d">Tijolo, madeira e varanda <span class="arco-destaque">em Petrópolis<svg viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><path d="M2 8 Q50 0 98 8"/></svg></span></h2>
-          <p class="lx-texto-suave" data-anim="fade">Na R. Potengi, 617, a fachada de tijolo escuro, o painel de madeira e os toldos cremes anunciam uma casa de convívio: mesas na varanda e salão para almoço e jantar. Para quem prefere comer em casa, o pedido pode ser feito online, para entrega ou retirada.</p>
+          <p class="lx-texto-suave" data-anim="fade">Na R. Potengi, 617, a fachada de tijolo escuro, o painel de madeira e os toldos cremes dão o tom da casa. Tem mesas na varanda e salão para almoço e jantar. Quem prefere comer em casa pede online, para entrega ou retirada.</p>
           <p style="margin-top:28px" data-anim="fade"><a class="btn-luxo btn-luxo--linha" href="https://accon.ai/tutticucina">Pedir online</a></p>
         </div>
         <figure data-anim="swing-direita"><img src="assets/img/fotos/fachada.jpg" alt="Fachada do Tutti Cucina, com painel de madeira, toldos cremes e varanda" loading="lazy"></figure>
@@ -146,13 +169,43 @@
     </section>
 
     <section id="avaliacao" class="lx-secao lx-secao--alt">
-      <div class="lx-container" style="max-width:860px;text-align:center">
+      <div class="lx-container" style="text-align:center">
         <span class="lx-rotulo" data-anim="fade">Avaliações no Google</span>
-        <div data-anim="rise3d" style="margin-top:36px">
-          <blockquote class="lx-citacao">“O cardápio oferece excelentes opções com frutos do mar e carnes variadas… Pedi uma massa com camarão e estava maravilhosa!”</blockquote>
-          <cite>Avaliação no Google · nota geral 4,6 em 452 avaliações</cite>
+        <h2 data-anim="rise3d" style="margin:22px auto 0;max-width:18ch">Quem já sentou à mesa</h2>
+      </div>
+      <div class="rev-wrap" tabindex="0" aria-label="Avaliações do Google, faixa que passa sozinha. Passe o mouse ou toque para pausar.">
+        <div class="rev-trilha">
+          <ul class="rev-set">
+            <li class="rev rev--nota"><strong>4,6</strong><span class="est" role="img" aria-label="5 estrelas"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg></span><span class="rev-fonte">452 avaliações no Google</span></li>
+            <li class="rev"><p>“Visitei o restaurante em um sábado. Chegamos por volta das 19h e não pegamos fila de espera. O cardápio oferece excelentes opções com frutos do mar e carnes variadas. […] Pedi uma massa com camarão e estava maravilhosa!”</p><span class="est" role="img" aria-label="5 estrelas"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg></span><span class="rev-fonte"><b>Ana</b> · avaliação no Google</span></li>
+            <li class="rev"><p>“O cardápio oferece excelentes opções com frutos do mar e carnes variadas.”</p><span class="est" role="img" aria-label="5 estrelas"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg></span><span class="rev-fonte"><b>Ana</b> · avaliação no Google</span></li>
+            <li class="rev"><p>“Fui com um grupo de amigos e todos os pratos pareciam saborosos.”</p><span class="est" role="img" aria-label="5 estrelas"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg></span><span class="rev-fonte"><b>Ana</b> · avaliação no Google</span></li>
+            <li class="rev"><p>“Chegamos por volta das 19h e não pegamos fila de espera.”</p><span class="est" role="img" aria-label="5 estrelas"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg></span><span class="rev-fonte"><b>Ana</b> · avaliação no Google</span></li>
+          </ul>
+          <ul class="rev-set" aria-hidden="true">
+            <li class="rev rev--nota"><strong>4,6</strong><span class="est" role="img" aria-label="5 estrelas"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg></span><span class="rev-fonte">452 avaliações no Google</span></li>
+            <li class="rev"><p>“Visitei o restaurante em um sábado. Chegamos por volta das 19h e não pegamos fila de espera. O cardápio oferece excelentes opções com frutos do mar e carnes variadas. […] Pedi uma massa com camarão e estava maravilhosa!”</p><span class="est" role="img" aria-label="5 estrelas"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg></span><span class="rev-fonte"><b>Ana</b> · avaliação no Google</span></li>
+            <li class="rev"><p>“O cardápio oferece excelentes opções com frutos do mar e carnes variadas.”</p><span class="est" role="img" aria-label="5 estrelas"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg></span><span class="rev-fonte"><b>Ana</b> · avaliação no Google</span></li>
+            <li class="rev"><p>“Fui com um grupo de amigos e todos os pratos pareciam saborosos.”</p><span class="est" role="img" aria-label="5 estrelas"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg></span><span class="rev-fonte"><b>Ana</b> · avaliação no Google</span></li>
+            <li class="rev"><p>“Chegamos por volta das 19h e não pegamos fila de espera.”</p><span class="est" role="img" aria-label="5 estrelas"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg></span><span class="rev-fonte"><b>Ana</b> · avaliação no Google</span></li>
+          </ul>
+          <ul class="rev-set" aria-hidden="true">
+            <li class="rev rev--nota"><strong>4,6</strong><span class="est" role="img" aria-label="5 estrelas"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg></span><span class="rev-fonte">452 avaliações no Google</span></li>
+            <li class="rev"><p>“Visitei o restaurante em um sábado. Chegamos por volta das 19h e não pegamos fila de espera. O cardápio oferece excelentes opções com frutos do mar e carnes variadas. […] Pedi uma massa com camarão e estava maravilhosa!”</p><span class="est" role="img" aria-label="5 estrelas"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg></span><span class="rev-fonte"><b>Ana</b> · avaliação no Google</span></li>
+            <li class="rev"><p>“O cardápio oferece excelentes opções com frutos do mar e carnes variadas.”</p><span class="est" role="img" aria-label="5 estrelas"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg></span><span class="rev-fonte"><b>Ana</b> · avaliação no Google</span></li>
+            <li class="rev"><p>“Fui com um grupo de amigos e todos os pratos pareciam saborosos.”</p><span class="est" role="img" aria-label="5 estrelas"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg></span><span class="rev-fonte"><b>Ana</b> · avaliação no Google</span></li>
+            <li class="rev"><p>“Chegamos por volta das 19h e não pegamos fila de espera.”</p><span class="est" role="img" aria-label="5 estrelas"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg></span><span class="rev-fonte"><b>Ana</b> · avaliação no Google</span></li>
+          </ul>
+          <ul class="rev-set" aria-hidden="true">
+            <li class="rev rev--nota"><strong>4,6</strong><span class="est" role="img" aria-label="5 estrelas"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg></span><span class="rev-fonte">452 avaliações no Google</span></li>
+            <li class="rev"><p>“Visitei o restaurante em um sábado. Chegamos por volta das 19h e não pegamos fila de espera. O cardápio oferece excelentes opções com frutos do mar e carnes variadas. […] Pedi uma massa com camarão e estava maravilhosa!”</p><span class="est" role="img" aria-label="5 estrelas"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg></span><span class="rev-fonte"><b>Ana</b> · avaliação no Google</span></li>
+            <li class="rev"><p>“O cardápio oferece excelentes opções com frutos do mar e carnes variadas.”</p><span class="est" role="img" aria-label="5 estrelas"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg></span><span class="rev-fonte"><b>Ana</b> · avaliação no Google</span></li>
+            <li class="rev"><p>“Fui com um grupo de amigos e todos os pratos pareciam saborosos.”</p><span class="est" role="img" aria-label="5 estrelas"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg></span><span class="rev-fonte"><b>Ana</b> · avaliação no Google</span></li>
+            <li class="rev"><p>“Chegamos por volta das 19h e não pegamos fila de espera.”</p><span class="est" role="img" aria-label="5 estrelas"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.5l-5.9 3.3 1.3-6.7L2.5 9.5l6.6-.8z"/></svg></span><span class="rev-fonte"><b>Ana</b> · avaliação no Google</span></li>
+          </ul>
         </div>
       </div>
+      <p class="nota" style="text-align:center">Nota e total do Google Maps. Trechos de avaliações reais, citados com o primeiro nome de quem escreveu.</p>
     </section>
 
     <section id="visite" class="lx-secao">
@@ -161,7 +214,7 @@
         <h2 data-anim="rise3d" style="margin:22px auto 0;max-width:16ch">Venha à mesa, ou peça em casa</h2>
         <div class="info" data-stagger>
           <div><h3>Endereço</h3><p>R. Potengi, 617<br>Petrópolis, Natal/RN</p></div>
-          <div><h3>Horário</h3><p>Todos os dias, almoço e jantar.<br>Horário do salão <span class="a-confirmar">a confirmar</span><br><small style="color:var(--lx-texto-suave)">Pedido online: seg a sáb 11h–15h e 18h–22h30; dom 11h–16h e 18h–22h30</small></p></div>
+          <div><h3>Horário</h3><p>Todos os dias, almoço e jantar.<br>Horário do salão <span class="a-confirmar">a confirmar</span><br><small style="color:var(--lx-texto-suave)">Pedido online: seg a sáb, 11h às 15h e 18h às 22h30; dom, 11h às 16h e 18h às 22h30</small></p></div>
           <div><h3>Contato</h3><p>+55 84 3190-1369<br>Reserva de mesa <span class="a-confirmar">a confirmar</span></p></div>
         </div>
         <div class="hero-acoes" style="justify-content:center" data-anim="fade">
@@ -174,7 +227,7 @@
   </main>
 
   <footer class="lx-rodape">
-    <div class="lx-container">Tutti Cucina · R. Potengi, 617 · Petrópolis, Natal/RN · Demonstração: horários e reserva a confirmar com a casa.</div>
+    <div class="lx-container"><img src="assets/img/logo-tutti.png" alt="Tutti Cucina" width="100" height="56"><span>R. Potengi, 617 · Petrópolis, Natal/RN · +55 84 3190-1369</span><span>Demonstração: horário do salão e reserva a confirmar com a casa.</span></div>
   </footer>
 
   <div class="wa-flutuante" data-depois=".hero" data-some-em="#visite">

@@ -1,4 +1,4 @@
-# Clínica Cortez — Odontologia Especializada
+# Clínica Cortez : Odontologia Especializada
 
 > Preenchido a partir da prospecção da rodada
 > `captacoes/2026-10-25-restaurante-estetica-odontologia/` (dossiê, seção 10, e
@@ -28,8 +28,8 @@ não confirmado, **não usar nem citar no demo**. O @clinicacortez tem 1 post e
 não foi confirmado.
 **Endereço:** R. Cabo de São Roque, 8825B, Ponta Negra, Natal/RN, 59094-130
 (Maps; o número "8825B" também aparece na fachada da foto do Maps)
-**Horário:** seg a qua 08:00–18:30 · qui 08:00–12:00 e 13:00–19:00 · sex
-08:00–12:00 e 13:00–18:30 · sáb 08:00–12:00 · dom fechado (Maps)
+**Horário:** seg a qua 08:00 às 18:30 · qui 08:00 às 12:00 e 13:00 às 19:00 · sex
+08:00 às 12:00 e 13:00 às 18:30 · sáb 08:00 às 12:00 · dom fechado (Maps)
 **Site:** não tem (Maps sem botão de site; busca web por "Clínica Cortez
 odontologia Ponta Negra" não acha nada; dossiê)
 **Nota:** 5,0 com 63 avaliações (Maps, consultado em out/2026)
@@ -59,12 +59,12 @@ Dourado é usado só em rótulos, números, linhas finas e no itálico dos
 títulos. O botão principal é grafite (no fundo claro) ou mármore (sobre a
 foto e no bloco escuro).
 
-**Tipografia** (aproximação no Google Fonts, a confirmar com a clínica):
-- "Clínica Cortez" da placa = serifada clássica de livro, peso médio →
-  **Cormorant Garamond** 500/600 (marca e títulos; itálico 400 nos destaques).
-- "ODONTOLOGIA ESPECIALIZADA" da placa = capitulares romanas espaçadas →
-  **Cinzel** 500 (só na linha da marca e nos números romanos dos passos).
-- Corpo: **Manrope** 300/400/500 (sem serifa fina, padrão Luxury).
+**Tipografia** (Google Fonts, aproximação da placa, revisão de 26/10):
+- Títulos: **Spectral** 300/400 (serifada clássica, no lugar da serifada da placa).
+- Linha "ODONTOLOGIA ESPECIALIZADA" e números romanos: **Cinzel** 500 (mantida, lembra as capitulares da placa).
+- Corpo: **Work Sans** 300/400/500.
+
+**Logo:** procurada de novo em 26/10 (WebSearch pelo nome, endereço e número; ficha do Maps sem foto de perfil; Instagram não aberto). Nada encontrado. A "logo" continua sendo a placa da fachada (maps/01): no site o nome é recriado em tipografia (Spectral + Cinzel) no cabeçalho e no rodapé, o favicon é um "C" dourado sobre grafite, e a foto da placa (recorte pequeno, sem ampliar) aparece na seção de contato. @ candidato de Instagram: nenhum confirmado (o @cortezodontologia é de São Paulo; @clinicacortez tem 1 post, não confirmado).
 
 **Cor proibida / o que nunca fazer:** nada de azul/verde-água de clínica
 genérica (cores do Decare e do Dentisto); nada de foto de antes/depois,
@@ -113,7 +113,7 @@ confirmado, não citado.
 | `assets/maps/01.jpg` | Fachada à noite: placa de mármore, porta aberta com recepção iluminada, arandelas quentes, jardim (1200×1600) | **Hero** (tela cheia, véu escuro). Recortes: entrada (seção "A clínica") e placa (seção "Visite"). A funcionária na recepção, ao fundo, foi **desfocada** na cópia do site (`site/assets/img/`), o original ficou intacto |
 | `assets/maps/02.jpg` | Sorriso de antes/depois com marca d'água "Danyelle Cortez" | **Não usar**: antes/depois e marca d'água de outra pessoa |
 | `assets/logo-foto-maps.jpg` | Recorte de logo que não pegou a placa | Não usado |
-| Reviews (3, Maps) | Juliet (4 meses), Luiz Eduardo (1 ano), Raissa (2 anos), todas 5 estrelas | Citadas como avaliação do Google, só primeiro nome. A frase do Luiz sobre terminar o tratamento "antes do prazo" foi cortada (com […]) por ser fala de resultado |
+| Reviews (3, Maps) | Juliet (4 meses), Luiz Eduardo (1 ano), Raissa (2 anos), todas 5 estrelas | Citadas como avaliação do Google, só primeiro nome. A frase do Luiz sobre terminar o tratamento "antes do prazo" foi cortada (com […]) por ser fala de resultado. Só 3 avaliações foram coletadas (as 3 entram na faixa que passa, repetida para o loop) |
 
 **Falta:** logo em arquivo, fotos do interior (recepção, consultório), foto e
 nome da equipe com CRO, lista de tratamentos, Instagram oficial.
