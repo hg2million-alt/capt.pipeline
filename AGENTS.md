@@ -2,7 +2,9 @@
 
 Workspace de produção. Chega a identidade de um prospect, sai um demo de site
 **num único arquivo `.html` com o nome do comércio**, entregue ao usuário no
-chat — é a peça de captação. Nada é publicado na internet (sem Vercel).
+chat — é a peça de captação. Por padrão nada é publicado (sem Vercel). Só
+publica quando o usuário pedir, e então no **Cloudflare Pages** (ver
+"Publicar no Cloudflare" abaixo).
 
 Território: **Grande Natal/RN (DDD 84)**, foco em áreas nobres — Ponta Negra,
 Capim Macio, Lagoa Nova, Tirol, Petrópolis, Nova Parnamirim etc. (lista
@@ -111,7 +113,8 @@ não substitui o texto.
   perguntar de novo ao usuário a cada demo; e a stack é HTML/CSS/JS puro
   (não React), porque a entrega é um `.html` único.
 - Entrega: **um `.html` por cliente, com o nome do comércio** (skill
-  `entregar-html`) — nunca deploy na Vercel ou em outro host. Demo one-page,
+  `entregar-html`) — nunca deploy na Vercel (proíbe uso comercial); só
+  Cloudflare Pages e só se o usuário pedir. Demo one-page,
   porque o arquivo único não navega entre páginas.
 - **Sem travessões, em nenhum lugar.** Nada de "—", "–" ou " - " como
   separador em texto, título, meta, alt, balão de abordagem; nada de linha
@@ -121,6 +124,20 @@ não substitui o texto.
   empacotar, conferir: nenhum caractere U+2010 a U+2015 / U+2212 no `.html`.
 - Telefones no formato `+55 84 9XXXX-XXXX`; botão de WhatsApp com
   `https://wa.me/5584...`.
+
+## Publicar no Cloudflare
+
+Só quando o usuário pedir. O token (`CLOUDFLARE_API_TOKEN`) e o ID da conta
+(`CLOUDFLARE_ACCOUNT_ID`) **nunca vão pro repositório**: vêm do ambiente ou do
+que o usuário passar na sessão (usar só nela, num arquivo temporário fora do
+projeto). `wrangler pages project create` falha por causa do subdomínio
+workers.dev: criar o projeto pela API
+(`POST /accounts/<id>/pages/projects`, `production_branch: main`) e publicar com
+`npx wrangler@4 pages deploy <pasta> --project-name <nome> --branch main`.
+Uma pasta por demo com `index.html` (o `.html` empacotado) e `_headers` com
+`X-Robots-Tag: noindex, nofollow`. Nome do projeto com sufixo aleatório de 4
+caracteres (`<slug>-x7k2`), pra link não ser adivinhável. Registrar os links em
+`captacoes/<rodada>/links.md` e conferir cada um (status 200, 390 px).
 
 ## Captação automatizada
 
