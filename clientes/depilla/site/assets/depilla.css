@@ -36,7 +36,7 @@ h2 em, h3 em { font-style: italic; color: var(--lx-acento); }
 .header-luxo.rolou { background-color: rgb(31 42 31 / 0.9); border-bottom-color: rgb(255 255 255 / 0.08); }
 .header-luxo .lx-container { height: 76px; }
 .dp-marca { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; color: #fff; }
-.dp-marca svg { width: 34px; height: 34px; color: var(--dp-folha); flex: none; }
+.dp-marca img { width: 34px; height: 34px; object-fit: contain; flex: none; }
 .dp-marca span { font: 300 27px/1 var(--dp-marca); letter-spacing: 0.02em; }
 .dp-marca small { display: block; font: 500 9px/1 var(--lx-sans); letter-spacing: 0.3em; text-transform: uppercase; color: rgb(255 255 255 / 0.62); margin-top: 6px; }
 .lx-nav { gap: 30px; }

@@ -288,7 +288,7 @@ html, body { overflow-x: clip; }
   box-shadow: 0 14px 34px -18px rgb(0 0 0 / 0.6);
 }
 .cl-card-est { font-size: 12px; letter-spacing: 0.24em; color: var(--cl-azul-claro); }
-.cl-card-aval blockquote { margin: 0; font: italic 400 20px/1.4 var(--lx-serif); color: rgb(255 255 255 / 0.95); }
+.cl-card-aval blockquote { margin: 0; font: italic 400 18px/1.45 var(--lx-serif); color: rgb(255 255 255 / 0.95); }
 .cl-card-aval figcaption { font: 500 10.5px/1.5 var(--lx-sans); letter-spacing: 0.18em; text-transform: uppercase; color: rgb(255 255 255 / 0.62); }
 .cl-pausa { display: block; margin: 18px auto 0; min-height: 44px; padding: 0 20px; background: transparent; border: 1px solid rgb(255 255 255 / 0.3); color: #fff; font: 500 10.5px/1 var(--lx-sans); letter-spacing: 0.2em; text-transform: uppercase; cursor: pointer; }
 .cl-pausa[aria-pressed="true"]::before { content: "Retomar"; }
@@ -302,3 +302,4 @@ html, body { overflow-x: clip; }
   .cl-card-aval { scroll-snap-align: start; }
   .cl-pausa { display: none; }
 }
+.cl-noite h2 em { color: var(--cl-azul-claro); }

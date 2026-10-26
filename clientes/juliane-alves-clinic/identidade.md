@@ -7,7 +7,7 @@
 
 ## Contato
 
-**WhatsApp:** +55 84 99813-1962 (Maps / dossiê) — `https://wa.me/5584998131962`
+**WhatsApp:** +55 84 99813-1962 (Maps / dossiê): `https://wa.me/5584998131962`
 **Instagram:** @julianealves.clinic (ficha do Maps; confirmado em 26/10 com login), 28,8 mil seguidores, 2.582 posts
 **Endereço:** Av. Hermes da Fonseca, 390, loja 03, Galeria Jardins Petrópolis, Natal/RN (Maps)
 **Horário:** ter a sex 09:00-18:00, sáb 09:00-14:00 (Maps)
@@ -20,8 +20,8 @@
 - Fundo escuro `#0F0E0D` e texto `#151312` (preto da logo)
 - Acento `#A4512B` em fundo claro e `#D9895A` em fundo escuro (ferrugem/laranja das folhas da árvore do salão, amostrado das fotos do Maps; escurecido no fundo claro por contraste). **Aproximação a partir das fotos; a confirmar com a clínica.**
 
-**Tipografia:** logo "JULIANE ALVES / CLINIC" serifada fina espaçada (maps/01.jpg). Aproximações Google Fonts: Julius Sans One (rótulos e marca), Cormorant Garamond (títulos), Jost (texto). São aproximações, não a fonte original da logo.
-**Logo:** `assets/maps/01.jpg` (PNG transparente, preto). Usada pequena no header e rodapé (branca no header sobre foto). A foto de perfil do Instagram é retrato dela, não é logo.
+**Tipografia:** logo "JULIANE ALVES / CLINIC" serifada fina espaçada (maps/01.jpg). Definido na revisão de 26/10: Tenor Sans (títulos e rótulos) e Hanken Grotesk (corpo), embutidas no arquivo (woff2 locais). Aproximação, não a fonte original da logo.
+**Logo:** `assets/maps/01.jpg` (PNG transparente, preto; oficial, conferida na revisão: 1096 px de largura útil, nítida nos 150 a 210 px em que é usada). Sem favicon (não há ícone isolado confiável). Usada pequena no header e rodapé (branca no header sobre foto). A foto de perfil do Instagram é retrato dela, não é logo.
 **Cor proibida / o que nunca fazer:** sem antes/depois, sem promessa de resultado, sem % de sucesso. Rosa do Outubro Rosa é campanha temporária, não é cor da marca.
 
 ## Tom de voz
@@ -38,7 +38,7 @@ Valores, duração e indicações: *a definir* (marcado "a confirmar" no demo).
 
 ## Avaliações (Google)
 
-Nota 5,0, 157 avaliações (Maps). Citação usada no demo: "Mesmo morando fora da cidade faço questão que só elas façam minha sobrancelha." (review do Google, autor não identificado no dossiê).
+Nota 5,0, 157 avaliações (Maps). No demo, faixa de cartões com as 3 reviews positivas coletadas (det1.json): Camila (4 meses atrás), Romena (um ano atrás), Laura (2 anos atrás), só o primeiro nome, cortes marcados com […]. Trechos de "me sinto mais bonita após cada procedimento" e de nome de profissional foram cortados. Só 3 foram coletadas; não há mais no material.
 
 ## Material recebido
 

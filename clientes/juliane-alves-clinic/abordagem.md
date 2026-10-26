@@ -1,4 +1,4 @@
-# Abordagem — Juliane Alves Clinic
+# Abordagem: Juliane Alves Clinic
 
 **Destino:** +55 84 99813-1962 (WhatsApp da clínica, Maps)
 **Arquivo a enviar só depois do "pode":** `entregas/2026-10-25-restaurante-estetica-odontologia/Juliane Alves Clinic.html`

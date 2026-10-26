@@ -13,7 +13,7 @@
 
 **WhatsApp:** +55 84 98786-5505 → `https://wa.me/5584987865505` (Maps: é o próprio "site" da ficha; também na fachada)
 **Fixo:** (84) 3207-7697 (guias de telefone e fachada). Dossiê trata como antigo; não usado no demo.
-**Instagram:** não confirmado. O dossiê não achou (o @depilla é de outra pessoa). A fachada anuncia **@depillarn** (foto do Maps), que não foi aberto nesta produção. Conferir antes de citar. O demo não cita @.
+**Instagram (SUPERADO, ver abaixo):** não confirmado. O dossiê não achou (o @depilla é de outra pessoa). A fachada anuncia **@depillarn** (foto do Maps), que não foi aberto nesta produção. Conferir antes de citar. O demo não cita @.
 **Site:** a fachada anuncia **www.depilla.com.br**. Conferido em 26/10/2026: o domínio **não existe mais** (RDAP do registro.br devolve 404 e o DNS devolve NXDOMAIN para `depilla.com.br` e `www.depilla.com.br`). No Maps, o campo "site" aponta só para o wa.me.
 **Endereço:** R. Leôncio Etelvino de Medeiros, 2831, Capim Macio, Natal/RN (Maps)
 **Horário:** seg–sex 08:00–19:00 · sáb 08:00–18:00 (Maps). Domingo: *a definir* (não listado).
@@ -78,3 +78,10 @@ demo entregue (.html) / abordagem pronta, não enviada
 - Logo: não achei versão melhor. Procurado: fachada e porta no Maps (única fonte legível), busca web (nada), site antigo depilla.com.br (fora do ar, Wayback bloqueado por limite). Mantido o símbolo recriado em SVG + "Depilla" em Quicksand 300.
 - Instagram candidato: **@depillarn** (anunciado na fachada, foto do Maps). Não aberto. Verificar.
 - Sem travessões em nenhum texto (grep zerado no site e no .html).
+
+## Instagram confirmado (26/10, verificado pelo usuário logado)
+
+- **@depillarn** (DepillaRN, 4.755 seguidores): endereço e wa.me/5584987865505 batem com o Maps. Bio: "Depilação e Medicina Estética", "Depilação com Cera EXPRESS", seg a sex 8h às 19h. Destaques: Depilação laser, Lipo enzimática, Labial, Botox, Depilação.
+- Serviços divulgados (bio e legendas, `assets/instagram/posts.txt`): cera quente, cera express, linha, laser, luz pulsada; medicina estética (botox, clareamento íntimo, exossomas, lipo enzimática, labial); manicure e pés; sobrancelhas. Entram no demo como "divulgados no Instagram", sem preço. Legenda de "preenchime..." está cortada, então preenchimento não entra.
+- **Logo real:** post 02 (arte com a flor de quatro laços nítida, branca sobre verde-escuro). Símbolo recortado e convertido em PNG branco com transparência (`site/assets/img/simbolo.png`), usado pequeno no cabeçalho e no rodapé e como favicon. O SVG redesenhado foi aposentado. Cor da arte do Instagram é verde-floresta escuro com dourado, mais escura que a fachada; a paleta do demo (verde da fachada + `#1F2A1F`) combina e não mudou.
+- Fotos do Instagram não usadas: têm cliente identificável ou texto grande de promoção/arte (posts 02, 06, 07, 12, 01) ou são genéricas (08, 10, 11).

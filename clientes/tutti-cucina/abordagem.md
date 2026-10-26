@@ -1,4 +1,4 @@
-# Abordagem — Tutti Cucina
+# Abordagem · Tutti Cucina
 
 Destino: +55 84 3190-1369 (fixo com WhatsApp, vindo do próprio link de pedido).
 Remetente: [seu nome], morador de Natal que faz sites. Primeira pessoa, igual pra igual.

@@ -1,4 +1,4 @@
-# Abordagem — Clinique Odontologia Avançada
+# Abordagem · Clinique Odontologia Avançada
 
 **Destino:** +55 84 99403-9623 (WhatsApp da bio do @cliniquenatal; o fixo +55 84 3113-0891 não é WhatsApp confirmado)
 **Remetente:** eu, [seu nome], morador de Natal, que faz sites. Primeira pessoa, igual pra igual.
@@ -54,7 +54,7 @@ Prefere que eu te explique por texto ou por áudio?
 
 ## Follow-ups
 
-- **Sem resposta ao balão 1–4, após ~1 dia útil:**
+- **Sem resposta ao balão 1-4, após ~1 dia útil:**
 ```
 [nome, se souber; senão "Bom dia"]?
 ```
@@ -69,7 +69,7 @@ Vou deixar por aqui pra não incomodar. Se um dia quiserem uma página própria 
 
 ## Objeções previsíveis
 
-- **"Já temos Instagram / já temos agência."** "Entendi. O site não substitui o Instagram: é a página que o Google mostra quando a pessoa busca 'implante em Natal'. Se já tem alguém cuidando disso, posso só deixar o modelo com vocês."
+- **"Já temos Instagram / já temos agência."** "Entendi. O Instagram continua com vocês. O site é a página que o Google mostra quando a pessoa busca 'implante em Natal'. Se já tem alguém cuidando disso, posso só deixar o modelo com vocês."
 - **"Quanto custa?"** Não falar valor no primeiro contato: "Depende do que vocês quiserem aí dentro. Prefiro primeiro você ver se o modelo faz sentido, depois a gente conversa de valor sem pressa."
 - **"Preciso falar com o dono/os sócios."** "Claro. Se ajudar, te passo o arquivo pra você encaminhar pra eles. Quem decide aí?"
 - **"Mande por e-mail."** "Mando sim. Qual e-mail? Aviso: é um arquivo único, abre no celular e no computador."
@@ -78,10 +78,10 @@ Vou deixar por aqui pra não incomodar. Se um dia quiserem uma página própria 
 
 ## Técnicas do banco usadas
 
-- `copy-base/video-prospeccao-ativa-whatsapp.md` — "Primeira mensagem": abertura com pergunta que valida o canal ("falo com quem cuida…?"), sem "oi, tudo bem?" solto e sem nome completo; variante "Achei justo te chamar por aqui porque [motivo específico]" no balão 3.
-- Mesma fonte — "Tamanho da mensagem": mensagem um pouco mais longa aceita porque é sobre o prospect (gancho do dossiê no balão 3).
-- Mesma fonte — "Follow-up universal": só o nome + "?".
-- Mesma fonte — "Validar o canal de comunicação": texto ou áudio, só depois que reagir.
-- `copy-base/blog-exemplos-reais-whatsapp.md` — "Como isso se aplica aqui": pedir permissão antes de mandar ("Posso te mandar?") e fechar com pergunta curta ("Faz sentido pra vocês?").
+- `copy-base/video-prospeccao-ativa-whatsapp.md` · "Primeira mensagem": abertura com pergunta que valida o canal ("falo com quem cuida…?"), sem "oi, tudo bem?" solto e sem nome completo; variante "Achei justo te chamar por aqui porque [motivo específico]" no balão 3.
+- Mesma fonte · "Tamanho da mensagem": mensagem um pouco mais longa aceita porque é sobre o prospect (gancho do dossiê no balão 3).
+- Mesma fonte · "Follow-up universal": só o nome + "?".
+- Mesma fonte · "Validar o canal de comunicação": texto ou áudio, só depois que reagir.
+- `copy-base/blog-exemplos-reais-whatsapp.md` · "Como isso se aplica aqui": pedir permissão antes de mandar ("Posso te mandar?") e fechar com pergunta curta ("Faz sentido pra vocês?").
 - `captacoes/aprendizados.md` está vazio, sem hipóteses a aplicar.
 - Regras do AGENTS.md: gancho verificável, sem citar outro cliente do mesmo nicho, sem dado inventado.

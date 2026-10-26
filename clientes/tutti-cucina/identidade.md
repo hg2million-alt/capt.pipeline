@@ -39,46 +39,40 @@ pedido de reserva pro WhatsApp com chip "a confirmar")
 
 ## Marca
 
-Não há arquivo de logo. A marca foi lida do **letreiro da fachada**
-(`assets/maps/01.jpg`, recorte em `assets/logo-foto-maps.jpg`) e do **guardanapo
-impresso** que aparece em `assets/maps/04.jpg` (foto fora do demo por ter cliente
-identificável).
+**Logo real encontrada** (revisão de 26/10/2026): imagem de 512 x 512 px do
+cadastro do lojista no sistema de pedidos accon.ai
+(`https://assets.accon.ai/merchants/logos/62-1753734609309.avif`, na página
+`accon.ai/tutticucina`, que traz "Tutti Cucina, Rua Potengi, 617, Petrópolis" e o
+telefone (84) 3190-1369, os mesmos da ficha do Maps). Guardada em
+`assets/logo-accon.avif` e `assets/logo-accon.png`; capa do mesmo cadastro em
+`assets/capa-accon.avif` (foto de gnocchi, não usada).
+- Arte: "TUTTI" em serifada clássica estreita de alto contraste, em ouro, "CUCINA"
+  em sans geométrica espaçada, em branco, sobre verde-escuro com faixa de padrão
+  em linhas (massa/ondas) na base.
+- No demo: o logotipo foi extraído da arte (letras ouro e branco com fundo
+  transparente, 297 x 166 px, sem ampliar) em `site/assets/img/logo-tutti.png`,
+  usado no cabeçalho e no rodapé. Favicon: a arte quadrada em 128 px
+  (`site/assets/img/favicon.png`).
+- A paleta mudou em relação à primeira versão (que vinha do tijolo/madeira da
+  fachada): agora é a da logo.
 
-- Letreiro: "TUTTI" em serifada clássica estreita, de contraste moderado, preta,
-  sobre painel em arco verde-sálvia claro; "CUCINA" embaixo em caixa alta sem
-  serifa geométrica, bem espaçada (extraída da foto da fachada).
-- Fachada: tijolo escuro, painel de madeira avermelhada com porta em arco, toldos
-  creme com barra recortada, cortina verde-escura na porta (foto da fachada).
-- Guardanapo: "TUTTI" em azul-petróleo acinzentado, "CUCINA" em ocre e uma faixa
-  de ondas em verde-sálvia (foto 04, luz quente: cor aproximada).
+**Cores do demo:**
 
-**Cores do demo** (aproximadas, tiradas da foto da fachada sob sol; conferir com o
-cliente):
-
-| Hex | Papel no demo | De onde saiu |
+| Hex | Papel | Procedência |
 |---|---|---|
-| `#F6F1E7` | fundo principal (creme) | toldo creme, clareado (amostra `#D4C7AE` ao sol) |
-| `#EDE4D3` | fundo das seções alternadas | toldo creme, tom mais fundo |
-| `#4A3A31` | títulos e botão cheio (tijolo escuro) | tijolo da fachada (amostra `#826D60` ao sol, `#221812` na sombra) |
-| `#9B5034` | acento: filetes, rótulos, bordas (madeira avermelhada) | painel de madeira da porta (amostra `#934F37`) |
-| `#2B221D` | texto corrido | derivado do tijolo, para leitura |
-| `#231A15` | rodapé escuro | tijolo na sombra |
-| `#E6CFAE` | itálico de destaque sobre a foto do hero | toldo/madeira clara, só sobre fundo escuro |
+| `#082722` | verde-escuro: títulos, botões, cabeçalho rolado, rodapé | fundo da logo (amostra exata) |
+| `#BD8B4B` | ouro: estrelas das avaliações, detalhes sobre verde | letras "TUTTI" da logo |
+| `#8A5F25` | ouro escuro: rótulos e filetes sobre creme (contraste) | derivado do ouro da logo |
+| `#E3BF86` | ouro claro: destaque em itálico sobre a foto do hero | derivado do ouro |
+| `#F6F1E7` / `#EDE4D3` | fundos creme | toldo creme da fachada (clareado) |
+| `#23302C` | texto corrido | derivado do verde |
 
-Alternativa a confirmar: o guardanapo sugere que a identidade impressa da casa usa
-azul-petróleo + ocre + sálvia. Se o cliente mandar a logo em arquivo e for essa a
-paleta oficial, trocar o acento.
+**Tipografia** (pedida na revisão):
+- Títulos: **Bodoni Moda** 400 (aproxima a serifada de alto contraste do "TUTTI")
+- Corpo e rótulos: **Karla** 400/500
 
-**Tipografia** (aproximação no Google Fonts):
-- Títulos e marca: **Cormorant Garamond** 500/400 (aproxima a serifada clássica
-  estreita do letreiro "TUTTI")
-- Corpo, rótulos e "CUCINA": **Jost** 300/400/500 (sem serifa geométrica, como o
-  "CUCINA" do letreiro)
-
-**Logo:** não há arquivo. No demo, o nome é recriado em tipografia (TUTTI +
-CUCINA espaçado), sem ampliar foto de letreiro.
 **Cor proibida / o que nunca fazer:** não usar o dourado/azul-petróleo do template
-Elegencia; não usar o vermelho da loja vizinha (Caracol, que aparece na foto
+Elegencia (o ouro agora é o da logo, `#BD8B4B`); não usar o vermelho da loja vizinha (Caracol, que aparece na foto
 original da fachada); não mostrar a placa do carro nem os fios/concertina da foto
 da fachada (recorte já feito).
 
@@ -116,11 +110,12 @@ online).
 ## Avaliações (Maps)
 
 - Nota **4,6 com 452 avaliações** (Maps, lida em 25/10/2026)
-- Citável: "O cardápio oferece excelentes opções com frutos do mar e carnes
-  variadas… Pedi uma massa com camarão e estava maravilhosa!" (avaliação no
-  Google, cerca de 1 mês antes da leitura; nome do autor não anotado no dossiê,
-  então o demo cita sem nome)
-- As outras 2 da ficha são 3★ e críticas ao atendimento: não usar.
+- Citável: só 1 avaliação positiva existe entre as 3 coletadas (`det1.json` da
+  rodada): **Ana Santana, 5 estrelas, "um mês atrás"**. O carrossel usa o texto
+  completo (com corte `[...]`) e 3 trechos curtos da mesma avaliação, todos com
+  "Ana" e "avaliação no Google". Mais um cartão com a nota 4,6 e 452 avaliações.
+- As outras 2 (Thaís, 3★, carne dura; Tanyara, 5★ mas crítica ao atendimento) não
+  entram: negativas.
 
 ## Material recebido
 
@@ -142,13 +137,13 @@ Fotos do Maps (10), em `assets/maps/`:
 Também: `assets/cardapio-accon.txt` e `assets/about-accon.txt` (texto lido do
 sistema de pedidos em 26/10/2026).
 
-Falta: logo em arquivo, fotos do salão por dentro com boa luz, fotos da varanda à
+Falta: fotos do salão por dentro com boa luz, fotos da varanda à
 noite, confirmação de horário do salão e de como funciona a reserva.
 
 ## Demo
 
 - Template: `templates/sites/restaurante-elegencia/` na versão **clara**
-  (`personalizar.sh ... '#9B5034' 'Tutti Cucina' claro '#4A3A31'`) foi rodado como
+  (`personalizar.sh ... claro`, com cores provisórias da fachada, depois trocadas pelas da logo) foi rodado como
   ponto de partida (estrutura: hero, cardápio em lista, citação, horário, rodapé),
   mas o CSS e o JS do template (GSAP, ScrollSmoother, Swiper, jQuery) foram
   descartados para o arquivo único. A página final é própria, sobre
