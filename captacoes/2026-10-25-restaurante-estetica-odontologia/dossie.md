@@ -165,3 +165,23 @@ abaixo dizem sobre Instagram quando houver conflito.
 - **Oral Esthetics** (odontologia, Nova Parnamirim): 4,9 (54), site = só Instagram @clinicaoralesthetics, logo dourada na porta de vidro. Tem review 1★ recente.
 - Também passaram, sem detalhamento: Jardim Ponta Negra (é food park, não restaurante único), Kyoto Sushi Lounge (Tirol, 4,7/114, sem site), Restaurante Thin San (Tirol, 4,6/782, sem site), Revitalize Estética Avançada (Lagoa Nova, 4,8/32, sem site), Cofam (odonto, Barro Vermelho, 4,9/74, sem site).
 - **Descartado:** Lotus Japanese Fusion (o Linktree leva a cardápio digital próprio e delivery, presença já decente).
+
+---
+
+## Troca na aprovação (2026-10-26)
+
+Usuário aprovou todos e pediu pra trocar quem fosse necessário por negócio **sem site**.
+**Sai o nº 1, Ô Bar Ponta Negra** (rede com 134 mil seguidores, Linktree com cardápio, iFood e reservas; presença forte).
+**Entra o nº 11, Kyoto Sushi Lounge**, pra manter 4 restaurantes. Os outros 9 não têm site próprio e ficam.
+
+## 11. Kyoto Sushi Lounge
+
+**Nicho:** restaurante japonês (sushi, ramen). **Bairro / cidade:** Tirol / Natal
+**Contato:** +55 84 2136-9521 · Av. Alm. Alexandrino de Alencar, 1624 · ter 18–23; qua–sáb 11–15 e 18–23; dom 18–23; fecha segunda (Maps)
+**Por que é bom:** nota 4,7 com 114 avaliações, cozinha autoral (sashimi com caviar, tataki, ramen). Review de 4 meses atrás: "Se você procura um lugar onde pra comer o verdadeiro ramen japonês em Natal, esse restaurante é pra vc!". Outra review: "dos melhores de natal… ingredientes de qualidade e atenção a cada detalhe".
+**Gap verificável:** a ficha do Maps **não tem site, Instagram nem link nenhum**, só um telefone fixo. O cardápio só existe impresso (aparece em foto de cliente).
+**Instagram:** não encontrado (testados @kyotosushilounge, @kyotosushiloungenatal, @kyoto.natal e @kyotonatal: nenhum existe).
+**Identidade visual:** logo no letreiro luminoso da fachada e na capa do cardápio: "Kyoto / SUSHI · LOUNGE" com ícone de tigela em **laranja/coral**, sobre **azul-petróleo** `#367890` (capa do cardápio, com ilustração de folhagem). Salão escuro com madeira (`#14100F`, `#775844`). Referência tipográfica: sem serifa arredondada no "Kyoto". Cardápio em `assets/kyoto-sushi-lounge/logo-foto-maps.jpg`, fachada em `maps/01.jpg`.
+**Material disponível:** fotos Maps (13): fachada noturna com o letreiro, balcão de sushi, sashimis, niguiris com caviar, tataki, ramen, gyoza, capa do cardápio. Reviews citáveis: 3.
+**Demo recomendado:** `restaurante-grillino` (claro, um acento → coral, com petróleo de apoio) levado pro Luxury.
+**Risco:** volume de avaliações menor (114). Laranja exato a confirmar.
