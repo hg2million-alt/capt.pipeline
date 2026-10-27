@@ -89,20 +89,25 @@
     <!-- HERO: fachada real (foto do Google Maps), véu escuro -->
     <section class="hero escuro" aria-labelledby="titulo-hero">
       <div class="hero-fundo">
-        <img src="assets/img/fachada-noite.jpg" alt="Fachada da Clínica Cortez à noite, com a placa de mármore iluminada e a porta aberta para a recepção" fetchpriority="high" width="1200" height="1600">
+        <img src="assets/img/fachada-noite.jpg" alt="" fetchpriority="high" width="1200" height="1600">
       </div>
-      <div class="lx-container hero-entrada" id="conteudo">
-        <span class="lx-rotulo" style="--i:0">Ponta Negra · Natal</span>
-        <h1 id="titulo-hero" style="--i:1">Cuidado que começa <em>na recepção</em></h1>
-        <p style="--i:2">Odontologia especializada na R. Cabo de São Roque. Consulta marcada pelo WhatsApp, de segunda a sábado.</p>
-        <div class="hero-acoes" style="--i:3">
-          <a class="btn-luxo" href="https://wa.me/5584998565210?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20consulta%20na%20Cl%C3%ADnica%20Cortez.">Agendar pelo WhatsApp</a>
-          <a class="btn-luxo btn-luxo--linha" href="#clinica">Conhecer a clínica</a>
+      <div class="lx-container hero-grade" id="conteudo">
+        <div class="hero-entrada">
+          <span class="lx-rotulo" style="--i:0">Ponta Negra · Natal</span>
+          <h1 id="titulo-hero" style="--i:1">Cuidado que começa <em>na recepção</em></h1>
+          <p style="--i:2">Odontologia especializada na R. Cabo de São Roque. Consulta marcada pelo WhatsApp, de segunda a sábado.</p>
+          <div class="hero-acoes" style="--i:3">
+            <a class="btn-luxo" href="https://wa.me/5584998565210?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20consulta%20na%20Cl%C3%ADnica%20Cortez.">Agendar pelo WhatsApp</a>
+            <a class="btn-luxo btn-luxo--linha" href="#clinica">Conhecer a clínica</a>
+          </div>
+          <div class="hero-nota" style="--i:4">
+            <span class="estrelas" aria-hidden="true">★★★★★</span>
+            <span>5,0 · 63 avaliações no Google</span>
+          </div>
         </div>
-        <div class="hero-nota" style="--i:4">
-          <span class="estrelas" aria-hidden="true">★★★★★</span>
-          <span>5,0 · 63 avaliações no Google</span>
-        </div>
+        <figure class="hero-foto">
+          <img src="assets/img/fachada-noite.jpg" alt="Fachada da Clínica Cortez à noite, com a placa de mármore iluminada e a porta aberta para a recepção" width="1200" height="1600">
+        </figure>
       </div>
     </section>
 
@@ -183,11 +188,14 @@
 
     <!-- COMO AGENDAR (escuro) -->
     <section id="agendar" class="lx-secao escuro" aria-labelledby="titulo-agendar">
-      <div class="lx-container">
-        <div class="cabeca-secao">
-          <div>
-            <span class="lx-rotulo" data-anim="fade">Como agendar</span>
-            <h2 id="titulo-agendar" data-anim="rise3d">Três passos até <em>a sua consulta</em></h2>
+      <div class="lx-container agendar-grade">
+        <div class="agendar-texto">
+          <span class="lx-rotulo" data-anim="fade">Como agendar</span>
+          <h2 id="titulo-agendar" data-anim="rise3d">Três passos até <em>a sua consulta</em></h2>
+          <p class="agendar-lead" data-anim="fade">A conversa começa no WhatsApp da clínica, no mesmo número da ficha do Google.</p>
+          <div class="agendar-acao" data-anim="fade">
+            <a class="btn-luxo" href="https://wa.me/5584998565210?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20consulta%20na%20Cl%C3%ADnica%20Cortez.">Agendar pelo WhatsApp</a>
+            <a class="btn-luxo btn-luxo--linha" href="tel:+5584998565210">Ligar · +55 84 99856-5210</a>
           </div>
         </div>
         <ol class="passos" data-stagger="3d">
@@ -207,21 +215,21 @@
             <p>R. Cabo de São Roque, 8825B. A placa de mármore na fachada indica a entrada.</p>
           </li>
         </ol>
-        <div class="agendar-acao" data-anim="fade">
-          <a class="btn-luxo" href="https://wa.me/5584998565210?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20consulta%20na%20Cl%C3%ADnica%20Cortez.">Agendar pelo WhatsApp</a>
-          <a class="btn-luxo btn-luxo--linha" href="tel:+5584998565210">Ligar · +55 84 99856-5210</a>
-        </div>
       </div>
     </section>
 
     <!-- AVALIAÇÕES REAIS DO GOOGLE -->
     <section id="avaliacoes" class="lx-secao" aria-labelledby="titulo-aval">
       <div class="lx-container">
-        <span class="lx-rotulo" data-anim="fade">Avaliações no Google</span>
-        <h2 id="titulo-aval" data-anim="rise3d" style="margin-top:22px;max-width:16ch">O que os pacientes <em>contam</em></h2>
-        <div class="nota-google" data-anim="fade">
-          <strong>5,0</strong>
-          <div><span class="estrelas" aria-hidden="true">★★★★★</span><span>63 avaliações no Google Maps</span></div>
+        <div class="aval-cabeca">
+          <div>
+            <span class="lx-rotulo" data-anim="fade">Avaliações no Google</span>
+            <h2 id="titulo-aval" data-anim="rise3d" style="margin-top:22px;max-width:16ch">O que os pacientes <em>contam</em></h2>
+          </div>
+          <div class="nota-google" data-anim="fade">
+            <strong>5,0</strong>
+            <div><span class="estrelas" aria-hidden="true">★★★★★</span><span>63 avaliações no Google Maps</span></div>
+          </div>
         </div>
 
         <div class="rev-faixa" role="region" aria-label="Avaliações de pacientes no Google">
@@ -335,21 +343,25 @@
           <small>Odontologia Especializada</small>
         </div>
         <div>
-          <h4>Endereço</h4>
+          <h4>Endereço e contato</h4>
           <p>R. Cabo de São Roque, 8825B<br>Ponta Negra, Natal/RN</p>
-        </div>
-        <div>
-          <h4>Contato</h4>
           <a href="https://wa.me/5584998565210?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20consulta%20na%20Cl%C3%ADnica%20Cortez.">WhatsApp +55 84 99856-5210</a>
           <a href="tel:+5584998565210">Ligar</a>
         </div>
         <div>
-          <h4>Responsável técnico</h4>
-          <p>Nome e CRO-RN <span class="a-confirmar">a confirmar</span></p>
+          <h4>Horário</h4>
+          <p>Segunda a quarta: 8h às 18h30<br>Quinta: 8h às 12h · 13h às 19h<br>Sexta: 8h às 12h · 13h às 18h30<br>Sábado: 8h às 12h</p>
+        </div>
+        <div>
+          <h4>Seções</h4>
+          <a href="#clinica">A clínica</a>
+          <a href="#tratamentos">Tratamentos</a>
+          <a href="#avaliacoes">Avaliações</a>
+          <a href="#contato">Visite</a>
         </div>
       </div>
       <div class="rodape-base">
-        <span>© 2026 Clínica Cortez · Ponta Negra, Natal/RN</span>
+        <span>© 2026 Clínica Cortez · Responsável técnico e CRO-RN <span class="a-confirmar">a confirmar</span></span>
         <span>Demonstração de site. Itens marcados “a confirmar” dependem da clínica.</span>
       </div>
     </div>

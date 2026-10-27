@@ -48,7 +48,10 @@
     <!-- HERO: foto real do salão (Google Maps) + véu escuro -->
     <section class="hero" aria-label="Apresentação">
       <div class="hero-fundo">
-        <img src="assets/img/hero-espaco.jpg" alt="Sala de espera da Juliane Alves Clinic, com poltrona de vime e árvore de folhas laranja" fetchpriority="high">
+        <picture>
+          <source media="(min-width: 900px)" srcset="assets/img/hero-largo.jpg">
+          <img src="assets/img/hero-espaco.jpg" alt="Sala de espera da Juliane Alves Clinic, com poltrona de vime e árvore de folhas laranja" fetchpriority="high">
+        </picture>
       </div>
       <div class="lx-container hero-entrada">
         <span class="lx-rotulo" style="--i:0">Estética avançada · Petrópolis, Natal</span>
@@ -63,6 +66,11 @@
           <span>5,0 no Google · 157 avaliações</span>
         </div>
       </div>
+      <aside class="hero-card" aria-label="Nota no Google e horário">
+        <div class="hero-card-nota"><strong>5,0</strong><span class="estrelas" aria-hidden="true">★★★★★</span></div>
+        <p>157 avaliações no Google</p>
+        <p class="hero-card-hora">Terça a sexta, 9h às 18h<br>Sábado, 9h às 14h</p>
+      </aside>
     </section>
 
     <!-- A CLÍNICA -->
@@ -97,16 +105,16 @@
 
         <div class="proc-grupos">
           <div>
-            <h3 class="proc-grupo-titulo">Olhos</h3>
+            <h3 class="proc-grupo-titulo">Olhos e pigmentação</h3>
             <ul class="proc-lista" data-stagger="3d">
               <li><a class="proc-item" href="#agendar" data-proc="Sobrancelhas"><span class="proc-num">01</span><span class="proc-nome">Sobrancelhas</span><span class="proc-acao">Agendar →</span><span class="proc-desc">Design, Brow Lamination e Unic Fios</span></a></li>
               <li><a class="proc-item" href="#agendar" data-proc="Cílios"><span class="proc-num">02</span><span class="proc-nome">Cílios</span><span class="proc-acao">Agendar →</span><span class="proc-desc">Lifting de Cílios Coreano e Unic Lifting</span></a></li>
+              <li><a class="proc-item" href="#agendar" data-proc="Nanopigmentação"><span class="proc-num">03</span><span class="proc-nome">Nanopigmentação</span><span class="proc-acao">Agendar →</span></a></li>
             </ul>
           </div>
           <div>
             <h3 class="proc-grupo-titulo">Rosto, lábios e corpo</h3>
             <ul class="proc-lista" data-stagger="3d">
-              <li><a class="proc-item" href="#agendar" data-proc="Nanopigmentação"><span class="proc-num">03</span><span class="proc-nome">Nanopigmentação</span><span class="proc-acao">Agendar →</span></a></li>
               <li><a class="proc-item" href="#agendar" data-proc="Harmonização facial"><span class="proc-num">04</span><span class="proc-nome">Harmonização facial</span><span class="proc-acao">Agendar →</span></a></li>
               <li><a class="proc-item" href="#agendar" data-proc="Exossomos"><span class="proc-num">05</span><span class="proc-nome">Exossomos</span><span class="proc-acao">Agendar →</span></a></li>
               <li><a class="proc-item" href="#agendar" data-proc="Estética facial e corporal"><span class="proc-num">06</span><span class="proc-nome">Estética facial e corporal</span><span class="proc-acao">Agendar →</span></a></li>
@@ -120,20 +128,20 @@
 
     <!-- ASSINATURAS DA CASA -->
     <section id="assinaturas" class="lx-secao lx-secao--alt">
-      <div class="lx-container">
-        <span class="lx-rotulo">Assinaturas da casa</span>
-        <h2 data-anim="rise3d" style="margin-top:22px;max-width:16ch">As técnicas com o nome <em>Unic</em></h2>
+      <div class="lx-container assin-layout">
+        <div class="assin-texto">
+          <span class="lx-rotulo">Assinaturas da casa</span>
+          <h2 data-anim="rise3d">As técnicas com o nome <em>Unic</em></h2>
+          <p class="lx-texto-suave" data-anim="fade">As duas técnicas que levam o nome da casa aparecem nos posts do Instagram da clínica: uma para as sobrancelhas, outra para os cílios.</p>
+          <a class="btn-luxo btn-luxo--linha" data-anim="fade" href="#agendar">Agendar</a>
+        </div>
         <div class="assin-grade" data-stagger="3d">
           <article class="assin">
-            <span class="lx-num">I</span>
-            <h3>Unic Fios</h3>
-            <span class="assin-area">Sobrancelhas</span>
+            <div class="assin-cab"><span class="lx-num">I</span><h3>Unic Fios</h3><span class="assin-area">Sobrancelhas</span></div>
             <p>Técnica da casa pra sobrancelhas, trabalhada em fios delicados.</p>
           </article>
           <article class="assin">
-            <span class="lx-num">II</span>
-            <h3>Unic Lifting</h3>
-            <span class="assin-area">Cílios</span>
+            <div class="assin-cab"><span class="lx-num">II</span><h3>Unic Lifting</h3><span class="assin-area">Cílios</span></div>
             <p>Lifting que curva e realinha os próprios cílios, sem extensão.</p>
           </article>
         </div>
@@ -188,7 +196,7 @@
         </div>
       </div>
       <div class="rev-faixa" role="region" aria-label="Avaliações de clientes no Google">
-        <div class="rev-trilha"><figure class="rev-card"><span class="rev-estrelas" aria-label="5 estrelas">★★★★★</span><blockquote>“Excelente qualidade no serviço. Atendimento impecável, organização desde a marcação dos serviços, sempre sou muito bem recepcionada. […] Recomendo!”</blockquote><figcaption><strong>Camila</strong><span>Avaliação no Google · 4 meses atrás</span></figcaption></figure><figure class="rev-card"><span class="rev-estrelas" aria-label="5 estrelas">★★★★★</span><blockquote>“Ju é a melhor de Natal. Espaço lindo, aconchegante, com profissionais de excelência. Sou cliente há muitos anos […] Recomendo.”</blockquote><figcaption><strong>Romena</strong><span>Avaliação no Google · um ano atrás</span></figcaption></figure><figure class="rev-card"><span class="rev-estrelas" aria-label="5 estrelas">★★★★★</span><blockquote>“Melhor lugar de autocuidado e estética da cidade. Compromisso com o horário, atendimento muito bom, nunca me deixam na mão. Mesmo morando fora da cidade faço questão que só elas façam minha sobrancelha […]”</blockquote><figcaption><strong>Laura</strong><span>Avaliação no Google · 2 anos atrás</span></figcaption></figure><figure class="rev-card" aria-hidden="true"><span class="rev-estrelas" aria-label="5 estrelas">★★★★★</span><blockquote>“Excelente qualidade no serviço. Atendimento impecável, organização desde a marcação dos serviços, sempre sou muito bem recepcionada. […] Recomendo!”</blockquote><figcaption><strong>Camila</strong><span>Avaliação no Google · 4 meses atrás</span></figcaption></figure><figure class="rev-card" aria-hidden="true"><span class="rev-estrelas" aria-label="5 estrelas">★★★★★</span><blockquote>“Ju é a melhor de Natal. Espaço lindo, aconchegante, com profissionais de excelência. Sou cliente há muitos anos […] Recomendo.”</blockquote><figcaption><strong>Romena</strong><span>Avaliação no Google · um ano atrás</span></figcaption></figure><figure class="rev-card" aria-hidden="true"><span class="rev-estrelas" aria-label="5 estrelas">★★★★★</span><blockquote>“Melhor lugar de autocuidado e estética da cidade. Compromisso com o horário, atendimento muito bom, nunca me deixam na mão. Mesmo morando fora da cidade faço questão que só elas façam minha sobrancelha […]”</blockquote><figcaption><strong>Laura</strong><span>Avaliação no Google · 2 anos atrás</span></figcaption></figure><figure class="rev-card" aria-hidden="true"><span class="rev-estrelas" aria-label="5 estrelas">★★★★★</span><blockquote>“Excelente qualidade no serviço. Atendimento impecável, organização desde a marcação dos serviços, sempre sou muito bem recepcionada. […] Recomendo!”</blockquote><figcaption><strong>Camila</strong><span>Avaliação no Google · 4 meses atrás</span></figcaption></figure><figure class="rev-card" aria-hidden="true"><span class="rev-estrelas" aria-label="5 estrelas">★★★★★</span><blockquote>“Ju é a melhor de Natal. Espaço lindo, aconchegante, com profissionais de excelência. Sou cliente há muitos anos […] Recomendo.”</blockquote><figcaption><strong>Romena</strong><span>Avaliação no Google · um ano atrás</span></figcaption></figure><figure class="rev-card" aria-hidden="true"><span class="rev-estrelas" aria-label="5 estrelas">★★★★★</span><blockquote>“Melhor lugar de autocuidado e estética da cidade. Compromisso com o horário, atendimento muito bom, nunca me deixam na mão. Mesmo morando fora da cidade faço questão que só elas façam minha sobrancelha […]”</blockquote><figcaption><strong>Laura</strong><span>Avaliação no Google · 2 anos atrás</span></figcaption></figure><figure class="rev-card" aria-hidden="true"><span class="rev-estrelas" aria-label="5 estrelas">★★★★★</span><blockquote>“Excelente qualidade no serviço. Atendimento impecável, organização desde a marcação dos serviços, sempre sou muito bem recepcionada. […] Recomendo!”</blockquote><figcaption><strong>Camila</strong><span>Avaliação no Google · 4 meses atrás</span></figcaption></figure><figure class="rev-card" aria-hidden="true"><span class="rev-estrelas" aria-label="5 estrelas">★★★★★</span><blockquote>“Ju é a melhor de Natal. Espaço lindo, aconchegante, com profissionais de excelência. Sou cliente há muitos anos […] Recomendo.”</blockquote><figcaption><strong>Romena</strong><span>Avaliação no Google · um ano atrás</span></figcaption></figure><figure class="rev-card" aria-hidden="true"><span class="rev-estrelas" aria-label="5 estrelas">★★★★★</span><blockquote>“Melhor lugar de autocuidado e estética da cidade. Compromisso com o horário, atendimento muito bom, nunca me deixam na mão. Mesmo morando fora da cidade faço questão que só elas façam minha sobrancelha […]”</blockquote><figcaption><strong>Laura</strong><span>Avaliação no Google · 2 anos atrás</span></figcaption></figure></div>
+        <div class="rev-trilha"><figure class="rev-card"><span class="rev-estrelas" aria-label="5 estrelas">★★★★★</span><blockquote>“Excelente qualidade no serviço. Atendimento impecável, organização desde a marcação dos serviços, sempre sou muito bem recepcionada. […] Recomendo!”</blockquote><figcaption><strong>Camila</strong><span>Avaliação no Google · 4 meses atrás</span></figcaption></figure><figure class="rev-card"><span class="rev-estrelas" aria-label="5 estrelas">★★★★★</span><blockquote>“Ju é a melhor de Natal. Espaço lindo, aconchegante, com profissionais de excelência. Sou cliente há muitos anos […] Recomendo.”</blockquote><figcaption><strong>Romena</strong><span>Avaliação no Google · um ano atrás</span></figcaption></figure><figure class="rev-card"><span class="rev-estrelas" aria-label="5 estrelas">★★★★★</span><blockquote>“Melhor lugar de autocuidado e estética da cidade. Compromisso com o horário, atendimento muito bom, nunca me deixam na mão. Mesmo morando fora da cidade faço questão que só elas façam minha sobrancelha […]”</blockquote><figcaption><strong>Laura</strong><span>Avaliação no Google · 2 anos atrás</span></figcaption></figure><a class="rev-card rev-card--link" href="https://www.google.com/maps/search/?api=1&amp;query=Juliane%20Alves%20Clinic%20Av.%20Hermes%20da%20Fonseca%20390%20Natal" target="_blank" rel="noopener"><span class="rev-estrelas" aria-hidden="true">★★★★★</span><strong class="rev-nota">5,0</strong><span class="rev-sub">157 avaliações no Google Maps</span><span class="rev-cta">Ver todas →</span></a><figure class="rev-card" aria-hidden="true"><span class="rev-estrelas" aria-label="5 estrelas">★★★★★</span><blockquote>“Excelente qualidade no serviço. Atendimento impecável, organização desde a marcação dos serviços, sempre sou muito bem recepcionada. […] Recomendo!”</blockquote><figcaption><strong>Camila</strong><span>Avaliação no Google · 4 meses atrás</span></figcaption></figure><figure class="rev-card" aria-hidden="true"><span class="rev-estrelas" aria-label="5 estrelas">★★★★★</span><blockquote>“Ju é a melhor de Natal. Espaço lindo, aconchegante, com profissionais de excelência. Sou cliente há muitos anos […] Recomendo.”</blockquote><figcaption><strong>Romena</strong><span>Avaliação no Google · um ano atrás</span></figcaption></figure><figure class="rev-card" aria-hidden="true"><span class="rev-estrelas" aria-label="5 estrelas">★★★★★</span><blockquote>“Melhor lugar de autocuidado e estética da cidade. Compromisso com o horário, atendimento muito bom, nunca me deixam na mão. Mesmo morando fora da cidade faço questão que só elas façam minha sobrancelha […]”</blockquote><figcaption><strong>Laura</strong><span>Avaliação no Google · 2 anos atrás</span></figcaption></figure><a class="rev-card rev-card--link" href="https://www.google.com/maps/search/?api=1&amp;query=Juliane%20Alves%20Clinic%20Av.%20Hermes%20da%20Fonseca%20390%20Natal" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><span class="rev-estrelas" aria-hidden="true">★★★★★</span><strong class="rev-nota">5,0</strong><span class="rev-sub">157 avaliações no Google Maps</span><span class="rev-cta">Ver todas →</span></a><figure class="rev-card" aria-hidden="true"><span class="rev-estrelas" aria-label="5 estrelas">★★★★★</span><blockquote>“Excelente qualidade no serviço. Atendimento impecável, organização desde a marcação dos serviços, sempre sou muito bem recepcionada. […] Recomendo!”</blockquote><figcaption><strong>Camila</strong><span>Avaliação no Google · 4 meses atrás</span></figcaption></figure><figure class="rev-card" aria-hidden="true"><span class="rev-estrelas" aria-label="5 estrelas">★★★★★</span><blockquote>“Ju é a melhor de Natal. Espaço lindo, aconchegante, com profissionais de excelência. Sou cliente há muitos anos […] Recomendo.”</blockquote><figcaption><strong>Romena</strong><span>Avaliação no Google · um ano atrás</span></figcaption></figure><figure class="rev-card" aria-hidden="true"><span class="rev-estrelas" aria-label="5 estrelas">★★★★★</span><blockquote>“Melhor lugar de autocuidado e estética da cidade. Compromisso com o horário, atendimento muito bom, nunca me deixam na mão. Mesmo morando fora da cidade faço questão que só elas façam minha sobrancelha […]”</blockquote><figcaption><strong>Laura</strong><span>Avaliação no Google · 2 anos atrás</span></figcaption></figure><a class="rev-card rev-card--link" href="https://www.google.com/maps/search/?api=1&amp;query=Juliane%20Alves%20Clinic%20Av.%20Hermes%20da%20Fonseca%20390%20Natal" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><span class="rev-estrelas" aria-hidden="true">★★★★★</span><strong class="rev-nota">5,0</strong><span class="rev-sub">157 avaliações no Google Maps</span><span class="rev-cta">Ver todas →</span></a><figure class="rev-card" aria-hidden="true"><span class="rev-estrelas" aria-label="5 estrelas">★★★★★</span><blockquote>“Excelente qualidade no serviço. Atendimento impecável, organização desde a marcação dos serviços, sempre sou muito bem recepcionada. […] Recomendo!”</blockquote><figcaption><strong>Camila</strong><span>Avaliação no Google · 4 meses atrás</span></figcaption></figure><figure class="rev-card" aria-hidden="true"><span class="rev-estrelas" aria-label="5 estrelas">★★★★★</span><blockquote>“Ju é a melhor de Natal. Espaço lindo, aconchegante, com profissionais de excelência. Sou cliente há muitos anos […] Recomendo.”</blockquote><figcaption><strong>Romena</strong><span>Avaliação no Google · um ano atrás</span></figcaption></figure><figure class="rev-card" aria-hidden="true"><span class="rev-estrelas" aria-label="5 estrelas">★★★★★</span><blockquote>“Melhor lugar de autocuidado e estética da cidade. Compromisso com o horário, atendimento muito bom, nunca me deixam na mão. Mesmo morando fora da cidade faço questão que só elas façam minha sobrancelha […]”</blockquote><figcaption><strong>Laura</strong><span>Avaliação no Google · 2 anos atrás</span></figcaption></figure><a class="rev-card rev-card--link" href="https://www.google.com/maps/search/?api=1&amp;query=Juliane%20Alves%20Clinic%20Av.%20Hermes%20da%20Fonseca%20390%20Natal" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><span class="rev-estrelas" aria-hidden="true">★★★★★</span><strong class="rev-nota">5,0</strong><span class="rev-sub">157 avaliações no Google Maps</span><span class="rev-cta">Ver todas →</span></a></div>
       </div>
       <p class="rev-link"><a class="link-sutil" href="https://www.google.com/maps/search/?api=1&amp;query=Juliane%20Alves%20Clinic%20Av.%20Hermes%20da%20Fonseca%20390%20Natal" target="_blank" rel="noopener">Ver todas as avaliações no Google</a></p>
     </section>
@@ -202,7 +210,7 @@
           <p class="lx-texto-suave">A mensagem já sai pronta pro WhatsApp da clínica. O horário é confirmado por lá.</p>
 
           <form class="form-agenda" id="form-agenda" action="https://wa.me/5584998131962" method="get">
-            <div class="campo">
+            <div class="campo c-proc">
               <label for="f-proc">Procedimento</label>
               <select id="f-proc" name="proc">
                 <option>Sobrancelhas</option>
@@ -217,7 +225,7 @@
               </select>
             </div>
             <div class="linha2">
-              <div class="campo">
+              <div class="campo c-dia">
                 <label for="f-dia">Dia de preferência</label>
                 <select id="f-dia" name="dia">
                   <option>Tanto faz</option>
@@ -228,7 +236,7 @@
                   <option>Sábado</option>
                 </select>
               </div>
-              <div class="campo">
+              <div class="campo c-per">
                 <label for="f-periodo">Período</label>
                 <select id="f-periodo" name="periodo">
                   <option>Tanto faz</option>
@@ -237,7 +245,7 @@
                 </select>
               </div>
             </div>
-            <div class="campo">
+            <div class="campo c-nome">
               <label for="f-nome">Seu nome</label>
               <input id="f-nome" name="nome" type="text" autocomplete="given-name" placeholder="Como podemos te chamar?">
             </div>
@@ -253,6 +261,10 @@
             <li><span class="rot">Horário</span>Terça a sexta, 9h às 18h<br>Sábado, 9h às 14h</li>
             <li><span class="rot">Instagram</span><a href="https://www.instagram.com/julianealves.clinic/" target="_blank" rel="noopener">@julianealves.clinic</a></li>
           </ul>
+          <div class="mapa" data-anim="fade">
+            <iframe title="Mapa: Juliane Alves Clinic, Av. Hermes da Fonseca, 390, Natal" src="https://www.google.com/maps?q=Av.+Hermes+da+Fonseca,+390,+Natal,+RN&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <span class="mapa-fallback">O mapa carrega com internet. Use o botão Como chegar.</span>
+          </div>
           <div class="contato-acoes">
             <a class="btn-luxo" href="https://wa.me/5584998131962?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Juliane%20Alves%20Clinic.">Falar no WhatsApp</a>
             <a class="btn-luxo btn-luxo--linha" href="https://www.google.com/maps/search/?api=1&amp;query=Juliane%20Alves%20Clinic%20Av.%20Hermes%20da%20Fonseca%20390%20Natal" target="_blank" rel="noopener">Como chegar</a>
@@ -264,9 +276,33 @@
 
   <footer class="lx-rodape">
     <div class="lx-container">
-      <div class="rodape-grade">
-        <img src="assets/img/logo-juliane-alves.png" alt="Juliane Alves Clinic" width="800" height="124" loading="lazy">
-        <p>Estética avançada · Petrópolis, Natal/RN</p>
+      <div class="rodape-colunas">
+        <div class="rod-marca">
+          <img src="assets/img/logo-juliane-alves.png" alt="Juliane Alves Clinic" width="800" height="124" loading="lazy">
+          <p>Estética avançada em Petrópolis, Natal/RN.</p>
+        </div>
+        <div>
+          <h4 class="rod-t">Contato</h4>
+          <p><a href="https://wa.me/5584998131962">+55 84 99813-1962</a></p>
+          <p><a href="https://www.instagram.com/julianealves.clinic/" target="_blank" rel="noopener">@julianealves.clinic</a></p>
+        </div>
+        <div>
+          <h4 class="rod-t">Horário</h4>
+          <p>Terça a sexta, 9h às 18h</p>
+          <p>Sábado, 9h às 14h</p>
+        </div>
+        <div>
+          <h4 class="rod-t">Endereço</h4>
+          <p>Av. Hermes da Fonseca, 390, loja 03</p>
+          <p>Galeria Jardins Petrópolis, Natal/RN</p>
+        </div>
+        <nav aria-label="Rodapé">
+          <h4 class="rod-t">Seções</h4>
+          <p><a href="#procedimentos">Procedimentos</a></p>
+          <p><a href="#espaco">O espaço</a></p>
+          <p><a href="#avaliacoes">Avaliações</a></p>
+          <p><a href="#agendar">Agendar</a></p>
+        </nav>
       </div>
       <p class="rodape-demo">Prévia de demonstração do site. Valores e detalhes dos procedimentos a confirmar com a clínica.</p>
     </div>

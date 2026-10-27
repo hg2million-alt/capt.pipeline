@@ -66,6 +66,7 @@
         <a href="#agendar">Agendar</a>
         <a href="#contato">Contato</a>
       </nav>
+      <a class="btn-luxo header-cta" href="#agendar">Agendar</a>
       <details class="menu-movel">
         <summary aria-label="Abrir menu">Menu <i aria-hidden="true"></i></summary>
         <nav aria-label="Seções">
@@ -84,19 +85,25 @@
     <section class="hero">
       <div class="hero-fundo">
         <picture>
-          <source media="(min-width: 820px)" srcset="assets/img/fachada-larga.jpg">
-          <img src="assets/img/fachada-retrato.jpg" alt="Fachada verde da Depilla em Capim Macio, com a logo no letreiro, a porta de madeira e vagas na frente" fetchpriority="high">
+          <source media="(min-width: 1024px)" srcset="assets/img/fachada-larga.jpg">
+          <img src="assets/img/fachada-retrato.jpg" alt="" fetchpriority="high">
         </picture>
       </div>
-      <div class="lx-container hero-entrada" id="conteudo">
-        <span class="lx-rotulo" style="--i:0">Capim Macio · Natal</span>
-        <h1 style="--i:1">Depilação a laser, <em>desde 2006</em></h1>
-        <p style="--i:2">Casa própria em Capim Macio, com vagas na frente. Veja o que a Depilla faz e agende pelo WhatsApp, de segunda a sábado.</p>
-        <div class="hero-acoes" style="--i:3">
-          <a class="btn-luxo" href="https://wa.me/5584987865505?text=Ol%C3%A1%2C%20Depilla!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio.">Agendar pelo WhatsApp</a>
-          <a class="btn-luxo btn-luxo--linha" href="#servicos">Ver serviços</a>
+      <div class="lx-container hero-grade">
+        <div class="hero-entrada" id="conteudo">
+          <span class="lx-rotulo" style="--i:0">Capim Macio · Natal</span>
+          <h1 style="--i:1">Depilação a laser, <em>desde 2006</em></h1>
+          <p style="--i:2">Casa própria em Capim Macio, com vagas na frente. Veja o que a Depilla faz e agende pelo WhatsApp, de segunda a sábado.</p>
+          <div class="hero-acoes" style="--i:3">
+            <a class="btn-luxo" href="https://wa.me/5584987865505?text=Ol%C3%A1%2C%20Depilla!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio.">Agendar pelo WhatsApp</a>
+            <a class="btn-luxo btn-luxo--linha" href="#servicos">Ver serviços</a>
+          </div>
+          <small class="hero-credito" style="--i:4">Foto: fachada da Depilla no Google Maps</small>
         </div>
-        <small class="hero-credito" style="--i:4">Foto: fachada da Depilla no Google Maps</small>
+        <figure class="hero-foto" aria-label="Fachada da Depilla">
+          <img src="assets/img/fachada-larga.jpg" alt="Fachada verde da Depilla em Capim Macio, com a logo no letreiro, a porta de madeira e vagas na frente" width="1000" height="650">
+          <figcaption><strong>4,7</strong> no Google · 253 avaliações</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -141,7 +148,7 @@
           </div>
           <p class="lx-texto-suave">Valores e áreas entram quando a clínica confirmar. Aqui só entra o que já é público.</p>
         </div>
-        <div class="lx-grid" data-stagger="3d">
+        <div class="lx-grid dp-servicos" data-stagger="3d">
           <article class="lx-card hover-elevado" tabindex="0">
             <span class="lx-num">01</span>
             <h3>Depilação a laser</h3>
@@ -234,7 +241,7 @@
               <label><input type="radio" name="periodo" value="sábado"><span>Sábado</span></label>
             </div>
           </fieldset>
-          <div class="dp-campo">
+          <div class="dp-campo dp-campo--full">
             <label for="ag-obs">Observação (opcional)</label>
             <textarea id="ag-obs" name="text" placeholder="Ex.: área de interesse, dúvida, primeira vez…"></textarea>
           </div>
@@ -271,12 +278,27 @@
 
   <footer class="lx-rodape">
     <div class="lx-container dp-rodape">
-      <a class="dp-marca" href="#topo" aria-label="Depilla, voltar ao topo">
-        <img src="assets/img/simbolo.png" alt="" width="34" height="34">
-        <span>Depilla<small>Depilação e medicina estética</small></span>
-      </a>
-      <p>Capim Macio, Natal/RN · desde 2006.<br>Demonstração: prévia de site montada com informações públicas do Google Maps. Os itens marcados “a confirmar” dependem da clínica.</p>
+      <div class="dp-rod-marca">
+        <a class="dp-marca" href="#topo" aria-label="Depilla, voltar ao topo">
+          <img src="assets/img/simbolo.png" alt="" width="34" height="34">
+          <span>Depilla<small>Depilação e medicina estética</small></span>
+        </a>
+        <p>Capim Macio, Natal/RN · desde 2006.</p>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <p>R. Leôncio Etelvino de Medeiros, 2831<br>Capim Macio, Natal/RN<br><a href="https://wa.me/5584987865505">+55 84 98786-5505</a><br><a href="https://www.instagram.com/depillarn/" target="_blank" rel="noopener">@depillarn</a></p>
+      </div>
+      <div>
+        <h3>Horário</h3>
+        <p>Segunda a sexta: 8h às 19h<br>Sábado: 8h às 18h<br>Domingo: fechado</p>
+      </div>
+      <div>
+        <h3>Na página</h3>
+        <p><a href="#casa">A casa</a><br><a href="#servicos">Serviços</a><br><a href="#avaliacoes">Avaliações</a><br><a href="#agendar">Agendar</a></p>
+      </div>
     </div>
+    <div class="lx-container dp-rod-nota">Demonstração: prévia de site montada com informações públicas do Google Maps e do Instagram. Os itens marcados “a confirmar” dependem da clínica.</div>
   </footer>
 
   <div class="wa-flutuante" data-depois=".hero" data-some-em="#fim">

@@ -76,7 +76,8 @@
       <div class="hero-fundo">
         <img src="assets/img/hero-fachada.jpg" alt="Fachada do Kyoto Sushi Lounge à noite, com o letreiro iluminado e as treliças de madeira" fetchpriority="high">
       </div>
-      <div class="lx-container hero-entrada" id="conteudo">
+      <div class="lx-container hero-grid">
+      <div class="hero-entrada" id="conteudo">
         <span class="lx-rotulo" style="--i:0">Tirol · Natal</span>
         <h1 style="--i:1">Do balcão de sushi ao <em>ramen</em></h1>
         <p style="--i:2">Sashimi, niguiri com caviar, tataki, gyoza e ramen, num lounge japonês na Alexandrino de Alencar.</p>
@@ -89,6 +90,10 @@
           <li>Terça a domingo</li>
         </ul>
       </div>
+      <figure class="hero-quadro" aria-hidden="true">
+        <img src="assets/img/hero-fachada.jpg" alt="" width="1125" height="2000">
+      </figure>
+    </div>
     </section>
 
     <!-- A CASA (estrutura "about + contadores" do Grillino) -->
@@ -203,6 +208,16 @@
             <figure class="cartao-aval"><div><div class="estrelas" aria-label="5 estrelas">★★★★★</div><blockquote>“Destaque para o Ramen feito artesanalmente.”</blockquote></div><figcaption><b>Reuel</b>Avaliação no Google · há 4 meses</figcaption></figure>
           </div>
         </div>
+        <div class="marquee fileira-2" data-sentido="direita" aria-hidden="true">
+          <div class="marquee-trilha">
+            <figure class="cartao-aval"><div><div class="estrelas" aria-label="5 estrelas">★★★★★</div><blockquote>“Equipe educada e atenciosa […] ingredientes de qualidade e atenção a cada detalhe.”</blockquote></div><figcaption><b>Reuel</b>Avaliação no Google · há 4 meses</figcaption></figure>
+            <figure class="cartao-aval"><div><div class="estrelas" aria-label="5 estrelas">★★★★★</div><blockquote>“O prato chegou quentinho e delicioso, fora q o macarrão é de fabricação própria deles.”</blockquote></div><figcaption><b>Iwawa</b>Avaliação no Google · há 5 meses</figcaption></figure>
+            <figure class="cartao-aval"><div><div class="estrelas" aria-label="5 estrelas">★★★★★</div><blockquote>“Destaque para o Ramen feito artesanalmente.”</blockquote></div><figcaption><b>Reuel</b>Avaliação no Google · há 4 meses</figcaption></figure>
+            <figure class="cartao-aval"><div><div class="estrelas" aria-label="5 estrelas">★★★★★</div><blockquote>“Se você procura um lugar onde pra comer o verdadeiro ramen japonês em Natal, esse restaurante é pra vc!”</blockquote></div><figcaption><b>Iwawa</b>Avaliação no Google · há 5 meses</figcaption></figure>
+            <figure class="cartao-aval"><div><div class="estrelas" aria-label="5 estrelas">★★★★★</div><blockquote>“Com certeza dos melhores de Natal, ótima localização, ótimas opções no menu executadas por profissionais que entendem do assunto.”</blockquote></div><figcaption><b>Reuel</b>Avaliação no Google · há 4 meses</figcaption></figure>
+            <figure class="cartao-aval"><div><div class="estrelas" aria-label="5 estrelas">★★★★★</div><blockquote>“Minha experiência no Kyoto foi tão especial que voltei duas vezes na mesma semana.”</blockquote></div><figcaption><b>Dan</b>Avaliação no Google · há 4 meses</figcaption></figure>
+          </div>
+        </div>
         <div class="lx-container"><button type="button" class="aval-pausa marquee-pausa" aria-pressed="false" aria-label="Pausar animação">Pausar</button></div>
       </div>
     </section>
@@ -239,11 +254,25 @@
   <footer class="lx-rodape">
     <div class="lx-container">
       <div class="rodape-grid">
-        <a class="marca" href="#topo" aria-label="Kyoto Sushi Lounge, voltar ao início">
-          <span class="marca-nome">Kyoto</span>
-          <span class="marca-sub" aria-hidden="true">Sushi<br>Lounge</span>
-        </a>
-        <p>Av. Alm. Alexandrino de Alencar, 1624 · Tirol, Natal/RN<br><a href="tel:+558421369521">+55 84 2136-9521</a> · terça a domingo</p>
+        <div class="rodape-col rodape-marca">
+          <a class="marca" href="#topo" aria-label="Kyoto Sushi Lounge, voltar ao início">
+            <span class="marca-nome">Kyoto</span>
+            <span class="marca-sub" aria-hidden="true">Sushi<br>Lounge</span>
+          </a>
+          <p>Restaurante japonês no Tirol, Natal.</p>
+        </div>
+        <div class="rodape-col">
+          <h4>Contato</h4>
+          <p>Av. Alm. Alexandrino de Alencar, 1624<br>Tirol, Natal/RN<br><a href="tel:+558421369521">+55 84 2136-9521</a></p>
+        </div>
+        <div class="rodape-col">
+          <h4>Horário</h4>
+          <p>Terça: 18h às 23h<br>Quarta a sábado: 11h às 15h · 18h às 23h<br>Domingo: 18h às 23h<br>Segunda: fechado</p>
+        </div>
+        <div class="rodape-col">
+          <h4>Na página</h4>
+          <p><a href="#casa">A casa</a><br><a href="#cardapio">Cardápio</a><br><a href="#galeria">Galeria</a><br><a href="#avaliacoes">Avaliações</a><br><a href="#visite">Visite</a></p>
+        </div>
       </div>
       <p class="rodape-demo">Demonstração de site feita para o Kyoto Sushi Lounge, ainda não publicada. Fotos da galeria pública do Google Maps. Textos e cardápio a confirmar com a casa.</p>
     </div>

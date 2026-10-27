@@ -57,6 +57,7 @@
         <a href="#avaliacoes">Avaliações</a>
         <a href="#contato">Contato</a>
       </nav>
+      <a class="sp-cta-header" href="#reservas">Reservar mesa</a>
       <details class="sp-menu-mobile">
         <summary aria-label="Abrir menu"><span></span></summary>
         <nav aria-label="Seções">
@@ -82,6 +83,10 @@
           <img src="assets/img/hero-salao.jpg" alt="Salão do Sale e Pepe à noite: mesas de madeira, telha aparente e luzes quentes" fetchpriority="high">
         </picture>
       </div>
+      <figure class="hero-foto" aria-hidden="true">
+        <img src="assets/img/hero-salao.jpg" alt="">
+        <figcaption>Salão do Sale e Pepe · foto de cliente no Google</figcaption>
+      </figure>
       <div class="lx-container hero-entrada">
         <span class="lx-rotulo" style="--i:0">Capim Macio · Natal</span>
         <h1 style="--i:1">Sale e Pepe</h1>
@@ -220,20 +225,21 @@
           <h2 data-anim="rise3d">Luz baixa, <em>louça azul</em></h2>
         </div>
         <div class="lx-galeria sp-galeria" data-stagger>
-          <figure>
-            <picture>
-              <source media="(max-width: 700px)" srcset="assets/img/hero-salao.jpg">
-              <img src="assets/img/hero-pergolado.jpg" alt="Salão com telhas aparentes e cordões de luz" loading="lazy">
-            </picture>
+          <figure class="g-a">
+            <img src="assets/img/hero-pergolado.jpg" alt="Salão com telhas aparentes e cordões de luz" loading="lazy">
             <figcaption>O salão</figcaption>
           </figure>
-          <figure>
+          <figure class="g-b">
             <img src="assets/img/entrada.jpg" alt="Entrada com burrata ao pesto, carpaccio e pães tostados" loading="lazy">
             <figcaption>Entrada pra dividir</figcaption>
           </figure>
-          <figure>
+          <figure class="g-c">
             <img src="assets/img/vinho.jpg" alt="Taça de vinho tinto ao lado do spaghetti alle vongole" loading="lazy">
             <figcaption>Vinho e vongole</figcaption>
+          </figure>
+          <figure class="g-d">
+            <img src="assets/img/hero-salao.jpg" alt="Mesas de madeira no salão, à noite" loading="lazy">
+            <figcaption>Mesas à noite</figcaption>
           </figure>
         </div>
       </div>
@@ -327,11 +333,22 @@
   <footer class="lx-rodape sp-escuro">
     <div class="lx-container">
       <div class="sp-rodape">
-        <div>
+        <div class="sp-rod-marca">
           <span class="sp-nome">Sale e Pepe</span>
-          Bistrô · Cucina Mediterranea · Valencia Hotel Natal, Capim Macio
+          <span>Bistrô · Cucina Mediterranea</span>
         </div>
-        <a href="#topo" style="font-size:12px;letter-spacing:.2em;text-transform:uppercase;text-decoration:none">Voltar ao topo ↑</a>
+        <div>
+          <h4>Endereço</h4>
+          <p>R. Renato Guilherme Kaiser, 70<br>Valencia Hotel Natal<br>Capim Macio, Natal/RN</p>
+        </div>
+        <div>
+          <h4>Horário</h4>
+          <p>Terça a domingo<br>18h às 22h30<br>Segunda: fechado</p>
+        </div>
+        <div>
+          <h4>Contato</h4>
+          <p><a href="tel:+5584998534456">+55 84 99853-4456</a><br><a href="https://wa.me/5584998534456" target="_blank" rel="noopener">WhatsApp</a><br><a href="#reservas">Reservar mesa</a></p>
+        </div>
       </div>
       <small>Página de demonstração montada a partir da ficha pública do Google Maps. Fotos: clientes no Google. Cores provisórias. Itens marcados “a confirmar” dependem da casa.</small>
     </div>

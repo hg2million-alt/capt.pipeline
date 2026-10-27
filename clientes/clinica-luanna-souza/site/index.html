@@ -108,7 +108,7 @@
     }
     .menu-botao span { display: block; width: 16px; height: 1px; background: currentColor; box-shadow: 0 -5px 0 currentColor, 0 5px 0 currentColor; }
     .menu-botao[aria-expanded="true"] span { box-shadow: none; }
-    @media (max-width: 820px) {
+    @media (max-width: 1023px) {
       .menu-botao:not([hidden]) { display: inline-flex; }
       .lx-nav.aberto {
         display: flex; flex-direction: column; gap: 0;
@@ -119,31 +119,38 @@
       .lx-nav.aberto a { padding: 18px 0; border-bottom: 1px solid rgb(255 255 255 / 0.08); font-size: 13px; }
     }
 
-    /* ===== Hero ===== */
-    .hero { --hero-foco: 50% 32%; color: #F4EFE7; }
-    .hero::before {
-      background:
-        linear-gradient(180deg, rgb(20 17 14 / 0.62) 0%, rgb(20 17 14 / 0.28) 30%, rgb(20 17 14 / 0.62) 58%, rgb(20 17 14 / 0.9) 100%),
-        linear-gradient(90deg, rgb(20 17 14 / 0.55), transparent 75%);
-    }
+    /* ===== Hero: foto vertical nítida e enquadrada, fundo desfocado só como textura ===== */
+    .hero { color: #F4EFE7; background: #1C1915; min-height: 0; padding: 112px 0 56px; display: block; }
+    .hero-fundo { overflow: hidden; }
+    .hero-fundo img { filter: blur(26px) saturate(0.9); transform: scale(1.15); object-position: 50% 30%; }
+    .hero::before { background: rgb(20 17 14 / 0.8); }
+    .hero-grade { display: grid; gap: 40px; grid-template-columns: 1fr; }
+    .hero-foto { margin: 0; position: relative; isolation: isolate; width: min(100%, 440px); justify-self: center; aspect-ratio: 5 / 6; }
+    .hero-foto img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 24%; }
+    .hero-foto::after { content: ""; position: absolute; inset: 14px -14px -14px 14px; border: 1px solid var(--dourado-claro); opacity: 0.55; z-index: -1; }
+    .hero-grade > div { order: 2; }
+    .hero-foto { order: 1; }
     .hero .lx-rotulo { color: var(--dourado-claro); }
-    .hero h1 { max-width: 13ch; }
+    .hero h1 { max-width: 14ch; font-size: clamp(38px, 10.2vw, 48px); margin-block: 20px 22px; }
     .hero h1 em { color: var(--dourado-claro); }
     .hero p { color: rgb(255 255 255 / 0.86); }
     .hero .btn-luxo { background: var(--dourado-claro); border-color: var(--dourado-claro); color: #1C1915; }
     .hero .btn-luxo:hover { background: transparent; color: var(--dourado-claro); }
     .hero .btn-luxo--linha { background: transparent; color: #F4EFE7; border-color: rgb(255 255 255 / 0.35); }
     .hero .btn-luxo--linha:hover { color: var(--dourado-claro); border-color: var(--dourado-claro); }
-    .nota-google {
-      display: inline-flex; align-items: center; gap: 12px; margin-top: 30px;
-      font: 400 13px/1.3 var(--lx-sans); color: rgb(255 255 255 / 0.82); letter-spacing: 0.02em;
-    }
-    .nota-google b { font: 500 22px/1 var(--lx-serif); color: #fff; letter-spacing: 0; }
+    .nota-google { display: inline-flex; align-items: center; gap: 14px; margin-top: 30px; font: 400 14px/1.3 var(--lx-sans); color: rgb(255 255 255 / 0.82); }
+    .nota-google b { font: 400 30px/1 var(--lx-serif); color: #fff; }
     .estrelas { color: var(--dourado-claro); letter-spacing: 0.18em; font-size: 12px; }
-    @media (max-width: 520px) {
-      .hero { padding-top: 120px; }
-      .hero h1 { font-size: clamp(38px, 10.2vw, 48px); }
-      .hero-acoes .btn-luxo { flex: 1 1 100%; justify-content: center; }
+    @media (max-width: 520px) { .hero-acoes .btn-luxo { flex: 1 1 100%; justify-content: center; } }
+    @media (min-width: 1000px) {
+      .hero { min-height: 100svh; display: grid; align-items: center; padding: 130px 0 90px; }
+      .hero-grade { grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr); gap: clamp(48px, 6vw, 96px); align-items: center; }
+      .hero-grade > div, .hero-foto { order: 0; }
+      .hero-foto { justify-self: end; width: auto; height: min(74svh, 720px); aspect-ratio: 4 / 5; max-width: 100%; margin-right: 14px; }
+      .hero h1 { font-size: clamp(60px, 5.6vw, 88px); max-width: 11ch; margin-block: 24px 28px; line-height: 1.06; }
+      .hero p { font-size: clamp(19px, 1.45vw, 22px); line-height: 1.65; max-width: 30em; margin-bottom: 40px; }
+      .nota-google { margin-top: 44px; font-size: 15px; }
+      .nota-google b { font-size: 40px; }
     }
 
     /* ===== Palavra script translúcida atrás do título (tra-header do spamagic) ===== */
@@ -162,7 +169,7 @@
     .boas-vindas .lx-texto-suave { margin: 30px 0 0; font-size: 1.05em; }
     .categorias { display: flex; flex-wrap: wrap; margin: 40px 0 0; padding: 0; list-style: none; border-top: 1px solid var(--lx-linha); }
     .categorias li {
-      flex: 1 1 33%; padding: 20px 0 0; font: 400 clamp(20px, 2vw, 24px)/1.2 var(--lx-serif);
+      flex: 1 1 33%; padding: 20px 0 8px; font: 400 clamp(20px, 2vw, 24px)/1.2 var(--lx-serif);
       font-style: italic; color: var(--lx-texto);
     }
     .categorias li + li { padding-left: 18px; border-left: 1px solid var(--lx-linha); }
@@ -260,6 +267,77 @@
     .rodape-grade p { margin: 0; font-size: 13px; }
     .aviso-demo { margin-top: 34px; padding-top: 22px; border-top: 1px solid var(--lx-linha); font-size: 12px; letter-spacing: 0.02em; }
 
+
+    /* ===== Desktop ===== */
+    :root { --lx-max: 1280px; --lx-gutter: clamp(20px, 5vw, 72px); }
+    .lx-rotulo::before { display: none; }
+    .tratamento li::before { width: 4px; height: 4px; border-radius: 50%; top: 24px; }
+    .header-cta { display: none; }
+    .lx-nav { display: none; }
+    @media (min-width: 1024px) {
+      .lx-nav { display: flex; gap: clamp(22px, 2.4vw, 40px); margin-left: auto; margin-right: clamp(24px, 3vw, 44px); }
+      .menu-botao { display: none !important; }
+      .header-cta { display: inline-flex; padding: 14px 24px; font-size: 11.5px; }
+      .header-luxo .lx-container { height: 92px; }
+      .marca img { width: 168px; }
+      .lx-nav a { font-size: 14px; letter-spacing: 0.16em; }
+      .header-luxo .btn-luxo { background: var(--dourado-claro); border-color: var(--dourado-claro); color: #1C1915; }
+      .header-luxo .btn-luxo:hover { background: transparent; color: var(--dourado-claro); }
+    }
+    @media (max-width: 1023px) { .lx-nav:not(.aberto) { display: none; } }
+    @media (min-width: 1100px) {
+      body { font-size: 18px; }
+      .lx-rotulo { font-size: 12.5px; }
+      h2 { font-size: clamp(48px, 4.4vw, 64px); }
+      h3 { font-size: 32px; }
+      .lx-secao { padding-block: clamp(120px, 10vw, 160px); }
+      .boas-vindas .lx-texto-suave { font-size: 20px; line-height: 1.7; }
+      .quadro-horario dt { font-size: 12px; }
+      .quadro-horario dd { font-size: 18px; }
+      .tratamento li { font-size: 17px; padding-block: 13px; }
+      .tratamento li::before { top: 26px; }
+      .tratamento h3 { font-size: 34px; }
+      .formacao li { font-size: 19px; }
+      .sobre .lx-texto-suave { font-size: 19px; }
+      .contato-lista li { font-size: 18px; }
+      .contato-lista small { font-size: 12px; }
+      .contato .lx-texto-suave { font-size: 20px; }
+      .faixa p { font-size: 20px; }
+      .faixa h2 { max-width: 18ch; }
+    }
+    /* tratamentos: 2 x 2, sem cartão sozinho */
+    .grade-tratamentos { grid-template-columns: 1fr; }
+    @media (min-width: 760px) { .grade-tratamentos { grid-template-columns: repeat(2, 1fr); } }
+    .tratamento { transition: border-color .3s var(--anim-ease), background-color .3s var(--anim-ease); }
+    .tratamento:hover { border-color: var(--lx-acento); background: #fff; }
+    .btn-luxo:focus-visible, .lx-nav a:focus-visible, .tratamento:focus-visible { outline: 2px solid var(--lx-acento); outline-offset: 4px; }
+    .lx-nav a { transition: color .3s; }
+    .contato-lista a, .placar a, .rodape-col a { transition: color .3s; }
+    .placar a:hover, .rodape-col a:hover { color: var(--lx-acento); }
+    /* avaliações maiores no desktop */
+    @media (min-width: 1100px) {
+      .rev { width: 400px; min-height: 280px; padding: 34px 34px 28px; }
+      .rev blockquote { font-size: 17.5px; }
+      .rev figcaption { font-size: 15px; }
+      .rev-faixa { padding-block: 18px 34px; }
+      .rev-trilha { animation-duration: 70s; }
+      .placar .numero { font-size: 104px; }
+      .placar p { font-size: 16px; }
+    }
+    /* contato com mapa */
+    .mapa { position: relative; border: 1px solid var(--lx-linha); background: var(--lx-fundo-2); min-height: 320px; }
+    .mapa iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; filter: grayscale(0.35) sepia(0.12); }
+    .contato-lista { margin-top: 40px; }
+    @media (min-width: 900px) { .contato { align-items: stretch; grid-template-columns: 0.95fr 1.05fr; } .mapa { min-height: 520px; } }
+    /* rodapé em colunas */
+    .rodape-grade { display: grid; grid-template-columns: 1fr; gap: 36px; align-items: start; }
+    @media (min-width: 760px) { .rodape-grade { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1100px) { .rodape-grade { grid-template-columns: 1.3fr 1fr 1fr 0.8fr; gap: 56px; } }
+    .rodape-col h4 { margin: 0 0 16px; font: 500 12px/1 var(--lx-sans); letter-spacing: 0.26em; text-transform: uppercase; color: var(--dourado-claro); }
+    .rodape-col p, .rodape-col a { display: block; margin: 0 0 8px; font-size: 15px; line-height: 1.6; text-decoration: none; color: var(--lx-texto-suave); }
+    .rodape-col .marca { margin-bottom: 18px; }
+    .lx-rodape { padding-block: 72px 40px; }
+
     .wa-flutuante a { box-shadow: 0 10px 30px -10px rgb(0 0 0 / 0.5); }
     @media (max-width: 700px) {
       .categorias li { flex-basis: 100%; padding: 16px 0 !important; border-left: 0 !important; border-bottom: 1px solid var(--lx-linha); }
@@ -284,27 +362,33 @@
         <a href="#avaliacoes">Avaliações</a>
         <a href="#contato">Contato</a>
       </nav>
+      <a class="btn-luxo header-cta" href="https://wa.me/5584987080960?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar</a>
     </div>
   </header>
 
   <main id="topo">
     <!-- HERO: foto real da recepção (Maps) + véu escuro -->
     <section class="hero" aria-labelledby="titulo-hero">
-      <div class="hero-fundo">
-        <img src="assets/recepcao.jpg" alt="Recepção da Clínica Luanna Souza, com painel ripado de madeira clara, letreiro dourado e poltronas bege" fetchpriority="high">
+      <div class="hero-fundo" aria-hidden="true">
+        <img src="assets/recepcao.jpg" alt="">
       </div>
-      <div class="lx-container hero-entrada" id="conteudo">
-        <span class="lx-rotulo" style="--i:0">Neópolis · Natal/RN</span>
-        <h1 id="titulo-hero" style="--i:1">Harmonização facial e corporal <em>avançada</em></h1>
-        <p style="--i:2">Atendimento personalizado e planejado com a enfermeira esteta Luanna Souza, sempre a partir de uma avaliação, na Galeria Jequitinhonha.</p>
-        <div class="hero-acoes" style="--i:3">
-          <a class="btn-luxo" href="https://wa.me/5584987080960?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar avaliação gratuita</a>
-          <a class="btn-luxo btn-luxo--linha" href="#tratamentos">Ver tratamentos</a>
+      <div class="lx-container hero-grade">
+        <div class="hero-entrada" id="conteudo">
+          <span class="lx-rotulo" style="--i:0">Neópolis · Natal/RN</span>
+          <h1 id="titulo-hero" style="--i:1">Harmonização facial e corporal <em>avançada</em></h1>
+          <p style="--i:2">Atendimento personalizado e planejado com a enfermeira esteta Luanna Souza, sempre a partir de uma avaliação, na Galeria Jequitinhonha.</p>
+          <div class="hero-acoes" style="--i:3">
+            <a class="btn-luxo" href="https://wa.me/5584987080960?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar avaliação gratuita</a>
+            <a class="btn-luxo btn-luxo--linha" href="#tratamentos">Ver tratamentos</a>
+          </div>
+          <div class="nota-google" style="--i:4">
+            <b>5,0</b>
+            <span><span class="estrelas" aria-hidden="true">★★★★★</span><br>415 avaliações no Google</span>
+          </div>
         </div>
-        <div class="nota-google" style="--i:4">
-          <b>5,0</b>
-          <span><span class="estrelas" aria-hidden="true">★★★★★</span><br>415 avaliações no Google</span>
-        </div>
+        <figure class="hero-foto">
+          <img src="assets/recepcao.jpg" alt="Recepção da Clínica Luanna Souza, com painel ripado de madeira clara, letreiro dourado e poltronas bege" fetchpriority="high">
+        </figure>
       </div>
     </section>
 
@@ -467,14 +551,15 @@
             <a class="btn-luxo" href="https://wa.me/5584987080960?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Falar no WhatsApp</a>
             <a class="btn-luxo btn-luxo--linha" href="https://www.google.com/maps/search/?api=1&amp;query=Cl%C3%ADnica%20Luanna%20Souza%20R.%20Jequitinhonha%202929%20Natal" target="_blank" rel="noopener">Como chegar</a>
           </div>
-        </div>
-        <ul class="contato-lista">
+          <ul class="contato-lista">
           <li><small>WhatsApp</small><a href="https://wa.me/5584987080960" target="_blank" rel="noopener">+55 84 98708-0960</a></li>
           <li><small>Natal</small>R. Jequitinhonha, 2929, loja 4 · Galeria Jequitinhonha, Neópolis</li>
           <li><small>João Câmara</small>R. Jerônimo Câmara, 680 · Centro</li>
           <li><small>Horário</small>Segunda a sábado, 08h às 18h · domingo fechado</li>
           <li><small>Instagram</small><span class="a-confirmar">a confirmar</span></li>
         </ul>
+        </div>
+        <div class="mapa"><iframe title="Mapa da Clínica Luanna Souza, Galeria Jequitinhonha, Neópolis" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Cl%C3%ADnica%20Luanna%20Souza%20R.%20Jequitinhonha%202929%20Natal&amp;output=embed"></iframe></div>
       </div>
     </section>
   </main>
@@ -482,10 +567,29 @@
   <footer class="lx-rodape escuro">
     <div class="lx-container">
       <div class="rodape-grade">
-        <a class="marca" href="#topo" aria-label="Voltar ao início">
-          <img src="assets/logo-luanna.png" alt="Luanna Souza, Enfermeira Esteta" width="637" height="296">
-        </a>
-        <p>Clínica Luanna Souza · Harmonização Facial e Corporal<br>Neópolis · Natal/RN</p>
+        <div class="rodape-col">
+          <a class="marca" href="#topo" aria-label="Voltar ao início">
+            <img src="assets/logo-luanna.png" alt="Luanna Souza, Enfermeira Esteta" width="637" height="296">
+          </a>
+          <p>Clínica Luanna Souza<br>Harmonização Facial e Corporal</p>
+        </div>
+        <div class="rodape-col">
+          <h4>Contato</h4>
+          <a href="https://wa.me/5584987080960" target="_blank" rel="noopener">+55 84 98708-0960</a>
+          <p>R. Jequitinhonha, 2929, loja 4<br>Galeria Jequitinhonha, Neópolis, Natal/RN</p>
+        </div>
+        <div class="rodape-col">
+          <h4>Horário</h4>
+          <p>Segunda a sábado, 08h às 18h<br>Domingo fechado</p>
+          <p>João Câmara: R. Jerônimo Câmara, 680, Centro</p>
+        </div>
+        <div class="rodape-col">
+          <h4>Seções</h4>
+          <a href="#clinica">A clínica</a>
+          <a href="#tratamentos">Tratamentos</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#avaliacoes">Avaliações</a>
+        </div>
       </div>
       <p class="aviso-demo">Prévia de site feita para apresentação. Não é o site oficial da clínica. Fotos e informações tiradas da ficha pública no Google e do site da clínica.</p>
     </div>

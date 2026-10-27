@@ -17,8 +17,8 @@
   --lx-serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
   --lx-sans: "Manrope", "Inter", system-ui, sans-serif;
 
-  --lx-max: 1180px;
-  --lx-gutter: clamp(20px, 5vw, 56px);
+  --lx-max: 1280px;
+  --lx-gutter: clamp(20px, 5vw, 72px);
   --lx-secao: clamp(88px, 12vw, 160px);
 }
 

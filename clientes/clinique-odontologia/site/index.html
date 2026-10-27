@@ -122,9 +122,11 @@
           </div>
         </div>
         <div class="cl-galeria" data-stagger>
-          <figure><img src="assets/img/painel-vazado.jpg" alt="Painel vazado branco da fachada" loading="lazy"><figcaption>Painel vazado</figcaption></figure>
-          <figure><img src="assets/img/jardim-vertical.jpg" alt="Jardim vertical na lateral da entrada" loading="lazy"><figcaption>Jardim vertical</figcaption></figure>
-          <figure><img src="assets/img/ambiente-interno.jpg" alt="Detalhe do ambiente interno, com luminárias douradas e painel estofado" loading="lazy"><figcaption>Ambiente interno</figcaption></figure>
+          <figure class="g-a"><img src="assets/img/g-entrada.jpg" alt="Entrada da clínica, com palmeira e porta de vidro sob o toldo escuro" loading="lazy"><figcaption>Entrada</figcaption></figure>
+          <figure class="g-b"><img src="assets/img/g-jardim.jpg" alt="Jardim vertical na lateral da fachada" loading="lazy"><figcaption>Jardim vertical</figcaption></figure>
+          <figure class="g-c"><img src="assets/img/g-painel.jpg" alt="Painel vazado branco da fachada" loading="lazy"><figcaption>Painel vazado</figcaption></figure>
+          <figure class="g-d"><img src="assets/img/g-interno.jpg" alt="Detalhe do ambiente interno, com painel estofado, plantas e luminária dourada" loading="lazy"><figcaption>Ambiente interno</figcaption></figure>
+          <figure class="g-e"><img src="assets/img/g-canteiro.jpg" alt="Canteiro com arbustos e calçada na frente da clínica" loading="lazy"><figcaption>Canteiro e calçada</figcaption></figure>
         </div>
       </div>
     </section>
@@ -185,9 +187,9 @@
           </div>
           <form class="cl-form" id="form-agenda" data-anim="rise3d">
             <h3>Agendar avaliação</h3>
-            <div class="cl-campo">
+            <div class="cl-form-linha"><div class="cl-campo">
               <label for="f-nome">Seu nome</label>
-              <input id="f-nome" name="nome" type="text" autocomplete="name" placeholder="Como podemos chamar você?">
+              <input id="f-nome" name="nome" type="text" autocomplete="name" placeholder="Seu nome">
             </div>
             <div class="cl-campo">
               <label for="f-trat">Tratamento de interesse</label>
@@ -200,7 +202,7 @@
                 <option>Aparelho invisível</option>
                 <option>Reabilitação oral</option>
               </select>
-            </div>
+            </div></div>
             <fieldset>
               <legend>Melhor período</legend>
               <div class="cl-opcoes">
@@ -254,13 +256,39 @@
 
   <footer class="lx-rodape">
     <div class="lx-container cl-rodape">
-      <a class="cl-marca" href="#topo" aria-label="Voltar ao topo">
-        <svg class="cl-dente" aria-hidden="true"><use href="#dente"/></svg>
-        <span class="cl-marca-txt"><strong>CLINIQUE</strong><small>Odontologia Avançada</small></span>
-      </a>
-      <p>R. Seridó, 722 · Petrópolis · Natal/RN · +55 84 3113-0891 · <a href="https://wa.me/5584994039623">WhatsApp +55 84 99403-9623</a></p>
-      <p>Responsável técnico: <span class="cl-rt">Dr. Bruno Souza, CRO/PE 10944</span> <span class="a-confirmar">a confirmar</span></p>
-      <p class="cl-aviso">Demonstração de site criada a partir de informações públicas (Google Maps e Instagram @cliniquenatal). Logotipo recriado em tipografia a partir da fachada; cores aproximadas. Textos de apresentação são sugestão e dependem de aprovação da clínica. Os resultados de cada tratamento variam de pessoa para pessoa e dependem de avaliação profissional.</p>
+      <div class="cl-rodape-grade">
+        <div class="cl-rodape-marca">
+          <a class="cl-marca" href="#topo" aria-label="Voltar ao topo">
+            <svg class="cl-dente" aria-hidden="true"><use href="#dente"/></svg>
+            <span class="cl-marca-txt"><strong>CLINIQUE</strong><small>Odontologia Avançada</small></span>
+          </a>
+          <p>Odontologia em Petrópolis, Natal/RN: implantes, lentes de contato, facetas, prótese e alinhadores invisíveis.</p>
+        </div>
+        <div>
+          <h3>Contato</h3>
+          <p>R. Seridó, 722<br>Petrópolis · Natal/RN<br>59020-010</p>
+          <p><a href="https://wa.me/5584994039623">+55 84 99403-9623</a><br><a href="tel:+558431130891">+55 84 3113-0891</a><br><a href="https://www.instagram.com/cliniquenatal/">@cliniquenatal</a></p>
+        </div>
+        <div>
+          <h3>Horário</h3>
+          <p>Segunda a quinta<br>8h às 19h</p>
+          <p>Sexta<br>8h às 18h30</p>
+          <p>Sábado<br>8h às 12h</p>
+        </div>
+        <div>
+          <h3>Seções</h3>
+          <ul>
+            <li><a href="#tratamentos">Tratamentos</a></li>
+            <li><a href="#clinica">A clínica</a></li>
+            <li><a href="#equipe">Equipe</a></li>
+            <li><a href="#avaliacoes">Avaliações</a></li>
+            <li><a href="#agendar">Agendar</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="cl-rt-linha">Responsável técnico: <span class="cl-rt">Dr. Bruno Souza, CRO/PE 10944</span> <span class="a-confirmar">a confirmar</span></p>
+      <p class="cl-aviso">Demonstração de site criada a partir de informações públicas (Google Maps e Instagram @cliniquenatal). Logotipo recriado a partir da fachada; cores aproximadas. Textos de apresentação são sugestão e dependem de aprovação da clínica. Os resultados de cada tratamento variam de pessoa para pessoa e dependem de avaliação profissional.</p>
     </div>
   </footer>
 

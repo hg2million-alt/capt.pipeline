@@ -109,7 +109,6 @@ a { text-decoration: none; }
 
 /* ---------- avaliações ---------- */
 .al-nota { text-align: center; margin-bottom: clamp(48px, 7vw, 80px); }
-.al-nota .lx-rotulo::after { content: ""; width: 36px; height: 1px; background: currentColor; }
 .al-nota-num { margin: 18px 0 8px; display: flex; flex-direction: column; align-items: center; gap: 6px; }
 .al-nota-num > span:first-child { font: 300 clamp(84px, 14vw, 150px)/0.9 var(--lx-serif); color: var(--lx-texto); }
 .al-estrelas { font-size: 15px; letter-spacing: 0.4em; color: var(--lx-acento); margin-right: -0.4em; }
@@ -181,3 +180,98 @@ details.faq a { color: #F4F2ED; border-bottom: 1px solid var(--al-salvia); }
 /* animação 3D das fotos não pode gerar rolagem lateral no celular */
 .lx-secao { overflow-x: clip; }
 html, body { overflow-x: clip; }
+
+/* =====================================================================
+   Sem linha decorativa antes de rótulo (regra da oficina)
+   ===================================================================== */
+.lx-rotulo::before { content: none; }
+.lx-rotulo { gap: 0; }
+.al-hero-foto { display: none; margin: 0; }
+.al-hero-grade { display: block; }
+
+/* =====================================================================
+   DESKTOP
+   ===================================================================== */
+:root { --lx-max: 1280px; --lx-gutter: clamp(20px, 5vw, 72px); }
+
+@media (min-width: 1024px) {
+  body { font-size: 18px; line-height: 1.7; }
+  .lx-rotulo { font-size: 12.5px; }
+  .lx-texto-suave { font-size: 18px; }
+  .lx-nav { gap: 40px; }
+  .lx-nav a { font-size: 14.5px; letter-spacing: 0.16em; padding: 8px 0; border-bottom: 1px solid transparent; }
+  .lx-nav a:hover { border-bottom-color: currentColor; }
+  .header-luxo .lx-container { height: 92px; }
+  .lx-marca { font-size: 30px; }
+  .al-header-cta { font-size: 12.5px; padding: 15px 24px; }
+  .al-header-cta:hover { background: var(--lx-acento); border-color: var(--lx-acento); color: #fff; }
+  .btn-luxo { font-size: 13px; padding: 20px 36px; }
+  .a-confirmar { font-size: 12px; padding: 4px 10px; }
+  h2 { font-size: clamp(48px, 4.4vw, 62px); }
+  .al-h2 { max-width: 20ch; margin: 26px 0 32px; }
+  .lx-secao { padding-block: clamp(120px, 10vw, 160px); }
+
+  /* hero dividido: texto à esquerda, foto nítida (sem esticar) à direita, foto escurecida só como textura */
+  .hero { background: var(--al-escuro); padding: 150px 0 90px; align-items: center; overflow: hidden; }
+  .hero-fundo img { filter: blur(34px) brightness(0.42) saturate(0.85); transform: scale(1.12); }
+  .hero::before { background: linear-gradient(90deg, rgb(13 20 24 / 0.55), rgb(13 20 24 / 0.2)); }
+  .al-hero-grade { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); gap: clamp(48px, 6vw, 96px); align-items: center; }
+  .hero h1 { font-size: clamp(64px, 5.6vw, 88px); max-width: 11ch; margin-block: 26px 30px; }
+  .hero p { font-size: clamp(20px, 1.5vw, 22px); max-width: 30em; }
+  .hero-chip { display: none; }
+  .hero .btn-luxo--linha:hover { background: rgb(255 255 255 / 0.08); }
+  .al-hero-foto { display: block; justify-self: end; width: min(100%, 540px); }
+  .al-hero-foto img { width: 100%; height: auto; aspect-ratio: 9 / 10; object-fit: cover; border: 1px solid rgb(255 255 255 / 0.35); padding: 10px; background: rgb(255 255 255 / 0.04); box-shadow: 0 40px 80px -40px rgb(0 0 0 / 0.7); }
+  .al-hero-foto figcaption { margin-top: 14px; font-size: 13px; letter-spacing: 0.06em; color: rgb(244 242 237 / 0.78); }
+
+  .al-foto img { aspect-ratio: 470 / 550; }
+  .al-foto figcaption { font-size: 13px; }
+  .al-fatos dt { font-size: 12.5px; }
+  .al-fatos dd { font-size: 22px; }
+  .al-aviso { font-size: 17px; }
+
+  /* tratamentos: 3 colunas, 2 linhas completas */
+  .al-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .lx-card { padding: 44px 40px; }
+  .lx-card h3 { font-size: 30px; }
+  .lx-card p { font-size: 17px; }
+  .lx-card:hover { background: #FBFAF7; }
+
+  /* avaliações: cartões maiores, uma fileira cheia (só há 3 textos distintos) */
+  .al-marquee--rev { display: none; }
+  .al-review { width: 400px; padding: 34px 34px 30px; }
+  .al-review blockquote { font-size: 21px; }
+  .al-review figcaption { font-size: 12px; }
+  .al-review figcaption strong { font-size: 20px; }
+  .al-trilha { animation-duration: 90s; }
+  .al-nota-sub { font-size: 17px; }
+
+  details.faq summary { font-size: 28px; }
+  details.faq p { font-size: 18px; }
+  details.faq summary:hover { color: var(--al-salvia); }
+
+  /* contato: mapa grande ao lado */
+  .al-fatos--contato dd { font-size: 22px; }
+  .al-mapa { aspect-ratio: auto; height: 520px; }
+  .al-rodape { font-size: 16px; }
+  .al-rodape-base { font-size: 14px; }
+  .al-rodape-tit { font-size: 12.5px; }
+  .al-rodape a:hover { text-decoration: underline; text-underline-offset: 4px; }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .hero h1 { font-size: 60px; }
+  .al-hero-foto { width: min(100%, 440px); }
+  .al-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 821px) and (max-width: 1023px) {
+  .al-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .al-review { width: 360px; }
+  .al-marquee--rev { display: none; }
+}
+@media (min-width: 1700px) { .al-hero-foto { width: min(100%, 580px); } }
+
+/* foco visível por teclado */
+a:focus-visible, summary:focus-visible, .btn-luxo:focus-visible { outline: 2px solid var(--lx-acento); outline-offset: 4px; }
+.hero a:focus-visible, .al-escuro a:focus-visible { outline-color: #fff; }
+.al-review { transition: box-shadow 0.4s, transform 0.4s; }
+@media (hover: hover) { .al-review:hover { transform: translateY(-4px); box-shadow: 0 22px 40px -22px rgb(29 42 48 / 0.4); } }

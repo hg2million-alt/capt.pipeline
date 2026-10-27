@@ -235,3 +235,205 @@ h1 em, h2 em, .lx-citacao, .juliane blockquote { font-style: normal; }
   .rev-card { scroll-snap-align: center; }
   .rev-card[aria-hidden="true"] { display: none; }
 }
+
+/* =====================================================================
+   Ajustes gerais (todas as larguras)
+   ===================================================================== */
+.lx-rotulo::before { display: none; }
+.lx-rotulo { gap: 0; }
+.hero-card { display: none; }
+.assin-cab { display: block; }
+.rev-card--link { text-decoration: none; color: var(--lx-texto); justify-content: center; align-items: center; text-align: center; gap: 10px; background: var(--jac-preto); color: #efe9e1; }
+.rev-card--link .rev-estrelas { color: var(--jac-folha); }
+.rev-nota { font: 400 clamp(52px, 6vw, 72px)/1 var(--lx-serif); }
+.rev-sub { font-size: 14px; color: #aaa197; }
+.rev-cta { margin-top: 14px; font: 500 11.5px/1 var(--lx-sans); letter-spacing: 0.22em; text-transform: uppercase; color: var(--jac-folha); }
+.mapa { position: relative; margin-top: 26px; min-height: 260px; background: #1b1917; border: 1px solid var(--lx-linha); overflow: hidden; }
+.mapa iframe { position: relative; z-index: 1; display: block; width: 100%; height: 280px; border: 0; filter: grayscale(0.35) contrast(0.95); }
+.mapa-fallback { position: absolute; inset: 0; display: grid; place-items: center; padding: 20px; text-align: center; font-size: 13px; color: #8d857b; }
+.contato-acoes { margin-top: 26px; }
+.rodape-colunas { display: grid; gap: 34px 28px; grid-template-columns: 1fr 1fr; }
+.rod-marca { grid-column: 1 / -1; }
+.rod-t { font: 400 12px/1.4 var(--jac-marca); letter-spacing: 0.26em; text-transform: uppercase; color: var(--lx-acento); margin: 0 0 14px; }
+.rodape-colunas p { margin: 0 0 6px; font-size: 14px; }
+.rodape-colunas a { text-decoration: none; }
+.rodape-colunas a:hover { color: var(--lx-acento); }
+.rod-marca p { margin-top: 16px; }
+.rodape-demo { margin-top: 44px; padding-top: 24px; border-top: 1px solid var(--lx-linha); }
+
+/* hover e foco (sutis) */
+a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible, summary:focus-visible { outline: 2px solid var(--lx-acento); outline-offset: 3px; }
+.rev-card { transition: transform 0.35s var(--anim-ease), box-shadow 0.35s var(--anim-ease), border-color 0.35s; }
+@media (hover: hover) {
+  .rev-card:hover { transform: translateY(-4px); border-color: var(--lx-acento); box-shadow: 0 18px 36px -20px rgb(21 19 18 / 0.4); }
+  .assin { transition: border-color 0.35s, background-color 0.35s, transform 0.35s var(--anim-ease); }
+  .assin:hover { border-color: var(--lx-acento); background: rgb(255 255 255 / 0.6); transform: translateY(-3px); }
+  .proc-item { transition: padding-left 0.35s var(--anim-ease); }
+  .proc-item:hover { padding-left: 10px; }
+  .proc-item:hover .proc-nome { color: var(--jac-folha-clara); }
+  .link-sutil { transition: color 0.3s; }
+  .header-cta { transition: background-color 0.35s, color 0.35s; }
+  .header-cta:hover { background: transparent; color: var(--jac-folha-clara); }
+  .lx-nav a { transition: color 0.3s; }
+}
+.header-cta { display: inline-block; background: var(--jac-folha); border-color: var(--jac-folha); color: var(--jac-preto); }
+.header-luxo .lx-container { gap: 24px; }
+
+@media (min-width: 600px) { .rodape-colunas { grid-template-columns: repeat(4, 1fr); } .rod-marca { grid-column: 1 / -1; } }
+
+/* =====================================================================
+   TABLET E PC
+   ===================================================================== */
+@media (min-width: 821px) {
+  .header-luxo .lx-container { height: 88px; }
+  .lx-nav { margin-left: auto; }
+  .header-luxo .lx-nav a { font-size: 14px; }
+  .header-cta { font-size: 12px; padding: 14px 22px; }
+}
+
+@media (min-width: 1100px) {
+  :root {
+    --lx-max: 1280px;
+    --lx-gutter: clamp(40px, 5vw, 80px);
+    --lx-secao: clamp(120px, 10vw, 160px);
+  }
+  body { font-size: clamp(17px, 1.12vw, 19px); line-height: 1.75; }
+  h1 { font-size: clamp(64px, 5.9vw, 92px); }
+  h2 { font-size: clamp(44px, 4.2vw, 60px); }
+  h3 { font-size: clamp(26px, 2.1vw, 30px); }
+  .lx-rotulo { font-size: 12.5px; letter-spacing: 0.28em; }
+  .header-luxo .lx-nav { gap: 40px; }
+  .header-luxo .lx-nav a { font-size: 14.5px; }
+  .btn-luxo { font-size: 13px; padding: 19px 34px; }
+  .lx-texto-suave { max-width: 58ch; }
+
+  /* hero */
+  .hero { padding-bottom: clamp(80px, 9vw, 120px); }
+  .hero::before {
+    background:
+      linear-gradient(180deg, rgb(10 9 8 / 0.55) 0%, rgb(10 9 8 / 0.12) 28%, rgb(10 9 8 / 0.5) 70%, rgb(10 9 8 / 0.85) 100%),
+      linear-gradient(90deg, rgb(10 9 8 / 0.72) 0%, rgb(10 9 8 / 0.5) 38%, transparent 68%);
+  }
+  .hero .hero-entrada { max-width: 660px; margin-left: max(var(--lx-gutter), calc((100% - var(--lx-max)) / 2)); margin-right: 0; width: auto; }
+  .hero h1 { max-width: 11ch; }
+  .hero p { font-size: clamp(19px, 1.5vw, 22px); max-width: 30em; }
+  .hero-nota { display: none; }
+  .hero-card {
+    display: block; position: absolute; z-index: 1; right: max(var(--lx-gutter), calc((100% - var(--lx-max)) / 2));
+    bottom: clamp(80px, 9vw, 120px); width: 280px; padding: 26px 28px;
+    background: rgb(15 14 13 / 0.62); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgb(255 255 255 / 0.2); color: #fff;
+  }
+  .hero-card-nota { display: flex; align-items: baseline; gap: 14px; }
+  .hero-card-nota strong { font: 400 56px/1 var(--lx-serif); }
+  .hero-card-nota .estrelas { color: var(--jac-folha-clara); letter-spacing: 0.2em; font-size: 14px; }
+  .hero-card p { margin: 8px 0 0; font-size: 15px; color: rgb(255 255 255 / 0.85); max-width: none; }
+  .hero-card .hero-card-hora { margin-top: 16px; padding-top: 16px; border-top: 1px solid rgb(255 255 255 / 0.2); }
+
+  /* a clínica */
+  .intro { grid-template-columns: 1.15fr 1fr; gap: 96px; }
+  .intro p { font-size: clamp(19px, 1.5vw, 22px); line-height: 1.7; }
+  .fonte-frase { font-size: 12px; }
+  .fatos { margin-top: 96px; }
+  .fato { padding: 36px 32px 4px 0; }
+  .fato strong { font-size: clamp(30px, 2.8vw, 40px); }
+  .fato span { font-size: 16px; }
+
+  /* procedimentos */
+  .proc-cabeca { display: grid; grid-template-columns: 1.3fr 1fr; gap: 20px 80px; align-items: end; }
+  .proc-cabeca .lx-rotulo { grid-column: 1 / -1; }
+  .proc-cabeca h2 { margin: 0; max-width: 14ch; }
+  .proc-cabeca p { margin: 0; font-size: 18px; }
+  .proc-grupos { gap: 96px; margin-top: 88px; }
+  .proc-grupo-titulo { font-size: 13px; margin-bottom: 22px; }
+  .proc-item { padding: 30px 0; grid-template-columns: 44px 1fr auto; }
+  .proc-num { font-size: 14px; }
+  .proc-nome { font-size: clamp(26px, 2.1vw, 30px); }
+  .proc-desc { font-size: 16px; }
+  .proc-acao { font-size: 12px; }
+  .proc-nota { font-size: 16px; margin-top: 56px; }
+
+  /* assinaturas */
+  .assin-layout { display: grid; grid-template-columns: 5fr 7fr; gap: 96px; align-items: center; }
+  .assin-texto h2 { margin: 22px 0 28px; max-width: 12ch; }
+  .assin-texto .lx-texto-suave { margin: 0 0 40px; }
+  .assin-grade { margin-top: 0; grid-template-columns: 1fr; gap: 24px; }
+  .assin { display: grid; grid-template-columns: 1fr 1.15fr; align-items: center; gap: 36px; padding: 44px 48px; }
+  .assin .lx-num { margin-bottom: 22px; font-size: 14px; }
+  .assin h3 { font-size: clamp(32px, 2.9vw, 42px); }
+  .assin .assin-area { margin: 12px 0 0; font-size: 12px; }
+  .assin p { font-size: 17px; }
+
+  /* espaço: grade de 4 colunas, proporção única */
+  .espaco-cabeca { grid-template-columns: 1.3fr 1fr; gap: 80px; margin-bottom: 72px; }
+  .espaco-cabeca h2 { max-width: 15ch; }
+  .espaco-cabeca p { font-size: 18px; }
+  .lx-galeria { grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .lx-galeria figure, .lx-galeria figure:nth-child(3n + 1) { grid-column: span 1; aspect-ratio: 3 / 4; }
+  .lx-galeria figcaption { font-size: 12px; left: 18px; bottom: 16px; }
+  .endereco-linha { font-size: 15px; margin-top: 36px; }
+
+  /* quem cuida */
+  .juliane { grid-template-columns: 5fr 7fr; gap: 110px; }
+  .juliane-foto { max-width: 480px; }
+  .juliane h2 { margin-bottom: 34px; }
+  .juliane blockquote { font-size: clamp(24px, 2.2vw, 30px); margin-bottom: 30px; }
+  .juliane p { font-size: 18px; }
+  .a-confirmar { font-size: 11.5px; }
+
+  /* avaliações */
+  .nota-google strong { font-size: 104px; }
+  .nota-google span:last-child { font-size: 16px; }
+  .rev-trilha { gap: 26px; padding-right: 26px; animation-duration: 100s; }
+  .rev-card { width: 400px; min-height: 320px; padding: 38px 36px 32px; }
+  .rev-card blockquote { font-size: 17.5px; }
+  .rev-card figcaption { font-size: 13.5px; }
+  .rev-card figcaption strong { font-size: 16px; }
+  .rev-sub { font-size: 15px; }
+  .rev-link { margin-top: 40px; }
+  .rev-link a { font-size: 16px; }
+
+  /* agendamento */
+  .agenda { grid-template-columns: 1fr 1fr; gap: 110px; align-items: start; }
+  .agenda h2 { max-width: 12ch; }
+  .agenda > div > p { font-size: 18px; }
+  .form-agenda { grid-template-columns: 1fr 1fr; gap: 22px 20px; margin-top: 48px; }
+  .form-agenda .linha2 { display: contents; }
+  .c-proc { order: 1; } .c-nome { order: 2; } .c-dia { order: 3; } .c-per { order: 4; }
+  .form-agenda .btn-luxo { order: 5; grid-column: 1 / -1; justify-self: start; margin-top: 10px; }
+  .form-nota { order: 6; grid-column: 1 / -1; font-size: 14px; }
+  .campo label { font-size: 12px; }
+  .campo select, .campo input { font-size: 17px; padding: 17px 18px; }
+  .contato-lista { display: grid; grid-template-columns: 1fr 1fr; column-gap: 40px; }
+  .contato-lista li { padding: 24px 0; font-size: 17px; }
+  .contato-lista .rot { font-size: 12px; }
+  .contato-lista .grande { font-size: 24px; }
+  .mapa { margin-top: 34px; }
+  .mapa iframe { height: 340px; }
+
+  /* rodapé */
+  .lx-rodape { padding-block: 80px 48px; }
+  .rodape-colunas { grid-template-columns: 1.4fr 1fr 1fr 1.2fr 0.8fr; gap: 40px; }
+  .rod-marca { grid-column: auto; }
+  .rod-marca img { width: 220px; }
+  .rodape-colunas p { font-size: 15.5px; }
+  .rodape-demo { font-size: 13px; margin-top: 64px; }
+}
+
+@media (min-width: 1700px) {
+  :root { --lx-max: 1360px; }
+}
+
+/* tablet: sem hero-card, mas com 2 colunas onde cabe */
+@media (min-width: 821px) and (max-width: 1099px) {
+  .assin { padding: 36px; }
+  .lx-galeria { grid-template-columns: repeat(2, 1fr); }
+  .lx-galeria figure, .lx-galeria figure:nth-child(3n + 1) { grid-column: span 1; aspect-ratio: 4 / 5; }
+  .rodape-colunas { grid-template-columns: repeat(4, 1fr); }
+  .contato-lista { display: block; }
+}
+.rod-marca img { height: auto; }
+.btn-luxo--linha { color: var(--lx-texto); }
+.hero .btn-luxo--linha, .secao-escura .btn-luxo--linha { color: #fff; }
+.rod-marca img { width: 190px; height: auto; }
+@media (min-width: 1100px) { .rod-marca img { width: 220px; } }
