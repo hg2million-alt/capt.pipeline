@@ -84,6 +84,10 @@ Nada enviado pela casa. Material público (dossiê, Maps), em `assets/`:
 - Marcado como "a confirmar" no demo: texto de apresentação da casa, cardápio completo/carta de vinhos/preços (nomes dos pratos são descrição das fotos), reserva pelo WhatsApp.
 - Arquivo entregue: `entregas/2026-10-25-restaurante-estetica-odontologia/Buongustaio.html`
 
+## Revisão desktop
+
+Hero dividido a partir de 860 px: texto à esquerda, fachada nítida e enquadrada à direita (a foto tem 921 px, nunca fica acima de ~0,7x), e a mesma foto desfocada e escurecida só como textura de fundo. Abaixo de 860 px o hero segue em tela cheia, como antes. Contêiner 1280 px, menu horizontal desde 1000 px, escala tipográfica maior, mapa do Google embutido (carrega com internet) e rodapé em 4 colunas.
+
 ## Fase
 
 demo entregue (.html) / abordagem pronta, não enviada
