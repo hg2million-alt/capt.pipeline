@@ -75,6 +75,8 @@ No demo entrou só uma **seleção com nome neutro** de cada grupo. Ficaram de f
 - Arquivo: `entregas/2026-10-25-restaurante-estetica-odontologia/Clínica Luanna Souza.html`
 - Marcado como "a confirmar" no demo: Coren, Instagram atual, tratamento capilar. Rodapé avisa que é uma prévia, não o site oficial
 
+- Revisão desktop (27/10): hero em 2 colunas com a foto da recepção nítida e enquadrada (fundo desfocado só como textura, sem esticar a foto vertical; no celular a foto fica acima do texto, sem cobrir o letreiro), menu horizontal e botão "Agendar" a partir de 1024 px, tratamentos em 2 x 2, mapa do Google ao lado dos contatos, rodapé em 4 colunas.
+
 ## Fase
 
 demo entregue (.html) / abordagem pronta, não enviada
