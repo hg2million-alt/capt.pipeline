@@ -395,3 +395,5 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
   .sp-galeria figure.g-d { grid-column: 3 / span 2; grid-row: 2; }
   .sp-cabeca--centro p { margin-inline: auto; max-width: none; }
 }
+@media (min-width: 821px) and (max-width: 1023px) { .sp-destaque { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } .sp-destaque figure { aspect-ratio: 4 / 5; } }
+@media (min-width: 1024px) { .sp-destaque { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
