@@ -823,6 +823,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 }
 @media (min-width: 821px) and (max-width: 1023px) { .sp-destaque { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } .sp-destaque figure { aspect-ratio: 4 / 5; } }
 @media (min-width: 1024px) { .sp-destaque { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+.sp-destaque figure { width: 100%; position: relative; }
+.sp-destaque figure img { position: absolute; inset: 0; }
+.lx-secao { overflow-x: clip; }
 
 </style>
   <script type="application/ld+json">
