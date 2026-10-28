@@ -3,3 +3,4 @@ __pycache__/
 .vercel/
 .DS_Store
 *-orig.mp4
+.playwright-mcp/
