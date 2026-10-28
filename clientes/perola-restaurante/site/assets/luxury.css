@@ -1,0 +1,126 @@
+/* =====================================================================
+   Base do estilo LUXURY — o estilo principal dos demos da oficina.
+   As CORES vêm da marca do cliente (identidade.md): trocar só as variáveis
+   do :root. O resto (tipografia, respiro, linhas finas, hero com foto)
+   é o que faz o site parecer de luxo, independente da cor.
+   ===================================================================== */
+
+:root {
+  /* marca do cliente — substituir pelos hex da logo */
+  --lx-fundo: #0e0d0c;        /* fundo principal: escuro profundo (ou creme #f6f1ea na versão clara) */
+  --lx-fundo-2: #161412;      /* fundo alternado das seções */
+  --lx-texto: #f3eee6;        /* texto principal */
+  --lx-texto-suave: #b9b1a5;  /* texto secundário */
+  --lx-acento: #c8a96a;       /* cor de destaque da marca — usar pouco: linhas, rótulos, 1 botão */
+  --lx-linha: rgb(255 255 255 / 0.12);
+
+  --lx-serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  --lx-sans: "Manrope", "Inter", system-ui, sans-serif;
+
+  --lx-max: 1180px;
+  --lx-gutter: clamp(20px, 5vw, 56px);
+  --lx-secao: clamp(88px, 12vw, 160px);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0;
+  background: var(--lx-fundo);
+  color: var(--lx-texto);
+  font: 300 clamp(15px, 1.05vw, 17px)/1.75 var(--lx-sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+img, video { max-width: 100%; display: block; }
+a { color: inherit; }
+
+.lx-container { width: min(100% - 2 * var(--lx-gutter), var(--lx-max)); margin-inline: auto; }
+.lx-secao { padding-block: var(--lx-secao); }
+.lx-secao--alt { background: var(--lx-fundo-2); }
+
+/* tipografia: serifada grande e leve + rótulo pequeno em caixa alta espaçada */
+h1, h2, h3 { font-family: var(--lx-serif); font-weight: 400; line-height: 1.05; letter-spacing: -0.01em; margin: 0; }
+h1 { font-size: clamp(44px, 7.4vw, 104px); }
+h2 { font-size: clamp(34px, 4.6vw, 64px); }
+h3 { font-size: clamp(24px, 2.2vw, 30px); }
+h1 em, h2 em { font-style: italic; color: var(--lx-acento); }
+.lx-rotulo {
+  display: inline-flex; align-items: center; gap: 14px;
+  font: 500 11px/1 var(--lx-sans); letter-spacing: 0.32em; text-transform: uppercase;
+  color: var(--lx-acento);
+}
+.lx-rotulo::before { content: ""; width: 36px; height: 1px; background: currentColor; }
+.lx-texto-suave { color: var(--lx-texto-suave); max-width: 56ch; }
+
+/* botões: retângulo fino, sem sombra, sem cantos muito redondos */
+.btn-luxo {
+  display: inline-flex; align-items: center; gap: 12px;
+  padding: 17px 30px; border: 1px solid var(--lx-acento);
+  background: var(--lx-acento); color: var(--lx-fundo);
+  font: 500 12px/1 var(--lx-sans); letter-spacing: 0.22em; text-transform: uppercase;
+  text-decoration: none; cursor: pointer;
+  transition: background-color 0.45s cubic-bezier(.22,1,.36,1), color 0.45s cubic-bezier(.22,1,.36,1), transform 0.2s;
+}
+.btn-luxo:hover { background: transparent; color: var(--lx-acento); }
+.btn-luxo--linha { background: transparent; color: var(--lx-texto); border-color: var(--lx-linha); }
+.btn-luxo--linha:hover { border-color: var(--lx-acento); color: var(--lx-acento); }
+.btn-luxo:focus-visible { outline: 2px solid var(--lx-acento); outline-offset: 4px; }
+
+/* HERO — sempre com IMAGEM DE FUNDO (foto real do negócio) */
+.hero {
+  position: relative; isolation: isolate;
+  min-height: 100svh; display: grid; align-items: end;
+  padding: 140px 0 clamp(56px, 9vw, 110px);
+}
+.hero-fundo { position: absolute; inset: 0; z-index: -2; }
+.hero-fundo img, .hero-fundo video { width: 100%; height: 100%; object-fit: cover; object-position: var(--hero-foco, center); }
+/* véu sólido: texto sempre legível sobre foto real, no celular inclusive */
+.hero::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background:
+    linear-gradient(180deg, rgb(0 0 0 / 0.55) 0%, rgb(0 0 0 / 0.15) 35%, rgb(0 0 0 / 0.75) 100%),
+    linear-gradient(90deg, rgb(0 0 0 / 0.55), transparent 70%);
+}
+.hero h1 { max-width: 14ch; margin-block: 22px 26px; }
+.hero p { max-width: 46ch; color: rgb(255 255 255 / 0.82); margin: 0 0 36px; }
+.hero-acoes { display: flex; flex-wrap: wrap; gap: 14px; }
+.hero-chip {
+  display: inline-block; margin-top: 28px; padding: 6px 12px;
+  font-size: 11px; letter-spacing: 0.08em; border: 1px dashed rgb(255 255 255 / 0.35); color: rgb(255 255 255 / 0.7);
+}
+
+/* header */
+.header-luxo .lx-container { display: flex; align-items: center; justify-content: space-between; height: 84px; }
+.lx-marca { font: 400 24px/1 var(--lx-serif); letter-spacing: 0.04em; text-decoration: none; }
+.lx-nav { display: flex; gap: 34px; }
+.lx-nav a { font: 400 12px/1 var(--lx-sans); letter-spacing: 0.2em; text-transform: uppercase; text-decoration: none; color: rgb(255 255 255 / 0.8); }
+.lx-nav a:hover { color: var(--lx-acento); }
+@media (max-width: 820px) { .lx-nav { display: none; } }
+
+/* grids e cartões: linha fina, sem sombra pesada */
+.lx-grid { display: grid; gap: clamp(20px, 3vw, 36px); grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); }
+.lx-card { border: 1px solid var(--lx-linha); padding: clamp(28px, 3vw, 42px); background: rgb(255 255 255 / 0.015); }
+.lx-card h3 { margin-bottom: 12px; }
+.lx-card .lx-num { font: 400 13px/1 var(--lx-serif); color: var(--lx-acento); letter-spacing: 0.1em; display: block; margin-bottom: 26px; }
+.lx-divisor { height: 1px; background: var(--lx-linha); border: 0; margin: 0; }
+
+/* galeria editorial */
+.lx-galeria { display: grid; gap: 12px; grid-template-columns: repeat(12, 1fr); }
+.lx-galeria figure { margin: 0; overflow: hidden; grid-column: span 4; aspect-ratio: 4 / 5; }
+.lx-galeria figure:nth-child(3n + 1) { grid-column: span 8; aspect-ratio: 16 / 10; }
+.lx-galeria img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.5s cubic-bezier(.22,1,.36,1); }
+.lx-galeria figure:hover img { transform: scale(1.04); }
+@media (max-width: 700px) { .lx-galeria figure, .lx-galeria figure:nth-child(3n + 1) { grid-column: span 12; aspect-ratio: 4 / 3; } }
+
+/* citação de avaliação real (sempre com fonte) */
+.lx-citacao { font: italic 400 clamp(24px, 3vw, 38px)/1.3 var(--lx-serif); margin: 0; }
+.lx-citacao + cite { display: block; margin-top: 18px; font: 500 11px/1 var(--lx-sans); letter-spacing: 0.24em; text-transform: uppercase; color: var(--lx-texto-suave); font-style: normal; }
+
+/* chip "a confirmar" (dado não confirmado — regra da oficina) */
+.a-confirmar { display: inline-block; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; padding: 3px 8px; border: 1px dashed var(--lx-acento); color: var(--lx-acento); vertical-align: middle; }
+
+.lx-rodape { padding-block: 56px; border-top: 1px solid var(--lx-linha); color: var(--lx-texto-suave); font-size: 13px; }
+.wa-flutuante a { display: grid; place-items: center; width: 56px; height: 56px; border-radius: 50%; background: #25d366; color: #fff; }
+.arco-destaque { --arco-cor: var(--lx-acento); }
