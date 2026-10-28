@@ -6,7 +6,7 @@ Gancho (verificado em 28/10/2026): no Google o Bacalhau Lusitano não tem site; 
 
 1. `Boa tarde! Falo com a Eli, do Bacalhau Lusitano?`
 2. `Procurei o restaurante no Google e o link do Instagram cai num cardápio em PDF do Drive e em botões de WhatsApp. Um restaurante com a história de vocês, desde 2010 no Tirol, merecia uma página própria.`
-3. `Montei um modelo com o azulejo e o emblema do cardápio de vocês, a história da casa e o cardápio completo, com botão de reserva e de delivery pelo WhatsApp. Posso te mandar? É um arquivo, abre direto no celular.`
+3. `Montei um modelo com o azulejo e o emblema do cardápio de vocês, a história da casa e o cardápio completo e um carrinho de delivery: o cliente monta o pedido, escolhe bairro e pagamento (com troco calculado) e o pedido chega pronto no WhatsApp de vocês. Posso te mandar? É um arquivo, abre direto no celular.`
 
 (Após o "pode", enviar `Bacalhau Lusitano.html`.)
 
