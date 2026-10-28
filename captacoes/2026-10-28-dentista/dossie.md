@@ -1,7 +1,7 @@
 # Dossiê — dentista, Ponta Negra (rodada 2026-10-28)
 
 Pedido: `/captar 1` → nicho escolhido: dentista. Busca: `dentista Ponta Negra Natal`
-(~45 ffichas varridas; só as de Ponta Negra com gap checado entraram).
+(~45 fichas varridas; só as de Ponta Negra com gap checado entraram).
 
 ## 1. Comendador Dr Raoni Terramar | Odontologia Estética e Reabilitação Oral
 
