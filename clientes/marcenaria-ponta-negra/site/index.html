@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Marcenaria Ponta Negra — Móveis sob medida, Natal/RN</title>
+  <meta name="description" content="Demo de site para a Marcenaria Ponta Negra, Natal/RN.">
+  <script>
+    (function (h) {
+      if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        h.classList.add("motion");
+        setTimeout(function () { if (!window.__animOK) h.classList.remove("motion"); }, 3000);
+      }
+    })(document.documentElement);
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Manrope:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="assets/luxury.css">
+  <link rel="stylesheet" href="assets/animacoes.css">
+  <style>
+    :root { --lx-fundo:#17100b; --lx-fundo-2:#1e1610; --lx-texto:#f2e9dd; --lx-texto-suave:#bfb2a2; --lx-acento:#c99a5b; }
+    .lx-marca { font-family: var(--lx-serif); font-size: 22px; letter-spacing: .02em; text-decoration: none; }
+    .lx-marca small { display:block; font:500 9px/1 var(--lx-sans); letter-spacing:.34em; text-transform:uppercase; color:var(--lx-acento); margin-top:5px; }
+    .nota { display:inline-flex; align-items:baseline; gap:14px; font-family:var(--lx-serif); }
+    .nota b { font-size: clamp(64px,10vw,120px); font-weight:400; line-height:1; color:var(--lx-acento); }
+    .nota span { font:300 15px/1.4 var(--lx-sans); color:var(--lx-texto-suave); text-align:left; }
+    .dados { display:grid; gap:28px; max-width:560px; margin:0 auto 44px; text-align:left; }
+    .dados div { border-top:1px solid var(--lx-linha); padding-top:16px; }
+    .dados dt { font:500 11px/1 var(--lx-sans); letter-spacing:.28em; text-transform:uppercase; color:var(--lx-acento); margin-bottom:10px; }
+    .dados dd { margin:0; color:var(--lx-texto); }
+    .passos { counter-reset:p; display:grid; gap:0; max-width:760px; }
+    .passos li { list-style:none; counter-increment:p; display:grid; grid-template-columns:56px 1fr; padding:26px 0; border-top:1px solid var(--lx-linha); }
+    .passos li::before { content:"0" counter(p); font-family:var(--lx-serif); font-size:28px; color:var(--lx-acento); }
+    .passos ul { padding:0; margin:0; }
+    .passos h3 { margin-bottom:6px; }
+  </style>
+</head>
+<body>
+
+  <header class="header-luxo">
+    <div class="lx-container">
+      <a class="lx-marca" href="#topo">Marcenaria Ponta Negra<small>Natal · RN</small></a>
+      <nav class="lx-nav" aria-label="Seções">
+        <a href="#servicos">Trabalhos</a>
+        <a href="#como">Como funciona</a>
+        <a href="#avaliacoes">Avaliação</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="topo">
+    <section class="hero">
+      <div class="hero-fundo">
+        <img src="assets/textura-madeira.svg" alt="" fetchpriority="high">
+      </div>
+      <div class="lx-container hero-entrada">
+        <span class="lx-rotulo" style="--i:0">Ponta Negra · Natal</span>
+        <h1 style="--i:1">Móveis feitos <em>sob medida</em> para a sua casa</h1>
+        <p style="--i:2">Marcenaria em Ponta Negra, com nota 4,7 no Google. Fale direto com a oficina e conte o ambiente que você quer montar.</p>
+        <div class="hero-acoes" style="--i:3">
+          <a class="btn-luxo" href="https://wa.me/5584994605125">Pedir orçamento no WhatsApp</a>
+          <a class="btn-luxo btn-luxo--linha" href="#servicos">Ver trabalhos</a>
+        </div>
+        <span class="hero-chip" style="--i:4">Imagem ilustrativa — entra a foto real da oficina</span>
+      </div>
+    </section>
+
+    <section id="servicos" class="lx-secao">
+      <div class="lx-container">
+        <span class="lx-rotulo" data-anim="slide">Trabalhos</span>
+        <h2 data-anim="rise3d" style="margin:22px 0 22px;max-width:18ch">Feito para o seu <span class="arco-destaque">espaço<svg viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><path d="M2 8 Q50 0 98 8"/></svg></span></h2>
+        <p class="lx-texto-suave" data-anim="fade" style="margin-bottom:56px">Exemplos do que uma marcenaria sob medida faz. <span class="a-confirmar">ilustrativo — a confirmar com a oficina</span></p>
+        <div class="lx-grid" data-stagger="3d">
+          <article class="lx-card hover-elevado" tabindex="0"><span class="lx-num">01</span><h3>Cozinhas e áreas de serviço</h3><p class="lx-texto-suave">Armários pensados para a medida exata do ambiente. <span class="a-confirmar">a confirmar</span></p></article>
+          <article class="lx-card hover-elevado" tabindex="0"><span class="lx-num">02</span><h3>Dormitórios e closets</h3><p class="lx-texto-suave">Guarda-roupas, camas e painéis feitos para o seu quarto. <span class="a-confirmar">a confirmar</span></p></article>
+          <article class="lx-card hover-elevado" tabindex="0"><span class="lx-num">03</span><h3>Sala, painéis e escritório</h3><p class="lx-texto-suave">Estantes, racks e bancadas sob projeto. <span class="a-confirmar">a confirmar</span></p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="como" class="lx-secao lx-secao--alt">
+      <div class="lx-container">
+        <span class="lx-rotulo" data-anim="fade">Como funciona</span>
+        <h2 data-anim="swing" style="margin:22px 0 40px">Do primeiro contato à instalação</h2>
+        <ul class="passos" data-stagger>
+          <li><div><h3>Você conta o que precisa</h3><p class="lx-texto-suave">Pelo WhatsApp, com fotos ou medidas do ambiente.</p></div></li>
+          <li><div><h3>Orçamento e projeto</h3><p class="lx-texto-suave">Valores e prazos combinados direto com a oficina. <span class="a-confirmar">a confirmar</span></p></div></li>
+          <li><div><h3>Fabricação e instalação</h3><p class="lx-texto-suave">Móvel produzido na medida e montado no local. <span class="a-confirmar">a confirmar</span></p></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="avaliacoes" class="lx-secao">
+      <div class="lx-container" style="max-width:860px;text-align:center">
+        <span class="lx-rotulo" data-anim="fade">Avaliação no Google</span>
+        <div data-anim="rise3d" style="margin-top:36px">
+          <div class="nota"><b>4,7</b><span>nota no Google Maps<br>Marcenaria Ponta Negra</span></div>
+          <p class="lx-texto-suave" style="margin:24px auto 0">Nota da ficha da oficina no Google Maps. Avaliações de clientes entram aqui como citação, com a fonte.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="lx-secao lx-secao--alt">
+      <div class="lx-container" style="text-align:center">
+        <span class="lx-rotulo" data-anim="fade">Contato</span>
+        <h2 data-anim="rise3d" style="margin:22px auto 40px;max-width:16ch">Vamos desenhar o seu móvel</h2>
+        <dl class="dados" data-anim="fade">
+          <div><dt>Endereço</dt><dd>Av. Praia de Muriú, 40 — Conj. Ponta Negra, Natal/RN</dd></div>
+          <div><dt>Telefone</dt><dd>+55 84 99460-5125</dd></div>
+          <div><dt>Horário</dt><dd>Fecha às 17h; abre às 8h <span class="a-confirmar">grade completa a confirmar</span></dd></div>
+        </dl>
+        <a class="btn-luxo" data-anim="rise3d" href="https://wa.me/5584994605125">Falar no WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="lx-rodape">
+    <div class="lx-container">Marcenaria Ponta Negra · Ponta Negra, Natal/RN · Demo ilustrativo</div>
+  </footer>
+
+  <div class="wa-flutuante" data-depois=".hero" data-some-em="#contato">
+    <a href="https://wa.me/5584994605125" aria-label="Falar no WhatsApp">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.1-4.7-4-4.8-4.2-.1-.2-1.2-1.5-1.2-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.4Z"/></svg>
+    </a>
+  </div>
+
+  <script src="assets/animacoes.js"></script>
+</body>
+</html>

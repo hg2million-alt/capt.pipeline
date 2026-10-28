@@ -1,0 +1,761 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Marcenaria Ponta Negra — Móveis sob medida, Natal/RN</title>
+  <meta name="description" content="Demo de site para a Marcenaria Ponta Negra, Natal/RN.">
+  <script>
+    (function (h) {
+      if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        h.classList.add("motion");
+        setTimeout(function () { if (!window.__animOK) h.classList.remove("motion"); }, 3000);
+      }
+    })(document.documentElement);
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Manrope:wght@300;400;500&display=swap">
+  <style>
+/* =====================================================================
+   Base do estilo LUXURY — o estilo principal dos demos da oficina.
+   As CORES vêm da marca do cliente (identidade.md): trocar só as variáveis
+   do :root. O resto (tipografia, respiro, linhas finas, hero com foto)
+   é o que faz o site parecer de luxo, independente da cor.
+   ===================================================================== */
+
+:root {
+  /* marca do cliente — substituir pelos hex da logo */
+  --lx-fundo: #0e0d0c;        /* fundo principal: escuro profundo (ou creme #f6f1ea na versão clara) */
+  --lx-fundo-2: #161412;      /* fundo alternado das seções */
+  --lx-texto: #f3eee6;        /* texto principal */
+  --lx-texto-suave: #b9b1a5;  /* texto secundário */
+  --lx-acento: #c8a96a;       /* cor de destaque da marca — usar pouco: linhas, rótulos, 1 botão */
+  --lx-linha: rgb(255 255 255 / 0.12);
+
+  --lx-serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  --lx-sans: "Manrope", "Inter", system-ui, sans-serif;
+
+  --lx-max: 1180px;
+  --lx-gutter: clamp(20px, 5vw, 56px);
+  --lx-secao: clamp(88px, 12vw, 160px);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0;
+  background: var(--lx-fundo);
+  color: var(--lx-texto);
+  font: 300 clamp(15px, 1.05vw, 17px)/1.75 var(--lx-sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+img, video { max-width: 100%; display: block; }
+a { color: inherit; }
+
+.lx-container { width: min(100% - 2 * var(--lx-gutter), var(--lx-max)); margin-inline: auto; }
+.lx-secao { padding-block: var(--lx-secao); }
+.lx-secao--alt { background: var(--lx-fundo-2); }
+
+/* tipografia: serifada grande e leve + rótulo pequeno em caixa alta espaçada */
+h1, h2, h3 { font-family: var(--lx-serif); font-weight: 400; line-height: 1.05; letter-spacing: -0.01em; margin: 0; }
+h1 { font-size: clamp(44px, 7.4vw, 104px); }
+h2 { font-size: clamp(34px, 4.6vw, 64px); }
+h3 { font-size: clamp(24px, 2.2vw, 30px); }
+h1 em, h2 em { font-style: italic; color: var(--lx-acento); }
+.lx-rotulo {
+  display: inline-flex; align-items: center; gap: 14px;
+  font: 500 11px/1 var(--lx-sans); letter-spacing: 0.32em; text-transform: uppercase;
+  color: var(--lx-acento);
+}
+.lx-rotulo::before { content: ""; width: 36px; height: 1px; background: currentColor; }
+.lx-texto-suave { color: var(--lx-texto-suave); max-width: 56ch; }
+
+/* botões: retângulo fino, sem sombra, sem cantos muito redondos */
+.btn-luxo {
+  display: inline-flex; align-items: center; gap: 12px;
+  padding: 17px 30px; border: 1px solid var(--lx-acento);
+  background: var(--lx-acento); color: var(--lx-fundo);
+  font: 500 12px/1 var(--lx-sans); letter-spacing: 0.22em; text-transform: uppercase;
+  text-decoration: none; cursor: pointer;
+  transition: background-color 0.45s cubic-bezier(.22,1,.36,1), color 0.45s cubic-bezier(.22,1,.36,1), transform 0.2s;
+}
+.btn-luxo:hover { background: transparent; color: var(--lx-acento); }
+.btn-luxo--linha { background: transparent; color: var(--lx-texto); border-color: var(--lx-linha); }
+.btn-luxo--linha:hover { border-color: var(--lx-acento); color: var(--lx-acento); }
+.btn-luxo:focus-visible { outline: 2px solid var(--lx-acento); outline-offset: 4px; }
+
+/* HERO — sempre com IMAGEM DE FUNDO (foto real do negócio) */
+.hero {
+  position: relative; isolation: isolate;
+  min-height: 100svh; display: grid; align-items: end;
+  padding: 140px 0 clamp(56px, 9vw, 110px);
+}
+.hero-fundo { position: absolute; inset: 0; z-index: -2; }
+.hero-fundo img, .hero-fundo video { width: 100%; height: 100%; object-fit: cover; object-position: var(--hero-foco, center); }
+/* véu sólido: texto sempre legível sobre foto real, no celular inclusive */
+.hero::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background:
+    linear-gradient(180deg, rgb(0 0 0 / 0.55) 0%, rgb(0 0 0 / 0.15) 35%, rgb(0 0 0 / 0.75) 100%),
+    linear-gradient(90deg, rgb(0 0 0 / 0.55), transparent 70%);
+}
+.hero h1 { max-width: 14ch; margin-block: 22px 26px; }
+.hero p { max-width: 46ch; color: rgb(255 255 255 / 0.82); margin: 0 0 36px; }
+.hero-acoes { display: flex; flex-wrap: wrap; gap: 14px; }
+.hero-chip {
+  display: inline-block; margin-top: 28px; padding: 6px 12px;
+  font-size: 11px; letter-spacing: 0.08em; border: 1px dashed rgb(255 255 255 / 0.35); color: rgb(255 255 255 / 0.7);
+}
+
+/* header */
+.header-luxo .lx-container { display: flex; align-items: center; justify-content: space-between; height: 84px; }
+.lx-marca { font: 400 24px/1 var(--lx-serif); letter-spacing: 0.04em; text-decoration: none; }
+.lx-nav { display: flex; gap: 34px; }
+.lx-nav a { font: 400 12px/1 var(--lx-sans); letter-spacing: 0.2em; text-transform: uppercase; text-decoration: none; color: rgb(255 255 255 / 0.8); }
+.lx-nav a:hover { color: var(--lx-acento); }
+@media (max-width: 820px) { .lx-nav { display: none; } }
+
+/* grids e cartões: linha fina, sem sombra pesada */
+.lx-grid { display: grid; gap: clamp(20px, 3vw, 36px); grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); }
+.lx-card { border: 1px solid var(--lx-linha); padding: clamp(28px, 3vw, 42px); background: rgb(255 255 255 / 0.015); }
+.lx-card h3 { margin-bottom: 12px; }
+.lx-card .lx-num { font: 400 13px/1 var(--lx-serif); color: var(--lx-acento); letter-spacing: 0.1em; display: block; margin-bottom: 26px; }
+.lx-divisor { height: 1px; background: var(--lx-linha); border: 0; margin: 0; }
+
+/* galeria editorial */
+.lx-galeria { display: grid; gap: 12px; grid-template-columns: repeat(12, 1fr); }
+.lx-galeria figure { margin: 0; overflow: hidden; grid-column: span 4; aspect-ratio: 4 / 5; }
+.lx-galeria figure:nth-child(3n + 1) { grid-column: span 8; aspect-ratio: 16 / 10; }
+.lx-galeria img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.5s cubic-bezier(.22,1,.36,1); }
+.lx-galeria figure:hover img { transform: scale(1.04); }
+@media (max-width: 700px) { .lx-galeria figure, .lx-galeria figure:nth-child(3n + 1) { grid-column: span 12; aspect-ratio: 4 / 3; } }
+
+/* citação de avaliação real (sempre com fonte) */
+.lx-citacao { font: italic 400 clamp(24px, 3vw, 38px)/1.3 var(--lx-serif); margin: 0; }
+.lx-citacao + cite { display: block; margin-top: 18px; font: 500 11px/1 var(--lx-sans); letter-spacing: 0.24em; text-transform: uppercase; color: var(--lx-texto-suave); font-style: normal; }
+
+/* chip "a confirmar" (dado não confirmado — regra da oficina) */
+.a-confirmar { display: inline-block; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; padding: 3px 8px; border: 1px dashed var(--lx-acento); color: var(--lx-acento); vertical-align: middle; }
+
+.lx-rodape { padding-block: 56px; border-top: 1px solid var(--lx-linha); color: var(--lx-texto-suave); font-size: 13px; }
+.wa-flutuante a { display: grid; place-items: center; width: 56px; height: 56px; border-radius: 50%; background: #25d366; color: #fff; }
+.arco-destaque { --arco-cor: var(--lx-acento); }
+
+</style>
+  <style>
+/* =====================================================================
+   Animações e efeitos 3D — biblioteca da oficina (sem dependências)
+   Especificação completa: animacoes-3d/FRONT-END_CREATOR.md (itens 1–24)
+   Uso: animacoes-3d/README.md
+
+   Regra geral (item 7): entradas em 1,5 s com cubic-bezier(.22,1,.36,1);
+   respostas a mouse/clique em 0,45 s. O estado invisível só existe sob
+   html.motion (ligada pelo script inline do <head>); sem JS, com movimento
+   reduzido ou se o app não iniciar em 3 s, tudo aparece.
+   ===================================================================== */
+
+:root {
+  --anim-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --anim-entrada: 1.5s;
+  --anim-resposta: 0.45s;
+}
+
+/* ---------- Entradas por scroll (itens 1–4, 8–11) ---------- */
+html.motion [data-anim] {
+  transition:
+    opacity var(--anim-entrada) var(--anim-ease),
+    transform var(--anim-entrada) var(--anim-ease);
+  transition-delay: var(--anim-delay, 0ms);
+}
+html.motion [data-anim]:not(.is-in) { opacity: 0; }
+
+/* 3 — fade suave */
+html.motion [data-anim="fade"]:not(.is-in) { transform: none; }
+/* 2 — slide lateral (esquerda padrão, direita por configuração) */
+html.motion [data-anim="slide"]:not(.is-in) { transform: translateX(-28px); }
+html.motion [data-anim="slide-direita"]:not(.is-in) { transform: translateX(28px); }
+/* 4 — rotation entry refinada */
+html.motion [data-anim="rotacao"] { transform-origin: center; }
+html.motion [data-anim="rotacao"]:not(.is-in) { transform: rotate(-8deg) scale(0.96); }
+/* 8 — rise 3D */
+html.motion [data-anim="rise3d"] { transform-origin: 50% 100%; }
+html.motion [data-anim="rise3d"]:not(.is-in) {
+  transform: perspective(1100px) rotateX(-28deg) translateY(48px) scale(0.96);
+}
+/* 9 — swing 3D (porta abrindo) */
+html.motion [data-anim="swing"] { transform-origin: 0% 50%; }
+html.motion [data-anim="swing"]:not(.is-in) {
+  transform: perspective(1100px) rotateY(32deg) translateX(-40px);
+}
+html.motion [data-anim="swing-direita"] { transform-origin: 100% 50%; }
+html.motion [data-anim="swing-direita"]:not(.is-in) {
+  transform: perspective(1100px) rotateY(-32deg) translateX(40px);
+}
+/* 10 — spin 3D (moeda) — só em elemento pequeno e decorativo */
+html.motion [data-anim="moeda"]:not(.is-in) {
+  transform: perspective(700px) rotateY(-220deg) scale(0.7);
+}
+/* 1 e 11 — stagger (o contêiner recebe data-stagger; os itens, o atraso) */
+html.motion [data-stagger] > * {
+  transition:
+    opacity var(--anim-entrada) var(--anim-ease),
+    transform var(--anim-entrada) var(--anim-ease);
+  transition-delay: var(--anim-delay, 0ms);
+}
+html.motion [data-stagger]:not(.is-in) > * { opacity: 0; transform: translateY(18px); }
+html.motion [data-stagger="3d"] > * { transform-origin: 50% 0%; }
+html.motion [data-stagger="3d"]:not(.is-in) > * {
+  transform: perspective(1100px) rotateX(-38deg) translateY(36px) scale(0.97);
+}
+/* pai de swing/slide: sem barra horizontal */
+.anim-clip { overflow-x: clip; }
+
+/* ---------- 14 — entrada do hero só com CSS (não espera o JS) ---------- */
+.hero-entrada > * {
+  animation: heroEntra var(--anim-entrada) var(--anim-ease) both;
+  animation-delay: calc(var(--i, 0) * 80ms);
+}
+.hero-entrada[data-replay] > * { animation: none; opacity: 0; }
+@keyframes heroEntra {
+  from { opacity: 0; transform: perspective(1100px) rotateX(-24deg) translateY(28px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* ---------- 6 — hover elevado (só mouse) ---------- */
+.hover-elevado {
+  transition:
+    transform 260ms var(--anim-ease),
+    box-shadow 260ms var(--anim-ease),
+    border-color 260ms var(--anim-ease);
+}
+@media (hover: hover) and (pointer: fine) {
+  .hover-elevado:hover {
+    transform: translateY(-6px) scale(1.015);
+    box-shadow: 0 18px 40px -18px rgb(0 0 0 / 0.45);
+  }
+}
+.hover-elevado:focus-visible {
+  transform: translateY(-6px) scale(1.015);
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+.hover-elevado:active { transform: scale(0.99); }
+
+/* ---------- 12 — tilt 3D seguindo o mouse, com reflexo ---------- */
+[data-tilt] { position: relative; }
+[data-tilt] > .tilt-interno {
+  transform: perspective(1200px) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg));
+  transform-style: preserve-3d;
+  transition: transform var(--anim-resposta) var(--anim-ease);
+  position: relative;
+}
+[data-tilt].tilt-ativo > .tilt-interno { transition: none; }
+[data-tilt] > .tilt-interno::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: radial-gradient(circle at var(--glare-x, 50%) var(--glare-y, 50%), rgb(255 255 255 / 0.22), transparent 55%);
+  opacity: 0;
+  transition: opacity var(--anim-resposta) var(--anim-ease);
+}
+[data-tilt].tilt-ativo > .tilt-interno::after { opacity: 1; }
+
+/* ---------- 5 — flip de card de duas faces (botão controla) ---------- */
+.flip-card { perspective: 1200px; }
+.flip-card .flip-faces {
+  display: grid;
+  transform-style: preserve-3d;
+  transition: transform 650ms ease-in-out;
+}
+.flip-card .flip-frente,
+.flip-card .flip-verso {
+  grid-area: 1 / 1;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.flip-card .flip-verso { transform: rotateY(180deg); }
+.flip-card.virado .flip-faces { transform: rotateY(180deg); }
+
+/* ---------- 13 — palco 3D na rolagem (sem JS) ---------- */
+@supports (animation-timeline: view()) {
+  .palco-3d {
+    transform-origin: 50% 100%;
+    animation: palco linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+  @keyframes palco {
+    from { transform: perspective(1600px) rotateX(26deg) translateY(56px) scale(0.92); }
+    to { transform: none; }
+  }
+}
+
+/* ---------- 19 — leque 3D de cards flutuando ---------- */
+.leque-3d { position: relative; perspective: 1200px; display: grid; place-items: center; }
+.leque-3d > * {
+  grid-area: 1 / 1;
+  transform:
+    translateX(calc((var(--n) - 1) * 46px))
+    rotateY(calc((var(--n) - 1) * -10deg))
+    rotateZ(calc((var(--n) - 1) * 5deg))
+    translateZ(calc(var(--n) * -30px));
+  transition: transform 0.9s var(--anim-ease);
+  animation: flutua 6s ease-in-out infinite;
+  animation-delay: calc(var(--n) * -2s);
+}
+.leque-3d:hover > * {
+  transform:
+    translateX(calc((var(--n) - 1) * 90px))
+    rotateY(calc((var(--n) - 1) * -14deg))
+    rotateZ(calc((var(--n) - 1) * 8deg))
+    translateZ(calc(var(--n) * -30px));
+}
+@keyframes flutua { 50% { translate: 0 -8px; } }
+
+/* ---------- 20 — carrossel infinito (marquee) ---------- */
+.marquee { position: relative; overflow: hidden; }
+.marquee::before,
+.marquee::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 64px;
+  z-index: 1;
+  pointer-events: none;
+}
+.marquee::before { left: 0; background: linear-gradient(90deg, var(--marquee-fundo, #0d0d0d), transparent); }
+.marquee::after { right: 0; background: linear-gradient(-90deg, var(--marquee-fundo, #0d0d0d), transparent); }
+.marquee-trilha {
+  display: flex;
+  gap: var(--marquee-gap, 24px);
+  padding-right: var(--marquee-gap, 24px);
+  width: max-content;
+  animation: marquee var(--marquee-volta, 80s) linear infinite;
+}
+.marquee[data-sentido="direita"] .marquee-trilha { animation-direction: reverse; }
+.marquee.pausado .marquee-trilha,
+.marquee:hover .marquee-trilha,
+.marquee:focus-within .marquee-trilha { animation-play-state: paused; }
+@keyframes marquee { to { transform: translate3d(-50%, 0, 0); } }
+
+/* ---------- 21 — preenchimento sequencial com check ---------- */
+.grade-check > * { transition: background-color var(--anim-resposta), border-color var(--anim-resposta); transition-delay: calc(var(--d, 0) * 45ms); }
+.grade-check svg { opacity: 0; transform: scale(0.4) rotate(-20deg); transition: opacity var(--anim-resposta) var(--anim-ease), transform var(--anim-resposta) var(--anim-ease); transition-delay: calc(var(--d, 0) * 45ms); }
+.grade-check.is-in > * { background-color: rgb(34 160 90 / 0.14); border-color: #22a05a; }
+.grade-check.is-in svg { opacity: 1; transform: none; }
+
+/* ---------- 22 — arco que se desenha sob a palavra em destaque ---------- */
+.arco-destaque { position: relative; display: inline-block; font-weight: 800; white-space: nowrap; }
+.arco-destaque svg {
+  position: absolute;
+  left: 0;
+  bottom: -0.32em;
+  width: 100%;
+  height: 0.4em;
+  overflow: visible;
+}
+.arco-destaque path { fill: none; stroke: var(--arco-cor, currentColor); stroke-width: 3; vector-effect: non-scaling-stroke; stroke-linecap: round; }
+html.motion .arco-destaque svg { clip-path: inset(-50% 100% -50% 0); transition: clip-path var(--anim-entrada) var(--anim-ease) 0.5s; }
+html.motion .arco-destaque.is-in svg { clip-path: inset(-50% 0 -50% 0); }
+
+/* ---------- 15 — vitrine com troca automática ---------- */
+.vitrine-auto .vitrine-item { display: none; }
+.vitrine-auto .vitrine-item.ativo { display: block; animation: vitrineEntra 0.9s var(--anim-ease) both; }
+@keyframes vitrineEntra {
+  from { opacity: 0; transform: perspective(1400px) rotateY(-24deg) translateX(4%) scale(0.96); }
+  to { opacity: 1; transform: none; }
+}
+.vitrine-barras { display: flex; gap: 6px; }
+.vitrine-barras span { flex: 1; height: 2px; background: rgb(127 127 127 / 0.3); overflow: hidden; }
+.vitrine-barras span i { display: block; height: 100%; background: currentColor; transform-origin: left; transform: scaleX(0); }
+.vitrine-barras span.feito i { transform: scaleX(1); }
+.vitrine-barras span.atual i { animation: barra var(--vitrine-ciclo, 3.6s) linear forwards; }
+.vitrine-auto.pausado .vitrine-barras span.atual i { animation-play-state: paused; }
+@keyframes barra { to { transform: scaleX(1); } }
+
+/* ---------- 24 — microinterações ---------- */
+.header-luxo { position: fixed; inset: 0 0 auto 0; z-index: 50; transition: background-color var(--anim-resposta), border-color var(--anim-resposta), backdrop-filter var(--anim-resposta); border-bottom: 1px solid transparent; }
+.header-luxo.rolou { background-color: rgb(10 10 10 / 0.72); backdrop-filter: blur(10px); border-bottom-color: rgb(255 255 255 / 0.08); }
+.wa-flutuante { position: fixed; right: 18px; bottom: 18px; z-index: 60; opacity: 0; transform: translateY(16px); pointer-events: none; transition: opacity var(--anim-resposta) var(--anim-ease), transform var(--anim-resposta) var(--anim-ease); }
+.wa-flutuante.visivel { opacity: 1; transform: none; pointer-events: auto; }
+details.faq { interpolate-size: allow-keywords; }
+details.faq::details-content { height: 0; overflow: clip; transition: height var(--anim-resposta) var(--anim-ease), content-visibility var(--anim-resposta) allow-discrete; }
+details.faq[open]::details-content { height: auto; }
+details.faq summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; gap: 16px; }
+details.faq summary::-webkit-details-marker { display: none; }
+details.faq summary::after { content: "+"; transition: transform var(--anim-resposta); }
+details.faq[open] summary::after { content: "−"; }
+.btn-luxo:active, button:active { transform: scale(0.97); }
+.digitando span { display: inline-block; width: 6px; height: 6px; margin: 0 2px; border-radius: 50%; background: currentColor; animation: ponto 1.2s infinite ease-in-out; }
+.digitando span:nth-child(2) { animation-delay: 0.15s; }
+.digitando span:nth-child(3) { animation-delay: 0.3s; }
+@keyframes ponto { 0%, 80%, 100% { opacity: 0.25; transform: none; } 40% { opacity: 1; transform: translateY(-3px); } }
+.troca-conteudo { animation: troca var(--anim-resposta) var(--anim-ease) both; }
+@keyframes troca { from { opacity: 0; transform: translateY(8px); } }
+
+/* ---------- 23 — vídeo de fundo do hero ---------- */
+.hero-video-wrap { position: absolute; inset: 0; overflow: hidden; }
+.hero-video-wrap video, .hero-video-wrap img { width: 100%; height: 100%; object-fit: cover; }
+
+/* ---------- Movimento reduzido: tudo visível e parado ---------- */
+@media (prefers-reduced-motion: reduce) {
+  [data-anim], [data-stagger] > *, .hero-entrada > *, .palco-3d, .leque-3d > *, .arco-destaque svg {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    clip-path: none !important;
+  }
+  .hover-elevado:hover, .hover-elevado:focus-visible { transform: none; }
+  .flip-card .flip-faces { transition: none; }
+  .marquee-trilha { animation: none; overflow-x: auto; }
+  .vitrine-auto .vitrine-item.ativo { animation: none; }
+  .grade-check svg { transition: none; }
+}
+
+</style>
+  <style>
+    :root { --lx-fundo:#17100b; --lx-fundo-2:#1e1610; --lx-texto:#f2e9dd; --lx-texto-suave:#bfb2a2; --lx-acento:#c99a5b; }
+    .lx-marca { font-family: var(--lx-serif); font-size: 22px; letter-spacing: .02em; text-decoration: none; }
+    .lx-marca small { display:block; font:500 9px/1 var(--lx-sans); letter-spacing:.34em; text-transform:uppercase; color:var(--lx-acento); margin-top:5px; }
+    .nota { display:inline-flex; align-items:baseline; gap:14px; font-family:var(--lx-serif); }
+    .nota b { font-size: clamp(64px,10vw,120px); font-weight:400; line-height:1; color:var(--lx-acento); }
+    .nota span { font:300 15px/1.4 var(--lx-sans); color:var(--lx-texto-suave); text-align:left; }
+    .dados { display:grid; gap:28px; max-width:560px; margin:0 auto 44px; text-align:left; }
+    .dados div { border-top:1px solid var(--lx-linha); padding-top:16px; }
+    .dados dt { font:500 11px/1 var(--lx-sans); letter-spacing:.28em; text-transform:uppercase; color:var(--lx-acento); margin-bottom:10px; }
+    .dados dd { margin:0; color:var(--lx-texto); }
+    .passos { counter-reset:p; display:grid; gap:0; max-width:760px; }
+    .passos li { list-style:none; counter-increment:p; display:grid; grid-template-columns:56px 1fr; padding:26px 0; border-top:1px solid var(--lx-linha); }
+    .passos li::before { content:"0" counter(p); font-family:var(--lx-serif); font-size:28px; color:var(--lx-acento); }
+    .passos ul { padding:0; margin:0; }
+    .passos h3 { margin-bottom:6px; }
+  </style>
+</head>
+<body>
+
+  <header class="header-luxo">
+    <div class="lx-container">
+      <a class="lx-marca" href="#topo">Marcenaria Ponta Negra<small>Natal · RN</small></a>
+      <nav class="lx-nav" aria-label="Seções">
+        <a href="#servicos">Trabalhos</a>
+        <a href="#como">Como funciona</a>
+        <a href="#avaliacoes">Avaliação</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="topo">
+    <section class="hero">
+      <div class="hero-fundo">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNjAwIDEwMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIHNsaWNlIj4KPGRlZnM+CjxmaWx0ZXIgaWQ9ImciIHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPgo8ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iMC4wMDQgMC4wOSIgbnVtT2N0YXZlcz0iNCIgc2VlZD0iMTEiIHJlc3VsdD0ibiIvPgo8ZmVDb2xvck1hdHJpeCBpbj0ibiIgdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMC4zMCAgMCAwIDAgMCAwLjE4ICAwIDAgMCAwIDAuMTAgIDAgMCAwIC0xLjYgMS4yNSIgcmVzdWx0PSJhIi8+CjxmZVR1cmJ1bGVuY2UgdHlwZT0iZnJhY3RhbE5vaXNlIiBiYXNlRnJlcXVlbmN5PSIwLjAwMiAwLjM1IiBudW1PY3RhdmVzPSIyIiBzZWVkPSI0IiByZXN1bHQ9ImYiLz4KPGZlQ29sb3JNYXRyaXggaW49ImYiIHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwIDAgMCAwIDAuMTIgIDAgMCAwIDAgMC4wNyAgMCAwIDAgMCAwLjA0ICAwIDAgMCAtMSAwLjc1IiByZXN1bHQ9ImIiLz4KPGZlTWVyZ2U+PGZlTWVyZ2VOb2RlIGluPSJhIi8+PGZlTWVyZ2VOb2RlIGluPSJiIi8+PC9mZU1lcmdlPgo8L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIxMDAwIiBmaWxsPSIjNWEzYTIyIi8+CjxyZWN0IHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjEwMDAiIGZpbHRlcj0idXJsKCNnKSIvPgo8L3N2Zz4K" alt="" fetchpriority="high">
+      </div>
+      <div class="lx-container hero-entrada">
+        <span class="lx-rotulo" style="--i:0">Ponta Negra · Natal</span>
+        <h1 style="--i:1">Móveis feitos <em>sob medida</em> para a sua casa</h1>
+        <p style="--i:2">Marcenaria em Ponta Negra, com nota 4,7 no Google. Fale direto com a oficina e conte o ambiente que você quer montar.</p>
+        <div class="hero-acoes" style="--i:3">
+          <a class="btn-luxo" href="https://wa.me/5584994605125">Pedir orçamento no WhatsApp</a>
+          <a class="btn-luxo btn-luxo--linha" href="#servicos">Ver trabalhos</a>
+        </div>
+        <span class="hero-chip" style="--i:4">Imagem ilustrativa — entra a foto real da oficina</span>
+      </div>
+    </section>
+
+    <section id="servicos" class="lx-secao">
+      <div class="lx-container">
+        <span class="lx-rotulo" data-anim="slide">Trabalhos</span>
+        <h2 data-anim="rise3d" style="margin:22px 0 22px;max-width:18ch">Feito para o seu <span class="arco-destaque">espaço<svg viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><path d="M2 8 Q50 0 98 8"/></svg></span></h2>
+        <p class="lx-texto-suave" data-anim="fade" style="margin-bottom:56px">Exemplos do que uma marcenaria sob medida faz. <span class="a-confirmar">ilustrativo — a confirmar com a oficina</span></p>
+        <div class="lx-grid" data-stagger="3d">
+          <article class="lx-card hover-elevado" tabindex="0"><span class="lx-num">01</span><h3>Cozinhas e áreas de serviço</h3><p class="lx-texto-suave">Armários pensados para a medida exata do ambiente. <span class="a-confirmar">a confirmar</span></p></article>
+          <article class="lx-card hover-elevado" tabindex="0"><span class="lx-num">02</span><h3>Dormitórios e closets</h3><p class="lx-texto-suave">Guarda-roupas, camas e painéis feitos para o seu quarto. <span class="a-confirmar">a confirmar</span></p></article>
+          <article class="lx-card hover-elevado" tabindex="0"><span class="lx-num">03</span><h3>Sala, painéis e escritório</h3><p class="lx-texto-suave">Estantes, racks e bancadas sob projeto. <span class="a-confirmar">a confirmar</span></p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="como" class="lx-secao lx-secao--alt">
+      <div class="lx-container">
+        <span class="lx-rotulo" data-anim="fade">Como funciona</span>
+        <h2 data-anim="swing" style="margin:22px 0 40px">Do primeiro contato à instalação</h2>
+        <ul class="passos" data-stagger>
+          <li><div><h3>Você conta o que precisa</h3><p class="lx-texto-suave">Pelo WhatsApp, com fotos ou medidas do ambiente.</p></div></li>
+          <li><div><h3>Orçamento e projeto</h3><p class="lx-texto-suave">Valores e prazos combinados direto com a oficina. <span class="a-confirmar">a confirmar</span></p></div></li>
+          <li><div><h3>Fabricação e instalação</h3><p class="lx-texto-suave">Móvel produzido na medida e montado no local. <span class="a-confirmar">a confirmar</span></p></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="avaliacoes" class="lx-secao">
+      <div class="lx-container" style="max-width:860px;text-align:center">
+        <span class="lx-rotulo" data-anim="fade">Avaliação no Google</span>
+        <div data-anim="rise3d" style="margin-top:36px">
+          <div class="nota"><b>4,7</b><span>nota no Google Maps<br>Marcenaria Ponta Negra</span></div>
+          <p class="lx-texto-suave" style="margin:24px auto 0">Nota da ficha da oficina no Google Maps. Avaliações de clientes entram aqui como citação, com a fonte.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="lx-secao lx-secao--alt">
+      <div class="lx-container" style="text-align:center">
+        <span class="lx-rotulo" data-anim="fade">Contato</span>
+        <h2 data-anim="rise3d" style="margin:22px auto 40px;max-width:16ch">Vamos desenhar o seu móvel</h2>
+        <dl class="dados" data-anim="fade">
+          <div><dt>Endereço</dt><dd>Av. Praia de Muriú, 40 — Conj. Ponta Negra, Natal/RN</dd></div>
+          <div><dt>Telefone</dt><dd>+55 84 99460-5125</dd></div>
+          <div><dt>Horário</dt><dd>Fecha às 17h; abre às 8h <span class="a-confirmar">grade completa a confirmar</span></dd></div>
+        </dl>
+        <a class="btn-luxo" data-anim="rise3d" href="https://wa.me/5584994605125">Falar no WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="lx-rodape">
+    <div class="lx-container">Marcenaria Ponta Negra · Ponta Negra, Natal/RN · Demo ilustrativo</div>
+  </footer>
+
+  <div class="wa-flutuante" data-depois=".hero" data-some-em="#contato">
+    <a href="https://wa.me/5584994605125" aria-label="Falar no WhatsApp">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.1-4.7-4-4.8-4.2-.1-.2-1.2-1.5-1.2-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.4Z"/></svg>
+    </a>
+  </div>
+
+  <script>
+/* =====================================================================
+   Animações e efeitos 3D — parte em JavaScript (sem dependências)
+   Par do animacoes.css. Especificação: FRONT-END_CREATOR.md (itens 1–24).
+   Exige no <head>, ANTES de tudo, o script inline do README (liga html.motion).
+   ===================================================================== */
+(function () {
+  "use strict";
+  window.__animOK = true;
+
+  var html = document.documentElement;
+  var reduzido = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var temIO = "IntersectionObserver" in window;
+  if (reduzido || !temIO) html.classList.remove("motion");
+
+  function todos(sel, raiz) { return Array.prototype.slice.call((raiz || document).querySelectorAll(sel)); }
+
+  /* ---------- Entradas que repetem a cada passagem (item 7) ---------- */
+  // um observador compartilhado: revela com ~20% visível, rearma quando sai por completo
+  function prepararStagger(c) {
+    Array.prototype.forEach.call(c.children, function (filho, i) {
+      filho.style.setProperty("--anim-delay", Math.min(i * 80, 480) + "ms");
+    });
+  }
+  todos("[data-stagger]").forEach(function (c) {
+    prepararStagger(c);
+    // itens adicionados depois entram na sequência
+    new MutationObserver(function () { prepararStagger(c); }).observe(c, { childList: true });
+  });
+  todos(".grade-check").forEach(function (g) {
+    Array.prototype.forEach.call(g.children, function (f, i) { f.style.setProperty("--d", i); });
+  });
+
+  var alvosEntrada = "[data-anim], [data-stagger], .grade-check, .arco-destaque";
+  if (temIO && !reduzido) {
+    var obsEntrada = new IntersectionObserver(function (entradas) {
+      entradas.forEach(function (e) {
+        var el = e.target;
+        if (e.isIntersecting && e.intersectionRatio >= 0.2) {
+          el.classList.add("is-in");
+        } else if (!e.isIntersecting && !el.hasAttribute("data-anim-uma-vez") && !el.contains(document.activeElement)) {
+          el.classList.remove("is-in");
+        }
+      });
+    }, { threshold: [0, 0.2] });
+    todos(alvosEntrada).forEach(function (el) { obsEntrada.observe(el); });
+    // foco de teclado num elemento ainda invisível: revela na hora
+    document.addEventListener("focusin", function (ev) {
+      var alvo = ev.target.closest && ev.target.closest(alvosEntrada);
+      if (alvo) alvo.classList.add("is-in");
+    });
+  } else {
+    todos(alvosEntrada).forEach(function (el) { el.classList.add("is-in"); });
+  }
+
+  /* ---------- 14 — replay da entrada do hero ao voltar ao topo ---------- */
+  if (temIO && !reduzido) {
+    todos(".hero-entrada").forEach(function (hero) {
+      Array.prototype.forEach.call(hero.children, function (f, i) {
+        if (!f.style.getPropertyValue("--i")) f.style.setProperty("--i", i);
+      });
+      new IntersectionObserver(function (es) {
+        es.forEach(function (e) {
+          if (!e.isIntersecting) hero.setAttribute("data-replay", "");
+          else if (hero.hasAttribute("data-replay")) {
+            hero.removeAttribute("data-replay");
+            void hero.offsetWidth; // reinicia a animação
+          }
+        });
+      }).observe(hero);
+    });
+  }
+
+  /* ---------- 12 — tilt 3D seguindo o mouse ---------- */
+  if (!reduzido && matchMedia("(hover: hover) and (pointer: fine)").matches) {
+    todos("[data-tilt]").forEach(function (el) {
+      var max = parseFloat(el.getAttribute("data-tilt")) || 7;
+      var interno = el.querySelector(".tilt-interno");
+      if (!interno) return;
+      var quadro = 0, ultimo = null;
+      function aplicar() {
+        quadro = 0;
+        var r = el.getBoundingClientRect();
+        var x = (ultimo.clientX - r.left) / r.width, y = (ultimo.clientY - r.top) / r.height;
+        el.style.setProperty("--tilt-x", ((0.5 - y) * 2 * max).toFixed(2) + "deg");
+        el.style.setProperty("--tilt-y", ((x - 0.5) * 2 * max).toFixed(2) + "deg");
+        el.style.setProperty("--glare-x", (x * 100).toFixed(1) + "%");
+        el.style.setProperty("--glare-y", (y * 100).toFixed(1) + "%");
+      }
+      el.addEventListener("pointermove", function (ev) {
+        if (ev.pointerType !== "mouse") return;
+        ultimo = ev;
+        el.classList.add("tilt-ativo");
+        if (!quadro) quadro = requestAnimationFrame(aplicar);
+      });
+      el.addEventListener("pointerleave", function () {
+        if (quadro) cancelAnimationFrame(quadro);
+        quadro = 0;
+        el.classList.remove("tilt-ativo");
+        el.style.setProperty("--tilt-x", "0deg");
+        el.style.setProperty("--tilt-y", "0deg");
+      });
+    });
+  }
+
+  /* ---------- 5 — flip de card (botão, Enter e Espaço) ---------- */
+  todos(".flip-card").forEach(function (card) {
+    var frente = card.querySelector(".flip-frente"), verso = card.querySelector(".flip-verso");
+    var botoes = todos(".flip-botao", card);
+    function definir(virado) {
+      card.classList.toggle("virado", virado);
+      botoes.forEach(function (b) { b.setAttribute("aria-expanded", String(virado)); });
+      if (verso) { verso.inert = !virado; verso.setAttribute("aria-hidden", String(!virado)); }
+      if (frente) { frente.inert = virado; frente.setAttribute("aria-hidden", String(virado)); }
+      var destino = (virado ? verso : frente);
+      var botao = destino && destino.querySelector(".flip-botao");
+      if (botao) setTimeout(function () { botao.focus({ preventScroll: true }); }, reduzido ? 0 : 650);
+    }
+    botoes.forEach(function (b) { b.addEventListener("click", function () { definir(!card.classList.contains("virado")); }); });
+    definir(false);
+  });
+
+  /* ---------- 20 — carrossel infinito (marquee) ---------- */
+  todos(".marquee").forEach(function (m) {
+    var trilha = m.querySelector(".marquee-trilha");
+    if (!trilha || reduzido) return;
+    Array.prototype.slice.call(trilha.children).forEach(function (item) {
+      var copia = item.cloneNode(true);
+      copia.setAttribute("aria-hidden", "true");
+      copia.inert = true;
+      trilha.appendChild(copia);
+    });
+    var botao = m.parentElement && m.parentElement.querySelector(".marquee-pausa");
+    if (botao) botao.addEventListener("click", function () {
+      var pausar = !m.classList.contains("pausado");
+      todos(".marquee", m.parentElement).forEach(function (x) { x.classList.toggle("pausado", pausar); });
+      botao.setAttribute("aria-pressed", String(pausar));
+      botao.setAttribute("aria-label", pausar ? "Retomar animação" : "Pausar animação");
+    });
+    if (temIO) new IntersectionObserver(function (es) {
+      trilha.style.animationPlayState = es[0].isIntersecting ? "" : "paused";
+    }).observe(m);
+  });
+
+  /* ---------- 15 — vitrine com troca automática ---------- */
+  todos(".vitrine-auto").forEach(function (v) {
+    var itens = todos(".vitrine-item", v);
+    if (!itens.length) return;
+    var ciclo = parseFloat(v.getAttribute("data-ciclo")) || 3600;
+    v.style.setProperty("--vitrine-ciclo", ciclo + "ms");
+    var barras = v.querySelector(".vitrine-barras"), nome = v.querySelector(".vitrine-nome");
+    if (barras && !barras.children.length) itens.forEach(function () { barras.appendChild(document.createElement("span")).appendChild(document.createElement("i")); });
+    var atual = 0, timer = 0, visivel = false, pausado = reduzido;
+    function mostrar(i) {
+      atual = i;
+      itens.forEach(function (it, k) { it.classList.toggle("ativo", k === i); });
+      if (barras) Array.prototype.forEach.call(barras.children, function (b, k) {
+        b.className = k < i ? "feito" : k === i ? "atual" : "";
+        var novo = b.firstChild.cloneNode(); b.replaceChild(novo, b.firstChild); // reinicia a barra
+      });
+      if (nome) nome.textContent = itens[i].getAttribute("data-nome") || "";
+    }
+    function agendar() {
+      clearTimeout(timer);
+      if (visivel && !pausado) timer = setTimeout(function () { mostrar((atual + 1) % itens.length); agendar(); }, ciclo);
+    }
+    var botao = v.querySelector(".vitrine-pausa");
+    if (botao) botao.addEventListener("click", function () {
+      pausado = !pausado;
+      v.classList.toggle("pausado", pausado);
+      botao.setAttribute("aria-label", pausado ? "Retomar troca automática" : "Pausar troca automática");
+      if (!pausado) mostrar(atual);
+      agendar();
+    });
+    v.addEventListener("pointerenter", function () { if (!reduzido) { v.classList.add("pausado"); clearTimeout(timer); } });
+    v.addEventListener("pointerleave", function () { if (!pausado) { v.classList.remove("pausado"); mostrar(atual); agendar(); } });
+    mostrar(0);
+    if (temIO) new IntersectionObserver(function (es) {
+      visivel = es[0].intersectionRatio >= 0.08;
+      if (visivel && !pausado) mostrar(atual);
+      agendar();
+    }, { threshold: [0, 0.08] }).observe(v);
+  });
+
+  /* ---------- 24 — header que ganha fundo ao rolar (sentinela) ---------- */
+  var header = document.querySelector(".header-luxo");
+  if (header && temIO) {
+    var sentinela = document.createElement("div");
+    sentinela.setAttribute("aria-hidden", "true");
+    sentinela.style.cssText = "position:absolute;top:0;left:0;width:1px;height:80px;pointer-events:none";
+    document.body.prepend(sentinela);
+    new IntersectionObserver(function (es) { header.classList.toggle("rolou", !es[0].isIntersecting); }).observe(sentinela);
+  }
+
+  /* ---------- 24 — WhatsApp flutuante: aparece depois do hero, some no contato ---------- */
+  todos(".wa-flutuante").forEach(function (wa) {
+    var depois = document.querySelector(wa.getAttribute("data-depois") || ".hero");
+    var some = document.querySelector(wa.getAttribute("data-some-em") || "#contato");
+    if (!temIO) { wa.classList.add("visivel"); return; }
+    var heroVisivel = true, contatoVisivel = false;
+    function atualizar() { wa.classList.toggle("visivel", !heroVisivel && !contatoVisivel); }
+    if (depois) new IntersectionObserver(function (es) { heroVisivel = es[0].isIntersecting; atualizar(); }).observe(depois);
+    if (some) new IntersectionObserver(function (es) { contatoVisivel = es[0].isIntersecting; atualizar(); }).observe(some);
+  });
+
+  /* ---------- 23 — vídeo de fundo do hero: toca uma vez, recomeça ao voltar ---------- */
+  todos("video[data-hero-video]").forEach(function (v) {
+    var economia = navigator.connection && navigator.connection.saveData;
+    if (reduzido || economia) return; // fica só o pôster (último quadro), sem baixar o vídeo
+    var fonte = matchMedia("(max-width: 700px)").matches && v.getAttribute("data-src-mobile") ? v.getAttribute("data-src-mobile") : v.getAttribute("data-src");
+    if (!fonte) return;
+    v.muted = true; v.playsInline = true; v.loop = false;
+    v.src = fonte;
+    if (temIO) new IntersectionObserver(function (es) {
+      if (es[0].isIntersecting) { if (v.ended || v.dataset.saiu) { v.currentTime = 0; delete v.dataset.saiu; } v.play().catch(function () {}); }
+      else { v.pause(); v.dataset.saiu = "1"; }
+    }, { threshold: 0.25 }).observe(v);
+  });
+
+  /* ---------- 24 — bolha "digitando" seguida da mensagem ---------- */
+  todos("[data-digitando]").forEach(function (b) {
+    var msg = b.nextElementSibling;
+    if (!msg || reduzido) return;
+    msg.hidden = true;
+    setTimeout(function () { b.hidden = true; msg.hidden = false; msg.classList.add("troca-conteudo"); }, parseFloat(b.getAttribute("data-digitando")) || 1600);
+  });
+})();
+
+</script>
+</body>
+</html>
