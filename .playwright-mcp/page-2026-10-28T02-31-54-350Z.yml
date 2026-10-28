@@ -1,0 +1,14 @@
+- main [ref=f7e12]:
+  - generic [ref=f7e13]:
+    - generic [ref=f7e15]:
+      - link [ref=f7e16] [cursor=pointer]:
+        - /url: /accounts/emailsignup/
+        - img "Instagram" [ref=f7e17]
+      - link "Log in" [ref=f7e25] [cursor=pointer]:
+        - /url: /accounts/login/?next=%2F&source=mobile_nav
+    - generic [ref=f7e26]:
+      - generic [ref=f7e27]:
+        - img "error" [ref=f7e29]
+        - generic [ref=f7e31]: Profile isn't available
+        - generic [ref=f7e33]: The link may be broken, or the profile may have been removed.
+      - button "Sign up for Instagram" [ref=f7e36] [cursor=pointer]

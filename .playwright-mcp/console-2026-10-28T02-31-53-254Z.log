@@ -1,0 +1,48 @@
+[    1182ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://www.instagram.com/ajax/bulk-route-definitions/:0
+[    1185ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://www.instagram.com/ajax/bulk-route-definitions/:0
+[    1255ms] [LOG] 
+%cStop! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black; @ https://static.cdninstagram.com/rsrc.php/v4i0ir4/y9/l/en_US/VulnjamcFPkAMraamfXeW8VJHWXPQflDHFZyh8XIV9vd1KBjPlvjfsXVNC3Q1Ir6rr2xDWh-OWorFEhUvEPFvI-QVg1OWX7cuxDrrCxjEFdRGjiFGHh9ozlMIZ19rza9Hx2MVVM0fn8GY16yXBdFfhL1oTo9TH0CQC93VK3eJHanXlfl_IOM4mYL-OyphhshD5-sc1oiU3f-mvIS4yDVLRUsQn4GpKzMGU-W7GsTMMsiJC02ez.js:168
+[    1256ms] [LOG] 
+%cThis is a browser feature intended for developers. If someone told you to copy-paste something here to enable an Instagram feature or "hack" someone's account, it is a scam and will give them access to your Instagram account. font-family:helvetica; font-size:20px;  @ https://static.cdninstagram.com/rsrc.php/v4i0ir4/y9/l/en_US/VulnjamcFPkAMraamfXeW8VJHWXPQflDHFZyh8XIV9vd1KBjPlvjfsXVNC3Q1Ir6rr2xDWh-OWorFEhUvEPFvI-QVg1OWX7cuxDrrCxjEFdRGjiFGHh9ozlMIZ19rza9Hx2MVVM0fn8GY16yXBdFfhL1oTo9TH0CQC93VK3eJHanXlfl_IOM4mYL-OyphhshD5-sc1oiU3f-mvIS4yDVLRUsQn4GpKzMGU-W7GsTMMsiJC02ez.js:168
+[    1256ms] [LOG] 
+%cSee https://www.facebook.com/selfxss for more information. font-family:helvetica; font-size:20px;  @ https://static.cdninstagram.com/rsrc.php/v4i0ir4/y9/l/en_US/VulnjamcFPkAMraamfXeW8VJHWXPQflDHFZyh8XIV9vd1KBjPlvjfsXVNC3Q1Ir6rr2xDWh-OWorFEhUvEPFvI-QVg1OWX7cuxDrrCxjEFdRGjiFGHh9ozlMIZ19rza9Hx2MVVM0fn8GY16yXBdFfhL1oTo9TH0CQC93VK3eJHanXlfl_IOM4mYL-OyphhshD5-sc1oiU3f-mvIS4yDVLRUsQn4GpKzMGU-W7GsTMMsiJC02ez.js:168
+[    1256ms] [LOG] 
+%c  @ https://static.cdninstagram.com/rsrc.php/v4i0ir4/y9/l/en_US/VulnjamcFPkAMraamfXeW8VJHWXPQflDHFZyh8XIV9vd1KBjPlvjfsXVNC3Q1Ir6rr2xDWh-OWorFEhUvEPFvI-QVg1OWX7cuxDrrCxjEFdRGjiFGHh9ozlMIZ19rza9Hx2MVVM0fn8GY16yXBdFfhL1oTo9TH0CQC93VK3eJHanXlfl_IOM4mYL-OyphhshD5-sc1oiU3f-mvIS4yDVLRUsQn4GpKzMGU-W7GsTMMsiJC02ez.js:168
+[    1265ms] [WARNING] No available adapters. @ https://www.instagram.com/clinicaafelle/:0
+[    4283ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://www.instagram.com/ajax/bulk-route-definitions/:0
+[    4284ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://www.instagram.com/ajax/bulk-route-definitions/:0
+[    7375ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://www.instagram.com/ajax/bulk-route-definitions/:0
+[    7377ms] [ERROR] ErrorUtils caught an error:
+
+ [Caught in: Failed call to /ajax/bulk-route-definitions/: CometAyncFetchError: HTTP_CLIENT_ERROR..access-control-allow-credentials: true
+access-control-allow-methods: OPTIONS
+access-control-allow-origin: https://www.instagram.com
+access-control-expose-headers: X-FB-Debug, X-Loader-Length, Error-MID, X-FB-Trace-ID, X-Stack
+alt-svc: h3=":443"; ma=86400
+cache-control: private, no-cache, no-store, must-revalidate
+content-length: 0
+content-security-policy: default-src *.facebook.com *.fbcdn.net *.instagram.com blob:;script-src *.instagram.com static.cdninstagram.com z-p42-static.cdninstagram.com https://instagram.com https://*.www.instagram.com https://*.cdninstagram.com wss://www.instagram.com blob: *.facebook.com *.fbcdn.net *.facebook.net 127.0.0.1:* 'nonce-0Mj8aeZR' 'self' 'wasm-unsafe-eval' https://*.google-analytics.com https://translate.google.com https://apis.google.com https://accounts.google.com;style-src *.instagram.com static.cdninstagram.com z-p42-static.cdninstagram.com https://*.www.instagram.com data: blob: 'unsafe-inline' *.fbcdn.net *.facebook.com https://accounts.google.com;connect-src *.instagram.com wss://edge-chat.instagram.com connect.facebook.net https://instagram.com https://*.www.instagram.com https://*.graph.instagram.com https://*.i.instagram.com https://*.od.instagram.com https://i.threads.net https://i.threads.com https://*.od.threads.net https://*.od.threads.com wss://www.instagram.com blob: *.facebook.com facebook.com *.fbcdn.net *.facebook.net wss://*.facebook.com:* ws://localhost:* *.cdninstagram.com wss://*.instagram.com:* 'self' *.ipification.com https://accounts.google.com;font-src *.instagram.com static.cdninstagram.com z-p42-static.cdninstagram.com data: *.fbcdn.net *.intern.facebook.com *.facebook.com https://*.cdninstagram.com https://fonts.gstatic.com;img-src *.instagram.com *.facebook.com *.fbcdn.net data: *.cdninstagram.com *.whatsapp.net blob: https://*.threads.net https://*.threads.com *.fbsbx.com android-webview-video-poster: *.oculuscdn.com *.giphy.com *.tenor.co *.tenor.com www.googleadservices.com *.doubleclick.net *.google.com *.google.co.uk https://www.gstatic.com https://*.google-analytics.com;media-src *.facebook.com *.fbcdn.net *.instagram.com *.cdninstagram.com *.fbsbx.com data: blob: https://*.giphy.com *.tenor.co *.tenor.com;child-src *.facebook.com *.fbcdn.net *.instagram.com data: blob:;frame-src https://instagram.com https://connect.facebook.net *.instagram.com *.facebook.com *.fbsbx.com fbsbx.com data: *.ipification.com www.googleadservices.com *.doubleclick.net *.google.com *.google.co.uk;manifest-src *.facebook.com *.fbcdn.net *.instagram.com data: blob:;object-src *.facebook.com *.fbcdn.net *.instagram.com data: blob:;block-all-mixed-content;upgrade-insecure-requests;
+content-type: text/html; charset="utf-8"
+cross-origin-opener-policy: same-origin-allow-popups
+cross-origin-resource-policy: same-site
+date: Wed, 28 Oct 2026 02:32:00 GMT
+document-policy: force-load-at-top, include-js-call-stacks-in-crash-reports
+expires: Sat, 01 Jan 2000 00:00:00 GMT
+origin-agent-cluster: ?1
+permissions-policy: accelerometer=(self "https://www.fbsbx.com"), attribution-reporting=(), autoplay=(), bluetooth=(), camera=(self "https://www.fbsbx.com"), ch-device-memory=(), ch-downlink=(), ch-dpr=(), ch-ect=(), ch-rtt=(), ch-save-data=(), ch-ua-arch=(), ch-ua-bitness=(), ch-viewport-height=(), ch-viewport-width=(), ch-width=(), clipboard-read=(), clipboard-write=(self), compute-pressure=(), display-capture=(self), encrypted-media=(), fullscreen=(self), gamepad=(), geolocation=(self), gyroscope=(self "https://www.fbsbx.com"), hid=(), idle-detection=(), interest-cohort=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(self), midi=(), otp-credentials=(self), payment=(), picture-in-picture=(self), private-state-token-issuance=(), publickey-credentials-get=(self "https://*.facebook.com" "https://facebook.com"), screen-wake-lock=(), serial=(), shared-storage=(), shared-storage-select-url=(), private-state-token-redemption=(), usb=(), unload=(self), window-management=(), xr-spatial-tracking=();report-to="permissions_policy"
+pragma: no-cache
+proxy-status: http_request_error; e_proxy="AcTxFPFCmk7mklAM3zyfGHUgHcBowqBgENMMNhQc5NsaTcWOE0Gfv64ZlZAC-WOukd6KlcpfN76Bupo1aUJp"; e_fb_twtaskhandle="AcTtoldYB_l0K-5nn_Yd5nfo4XG2_DtkC_pkgW1pN-z8TWJb51mEI-tmxU2Vb9BZ1-rEVE-VbXh5RgRIDzqhLtg-bGKtiCE61ffC5wze"; e_upip="AcTX3GISV5lXrm4tAStUdL9vyaRVDspyJlYXCyV0itDY9QyQWBdjsYjoxd0khdBTiXcyT4OlGTWiDfJoefhldXlWA7szzBsEKScb_i83Szs"; e_fb_zone="AcT7Y32YGH83h50QwTtl7_UwplyPNMzTaBzy1qjSeaIfrOCqEArEKPIsDsp4HwcZ"; e_clientaddr="AcRvi5gCbCFU1G7VMr8vNfcS5OmDvibJsQunrK2Qhgd4UDjNhA_aPxk4nMBqLk7ag9PbWzKdNvH97BQCo1ZIVLZGDI3e4f83sCqQbm3yXCa6BnCF8g"; e_fb_vipaddr="AcTCos4PD2lbQqXSoi1UbYMI1biSgdcYNSEBdM_x_h4beqIaH3iTDt_YCPGzP-7wDmOd1VMiygy9hkr6YkpJCCJK6LqbQeQhtNk6P1I8", http_request_error; e_proxy="AcRGbdqeG4pQDIp2pHaAZu6IESfaH6xpQapNsCNXsviSugG57XSIBNkkqltK5A8jhUvg97HlRqWPGiQ"; e_fb_twtaskhandle="AcTBKI1FJ-ormMU6neYJDdtrvS3XjkT_VTy9ksakEx_CNXn6EwIU97QPDZujWBDNakZyxRzuN2cnrxgwwDcp1fGNI820EsVY_CAi"; e_upip="AcR1PhhnfcA-lOkgWnfZpdc7jwCtghNOpkDWVB-88fOyI4m8pARilkgeDjgdCpuLDS5Nu_SI6a4CP25OYxbOFRrWIsa2HyPXCn6Wiumo"; e_fb_zone="AcQ6WsVmc-Fu_iF6R91GoGwSWd8cnWIBuuZuCDf-hT9j4ii8gVWWBp0Vpg-MPw"; e_clientaddr="AcSPl3_ik4-3kHiFfXlXcV_RpqUV6nJCJA0z5xyJyEwcwccH_TrOZW7-PBsb6anb_ppa2UhJcufGzLFO8w"; e_fb_vipaddr="AcQ_Ma6P34v7pPtuCplPIp9uoO5hgSlBo80Y18wqQ3kZ27fzUgQXLhgPp84PAK3KebIa32XOguhC"
+report-to: {"max_age":2592000,"endpoints":[{"url":"https:\/\/www.facebook.com\/browser_reporting\/coop\/?minimize=0"}],"group":"coop_report","include_subdomains":true}, {"max_age":259200,"endpoints":[{"url":"https:\/\/www.instagram.com\/error\/ig_web_error_reports\/?device_level=unknown&brsid=7701540880066127412&comet_app_key=7&cpp=C3&cv=1051970151&st=1793154720601"}]}
+reporting-endpoints: coop_report="https://www.facebook.com/browser_reporting/coop/?minimize=0", default="https://www.instagram.com/error/ig_web_error_reports/?device_level=unknown&brsid=7701540880066127412&comet_app_key=7&cpp=C3&cv=1051970151&st=1793154720601"
+strict-transport-security: max-age=31536000; preload; includeSubDomains
+vary: Origin
+x-content-type-options: nosniff
+x-fb-connection-quality: EXCELLENT; q=0.9, rtt=13, rtx=1, c=74, mss=1380, tbw=138674, tp=-1, tpl=-1, uplat=43, ullat=0
+x-fb-debug: 8vLhlGIByD7jpa9u9EHjV9n/ra4WNQGZdTk2lyzCYL6Xd1Akx7L8T3+BQ+vHy/LABjG4Yl4d7Z4C44ocFyhxCg==
+x-frame-options: DENY
+x-stack: www
+x-xss-protection: 0
+.XMLHttpRequest.HTTP 429.429]
+
+Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. {clientTime: 1793154720, extra: Object, guardList: Array(0), hash: v2kapn, isNormalizedError: true} @ https://static.cdninstagram.com/rsrc.php/v4/ym/r/agwQw0XSgKT.js:84
+[    7380ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://www.instagram.com/ajax/bulk-route-definitions/:0
