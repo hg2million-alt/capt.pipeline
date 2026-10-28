@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Bacalhau Lusitano — Restaurante Português no Tirol, Natal</title>
+  <meta name="description" content="Bacalhau Lusitano: culinária portuguesa no Tirol, Natal/RN, desde 2010. Chef Eli Marinho.">
+  <script>
+    (function (h) {
+      if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        h.classList.add("motion");
+        setTimeout(function () { if (!window.__animOK) h.classList.remove("motion"); }, 3000);
+      }
+    })(document.documentElement);
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Manrope:wght@300;400;500&family=Pinyon+Script&display=swap">
+  <link rel="stylesheet" href="assets/luxury.css">
+  <link rel="stylesheet" href="assets/animacoes.css">
+  <style>
+    /* marca: azul-marinho do cardápio, creme/dourado do script, vermelho do emblema só no detalhe */
+    :root {
+      --lx-fundo: #071a3b; --lx-fundo-2: #0b2350;
+      --lx-texto: #f6efde; --lx-texto-suave: #b8c2d8;
+      --lx-acento: #e9d3a0; --lx-linha: rgb(246 239 222 / .17);
+      --vermelho: #8f1010; --terracota: #b5532a;
+    }
+    .btn-luxo { color: #071a3b; }
+    .btn-luxo:hover { color: var(--lx-acento); }
+    .btn-luxo--linha { color: var(--lx-texto); }
+    .script { font-family: "Pinyon Script", cursive; font-weight: 400; letter-spacing: 0; }
+    .lx-marca { display: flex; align-items: center; gap: 12px; font-size: 30px; line-height: 1; }
+    .lx-marca img { width: 44px; height: 44px; border-radius: 50%; }
+    .hero { --hero-foco: 40% 50%; }
+    .hero::before { background: linear-gradient(180deg, rgb(7 26 59 / .70) 0%, rgb(7 26 59 / .45) 40%, rgb(7 26 59 / .92) 100%); }
+    .hero h1 { max-width: 13ch; }
+    .hero-nota { display: inline-flex; gap: 10px; align-items: center; margin-top: 30px; font-size: 13px; letter-spacing: .06em; color: rgb(255 255 255 / .85); }
+    .hero-nota b { font: 400 26px/1 var(--lx-serif); color: var(--lx-acento); }
+    .azulejo-faixa { height: clamp(120px, 20vw, 220px); background: url(assets/azulejo.jpg) center / 340px auto repeat-x; border-block: 1px solid var(--lx-linha); }
+    .historia { display: grid; gap: clamp(32px, 6vw, 80px); grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); align-items: center; }
+    .historia .linha-tempo { display: grid; gap: 22px; }
+    .historia .linha-tempo div { border-left: 1px solid var(--lx-acento); padding-left: 22px; }
+    .historia .linha-tempo b { font: 400 34px/1 var(--lx-serif); color: var(--lx-acento); display: block; margin-bottom: 4px; }
+    .prato { display: flex; flex-direction: column; gap: 10px; }
+    .prato .preco { font: 400 22px/1 var(--lx-serif); color: var(--lx-acento); margin-top: auto; padding-top: 14px; }
+    .espaco { display: grid; gap: clamp(32px, 5vw, 72px); grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); align-items: center; }
+    .espaco img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+    .espaco ul { list-style: none; padding: 0; margin: 28px 0 0; display: grid; gap: 14px; }
+    .espaco li { padding-left: 22px; position: relative; }
+    .espaco li::before { content: ""; position: absolute; left: 0; top: .75em; width: 10px; height: 1px; background: var(--lx-acento); }
+    .info dl { margin: 40px 0 0; display: grid; gap: 22px; }
+    .info dt { font: 500 11px/1 var(--lx-sans); letter-spacing: .28em; text-transform: uppercase; color: var(--lx-acento); margin-bottom: 8px; }
+    .info dd { margin: 0; }
+    .info a { text-underline-offset: 4px; }
+    .selo { display: inline-block; width: 64px; height: 64px; border-radius: 50%; }
+  </style>
+</head>
+<body>
+
+  <header class="header-luxo">
+    <div class="lx-container">
+      <a class="lx-marca script" href="#topo"><img src="assets/logo.png" alt="Emblema do Bacalhau Lusitano">Bacalhau Lusitano</a>
+      <nav class="lx-nav" aria-label="Seções">
+        <a href="#historia">História</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#espaco">Espaço</a>
+        <a href="#contato">Reservas</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="topo">
+    <section class="hero">
+      <div class="hero-fundo">
+        <img src="assets/hero.jpg" alt="Salão do Bacalhau Lusitano, com mesas postas e garrafas de vinho no balcão" fetchpriority="high">
+      </div>
+      <div class="lx-container hero-entrada">
+        <span class="lx-rotulo" style="--i:0">Culinária portuguesa · Tirol</span>
+        <h1 style="--i:1">Um pedacinho de <em>Portugal</em> em Natal</h1>
+        <p style="--i:2">Bacalhau, polvo e mariscos preparados à portuguesa pela chef Eli Marinho, na Rua Miguel Barra, desde 2010.</p>
+        <div class="hero-acoes" style="--i:3">
+          <a class="btn-luxo" href="https://wa.me/5584981174856?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20uma%20reserva%20no%20Bacalhau%20Lusitano.">Reservar pelo WhatsApp</a>
+          <a class="btn-luxo btn-luxo--linha" href="#cardapio">Ver o cardápio</a>
+        </div>
+        <span class="hero-nota" style="--i:4"><b>4,7</b> nota no Google Maps</span>
+      </div>
+    </section>
+
+    <div class="azulejo-faixa" role="img" aria-label="Azulejos portugueses da capa do cardápio"></div>
+
+    <section id="historia" class="lx-secao">
+      <div class="lx-container historia">
+        <div>
+          <span class="lx-rotulo" data-anim="slide">Nossa história</span>
+          <h2 data-anim="rise3d" style="margin:22px 0 28px;max-width:14ch">Tradição que veio <em>de Portugal</em></h2>
+          <p class="lx-texto-suave" data-anim="fade">Do encontro entre Eli Marinho, com experiência em hotelaria, e um jovem português apaixonado por gastronomia, nasceu a Casa Portuguesa, com o propósito de levar a Natal os sabores e as tradições de Portugal.</p>
+        </div>
+        <div class="linha-tempo" data-stagger>
+          <div><b>2003</b>Começa a história, na Ponta do Morcego.</div>
+          <div><b>2010</b>O restaurante chega à Rua Miguel Barra, como Real Clube do Bacalhau.</div>
+          <div><b>2018</b>A chef Eli Marinho assume integralmente o comando da casa.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cardapio" class="lx-secao lx-secao--alt">
+      <div class="lx-container">
+        <span class="lx-rotulo" data-anim="slide">Da ementa</span>
+        <h2 data-anim="rise3d" style="margin:22px 0 64px;max-width:16ch">Pratos para <span class="arco-destaque">saborear<svg viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><path d="M2 8 Q50 0 98 8"/></svg></span> devagar</h2>
+        <div class="lx-grid" data-stagger="3d">
+          <article class="lx-card prato hover-elevado" tabindex="0"><span class="lx-num">Bacalhau</span><h3>Bacalhau à Lagareiro</h3><p class="lx-texto-suave">Lombo assado na brasa com alho e cebola. Acompanha batatas ao murro e arroz branco.</p><span class="preco">R$ 270</span></article>
+          <article class="lx-card prato hover-elevado" tabindex="0"><span class="lx-num">Bacalhau</span><h3>Bacalhau à Natalense</h3><p class="lx-texto-suave">Lombos fritos no azeite, regados com molho vermelho de camarão. Acompanha purê de batatas e arroz.</p><span class="preco">R$ 270</span></article>
+          <article class="lx-card prato hover-elevado" tabindex="0"><span class="lx-num">Bacalhau</span><h3>Bacalhau Especial à Chef Eli</h3><p class="lx-texto-suave">Posta frita no azeite e alho, com cebolas douradas. Acompanha batata ao murro e salada.</p><span class="preco">R$ 270</span></article>
+          <article class="lx-card prato hover-elevado" tabindex="0"><span class="lx-num">Frutos do mar</span><h3>Polvo à Lagareiro</h3><p class="lx-texto-suave">Polvo dourado no forno com batatas ao murro e muito azeite extravirgem.</p><span class="preco">R$ 175</span></article>
+          <article class="lx-card prato hover-elevado" tabindex="0"><span class="lx-num">Frutos do mar</span><h3>Arroz de Marisco à Portuguesa</h3><p class="lx-texto-suave">Arroz malandrinho com camarão, lagosta, mexilhão, búzios, siri e ostras.</p><span class="preco">R$ 190</span></article>
+          <article class="lx-card prato hover-elevado" tabindex="0"><span class="lx-num">Carnes</span><h3>Carré de Cordeiro à Chef Eli</h3><p class="lx-texto-suave">Marinado 24 horas em vinho tinto e ervas, grelhado na brasa. Acompanha batata à portuguesa e arroz à lavrador.</p><span class="preco">R$ 205</span></article>
+        </div>
+        <p class="lx-texto-suave" data-anim="fade" style="margin-top:44px">Também na ementa: bolinho de bacalhau, pastéis de Chaves, alheira de Mirandela, polvo à gallega, pastel de nata e pudim tradicional. <span class="a-confirmar">valores do cardápio de out/2026 — conferir</span></p>
+        <p style="margin-top:28px"><a class="btn-luxo btn-luxo--linha" href="https://drive.google.com/file/d/1rmyK_6U1C5SIKimg2XxuOcfM3v1g9D5_/view?usp=drive_link">Cardápio completo (PDF)</a></p>
+      </div>
+    </section>
+
+    <section id="espaco" class="lx-secao">
+      <div class="lx-container espaco">
+        <img data-anim="swing" src="assets/hero.jpg" alt="Mesas do salão do Bacalhau Lusitano" loading="lazy">
+        <div>
+          <span class="lx-rotulo" data-anim="slide">O espaço</span>
+          <h2 data-anim="rise3d" style="margin:22px 0 0;max-width:14ch">Para almoços, jantares e <em>celebrações</em></h2>
+          <ul data-stagger>
+            <li>Sala privativa para reuniões, almoço e jantar, até 12 pessoas, com ar-condicionado e TV ou telão opcional.</li>
+            <li>Reserva do espaço para aniversário, recepção, confraternização e evento corporativo.</li>
+            <li>Personal chef: leve a cozinha da chef Eli Marinho até a sua casa.</li>
+            <li>Delivery pelo WhatsApp.</li>
+          </ul>
+          <p class="lx-texto-suave" style="margin-top:22px;font-size:13px">Foto do salão: Google Maps, 2019 <span class="a-confirmar">atualizar com fotos atuais</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="lx-secao lx-secao--alt">
+      <div class="lx-container info">
+        <span class="lx-rotulo" data-anim="fade">Reservas</span>
+        <h2 data-anim="rise3d" style="margin:22px 0 0;max-width:16ch">Sente-se à <em>mesa</em></h2>
+        <dl data-anim="fade">
+          <div><dt>Endereço</dt><dd>R. Miguel Barra, 779 — Tirol, Natal/RN · <a href="https://www.google.com/maps/search/?api=1&query=Bacalhau+Lusitano+Tirol+Natal">abrir no mapa</a></dd></div>
+          <div><dt>Horário</dt><dd>Almoço e jantar, com pausa entre 15h30 e 19h <span class="a-confirmar">dias de funcionamento a confirmar</span></dd></div>
+          <div><dt>WhatsApp (reservas e delivery)</dt><dd>+55 84 98117-4856</dd></div>
+          <div><dt>Telefone</dt><dd>+55 84 3201-4254</dd></div>
+          <div><dt>Instagram</dt><dd>@bacalhaulusitano</dd></div>
+        </dl>
+        <p style="margin-top:44px"><a class="btn-luxo" data-anim="rise3d" href="https://wa.me/5584981174856?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20uma%20reserva%20no%20Bacalhau%20Lusitano.">Reservar pelo WhatsApp</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="lx-rodape">
+    <div class="lx-container"><span class="script" style="font-size:26px;color:var(--lx-texto)">Bacalhau Lusitano</span>&nbsp; Restaurante Português · Tirol, Natal/RN<br><span style="font-size:12px">Proposta de site (demo) — textos, pratos e valores tirados do cardápio oficial e da ficha do Google Maps do restaurante.</span></div>
+  </footer>
+
+  <div class="wa-flutuante" data-depois=".hero" data-some-em="#contato">
+    <a href="https://wa.me/5584981174856" aria-label="Falar no WhatsApp">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.1-4.7-4-4.8-4.2-.1-.2-1.2-1.5-1.2-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.4Z"/></svg>
+    </a>
+  </div>
+
+  <script src="assets/animacoes.js"></script>
+</body>
+</html>
