@@ -1,0 +1,195 @@
+- generic "Google Maps" [ref=e2]:
+  - generic [ref=e3]:
+    - application "Mapa·Use as teclas de seta para mover o mapa.·Veja os detalhes de um lugar pressionando a tecla de número correspondente." [ref=e8]
+    - search [ref=e14]:
+      - generic [ref=e15]:
+        - combobox [ref=e17]: pet shop veterinaria Capim Macio Natal
+        - button "Pesquisar" [ref=e19] [cursor=pointer]:
+          - generic [aria-hidden] [ref=e20]: 
+        - button "Fechar" [ref=e22] [cursor=pointer]:
+          - generic [aria-hidden] [ref=e23]: 
+    - generic [ref=e24]:
+      - generic [ref=e25]:
+        - list [ref=e27]:
+          - listitem [ref=e28]:
+            - button "Menu" [ref=e29] [cursor=pointer]:
+              - generic [aria-hidden] [ref=e31]: 
+          - listitem [ref=e32]:
+            - button "Salvos" [ref=e33] [cursor=pointer]:
+              - generic [aria-hidden] [ref=e35]: 
+          - listitem [ref=e38]:
+            - button "Recentes" [disabled] [ref=e39]:
+              - generic [aria-hidden] [ref=e41]: 
+          - listitem [ref=e45]:
+            - button "Baixar o aplicativo" [ref=e46] [cursor=pointer]:
+              - generic [aria-hidden] [ref=e48]: 
+        - main [ref=e55]:
+          - generic [ref=e56]:
+            - feed "Resultados para pet shop veterinaria Capim Macio Natal" [ref=e57]:
+              - generic [ref=e58]:
+                - generic [ref=e60]:
+                  - heading "Resultados" [level=1] [ref=e61]
+                  - button "Saiba mais sobre a divulgação legal de avaliações públicas no Google Maps" [ref=e65]:
+                    - generic [aria-hidden] [ref=e69]: 
+                - button "Compartilhar" [ref=e73]:
+                  - generic [ref=e74] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e75]: 
+                    - generic [ref=e76]: Compartilhar
+              - article [ref=e78]:
+                - link "Conveniência Pet | Clínica Veterinária e Pet Shop em Capim Macio" [ref=e79] [cursor=pointer]:
+                  - /url: https://www.google.com/maps/place/Conveni%C3%AAncia+Pet+%7C+Cl%C3%ADnica+Veterin%C3%A1ria+e+Pet+Shop+em+Capim+Macio/data=!4m7!3m6!1s0x7b2ff1b24fcfd2b:0x3d1d0bda12d08409!8m2!3d-5.8650362!4d-35.189816!16s%2Fg%2F11s5jtdk55!19sChIJK_38JBv_sgcRCYTQEtoLHT0?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAyNy4wIJJjKgBIAVAD&rclk=1
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Conveniência Pet | Clínica Veterinária e Pet Shop em Capim Macio
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img "5,0 estrelas": 5,0
+                            - generic:
+                              - generic:
+                                - generic: Veterinário
+                                - generic:
+                                  - text: ·
+                                  - img "Entrada acessível para pessoas em cadeira de rodas" [ref=e81] [cursor=pointer]:
+                                    - generic [ref=e82]: 
+                                - generic: · R. José M. de Vasconcelos, 1850 - Sl 02
+                              - generic:
+                                - generic: Aberto · Fecha 17:30
+                                - generic: · +55 84 99812-0188
+              - article [ref=e85]:
+                - link "Pronto Pet Clínica Veterinária e Pet Shop" [ref=e86] [cursor=pointer]:
+                  - /url: https://www.google.com/maps/place/Pronto+Pet+Cl%C3%ADnica+Veterin%C3%A1ria+e+Pet+Shop/data=!4m7!3m6!1s0x7b2ff7d7893ee6f:0x1df3dc3f093e902d!8m2!3d-5.8716165!4d-35.191398!16s%2Fg%2F11flyld4q1!19sChIJb-6TeH3_sgcRLZA-CT_c8x0?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAyNy4wIJJjKgBIAVAD&rclk=1
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Pronto Pet Clínica Veterinária e Pet Shop
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img "4,7 estrelas": 4,7
+                            - generic:
+                              - generic:
+                                - generic: Pet Shop
+                                - generic:
+                                  - text: ·
+                                  - img "Entrada acessível para pessoas em cadeira de rodas" [ref=e88] [cursor=pointer]:
+                                    - generic [ref=e89]: 
+                                - generic: · R. Maria Nazaré de Araújo, 288
+                              - generic:
+                                - generic: Aberto 24 horas
+                                - generic: · +55 84 99623-8588
+              - article [ref=e92]:
+                - link "Patinhas Pet - Pet Shop e Clinica Veterinária Capim Macio" [ref=e93] [cursor=pointer]:
+                  - /url: https://www.google.com/maps/place/Patinhas+Pet+-+Pet+Shop+e+Clinica+Veterin%C3%A1ria+Capim+Macio/data=!4m7!3m6!1s0x7b2ffb762bb880b:0xb30941cc76f47660!8m2!3d-5.8634906!4d-35.191975!16s%2Fg%2F11wtk2z16y!19sChIJC4i7Yrf_sgcRYHb0dsxBCbM?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAyNy4wIJJjKgBIAVAD&rclk=1
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Patinhas Pet - Pet Shop e Clinica Veterinária Capim Macio
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img "5,0 estrelas": 5,0
+                            - generic:
+                              - generic:
+                                - generic: Banho e tosa
+                                - generic: · R. Ismael Pereira da Silva, 1725
+                              - generic:
+                                - generic: Aberto · Fecha 18:00
+                                - generic: · +55 84 99656-0306
+              - article [ref=e97]:
+                - link "Cantinho Pets" [ref=e98] [cursor=pointer]:
+                  - /url: https://www.google.com/maps/place/Cantinho+Pets/data=!4m7!3m6!1s0x7b2ff71c13e0ecb:0x91ba81885ad31773!8m2!3d-5.8539057!4d-35.2002366!16s%2Fg%2F11ggz3c1tb!19sChIJyw4-wXH_sgcRcxfTWoiBupE?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAyNy4wIJJjKgBIAVAD&rclk=1
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Cantinho Pets
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img "4,6 estrelas": 4,6
+                            - generic:
+                              - generic:
+                                - generic: Pet Shop
+                                - generic:
+                                  - text: ·
+                                  - img "Entrada acessível para pessoas em cadeira de rodas" [ref=e100] [cursor=pointer]:
+                                    - generic [ref=e101]: 
+                                - generic: · Av. Engenheiro Roberto Freire, 1011
+                              - generic:
+                                - generic: Aberto · Fecha 18:00
+                                - generic: · +55 84 99939-6943
+              - article [ref=e104]:
+                - link "RN Pet" [ref=e105] [cursor=pointer]:
+                  - /url: https://www.google.com/maps/place/RN+Pet/data=!4m7!3m6!1s0x7b2ffbbf4634da1:0xc0958fb8307d3695!8m2!3d-5.8660444!4d-35.1853931!16s%2Fg%2F11hy9nk6wf!19sChIJoU1j9Lv_sgcRlTZ9MLiPlcA?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAyNy4wIJJjKgBIAVAD&rclk=1
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: RN Pet
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img "4,3 estrelas": 4,3
+                            - generic:
+                              - generic:
+                                - generic: Pet Shop
+                                - generic:
+                                  - text: ·
+                                  - img "Entrada acessível para pessoas em cadeira de rodas" [ref=e107] [cursor=pointer]:
+                                    - generic [ref=e108]: 
+                                - generic: · Av. Engenheiro Roberto Freire, 3132
+                              - generic:
+                                - generic: Aberto · Fecha 22:00
+                                - generic: · +55 84 2020-9139
+              - article [ref=e111]:
+                - link "A Casa Do Pet" [ref=e112] [cursor=pointer]:
+                  - /url: https://www.google.com/maps/place/A+Casa+Do+Pet/data=!4m7!3m6!1s0x7b2ffbf932e918d:0x42239109c9774a56!8m2!3d-5.849451!4d-35.202272!16s%2Fg%2F11j79vncdp!19sChIJjZEuk7__sgcRVkp3yQmRI0I?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAyNy4wIJJjKgBIAVAD&rclk=1
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: A Casa Do Pet
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img "4,8 estrelas": 4,8
+                            - generic:
+                              - generic:
+                                - generic: Pet Shop
+                                - generic:
+                                  - text: ·
+                                  - img "Entrada acessível para pessoas em cadeira de rodas" [ref=e114] [cursor=pointer]:
+                                    - generic [ref=e115]: 
+                                - generic: · Av. Odilon Gomes de Lima, 9A
+                              - generic:
+                                - generic: Aberto · Fecha 18:00
+                                - generic: · +55 84 99619-3436
+              - generic [ref=e150]:
+                - generic [aria-hidden] [ref=e152]: 
+                - generic [ref=e153]:
+                  - text: Esta é uma visualização limitada do Google Maps.
+                  - button "Ver mais" [ref=e154] [cursor=pointer]
+            - checkbox [ref=e157] [cursor=pointer]:
+              - generic [aria-hidden] [ref=e159]: 
+              - text: Atualizar resultados ao mover o mapa
+      - generic [ref=e160]:
+        - button "Recolher painel lateral" [ref=e161] [cursor=pointer]:
+          - generic [aria-hidden] [ref=e162]: 
+        - generic [aria-hidden] [ref=e163]: Recolher painel lateral
