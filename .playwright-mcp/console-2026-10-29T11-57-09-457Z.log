@@ -1,0 +1,56 @@
+[    3732ms] [WARNING] No available adapters. @ https://www.google.com/maps/search/restaurante+Ponta+Negra+Natal?hl=pt-BR:0
+[   27959ms] [WARNING] No available adapters. @ https://www.google.com/maps/place/Camar%C3%B5es+Potiguar/data=!4m7!3m6!1s0x7b2ff2555d3bb59:0x650e750bef97fff6!8m2!3d-5.8691044!4d-35.1811447!16s%2Fg%2F1td4_1lr!19sChIJWbvTVSX_sgcR9v-X7wt1DmU?authuser=0&&g_ep=EgoyMDI2MTAyMC4wIJJjKgBIAVAD&rclk=1&hl=pt-BR:0
+[   30067ms] [WARNING] No available adapters. @ https://www.google.com/maps/place/Mangai+RN+Ponta+Negra/data=!4m7!3m6!1s0x7b2ff2f8af5cb89:0x11fecf220fe49882!8m2!3d-5.8670956!4d-35.1814933!16s%2Fg%2F11hc_2q963!19sChIJicv1ii__sgcRgpjkDyLP_hE?authuser=0&&g_ep=EgoyMDI2MTAyMC4wIJJjKgBIAVAD&rclk=1&hl=pt-BR:0
+[   33015ms] [WARNING] No available adapters. @ https://www.google.com/maps/place/P%C3%A9rola+Restaurante+-+Ponta+Negra/data=!4m7!3m6!1s0x7b2f8d59aebb3d7:0x6c79f5fe8676e206!8m2!3d-5.8813215!4d-35.1716003!16s%2Fg%2F11c602bjfw!19sChIJ17PrmtX4sgcRBuJ2hv71eWw?authuser=0&&g_ep=EgoyMDI2MTAyMC4wIJJjKgBIAVAD&rclk=1&hl=pt-BR:0
+[   36010ms] [WARNING] No available adapters. @ https://www.google.com/maps/place/Restaurante+Pinga+Fogo+Natal/data=!4m7!3m6!1s0x7b2ff65a811a71b:0x2184dd32206aa59c!8m2!3d-5.8714301!4d-35.1809507!16s%2Fg%2F11f6x_d3x0!19sChIJG6cRqGX_sgcRnKVqIDLdhCE?authuser=0&&g_ep=EgoyMDI2MTAyMC4wIJJjKgBIAVAD&rclk=1&hl=pt-BR:0
+[   38577ms] [WARNING] No available adapters. @ https://www.google.com/maps/place/Restaurante+Farofa+D%27%C3%A1gua/data=!4m7!3m6!1s0x7b2ff51a64dda65:0x4e0ea1e1c23e50c0!8m2!3d-5.8708534!4d-35.1819114!16s%2Fg%2F1xn_nljc!19sChIJZdpNplH_sgcRwFA-wuGhDk4?authuser=0&&g_ep=EgoyMDI2MTAyMC4wIJJjKgBIAVAD&rclk=1&hl=pt-BR:0
+[   41524ms] [WARNING] No available adapters. @ https://www.google.com/maps/place/%C3%94+Bar+Restaurante+-+Ponta+Negra/data=!4m7!3m6!1s0x7b2ffe0bec21681:0xa604270a831d0f2f!8m2!3d-5.8780933!4d-35.1776822!16s%2Fg%2F11kls0zkpw!19sChIJgRbCvuD_sgcRLw8dgwonBKY?authuser=0&&g_ep=EgoyMDI2MTAyMC4wIJJjKgBIAVAD&rclk=1&hl=pt-BR:0
+[   67171ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'attribution-reporting'. @ :0
+[   67171ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'bluetooth'. @ :0
+[   67171ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage'. @ :0
+[   67171ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage-select-url'. @ :0
+[   67680ms] [ERROR] Manifest: Line: 1, column: 1, Syntax error. @ https://www.instagram.com/data/manifest.json:0
+[   68211ms] [LOG] 
+%cStop! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black; @ https://static.cdninstagram.com/rsrc.php/v4ijWG4/y1/l/en_US-j/Pou1bnUCr8r.js:8
+[   68214ms] [LOG] 
+%cThis is a browser feature intended for developers. If someone told you to copy-paste something here to enable an Instagram feature or "hack" someone's account, it is a scam and will give them access to your Instagram account. font-family:helvetica; font-size:20px;  @ https://static.cdninstagram.com/rsrc.php/v4ijWG4/y1/l/en_US-j/Pou1bnUCr8r.js:8
+[   68215ms] [LOG] 
+%cSee https://www.facebook.com/selfxss for more information. font-family:helvetica; font-size:20px;  @ https://static.cdninstagram.com/rsrc.php/v4ijWG4/y1/l/en_US-j/Pou1bnUCr8r.js:8
+[   68215ms] [LOG] 
+%c  @ https://static.cdninstagram.com/rsrc.php/v4ijWG4/y1/l/en_US-j/Pou1bnUCr8r.js:8
+[   68440ms] [ERROR] Manifest: Line: 1, column: 1, Syntax error. @ https://www.instagram.com/data/manifest.json:0
+[   68558ms] [WARNING] No available adapters. @ https://www.instagram.com/accounts/suspended/?next=https%3A%2F%2Fwww.instagram.com%2Fperola.restaurante%2F%3F__coig_ufac%3D1:0
+[   71931ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'attribution-reporting'. @ :0
+[   71931ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'bluetooth'. @ :0
+[   71931ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage'. @ :0
+[   71931ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage-select-url'. @ :0
+[   72373ms] [ERROR] Permissions policy violation: unload is not allowed in this document. @ https://static.xx.fbcdn.net/rsrc.php/v4/yr/r/LW_wwypmBWg.js:247
+[   72802ms] [ERROR] ErrorUtils caught an error:
+
+Async request failed with error 1007: Something went wrong. We're working on getting this fixed as soon as we can. You may be able to try again. when requesting /sync/instagram/
+
+Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. {column: 17844, clientTime: 1793275102, extra: Object, guardList: Array(0), hash: 4r2p1n} @ https://static.cdninstagram.com/rsrc.php/v4/yL/r/U99l6HEALpy.js:84
+[   76082ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'attribution-reporting'. @ :0
+[   76082ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'bluetooth'. @ :0
+[   76082ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage'. @ :0
+[   76082ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage-select-url'. @ :0
+[   76634ms] [ERROR] Manifest: Line: 1, column: 1, Syntax error. @ https://www.instagram.com/data/manifest.json:0
+[   76660ms] [LOG] 
+%cStop! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black; @ https://static.cdninstagram.com/rsrc.php/v4ijWG4/y1/l/en_US-j/Pou1bnUCr8r.js:8
+[   76660ms] [LOG] 
+%cThis is a browser feature intended for developers. If someone told you to copy-paste something here to enable an Instagram feature or "hack" someone's account, it is a scam and will give them access to your Instagram account. font-family:helvetica; font-size:20px;  @ https://static.cdninstagram.com/rsrc.php/v4ijWG4/y1/l/en_US-j/Pou1bnUCr8r.js:8
+[   76660ms] [LOG] 
+%cSee https://www.facebook.com/selfxss for more information. font-family:helvetica; font-size:20px;  @ https://static.cdninstagram.com/rsrc.php/v4ijWG4/y1/l/en_US-j/Pou1bnUCr8r.js:8
+[   76660ms] [LOG] 
+%c  @ https://static.cdninstagram.com/rsrc.php/v4ijWG4/y1/l/en_US-j/Pou1bnUCr8r.js:8
+[   76677ms] [WARNING] No available adapters. @ https://www.instagram.com/accounts/suspended/?next=https%3A%2F%2Fwww.instagram.com%2Fpingafogonatal%2F%3F__coig_ufac%3D1:0
+[   79751ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'attribution-reporting'. @ :0
+[   79751ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'bluetooth'. @ :0
+[   79751ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage'. @ :0
+[   79751ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage-select-url'. @ :0
+[   79802ms] [ERROR] Permissions policy violation: unload is not allowed in this document. @ https://static.xx.fbcdn.net/rsrc.php/v4/yr/r/LW_wwypmBWg.js:247
+[   80301ms] [ERROR] ErrorUtils caught an error:
+
+Async request failed with error 1007: Something went wrong. We're working on getting this fixed as soon as we can. You may be able to try again. when requesting /sync/instagram/
+
+Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. {column: 17844, clientTime: 1793275109, extra: Object, guardList: Array(0), hash: 4r2p1n} @ https://static.cdninstagram.com/rsrc.php/v4/yL/r/U99l6HEALpy.js:84
