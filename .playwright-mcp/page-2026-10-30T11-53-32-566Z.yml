@@ -1,0 +1,190 @@
+- generic "Google Maps" [ref=e2]:
+  - generic [ref=e3]:
+    - application "Mapa·Use as teclas de seta para mover o mapa.·Veja os detalhes de um lugar pressionando a tecla de número correspondente." [ref=e8]
+    - search [ref=e14]:
+      - generic [ref=e15]:
+        - combobox [ref=e17]: pizzaria Ponta Negra Natal
+        - button "Pesquisar" [ref=e19] [cursor=pointer]:
+          - generic [aria-hidden] [ref=e20]: 
+        - button "Fechar" [ref=e22] [cursor=pointer]:
+          - generic [aria-hidden] [ref=e23]: 
+    - generic [ref=e24]:
+      - generic [ref=e25]:
+        - list [ref=e27]:
+          - listitem [ref=e28]:
+            - button "Menu" [ref=e29] [cursor=pointer]:
+              - generic [aria-hidden] [ref=e31]: 
+          - listitem [ref=e32]:
+            - button "Salvos" [ref=e33] [cursor=pointer]:
+              - generic [aria-hidden] [ref=e35]: 
+          - listitem [ref=e38]:
+            - button "Recentes" [disabled] [ref=e39]:
+              - generic [aria-hidden] [ref=e41]: 
+          - listitem [ref=e45]:
+            - button "Baixar o aplicativo" [ref=e46] [cursor=pointer]:
+              - generic [aria-hidden] [ref=e48]: 
+        - main [ref=e55]:
+          - generic [ref=e56]:
+            - feed "Resultados para pizzaria Ponta Negra Natal" [ref=e57]:
+              - generic [ref=e58]:
+                - generic [ref=e60]:
+                  - heading "Resultados" [level=1] [ref=e61]
+                  - button "Saiba mais sobre a divulgação legal de avaliações públicas no Google Maps" [ref=e65]:
+                    - generic [aria-hidden] [ref=e69]: 
+                - button "Compartilhar" [ref=e73]:
+                  - generic [ref=e74] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e75]: 
+                    - generic [ref=e76]: Compartilhar
+              - article [ref=e78]:
+                - link "Páprika Pizzaria & Restaurante" [ref=e79] [cursor=pointer]:
+                  - /url: https://www.google.com/maps/place/P%C3%A1prika+Pizzaria+%26+Restaurante/data=!4m7!3m6!1s0x7b2ff2fef0d80b5:0x5f54fa93347be90d!8m2!3d-5.8718731!4d-35.1798963!16s%2Fg%2F11b6hw8g1p!19sChIJtYAN7y__sgcRDel7NJP6VF8?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAyNy4wIJJjKgBIAVAD&rclk=1
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Páprika Pizzaria & Restaurante
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img "4,6 estrelas": 4,6
+                            - generic:
+                              - generic:
+                                - generic: Pizzaria
+                                - generic:
+                                  - text: ·
+                                  - img "Entrada acessível para pessoas em cadeira de rodas" [ref=e81] [cursor=pointer]:
+                                    - generic [ref=e82]: 
+                                - generic: · R. Pedro Fonseca Filho, 9001
+                              - generic: Menu italiano à la carte e som ao vivo
+                              - generic: Fechado · Abre às 17:00
+              - article [ref=e85]:
+                - link "Just Pizza Artesanal" [ref=e86] [cursor=pointer]:
+                  - /url: https://www.google.com/maps/place/Just+Pizza+Artesanal/data=!4m7!3m6!1s0x7b2ff4082934959:0xb7597bbe45d43eb1!8m2!3d-5.8723495!4d-35.1892361!16s%2Fg%2F11z5pl5118!19sChIJWUmTgkD_sgcRsT7URb57Wbc?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAyNy4wIJJjKgBIAVAD&rclk=1
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Just Pizza Artesanal
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img "4,9 estrelas": 4,9
+                            - generic:
+                              - generic:
+                                - generic: Pizzaria
+                                - generic:
+                                  - text: ·
+                                  - img "Entrada acessível para pessoas em cadeira de rodas" [ref=e88] [cursor=pointer]:
+                                    - generic [ref=e89]: 
+                                - generic: · Av. Praia de Muriú, 8809
+                              - generic: Fechado · Abre às 18:00
+              - article [ref=e92]:
+                - link "Pizzaria Famiglia Piazzolla" [ref=e93] [cursor=pointer]:
+                  - /url: https://www.google.com/maps/place/Pizzaria+Famiglia+Piazzolla/data=!4m7!3m6!1s0x7b2ff3ae998fc83:0x13d7dc45f7c59cc0!8m2!3d-5.8674533!4d-35.1834528!16s%2Fg%2F1ptyg4srn!19sChIJg_yY6Tr_sgcRwJzF90Xc1xM?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAyNy4wIJJjKgBIAVAD&rclk=1
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Pizzaria Famiglia Piazzolla
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img "4,4 estrelas": 4,4
+                            - generic:
+                              - generic:
+                                - generic: Pizzaria
+                                - generic:
+                                  - text: ·
+                                  - img "Entrada acessível para pessoas em cadeira de rodas" [ref=e95] [cursor=pointer]:
+                                    - generic [ref=e96]: 
+                                - generic: · Av. Praia de Ponta Negra, 8848
+                              - generic: Forneria informal em espaço despojado
+                              - generic: Fechado · Abre às 18:00
+              - article [ref=e99]:
+                - link "Piazzale Italia" [ref=e100] [cursor=pointer]:
+                  - /url: https://www.google.com/maps/place/Piazzale+Italia/data=!4m7!3m6!1s0x7b2f8d1d6b7cc6f:0x57e3b3e7a2e3a8ab!8m2!3d-5.8833492!4d-35.1826175!16s%2Fg%2F1tkq_gs_!19sChIJb8y31tH4sgcRq6jjouez41c?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAyNy4wIJJjKgBIAVAD&rclk=1
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Piazzale Italia
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img "4,5 estrelas": 4,5
+                            - generic:
+                              - generic:
+                                - generic: Pizzaria
+                                - generic:
+                                  - text: ·
+                                  - img "Entrada acessível para pessoas em cadeira de rodas" [ref=e102] [cursor=pointer]:
+                                    - generic [ref=e103]: 
+                                - generic: · Av. Dep. Antônio Florêncio de Queiroz, 12
+                              - generic: Menu gourmet italiano e vista para o mar
+                              - generic: Fechado · Abre às 18:00
+              - article [ref=e106]:
+                - link "Let's Pizza - Ponta Negra" [ref=e107] [cursor=pointer]:
+                  - /url: https://www.google.com/maps/place/Let%27s+Pizza+-+Ponta+Negra/data=!4m7!3m6!1s0x7b2ff3080c1fcb3:0xe2ce178f4f8877bc!8m2!3d-5.8701056!4d-35.1819769!16s%2Fg%2F11xg4mqsb2!19sChIJs_zBgDD_sgcRvHeIT48XzuI?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAyNy4wIJJjKgBIAVAD&rclk=1
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Let's Pizza - Ponta Negra
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img "4,6 estrelas": 4,6
+                            - generic:
+                              - generic:
+                                - generic: Pizzaria
+                                - generic:
+                                  - text: ·
+                                  - img "Entrada acessível para pessoas em cadeira de rodas" [ref=e109] [cursor=pointer]:
+                                    - generic [ref=e110]: 
+                                - generic: · Av. Praia de Ponta Negra, 8932
+                              - generic: Fechado · Abre às 18:00
+              - article [ref=e113]:
+                - link "Berna Ristorante" [ref=e114] [cursor=pointer]:
+                  - /url: https://www.google.com/maps/place/Berna+Ristorante/data=!4m7!3m6!1s0x7b2ffca3045dbf7:0x3bc5af3d897556e8!8m2!3d-5.8691851!4d-35.1823026!16s%2Fg%2F11wmwr2j46!19sChIJ99tFMMr_sgcR6FZ1iT2vxTs?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAyNy4wIJJjKgBIAVAD&rclk=1
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Berna Ristorante
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img "4,6 estrelas": 4,6
+                            - generic:
+                              - generic:
+                                - generic: Pizzaria
+                                - generic:
+                                  - text: ·
+                                  - img "Entrada acessível para pessoas em cadeira de rodas" [ref=e116] [cursor=pointer]:
+                                    - generic [ref=e117]: 
+                                - generic: · Av. Praia de Ponta Negra, 8904
+                              - generic: Fechado · Abre às 17:00
+              - generic [ref=e152]:
+                - generic [aria-hidden] [ref=e154]: 
+                - generic [ref=e155]:
+                  - text: Esta é uma visualização limitada do Google Maps.
+                  - button "Ver mais" [ref=e156] [cursor=pointer]
+            - checkbox [ref=e159] [cursor=pointer]:
+              - generic [aria-hidden] [ref=e161]: 
+              - text: Atualizar resultados ao mover o mapa
+      - generic [ref=e162]:
+        - button "Recolher painel lateral" [ref=e163] [cursor=pointer]:
+          - generic [aria-hidden] [ref=e164]: 
+        - generic [aria-hidden] [ref=e165]: Recolher painel lateral
